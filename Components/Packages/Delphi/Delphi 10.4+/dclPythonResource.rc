@@ -1,0 +1,7 @@
+TPyDelphiWrapper BITMAP "..\\..\\Resources\\TPYDELPHIWRAPPER.bmp"
+TPythonDelphiVar BITMAP "..\\..\\Resources\\TPYTHONDELPHIVAR.bmp"
+TPythonEngine BITMAP "..\\..\\Resources\\TPYTHONENGINE.bmp"
+TPythonGUIInputOutput BITMAP "..\\..\\Resources\\TPYTHONGUIINPUTOUTPUT.bmp"
+TPythonInputOutput BITMAP "..\\..\\Resources\\TPYTHONINPUTOUTPUT.bmp"
+TPythonModule BITMAP "..\\..\\Resources\\TPYTHONMODULE.bmp"
+TPythonType BITMAP "..\\..\\Resources\\TPYTHONTYPE.bmp"
