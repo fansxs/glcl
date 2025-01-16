@@ -1,4 +1,4 @@
-﻿(**************************************************************************)
+﻿
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -6,6 +6,7 @@
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
+(*  Core developer:      fansxs (admin@gliste.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)
@@ -646,6 +647,15 @@ type
   end;
 {$ENDIF}
 
+  TPyDelphiTreeNodes = class(TPyDelphiPersistent)
+  private
+    function GetDelphiObject: TTreeNodes;
+    procedure SetDelphiObject(const Value: TTreeNodes);
+  public
+    class function DelphiObjectClass: TClass; override;
+    property DelphiObject: TTreeNodes read GetDelphiObject write SetDelphiObject;
+  end;
+
   TPyDelphiTreeNode = class(TPyDelphiPersistent)
   private
     function GetDelphiObject: TTreeNode;
@@ -994,6 +1004,15 @@ type
       PropertyInfo: PPropInfo; Callable: PPyObject); override;
 
     class function GetTypeInfo: PTypeInfo; override;
+  end;
+
+  TPyDelphiListItems = class(TPyDelphiPersistent)
+  private
+    function GetDelphiObject: TListItems;
+    procedure SetDelphiObject(const Value: TListItems);
+  public
+    class function DelphiObjectClass: TClass; override;
+    property DelphiObject: TListItems read GetDelphiObject write SetDelphiObject;
   end;
 
   TPyDelphiListItem = class(TPyDelphiPersistent)
@@ -1364,9 +1383,11 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomStatusBar);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiStatusBar);
 
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiTreeNodes);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiTreeNode);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomTreeView);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiTreeView);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiListItems);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiListItem);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomListView);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiListView);
@@ -2461,6 +2482,23 @@ begin
   inherited DelphiObject := Value;
 end;
 
+{ TPyDelphiTreeNodes }
+
+class function TPyDelphiTreeNodes.DelphiObjectClass: TClass;
+begin
+  Result := TTreeNodes;
+end;
+
+function TPyDelphiTreeNodes.GetDelphiObject: TTreeNodes;
+begin
+  Result := TTreeNodes(inherited DelphiObject);
+end;
+
+procedure TPyDelphiTreeNodes.SetDelphiObject(const Value: TTreeNodes);
+begin
+  inherited DelphiObject := Value;
+end;
+
 { TPyDelphiTreeNode }
 
 class function TPyDelphiTreeNode.DelphiObjectClass: TClass;
@@ -2508,6 +2546,23 @@ begin
 end;
 
 procedure TPyDelphiTreeView.SetDelphiObject(const Value: TTreeView);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiListItems }
+
+class function TPyDelphiListItems.DelphiObjectClass: TClass;
+begin
+  Result := TListItems;
+end;
+
+function TPyDelphiListItems.GetDelphiObject: TListItems;
+begin
+  Result := TListItems(inherited DelphiObject);
+end;
+
+procedure TPyDelphiListItems.SetDelphiObject(const Value: TListItems);
 begin
   inherited DelphiObject := Value;
 end;
