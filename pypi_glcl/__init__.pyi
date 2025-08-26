@@ -201,6 +201,74 @@ ssLeft: str
 ssMiddle: str
 ssRight: str
 ssShift: str
+'''
+taLeftJustify: str
+taRightJustify: str
+taCenter: str
+bdLeftToRight: str
+bdRightToLeft: str
+bdRightToLeftNoAlign: str
+bdRightToLeftReadingOnly: str
+taAlignTop: str
+taAlignBottom: str
+taVerticalCenter: str
+atSelected: str
+atDefaultText: str
+sstNone: str
+sstSubscript: str
+sstSuperscript: str
+caBold: str
+caColor: str
+caFace: str
+caItalic: str
+caSize: str
+caStrikeOut: str
+caUnderline: str
+caProtected: str
+caBackColor: str
+caCharset: str
+caDisabled: str
+caHidden: str
+caLink: str
+caOffset: str
+caRevAuthor: str
+caSubscript: str
+caWeight: str
+nsNone: str
+nsBullet: str
+cpaAlignment: str
+cpaNumbering: str
+cpaFirstIndent: str
+cpaLeftIndent: str
+cpaRightIndent: str
+cpaTabStops: str
+stWholeWord: str
+stMatchCase: str
+foRecord: str
+foBlobs: str
+foDetails: str
+doDisableInserts: str
+doDisableDeletes: str
+doDisableEdits: str
+doNoResetCall: str
+raSkip: str
+raAbort: str
+raMerge: str
+raCorrect: str
+raCancel: str
+raRefresh: str
+dfBinary: str
+dfXML: str
+dfXMLUTF8: str
+rrSkip: str
+rrAbort: str
+rrMerge: str
+rrApply: str
+rrIgnore: str
+ResetOption: int
+MetaDataOption: int
+XMLOption: int
+XMLUTF8Option: int
 msMasked: str
 msReEnter: str
 msDBSetText: str
@@ -837,6 +905,972 @@ fsAll: str
 IEOnly: str
 EdgeOnly: str
 EdgeIfAvailable: str
+WM_NULL: int
+WM_CREATE: int
+WM_DESTROY: int
+WM_MOVE: int
+WM_SIZE: int
+WM_ACTIVATE: int
+WM_SETFOCUS: int
+WM_KILLFOCUS: int
+WM_ENABLE: int
+WM_SETREDRAW: int
+WM_SETTEXT: int
+WM_GETTEXT: int
+WM_GETTEXTLENGTH: int
+WM_PAINT: int
+WM_CLOSE: int
+WM_QUERYENDSESSION: int
+WM_QUIT: int
+WM_QUERYOPEN: int
+WM_ERASEBKGND: int
+WM_SYSCOLORCHANGE: int
+WM_ENDSESSION: int
+WM_SYSTEMERROR: int
+WM_SHOWWINDOW: int
+WM_CTLCOLOR: int
+WM_WININICHANGE: int
+WM_SETTINGCHANGE: int
+WM_DEVMODECHANGE: int
+WM_ACTIVATEAPP: int
+WM_FONTCHANGE: int
+WM_TIMECHANGE: int
+WM_CANCELMODE: int
+WM_SETCURSOR: int
+WM_MOUSEACTIVATE: int
+WM_CHILDACTIVATE: int
+WM_QUEUESYNC: int
+WM_GETMINMAXINFO: int
+WM_PAINTICON: int
+WM_ICONERASEBKGND: int
+WM_NEXTDLGCTL: int
+WM_SPOOLERSTATUS: int
+WM_DRAWITEM: int
+WM_MEASUREITEM: int
+WM_DELETEITEM: int
+WM_VKEYTOITEM: int
+WM_CHARTOITEM: int
+WM_SETFONT: int
+WM_GETFONT: int
+WM_SETHOTKEY: int
+WM_GETHOTKEY: int
+WM_QUERYDRAGICON: int
+WM_COMPAREITEM: int
+WM_GETOBJECT: int
+WM_COMPACTING: int
+WM_COMMNOTIFY: int
+WM_WINDOWPOSCHANGING: int
+WM_WINDOWPOSCHANGED: int
+WM_POWER: int
+WM_COPYGLOBALDATA: int
+WM_COPYDATA: int
+WM_CANCELJOURNAL: int
+WM_NOTIFY: int
+WM_INPUTLANGCHANGEREQUEST: int
+WM_INPUTLANGCHANGE: int
+WM_TCARD: int
+WM_HELP: int
+WM_USERCHANGED: int
+WM_NOTIFYFORMAT: int
+WM_CONTEXTMENU: int
+WM_STYLECHANGING: int
+WM_STYLECHANGED: int
+WM_DISPLAYCHANGE: int
+WM_GETICON: int
+WM_SETICON: int
+WM_NCCREATE: int
+WM_NCDESTROY: int
+WM_NCCALCSIZE: int
+WM_NCHITTEST: int
+WM_NCPAINT: int
+WM_NCACTIVATE: int
+WM_GETDLGCODE: int
+WM_NCMOUSEMOVE: int
+WM_NCLBUTTONDOWN: int
+WM_NCLBUTTONUP: int
+WM_NCLBUTTONDBLCLK: int
+WM_NCRBUTTONDOWN: int
+WM_NCRBUTTONUP: int
+WM_NCRBUTTONDBLCLK: int
+WM_NCMBUTTONDOWN: int
+WM_NCMBUTTONUP: int
+WM_NCMBUTTONDBLCLK: int
+WM_NCXBUTTONDOWN: int
+WM_NCXBUTTONUP: int
+WM_NCXBUTTONDBLCLK: int
+WM_INPUT_DEVICE_CHANGE: int
+WM_INPUT: int
+WM_KEYFIRST: int
+WM_KEYDOWN: int
+WM_KEYUP: int
+WM_CHAR: int
+WM_DEADCHAR: int
+WM_SYSKEYDOWN: int
+WM_SYSKEYUP: int
+WM_SYSCHAR: int
+WM_SYSDEADCHAR: int
+WM_UNICHAR: int
+WM_KEYLAST: int
+WM_INITDIALOG: int
+WM_COMMAND: int
+WM_SYSCOMMAND: int
+WM_TIMER: int
+WM_HSCROLL: int
+WM_VSCROLL: int
+WM_INITMENU: int
+WM_INITMENUPOPUP: int
+WM_GESTURE: int
+WM_GESTURENOTIFY: int
+WM_MENUSELECT: int
+WM_MENUCHAR: int
+WM_ENTERIDLE: int
+WM_MENURBUTTONUP: int
+WM_MENUDRAG: int
+WM_MENUGETOBJECT: int
+WM_UNINITMENUPOPUP: int
+WM_MENUCOMMAND: int
+WM_CHANGEUISTATE: int
+WM_UPDATEUISTATE: int
+WM_QUERYUISTATE: int
+WM_CTLCOLORMSGBOX: int
+WM_CTLCOLOREDIT: int
+WM_CTLCOLORLISTBOX: int
+WM_CTLCOLORBTN: int
+WM_CTLCOLORDLG: int
+WM_CTLCOLORSCROLLBAR=: int
+WM_CTLCOLORSTATIC: int
+WM_MOUSEFIRST: int
+WM_MOUSEMOVE: int
+WM_LBUTTONDOWN: int
+WM_LBUTTONUP: int
+WM_LBUTTONDBLCLK: int
+WM_RBUTTONDOWN: int
+WM_RBUTTONUP: int
+WM_RBUTTONDBLCLK: int
+WM_MBUTTONDOWN: int
+WM_MBUTTONUP: int
+WM_MBUTTONDBLCLK: int
+WM_MOUSEWHEEL: int
+WM_XBUTTONDOWN: int
+WM_XBUTTONUP: int
+WM_XBUTTONDBLCLK: int
+WM_MOUSEHWHEEL: int
+WM_MOUSELAST: int
+WM_PARENTNOTIFY: int
+WM_ENTERMENULOOP: int
+WM_EXITMENULOOP: int
+WM_NEXTMENU: int
+WM_SIZING: int
+WM_CAPTURECHANGED: int
+WM_MOVING: int
+WM_POWERBROADCAST: int
+WM_DEVICECHANGE: int
+WM_IME_STARTCOMPOSITION: int
+WM_IME_ENDCOMPOSITION: int
+WM_IME_COMPOSITION: int
+WM_IME_KEYLAST: int
+WM_IME_SETCONTEXT: int
+WM_IME_NOTIFY: int
+WM_IME_CONTROL: int
+WM_IME_COMPOSITIONFULL: int
+WM_IME_SELECT: int
+WM_IME_CHAR: int
+WM_IME_REQUEST: int
+WM_IME_KEYDOWN: int
+WM_IME_KEYUP: int
+WM_MDICREATE: int
+WM_MDIDESTROY: int
+WM_MDIACTIVATE: int
+WM_MDIRESTORE: int
+WM_MDINEXT: int
+WM_MDIMAXIMIZE: int
+WM_MDITILE: int
+WM_MDICASCADE: int
+WM_MDIICONARRANGE: int
+WM_MDIGETACTIVE: int
+WM_MDISETMENU: int
+WM_ENTERSIZEMOVE: int
+WM_EXITSIZEMOVE: int
+WM_DROPFILES: int
+WM_MDIREFRESHMENU: int
+WM_POINTERDEVICECHANGE: int
+WM_POINTERDEVICEINRANGE: int
+WM_POINTERDEVICEOUTOFRANGE: int
+WM_TOUCH: int
+WM_NCPOINTERUPDATE: int
+WM_NCPOINTERDOWN: int
+WM_NCPOINTERUP: int
+WM_POINTERUPDATE: int
+WM_POINTERDOWN: int
+WM_POINTERUP: int
+WM_POINTERENTER: int
+WM_POINTERLEAVE: int
+WM_POINTERACTIVATE: int
+WM_POINTERCAPTURECHANGED: int
+WM_TOUCHHITTESTING: int
+WM_POINTERWHEEL: int
+WM_POINTERHWHEEL: int
+DM_POINTERHITTEST: int
+WM_POINTERROUTEDTO: int
+WM_POINTERROUTEDAWAY: int
+WM_POINTERROUTEDRELEASED: int
+WM_MOUSEHOVER: int
+WM_MOUSELEAVE: int
+WM_NCMOUSEHOVER: int
+WM_NCMOUSELEAVE: int
+WM_WTSSESSION_CHANGE: int
+WM_TABLET_FIRST: int
+WM_TABLET_LAST: int
+WM_DPICHANGED: int
+WM_DPICHANGED_BEFOREPARENT: int
+WM_DPICHANGED_AFTERPARENT: int
+WM_GETDPISCALEDSIZE: int
+WM_CUT: int
+WM_COPY: int
+WM_PASTE: int
+WM_CLEAR: int
+WM_UNDO: int
+WM_RENDERFORMAT: int
+WM_RENDERALLFORMATS: int
+WM_DESTROYCLIPBOARD: int
+WM_DRAWCLIPBOARD: int
+WM_PAINTCLIPBOARD: int
+WM_VSCROLLCLIPBOARD: int
+WM_SIZECLIPBOARD: int
+WM_ASKCBFORMATNAME: int
+WM_CHANGECBCHAIN: int
+WM_HSCROLLCLIPBOARD: int
+WM_QUERYNEWPALETTE: int
+WM_PALETTEISCHANGING=: int
+WM_PALETTECHANGED: int
+WM_HOTKEY: int
+WM_PRINT: int
+WM_PRINTCLIENT: int
+WM_APPCOMMAND: int
+WM_THEMECHANGED: int
+WM_CLIPBOARDUPDATE: int
+WM_HANDHELDFIRST: int
+WM_HANDHELDLAST: int
+WM_PENWINFIRST: int
+WM_PENWINLAST: int
+WM_COALESCE_FIRST: int
+WM_COALESCE_LAST: int
+WM_DDE_FIRST: int
+WM_DDE_INITIATE: int
+WM_DDE_TERMINATE: int
+WM_DDE_ADVISE: int
+WM_DDE_UNADVISE: int
+WM_DDE_ACK: int
+WM_DDE_DATA: int
+WM_DDE_REQUEST: int
+WM_DDE_POKE: int
+WM_DDE_EXECUTE: int
+WM_DDE_LAST: int
+WM_DWMCOMPOSITIONCHANGED: int
+WM_DWMNCRENDERINGCHANGED: int
+WM_DWMCOLORIZATIONCOLORCHANGED: int
+WM_DWMWINDOWMAXIMIZEDCHANGE: int
+WM_DWMSENDICONICTHUMBNAIL: int
+WM_DWMSENDICONICLIVEPREVIEWBITMAP: int
+WM_GETTITLEBARINFOEX: int
+WM_TABLET_DEFBASE: int
+WM_TABLET_MAXOFFSET: int
+WM_TABLET_ADDED: int
+WM_TABLET_DELETED: int
+WM_TABLET_FLICK: int
+WM_TABLET_QUERYSYSTEMGESTURESTATUS: int
+WM_APP: int
+WM_USER: int
+BN_CLICKED: int
+BN_PAINT: int
+BN_HILITE: int
+BN_UNHILITE: int
+BN_DISABLE: int
+BN_DOUBLECLICKED: int
+BN_PUSHED: int
+BN_UNPUSHED: int
+BN_DBLCLK: int
+BN_SETFOCUS: int
+BN_KILLFOCUS: int
+BM_GETCHECK: int
+BM_SETCHECK: int
+BM_GETSTATE: int
+BM_SETSTATE: int
+BM_SETSTYLE: int
+BM_CLICK: int
+BM_GETIMAGE: int
+BM_SETIMAGE: int
+BM_SETDONTCLICK: int
+LBN_ERRSPACE: int
+LBN_SELCHANGE: int
+LBN_DBLCLK: int
+LBN_SELCANCEL: int
+LBN_SETFOCUS: int
+LBN_KILLFOCUS: int
+LB_ADDSTRING: int
+LB_INSERTSTRING: int
+LB_DELETESTRING: int
+LB_SELITEMRANGEEX: int
+LB_RESETCONTENT: int
+LB_SETSEL: int
+LB_SETCURSEL: int
+LB_GETSEL: int
+LB_GETCURSEL: int
+LB_GETTEXT: int
+LB_GETTEXTLEN: int
+LB_GETCOUNT: int
+LB_SELECTSTRING: int
+LB_DIR: int
+LB_GETTOPINDEX: int
+LB_FINDSTRING: int
+LB_GETSELCOUNT: int
+LB_GETSELITEMS: int
+LB_SETTABSTOPS: int
+LB_GETHORIZONTALEXTENT: int
+LB_SETHORIZONTALEXTENT: int
+LB_SETCOLUMNWIDTH: int
+LB_ADDFILE: int
+LB_SETTOPINDEX: int
+LB_GETITEMRECT: int
+LB_GETITEMDATA: int
+LB_SETITEMDATA: int
+LB_SELITEMRANGE: int
+LB_SETANCHORINDEX: int
+LB_GETANCHORINDEX: int
+LB_SETCARETINDEX: int
+LB_GETCARETINDEX: int
+LB_SETITEMHEIGHT: int
+LB_GETITEMHEIGHT: int
+LB_FINDSTRINGEXACT: int
+LB_SETLOCALE: int
+LB_GETLOCALE: int
+LB_SETCOUNT: int
+LB_INITSTORAGE: int
+LB_ITEMFROMPOINT: int
+LB_MSGMAX: int
+CBN_ERRSPACE: int
+CBN_SELCHANGE: int
+CBN_DBLCLK: int
+CBN_SETFOCUS: int
+CBN_KILLFOCUS: int
+CBN_EDITCHANGE: int
+CBN_EDITUPDATE: int
+CBN_DROPDOWN: int
+CBN_CLOSEUP: int
+CBN_SELENDOK: int
+CBN_SELENDCANCEL: int
+CB_GETEDITSEL: int
+CB_LIMITTEXT: int
+CB_SETEDITSEL: int
+CB_ADDSTRING: int
+CB_DELETESTRING: int
+CB_DIR: int
+CB_GETCOUNT: int
+CB_GETCURSEL: int
+CB_GETLBTEXT: int
+CB_GETLBTEXTLEN: int
+CB_INSERTSTRING: int
+CB_RESETCONTENT: int
+CB_FINDSTRING: int
+CB_SELECTSTRING: int
+CB_SETCURSEL: int
+CB_SHOWDROPDOWN: int
+CB_GETITEMDATA: int
+CB_SETITEMDATA: int
+CB_GETDROPPEDCONTROLRECT: int
+CB_SETITEMHEIGHT: int
+CB_GETITEMHEIGHT: int
+CB_SETEXTENDEDUI: int
+CB_GETEXTENDEDUI: int
+CB_GETDROPPEDSTATE: int
+CB_FINDSTRINGEXACT: int
+CB_SETLOCALE: int
+CB_GETLOCALE: int
+CB_GETTOPINDEX: int
+CB_SETTOPINDEX: int
+CB_GETHORIZONTALEXTENT: int
+CB_SETHORIZONTALEXTENT: int
+CB_GETDROPPEDWIDTH: int
+CB_SETDROPPEDWIDTH: int
+CB_INITSTORAGE: int
+CB_MSGMAX: int
+EN_SETFOCUS: int
+EN_KILLFOCUS: int
+EN_CHANGE: int
+EN_UPDATE: int
+EN_ERRSPACE: int
+EN_MAXTEXT: int
+EN_HSCROLL: int
+EN_VSCROLL: int
+EM_GETSEL: int
+EM_SETSEL: int
+EM_GETRECT: int
+EM_SETRECT: int
+EM_SETRECTNP: int
+EM_SCROLL: int
+EM_LINESCROLL: int
+EM_SCROLLCARET: int
+EM_GETMODIFY: int
+EM_SETMODIFY: int
+EM_GETLINECOUNT: int
+EM_LINEINDEX: int
+EM_SETHANDLE: int
+EM_GETHANDLE: int
+EM_GETTHUMB: int
+EM_LINELENGTH: int
+EM_REPLACESEL: int
+EM_GETLINE: int
+EM_LIMITTEXT: int
+EM_CANUNDO: int
+EM_UNDO: int
+EM_FMTLINES: int
+EM_LINEFROMCHAR: int
+EM_SETTABSTOPS: int
+EM_SETPASSWORDCHAR: int
+EM_EMPTYUNDOBUFFER: int
+EM_GETFIRSTVISIBLELINE: int
+EM_SETREADONLY: int
+EM_SETWORDBREAKPROC: int
+EM_GETWORDBREAKPROC: int
+EM_GETPASSWORDCHAR: int
+EM_SETMARGINS: int
+EM_GETMARGINS: int
+EM_SETLIMITTEXT: int
+EM_GETLIMITTEXT: int
+EM_POSFROMCHAR: int
+EM_CHARFROMPOS: int
+EM_SETIMESTATUS: int
+EM_GETIMESTATUS: int
+EM_ENABLEFEATURE: int
+SBM_SETPOS: int
+SBM_GETPOS: int
+SBM_SETRANGE: int
+SBM_SETRANGEREDRAW: int
+SBM_GETRANGE: int
+SBM_ENABLE_ARROWS: int
+SBM_SETSCROLLINFO: int
+SBM_GETSCROLLINFO: int
+SBM_GETSCROLLBARINFO: int
+DM_GETDEFID: int
+DM_SETDEFID: int
+DM_REPOSITION: int
+cchTextLimitDefault: int
+MSFTEDIT_CLASS: str
+RICHEDIT_CLASSA: str
+RICHEDIT_CLASSW: str
+RICHEDIT_CLASS: str
+RICHEDIT_CLASS10A: str
+EM_CANPASTE: int
+EM_DISPLAYBAND: int
+EM_EXGETSEL: int
+EM_EXLIMITTEXT: int
+EM_EXLINEFROMCHAR: int
+EM_EXSETSEL: int
+EM_FINDTEXT: int
+EM_FORMATRANGE: int
+EM_GETCHARFORMAT: int
+EM_GETEVENTMASK: int
+EM_GETOLEINTERFACE: int
+EM_GETPARAFORMAT: int
+EM_GETSELTEXT: int
+EM_HIDESELECTION: int
+EM_PASTESPECIAL: int
+EM_REQUESTRESIZE: int
+EM_SELECTIONTYPE: int
+EM_SETBKGNDCOLOR: int
+EM_SETCHARFORMAT: int
+EM_SETEVENTMASK: int
+EM_SETOLECALLBACK: int
+EM_SETPARAFORMAT: int
+EM_SETTARGETDEVICE: int
+EM_STREAMIN: int
+EM_STREAMOUT: int
+EM_GETTEXTRANGE: int
+EM_FINDWORDBREAK: int
+EM_SETOPTIONS: int
+EM_GETOPTIONS: int
+EM_FINDTEXTEX: int
+EM_GETWORDBREAKPROCEX: int
+EM_SETWORDBREAKPROCEX: int
+EM_SETUNDOLIMIT: int
+EM_REDO: int
+EM_CANREDO: int
+EM_GETUNDONAME: int
+EM_GETREDONAME: int
+EM_STOPGROUPTYPING: int
+EM_SETTEXTMODE: int
+EM_GETTEXTMODE: int
+TM_PLAINTEXT: int
+TM_RICHTEXT: int
+TM_SINGLELEVELUNDO: int
+TM_MULTILEVELUNDO: int
+TM_SINGLECODEPAGE: int
+TM_MULTICODEPAGE: int
+EM_AUTOURLDETECT: int
+EM_GETAUTOURLDETECT: int
+EM_SETPALETTE: int
+EM_GETTEXTEX: int
+EM_GETTEXTLENGTHEX: int
+EM_SETPUNCTUATION: int
+EM_GETPUNCTUATION: int
+EM_SETWORDWRAPMODE: int
+EM_GETWORDWRAPMODE: int
+EM_SETIMECOLOR: int
+EM_GETIMECOLOR: int
+EM_SETIMEOPTIONS: int
+EM_GETIMEOPTIONS: int
+EM_CONVPOSITION: int
+EM_SETLANGOPTIONS: int
+EM_GETLANGOPTIONS: int
+EM_GETIMECOMPMODE: int
+EM_FINDTEXTW: int
+EM_FINDTEXTEXW: int
+EM_RECONVERSION: int
+EM_SETIMEMODEBIAS: int
+EM_GETIMEMODEBIAS: int
+EM_SETBIDIOPTIONS: int
+EM_GETBIDIOPTIONS: int
+EM_SETTYPOGRAPHYOPTIONS: int
+EM_GETTYPOGRAPHYOPTIONS: int
+EM_SETEDITSTYLE: int
+EM_GETEDITSTYLE: int
+EM_OUTLINE: int
+EM_GETSCROLLPOS: int
+EM_SETSCROLLPOS: int
+EM_SETFONTSIZE: int
+EM_GETZOOM: int
+EM_SETZOOM: int
+EM_GETVIEWKIND: int
+EM_SETVIEWKIND: int
+EM_GETPAGE: int
+EM_SETPAGE: int
+EM_GETHYPHENATEINFO: int
+EM_SETHYPHENATEINFO: int
+EM_GETPAGEROTATE: int
+EM_SETPAGEROTATE: int
+EM_GETCTFMODEBIAS: int
+EM_SETCTFMODEBIAS: int
+EM_GETCTFOPENSTATUS: int
+EM_SETCTFOPENSTATUS: int
+EM_GETIMECOMPTEXT: int
+EM_ISIME: int
+EM_GETIMEPROPERTY: int
+EM_GETQUERYRTFOBJ: int
+EM_SETQUERYRTFOBJ: int
+EPR_0: int
+EPR_270: int
+EPR_180: int
+EPR_90: int
+EPR_SE: int
+CTFMODEBIAS_DEFAULT: int
+CTFMODEBIAS_FILENAME: int
+CTFMODEBIAS_NAME: int
+CTFMODEBIAS_READING: int
+CTFMODEBIAS_DATETIME: int
+CTFMODEBIAS_CONVERSATION: int
+CTFMODEBIAS_NUMERIC: int
+CTFMODEBIAS_HIRAGANA: int
+CTFMODEBIAS_KATAKANA: int
+CTFMODEBIAS_HANGUL: int
+CTFMODEBIAS_HALFWIDTHKATAKANA: int
+CTFMODEBIAS_FULLWIDTHALPHANUMERIC: int
+CTFMODEBIAS_HALFWIDTHALPHANUMERIC: int
+IMF_SMODE_PLAURALCLAUSE: int
+IMF_SMODE_NONE: int
+ICT_RESULTREADSTR: int
+EMO_EXIT: int
+EMO_ENTER: int
+EMO_PROMOTE: int
+EMO_EXPAND: int
+EMO_MOVESELECTION: int
+EMO_GETVIEWMODE: int
+EMO_EXPANDSELECTION: int
+EMO_EXPANDDOCUMENT: int
+VM_NORMAL: int
+VM_OUTLINE: int
+VM_PAGE: int
+SES_EMULATESYSEDIT: int
+SES_BEEPONMAXTEXT: int
+SES_EXTENDBACKCOLOR: int
+SES_MAPCPS: int
+SES_HYPERLINKTOOLTIPS: int
+SES_EMULATE10: int
+SES_DEFAULTLATINLIGA: int
+SES_USECRLF: int
+SES_NOFOCUSLINKNOTIFY: int
+SES_NOXLTSYMBOLRANGE: int
+SES_USEAIMM: int
+SES_NOIME: int
+SES_ALLOWBEEPS: int
+SES_UPPERCASE: int
+SES_LOWERCASE: int
+SES_NOINPUTSEQUENCECHK: int
+SES_BIDI: int
+SES_SCROLLONKILLFOCUS: int
+SES_XLTCRCRLFTOCR: int
+SES_DRAFTMODE: int
+SES_USECTF: int
+SES_HIDEGRIDLINES: int
+SES_USEATFONT: int
+SES_CUSTOMLOOK: int
+SES_LBSCROLLNOTIFY: int
+SES_CTFALLOWEMBED: int
+SES_CTFALLOWSMARTTAG: int
+SES_CTFALLOWPROOFING: int
+IMF_AUTOKEYBOARD: int
+IMF_AUTOFONT: int
+IMF_IMECANCELCOMPLETE: int
+IMF_IMEALWAYSSENDNOTIFY: int
+IMF_AUTOFONTSIZEADJUST: int
+IMF_UIFONTS: int
+IMF_NOIMPLICITLANG: int
+IMF_DUALFONT: int
+IMF_NOKBDLIDFIXUP: int
+IMF_NORTFFONTSUBSTITUTE: int
+IMF_SPELLCHECKING: int
+IMF_TKBPREDICTION: int
+IMF_IMEUIINTEGRATION: int
+ICM_NOTOPEN: int
+ICM_LEVEL3: int
+ICM_LEVEL2: int
+ICM_LEVEL2_5: int
+ICM_LEVEL2_SUI: int
+EN_MSGFILTER: int
+EN_REQUESTRESIZE: int
+EN_SELCHANGE: int
+EN_DROPFILES: int
+EN_PROTECTED: int
+EN_CORRECTTEXT: int
+EN_STOPNOUNDO: int
+EN_IMECHANGE: int
+EN_SAVECLIPBOARD: int
+EN_OLEOPFAILED: int
+EN_OBJECTPOSITIONS: int
+EN_LINK: int
+EN_DRAGDROPDONE: int
+ENM_NONE: int
+ENM_CHANGE: int
+ENM_UPDATE: int
+ENM_SCROLL: int
+ENM_KEYEVENTS: int
+ENM_MOUSEEVENTS: int
+ENM_REQUESTRESIZE: int
+ENM_SELCHANGE: int
+ENM_DROPFILES: int
+ENM_PROTECTED: int
+ENM_CORRECTTEXT: int
+ENM_SCROLLEVENTS: int
+ENM_DRAGDROPDONE: int
+ENM_IMECHANGE: int
+ENM_LANGCHANGE: int
+ENM_OBJECTPOSITIONS: int
+ENM_LINK: int
+ES_SAVESEL: int
+ES_SUNKEN: int
+ES_DISABLENOSCROLL: int
+ES_SELECTIONBAR: int
+ES_NOOLEDRAGDROP: int
+ES_EX_NOCALLOLEINIT: int
+ES_VERTICAL: int
+ES_NOIME: int
+ES_SELFIME: int
+ECO_AUTOWORDSELECTION: int
+ECO_AUTOVSCROLL: int
+ECO_AUTOHSCROLL: int
+ECO_NOHIDESEL: int
+ECO_READONLY: int
+ECO_WANTRETURN: int
+ECO_SAVESEL: int
+ECO_SELECTIONBAR: int
+ECO_VERTICAL: int
+ECOOP_SET: int
+ECOOP_OR: int
+ECOOP_AND: int
+ECOOP_XOR: int
+WB_CLASSIFY: int
+WB_MOVEWORDLEFT: int
+WB_MOVEWORDRIGHT: int
+WB_LEFTBREAK: int
+WB_RIGHTBREAK: int
+WB_MOVEWORDPREV: int
+WB_MOVEWORDNEXT: int
+WB_PREVBREAK: int
+WB_NEXTBREAK: int
+PC_FOLLOWING: int
+PC_LEADING: int
+PC_OVERFLOW: int
+PC_DELIMITER: int
+WBF_WORDWRAP: int
+WBF_WORDBREAK: int
+WBF_OVERFLOW: int
+WBF_LEVEL1: int
+WBF_LEVEL2: int
+WBF_CUSTOM: int
+IMF_FORCENONE: int
+IMF_FORCEENABLE: int
+IMF_FORCEDISABLE: int
+IMF_CLOSESTATUSWINDOW: int
+IMF_VERTICAL: int
+IMF_FORCEACTIVE: int
+IMF_FORCEINACTIVE: int
+IMF_FORCEREMEMBER: int
+IMF_MULTIPLEEDIT: int
+WBF_CLASS: int
+WBF_ISWHITE: int
+WBF_BREAKLINE: int
+WBF_BREAKAFTER: int
+CFM_BOLD: int
+CFM_ITALIC: int
+CFM_UNDERLINE: int
+CFM_STRIKEOUT: int
+CFM_PROTECTED: int
+CFM_LINK: int
+CFM_SIZE: int	#此常量不可用#
+CFM_COLOR: int
+CFM_FACE: int
+CFM_OFFSET: int
+CFM_CHARSET: int
+CFE_BOLD: int
+CFE_ITALIC: int
+CFE_UNDERLINE: int
+CFE_STRIKEOUT: int
+CFE_PROTECTED: int
+CFE_LINK: int
+CFE_AUTOCOLOR: int
+yHeightCharPtsMost: int
+SCF_SELECTION: int
+SCF_WORD: int
+SCF_DEFAULT: int
+SCF_ALL: int
+SCF_USEUIRULES: int
+SF_TEXT: int
+SF_RTF: int
+SF_RTFNOOBJS: int
+SF_TEXTIZED: int
+SF_UNICODE: int
+SFF_SELECTION: int
+SFF_PLAINRTF: int
+FT_MATCHCASE: int
+FT_WHOLEWORD: int
+lDefaultTab: int
+PFM_STARTINDENT: int		#此常量不可用#
+PFM_RIGHTINDENT: int		#此常量不可用#
+PFM_OFFSET: int				#此常量不可用#
+PFM_ALIGNMENT: int			#此常量不可用#
+PFM_TABSTOPS: int			#此常量不可用#
+PFM_NUMBERING: int		#此常量不可用#
+PFM_OFFSETINDENT: int	#此常量不可用#
+PFN_BULLET: int
+PFA_LEFT: int
+PFA_RIGHT: int
+PFA_CENTER: int
+CFM_ALL: int						#此常量不可用#
+CFM_SMALLCAPS: int
+CFM_ALLCAPS: int
+CFM_HIDDEN: int
+CFM_OUTLINE: int
+CFM_SHADOW: int
+CFM_EMBOSS: int
+CFM_IMPRINT: int
+CFM_DISABLED: int
+CFM_REVISED: int
+CFM_BACKCOLOR: int
+CFM_COOKIE: int
+CFM_LCID: int
+CFM_UNDERLINETYPE: int
+CFM_WEIGHT: int
+CFM_SPACING: int
+CFM_KERNING: int
+CFM_STYLE: int
+CFM_ANIMATION: int
+CFM_REVAUTHOR: int
+CFE_SUBSCRIPT: int
+CFE_SUPERSCRIPT: int
+CFM_SUBSCRIPT: int
+CFM_SUPERSCRIPT: int
+CFM_EFFECTS2: int			#此常量不可用#
+CFM_ALL2: int					#此常量不可用#
+CFE_SMALLCAPS: int
+CFE_ALLCAPS: int
+CFE_HIDDEN: int
+CFE_OUTLINE: int
+CFE_SHADOW: int
+CFE_EMBOSS: int
+CFE_IMPRINT: int
+CFE_DISABLED: int
+CFE_REVISED: int
+CFE_AUTOBACKCOLOR: int
+CFU_CF1UNDERLINE: int
+CFU_INVERT: int
+CFU_UNDERLINEDOTTED: int
+CFU_UNDERLINEDOUBLE: int
+CFU_UNDERLINEWORD: int
+CFU_UNDERLINE: int
+CFU_UNDERLINENONE: int
+PFM_SPACEBEFORE: int
+PFM_SPACEAFTER: int
+PFM_LINESPACING: int
+PFM_STYLE: int
+PFM_BORDER: int
+PFM_SHADING: int
+PFM_NUMBERINGSTYLE: int
+PFM_NUMBERINGTAB: int
+PFM_NUMBERINGSTART: int
+PFM_RTLPARA: int
+PFM_KEEP: int
+PFM_KEEPNEXT: int
+PFM_PAGEBREAKBEFORE: int
+PFM_NOLINENUMBER: int
+PFM_NOWIDOWCONTROL: int
+PFM_DONOTHYPHEN: int
+PFM_SIDEBYSIDE: int
+PFM_TABLE: int
+PFM_TEXTWRAPPINGBREAK: int
+PFM_TABLEROWDELIMITER: int
+PFM_COLLAPSED: int
+PFM_OUTLINELEVEL: int
+PFM_BOX: int
+PFM_ALL: int						#此常量不可用#
+PFM_EFFECTS: int
+PFM_ALL2: int					#此常量不可用#
+PFE_RTLPARA: int
+PFE_KEEP: int
+PFE_KEEPNEXT: int
+PFE_PAGEBREAKBEFORE: int
+PFE_NOLINENUMBER: int
+PFE_NOWIDOWCONTROL: int
+PFE_DONOTHYPHEN: int
+PFE_SIDEBYSIDE: int
+PFE_TABLEROW: int
+PFE_TABLECELLEND: int
+PFE_TABLECELL: int
+PFA_JUSTIFY: int
+SEL_EMPTY: int
+SEL_TEXT: int
+SEL_OBJECT: int
+SEL_MULTICHAR: int
+SEL_MULTIOBJECT: int
+GCM_RIGHTMOUSEDROP: int
+CF_RTFNOOBJS: int
+CF_RETEXTOBJ: int
+UID_UNKNOWN: str
+UID_TYPING: str
+UID_DELETE: str
+UID_DRAGDROP: str
+UID_CUT: str
+UID_PASTE: str
+GT_DEFAULT: int
+GT_USECRLF: int
+GT_SELECTION: int
+GT_RAWTEXT: int
+GT_NOHIDDENTEXT: int
+GTL_DEFAULT: int
+GTL_USECRLF: int
+GTL_PRECISE: int
+GTL_CLOSE: int
+GTL_NUMCHARS: int
+GTL_NUMBYTES: int
+WCH_EMBEDDING: int
+ofReadOnly: str
+ofOverwritePrompt: str
+ofHideReadOnly: str
+ofNoChangeDir: str
+ofShowHelp: str
+ofNoValidate: str
+ofAllowMultiSelect: str
+ofExtensionDifferent: str
+ofPathMustExist: str
+ofFileMustExist: str
+ofCreatePrompt: str
+ofShareAware: str
+ofNoReadOnlyReturn: str
+ofNoTestFileCreate: str
+ofNoNetworkButton: str
+ofNoLongNames: str
+ofOldStyleDialog: str
+ofNoDereferenceLinks: str
+ofEnableIncludeNotify: str
+ofEnableSizing: str
+ofDontAddToRecent: str
+ofForceShowHidden: str
+ofExNoPlacesBar: str
+Standard: str
+Directory: str
+prAllPages: str
+prSelection: str
+prPageNums: str
+poPrintTile: str
+poPageNums: str
+poSelection: str
+poWarning: str
+poHelp: str
+poDisablePrintTile: str
+psoDefaultMinMargins: str
+psoDisableMargins: str
+psoDisableOrientation: str
+psoDisablePagePainting: str
+psoDisablePaper: str
+psoDisablePrinter: str
+psoMargins: str
+psoMinMargins: str
+psoShowHelp: str
+psoWarning: str
+psoNoNetworkButton: str
+pkDotMatrix: str
+pkHPPCL: str
+ptEnvelope: str
+ptPaper: str
+pmDefault: str
+pmMillimeters: str
+pmInches: str
+mtWarning: str
+mtError: str
+mtInformation: str
+mtConfirmation: str
+mtCustom: str
+mbYes: str
+mbNo: str
+mbOK: str
+mbCancel: str
+mbAbort: str
+mbRetry: str
+mbIgnore: str
+mbAll: str
+mbNoToAll: str
+mbYesToAll: str
+mbHelp: str
+mbClose: str
+mdiNone: str
+mdiWarning: str
+mdiError: str
+mdiInformation: str
+mdiShield: str
+haLeft: str
+haCenter: str
+haRight: str
+vaTop: str
+vaCenter: str
+vaBottom: str
+gkNone: str
+gkBlank: str
+gkPointer: str
+gkNumber: str
+gkString: str
+gtNone: str
+gtLeftTop: str
+gtLeft: str
+gtTop: str
+gtCell: str
+gtColSizing: str
+gtSmallBox: str
+gsNormal: str
+gsSelAll: str
+gsSelRow: str
+gsSelCol: str
+gsCell: str
+gsColSize: str
+gsBoxDrag: str
+'''
 
 class Application(Component):
     '''Application是一个全局对象，代表了整个应用程序的主要控制器。它负责处理应用程序的生命周期管理、消息处理、事件触发等任务。Application对象提供了许多方法和属性，用于控制应用程序的行为，比如启动应用程序、结束应用程序、处理异常、管理窗口等。通过Application对象，开发人员可以轻松地管理整个应用程序的运行过程。'''
@@ -9658,6 +10692,367 @@ class CustomMemo(CustomEdit):
         self：当前对象的引用。
         name：属性的名称（字符串形式）。
         value：赋予属性的值。"""
+
+class CustomRichEdit(CustomMemo):
+    """它是TRichEdit的父类。这个类封装了Windows的Rich Edit控件的功能，提供了丰富的文本编辑能力。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def CMBiDiModeChanged(self, *args, **kwargs) -> Any:
+        """ """
+    def CMColorChanged(self, *args, **kwargs) -> Any:
+        """ """
+    def CMFontChanged(self, *args, **kwargs) -> Any:
+        """ """
+    def CNNotify(self, *args, **kwargs) -> Any:
+        """ """
+    def GetActiveLineNo -> Any:
+        """ """
+    def GetPlainText -> bool:
+        """ """
+    def GetSelectionStreamMode -> bool:
+        """ """
+    def GetScrollPosition -> Any:
+        """ """
+    def LinkMessage(self, *args, **kwargs) -> Any:
+        """ """
+    def ProtectChange(self, *args, **kwargs) -> bool:
+        """ """
+    def SaveClipboard(self, *args, **kwargs) -> bool:
+        """ """
+    def SetHideScrollBars(self, *args, **kwargs) -> Any:
+        """ """
+    def SetHideSelection(self, *args, **kwargs) -> Any:
+        """ """
+    def SetPlainText(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSelectionStreamMode(self, *args, **kwargs) -> Any:
+        """ """
+    def SetRichEditStrings(self, *args, **kwargs) -> Any:
+        """ """
+    def SetDefAttributes(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSelAttributes(self, *args, **kwargs) -> Any:
+        """ """
+    def SetZoom(self, *args, **kwargs) -> Any:
+        """ """
+    def SetScrollPosition(self, *args, **kwargs) -> Any:
+        """ """
+    def SetEnableURLs(self, *args, **kwargs) -> Any:
+        """ """
+    def SetShowURLHint(self, *args, **kwargs) -> Any:
+        """ """
+    def WMNCDestroy(self, *args, **kwargs) -> Any:
+        """ """
+    def WMSetCursor(self, *args, **kwargs) -> Any:
+        """ """
+    def WMPaint(self, *args, **kwargs) -> Any:
+        """ """
+    def WMSetFont(self, *args, **kwargs) -> Any:
+        """ """
+    def WMRButtonUp(self, *args, **kwargs) -> Any:
+        """ """
+    def WMEraseBkgnd(self, *args, **kwargs) -> Any:
+        """ """
+    def WMInitMenuPopup(self, *args, **kwargs) -> Any:
+        """ """
+    def WMUnInitMenuPopup(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateParams(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateWnd(self, *args, **kwargs) -> Any:
+        """ """
+    def DestroyWnd(self, *args, **kwargs) -> Any:
+        """ """
+    def DoUpdateEditMargins(self, *args, **kwargs) -> Any:
+        """ """
+    def UpdateEditMargins(self, *args, **kwargs) -> Any:
+        """ """
+    def RequestSize(self, *args, **kwargs) -> Any:
+        """ """
+    def SelectionChange(self, *args, **kwargs) -> Any:
+        """ """
+    def DoEnableSpellChecking(self, *args, **kwargs) -> Any:
+        """ """
+    def DoLinkClick(self, *args, **kwargs) -> Any:
+        """ """
+    def DoSetMaxLength(self, *args, **kwargs) -> Any:
+        """ """
+    def DoSetShowURLHint(self, *args, **kwargs) -> Any:
+        """ """
+    def GetCaretPos -> Any:
+        """ """
+    def SetCaretPos(self, *args, **kwargs) -> Any:
+        """ """
+    def GetSelLength -> Any:
+        """ """
+    def GetSelStart -> Any:
+        """ """
+    def GetSelText -> Any:
+        """ """
+    def SetSelLength(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSelStart(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSpellChecking(self, *args, **kwargs) -> Any:
+        """ """
+    def SetTransparent(self, *args, **kwargs) -> Any:
+        """ """
+    def DefaultScalingFlags -> Any:
+        """ """
+    HideSelection: bool
+    """ """
+    HideScrollBars: bool
+    """ """
+    Lines: Strings
+    """字符串：包含控件中的各个文本行。
+        使用“行”在控件中逐行操作文本。 Lines 是一个 TStrings 对象，因此 TStrings 方法可用于 Lines 执行操作，例如计算文本行数、添加新行、删除行或用新文本替换行。例如：
+        self.MyRichEdit.Lines.Add(...)
+        要同时处理所有文本，请使用 Text 属性。要操作单行文本，Lines 属性效果更好。
+
+        注意：虽然 Lines 是作为 TStrings 后代实现的，但它没有实现将对象与列表中的字符串关联的支持。"""
+    OnLinkClick: Any
+    """ """
+    OnSaveClipboard: Any
+    """ """
+    OnSelectionChange: Any
+    """ """
+    OnProtectChange: Any
+    """ """
+    OnResizeRequest: Any
+    """ """
+    PlainText: bool
+    """ """
+    SelectionStreamMode: bool
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    def FindText(self, *args, **kwargs) -> int:
+        """ """
+    def RenderRange(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    def procedure RegisterConversionFormat(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSelText(self, *args, **kwargs) -> Any:
+        """ """
+    def SetSelTextToFriendlyURL(self, *args, **kwargs) -> Any:
+        """ """
+    def GetSelTextBuf(self, *args, **kwargs) -> Any:
+        """ """
+    def ShowSpellCheckMenu(self, *args, **kwargs) -> Any:
+        """ """
+    ActiveLineNo: Any
+    """ """
+    DefaultConverter: Any
+    """ """
+    DefAttributes: Any
+    """ """
+    SelAttributes: Any
+    """ """
+    PageRect: Any
+    """ """
+    Paragraph: Any
+    """ """
+    ScrollPosition: Any
+    """ """
+    SpellChecking: bool
+    """ """
+    Transparent: bool
+    """ """
+    EnableURLs: bool
+    """ """
+    ShowURLHint: bool
+    """ """
+    Zoom: int
+    """ """
+
+class RichEdit(CustomRichEdit):
+    """TRichEdit是一个功能丰富的文本编辑控件，它继承自TCustomRichEdit，提供了完整的富文本编辑功能。
+
+    基本特性
+    富文本支持：支持多种字体、颜色、大小、样式（粗体、斜体、下划线等）
+    段落格式：支持对齐方式、缩进、项目符号等段落格式
+    文件操作：可以直接读写RTF格式文件
+    OLE支持：可以嵌入OLE对象
+    打印功能：内置打印支持"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    Align: Any
+    """ """
+    Alignment: Any
+    """ """
+    Anchors: Any
+    """ """
+    BevelEdges: Any
+    """ """
+    BevelInner: Any
+    """ """
+    BevelOuter: Any
+    """ """
+    BevelKind default bkNone: Any
+    """ """
+    BevelWidth: Any
+    """ """
+    BiDiMode: Any
+    """ """
+    BorderStyle: Any
+    """ """
+    BorderWidth: Any
+    """ """
+    Color: Any
+    """ """
+    Ctl3D: Any
+    """ """
+    DragCursor: Any
+    """ """
+    DragKind: Any
+    """ """
+    DragMode: Any
+    """ """
+    EditMargins: Any
+    """ """
+    Enabled: Any
+    """ """
+    EnableURLs: Any
+    """ """
+    Font: Any
+    """ """
+    HideSelection: Any
+    """ """
+    HideScrollBars: Any
+    """ """
+    ImeMode: Any
+    """ """
+    ImeName: Any
+    """ """
+    Constraints: Any
+    """ """
+    Lines: Strings
+    """字符串：包含控件中的各个文本行。
+        使用“行”在控件中逐行操作文本。 Lines 是一个 TStrings 对象，因此 TStrings 方法可用于 Lines 执行操作，例如计算文本行数、添加新行、删除行或用新文本替换行。例如：
+        self.MyRichEdit.Lines.Add(...)
+        要同时处理所有文本，请使用 Text 属性。要操作单行文本，Lines 属性效果更好。
+
+        注意：虽然 Lines 是作为 TStrings 后代实现的，但它没有实现将对象与列表中的字符串关联的支持。"""
+    MaxLength: Any
+    """ """
+    ParentBiDiMode: Any
+    """ """
+    ParentColor: Any
+    """ """
+    ParentCtl3D: Any
+    """ """
+    ParentFont: Any
+    """ """
+    ParentShowHint: Any
+    """ """
+    PlainText: Any
+    """ """
+    SelectionStreamMode: Any
+    """ """
+    PopupMenu: Any
+    """ """
+    ReadOnly: Any
+    """ """
+    ScrollBars: Any
+    """ """
+    ShowHint: Any
+    """ """
+    ShowURLHint: Any
+    """ """
+    SpellChecking: Any
+    """ """
+    TabOrder: Any
+    """ """
+    TabStop default True: Any
+    """ """
+    Touch: Any
+    """ """
+    Transparent: Any
+    """ """
+    Visible: Any
+    """ """
+    WantTabs: Any
+    """ """
+    WantReturns: Any
+    """ """
+    WordWrap: Any
+    """ """
+    StyleElements: Any
+    """ """
+    StyleName: Any
+    """ """
+    Zoom: Any
+    """ """
+    OnChange: Any
+    """ """
+    OnClick: Any
+    """ """
+    OnContextPopup: Any
+    """ """
+    OnDblClick: Any
+    """ """
+    OnDragDrop: Any
+    """ """
+    OnDragOver: Any
+    """ """
+    OnEndDock: Any
+    """ """
+    OnEndDrag: Any
+    """ """
+    OnEnter: Any
+    """ """
+    OnExit: Any
+    """ """
+    OnGesture: Any
+    """ """
+    OnKeyDown: Any
+    """ """
+    OnKeyPress: Any
+    """ """
+    OnKeyUp: Any
+    """ """
+    OnLinkClick: Any
+    """ """
+    OnMouseActivate: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseEnter: Any
+    """ """
+    OnMouseLeave: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnMouseWheel: Any
+    """ """
+    OnMouseWheelDown: Any
+    """ """
+    OnMouseWheelUp: Any
+    """ """
+    OnProtectChange: Any
+    """ """
+    OnResizeRequest: Any
+    """ """
+    OnSaveClipboard: Any
+    """ """
+    OnSelectionChange: Any
+    """ """
+    OnStartDock: Any
+    """ """
+    OnStartDrag: Any
+    """ """
 
 class CustomMemoryStream(Stream):
     """TCustomMemoryStream 是一个抽象基类，用作内存流的共同祖先。
@@ -37228,4 +38623,989 @@ class WebBrowser(OleControl):
     OnWebWorkerFinsihed: Any
     """ """
     OnShowScriptError: Any
+    """ """
+
+class DataSet(Component):
+    """TDataSet是数据库编程的核心抽象基类，它为各种数据访问提供了统一的接口和功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def ActiveBuffer -> Any:
+        """ """
+    def Append(self, *args, **kwargs) -> Any:
+        """ """
+    def AppendRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def BookmarkValid(self, *args, **kwargs) -> Any:
+        """ """
+    def Cancel(self, *args, **kwargs) -> Any:
+        """ """
+    def CheckBrowseMode(self, *args, **kwargs) -> Any:
+        """ """
+    def ClearFields(self, *args, **kwargs) -> Any:
+        """ """
+    def Close(self, *args, **kwargs) -> Any:
+        """ """
+    def  ControlsDisabled -> Any:
+        """ """
+    def CompareBookmarks(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateBlobStream(self, *args, **kwargs) -> Any:
+        """ """
+    def CursorPosChanged(self, *args, **kwargs) -> Any:
+        """ """
+    def Delete(self, *args, **kwargs) -> Any:
+        """ """
+    def DisableControls(self, *args, **kwargs) -> Any:
+        """ """
+    def Edit(self, *args, **kwargs) -> Any:
+        """ """
+    def EnableControls(self, *args, **kwargs) -> Any:
+        """ """
+    def FieldByName(self, *args, **kwargs) -> Any:
+        """ """
+    def FindField(self, *args, **kwargs) -> Any:
+        """ """
+    def FindFirst -> bool:
+        """ """
+    def FindLast -> bool:
+        """ """
+    def FindNext -> bool:
+        """ """
+    def FindPrior -> bool:
+        """ """
+    def First(self, *args, **kwargs) -> Any:
+        """ """
+    def FreeBookmark(self, *args, **kwargs) -> Any:
+        """ """
+    def GetBookmark -> Any:
+        """ """
+    def GetClonedDataSet(self, *args, **kwargs) -> Any:
+        """ """
+    def GetCurrentRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def GetDetailDataSets(self, *args, **kwargs) -> Any:
+        """ """
+    def GetDetailLinkFields(self, *args, **kwargs) -> Any:
+        """ """
+    def GetBlobFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldList(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldNames(self, *args, **kwargs) -> Any:
+        """ """
+    def GotoBookmark(self, *args, **kwargs) -> Any:
+        """ """
+    def Insert(self, *args, **kwargs) -> Any:
+        """ """
+    def InsertRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def IsEmpty -> Any:
+        """ """
+    def IsLinkedTo(self, *args, **kwargs) -> bool:
+        """ """
+    def IsSequenced -> Any:
+        """ """
+    def Last(self, *args, **kwargs) -> Any:
+        """ """
+    def Locate(self, *args, **kwargs) -> Any:
+        """ """
+    def Lookup(self, *args, **kwargs) -> Any:
+        """ """
+    def MoveBy(self, *args, **kwargs) -> Any:
+        """ """
+    def Next(self, *args, **kwargs) -> Any:
+        """ """
+    def Open(self, *args, **kwargs) -> Any:
+        """ """
+    def Post(self, *args, **kwargs) -> Any:
+        """ """
+    def Prior(self, *args, **kwargs) -> Any:
+        """ """
+    def Refresh(self, *args, **kwargs) -> Any:
+        """ """
+    def Resync(self, *args, **kwargs) -> Any:
+        """ """
+    def SetFields(self, *args, **kwargs) -> Any:
+        """ """
+    def CopyFields(self, *args, **kwargs) -> int:
+        """ """
+    def UpdateCursorPos(self, *args, **kwargs) -> Any:
+        """ """
+    def UpdateRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def UpdateStatus -> Any:
+        """ """
+    AggFields: Any
+    """ """
+    Bof: bool
+    """ """
+    Bookmark: Any
+    """ """
+    CanModify: bool
+    """ """
+    CanRefresh: bool
+    """ """
+    DataSetField: Any
+    """ """
+    DataSource: Any
+    """ """
+    def DefaultFields -> Any:
+        """ """
+    Designer: Any
+    """ """
+    Eof: bool
+    """ """
+    BlockReadSize: int
+    """ """
+    FieldCount: int
+    """ """
+    FieldDefs: Any
+    """ """
+    FieldDefList: Any
+    """ """
+    Fields: Any
+    """ """
+    FieldList: Any
+    """ """
+    FieldValues: Any
+    """ """
+    Found: bool
+    """ """
+    IsUniDirectional: bool
+    """ """
+    Modified: bool
+    """ """
+    ObjectView: bool
+    """ """
+    StoredFieldKinds: Any
+    """ """
+    RecordCount: int
+    """ """
+    RecNo: int
+    """ """
+    RecordSize: Any
+    """ """
+    SparseArrays: bool
+    """ """
+    State: Any
+    """ """
+    Filter: str
+    """ """
+    Filtered: bool
+    """ """
+    FilterOptions: Any
+    """ """
+    Active: bool
+    """ """
+    AutoCalcFields: bool
+    """ """
+    BeforeOpen: Any
+    """ """
+    AfterOpen: Any
+    """ """
+    BeforeClose: Any
+    """ """
+    AfterClose: Any
+    """ """
+    BeforeInsert: Any
+    """ """
+    AfterInsert: Any
+    """ """
+    BeforeEdit: Any
+    """ """
+    AfterEdit: Any
+    """ """
+    BeforePost: Any
+    """ """
+    AfterPost: Any
+    """ """
+    BeforeCancel: Any
+    """ """
+    AfterCancel: Any
+    """ """
+    BeforeDelete: Any
+    """ """
+    AfterDelete: Any
+    """ """
+    BeforeScroll: Any
+    """ """
+    AfterScroll: Any
+    """ """
+    BeforeRefresh: Any
+    """ """
+    AfterRefresh: Any
+    """ """
+    OnCalcFields: Any
+    """ """
+    OnDeleteError: Any
+    """ """
+    OnEditError: Any
+    """ """
+    OnFilterRecord: Any
+    """ """
+    OnNewRecord: Any
+    """ """
+    OnPostError: Any
+    """ """
+
+class CustomClientDataSet(DataSet):
+    """TCustomClientDataSet是ClientDataSet组件的基类，它是一个功能强大的内存数据集组件，提供了不依赖于物理数据库的本地数据存储和处理能力。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    PersistDataPacket: Any
+    """ """
+    Active: Any
+    """ """
+    DataSetField: Any
+    """ """
+    ProviderName: str
+    """ """
+    FileName: str
+    """ """
+    ConnectionBroker: Any
+    """ """
+    IndexFieldNames: str
+    """ """
+    MasterFields: str
+    """ """
+    PacketRecords: int
+    """ """
+    RemoteServer: Any
+    """ """
+    def AddIndex(self, *args, **kwargs) -> Any:
+        """ """
+    def AppendData(self, *args, **kwargs) -> Any:
+        """ """
+    def ApplyRange(self, *args, **kwargs) -> Any:
+        """ """
+    def ApplyUpdates(self, *args, **kwargs) -> Any:
+        """ """
+    def BookmarkValid(self, *args, **kwargs) -> Any:
+        """ """
+    def Cancel(self, *args, **kwargs) -> Any:
+        """ """
+    def CancelRange(self, *args, **kwargs) -> Any:
+        """ """
+    def CancelUpdates(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateBlobStream(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateDataSet(self, *args, **kwargs) -> Any:
+        """ """
+    def CloneCursor(self, *args, **kwargs) -> Any:
+        """ """
+    def GetClonedDataSet(self, *args, **kwargs) -> Any:
+        """ """
+    def CompareBookmarks(self, *args, **kwargs) -> Any:
+        """ """
+    def ConstraintsDisabled -> bool:
+        """ """
+    def DataRequest(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteIndex(self, *args, **kwargs) -> Any:
+        """ """
+    def DisableConstraints(self, *args, **kwargs) -> Any:
+        """ """
+    def EnableConstraints(self, *args, **kwargs) -> Any:
+        """ """
+    def EditKey(self, *args, **kwargs) -> Any:
+        """ """
+    def EditRangeEnd(self, *args, **kwargs) -> Any:
+        """ """
+    def EditRangeStart(self, *args, **kwargs) -> Any:
+        """ """
+    def EmptyDataSet(self, *args, **kwargs) -> Any:
+        """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    def FetchBlobs(self, *args, **kwargs) -> Any:
+        """ """
+    def FetchDetails(self, *args, **kwargs) -> Any:
+        """ """
+    def RefreshRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def FetchParams(self, *args, **kwargs) -> Any:
+        """ """
+    def FindKey(self, *args, **kwargs) -> Any:
+        """ """
+    def FindNearest(self, *args, **kwargs) -> Any:
+        """ """
+    def GetCurrentRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def GetDetailLinkFields(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetFieldData(self, *args, **kwargs) -> Any:
+        """ """
+    def GetGroupState(self, *args, **kwargs) -> Any:
+        """ """
+    def GetIndexInfo(self, *args, **kwargs) -> Any:
+        """ """
+    def GetIndexNames(self, *args, **kwargs) -> Any:
+        """ """
+    def GetNextPacket -> Any:
+        """ """
+    def GetOptionalParam(self, *args, **kwargs) -> Any:
+        """ """
+    def GotoCurrent(self, *args, **kwargs) -> Any:
+        """ """
+    def GotoKey -> bool:
+        """ """
+    def GotoNearest(self, *args, **kwargs) -> Any:
+        """ """
+    HasAppServer: bool
+    """ """
+    def Locate(self, *args, **kwargs) -> Any:
+        """ """
+    def Lookup(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromFile(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromStream(self, *args, **kwargs) -> Any:
+        """ """
+    def MergeChangeLog(self, *args, **kwargs) -> Any:
+        """ """
+    def ParamByName(self, *args, **kwargs) -> Any:
+        """ """
+    def Post(self, *args, **kwargs) -> Any:
+        """ """
+    def Reconcile(self, *args, **kwargs) -> bool:
+        """ """
+    def RevertRecord(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToFile(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def SetKey(self, *args, **kwargs) -> Any:
+        """ """
+    def SetOptionalParam(self, *args, **kwargs) -> Any:
+        """ """
+    def SetProvider(self, *args, **kwargs) -> Any:
+        """ """
+    def SetRange(self, *args, **kwargs) -> Any:
+        """ """
+    def SetRangeEnd(self, *args, **kwargs) -> Any:
+        """ """
+    def SetRangeStart(self, *args, **kwargs) -> Any:
+        """ """
+    def UndoLastChange(self, *args, **kwargs) -> bool:
+        """ """
+    def UpdateStatus -> Any:
+        """ """
+    ActiveAggs: Any
+    """ """
+    ChangeCount: Any
+    """ """
+    UpdatesPending: bool
+    """ """
+    CloneSource: Any
+    """ """
+    Data: Any
+    """ """
+    XMLData: str
+    """ """
+    AppServer: Any
+    """ """
+    DataSize: int
+    """ """
+    Delta: Any
+    """ """
+    GroupingLevel: int
+    """ """
+    IndexFieldCount: int
+    """ """
+    IndexFields: Any
+    """ """
+    KeyExclusive: bool
+    """ """
+    KeyFieldCount: int
+    """ """
+    KeySize: Any
+    """ """
+    LogChanges: bool
+    """ """
+    SavePoint: Any
+    """ """
+    StatusFilter: Any
+    """ """
+    Ranged: bool
+    """ """
+
+class ClientDataSet(CustomClientDataSet):
+    """TClientDataSet是一个非常重要的内存数据集组件，它提供了强大的客户端数据处理能力。"""
+    PersistDataPacket: Any
+    """ """
+    Active: Any
+    """ """
+    Aggregates: Any
+    """ """
+    AggregatesActive: Any
+    """ """
+    AutoCalcFields: Any
+    """ """
+    CommandText: Any
+    """ """
+    ConnectionBroker: Any
+    """ """
+    Constraints: Any
+    """ """
+    DataSetField: Any
+    """ """
+    DisableStringTrim: Any
+    """ """
+    FieldOptions: Any
+    """ """
+    FileName: Any
+    """ """
+    Filter: Any
+    """ """
+    Filtered: Any
+    """ """
+    FilterOptions: Any
+    """ """
+    FieldDefs: Any
+    """ """
+    IncludeBlobsInDelta: Any
+    """ """
+    IndexDefs: Any
+    """ """
+    IndexFieldNames: Any
+    """ """
+    IndexName: Any
+    """ """
+    FetchOnDemand: Any
+    """ """
+    MasterFields: Any
+    """ """
+    MasterSource: Any
+    """ """
+    ObjectView: Any
+    """ """
+    PacketRecords: Any
+    """ """
+    Params: Any
+    """ """
+    ProviderName: Any
+    """ """
+    ReadOnly: Any
+    """ """
+    RemoteServer: Any
+    """ """
+    StoreDefs: Any
+    """ """
+    BeforeOpen: Any
+    """ """
+    AfterOpen: Any
+    """ """
+    BeforeClose: Any
+    """ """
+    AfterClose: Any
+    """ """
+    BeforeInsert: Any
+    """ """
+    AfterInsert: Any
+    """ """
+    BeforeEdit: Any
+    """ """
+    AfterEdit: Any
+    """ """
+    BeforePost: Any
+    """ """
+    AfterPost: Any
+    """ """
+    BeforeCancel: Any
+    """ """
+    AfterCancel: Any
+    """ """
+    BeforeDelete: Any
+    """ """
+    AfterDelete: Any
+    """ """
+    BeforeScroll: Any
+    """ """
+    AfterScroll: Any
+    """ """
+    BeforeRefresh: Any
+    """ """
+    AfterRefresh: Any
+    """ """
+    OnCalcFields: Any
+    """ """
+    OnDeleteError: Any
+    """ """
+    OnEditError: Any
+    """ """
+    OnFilterRecord: Any
+    """ """
+    OnNewRecord: Any
+    """ """
+    OnPostError: Any
+    """ """
+    OnReconcileError: Any
+    """ """
+    BeforeApplyUpdates: Any
+    """ """
+    AfterApplyUpdates: Any
+    """ """
+    BeforeGetRecords: Any
+    """ """
+    AfterGetRecords: Any
+    """ """
+    BeforeRowRequest: Any
+    """ """
+    AfterRowRequest: Any
+    """ """
+    BeforeExecute: Any
+    """ """
+    AfterExecute: Any
+    """ """
+    BeforeGetParams: Any
+    """ """
+    AfterGetParams: Any
+    """ """
+
+class DataSource(Component):
+    """TDataSource是数据库应用程序中的关键组件，它充当数据桥梁的角色，连接数据集组件(TDataSet及其派生类)和数据感知控件(如TDBGrid、TDBEdit等)。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Edit(self, *args, **kwargs) -> Any:
+        """ """
+    def IsLinkedTo(self, *args, **kwargs) -> bool:
+        """ """
+    State: Any
+    """ """
+    AutoEdit: bool
+    """ """
+    DataSet: Any
+    """ """
+    Enabled: bool
+    """ """
+    OnStateChange: Any
+    """ """
+    OnDataChange: Any
+    """ """
+    OnUpdateData: Any
+    """ """
+
+class CustomProvider(Component):
+    """TCustomProvider是数据访问架构中的一个抽象基类，它为数据提供者(Provider)组件定义了基本行为和接口，主要用于多层数据库应用中的数据交换。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def ApplyUpdates(self, *args, **kwargs) -> Any:
+        """ """
+    def ApplyUpdates(self, *args, **kwargs) -> Any:
+        """ """
+    def GetRecords(self, *args, **kwargs) -> Any:
+        """ """
+    def GetRecords(self, *args, **kwargs) -> Any:
+        """ """
+    def RowRequest(self, *args, **kwargs) -> Any:
+        """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    def GetParams(self, *args, **kwargs) -> Any:
+        """ """
+    def DataRequest(self, *args, **kwargs) -> Any:
+        """ """
+    Data: Any
+    """ """
+    Exported: bool
+    """ """
+
+class BaseProvider(CustomProvider):
+    """TBaseProvider是数据库架构中的一个重要基类，它为数据提供者(Provider)组件提供了核心功能，主要用于多层数据库应用中的数据交换和远程数据访问。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    Resolver: Any
+    """ """
+    Options: Any
+    """ """
+    UpdateMode: Any
+    """ """
+    OnDataRequest: Any
+    """ """
+    OnGetData: Any
+    """ """
+    OnUpdateData: Any
+    """ """
+    OnUpdateError: Any
+    """ """
+    BeforeUpdateRecord: Any
+    """ """
+    AfterUpdateRecord: Any
+    """ """
+    BeforeCommit: Any
+    """ """
+
+class DataSetProvider(BaseProvider):
+    """TDataSetProvider是多层数据库架构中的核心组件，主要负责在客户端和服务器之间协调数据交换，是实现分布式应用的关键组件之一。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    ActiveUpdateException: Any
+    """ """
+    OwnerData: Any
+    """ """
+    Params: Any
+    """ """
+    DataSet: Any
+    """ """
+    Constraints: bool
+    """ """
+    ResolveToDataSet: bool
+    """ """
+    Exported: Any
+    """ """
+    Options: Any
+    """ """
+    UpdateMode: Any
+    """ """
+    OnDataRequest: Any
+    """ """
+    OnGetData: Any
+    """ """
+    OnUpdateData: Any
+    """ """
+    OnUpdateError: Any
+    """ """
+    AfterUpdateRecord: Any
+    """ """
+    BeforeUpdateRecord: Any
+    """ """
+    OnValidate: Any
+    """ """
+    BeforeApplyUpdates: Any
+    """ """
+    AfterApplyUpdates: Any
+    """ """
+    BeforeGetRecords: Any
+    """ """
+    AfterGetRecords: Any
+    """ """
+    BeforeRowRequest: Any
+    """ """
+    AfterRowRequest: Any
+    """ """
+    BeforeExecute: Any
+    """ """
+    AfterExecute: Any
+    """ """
+    BeforeGetParams: Any
+    """ """
+    AfterGetParams: Any
+    """ """
+    OnGetTableName: Any
+    """ """
+    OnGetDataSetProperties: Any
+    """ """
+    BeforeCommit: Any
+    """ """
+
+class CustomDBGrid(CustomGrid):
+    """TCustomDBGrid是DBGrid组件的基类，它是一个抽象类，为数据感知网格控件提供了基础框架和核心功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def DefaultDrawDataCell(self, *args, **kwargs) -> Any:
+        """ """
+    def DefaultDrawColumnCell(self, *args, **kwargs) -> Any:
+        """ """
+    def DefaultHandler(self, *args, **kwargs) -> Any:
+        """ """
+    def ExecuteAction(self, *args, **kwargs) -> Any:
+        """ """
+    def ShowPopupEditor(self, *args, **kwargs) -> Any:
+        """ """
+    def UpdateAction(self, *args, **kwargs) -> Any:
+        """ """
+    def ValidFieldIndex(self, *args, **kwargs) -> bool:
+        """ """
+    EditorMode: Any
+    """ """
+    FieldCount: int
+    """ """
+    Fields: Any
+    """ """
+    SelectedField: Any
+    """ """
+    SelectedIndex: int
+    """ """
+    DataSource: Any
+    """ """
+
+class DBGrid(CustomDBGrid):
+    """TDBGrid是最重要的数据感知控件之一，它提供了一个表格形式的界面来显示和编辑数据库中的数据。"""
+    Canvas: Any
+    """ """
+    SelectedRows: Any
+    """ """
+    Align: Any
+    """ """
+    Anchors: Any
+    """ """
+    BiDiMode: Any
+    """ """
+    BorderStyle: Any
+    """ """
+    Color: Any
+    """ """
+    Columns: Any
+    """ """
+    Constraints: Any
+    """ """
+    Ctl3D: Any
+    """ """
+    DataSource: Any
+    """ """
+    DefaultDrawing: Any
+    """ """
+    DragCursor: Any
+    """ """
+    DragKind: Any
+    """ """
+    DragMode: Any
+    """ """
+    DrawingStyle: Any
+    """ """
+    Enabled: Any
+    """ """
+    FixedColor: Any
+    """ """
+    GradientEndColor: Any
+    """ """
+    GradientStartColor: Any
+    """ """
+    Font: Any
+    """ """
+    ImeMode: Any
+    """ """
+    ImeName: Any
+    """ """
+    Options: Any
+    """ """
+    ParentBiDiMode: Any
+    """ """
+    ParentColor: Any
+    """ """
+    ParentCtl3D: Any
+    """ """
+    ParentFont: Any
+    """ """
+    ParentShowHint: Any
+    """ """
+    PopupMenu: Any
+    """ """
+    ReadOnly: Any
+    """ """
+    ShowHint: Any
+    """ """
+    TabOrder: Any
+    """ """
+    TabStop: Any
+    """ """
+    TitleFont: Any
+    """ """
+    Touch: Any
+    """ """
+    Visible: Any
+    """ """
+    StyleElements: Any
+    """ """
+    StyleName: Any
+    """ """
+    OnCellClick: Any
+    """ """
+    OnColEnter: Any
+    """ """
+    OnColExit: Any
+    """ """
+    OnColumnMoved: Any
+    """ """
+    OnDrawDataCell: Any
+    """ """
+    OnDrawColumnCell: Any
+    """ """
+    OnDblClick: Any
+    """ """
+    OnDragDrop: Any
+    """ """
+    OnDragOver: Any
+    """ """
+    OnEditButtonClick: Any
+    """ """
+    OnEndDock: Any
+    """ """
+    OnEndDrag: Any
+    """ """
+    OnEnter: Any
+    """ """
+    OnExit: Any
+    """ """
+    OnGesture: Any
+    """ """
+    OnKeyDown: Any
+    """ """
+    OnKeyPress: Any
+    """ """
+    OnKeyUp: Any
+    """ """
+    OnMouseActivate: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseEnter: Any
+    """ """
+    OnMouseLeave: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnMouseWheel: Any
+    """ """
+    OnMouseWheelDown: Any
+    """ """
+    OnMouseWheelUp: Any
+    """ """
+    OnStartDock: Any
+    """ """
+    OnStartDrag: Any
+    """ """
+    OnTitleClick: Any
+    """ """
+
+class EduStringGrid(StringGrid):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def InAllMerge(self, *args, **kwargs) -> int:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    def InsertRow(self, *args, **kwargs) -> Any:
+        """ """
+    def InsertColumn(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteRow(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteColumn(self, *args, **kwargs) -> Any:
+        """ """
+    def MoveTo(self, *args, **kwargs) -> Any:
+        """ """
+    def MoveRow(self, *args, **kwargs) -> Any:
+        """ """
+    def MoveColumn(self, *args, **kwargs) -> Any:
+        """ """
+    def SwapRows(self, *args, **kwargs) -> Any:
+        """ """
+    def SwapColumns(self, *args, **kwargs) -> Any:
+        """ """
+    def InitializeFormatOptions(self, *args, **kwargs) -> Any:
+        """ """
+    def AutoSizeCol(self, *args, **kwargs) -> Any:
+        """ """
+    def AutoSizeColumns(self, *args, **kwargs) -> Any:
+        """ """
+    def SortByColumn(self, *args, **kwargs) -> Any:
+        """ """
+    def DoSort(self, *args, **kwargs) -> Any:
+        """ """
+    def IsCell(self, *args, **kwargs) -> bool:
+        """ """
+    def LoadFromFile(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToFile(self, *args, **kwargs) -> Any:
+        """ """
+    def GetCellDrawState(self, *args, **kwargs) -> Any:
+        """ """
+    def SetViewCol(self, *args, **kwargs) -> Any:
+        """ """
+    def DoGoto(self, *args, **kwargs) -> Any:
+        """ """
+    def MergeCells(self, *args, **kwargs) -> Any:
+        """ """
+    def MergeClear(self, *args, **kwargs) -> Any:
+        """ """
+    def PrintSetup(self, *args, **kwargs) -> Any:
+        """ """
+    def Preview(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    BevelStyle : Any
+    """ """
+    BlockName: str
+    """ """
+    AlignmentVert: Any
+    """ """
+    AlignmentHorz: Any
+    """ """
+    ClickSorting: bool
+    """ """
+    ClickDown: bool
+    """ """
+    CustomDrawCell: bool
+    """ """
+    ProportionalScrollBars: bool
+    """ """
+    ExtendedKeys: bool
+    """ """
+    MultiLines : bool
+    """ """
+    OnGetCellFormat: Any
+    """ """
+    OnClickSort: Any
+    """ """
+    OnRowInsert: Any
+    """ """
+    OnRowDelete: Any
+    """ """
+    OnColumnInsert: Any
+    """ """
+    OnColumnDelete: Any
+    """ """
+    OnColumnWidthsChanged: Any
+    """ """
+    OnRowHeightsChanged: Any
+    """ """
+    OnSizeChanged: Any
+    """ """
+    OnBeginSort: Any
+    """ """
+    OnEndSort: Any
+    """ """
+
+class LedgerGrid(StringGrid):
+    """ """
+    Canvas: Any
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    DigitalNumber: int
+    """ """
+    AutoSize: bool
+    """ """
+    Version: str
     """ """

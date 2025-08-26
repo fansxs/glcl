@@ -1,4 +1,4 @@
-(**************************************************************************)
+
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -6,6 +6,7 @@
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
+(*  Core developer:      fansxs (admin@gliste.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)
@@ -439,6 +440,17 @@ begin
   {$ENDIF MSWINDOWS}
   {$WARN SYMBOL_PLATFORM ON}
   APyDelphiWrapper.DefineVar('fmShareDenyNone', fmShareDenyNone);
+
+  APyDelphiWrapper.DefineVar('taLeftJustify', taLeftJustify);
+  APyDelphiWrapper.DefineVar('taRightJustify', taRightJustify);
+  APyDelphiWrapper.DefineVar('taCenter', taCenter);
+  APyDelphiWrapper.DefineVar('bdLeftToRight', bdLeftToRight);
+  APyDelphiWrapper.DefineVar('bdRightToLeft', bdRightToLeft);
+  APyDelphiWrapper.DefineVar('bdRightToLeftNoAlign', bdRightToLeftNoAlign);
+  APyDelphiWrapper.DefineVar('bdRightToLeftReadingOnly', bdRightToLeftReadingOnly);
+  APyDelphiWrapper.DefineVar('taAlignTop', taAlignTop);
+  APyDelphiWrapper.DefineVar('taAlignBottom', taAlignBottom);
+  APyDelphiWrapper.DefineVar('taVerticalCenter', taVerticalCenter);
 end;
 
 function TClassesRegistration.Name: string;

@@ -1,4 +1,4 @@
-(**************************************************************************)
+
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -23,7 +23,8 @@ uses
   PythonEngine, WrapDelphi,
   WrapDelphiClasses,
   WrapActions,
-  Vcl.ActnList;
+  Vcl.ActnList,
+  Vcl.StdActns;
 
 type
   {

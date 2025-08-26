@@ -1,4 +1,4 @@
-(**************************************************************************)
+
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)

@@ -6,7 +6,6 @@
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
-(*  Core developer:      fansxs (admin@gliste.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)
@@ -275,6 +274,7 @@ type
     property DelphiObject: TCanvas read GetDelphiObject write SetDelphiObject;
   end;
 
+
 implementation
 
 uses
@@ -358,7 +358,7 @@ begin
 
   APyDelphiWrapper.DefineVar('fsSurface', 'fsSurface');
   APyDelphiWrapper.DefineVar('fsBorder', 'fsBorder');
-
+  
   APyDelphiWrapper.DefineVar('tfBottom', 'tfBottom');
   APyDelphiWrapper.DefineVar('tfCalcRect', 'tfCalcRect');
   APyDelphiWrapper.DefineVar('tfCenter', 'tfCenter');
@@ -530,7 +530,7 @@ begin
   Adjust(@Self);
   with GetPythonEngine do begin
     _oStream := nil;
-    if (PyArg_ParseTuple( args, 'O:LoadFromStream',@_oStream ) <> 0) and
+    if (PyArg_ParseTuple( args, 'O:LoadFromStrea',@_oStream ) <> 0) and
        CheckObjAttribute(_oStream, 'Stream', TStream, _obj) then
     begin
       _stream := TStream(_obj);
@@ -566,23 +566,23 @@ end;
 class procedure TPyDelphiGraphic.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('LoadFromFile', @TPyDelphiGraphic.LoadFromFile_Wrapper,
-    PAnsiChar('TGraphic.LoadFromFile()'#10 +
-    ''));
+    'TGraphic.LoadFromFile()'#10 +
+    '');
   PythonType.AddMethod('SaveToFile', @TPyDelphiGraphic.SaveToFile_Wrapper,
-    PAnsiChar('TGraphic.SaveToFile()'#10 +
-    ''));
+    'TGraphic.SaveToFile()'#10 +
+    '');
   PythonType.AddMethod('LoadFromStream', @TPyDelphiGraphic.LoadFromStream_Wrapper,
-    PAnsiChar('TGraphic.LoadFromStream()'#10 +
-    ''));
+    'TGraphic.LoadFromStream()'#10 +
+    '');
   PythonType.AddMethod('SaveToStream', @TPyDelphiGraphic.SaveToStream_Wrapper,
-    PAnsiChar('TGraphic.SaveToStream()'#10 +
-    ''));
+    'TGraphic.SaveToStream()'#10 +
+    '');
   PythonType.AddMethod('LoadFromClipboardFormat', @TPyDelphiGraphic.LoadFromClipboardFormat_Wrapper,
-    PAnsiChar('TGraphic.LoadFromClipboardFormat()'#10 +
-    ''));
+    'TGraphic.LoadFromClipboardFormat()'#10 +
+    '');
   PythonType.AddMethod('SaveToClipboardFormat', @TPyDelphiGraphic.SaveToClipboardFormat_Wrapper,
-    PAnsiChar('TGraphic.SaveToClipboardFormat()'#10 +
-    ''));
+    'TGraphic.SaveToClipboardFormat()'#10 +
+    '');
 end;
 
 function TPyDelphiGraphic.SaveToClipboardFormat_Wrapper(
@@ -645,7 +645,7 @@ begin
   Adjust(@Self);
   with GetPythonEngine do begin
     _oStream := nil;
-    if (PyArg_ParseTuple( args, 'O:SaveToStream', @_oStream ) <> 0) and
+    if (PyArg_ParseTuple( args, 'O:SaveToStream',@_oStream ) <> 0) and
        CheckObjAttribute(_oStream, 'Stream', TStream, _obj) then
     begin
       _stream := TStream(_obj);
@@ -987,30 +987,30 @@ class procedure TPyDelphiBitmap.RegisterMethods(PythonType: TPythonType);
 begin
   {$IFNDEF FPC}
   PythonType.AddMethod('Dormant', @TPyDelphiBitmap.Dormant_Wrapper,
-    PAnsiChar('TBitmap.Dormant()'#10 +
-    ''));
+    'TBitmap.Dormant()'#10 +
+    '');
   {$ENDIF FPC}
   PythonType.AddMethod('FreeImage', @TPyDelphiBitmap.FreeImage_Wrapper,
-    PAnsiChar('TBitmap.FreeImage()'#10 +
-    ''));
+    'TBitmap.FreeImage()'#10 +
+    '');
   PythonType.AddMethod('LoadFromResourceName', @TPyDelphiBitmap.LoadFromResourceName_Wrapper,
-    PAnsiChar('TBitmap.LoadFromResourceName()'#10 +
-    ''));
+    'TBitmap.LoadFromResourceName()'#10 +
+    '');
   PythonType.AddMethod('LoadFromResourceID', @TPyDelphiBitmap.LoadFromResourceID_Wrapper,
-    PAnsiChar('TBitmap.LoadFromResourceID()'#10 +
-    ''));
+    'TBitmap.LoadFromResourceID()'#10 +
+    '');
   PythonType.AddMethod('Mask', @TPyDelphiBitmap.Mask_Wrapper,
-    PAnsiChar('TBitmap.Mask()'#10 +
-    ''));
+    'TBitmap.Mask()'#10 +
+    '');
   PythonType.AddMethod('ReleaseHandle', @TPyDelphiBitmap.ReleaseHandle_Wrapper,
-    PAnsiChar('TBitmap.ReleaseHandle()'#10 +
-    ''));
+    'TBitmap.ReleaseHandle()'#10 +
+    '');
   PythonType.AddMethod('ReleaseMaskHandle', @TPyDelphiBitmap.ReleaseMaskHandle_Wrapper,
-    PAnsiChar('TBitmap.ReleaseMaskHandle()'#10 +
-    ''));
+    'TBitmap.ReleaseMaskHandle()'#10 +
+    '');
   PythonType.AddMethod('ReleasePalette', @TPyDelphiBitmap.ReleasePalette_Wrapper,
-    PAnsiChar('TBitmap.ReleasePalette()'#10 +
-    ''));
+    'TBitmap.ReleasePalette()'#10 +
+    '');
 end;
 
 function TPyDelphiBitmap.ReleaseHandle_Wrapper(args: PPyObject): PPyObject;
@@ -1092,7 +1092,7 @@ begin
     else
     begin
       with GetPythonEngine do
-        PyErr_SetString (PyExc_AttributeError^, PAnsiChar(AnsiString(Format('Unknown THandleType value "%s"', [_value]))));
+        PyErr_SetString(PyExc_AttributeError^, PAnsiChar(EncodeString(Format('Unknown THandleType value "%s"', [_value]))));
       Result := -1;
       Exit;
     end;
@@ -1178,7 +1178,7 @@ begin
         DelphiObject.PixelFormat := pfCustom
       else
       begin
-        PyErr_SetString (PyExc_AttributeError^, PAnsiChar(AnsiString(Format('Unknown TPixelFormat value "%s"', [_value]))));
+        PyErr_SetString(PyExc_AttributeError^, PAnsiChar(EncodeString(Format('Unknown TPixelFormat value "%s"', [_value]))));
         Result := -1;
         Exit;
       end;
@@ -1219,7 +1219,7 @@ begin
     else
     begin
       with GetPythonEngine do
-        PyErr_SetString (PyExc_AttributeError^, PAnsiChar(AnsiString(Format('Unknown TTransparentMode value "%s"', [_value]))));
+        PyErr_SetString(PyExc_AttributeError^, PAnsiChar(EncodeString(Format('Unknown TTransparentMode value "%s"', [_value]))));
       Result := -1;
       Exit;
     end;
@@ -1650,7 +1650,7 @@ begin
       else
       begin
         Result := nil;
-        PyErr_SetString (PyExc_AttributeError^, 'PolyBezier accepts only a sequence of points as single parameter');
+        PyErr_SetString(PyExc_AttributeError^, 'PolyBezier accepts only a sequence of points as single parameter');
       end;
     end
     else
@@ -1697,7 +1697,7 @@ begin
       else
       begin
         Result := nil;
-        PyErr_SetString (PyExc_AttributeError^, 'PolyBezierTo accepts only a sequence of points as single parameter');
+        PyErr_SetString(PyExc_AttributeError^, 'PolyBezierTo accepts only a sequence of points as single parameter');
       end;
     end
     else
@@ -1744,7 +1744,7 @@ begin
       else
       begin
         Result := nil;
-        PyErr_SetString (PyExc_AttributeError^, 'Polygon accepts only a sequence of points as single parameter');
+        PyErr_SetString(PyExc_AttributeError^, 'Polygon accepts only a sequence of points as single parameter');
       end;
     end
     else
@@ -1790,7 +1790,7 @@ begin
       else
       begin
         Result := nil;
-        PyErr_SetString (PyExc_AttributeError^, 'Polyline accepts only a sequence of points as single parameter');
+        PyErr_SetString(PyExc_AttributeError^, 'Polyline accepts only a sequence of points as single parameter');
       end;
     end
     else
@@ -1862,104 +1862,104 @@ end;
 class procedure TPyDelphiCanvas.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('Arc', @TPyDelphiCanvas.Arc_Wrapper,
-    PAnsiChar('TCanvas.Arc()'#10 +
-    ''));
+    'TCanvas.Arc()'#10 +
+    '');
   {$IFNDEF FPC}
   PythonType.AddMethod('BrushCopy', @TPyDelphiCanvas.BrushCopy_Wrapper,
-    PAnsiChar('TCanvas.BrushCopy()'#10 +
-    ''));
+    'TCanvas.BrushCopy()'#10 +
+    '');
   {$ENDIF FPC}
   PythonType.AddMethod('Chord', @TPyDelphiCanvas.Chord_Wrapper,
-    PAnsiChar('TCanvas.Chord()'#10 +
-    ''));
+    'TCanvas.Chord()'#10 +
+    '');
   PythonType.AddMethod('CopyRect', @TPyDelphiCanvas.CopyRect_Wrapper,
-    PAnsiChar('TCanvas.CopyRect()'#10 +
-    ''));
+    'TCanvas.CopyRect()'#10 +
+    '');
   PythonType.AddMethod('Draw', @TPyDelphiCanvas.Draw_Wrapper,
-    PAnsiChar('TCanvas.Draw()'#10 +
-    ''));
+    'TCanvas.Draw()'#10 +
+    '');
   PythonType.AddMethod('DrawFocusRect', @TPyDelphiCanvas.DrawFocusRect_Wrapper,
-    PAnsiChar('TCanvas.DrawFocusRect()'#10 +
-    ''));
+    'TCanvas.DrawFocusRect()'#10 +
+    '');
   PythonType.AddMethod('Ellipse', @TPyDelphiCanvas.Ellipse_Wrapper,
-    PAnsiChar('TCanvas.Ellipse()'#10 +
-    ''));
+    'TCanvas.Ellipse()'#10 +
+    '');
   PythonType.AddMethod('FillRect', @TPyDelphiCanvas.FillRect_Wrapper,
-    PAnsiChar('TCanvas.FillRect()'#10 +
-    ''));
+    'TCanvas.FillRect()'#10 +
+    '');
   PythonType.AddMethod('FloodFill', @TPyDelphiCanvas.FloodFill_Wrapper,
-    PAnsiChar('TCanvas.FloodFill()'#10 +
-    ''));
+    'TCanvas.FloodFill()'#10 +
+    '');
   PythonType.AddMethod('FrameRect', @TPyDelphiCanvas.FrameRect_Wrapper,
-    PAnsiChar('TCanvas.FrameRect()'#10 +
-    ''));
+    'TCanvas.FrameRect()'#10 +
+    '');
   PythonType.AddMethod('LineTo', @TPyDelphiCanvas.LineTo_Wrapper,
-    PAnsiChar('TCanvas.LineTo()'#10 +
-    ''));
+    'TCanvas.LineTo()'#10 +
+    '');
   PythonType.AddMethod('Lock', @TPyDelphiCanvas.Lock_Wrapper,
-    PAnsiChar('TCanvas.Lock()'#10 +
-    ''));
+    'TCanvas.Lock()'#10 +
+    '');
   PythonType.AddMethod('MoveTo', @TPyDelphiCanvas.MoveTo_Wrapper,
-    PAnsiChar('TCanvas.MoveTo()'#10 +
-    ''));
+    'TCanvas.MoveTo()'#10 +
+    '');
   PythonType.AddMethod('Pie', @TPyDelphiCanvas.Pie_Wrapper,
-    PAnsiChar('TCanvas.Pie()'#10 +
-    ''));
+    'TCanvas.Pie()'#10 +
+    '');
   PythonType.AddMethod('Polygon', @TPyDelphiCanvas.Polygon_Wrapper,
-    PAnsiChar('TCanvas.Polygon()'#10 +
-    ''));
+    'TCanvas.Polygon()'#10 +
+    '');
   PythonType.AddMethod('Polyline', @TPyDelphiCanvas.Polyline_Wrapper,
-    PAnsiChar('TCanvas.Polyline()'#10 +
-    ''));
+    'TCanvas.Polyline()'#10 +
+    '');
   PythonType.AddMethod('PolyBezier', @TPyDelphiCanvas.PolyBezier_Wrapper,
-    PAnsiChar('TCanvas.PolyBezier()'#10 +
-    ''));
+    'TCanvas.PolyBezier()'#10 +
+    '');
   {$IFNDEF FPC}
   PythonType.AddMethod('PolyBezierTo', @TPyDelphiCanvas.PolyBezierTo_Wrapper,
-    PAnsiChar('TCanvas.PolyBezierTo()'#10 +
-    ''));
+    'TCanvas.PolyBezierTo()'#10 +
+    '');
   {$ENDIF FPC}
   PythonType.AddMethod('Rectangle', @TPyDelphiCanvas.Rectangle_Wrapper,
-    PAnsiChar('TCanvas.Rectangle()'#10 +
-    ''));
+    'TCanvas.Rectangle()'#10 +
+    '');
   PythonType.AddMethod('Refresh', @TPyDelphiCanvas.Refresh_Wrapper,
-    PAnsiChar('TCanvas.Refresh()'#10 +
-    ''));
+    'TCanvas.Refresh()'#10 +
+    '');
   PythonType.AddMethod('RoundRect', @TPyDelphiCanvas.RoundRect_Wrapper,
-    PAnsiChar('TCanvas.RoundRect()'#10 +
-    ''));
+    'TCanvas.RoundRect()'#10 +
+    '');
   PythonType.AddMethod('StretchDraw', @TPyDelphiCanvas.StretchDraw_Wrapper,
-    PAnsiChar('TCanvas.StretchDraw()'#10 +
-    ''));
+    'TCanvas.StretchDraw()'#10 +
+    '');
   PythonType.AddMethod('TextExtent', @TPyDelphiCanvas.TextExtent_Wrapper,
-    PAnsiChar('TCanvas.TextExtent()'#10 +
-    ''));
+    'TCanvas.TextExtent()'#10 +
+    '');
   PythonType.AddMethod('TextHeight', @TPyDelphiCanvas.TextHeight_Wrapper,
-    PAnsiChar('TCanvas.TextHeight()'#10 +
-    ''));
+    'TCanvas.TextHeight()'#10 +
+    '');
   PythonType.AddMethod('TextOut', @TPyDelphiCanvas.TextOut_Wrapper,
-    PAnsiChar('TCanvas.TextOut()'#10 +
-    ''));
+    'TCanvas.TextOut()'#10 +
+    '');
   PythonType.AddMethod('TextRect', @TPyDelphiCanvas.TextRect_Wrapper,
-    PAnsiChar('TCanvas.TextRect()'#10 +
-    ''));
+    'TCanvas.TextRect()'#10 +
+    '');
   PythonType.AddMethod('TextWidth', @TPyDelphiCanvas.TextWidth_Wrapper,
-    PAnsiChar('TCanvas.TextWidth()'#10 +
-    ''));
+    'TCanvas.TextWidth()'#10 +
+    '');
   PythonType.AddMethod('TryLock', @TPyDelphiCanvas.TryLock_Wrapper,
-    PAnsiChar('TCanvas.TryLock()'#10 +
-    ''));
+    'TCanvas.TryLock()'#10 +
+    '');
   PythonType.AddMethod('Unlock', @TPyDelphiCanvas.Unlock_Wrapper,
-    PAnsiChar('TCanvas.Unlock()'#10 +
-    ''));
+    'TCanvas.Unlock()'#10 +
+    '');
   PythonType.AddMethod('GetPixel', @TPyDelphiCanvas.GetPixel,
-    PAnsiChar('TCanvas.GetPixel(x, y) -> TColor'#10 +
+    'TCanvas.GetPixel(x, y) -> TColor'#10 +
     'This is the same as TCanvas.Pixels[x, y].'#13+
-    'Returns the color of the pixels within the current ClipRect.'));
+    'Returns the color of the pixels within the current ClipRect.');
   PythonType.AddMethod('SetPixel', @TPyDelphiCanvas.SetPixel,
-    PAnsiChar('TCanvas.SetPixel(x, y, color)'#10 +
+    'TCanvas.SetPixel(x, y, color)'#10 +
     'This is the same as TCanvas.Pixels[x, y] := color'#13+
-    'Specifies the color of the pixels within the current ClipRect.'));
+    'Specifies the color of the pixels within the current ClipRect.');
 end;
 
 function TPyDelphiCanvas.RoundRect_Wrapper(args: PPyObject): PPyObject;
@@ -2305,11 +2305,11 @@ end;
 class procedure TPyDelphiMetaFile.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('Clear', @TPyDelphiMetaFile.Clear_Wrapper,
-    PAnsiChar('TMetaFile.Clear()'#10 +
-    ''));
+    'TMetaFile.Clear()'#10 +
+    '');
   PythonType.AddMethod('ReleaseHandle', @TPyDelphiMetaFile.ReleaseHandle_Wrapper,
-    PAnsiChar('TMetaFile.ReleaseHandle()'#10 +
-    ''));
+    'TMetaFile.ReleaseHandle()'#10 +
+    '');
 end;
 
 function TPyDelphiMetaFile.ReleaseHandle_Wrapper(
@@ -2446,8 +2446,8 @@ end;
 class procedure TPyDelphiIcon.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('ReleaseHandle', @TPyDelphiIcon.ReleaseHandle_Wrapper,
-    PAnsiChar('TIcon.ReleaseHandle()'#10 +
-    ''));
+    'TIcon.ReleaseHandle()'#10 +
+    '');
 end;
 
 function TPyDelphiIcon.ReleaseHandle_Wrapper(args: PPyObject): PPyObject;
@@ -2575,11 +2575,11 @@ end;
 class procedure TPyDelphiPicture.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('LoadFromFile', @TPyDelphiPicture.LoadFromFile_Wrapper,
-    PAnsiChar('TPicture.LoadFromFile()'#10 +
-    ''));
+    'TPicture.LoadFromFile()'#10 +
+    '');
   PythonType.AddMethod('SaveToFile', @TPyDelphiPicture.SaveToFile_Wrapper,
-    PAnsiChar('TPicture.SaveToFile()'#10 +
-    ''));
+    'TPicture.SaveToFile()'#10 +
+    '');
 end;
 
 function TPyDelphiPicture.SaveToFile_Wrapper(args: PPyObject): PPyObject;

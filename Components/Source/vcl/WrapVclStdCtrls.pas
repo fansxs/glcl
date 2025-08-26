@@ -1,4 +1,4 @@
-(**************************************************************************)
+
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -20,7 +20,7 @@ interface
 
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses,
-  WrapVclControls, Windows, StdCtrls, Vcl.Mask, Vcl.CheckLst;
+  WrapVclControls, Windows, StdCtrls, Vcl.Mask, Vcl.CheckLst, WrapDelphiTypes;
 
 type
   TPyDelphiButton = class (TPyDelphiWinControl)
@@ -149,8 +149,10 @@ type
     // Property Setters
     function Set_ItemIndex( AValue : PPyObject; AContext : Pointer) : integer; cdecl;
   public
+    function ItemAtPos_Wrapper(args: PPyObject): PPyObject;
     class function  DelphiObjectClass : TClass; override;
     class procedure RegisterGetSets( PythonType : TPythonType ); override;
+    class procedure RegisterMethods( PythonType : TPythonType ); override;
     // Properties
     property DelphiObject: TCustomListBox read GetDelphiObject write SetDelphiObject;
   end;
@@ -504,6 +506,27 @@ end;
 
 { TPyDelphiCustomListBox }
 
+function TPyDelphiCustomListBox.ItemAtPos_Wrapper(args: PPyObject): PPyObject;
+var
+  Count: Integer;
+  Existing: Boolean;
+  _pt, _Existing : PPyObject;
+  Pos: TPoint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do begin
+    if PyArg_ParseTuple( args, 'OO:ItemAtPos', @_pt, @_Existing) <> 0 then
+    begin
+      if CheckPointAttribute(_pt, 'point', pos) and
+        CheckBoolAttribute(_Existing, 'Existing', Existing) then
+          Result := PyLong_FromLong(DelphiObject.ItemAtPos(pos, Existing));
+    end
+    else
+      Result := PyLong_FromLong(-1);
+  end;
+end;
+
 class function TPyDelphiCustomListBox.DelphiObjectClass: TClass;
 begin
   Result := TCustomListBox;
@@ -537,6 +560,13 @@ function TPyDelphiCustomListBox.Get_ItemIndex(AContext: Pointer): PPyObject;
 begin
   Adjust(@Self);
   Result := GetPythonEngine.PyLong_FromLong(DelphiObject.ItemIndex);
+end;
+
+class procedure TPyDelphiCustomListBox.RegisterMethods(PythonType: TPythonType);
+begin
+  PythonType.AddMethod('ItemAtPos', @TPyDelphiCustomListBox.ItemAtPos_Wrapper,
+    PAnsiChar('TControl.Show()'#10 +
+    'Shows the wrapped Control'));
 end;
 
 class procedure TPyDelphiCustomListBox.RegisterGetSets(PythonType: TPythonType);

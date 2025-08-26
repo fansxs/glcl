@@ -33,7 +33,8 @@ uses
   Vcl.ShellAnimations,
   Vcl.ToolWin,
   Vcl.TabNotBk,
-  Vcl.FileCtrl;
+  Vcl.FileCtrl,
+  Winapi.RichEdit;
 
 type
   TTabChangingEventHandler = class(TEventHandler)
@@ -270,25 +271,25 @@ type
     property DelphiObject: TPageScroller read GetDelphiObject write SetDelphiObject;
   end;
 
-//  TPyDelphiCustomRichEdit = class (TPyDelphiCustomMemo)
-//  private
-//    function GetDelphiObject: TCustomRichEdit;
-//    procedure SetDelphiObject(const Value: TCustomRichEdit);
-//  public
-//    class function DelphiObjectClass: TClass; override;
-//    // Properties
-//    property DelphiObject: TCustomRichEdit read GetDelphiObject write SetDelphiObject;
-//  end;
-//
-//  TPyDelphiRichEdit = class (TPyDelphiCustomRichEdit)
-//  private
-//    function GetDelphiObject: TRichEdit;
-//    procedure SetDelphiObject(const Value: TRichEdit);
-//  public
-//    class function DelphiObjectClass: TClass; override;
-//    // Properties
-//    property DelphiObject: TRichEdit read GetDelphiObject write SetDelphiObject;
-//  end;
+  TPyDelphiCustomRichEdit = class (TPyDelphiCustomMemo)
+  private
+    function GetDelphiObject: TCustomRichEdit;
+    procedure SetDelphiObject(const Value: TCustomRichEdit);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TCustomRichEdit read GetDelphiObject write SetDelphiObject;
+  end;
+
+  TPyDelphiRichEdit = class (TPyDelphiCustomRichEdit)
+  private
+    function GetDelphiObject: TRichEdit;
+    procedure SetDelphiObject(const Value: TRichEdit);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TRichEdit read GetDelphiObject write SetDelphiObject;
+  end;
 
   TPyDelphiComboBoxEx = class(TPyDelphiWinControl)
   private
@@ -1340,6 +1341,425 @@ begin
   APyDelphiWrapper.DefineVar('vsSmallIcon', 'vsSmallIcon');
   APyDelphiWrapper.DefineVar('vsList', 'vsList');
   APyDelphiWrapper.DefineVar('vsReport', 'vsReport');
+
+  // RichEdit
+  APyDelphiWrapper.DefineVar('cchTextLimitDefault', cchTextLimitDefault);
+  APyDelphiWrapper.DefineVar('MSFTEDIT_CLASS', 'MSFTEDIT_CLASS');
+  APyDelphiWrapper.DefineVar('RICHEDIT_CLASSA', 'RICHEDIT_CLASSA');
+  APyDelphiWrapper.DefineVar('RICHEDIT_CLASSW', 'RICHEDIT_CLASSW');
+  APyDelphiWrapper.DefineVar('RICHEDIT_CLASS', 'RICHEDIT_CLASS');
+  APyDelphiWrapper.DefineVar('RICHEDIT_CLASS10A', 'RICHEDIT_CLASS10A');
+  APyDelphiWrapper.DefineVar('EM_CANPASTE', EM_CANPASTE);
+  APyDelphiWrapper.DefineVar('EM_DISPLAYBAND', EM_DISPLAYBAND);
+  APyDelphiWrapper.DefineVar('EM_EXGETSEL', EM_EXGETSEL);
+  APyDelphiWrapper.DefineVar('EM_EXLIMITTEXT', EM_EXLIMITTEXT);
+  APyDelphiWrapper.DefineVar('EM_EXLINEFROMCHAR', EM_EXLINEFROMCHAR);
+  APyDelphiWrapper.DefineVar('EM_EXSETSEL', EM_EXSETSEL);
+  APyDelphiWrapper.DefineVar('EM_FINDTEXT', EM_FINDTEXT);
+  APyDelphiWrapper.DefineVar('EM_FORMATRANGE', EM_FORMATRANGE);
+  APyDelphiWrapper.DefineVar('EM_GETCHARFORMAT', EM_GETCHARFORMAT);
+  APyDelphiWrapper.DefineVar('EM_GETEVENTMASK', EM_GETEVENTMASK);
+  APyDelphiWrapper.DefineVar('EM_GETOLEINTERFACE', EM_GETOLEINTERFACE);
+  APyDelphiWrapper.DefineVar('EM_GETPARAFORMAT', EM_GETPARAFORMAT);
+  APyDelphiWrapper.DefineVar('EM_GETSELTEXT', EM_GETSELTEXT);
+  APyDelphiWrapper.DefineVar('EM_HIDESELECTION', EM_HIDESELECTION);
+  APyDelphiWrapper.DefineVar('EM_PASTESPECIAL', EM_PASTESPECIAL);
+  APyDelphiWrapper.DefineVar('EM_REQUESTRESIZE', EM_REQUESTRESIZE);
+  APyDelphiWrapper.DefineVar('EM_SELECTIONTYPE', EM_SELECTIONTYPE);
+  APyDelphiWrapper.DefineVar('EM_SETBKGNDCOLOR', EM_SETBKGNDCOLOR);
+  APyDelphiWrapper.DefineVar('EM_SETCHARFORMAT', EM_SETCHARFORMAT);
+  APyDelphiWrapper.DefineVar('EM_SETEVENTMASK', EM_SETEVENTMASK);
+  APyDelphiWrapper.DefineVar('EM_SETOLECALLBACK', EM_SETOLECALLBACK);
+  APyDelphiWrapper.DefineVar('EM_SETPARAFORMAT', EM_SETPARAFORMAT);
+  APyDelphiWrapper.DefineVar('EM_SETTARGETDEVICE', EM_SETTARGETDEVICE);
+  APyDelphiWrapper.DefineVar('EM_STREAMIN', EM_STREAMIN);
+  APyDelphiWrapper.DefineVar('EM_STREAMOUT', EM_STREAMOUT);
+  APyDelphiWrapper.DefineVar('EM_GETTEXTRANGE', EM_GETTEXTRANGE);
+  APyDelphiWrapper.DefineVar('EM_FINDWORDBREAK', EM_FINDWORDBREAK);
+  APyDelphiWrapper.DefineVar('EM_SETOPTIONS', EM_SETOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETOPTIONS', EM_GETOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_FINDTEXTEX', EM_FINDTEXTEX);
+  APyDelphiWrapper.DefineVar('EM_GETWORDBREAKPROCEX', EM_GETWORDBREAKPROCEX);
+  APyDelphiWrapper.DefineVar('EM_SETWORDBREAKPROCEX', EM_SETWORDBREAKPROCEX);
+  APyDelphiWrapper.DefineVar('EM_SETUNDOLIMIT', EM_SETUNDOLIMIT);
+  APyDelphiWrapper.DefineVar('EM_REDO', EM_REDO);
+  APyDelphiWrapper.DefineVar('EM_CANREDO', EM_CANREDO);
+  APyDelphiWrapper.DefineVar('EM_GETUNDONAME', EM_GETUNDONAME);
+  APyDelphiWrapper.DefineVar('EM_GETREDONAME', EM_GETREDONAME);
+  APyDelphiWrapper.DefineVar('EM_STOPGROUPTYPING', EM_STOPGROUPTYPING);
+  APyDelphiWrapper.DefineVar('EM_SETTEXTMODE', EM_SETTEXTMODE);
+  APyDelphiWrapper.DefineVar('EM_GETTEXTMODE', EM_GETTEXTMODE);
+  APyDelphiWrapper.DefineVar('TM_PLAINTEXT', TM_PLAINTEXT);
+  APyDelphiWrapper.DefineVar('TM_RICHTEXT', TM_RICHTEXT);
+  APyDelphiWrapper.DefineVar('TM_SINGLELEVELUNDO', TM_SINGLELEVELUNDO);
+  APyDelphiWrapper.DefineVar('TM_MULTILEVELUNDO', TM_MULTILEVELUNDO);
+  APyDelphiWrapper.DefineVar('TM_SINGLECODEPAGE', TM_SINGLECODEPAGE);
+  APyDelphiWrapper.DefineVar('TM_MULTICODEPAGE', TM_MULTICODEPAGE);
+  APyDelphiWrapper.DefineVar('EM_AUTOURLDETECT', EM_AUTOURLDETECT);
+  APyDelphiWrapper.DefineVar('EM_GETAUTOURLDETECT', EM_GETAUTOURLDETECT);
+  APyDelphiWrapper.DefineVar('EM_SETPALETTE', EM_SETPALETTE);
+  APyDelphiWrapper.DefineVar('EM_GETTEXTEX', EM_GETTEXTEX);
+  APyDelphiWrapper.DefineVar('EM_GETTEXTLENGTHEX', EM_GETTEXTLENGTHEX);
+  APyDelphiWrapper.DefineVar('EM_SETPUNCTUATION', EM_SETPUNCTUATION);
+  APyDelphiWrapper.DefineVar('EM_GETPUNCTUATION', EM_GETPUNCTUATION);
+  APyDelphiWrapper.DefineVar('EM_SETWORDWRAPMODE', EM_SETWORDWRAPMODE);
+  APyDelphiWrapper.DefineVar('EM_GETWORDWRAPMODE', EM_GETWORDWRAPMODE);
+  APyDelphiWrapper.DefineVar('EM_SETIMECOLOR', EM_SETIMECOLOR);
+  APyDelphiWrapper.DefineVar('EM_GETIMECOLOR', EM_GETIMECOLOR);
+  APyDelphiWrapper.DefineVar('EM_SETIMEOPTIONS', EM_SETIMEOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETIMEOPTIONS', EM_GETIMEOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_CONVPOSITION', EM_CONVPOSITION);
+  APyDelphiWrapper.DefineVar('EM_SETLANGOPTIONS', EM_SETLANGOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETLANGOPTIONS', EM_GETLANGOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETIMECOMPMODE', EM_GETIMECOMPMODE);
+  APyDelphiWrapper.DefineVar('EM_FINDTEXTW', EM_FINDTEXTW);
+  APyDelphiWrapper.DefineVar('EM_FINDTEXTEXW', EM_FINDTEXTEXW);
+  APyDelphiWrapper.DefineVar('EM_RECONVERSION', EM_RECONVERSION);
+  APyDelphiWrapper.DefineVar('EM_SETIMEMODEBIAS', EM_SETIMEMODEBIAS);
+  APyDelphiWrapper.DefineVar('EM_GETIMEMODEBIAS', EM_GETIMEMODEBIAS);
+  APyDelphiWrapper.DefineVar('EM_SETBIDIOPTIONS', EM_SETBIDIOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETBIDIOPTIONS', EM_GETBIDIOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_SETTYPOGRAPHYOPTIONS', EM_SETTYPOGRAPHYOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_GETTYPOGRAPHYOPTIONS', EM_GETTYPOGRAPHYOPTIONS);
+  APyDelphiWrapper.DefineVar('EM_SETEDITSTYLE', EM_SETEDITSTYLE);
+  APyDelphiWrapper.DefineVar('EM_GETEDITSTYLE', EM_GETEDITSTYLE);
+  APyDelphiWrapper.DefineVar('EM_OUTLINE', EM_OUTLINE);
+  APyDelphiWrapper.DefineVar('EM_GETSCROLLPOS', EM_GETSCROLLPOS);
+  APyDelphiWrapper.DefineVar('EM_SETSCROLLPOS', EM_SETSCROLLPOS);
+  APyDelphiWrapper.DefineVar('EM_SETFONTSIZE', EM_SETFONTSIZE);
+  APyDelphiWrapper.DefineVar('EM_GETZOOM', EM_GETZOOM);
+  APyDelphiWrapper.DefineVar('EM_SETZOOM', EM_SETZOOM);
+  APyDelphiWrapper.DefineVar('EM_GETVIEWKIND', EM_GETVIEWKIND);
+  APyDelphiWrapper.DefineVar('EM_SETVIEWKIND', EM_SETVIEWKIND);
+  APyDelphiWrapper.DefineVar('EM_GETPAGE', EM_GETPAGE);
+  APyDelphiWrapper.DefineVar('EM_SETPAGE', EM_SETPAGE);
+  APyDelphiWrapper.DefineVar('EM_GETHYPHENATEINFO', EM_GETHYPHENATEINFO);
+  APyDelphiWrapper.DefineVar('EM_SETHYPHENATEINFO', EM_SETHYPHENATEINFO);
+  APyDelphiWrapper.DefineVar('EM_GETPAGEROTATE', EM_GETPAGEROTATE);
+  APyDelphiWrapper.DefineVar('EM_SETPAGEROTATE', EM_SETPAGEROTATE);
+  APyDelphiWrapper.DefineVar('EM_GETCTFMODEBIAS', EM_GETCTFMODEBIAS);
+  APyDelphiWrapper.DefineVar('EM_SETCTFMODEBIAS', EM_SETCTFMODEBIAS);
+  APyDelphiWrapper.DefineVar('EM_GETCTFOPENSTATUS', EM_GETCTFOPENSTATUS);
+  APyDelphiWrapper.DefineVar('EM_SETCTFOPENSTATUS', EM_SETCTFOPENSTATUS);
+  APyDelphiWrapper.DefineVar('EM_GETIMECOMPTEXT', EM_GETIMECOMPTEXT);
+  APyDelphiWrapper.DefineVar('EM_ISIME', EM_ISIME);
+  APyDelphiWrapper.DefineVar('EM_GETIMEPROPERTY', EM_GETIMEPROPERTY);
+  APyDelphiWrapper.DefineVar('EM_GETQUERYRTFOBJ', EM_GETQUERYRTFOBJ);
+  APyDelphiWrapper.DefineVar('EM_SETQUERYRTFOBJ', EM_SETQUERYRTFOBJ);
+  APyDelphiWrapper.DefineVar('EPR_0', EPR_0);
+  APyDelphiWrapper.DefineVar('EPR_270', EPR_270);
+  APyDelphiWrapper.DefineVar('EPR_180', EPR_180);
+  APyDelphiWrapper.DefineVar('EPR_90', EPR_90);
+  APyDelphiWrapper.DefineVar('EPR_SE', EPR_SE);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_DEFAULT', CTFMODEBIAS_DEFAULT);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_FILENAME', CTFMODEBIAS_FILENAME);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_NAME', CTFMODEBIAS_NAME);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_READING', CTFMODEBIAS_READING);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_DATETIME', CTFMODEBIAS_DATETIME);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_CONVERSATION', CTFMODEBIAS_CONVERSATION);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_NUMERIC', CTFMODEBIAS_NUMERIC);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_HIRAGANA', CTFMODEBIAS_HIRAGANA);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_KATAKANA', CTFMODEBIAS_KATAKANA);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_HANGUL', CTFMODEBIAS_HANGUL);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_HALFWIDTHKATAKANA', CTFMODEBIAS_HALFWIDTHKATAKANA);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_FULLWIDTHALPHANUMERIC', CTFMODEBIAS_FULLWIDTHALPHANUMERIC);
+  APyDelphiWrapper.DefineVar('CTFMODEBIAS_HALFWIDTHALPHANUMERIC', CTFMODEBIAS_HALFWIDTHALPHANUMERIC);
+  APyDelphiWrapper.DefineVar('IMF_SMODE_PLAURALCLAUSE', IMF_SMODE_PLAURALCLAUSE);
+  APyDelphiWrapper.DefineVar('IMF_SMODE_NONE', IMF_SMODE_NONE);
+  APyDelphiWrapper.DefineVar('ICT_RESULTREADSTR', ICT_RESULTREADSTR);
+  APyDelphiWrapper.DefineVar('EMO_EXIT', EMO_EXIT);
+  APyDelphiWrapper.DefineVar('EMO_ENTER', EMO_ENTER);
+  APyDelphiWrapper.DefineVar('EMO_PROMOTE', EMO_PROMOTE);
+  APyDelphiWrapper.DefineVar('EMO_EXPAND', EMO_EXPAND);
+  APyDelphiWrapper.DefineVar('EMO_MOVESELECTION', EMO_MOVESELECTION);
+  APyDelphiWrapper.DefineVar('EMO_GETVIEWMODE', EMO_GETVIEWMODE);
+  APyDelphiWrapper.DefineVar('EMO_EXPANDSELECTION', EMO_EXPANDSELECTION);
+  APyDelphiWrapper.DefineVar('EMO_EXPANDDOCUMENT', EMO_EXPANDDOCUMENT);
+  APyDelphiWrapper.DefineVar('VM_NORMAL', VM_NORMAL);
+  APyDelphiWrapper.DefineVar('VM_OUTLINE', VM_OUTLINE);
+  APyDelphiWrapper.DefineVar('VM_PAGE', VM_PAGE);
+  APyDelphiWrapper.DefineVar('SES_EMULATESYSEDIT', SES_EMULATESYSEDIT);
+  APyDelphiWrapper.DefineVar('SES_BEEPONMAXTEXT', SES_BEEPONMAXTEXT);
+  APyDelphiWrapper.DefineVar('SES_EXTENDBACKCOLOR', SES_EXTENDBACKCOLOR);
+  APyDelphiWrapper.DefineVar('SES_MAPCPS', SES_MAPCPS);
+  APyDelphiWrapper.DefineVar('SES_HYPERLINKTOOLTIPS', SES_HYPERLINKTOOLTIPS);
+  APyDelphiWrapper.DefineVar('SES_EMULATE10', SES_EMULATE10);
+  APyDelphiWrapper.DefineVar('SES_DEFAULTLATINLIGA', SES_DEFAULTLATINLIGA);
+  APyDelphiWrapper.DefineVar('SES_USECRLF', SES_USECRLF);
+  APyDelphiWrapper.DefineVar('SES_NOFOCUSLINKNOTIFY', SES_NOFOCUSLINKNOTIFY);
+  APyDelphiWrapper.DefineVar('SES_NOXLTSYMBOLRANGE', SES_NOXLTSYMBOLRANGE);
+  APyDelphiWrapper.DefineVar('SES_USEAIMM', SES_USEAIMM);
+  APyDelphiWrapper.DefineVar('SES_NOIME', SES_NOIME);
+  APyDelphiWrapper.DefineVar('SES_ALLOWBEEPS', SES_ALLOWBEEPS);
+  APyDelphiWrapper.DefineVar('SES_UPPERCASE', SES_UPPERCASE);
+  APyDelphiWrapper.DefineVar('SES_LOWERCASE', SES_LOWERCASE);
+  APyDelphiWrapper.DefineVar('SES_NOINPUTSEQUENCECHK', SES_NOINPUTSEQUENCECHK);
+  APyDelphiWrapper.DefineVar('SES_BIDI', SES_BIDI);
+  APyDelphiWrapper.DefineVar('SES_SCROLLONKILLFOCUS', SES_SCROLLONKILLFOCUS);
+  APyDelphiWrapper.DefineVar('SES_XLTCRCRLFTOCR', SES_XLTCRCRLFTOCR);
+  APyDelphiWrapper.DefineVar('SES_DRAFTMODE', SES_DRAFTMODE);
+  APyDelphiWrapper.DefineVar('SES_USECTF', SES_USECTF);
+  APyDelphiWrapper.DefineVar('SES_HIDEGRIDLINES', SES_HIDEGRIDLINES);
+  APyDelphiWrapper.DefineVar('SES_USEATFONT', SES_USEATFONT);
+  APyDelphiWrapper.DefineVar('SES_CUSTOMLOOK', SES_CUSTOMLOOK);
+  APyDelphiWrapper.DefineVar('SES_LBSCROLLNOTIFY', SES_LBSCROLLNOTIFY);
+  APyDelphiWrapper.DefineVar('SES_CTFALLOWEMBED', SES_CTFALLOWEMBED);
+  APyDelphiWrapper.DefineVar('SES_CTFALLOWSMARTTAG', SES_CTFALLOWSMARTTAG);
+  APyDelphiWrapper.DefineVar('SES_CTFALLOWPROOFING', SES_CTFALLOWPROOFING);
+  APyDelphiWrapper.DefineVar('IMF_AUTOKEYBOARD', IMF_AUTOKEYBOARD);
+  APyDelphiWrapper.DefineVar('IMF_AUTOFONT', IMF_AUTOFONT);
+  APyDelphiWrapper.DefineVar('IMF_IMECANCELCOMPLETE', IMF_IMECANCELCOMPLETE);
+  APyDelphiWrapper.DefineVar('IMF_IMEALWAYSSENDNOTIFY', IMF_IMEALWAYSSENDNOTIFY);
+  APyDelphiWrapper.DefineVar('IMF_AUTOFONTSIZEADJUST', IMF_AUTOFONTSIZEADJUST);
+  APyDelphiWrapper.DefineVar('IMF_UIFONTS', IMF_UIFONTS);
+  APyDelphiWrapper.DefineVar('IMF_NOIMPLICITLANG', IMF_NOIMPLICITLANG);
+  APyDelphiWrapper.DefineVar('IMF_DUALFONT', IMF_DUALFONT);
+  APyDelphiWrapper.DefineVar('IMF_NOKBDLIDFIXUP', IMF_NOKBDLIDFIXUP);
+  APyDelphiWrapper.DefineVar('IMF_NORTFFONTSUBSTITUTE', IMF_NORTFFONTSUBSTITUTE);
+  APyDelphiWrapper.DefineVar('IMF_SPELLCHECKING', IMF_SPELLCHECKING);
+  APyDelphiWrapper.DefineVar('IMF_TKBPREDICTION', IMF_TKBPREDICTION);
+  APyDelphiWrapper.DefineVar('IMF_IMEUIINTEGRATION', IMF_IMEUIINTEGRATION);
+  APyDelphiWrapper.DefineVar('ICM_NOTOPEN', ICM_NOTOPEN);
+  APyDelphiWrapper.DefineVar('ICM_LEVEL3', ICM_LEVEL3);
+  APyDelphiWrapper.DefineVar('ICM_LEVEL2', ICM_LEVEL2);
+  APyDelphiWrapper.DefineVar('ICM_LEVEL2_5', ICM_LEVEL2_5);
+  APyDelphiWrapper.DefineVar('ICM_LEVEL2_SUI', ICM_LEVEL2_SUI);
+  APyDelphiWrapper.DefineVar('EN_MSGFILTER', EN_MSGFILTER);
+  APyDelphiWrapper.DefineVar('EN_REQUESTRESIZE', EN_REQUESTRESIZE);
+  APyDelphiWrapper.DefineVar('EN_SELCHANGE', EN_SELCHANGE);
+  APyDelphiWrapper.DefineVar('EN_DROPFILES', EN_DROPFILES);
+  APyDelphiWrapper.DefineVar('EN_PROTECTED', EN_PROTECTED);
+  APyDelphiWrapper.DefineVar('EN_CORRECTTEXT', EN_CORRECTTEXT);
+  APyDelphiWrapper.DefineVar('EN_STOPNOUNDO', EN_STOPNOUNDO);
+  APyDelphiWrapper.DefineVar('EN_IMECHANGE', EN_IMECHANGE);
+  APyDelphiWrapper.DefineVar('EN_SAVECLIPBOARD', EN_SAVECLIPBOARD);
+  APyDelphiWrapper.DefineVar('EN_OLEOPFAILED', EN_OLEOPFAILED);
+  APyDelphiWrapper.DefineVar('EN_OBJECTPOSITIONS', EN_OBJECTPOSITIONS);
+  APyDelphiWrapper.DefineVar('EN_LINK', EN_LINK);
+  APyDelphiWrapper.DefineVar('EN_DRAGDROPDONE', EN_DRAGDROPDONE);
+  APyDelphiWrapper.DefineVar('ENM_NONE', ENM_NONE);
+  APyDelphiWrapper.DefineVar('ENM_CHANGE', ENM_CHANGE);
+  APyDelphiWrapper.DefineVar('ENM_UPDATE', ENM_UPDATE);
+  APyDelphiWrapper.DefineVar('ENM_SCROLL', ENM_SCROLL);
+  APyDelphiWrapper.DefineVar('ENM_KEYEVENTS', ENM_KEYEVENTS);
+  APyDelphiWrapper.DefineVar('ENM_MOUSEEVENTS', ENM_MOUSEEVENTS);
+  APyDelphiWrapper.DefineVar('ENM_REQUESTRESIZE', ENM_REQUESTRESIZE);
+  APyDelphiWrapper.DefineVar('ENM_SELCHANGE', ENM_SELCHANGE);
+  APyDelphiWrapper.DefineVar('ENM_DROPFILES', ENM_DROPFILES);
+  APyDelphiWrapper.DefineVar('ENM_PROTECTED', ENM_PROTECTED);
+  APyDelphiWrapper.DefineVar('ENM_CORRECTTEXT', ENM_CORRECTTEXT);
+  APyDelphiWrapper.DefineVar('ENM_SCROLLEVENTS', ENM_SCROLLEVENTS);
+  APyDelphiWrapper.DefineVar('ENM_DRAGDROPDONE', ENM_DRAGDROPDONE);
+  APyDelphiWrapper.DefineVar('ENM_IMECHANGE', ENM_IMECHANGE);
+  APyDelphiWrapper.DefineVar('ENM_LANGCHANGE', ENM_LANGCHANGE);
+  APyDelphiWrapper.DefineVar('ENM_OBJECTPOSITIONS', ENM_OBJECTPOSITIONS);
+  APyDelphiWrapper.DefineVar('ENM_LINK', ENM_LINK);
+  APyDelphiWrapper.DefineVar('ES_SAVESEL', ES_SAVESEL);
+  APyDelphiWrapper.DefineVar('ES_SUNKEN', ES_SUNKEN);
+  APyDelphiWrapper.DefineVar('ES_DISABLENOSCROLL', ES_DISABLENOSCROLL);
+  APyDelphiWrapper.DefineVar('ES_SELECTIONBAR', ES_SELECTIONBAR);
+  APyDelphiWrapper.DefineVar('ES_NOOLEDRAGDROP', ES_NOOLEDRAGDROP);
+  APyDelphiWrapper.DefineVar('ES_EX_NOCALLOLEINIT', ES_EX_NOCALLOLEINIT);
+  APyDelphiWrapper.DefineVar('ES_VERTICAL', ES_VERTICAL);
+  APyDelphiWrapper.DefineVar('ES_NOIME', ES_NOIME);
+  APyDelphiWrapper.DefineVar('ES_SELFIME', ES_SELFIME);
+  APyDelphiWrapper.DefineVar('ECO_AUTOWORDSELECTION', ECO_AUTOWORDSELECTION);
+  APyDelphiWrapper.DefineVar('ECO_AUTOVSCROLL', ECO_AUTOVSCROLL);
+  APyDelphiWrapper.DefineVar('ECO_AUTOHSCROLL', ECO_AUTOHSCROLL);
+  APyDelphiWrapper.DefineVar('ECO_NOHIDESEL', ECO_NOHIDESEL);
+  APyDelphiWrapper.DefineVar('ECO_READONLY', ECO_READONLY);
+  APyDelphiWrapper.DefineVar('ECO_WANTRETURN', ECO_WANTRETURN);
+  APyDelphiWrapper.DefineVar('ECO_SAVESEL', ECO_SAVESEL);
+  APyDelphiWrapper.DefineVar('ECO_SELECTIONBAR', ECO_SELECTIONBAR);
+  APyDelphiWrapper.DefineVar('ECO_VERTICAL', ECO_VERTICAL);
+  APyDelphiWrapper.DefineVar('ECOOP_SET', ECOOP_SET);
+  APyDelphiWrapper.DefineVar('ECOOP_OR', ECOOP_OR);
+  APyDelphiWrapper.DefineVar('ECOOP_AND', ECOOP_AND);
+  APyDelphiWrapper.DefineVar('ECOOP_XOR', ECOOP_XOR);
+  APyDelphiWrapper.DefineVar('WB_CLASSIFY', WB_CLASSIFY);
+  APyDelphiWrapper.DefineVar('WB_MOVEWORDLEFT', WB_MOVEWORDLEFT);
+  APyDelphiWrapper.DefineVar('WB_MOVEWORDRIGHT', WB_MOVEWORDRIGHT);
+  APyDelphiWrapper.DefineVar('WB_LEFTBREAK', WB_LEFTBREAK);
+  APyDelphiWrapper.DefineVar('WB_RIGHTBREAK', WB_RIGHTBREAK);
+  APyDelphiWrapper.DefineVar('WB_MOVEWORDPREV', WB_MOVEWORDPREV);
+  APyDelphiWrapper.DefineVar('WB_MOVEWORDNEXT', WB_MOVEWORDNEXT);
+  APyDelphiWrapper.DefineVar('WB_PREVBREAK', WB_PREVBREAK);
+  APyDelphiWrapper.DefineVar('WB_NEXTBREAK', WB_NEXTBREAK);
+  APyDelphiWrapper.DefineVar('PC_FOLLOWING', PC_FOLLOWING);
+  APyDelphiWrapper.DefineVar('PC_LEADING', PC_LEADING);
+  APyDelphiWrapper.DefineVar('PC_OVERFLOW', PC_OVERFLOW);
+  APyDelphiWrapper.DefineVar('PC_DELIMITER', PC_DELIMITER);
+  APyDelphiWrapper.DefineVar('WBF_WORDWRAP', WBF_WORDWRAP);
+  APyDelphiWrapper.DefineVar('WBF_WORDBREAK', WBF_WORDBREAK);
+  APyDelphiWrapper.DefineVar('WBF_OVERFLOW', WBF_OVERFLOW);
+  APyDelphiWrapper.DefineVar('WBF_LEVEL1', WBF_LEVEL1);
+  APyDelphiWrapper.DefineVar('WBF_LEVEL2', WBF_LEVEL2);
+  APyDelphiWrapper.DefineVar('WBF_CUSTOM', WBF_CUSTOM);
+  APyDelphiWrapper.DefineVar('IMF_FORCENONE', IMF_FORCENONE);
+  APyDelphiWrapper.DefineVar('IMF_FORCEENABLE', IMF_FORCEENABLE);
+  APyDelphiWrapper.DefineVar('IMF_FORCEDISABLE', IMF_FORCEDISABLE);
+  APyDelphiWrapper.DefineVar('IMF_CLOSESTATUSWINDOW', IMF_CLOSESTATUSWINDOW);
+  APyDelphiWrapper.DefineVar('IMF_VERTICAL', IMF_VERTICAL);
+  APyDelphiWrapper.DefineVar('IMF_FORCEACTIVE', IMF_FORCEACTIVE);
+  APyDelphiWrapper.DefineVar('IMF_FORCEINACTIVE', IMF_FORCEINACTIVE);
+  APyDelphiWrapper.DefineVar('IMF_FORCEREMEMBER', IMF_FORCEREMEMBER);
+  APyDelphiWrapper.DefineVar('IMF_MULTIPLEEDIT', IMF_MULTIPLEEDIT);
+  APyDelphiWrapper.DefineVar('WBF_CLASS', WBF_CLASS);
+  APyDelphiWrapper.DefineVar('WBF_ISWHITE', WBF_ISWHITE);
+  APyDelphiWrapper.DefineVar('WBF_BREAKLINE', WBF_BREAKLINE);
+  APyDelphiWrapper.DefineVar('WBF_BREAKAFTER', WBF_BREAKAFTER);
+  APyDelphiWrapper.DefineVar('CFM_BOLD', CFM_BOLD);
+  APyDelphiWrapper.DefineVar('CFM_ITALIC', CFM_ITALIC);
+  APyDelphiWrapper.DefineVar('CFM_UNDERLINE', CFM_UNDERLINE);
+  APyDelphiWrapper.DefineVar('CFM_STRIKEOUT', CFM_STRIKEOUT);
+  APyDelphiWrapper.DefineVar('CFM_PROTECTED', CFM_PROTECTED);
+  APyDelphiWrapper.DefineVar('CFM_LINK', CFM_LINK);
+//  APyDelphiWrapper.DefineVar('CFM_SIZE', CFM_SIZE);
+  APyDelphiWrapper.DefineVar('CFM_COLOR', CFM_COLOR);
+  APyDelphiWrapper.DefineVar('CFM_FACE', CFM_FACE);
+  APyDelphiWrapper.DefineVar('CFM_OFFSET', CFM_OFFSET);
+  APyDelphiWrapper.DefineVar('CFM_CHARSET', CFM_CHARSET);
+  APyDelphiWrapper.DefineVar('CFE_BOLD', CFE_BOLD);
+  APyDelphiWrapper.DefineVar('CFE_ITALIC', CFE_ITALIC);
+  APyDelphiWrapper.DefineVar('CFE_UNDERLINE', CFE_UNDERLINE);
+  APyDelphiWrapper.DefineVar('CFE_STRIKEOUT', CFE_STRIKEOUT);
+  APyDelphiWrapper.DefineVar('CFE_PROTECTED', CFE_PROTECTED);
+  APyDelphiWrapper.DefineVar('CFE_LINK', CFE_LINK);
+  APyDelphiWrapper.DefineVar('CFE_AUTOCOLOR', CFE_AUTOCOLOR);
+  APyDelphiWrapper.DefineVar('yHeightCharPtsMost', yHeightCharPtsMost);
+  APyDelphiWrapper.DefineVar('SCF_SELECTION', SCF_SELECTION);
+  APyDelphiWrapper.DefineVar('SCF_WORD', SCF_WORD);
+  APyDelphiWrapper.DefineVar('SCF_DEFAULT', SCF_DEFAULT);
+  APyDelphiWrapper.DefineVar('SCF_ALL', SCF_ALL);
+  APyDelphiWrapper.DefineVar('SCF_USEUIRULES', SCF_USEUIRULES);
+  APyDelphiWrapper.DefineVar('SF_TEXT', SF_TEXT);
+  APyDelphiWrapper.DefineVar('SF_RTF', SF_RTF);
+  APyDelphiWrapper.DefineVar('SF_RTFNOOBJS', SF_RTFNOOBJS);
+  APyDelphiWrapper.DefineVar('SF_TEXTIZED', SF_TEXTIZED);
+  APyDelphiWrapper.DefineVar('SF_UNICODE', SF_UNICODE);
+  APyDelphiWrapper.DefineVar('SFF_SELECTION', SFF_SELECTION);
+  APyDelphiWrapper.DefineVar('SFF_PLAINRTF', SFF_PLAINRTF);
+  APyDelphiWrapper.DefineVar('FT_MATCHCASE', FT_MATCHCASE);
+  APyDelphiWrapper.DefineVar('FT_WHOLEWORD', FT_WHOLEWORD);
+  APyDelphiWrapper.DefineVar('lDefaultTab', lDefaultTab);
+//  APyDelphiWrapper.DefineVar('PFM_STARTINDENT', PFM_STARTINDENT);
+//  APyDelphiWrapper.DefineVar('PFM_RIGHTINDENT', PFM_RIGHTINDENT);
+//  APyDelphiWrapper.DefineVar('PFM_OFFSET', PFM_OFFSET);
+//  APyDelphiWrapper.DefineVar('PFM_ALIGNMENT', PFM_ALIGNMENT);
+//  APyDelphiWrapper.DefineVar('PFM_TABSTOPS', PFM_TABSTOPS);
+//  APyDelphiWrapper.DefineVar('PFM_NUMBERING', PFM_NUMBERING);
+//  APyDelphiWrapper.DefineVar('PFM_OFFSETINDENT', PFM_OFFSETINDENT);
+  APyDelphiWrapper.DefineVar('PFN_BULLET', PFN_BULLET);
+  APyDelphiWrapper.DefineVar('PFA_LEFT', PFA_LEFT);
+  APyDelphiWrapper.DefineVar('PFA_RIGHT', PFA_RIGHT);
+  APyDelphiWrapper.DefineVar('PFA_CENTER', PFA_CENTER);
+//  APyDelphiWrapper.DefineVar('CFM_ALL', CFM_ALL);
+  APyDelphiWrapper.DefineVar('CFM_SMALLCAPS', CFM_SMALLCAPS);
+  APyDelphiWrapper.DefineVar('CFM_ALLCAPS', CFM_ALLCAPS);
+  APyDelphiWrapper.DefineVar('CFM_HIDDEN', CFM_HIDDEN);
+  APyDelphiWrapper.DefineVar('CFM_OUTLINE', CFM_OUTLINE);
+  APyDelphiWrapper.DefineVar('CFM_SHADOW', CFM_SHADOW);
+  APyDelphiWrapper.DefineVar('CFM_EMBOSS', CFM_EMBOSS);
+  APyDelphiWrapper.DefineVar('CFM_IMPRINT', CFM_IMPRINT);
+  APyDelphiWrapper.DefineVar('CFM_DISABLED', CFM_DISABLED);
+  APyDelphiWrapper.DefineVar('CFM_REVISED', CFM_REVISED);
+  APyDelphiWrapper.DefineVar('CFM_BACKCOLOR', CFM_BACKCOLOR);
+  APyDelphiWrapper.DefineVar('CFM_COOKIE', CFM_COOKIE);
+  APyDelphiWrapper.DefineVar('CFM_LCID', CFM_LCID);
+  APyDelphiWrapper.DefineVar('CFM_UNDERLINETYPE', CFM_UNDERLINETYPE);
+  APyDelphiWrapper.DefineVar('CFM_WEIGHT', CFM_WEIGHT);
+  APyDelphiWrapper.DefineVar('CFM_SPACING', CFM_SPACING);
+  APyDelphiWrapper.DefineVar('CFM_KERNING', CFM_KERNING);
+  APyDelphiWrapper.DefineVar('CFM_STYLE', CFM_STYLE);
+  APyDelphiWrapper.DefineVar('CFM_ANIMATION', CFM_ANIMATION);
+  APyDelphiWrapper.DefineVar('CFM_REVAUTHOR', CFM_REVAUTHOR);
+  APyDelphiWrapper.DefineVar('CFE_SUBSCRIPT', CFE_SUBSCRIPT);
+  APyDelphiWrapper.DefineVar('CFE_SUPERSCRIPT', CFE_SUPERSCRIPT);
+  APyDelphiWrapper.DefineVar('CFM_SUBSCRIPT', CFM_SUBSCRIPT);
+  APyDelphiWrapper.DefineVar('CFM_SUPERSCRIPT', CFM_SUPERSCRIPT);
+//  APyDelphiWrapper.DefineVar('CFM_EFFECTS2', CFM_EFFECTS2);
+//  APyDelphiWrapper.DefineVar('CFM_ALL2', CFM_ALL2);
+  APyDelphiWrapper.DefineVar('CFE_SMALLCAPS', CFE_SMALLCAPS);
+  APyDelphiWrapper.DefineVar('CFE_ALLCAPS', CFE_ALLCAPS);
+  APyDelphiWrapper.DefineVar('CFE_HIDDEN', CFE_HIDDEN);
+  APyDelphiWrapper.DefineVar('CFE_OUTLINE', CFE_OUTLINE);
+  APyDelphiWrapper.DefineVar('CFE_SHADOW', CFE_SHADOW);
+  APyDelphiWrapper.DefineVar('CFE_EMBOSS', CFE_EMBOSS);
+  APyDelphiWrapper.DefineVar('CFE_IMPRINT', CFE_IMPRINT);
+  APyDelphiWrapper.DefineVar('CFE_DISABLED', CFE_DISABLED);
+  APyDelphiWrapper.DefineVar('CFE_REVISED', CFE_REVISED);
+  APyDelphiWrapper.DefineVar('CFE_AUTOBACKCOLOR', CFE_AUTOBACKCOLOR);
+  APyDelphiWrapper.DefineVar('CFU_CF1UNDERLINE', CFU_CF1UNDERLINE);
+  APyDelphiWrapper.DefineVar('CFU_INVERT', CFU_INVERT);
+  APyDelphiWrapper.DefineVar('CFU_UNDERLINEDOTTED', CFU_UNDERLINEDOTTED);
+  APyDelphiWrapper.DefineVar('CFU_UNDERLINEDOUBLE', CFU_UNDERLINEDOUBLE);
+  APyDelphiWrapper.DefineVar('CFU_UNDERLINEWORD', CFU_UNDERLINEWORD);
+  APyDelphiWrapper.DefineVar('CFU_UNDERLINE', CFU_UNDERLINE);
+  APyDelphiWrapper.DefineVar('CFU_UNDERLINENONE', CFU_UNDERLINENONE);
+  APyDelphiWrapper.DefineVar('PFM_SPACEBEFORE', PFM_SPACEBEFORE);
+  APyDelphiWrapper.DefineVar('PFM_SPACEAFTER', PFM_SPACEAFTER);
+  APyDelphiWrapper.DefineVar('PFM_LINESPACING', PFM_LINESPACING);
+  APyDelphiWrapper.DefineVar('PFM_STYLE', PFM_STYLE);
+  APyDelphiWrapper.DefineVar('PFM_BORDER', PFM_BORDER);
+  APyDelphiWrapper.DefineVar('PFM_SHADING', PFM_SHADING);
+  APyDelphiWrapper.DefineVar('PFM_NUMBERINGSTYLE', PFM_NUMBERINGSTYLE);
+  APyDelphiWrapper.DefineVar('PFM_NUMBERINGTAB', PFM_NUMBERINGTAB);
+  APyDelphiWrapper.DefineVar('PFM_NUMBERINGSTART', PFM_NUMBERINGSTART);
+  APyDelphiWrapper.DefineVar('PFM_RTLPARA', PFM_RTLPARA);
+  APyDelphiWrapper.DefineVar('PFM_KEEP', PFM_KEEP);
+  APyDelphiWrapper.DefineVar('PFM_KEEPNEXT', PFM_KEEPNEXT);
+  APyDelphiWrapper.DefineVar('PFM_PAGEBREAKBEFORE', PFM_PAGEBREAKBEFORE);
+  APyDelphiWrapper.DefineVar('PFM_NOLINENUMBER', PFM_NOLINENUMBER);
+  APyDelphiWrapper.DefineVar('PFM_NOWIDOWCONTROL', PFM_NOWIDOWCONTROL);
+  APyDelphiWrapper.DefineVar('PFM_DONOTHYPHEN', PFM_DONOTHYPHEN);
+  APyDelphiWrapper.DefineVar('PFM_SIDEBYSIDE', PFM_SIDEBYSIDE);
+  APyDelphiWrapper.DefineVar('PFM_TABLE', PFM_TABLE);
+  APyDelphiWrapper.DefineVar('PFM_TEXTWRAPPINGBREAK', PFM_TEXTWRAPPINGBREAK);
+  APyDelphiWrapper.DefineVar('PFM_TABLEROWDELIMITER', PFM_TABLEROWDELIMITER);
+  APyDelphiWrapper.DefineVar('PFM_COLLAPSED', PFM_COLLAPSED);
+  APyDelphiWrapper.DefineVar('PFM_OUTLINELEVEL', PFM_OUTLINELEVEL);
+  APyDelphiWrapper.DefineVar('PFM_BOX', PFM_BOX);
+//  APyDelphiWrapper.DefineVar('PFM_ALL', PFM_ALL);
+  APyDelphiWrapper.DefineVar('PFM_EFFECTS', PFM_EFFECTS);
+//  APyDelphiWrapper.DefineVar('PFM_ALL2', PFM_ALL2);
+  APyDelphiWrapper.DefineVar('PFE_RTLPARA', PFE_RTLPARA);
+  APyDelphiWrapper.DefineVar('PFE_KEEP', PFE_KEEP);
+  APyDelphiWrapper.DefineVar('PFE_KEEPNEXT', PFE_KEEPNEXT);
+  APyDelphiWrapper.DefineVar('PFE_PAGEBREAKBEFORE', PFE_PAGEBREAKBEFORE);
+  APyDelphiWrapper.DefineVar('PFE_NOLINENUMBER', PFE_NOLINENUMBER);
+  APyDelphiWrapper.DefineVar('PFE_NOWIDOWCONTROL', PFE_NOWIDOWCONTROL);
+  APyDelphiWrapper.DefineVar('PFE_DONOTHYPHEN', PFE_DONOTHYPHEN);
+  APyDelphiWrapper.DefineVar('PFE_SIDEBYSIDE', PFE_SIDEBYSIDE);
+  APyDelphiWrapper.DefineVar('PFE_TABLEROW', PFE_TABLEROW);
+  APyDelphiWrapper.DefineVar('PFE_TABLECELLEND', PFE_TABLECELLEND);
+  APyDelphiWrapper.DefineVar('PFE_TABLECELL', PFE_TABLECELL);
+  APyDelphiWrapper.DefineVar('PFA_JUSTIFY', PFA_JUSTIFY);
+  APyDelphiWrapper.DefineVar('SEL_EMPTY', SEL_EMPTY);
+  APyDelphiWrapper.DefineVar('SEL_TEXT', SEL_TEXT);
+  APyDelphiWrapper.DefineVar('SEL_OBJECT', SEL_OBJECT);
+  APyDelphiWrapper.DefineVar('SEL_MULTICHAR', SEL_MULTICHAR);
+  APyDelphiWrapper.DefineVar('SEL_MULTIOBJECT', SEL_MULTIOBJECT);
+  APyDelphiWrapper.DefineVar('GCM_RIGHTMOUSEDROP', GCM_RIGHTMOUSEDROP);
+  APyDelphiWrapper.DefineVar('CF_RTFNOOBJS', CF_RTFNOOBJS);
+  APyDelphiWrapper.DefineVar('CF_RETEXTOBJ', CF_RETEXTOBJ);
+  APyDelphiWrapper.DefineVar('UID_UNKNOWN', 'UID_UNKNOWN');
+  APyDelphiWrapper.DefineVar('UID_TYPING', 'UID_TYPING');
+  APyDelphiWrapper.DefineVar('UID_DELETE', 'UID_DELETE');
+  APyDelphiWrapper.DefineVar('UID_DRAGDROP', 'UID_DRAGDROP');
+  APyDelphiWrapper.DefineVar('UID_CUT', 'UID_CUT');
+  APyDelphiWrapper.DefineVar('UID_PASTE', 'UID_PASTE');
+  APyDelphiWrapper.DefineVar('GT_DEFAULT', GT_DEFAULT);
+  APyDelphiWrapper.DefineVar('GT_USECRLF', GT_USECRLF);
+  APyDelphiWrapper.DefineVar('GT_SELECTION', GT_SELECTION);
+  APyDelphiWrapper.DefineVar('GT_RAWTEXT', GT_RAWTEXT);
+  APyDelphiWrapper.DefineVar('GT_NOHIDDENTEXT', GT_NOHIDDENTEXT);
+  APyDelphiWrapper.DefineVar('GTL_DEFAULT', GTL_DEFAULT);
+  APyDelphiWrapper.DefineVar('GTL_USECRLF', GTL_USECRLF);
+  APyDelphiWrapper.DefineVar('GTL_PRECISE', GTL_PRECISE);
+  APyDelphiWrapper.DefineVar('GTL_CLOSE', GTL_CLOSE);
+  APyDelphiWrapper.DefineVar('GTL_NUMCHARS', GTL_NUMCHARS);
+  APyDelphiWrapper.DefineVar('GTL_NUMBYTES', GTL_NUMBYTES);
+  APyDelphiWrapper.DefineVar('WCH_EMBEDDING', WCH_EMBEDDING);
 end;
 
 function TComCtrlsRegistration.Name: string;
@@ -1368,8 +1788,8 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAnimate);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiShellResources);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiPageScroller);
-//  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomRichEdit);
-//  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiRichEdit);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiCustomRichEdit);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiRichEdit);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiComboBoxEx);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiToolButton);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiToolbar);
@@ -2157,40 +2577,39 @@ begin
   inherited DelphiObject := Value;
 end;
 
+{ TPyDelphiRichEdit }
 
-//{ TPyDelphiRichEdit }
-//
-//class function TPyDelphiRichEdit.DelphiObjectClass: TClass;
-//begin
-//  Result := TRichEdit;
-//end;
-//
-//function TPyDelphiRichEdit.GetDelphiObject: TRichEdit;
-//begin
-//  Result := TRichEdit(inherited DelphiObject);
-//end;
-//
-//procedure TPyDelphiRichEdit.SetDelphiObject(const Value: TRichEdit);
-//begin
-//  inherited DelphiObject := Value;
-//end;
-//
-//{ TPyDelphiCustomRichEdit }
-//
-//class function TPyDelphiCustomRichEdit.DelphiObjectClass: TClass;
-//begin
-//  Result := TCustomRichEdit;
-//end;
-//
-//function TPyDelphiCustomRichEdit.GetDelphiObject: TCustomRichEdit;
-//begin
-//  Result := TCustomRichEdit(inherited DelphiObject);
-//end;
-//
-//procedure TPyDelphiCustomRichEdit.SetDelphiObject(const Value: TCustomRichEdit);
-//begin
-//  inherited DelphiObject := Value;
-//end;
+class function TPyDelphiRichEdit.DelphiObjectClass: TClass;
+begin
+  Result := TRichEdit;
+end;
+
+function TPyDelphiRichEdit.GetDelphiObject: TRichEdit;
+begin
+  Result := TRichEdit(inherited DelphiObject);
+end;
+
+procedure TPyDelphiRichEdit.SetDelphiObject(const Value: TRichEdit);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiCustomRichEdit }
+
+class function TPyDelphiCustomRichEdit.DelphiObjectClass: TClass;
+begin
+  Result := TCustomRichEdit;
+end;
+
+function TPyDelphiCustomRichEdit.GetDelphiObject: TCustomRichEdit;
+begin
+  Result := TCustomRichEdit(inherited DelphiObject);
+end;
+
+procedure TPyDelphiCustomRichEdit.SetDelphiObject(const Value: TCustomRichEdit);
+begin
+  inherited DelphiObject := Value;
+end;
 
 { TPyDelphiComboBoxEx }
 

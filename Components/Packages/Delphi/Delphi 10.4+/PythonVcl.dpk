@@ -36,8 +36,7 @@ requires
   Python,
   VclSmp,
   vclimg,
-  vclwinx,
-  vclactnband;
+  vclwinx;
 
 contains
   Vcl.PythonGUIInputOutput in '..\..\..\Source\vcl\Vcl.PythonGUIInputOutput.pas',

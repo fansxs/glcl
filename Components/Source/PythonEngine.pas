@@ -73,47 +73,51 @@ type
   end;
 const
 {$IFDEF MSWINDOWS}
-  PYTHON_KNOWN_VERSIONS: array[1..6] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
     (
     (DllName: 'python38.dll'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'python39.dll'; RegVersion: '3.9'; APIVersion: 1013),
     (DllName: 'python310.dll'; RegVersion: '3.10'; APIVersion: 1013),
     (DllName: 'python311.dll'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'python312.dll'; RegVersion: '3.12'; APIVersion: 1013),
-    (DllName: 'python313.dll'; RegVersion: '3.13'; APIVersion: 1013)
+    (DllName: 'python313.dll'; RegVersion: '3.13'; APIVersion: 1013),
+    (DllName: 'python314.dll'; RegVersion: '3.14'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF _so_files}
-  PYTHON_KNOWN_VERSIONS: array[1..6] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.so'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.so'; RegVersion: '3.9'; APIVersion: 1013),
     (DllName: 'libpython3.10.so'; RegVersion: '3.10'; APIVersion: 1013),
     (DllName: 'libpython3.11.so'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'libpython3.12.so'; RegVersion: '3.12'; APIVersion: 1013),
-    (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013)
+    (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013),
+    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF DARWIN}
-  PYTHON_KNOWN_VERSIONS: array[1..6] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.dylib'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.dylib'; RegVersion: '3.9'; APIVersion: 1013),
     (DllName: 'libpython3.10.dylib'; RegVersion: '3.10'; APIVersion: 1013),
     (DllName: 'libpython3.11.dylib'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'libpython3.12.dylib'; RegVersion: '3.12'; APIVersion: 1013),
-    (DllName: 'libpython3.13.dylib'; RegVersion: '3.13'; APIVersion: 1013)
+    (DllName: 'libpython3.13.dylib'; RegVersion: '3.13'; APIVersion: 1013),
+    (DllName: 'libpython3.14.dylib'; RegVersion: '3.14'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF ANDROID}
-  PYTHON_KNOWN_VERSIONS: array[1..6] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.so'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.so'; RegVersion: '3.9'; APIVersion: 1013),
     (DllName: 'libpython3.10.so'; RegVersion: '3.10'; APIVersion: 1013),
     (DllName: 'libpython3.11.so'; RegVersion: '3.11'; APIVersion: 1013),
-    (DllName: 'libpython3.12.so'; RegVersion: '3.12'; APIVersion: 1013)
-    (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013)
+    (DllName: 'libpython3.12.so'; RegVersion: '3.12'; APIVersion: 1013),
+    (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013),
+    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013)
     );
 {$ENDIF}
 
@@ -176,8 +180,8 @@ type
   WCharTString = UnicodeString;
 {$ENDIF}
 
-  PPy_ssize_t = PNativeInt;
-  Py_ssize_t = NativeInt;
+  PPy_ssize_t = PNativeUInt;
+  Py_ssize_t = NativeUInt;
 
   const
 {
@@ -470,7 +474,7 @@ type
   end;
 
   PyObject = {$IFDEF CPUX86}packed{$ENDIF} record
-    ob_refcnt: NativeInt;
+    ob_refcnt: NativeUInt;
     ob_type:   PPyTypeObject;
   end;
 
@@ -481,7 +485,7 @@ type
   end;
 
   PySliceObject = {$IFDEF CPUX86}packed{$ENDIF} record
-    ob_refcnt:          NativeInt;
+    ob_refcnt:          NativeUInt;
     ob_type:            PPyTypeObject;
     start, stop, step:  PPyObject;
   end;
@@ -534,28 +538,31 @@ type
   {#define PyDescr_COMMON \
           PyObject_HEAD \
           PyTypeObject *d_type; \
-          PyObject *d_name
+          PyObject *d_name \
+          PyObject *d_qualname
   }
 
   PPyDescrObject = ^PyDescrObject;
   PyDescrObject = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     d_type     : PPyTypeObject;
     d_name     : PPyObject;
+    d_qualname : PPyObject;
   end;
 
   PPyMethodDescrObject = ^PyMethodDescrObject;
   PyMethodDescrObject = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of PyDescr_COMMON
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     d_type     : PPyTypeObject;
     d_name     : PPyObject;
+    d_qualname : PPyObject;
     // End of PyDescr_COMMON
     d_method : PPyMethodDef;
   end;
@@ -564,11 +571,12 @@ type
   PyMemberDescrObject = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of PyDescr_COMMON
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     d_type     : PPyTypeObject;
     d_name     : PPyObject;
+    d_qualname : PPyObject;
     // End of PyDescr_COMMON
     d_member : PPyMemberDef;
   end;
@@ -577,11 +585,12 @@ type
   PyGetSetDescrObject = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of PyDescr_COMMON
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     d_type     : PPyTypeObject;
     d_name     : PPyObject;
+    d_qualname : PPyObject;
     // End of PyDescr_COMMON
     d_getset : PPyGetSetDef;
   end;
@@ -590,11 +599,12 @@ type
   PyWrapperDescrObject = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of PyDescr_COMMON
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     d_type     : PPyTypeObject;
     d_name     : PPyObject;
+    d_qualname : PPyObject;
     // End of PyDescr_COMMON
     d_base : pwrapperbase;
     d_wrapped : Pointer; // This can be any function pointer
@@ -603,7 +613,7 @@ type
   PPyModuleDef_Base = ^PyModuleDef_Base;
   PyModuleDef_Base = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     m_init     : function( ) : PPyObject; cdecl;
@@ -663,7 +673,7 @@ type
   // object.h
 
   PyTypeObject = {$IFDEF CPUX86}packed{$ENDIF} record
-    ob_refcnt:      NativeInt;
+    ob_refcnt:      NativeUInt;
     ob_type:        PPyTypeObject;
     ob_size:        NativeInt; // Number of items in variable part
     tp_name:        PAnsiChar; // For printing
@@ -810,7 +820,7 @@ const
 type
   PyDateTime_Delta = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode    : NativeInt;  // -1 when unknown
@@ -822,7 +832,7 @@ type
 
   PyDateTime_TZInfo = {$IFDEF CPUX86}packed{$ENDIF} record // a pure abstract base clase
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
   end;
@@ -845,7 +855,7 @@ type
   _PyDateTime_BaseTZInfo = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of _PyTZINFO_HEAD
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode   : Integer;
@@ -869,7 +879,7 @@ type
     // Start of _PyDateTime_TIMEHEAD
       // Start of _PyTZINFO_HEAD
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode   : Integer;
@@ -884,7 +894,7 @@ type
     // Start of _PyDateTime_TIMEHEAD
       // Start of _PyTZINFO_HEAD
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode   : Integer;
@@ -906,7 +916,7 @@ type
   PyDateTime_Date = {$IFDEF CPUX86}packed{$ENDIF} record
     // Start of _PyTZINFO_HEAD
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode   : Integer;
@@ -925,7 +935,7 @@ type
   _PyDateTime_BaseDateTime = {$IFDEF CPUX86}packed{$ENDIF} record // hastzinfo false
     // Start of _PyTZINFO_HEAD
     // Start of the Head of an object
-    ob_refcnt  : NativeInt;
+    ob_refcnt  : NativeUInt;
     ob_type    : PPyTypeObject;
     // End of the Head of an object
     hashcode   : Integer;
@@ -939,7 +949,7 @@ type
     // Start of _PyDateTime_DATETIMEHEAD
       // Start of _PyTZINFO_HEAD
         // Start of the Head of an object
-        ob_refcnt  : NativeInt;
+        ob_refcnt  : NativeUInt;
         ob_type    : PPyTypeObject;
         // End of the Head of an object
       hashcode   : Integer;
@@ -954,7 +964,7 @@ type
   //bytearrayobject.h
 
   PyByteArrayObject = {$IFDEF CPUX86}packed{$ENDIF} record
-    ob_refcnt: NativeInt;
+    ob_refcnt: NativeUInt;
     ob_type:   PPyTypeObject;
     ob_alloc: Py_ssize_t;
     ob_bytes: PAnsiChar;
@@ -994,6 +1004,9 @@ type
    Filler: array [0..1000] of Byte;
  end;
 
+ // Opaque structure PEP 741
+ PPyInitConfig = Pointer;
+
 {$SCOPEDENUMS ON}
   TConfigFields = (
     use_environment,
@@ -1021,7 +1034,7 @@ type
       {$IFDEF CPU64BITS}
       ((8, 80, 88, 144, 156, 160, 164, 172, 224, 104, 240, 248, 256, 272),
        (8, 80, 88, 144, 156, 160, 164, 172, 224, 104, 240, 248, 256, 272),
-       (8, 80, 104, 152, 168, 172, 176, 184, 232, 240, 256, 272, 280, 296),
+       (8, 80, 104, 152, 168, 172, 176, 184, 240, 248, 264, 280, 288, 304),
        (8, 96, 120, 168, 184, 188, 192, 200, 264, 272, 288, 304, 312, 336),
        (8, 96, 120, 168, 184, 188, 192, 200, 268, 272, 288, 304, 312, 336),
        (8, 96, 120, 168, 184, 188, 192, 200, 272, 280, 296, 312, 320, 344));
@@ -1506,6 +1519,7 @@ type
     PySuper_Type: PPyTypeObject;
     PyTraceBack_Type: PPyTypeObject;
     PyUnicode_Type: PPyTypeObject;
+    PyGetSetDescr_Type: PPyTypeObject;
     PyWrapperDescr_Type: PPyTypeObject;
     _PyWeakref_RefType: PPyTypeObject;
     _PyWeakref_ProxyType: PPyTypeObject;
@@ -1635,6 +1649,7 @@ type
     PyLong_FromLongLong:function(val:Int64): PPyObject; cdecl;
     PyLong_FromUnsignedLongLong:function(val:UInt64) : PPyObject; cdecl;
     PyLong_AsLongLong:function(ob:PPyObject): Int64; cdecl;
+    PyLong_AsVoidPtr:function(ob:PPyObject): Pointer; cdecl;
     PyLong_FromVoidPtr:function(p: Pointer): PPyObject; cdecl;
     PyMapping_Check:function (ob:PPyObject):integer; cdecl;
     PyMapping_GetItemString:function (ob:PPyObject;key:PAnsiChar):PPyObject; cdecl;
@@ -1796,8 +1811,9 @@ type
     Py_GetPrefix                    : function : PWCharT; cdecl;
     Py_GetProgramName               : function : PWCharT; cdecl;
 
-    PyErr_NewException              : function ( name : PAnsiChar; base, dict : PPyObject ) : PPyObject; cdecl;
-    PyMem_Malloc                    : function ( size : NativeUInt ) : Pointer;
+    PyErr_NewException              : function (name : PAnsiChar; base, dict : PPyObject): PPyObject; cdecl;
+    PyMem_Malloc                    : function (size: NativeUInt): Pointer; cdecl;
+    PyMem_Free                      : procedure (P: Pointer); cdecl;
 
     Py_IsInitialized                : function : integer; cdecl;
     Py_GetProgramFullPath           : function : PAnsiChar; cdecl;
@@ -1818,7 +1834,7 @@ type
     PyGILState_Ensure               : function() : PyGILstate_STATE; cdecl;
     PyGILState_Release              : procedure(gilstate : PyGILState_STATE); cdecl;
 
-    // Initialization functions
+    // PEP 587 Initialization functions
     PyWideStringList_Append         : function(list: PPyWideStringList; item: PWCharT): PyStatus; cdecl;
     PyWideStringList_Insert         : function(list: PPyWideStringList; index: Py_ssize_t; item: PWCharT): PyStatus; cdecl;
     PyConfig_InitPythonConfig       : procedure(var config: PyConfig); cdecl;
@@ -1829,6 +1845,17 @@ type
     PyConfig_SetArgv                : function(var config: PyConfig; argc: Py_ssize_t; argv: PPWCharT): PyStatus; cdecl;
     PyConfig_SetWideStringList      : function(var config: PyConfig; list: PPyWideStringList; length: Py_ssize_t; items: PPWCharT): PyStatus; cdecl;
     Py_InitializeFromConfig         : function({$IFDEF FPC}constref{$ELSE}[Ref] const{$ENDIF} config: PyConfig): PyStatus; cdecl;
+
+    // PEP 741 Initialization functions - python 3.14+
+    PyInitConfig_Create             : function(): PPyInitConfig; cdecl;
+    PyInitConfig_Free               : procedure(config: PPyInitConfig); cdecl;
+    Py_InitializeFromInitConfig     : function(config: PPyInitConfig): Integer; cdecl;
+    PyInitConfig_SetInt             : function(config: PPyInitConfig; name: PAnsiChar; value: Int64): Integer; cdecl;
+    PyInitConfig_SetStr             : function(config: PPyInitConfig; name: PAnsiChar; value: PAnsiChar): Integer; cdecl;
+    PyInitConfig_SetStrList         : function(config: PPyInitConfig; name: PAnsiChar; Lenght: Py_ssize_t; value: PPAnsiChar): Integer; cdecl;
+    PyInitConfig_GetError           : function(config: PPyInitConfig; err_msg: PPAnsiChar): integer; cdecl;
+    PyConfig_Get                    : function(name: PAnsiChar): PPyObject; cdecl;
+    PyConfig_Set                    : function(name: PAnsiChar; value: PPyObject): Integer; cdecl;
 
   function Py_CompileString(str,filename:PAnsiChar;start:integer) : PPyObject; cdecl;
 
@@ -1934,15 +1961,26 @@ end;
 //--------------------------------------------------------
 type
   TDatetimeConversionMode = (dcmToTuple, dcmToDatetime);
+  TPythonFlag = (pfDebug, pfInteractive, pfNoSite, pfOptimize, pfVerbose,
+                 pfFrozen, pfIgnoreEnvironment, pfNoUserSiteDirectory,
+                 pfDontWriteBytecode, pfIsolated);
+  TPythonFlags = set of TPythonFlag;
+
 const
   DEFAULT_DATETIME_CONVERSION_MODE = dcmToTuple;
+  DEFAULT_FLAGS =
+    {$IFDEF IOS}
+    [pfIsolated, pfNoUserSiteDirectory, pfIgnoreEnvironment,
+    pfDontWriteBytecodeFlag]
+    {$ELSE}
+    []
+    {$ENDIF IOS};
+
 type
   TEngineClient = class;
   TSysPathInitEvent = procedure(Sender: TObject; PathList: PPyObject) of object;
-  TConfigInitEvent = procedure(Sender: TObject; var Config: PyConfig) of object;
-  TPythonFlag = (pfDebug, pfInteractive, pfNoSite, pfOptimize, pfVerbose,
-                 pfFrozenFlag, pfIgnoreEnvironmentFlag, pfIsolated);
-  TPythonFlags = set of TPythonFlag;
+  // Config will be either PPyConfig if version < 3.14 or PPyInitConfig
+  TConfigInitEvent = procedure(Sender: TObject; Config: Pointer) of object;
 
 
   TTracebackItem = class
@@ -1979,7 +2017,7 @@ type
   {$IFEND}
   TPythonEngine = class(TPythonInterface)
   private
-    FVenvPythonExe:              string;
+    FPythonExecutable:           string;
     FInitScript:                 TStrings;
     FIO:                         TPythonInputOutput;
     FRedirectIO:                 Boolean;
@@ -2021,14 +2059,12 @@ type
     function  GetClients( idx : Integer ) : TEngineClient;
     procedure Notification(AComponent: TComponent;
       Operation: TOperation); override;
-    procedure SetProgramArgs(var Config: PyConfig);
     procedure InitWinConsole;
     procedure SetUseWindowsConsole( const Value : Boolean );
     procedure SetGlobalVars(const Value: PPyObject);
     procedure SetLocalVars(const Value: PPyObject);
     procedure SetPyFlags(const Value: TPythonFlags);
     procedure SetIO(InputOutput: TPythonInputOutput);
-    procedure AssignPyFlags(var Config: PyConfig);
 
   public
     // Constructors & Destructors
@@ -2131,11 +2167,11 @@ type
     property PythonPath: UnicodeString read FPythonPath write FPythonPath;
   published
     property AutoFinalize: Boolean read FAutoFinalize write FAutoFinalize default True;
-    property VenvPythonExe: string read FVenvPythonExe write FVenvPythonExe;
+    property PythonExecutable: string read FPythonExecutable write FPythonExecutable;
     property DatetimeConversionMode: TDatetimeConversionMode read FDatetimeConversionMode write FDatetimeConversionMode default DEFAULT_DATETIME_CONVERSION_MODE;
     property InitScript: TStrings read FInitScript write SetInitScript;
     property IO: TPythonInputOutput read FIO write SetIO;
-    property PyFlags: TPythonFlags read FPyFlags write SetPyFlags default [];
+    property PyFlags: TPythonFlags read FPyFlags write SetPyFlags default DEFAULT_FLAGS;
     property RedirectIO: Boolean read FRedirectIO write FRedirectIO default True;
     property UseWindowsConsole: Boolean read FUseWindowsConsole write FUseWindowsConsole default False;
     property OnAfterInit: TNotifyEvent read FOnAfterInit write FOnAfterInit;
@@ -2548,9 +2584,9 @@ type
   // The base class of all new Python types
   TPyObject = class
   private
-    function  Get_ob_refcnt: NativeInt;
+    function  Get_ob_refcnt: NativeUInt;
     function  Get_ob_type: PPyTypeObject;
-    procedure Set_ob_refcnt(const Value: NativeInt);
+    procedure Set_ob_refcnt(const Value: NativeUInt);
     procedure Set_ob_type(const Value: PPyTypeObject);
   public
     PythonType     : TPythonType;
@@ -2571,7 +2607,7 @@ type
     procedure Adjust(PyPointer: Pointer);
     function  GetModule : TPythonModule;
 
-    property ob_refcnt : NativeInt read Get_ob_refcnt write Set_ob_refcnt;
+    property ob_refcnt : NativeUInt read Get_ob_refcnt write Set_ob_refcnt;
     property ob_type   : PPyTypeObject read Get_ob_type write Set_ob_type;
 
     // Type services
@@ -3044,6 +3080,59 @@ SPyExcStopIteration = 'Stop Iteration';
 SPyExcSystemError = 'Unhandled SystemExit exception. Code: %s';
 SPyInitFailed = 'Python initialization failed: %s';
 SPyInitFailedUnknown = 'Unknown initialization error';
+SCannotCreateMain = 'Run_CommandAsObject: can''t create __main__';
+SRaiseError = 'RaiseError: couldn''t fetch last exception';
+SMissingModuleDateTime = 'dcmToDatetime DatetimeConversionMode cannot be used with this version of python. Missing module datetime';
+SInvalidDateTimeConvMode = 'Invalid DatetimeConversionMode';
+SUnexpectedTypeInTimeObject = 'Unexpected type found in member %s of a time_struct object';
+SArguementTypeNotAllowed = 'Argument type not allowed';
+SCouldNotCreateTuple = 'Could not create a new tuple object';
+SCouldNotCreateList = 'Could not create a new list object';
+SCouldNotCreateDict = 'Could not create a new dict object';
+SArgumemntsShouldBeEven = 'You must provide an even number of arguments';
+SExpectedList = 'The python object is not a list';
+SExpectedTuple = 'The python object is not a tuple';
+SCouldNotSetVar = 'Could not set var "%s" in module "%s"';
+SCannotSetVarNoInit = 'Can''t set var "%s" in module "%s", because it is not yet initialized';
+SCannotGetDict = 'Can''t get __dict__ of module "%s"';
+SCannotDelVarNoInit = 'Can''t delete var "%s" in module "%s", because it is not yet initialized';
+SExpectedDelphiClass = 'Pytho;n object "%s" is not a Delphi class';
+SCannotCreateModule = 'CreateVar: can''t create module "%s"';
+SVarNotCreated = 'No variable was created';
+SVarExists = 'A variable "%s" already exists in the module "%s"';
+SCannotCreateThreadState = 'Could not create a new thread state';
+SCannotCreatePythonEngine = 'No Python engine was created';
+SCannotInitPythonEngine = 'The Python engine is not properly initialized';
+SThreadPythonExec = 'ThreadPythonExec should only be called from the main thread';
+SQuitMessage = 'Dll %s could not be loaded. We must quit.';
+SPythonQuitMessage = 'Python DLL %s could not be initialized. We must quit.';
+SErrCannotOpenDLL = 'Error %d: Could not open Dll "%s"';
+SPythonNoInit = 'Python is not initialized';
+SOnlyOnePythonEngine = 'You canott have more than one TPythonEngine component';
+SMoreThanOnePythonEngine = 'There is already one instance of TPythonEngine running';
+SGlobalVarsShouldBeDict = 'You must set a Python dictionary in the GlobalVars property';
+SLocalVarsShouldBeDict = 'You must set a Python dictionary in the LocalVars property';
+SCannotModifyFlags = 'You can''t modify Python flags after it has been initialized';
+SCannotFindType = 'Could not find type: %s';
+SCannotFindModule = 'Could not find module: %s';
+SCannotFindComponent = 'Could not find component: %s';
+SCannotHandleMoreThan3Dim = 'Can''t convert a variant array of more than 3 dimensions to a Python sequence';
+SNoEngineForComponent = 'No Engine defined for component "%s"';
+SIndexOutOfRange = '%s: Index %d out of range';
+SUnknownMemberType = 'Unknown member type';
+SUnknownMemberFlag = 'Unknown member flag';
+SDuplicateErrorName = 'In module "%s", there''s already an error named "%s"';
+SNoModuleWithParentClass = 'Could not find module containing the parent class of error "%s"';
+SCannotFindParentClass = 'Could not find the parent class "%s" of error "%s"';
+SObjectNotClass = 'The object "%s" in module "%s" is not a class';
+SErrorNotClass = 'Error without name in module "%s"';
+SCouldNotCreateError = 'Could not create error "%s"';
+STErrorCouldNotCreateInstance = 'TError.RaiseErrorObj: Could not create an instance of "%s"';
+STErrorCouldNotCreateTuple = 'TError.RaiseErrorObj: Could not create an empty tuple';
+STErrorNoInstance = 'TError.RaiseErrorObj: I didn''t get an instance';
+SCouldNotFindError = 'Could not find error "%s"';
+SCouldNotMapSymbol = 'Error %d: could not map symbol "%s"';
+SUndeterminedPythonVersion = 'Undetermined Python version';
 
 (*******************************************************)
 (**                                                   **)
@@ -3395,7 +3484,7 @@ begin
 
   if not IsHandleValid then begin
     {$IFDEF MSWINDOWS}
-    s := Format('Error %d: Could not open Dll "%s"',[GetLastError, DllName]);
+    s := Format(SErrCannotOpenDLL, [GetLastError, DllName]);
     {$ELSE}
     s := Format('Error: Could not open Dll "%s"',[DllName]);
     {$ENDIF}
@@ -3443,7 +3532,7 @@ begin
   {$IFEND}
   if (Result = nil) and canFail then begin
     {$IFDEF MSWINDOWS}
-    E := EDllImportError.CreateFmt('Error %d: could not map symbol "%s"', [GetLastError, funcname]);
+    E := EDllImportError.CreateFmt(SCouldNotMapSymbol, [GetLastError, funcname]);
     E.ErrorCode := GetLastError;
     {$ELSE}
     E := EDllImportError.CreateFmt('Error: could not map symbol "%s"', [funcname]);
@@ -3538,7 +3627,7 @@ begin
     end;
 
   if not LFound then
-    raise EDLLLoadError.Create('Undetermined Python version from loaded module.');
+    raise EDLLLoadError.Create(SUndeterminedPythonVersion);
 end;
 
 procedure TDynamicDll.LoadDll;
@@ -3591,7 +3680,7 @@ end;
 
 function  TDynamicDll.GetQuitMessage : string;
 begin
-  Result := Format( 'Dll %s could not be loaded. We must quit.', [DllName]);
+  Result := Format(SQuitMessage, [DllName]);
 end;
 
 function TDynamicDll.HasPythonSymbolsInLibrary: boolean;
@@ -3664,7 +3753,7 @@ begin
   if not FInExtensionModule then
     PythonVersionFromDLLName(DLLName, FMajorVersion, FMinorVersion)
   else if not PythonVersionFromRegVersion(RegVersion, FMajorVersion, FMinorVersion) then
-    raise EDLLLoadError.Create('Undetermined Python version.');
+    raise EDLLLoadError.Create(SUndeterminedPythonVersion);
 
   FBuiltInModuleName := 'builtins';
 
@@ -3685,13 +3774,13 @@ end;
 
 function  TPythonInterface.GetQuitMessage : string;
 begin
-  Result := Format( 'Python could not be properly initialized. We must quit.', [DllName]);
+  Result := Format(SPythonQuitMessage, [DllName]);
 end;
 
 procedure TPythonInterface.CheckPython;
 begin
   if not Initialized then
-    raise Exception.Create('Python is not properly initialized' );
+    raise Exception.Create(SPythonNoInit);
 end;
 
 procedure TPythonInterface.MapDll;
@@ -3778,6 +3867,7 @@ begin
   PyStaticMethod_Type        := Import('PyStaticMethod_Type');
   PySuper_Type               := Import('PySuper_Type');
   PyTraceBack_Type           := Import('PyTraceBack_Type');
+  PyGetSetDescr_Type         := Import('PyGetSetDescr_Type');
   PyWrapperDescr_Type        := Import('PyWrapperDescr_Type');
   _PyWeakref_RefType         := Import('_PyWeakref_RefType');
   _PyWeakref_ProxyType       := Import('_PyWeakref_ProxyType');
@@ -3895,6 +3985,7 @@ begin
   PyLong_FromLongLong       := Import('PyLong_FromLongLong');
   PyLong_FromUnsignedLongLong := Import('PyLong_FromUnsignedLongLong');
   PyLong_AsLongLong         := Import('PyLong_AsLongLong');
+  PyLong_AsVoidPtr          := Import('PyLong_AsVoidPtr');
   PyLong_FromVoidPtr        := Import('PyLong_FromVoidPtr');
   PyMapping_Check           := Import('PyMapping_Check');
   PyMapping_GetItemString   := Import('PyMapping_GetItemString');
@@ -4060,11 +4151,10 @@ begin
   Py_GetPrefix                := Import('Py_GetPrefix');
   Py_GetProgramName           := Import('Py_GetProgramName');
 
-  PyErr_NewException          := Import('PyErr_NewException');
-  try
-    PyMem_Malloc := Import ('PyMem_Malloc');
-  except
-  end;
+  PyErr_NewException       := Import('PyErr_NewException');
+  PyMem_Malloc             := Import ('PyMem_Malloc');
+  PyMem_Free               := Import ('PyMem_Free');
+
   Py_IsInitialized         := Import('Py_IsInitialized');
   Py_GetProgramFullPath    := Import('Py_GetProgramFullPath');
   Py_GetBuildInfo          := Import('Py_GetBuildInfo');
@@ -4096,6 +4186,20 @@ begin
   PyConfig_SetArgv            := Import('PyConfig_SetArgv');
   PyConfig_SetWideStringList  := Import('PyConfig_SetWideStringList');
   Py_InitializeFromConfig     := Import('Py_InitializeFromConfig');
+
+  // PEP 741
+  if (MajorVersion > 3) or (MinorVersion >= 14) then
+  begin
+    PyInitConfig_Create         := Import('PyInitConfig_Create');
+    PyInitConfig_Free           := Import('PyInitConfig_Free');
+    Py_InitializeFromInitConfig := Import('Py_InitializeFromInitConfig');
+    PyInitConfig_SetInt         := Import('PyInitConfig_SetInt');
+    PyInitConfig_SetStr         := Import('PyInitConfig_SetStr');
+    PyInitConfig_SetStrList     := Import('PyInitConfig_SetStrList');
+    PyInitConfig_GetError       := Import('PyInitConfig_GetError');
+    PyConfig_Get                := Import('PyConfig_Get');
+    PyConfig_Set                := Import('PyConfig_Set');
+  end;
 end;
 
 function TPythonInterface.Py_CompileString(str,filename:PAnsiChar;start:integer):PPyObject;
@@ -4395,7 +4499,7 @@ end;
  * This method is automatically called by the Exec/Eval methods of
  * TPythonEngine. But if you use the Python core API, then don't
  * forget to refresh the traceback yourself. Or much better,
- * simply use the method CheckError wich will call PyErr_Print,
+ * simply use the method CheckError which will call PyErr_Print,
  * Traceback.Refresh and RaiseError for you.
 }
 procedure TPythonTraceback.Refresh(pytraceback: PPyObject);
@@ -4514,14 +4618,14 @@ begin
   FAutoFinalize            := True;
   FTraceback               := TPythonTraceback.Create;
   FUseWindowsConsole       := False;
-  FPyFlags                 := [];
+  FPyFlags                 := DEFAULT_FLAGS;
   FDatetimeConversionMode  := DEFAULT_DATETIME_CONVERSION_MODE;
   if csDesigning in ComponentState then
     begin
       for i := 0 to AOwner.ComponentCount - 1 do
         if (AOwner.Components[i] is TPythonEngine) and
            (AOwner.Components[i] <> Self) then
-          raise Exception.Create('You can''t drop more than one TPythonEngine component');
+          raise Exception.Create(SOnlyOnePythonEngine);
     end;
 end;
 
@@ -4626,25 +4730,245 @@ begin
   end;
 end;
 
-procedure TPythonEngine.AssignPyFlags(var Config: PyConfig);
-begin
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.parser_debug])^ :=
-    IfThen(pfDebug in FPyFlags, 1, 0);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.verbose])^ :=
-    IfThen(pfVerbose in FPyFlags, 1, 0);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.interactive])^ :=
-    IfThen(pfInteractive in FPyFlags, 1, 0);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.optimization_level])^ :=
-    IfThen(pfOptimize in FPyFlags, 1, 0);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.site_import])^ :=
-    IfThen(pfNoSite in FPyFlags, 0, 1);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.pathconfig_warnings])^ :=
-    IfThen(pfFrozenFlag in FPyFlags, 1, 0);
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.use_environment])^ :=
-    IfThen(pfIgnoreEnvironmentFlag in FPyFlags, 0, 1);
-end;
-
 procedure TPythonEngine.Initialize;
+
+  procedure ConfigPEP587(var ErrMsg: string);
+  // Initialize according to PEP587 available since python 3.8
+
+    procedure AssignPyFlags(var Config: PyConfig);
+    begin
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.parser_debug])^ :=
+        IfThen(pfDebug in FPyFlags, 1, 0);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.verbose])^ :=
+        IfThen(pfVerbose in FPyFlags, 1, 0);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.interactive])^ :=
+        IfThen(pfInteractive in FPyFlags, 1, 0);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.optimization_level])^ :=
+        IfThen(pfOptimize in FPyFlags, 1, 0);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.site_import])^ :=
+        IfThen(pfNoSite in FPyFlags, 0, 1);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.pathconfig_warnings])^ :=
+        IfThen(pfFrozen in FPyFlags, 1, 0);
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.use_environment])^ :=
+        IfThen(pfIgnoreEnvironment in FPyFlags, 0, 1);
+    end;
+
+    procedure SetProgramArgs(var Config: PyConfig);
+    var
+      I: Integer;
+      TempS: UnicodeString;
+      Str: WCharTString;
+
+    begin
+      // do not parse further
+      PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.parse_argv])^ := 0;
+      for I := 0 to ParamCount do
+      begin
+        {
+           ... the first entry should refer to the script file to be executed rather
+           than the executable hosting the Python interpreter. If there isn’t a
+           script that will be run, the first entry in argv can be an empty string.
+        }
+        if I = 0 then
+          TempS := ''
+        else
+          TempS := ParamStr(I);
+        {$IFDEF POSIX}
+        Str := UnicodeStringToUCS4String(TempS);
+        {$ELSE}
+        Str := TempS;
+        {$ENDIF}
+        PyWideStringList_Append(
+          PPyWideStringList(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.argv]),
+          PWCharT(Str));
+       end;
+    end;
+
+    procedure SetPythonPath(var Config: PyConfig);
+    var
+      Paths: TStringDynArray;
+      I: Integer;
+      PWSL: PPyWideStringList;
+    begin
+      if FPythonPath = '' then Exit;
+
+      PWSL := PPyWideStringList(PByte(@Config) + ConfigOffests[MinorVersion,
+        TConfigFields.module_search_paths]);
+      Paths := SplitString(string(FPythonPath), PathSep);
+      for I := 0 to Length(Paths) - 1 do
+      begin
+        if (Paths[I] = '') and (I > 0) then
+          Continue;
+        PyWideStringList_Append(PWSL, PWCharT(StringToWCharTString(Paths[I])));
+      end;
+
+      if PWSL^.length > 0 then
+        PInteger(PByte(@Config) + ConfigOffests[MinorVersion,
+          TConfigFields.module_search_paths_set])^ := 1;
+    end;
+
+  var
+    Config: PyConfig;
+    Status: PyStatus;
+  begin
+    // Fills Config with zeros and then sets some default values
+    if pfIsolated in FPyFlags then
+      PyConfig_InitIsolatedConfig(Config)
+    else
+      PyConfig_InitPythonConfig(Config);
+    try
+      AssignPyFlags(Config);
+
+      // Set programname and pythonhome if available
+      if FProgramName <> '' then
+        PyConfig_SetString(Config,
+          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.program_name]),
+          PWCharT(StringToWCharTString(FProgramName)));
+      if FPythonHome <> '' then
+        PyConfig_SetString(Config,
+          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.home]),
+          PWCharT(StringToWCharTString(FPythonHome)));
+      // Set venv executable if available
+      if FPythonExecutable <> '' then
+        PyConfig_SetString(Config,
+          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.executable]),
+          PWCharT(StringToWCharTString(FPythonExecutable)));
+
+      // Set program arguments (sys.argv)
+      SetProgramArgs(Config);
+
+      // PythonPath
+      SetPythonPath(Config);
+
+      // Fine tune Config
+      if Assigned(FOnConfigInit) then
+        FOnConfigInit(Self, @Config);
+
+      Status := Py_InitializeFromConfig(Config);
+      FInitialized := Py_IsInitialized() <> 0;
+
+      if PyStatus_Exception(Status) then
+        ErrMsg := Format(SPyInitFailed, [string(Status.err_msg)])
+      else if not FInitialized then
+        ErrMsg := Format(SPyInitFailed, [SPyInitFailedUnknown]);
+
+    finally
+      PyConfig_Clear(Config);
+    end;
+  end;
+
+  procedure ConfigPEP741(var ErrMsg: string);
+  // Initialize according to PEP587 available since python 3.8
+
+    procedure AssignPyFlags(Config: PPyInitConfig);
+    begin
+      PyInitConfig_SetInt(Config, 'isolated', IfThen(pfIsolated in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'parser_debug', IfThen(pfDebug in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'verbose', IfThen(pfVerbose in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'interactive', IfThen(pfInteractive in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'optimization_level', IfThen(pfOptimize in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'site_import', IfThen(pfNoSite in FPyFlags, 0, 1));
+      PyInitConfig_SetInt(Config, 'pathconfig_warnings', IfThen(pfFrozen in FPyFlags, 1, 0));
+      PyInitConfig_SetInt(Config, 'use_environment', IfThen(pfIgnoreEnvironment in FPyFlags, 0, 1));
+      PyInitConfig_SetInt(Config, 'user_site_directory', IfThen(pfNoUserSiteDirectory in FPyFlags, 0, 1));
+      PyInitConfig_SetInt(Config, 'write_bytecode', IfThen(pfDontWriteBytecode in FPyFlags, 0, 1));
+    end;
+
+    procedure SetProgramArgs(Config: PPyInitConfig);
+    var
+      I: Integer;
+      Params: TArray<AnsiString>;
+      PParams: TArray<PAnsiChar>;
+    begin
+      // do not parse further
+      PyInitConfig_SetInt(Config, 'parse_argv', 0);
+
+      SetLength(Params, ParamCount + 1);
+      SetLength(PParams, ParamCount + 1);
+      for I := 0 to ParamCount do
+      begin
+        {
+           ... the first entry should refer to the script file to be executed rather
+           than the executable hosting the Python interpreter. If there isn’t a
+           script that will be run, the first entry in argv can be an empty string.
+        }
+        if I = 0 then
+          Params[I] := ''
+        else
+          Params[I] := EncodeString(ParamStr(I));
+        PParams[I] := PAnsiChar(Params[I])
+      end;
+      PyInitConfig_SetStrList(Config, 'argv', ParamCount + 1, @PParams[0]);
+    end;
+
+    procedure SetPythonPath(Config: PPyInitConfig);
+    var
+      Paths: TStringDynArray;
+      I: Integer;
+      Utf8Paths: TArray<AnsiString>;
+      PUtf8Paths: TArray<PAnsiChar>;
+    begin
+      if FPythonPath = '' then Exit;
+
+      Paths := SplitString(string(FPythonPath), PathSep);
+
+      if Length(Paths) = 0  then Exit;
+
+      SetLength(Utf8Paths, Length(Paths));
+      SetLength(PUtf8Paths, Length(Paths));
+
+      for I := 0 to Length(Paths) - 1 do
+      begin
+        Utf8Paths[I] := EncodeString(Paths[I]);
+        PUtf8Paths[I] := PAnsiChar(Utf8Paths[I]);
+      end;
+
+      // The following Also sets module_search_paths_set
+      PyInitConfig_SetStrList(Config, 'module_search_paths', Length(Paths), @PUtf8Paths[0]);
+    end;
+
+  var
+    Config: PPyInitConfig;
+    PErrMsg: PAnsiChar;
+  begin
+    Config := PyInitConfig_Create;
+    try
+      AssignPyFlags(Config);
+
+      // Set programname and pythonhome if available
+      if FProgramName <> '' then
+        PyInitConfig_SetStr(Config, 'program_name', PAnsiChar(EncodeString(FProgramName)));
+      if FPythonHome <> '' then
+        PyInitConfig_SetStr(Config, 'home', PAnsiChar(EncodeString(FPythonHome)));
+      // Set venv executable if available
+      if FPythonExecutable <> '' then
+        PyInitConfig_SetStr(Config, 'executable', PAnsiChar(EncodeString(FPythonExecutable)));
+
+      // Set program arguments (sys.argv)
+      SetProgramArgs(Config);
+
+      // PythonPath
+      SetPythonPath(Config);
+
+      // Fine tune Config
+      if Assigned(FOnConfigInit) then
+        FOnConfigInit(Self, Config);
+
+      if Py_InitializeFromInitConfig(Config) <> 0 then
+      begin
+        FInitialized := False;
+        PyInitConfig_GetError(Config, @PErrMsg);
+        if PErrMsg <> nil then
+          ErrMsg := Format(SPyInitFailed, [UTF8ToString(AnsiString(PErrMsg))]);
+      end
+      else
+        FInitialized := Py_IsInitialized() <> 0;
+      if not FInitialized and (ErrMsg = '') then
+        ErrMsg := Format(SPyInitFailed, [SPyInitFailedUnknown]);
+    finally
+      PyInitConfig_Free(Config);
+    end;
+  end;
 
   procedure InitSysPath;
   var
@@ -4653,29 +4977,6 @@ procedure TPythonEngine.Initialize;
     _path := PySys_GetObject('path');
     if Assigned(FOnSysPathInit) then
       FOnSysPathInit(Self, _path);
-  end;
-
-  procedure SetPythonPath(var Config: PyConfig);
-  var
-    Paths: TStringDynArray;
-    I: Integer;
-    PWSL: PPyWideStringList;
-  begin
-    if FPythonPath = '' then Exit;
-
-    PWSL := PPyWideStringList(PByte(@Config) + ConfigOffests[MinorVersion,
-      TConfigFields.module_search_paths]);
-    Paths := SplitString(string(FPythonPath), PathSep);
-    for I := 0 to Length(Paths) - 1 do
-    begin
-      if (Paths[I] = '') and (I > 0) then
-        Continue;
-      PyWideStringList_Append(PWSL, PWCharT(StringToWCharTString(Paths[I])));
-    end;
-
-    if PWSL^.length > 0 then
-      PInteger(PByte(@Config) + ConfigOffests[MinorVersion,
-        TConfigFields.module_search_paths_set])^ := 1;
   end;
 
   function GetVal(AModule : PPyObject; AVarName : AnsiString) : PPyObject;
@@ -4727,12 +5028,10 @@ procedure TPythonEngine.Initialize;
 
 var
   i : Integer;
-  Config: PyConfig;
-  Status: PyStatus;
   ErrMsg: string;
 begin
   if Assigned(gPythonEngine) then
-    raise Exception.Create('There is already one instance of TPythonEngine running' );
+    raise Exception.Create(SMoreThanOnePythonEngine);
 
   gPythonEngine := Self;
 
@@ -4741,51 +5040,13 @@ begin
     FInitialized := True
   else
   begin
-    // Fills Config with zeros and then sets some default values
-    if pfIsolated in FPyFlags then
-      PyConfig_InitIsolatedConfig(Config)
+    if (MajorVersion > 3) or (MinorVersion >= 14) then
+      ConfigPEP741(ErrMsg)
     else
-      PyConfig_InitPythonConfig(Config);
-    try
-      AssignPyFlags(Config);
-
-      // Set programname and pythonhome if available
-      if FProgramName <> '' then
-        PyConfig_SetString(Config,
-          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.program_name]),
-          PWCharT(StringToWCharTString(FProgramName)));
-      if FPythonHome <> '' then
-        PyConfig_SetString(Config,
-          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.home]),
-          PWCharT(StringToWCharTString(FPythonHome)));
-      // Set venv executable if available
-      if FVenvPythonExe <> '' then
-        PyConfig_SetString(Config,
-          PPWcharT(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.executable]),
-          PWCharT(StringToWCharTString(FVenvPythonExe)));
-
-      // Set program arguments (sys.argv)
-      SetProgramArgs(Config);
-
-      // PythonPath
-      SetPythonPath(Config);
-
-      // Fine tune Config
-      if Assigned(FOnConfigInit) then
-        FOnConfigInit(Self, Config);
-
-      Status := Py_InitializeFromConfig(Config);
-      FInitialized := Py_IsInitialized() <> 0
-    finally
-      PyConfig_Clear(Config);
-    end;
+      ConfigPEP587(ErrMsg);
 
     if not FInitialized then
     begin
-      if PyStatus_Exception(Status) then
-        ErrMsg := Format(SPyInitFailed, [string(Status.err_msg)])
-      else
-        ErrMsg := Format(SPyInitFailed, [SPyInitFailedUnknown]);
       if FatalMsgDlg then
         {$IFDEF MSWINDOWS}
         MessageBox( GetActiveWindow, PChar(ErrMsg), 'Error', MB_TASKMODAL or MB_ICONSTOP );
@@ -4860,37 +5121,6 @@ begin
     IO := nil
 end;
 
-procedure TPythonEngine.SetProgramArgs(var Config: PyConfig);
-var
-  I: Integer;
-  TempS: UnicodeString;
-  Str: WCharTString;
-
-begin
-  // do not parse further
-  PInteger(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.parse_argv])^ := 0;
-  for I := 0 to ParamCount do
-  begin
-    {
-       ... the first entry should refer to the script file to be executed rather
-       than the executable hosting the Python interpreter. If there isn’t a
-       script that will be run, the first entry in argv can be an empty string.
-    }
-    if I = 0 then
-      TempS := ''
-    else
-      TempS := ParamStr(I);
-    {$IFDEF POSIX}
-    Str := UnicodeStringToUCS4String(TempS);
-    {$ELSE}
-    Str := TempS;
-    {$ENDIF}
-    PyWideStringList_Append(
-      PPyWideStringList(PByte(@Config) + ConfigOffests[MinorVersion, TConfigFields.argv]),
-      PWCharT(Str));
-   end;
-end;
-
 procedure TPythonEngine.InitWinConsole;
 begin
 {$IFDEF MSWINDOWS}
@@ -4918,7 +5148,7 @@ begin
     else
       begin
         FGlobalVars := nil;
-        raise Exception.Create('You must set a Python dictionary in the GlobalVars property');
+        raise Exception.Create(SGlobalVarsShouldBeDict);
       end
   else
     FGlobalVars := nil;
@@ -4936,7 +5166,7 @@ begin
     else
       begin
         FLocalVars := nil;
-        raise Exception.Create('You must set a Python dictionary in the LocalVars property');
+        raise Exception.Create(SLocalVarsShouldBeDict);
       end
   else
     FLocalVars := nil;
@@ -4948,7 +5178,7 @@ begin
   if FPyFlags <> Value then
   begin
     if Initialized then
-      raise Exception.Create('You can''t modify Python flags after it has been initialized');
+      raise Exception.Create(SCannotModifyFlags);
     FPyFlags := Value;
   end; // of if
 end;
@@ -5089,7 +5319,7 @@ begin
 
   m := GetMainModule;
   if m = nil then
-    raise EPythonError.Create('Run_CommandAsObject: can''t create __main__');
+    raise EPythonError.Create(SCannotCreateMain);
 
   if Assigned(locals) then
     _locals  := locals
@@ -5433,7 +5663,7 @@ begin
         raise Define( EPyExecError.Create(''), s_type, s_value );
     end
   else
-    raise EPythonError.Create('RaiseError: couldn''t fetch last exception');
+    raise EPythonError.Create(SRaiseError);
 end;
 
 function TPythonEngine.PyObjectAsString( obj : PPyObject ) : string;
@@ -5567,7 +5797,7 @@ begin
             Result := TheTypePtr;
             Exit;
           end;
-  raise Exception.CreateFmt('Could not find type: %s', [aTypeName]);
+  raise Exception.CreateFmt(SCannotFindType, [aTypeName]);
 end;
 
 function   TPythonEngine.ModuleByName( const aModuleName : AnsiString ) : PPyObject;
@@ -5582,7 +5812,7 @@ begin
             Result := Module;
             Exit;
           end;
-  raise Exception.CreateFmt('Could not find module: %s', [aModuleName]);
+  raise Exception.CreateFmt(SCannotFindModule, [aModuleName]);
 end;
 
 function TPythonEngine.MethodsByName( const aMethodsContainer: string ) : PPyMethodDef;
@@ -5597,7 +5827,7 @@ begin
             Result := MethodsData;
             Exit;
           end;
-  raise Exception.CreateFmt('Could not find component: %s', [aMethodsContainer]);
+  raise Exception.CreateFmt(SCannotFindComponent, [aMethodsContainer]);
 end;
 
 function TPythonEngine.VariantAsPyObject( const V : Variant ) : PPyObject;
@@ -5717,7 +5947,7 @@ begin
         else if (DatetimeConversionMode = dcmToDatetime) then
         begin
           if not Assigned(FPyDateTime_DateTimeType) then
-            raise EPythonError.Create('dcmToDatetime DatetimeConversionMode cannot be used with this version of python. Missing module datetime');
+            raise EPythonError.Create(SMissingModuleDateTime);
           args := ArrayToPyTuple([y, m, d, h, mi, sec, ms*1000]);
           try
             Result := PyObject_Call(FPyDateTime_DateTimeType, args, nil);
@@ -5727,7 +5957,7 @@ begin
           end;
         end
         else
-          raise EPythonError.Create('Invalid DatetimeConversionMode');
+          raise EPythonError.Create(SInvalidDateTimeConvMode);
       end;
     varOleStr:
       begin
@@ -5755,7 +5985,7 @@ begin
         2: Result := ArrayVarDim2;
         3: Result := ArrayVarDim3;
         else
-          raise Exception.Create('Can''t convert a variant array of more than 3 dimensions to a Python sequence');
+          raise Exception.Create(SCannotHandleMoreThan3Dim);
         end;
       end
     else if VarIsNull(DeRefV) or VarIsEmpty(DeRefV) then
@@ -5781,7 +6011,7 @@ function TPythonEngine.PyObjectAsVariant( obj : PPyObject ) : Variant;
       if PyLong_Check(member) then
         Result := PyLong_AsLong(member)
       else
-        raise EPythonError.CreateFmt('Unexpected type found in member %s of a time_struct object', [AMember]);
+        raise EPythonError.CreateFmt(SUnexpectedTypeInTimeObject, [AMember]);
       Py_XDecRef(member);
     end;
 
@@ -5971,7 +6201,7 @@ begin
           Result := PyUnicodeFromString('');
       end;
   else
-    Raise Exception.Create('Argument type not allowed');
+    Raise Exception.Create(SArguementTypeNotAllowed);
   end;
 end;
 
@@ -5984,7 +6214,7 @@ var
 begin
   Result := PyTuple_New( High(objects)+1 );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new tuple object');
+    raise EPythonError.Create(SCouldNotCreateTuple);
   for i := Low(objects) to High(objects) do
     begin
       Py_XINCREF( objects[i] );
@@ -6001,7 +6231,7 @@ var
 begin
   Result := PyList_New( High(objects)+1 );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new list object');
+    raise EPythonError.Create(SCouldNotCreateList);
   for i := Low(objects) to High(objects) do
     begin
       Py_XIncRef( objects[i] );
@@ -6015,7 +6245,7 @@ var
 begin
   Result := PyTuple_New( High(items)+1 );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new tuple object');
+    raise EPythonError.Create(SCouldNotCreateTuple);
   for i := Low(items) to High(items) do
     PyTuple_SetItem( Result, i, VarRecAsPyObject( items[i] ) );
 end;
@@ -6026,7 +6256,7 @@ var
 begin
   Result := PyList_New( High(items)+1 );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new list object');
+    raise EPythonError.Create(SCouldNotCreateList);
   for i := Low(items) to High(items) do
     PyList_SetItem( Result, i, VarRecAsPyObject( items[i] ) );
 end;
@@ -6082,7 +6312,7 @@ function TPythonEngine.ArrayToPyDict( const items : array of const) : PPyObject;
           Result := '';
       end;
     else
-      Raise Exception.Create('Argument type not allowed');
+      Raise Exception.Create(SArguementTypeNotAllowed);
     end;
   end;
 
@@ -6092,10 +6322,10 @@ var
   obj : PPyObject;
 begin
   if ((High(items)+1) mod 2) <> 0 then
-    raise Exception.Create('You must provide an even number of arguments');
+    raise Exception.Create(SArgumemntsShouldBeEven);
   Result := PyDict_New;
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new dict object');
+    raise EPythonError.Create(SCouldNotCreateDict);
   i := Low(items);
   try
     while i <= High(items) do
@@ -6120,7 +6350,7 @@ var
 begin
   Result := PyList_New( strings.Count );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new list object');
+    raise EPythonError.Create(SCouldNotCreateList);
   for i := 0 to strings.Count - 1 do
     PyList_SetItem( Result, i,
       PyUnicodeFromString(strings.Strings[i]));
@@ -6132,7 +6362,7 @@ var
 begin
   Result := PyTuple_New( strings.Count );
   if not Assigned(Result) then
-    raise EPythonError.Create('Could not create a new tuple object');
+    raise EPythonError.Create(SCouldNotCreateTuple);
   for i := 0 to strings.Count - 1 do
     PyTuple_SetItem( Result, i,
       PyUnicodeFromString(strings.Strings[i]));
@@ -6144,7 +6374,7 @@ var
   i : Integer;
 begin
   if not PyList_Check(list) then
-    raise EPythonError.Create('the python object is not a list');
+    raise EPythonError.Create(SExpectedList);
   if ClearStrings then
     Strings.Clear;
   for i := 0 to PyList_Size( list ) - 1 do
@@ -6156,7 +6386,7 @@ var
   i : Integer;
 begin
   if not PyTuple_Check(tuple) then
-    raise EPythonError.Create('the python object is not a tuple');
+    raise EPythonError.Create(SExpectedTuple);
   strings.Clear;
   for i := 0 to PyTuple_Size( tuple ) - 1 do
     strings.Add( PyObjectAsString( PyTuple_GetItem( tuple, i ) ) );
@@ -6558,7 +6788,7 @@ end;
 procedure  TEngineClient.CheckEngine;
 begin
   if not Assigned(FEngine) then
-    raise Exception.CreateFmt('No Engine defined for component "%s"', [Name]);
+    raise Exception.CreateFmt(SNoEngineForComponent, [Name]);
 end;
 
 
@@ -6704,7 +6934,7 @@ end;
 function TMethodsContainer.GetMethods( idx : Integer ) : PPyMethodDef;
 begin
   if (idx < 0) or (idx > MethodCount) then
-    raise Exception.CreateFmt('%s: Index %d out of range', [ClassName, idx]);
+    raise Exception.CreateFmt(SIndexOutOfRange, [ClassName, idx]);
   Result := @( FMethods[idx] );
 end;
 
@@ -6837,7 +7067,7 @@ begin
       mtStringInplace:  _type := T_STRING_INPLACE;
       mtObjectEx:       _type := T_OBJECT_EX;
       else
-        raise Exception.Create('Unknown member type');
+        raise Exception.Create(SUnknownMemberType);
       end;
       offset    := MemberOffset + GetMembersStartOffset;
       case MemberFlags of
@@ -6847,9 +7077,9 @@ begin
       mfWriteRestricted:        flags := PY_WRITE_RESTRICTED;
       mfRestricted:             flags := RESTRICTED;
       else
-        raise Exception.Create('Unknown member flag');
+        raise Exception.Create(SUnknownMemberFlag);
       end;
-      doc       := MemberDoc;
+      doc := MemberDoc;
     end;
   Inc( FMemberCount );
 end;
@@ -6900,7 +7130,7 @@ end;
 function TMembersContainer.GetMembers(idx: Integer): PPyMemberDef;
 begin
   if (idx < 0) or (idx > MemberCount) then
-    raise Exception.CreateFmt('%s: Index %d out of range', [ClassName, idx]);
+    raise Exception.CreateFmt(SIndexOutOfRange, [ClassName, idx]);
   Result := @( FMembers[idx] );
 end;
 
@@ -6977,7 +7207,7 @@ end;
 function TGetSetContainer.GetGetSet(idx: Integer): PPyGetSetDef;
 begin
   if (idx < 0) or (idx > GetSetCount) then
-    raise Exception.CreateFmt('%s: Index %d out of range', [ClassName, idx]);
+    raise Exception.CreateFmt(SIndexOutOfRange, [ClassName, idx]);
   Result := @( FGetSets[idx] );
 end;
 
@@ -7014,7 +7244,8 @@ end;
 function TError.GetDisplayName: string;
 begin
   Result := string(Name);
-  if Result = '' then Result := inherited GetDisplayName;
+  if Result = '' then
+    Result := inherited GetDisplayName;
 end;
 
 procedure TError.SetName( const Value : AnsiString );
@@ -7032,8 +7263,8 @@ procedure TError.SetName( const Value : AnsiString );
         for i := 0 to Count - 1 do
           with Items[i] do
             if Name = Value then
-              raise Exception.CreateFmt( 'In module "%s", there''s already an error named "%s"',
-                                         [m.ModuleName, Value]);
+              raise Exception.CreateFmt(SDuplicateErrorName,
+                [m.ModuleName, Value]);
       end;
   end;
 
@@ -7143,13 +7374,13 @@ procedure TError.BuildError( const ModuleName : AnsiString );
         else
           m := FindModule( ModuleName );
         if not Assigned(m) then
-          raise Exception.CreateFmt('Could not find module containing the parent class of error "%s"', [Self.Name]);
+          raise Exception.CreateFmt(SNoModuleWithParentClass, [Self.Name]);
         d := PyModule_GetDict(m);
         Result := PyDict_GetItemString( d, PAnsiChar(ParentClass.Name) );
         if not Assigned(Result) then
-          raise Exception.CreateFmt('Could not find the parent class "%s" of error "%s"', [ParentClass.Name, Self.Name]);
+          raise Exception.CreateFmt(SCannotFindParentClass, [ParentClass.Name, Self.Name]);
         if not PyClass_Check( Result ) and not PyType_CheckExact( Result ) then
-          raise Exception.CreateFmt('The object "%s" in module "%s" is not a class', [ParentClass.Name, ParentClass.Module] );
+          raise Exception.CreateFmt(SObjectNotClass, [ParentClass.Name, ParentClass.Module] );
       end;
   end;
 
@@ -7160,7 +7391,7 @@ begin
     Exit;
   if Name = '' then
     with GetOwner as TPythonModule do
-      raise Exception.CreateFmt( 'Error without name in module "%s"', [ModuleName] );
+      raise Exception.CreateFmt(SErrorNotClass, [ModuleName] );
   if Text = '' then
     Text := Name;
   Owner.Owner.CheckEngine;
@@ -7180,7 +7411,7 @@ begin
         end;
     end;
   if not Assigned(Error) then
-    raise Exception.CreateFmt( 'Could not create error "%s"', [Name] );
+    raise Exception.CreateFmt(SCouldNotCreateError, [Name]);
 end;
 
 procedure TError.RaiseError(const msg : AnsiString);
@@ -7206,18 +7437,18 @@ begin
       begin
         res := PyObject_CallObject(Error, nil);
         if not Assigned(res) then
-          raise Exception.CreateFmt('TError.RaiseErrorObj: Could not create an instance of "%s"', [Self.Name]);
+          raise Exception.CreateFmt(STErrorCouldNotCreateInstance, [Self.Name]);
         if PyObject_TypeCheck(res, PPyTypeObject(PyExc_Exception^)) then
           begin
             args := PyTuple_New(1);
             if not Assigned(args) then
-              raise Exception.Create('TError.RaiseErrorObj: Could not create an empty tuple');
+              raise Exception.Create(STErrorCouldNotCreateTuple);
             str := PyUnicodeFromString(msg);
             PyTuple_SetItem(args, 0, str);
             res := PyObject_Call(Error, args, nil);
             Py_DECREF(args);
             if not Assigned(res) then
-              raise Exception.CreateFmt('TError.RaiseErrorObj: Could not create an instance of "%s"', [Self.Name]);
+              raise Exception.CreateFmt(STErrorCouldNotCreateInstance, [Self.Name]);
             keys := PyDict_Keys(obj);
             for i := 0 to PySequence_Length(keys)-1 do
             begin
@@ -7233,7 +7464,7 @@ begin
             Py_XDECREF(keys);
           end
         else
-          raise Exception.Create('TError.RaiseErrorObj: I didn''t get an instance' );
+          raise Exception.Create(STErrorNoInstance);
         PyErr_SetObject(Error, res);
         Py_XDECREF(res);
       end
@@ -7433,7 +7664,7 @@ begin
         Result := Errors.Items[i];
         Exit;
       end;
-  raise Exception.CreateFmt( 'Could not find error "%s"', [AName] );
+  raise Exception.CreateFmt(SCouldNotFindError, [AName] );
 end;
 
 procedure TPythonModule.RaiseError( const error, msg : AnsiString );
@@ -7485,10 +7716,10 @@ begin
   if Assigned(FEngine) and Assigned( FModule ) then
     begin
       if Engine.PyObject_SetAttrString(Module, PAnsiChar(varName), value ) <> 0 then
-        raise EPythonError.CreateFmt( 'Could not set var "%s" in module "%s"', [varName, ModuleName] );
+        raise EPythonError.CreateFmt(SCouldNotSetVar, [varName, ModuleName]);
     end
   else
-    raise EPythonError.CreateFmt( 'Can''t set var "%s" in module "%s", because it is not yet initialized', [varName, ModuleName] );
+    raise EPythonError.CreateFmt(SCannotSetVarNoInit, [varName, ModuleName]);
 end;
 
 // warning, this function will increase the refcount of value,
@@ -7502,7 +7733,7 @@ begin
     Engine.PyErr_Clear;
   end
   else
-    raise EPythonError.CreateFmt( 'Can''t get var "%s" in module "%s", because it is not yet initialized', [varName, ModuleName] );
+    raise EPythonError.CreateFmt(SCannotSetVarNoInit, [varName, ModuleName]);
 end;
 
 procedure TPythonModule.DeleteVar( const varName : AnsiString );
@@ -7513,11 +7744,12 @@ begin
     with Engine do
     begin
       dict := PyModule_GetDict( Module );
-      if not Assigned(dict) then raise EPythonError.CreateFmt( 'Can''t get __dict__ of module "%s"', [ModuleName] );
+      if not Assigned(dict) then
+        raise EPythonError.CreateFmt(SCannotGetDict, [ModuleName] );
       PyDict_DelItemString( dict, PAnsiChar(varName) );
     end
   else
-    raise EPythonError.CreateFmt( 'Can''t delete var "%s" in module "%s", because it is not yet initialized', [varName, ModuleName] );
+    raise EPythonError.CreateFmt(SCannotDelVarNoInit, [varName, ModuleName]);
 end;
 
 procedure TPythonModule.ClearVars;
@@ -7649,7 +7881,7 @@ begin
     Result := nil;
 end;
 
-function TPyObject.Get_ob_refcnt: NativeInt;
+function TPyObject.Get_ob_refcnt: NativeUInt;
 begin
   Result := GetSelf^.ob_refcnt;
 end;
@@ -7659,7 +7891,7 @@ begin
   Result := GetSelf^.ob_type;
 end;
 
-procedure TPyObject.Set_ob_refcnt(const Value: NativeInt);
+procedure TPyObject.Set_ob_refcnt(const Value: NativeUInt);
 begin
   GetSelf^.ob_refcnt := Value;
 end;
@@ -8085,7 +8317,7 @@ begin
   if IsDelphiObject( obj ) then
     Result := TPyObject(PAnsiChar(obj)+Sizeof(PyObject))
   else
-    raise EPythonError.CreateFmt( 'Python object "%s" is not a Delphi class', [GetPythonEngine.PyObjectAsString(obj)] );
+    raise EPythonError.CreateFmt(SExpectedDelphiClass, [GetPythonEngine.PyObjectAsString(obj)]);
 end;
 
 procedure PyObjectDestructor( pSelf : PPyObject); cdecl;
@@ -8936,7 +9168,7 @@ begin
       // Add a reference to this var in the module
       m := PyImport_AddModule(PAnsiChar(Module));
       if m = nil then
-        raise EPythonError.CreateFmt('CreateVar: can''t create module "%s"', [Module]);
+        raise EPythonError.CreateFmt(SCannotCreateModule, [Module]);
       d := PyModule_GetDict(m);
       if @PyDict_SetItemString = nil then
         raise Exception.Create('nil');
@@ -8950,7 +9182,7 @@ begin
     with TPyVar(PythonToDelphi(FVarObject)) do
       Result := GetValueAsVariant
   else
-    raise Exception.Create('No variable was created' );
+    raise Exception.Create(SVarNotCreated);
 end;
 
 procedure TPythonDelphiVar.SetValue( const val : Variant );
@@ -8959,7 +9191,7 @@ begin
     with TPyVar(PythonToDelphi(FVarObject)) do
       SetValueFromVariant(val)
   else
-    raise Exception.Create('No variable was created' );
+    raise Exception.Create(SVarNotCreated);
 end;
 
 // Warning: GetValueAsPyObject returns a preincremented object !
@@ -8969,7 +9201,7 @@ begin
     with TPyVar(PythonToDelphi(FVarObject)) do
       Result := GetValue
   else
-    raise Exception.Create('No variable was created' );
+    raise Exception.Create(SVarNotCreated);
 end;
 
 procedure TPythonDelphiVar.SetValueFromPyObject( val : PPyObject );
@@ -8978,7 +9210,7 @@ begin
     with TPyVar(PythonToDelphi(FVarObject)) do
       SetValue(val)
   else
-    raise Exception.Create('No variable was created' );
+    raise Exception.Create(SVarNotCreated);
 end;
 
 function  TPythonDelphiVar.IsVariantOk( const v : Variant ) : Boolean;
@@ -9031,7 +9263,7 @@ procedure TPythonDelphiVar.SetVarName( const val : AnsiString );
       if Owner.Components[i] is TPythonDelphiVar then
         with TPythonDelphiVar(Owner.Components[i]) do
           if (VarName = val) and (Module = Self.Module) then
-            raise Exception.CreateFmt('A variable "%s" already exists in the module "%s"',[val, Module]);
+            raise Exception.CreateFmt(SVarExists, [val, Module]);
   end;
 
 begin
@@ -9323,7 +9555,7 @@ begin
         PyThreadState_Swap(global_state);
         PyGILState_Release(gilstate);
       end else
-        raise EPythonError.Create('Could not create a new thread state');
+        raise EPythonError.Create(SCannotCreateThreadState);
     end;
   end;
 end;
@@ -9531,9 +9763,9 @@ end;
 function  GetPythonEngine : TPythonEngine;
 begin
   if not Assigned( gPythonEngine ) then
-    raise Exception.Create( 'No Python engine was created' );
+    raise Exception.Create(SCannotCreatePythonEngine);
   if not gPythonEngine.Finalizing and not gPythonEngine.Initialized then
-    raise Exception.Create( 'The Python engine is not properly initialized' );
+    raise Exception.Create(SCannotInitPythonEngine);
   Result := gPythonEngine;
 end;
 
@@ -9886,7 +10118,7 @@ var
   Thread: TAnonymousPythonThread;
 begin
   if GetCurrentThreadId <> MainThreadID then
-    raise Exception.Create('ThreadPythonExec should only be called from the main thread');
+    raise Exception.Create(SThreadPythonExec);
   Thread := TAnonymousPythonThread.Create(ExecuteProc, TerminateProc, WaitToFinish, ThreadExecMode);
   if WaitToFinish then
   begin

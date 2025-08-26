@@ -1,4 +1,4 @@
-﻿(**************************************************************************)
+﻿
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -20,7 +20,7 @@ interface
 
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses, WrapVclControls,
-  Windows, Forms, Graphics, TypInfo, osSysPath;
+  Windows, Forms, Graphics, TypInfo, osSysPath, Messages;
 
 type
   TCloseQueryEventHandler = class(TEventHandler)
@@ -285,6 +285,8 @@ type
     function ShowWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function WinExec_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function ShellExecute_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SendMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PostMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function GetSystemPath_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function Minimize_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function ModalStarted_Wrapper(args : PPyObject) : PPyObject; cdecl;
@@ -490,6 +492,458 @@ begin
   APyDelphiWrapper.DefineVar('DevicePath', DevicePath);
   APyDelphiWrapper.DefineVar('MediaPath', MediaPath);
   APyDelphiWrapper.DefineVar('WallPaper', WallPaper);
+
+  // Windows.Messages
+  APyDelphiWrapper.DefineVar('WM_NULL', WM_NULL);
+  APyDelphiWrapper.DefineVar('WM_CREATE', WM_CREATE);
+  APyDelphiWrapper.DefineVar('WM_DESTROY', WM_DESTROY);
+  APyDelphiWrapper.DefineVar('WM_MOVE', WM_MOVE);
+  APyDelphiWrapper.DefineVar('WM_SIZE', WM_SIZE);
+  APyDelphiWrapper.DefineVar('WM_ACTIVATE', WM_ACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_SETFOCUS', WM_SETFOCUS);
+  APyDelphiWrapper.DefineVar('WM_KILLFOCUS', WM_KILLFOCUS);
+  APyDelphiWrapper.DefineVar('WM_ENABLE', WM_ENABLE);
+  APyDelphiWrapper.DefineVar('WM_SETREDRAW', WM_SETREDRAW);
+  APyDelphiWrapper.DefineVar('WM_SETTEXT', WM_SETTEXT);
+  APyDelphiWrapper.DefineVar('WM_GETTEXT', WM_GETTEXT);
+  APyDelphiWrapper.DefineVar('WM_GETTEXTLENGTH', WM_GETTEXTLENGTH);
+  APyDelphiWrapper.DefineVar('WM_PAINT', WM_PAINT);
+  APyDelphiWrapper.DefineVar('WM_CLOSE', WM_CLOSE);
+  APyDelphiWrapper.DefineVar('WM_QUERYENDSESSION', WM_QUERYENDSESSION);
+  APyDelphiWrapper.DefineVar('WM_QUIT', WM_QUIT);
+  APyDelphiWrapper.DefineVar('WM_QUERYOPEN', WM_QUERYOPEN);
+  APyDelphiWrapper.DefineVar('WM_ERASEBKGND', WM_ERASEBKGND);
+  APyDelphiWrapper.DefineVar('WM_SYSCOLORCHANGE', WM_SYSCOLORCHANGE);
+  APyDelphiWrapper.DefineVar('WM_ENDSESSION', WM_ENDSESSION);
+  APyDelphiWrapper.DefineVar('WM_SYSTEMERROR', WM_SYSTEMERROR);
+  APyDelphiWrapper.DefineVar('WM_SHOWWINDOW', WM_SHOWWINDOW);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLOR', WM_CTLCOLOR);
+  APyDelphiWrapper.DefineVar('WM_WININICHANGE', WM_WININICHANGE);
+  APyDelphiWrapper.DefineVar('WM_SETTINGCHANGE', WM_SETTINGCHANGE);
+  APyDelphiWrapper.DefineVar('WM_DEVMODECHANGE', WM_DEVMODECHANGE);
+  APyDelphiWrapper.DefineVar('WM_ACTIVATEAPP', WM_ACTIVATEAPP);
+  APyDelphiWrapper.DefineVar('WM_FONTCHANGE', WM_FONTCHANGE);
+  APyDelphiWrapper.DefineVar('WM_TIMECHANGE', WM_TIMECHANGE);
+  APyDelphiWrapper.DefineVar('WM_CANCELMODE', WM_CANCELMODE);
+  APyDelphiWrapper.DefineVar('WM_SETCURSOR', WM_SETCURSOR);
+  APyDelphiWrapper.DefineVar('WM_MOUSEACTIVATE', WM_MOUSEACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_CHILDACTIVATE', WM_CHILDACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_QUEUESYNC', WM_QUEUESYNC);
+  APyDelphiWrapper.DefineVar('WM_GETMINMAXINFO', WM_GETMINMAXINFO);
+  APyDelphiWrapper.DefineVar('WM_PAINTICON', WM_PAINTICON);
+  APyDelphiWrapper.DefineVar('WM_ICONERASEBKGND', WM_ICONERASEBKGND);
+  APyDelphiWrapper.DefineVar('WM_NEXTDLGCTL', WM_NEXTDLGCTL);
+  APyDelphiWrapper.DefineVar('WM_SPOOLERSTATUS', WM_SPOOLERSTATUS);
+  APyDelphiWrapper.DefineVar('WM_DRAWITEM', WM_DRAWITEM);
+  APyDelphiWrapper.DefineVar('WM_MEASUREITEM', WM_MEASUREITEM);
+  APyDelphiWrapper.DefineVar('WM_DELETEITEM', WM_DELETEITEM);
+  APyDelphiWrapper.DefineVar('WM_VKEYTOITEM', WM_VKEYTOITEM);
+  APyDelphiWrapper.DefineVar('WM_CHARTOITEM', WM_CHARTOITEM);
+  APyDelphiWrapper.DefineVar('WM_SETFONT', WM_SETFONT);
+  APyDelphiWrapper.DefineVar('WM_GETFONT', WM_GETFONT);
+  APyDelphiWrapper.DefineVar('WM_SETHOTKEY', WM_SETHOTKEY);
+  APyDelphiWrapper.DefineVar('WM_GETHOTKEY', WM_GETHOTKEY);
+  APyDelphiWrapper.DefineVar('WM_QUERYDRAGICON', WM_QUERYDRAGICON);
+  APyDelphiWrapper.DefineVar('WM_COMPAREITEM', WM_COMPAREITEM);
+  APyDelphiWrapper.DefineVar('WM_GETOBJECT', WM_GETOBJECT);
+  APyDelphiWrapper.DefineVar('WM_COMPACTING', WM_COMPACTING);
+  APyDelphiWrapper.DefineVar('WM_COMMNOTIFY', WM_COMMNOTIFY);
+  APyDelphiWrapper.DefineVar('WM_WINDOWPOSCHANGING', WM_WINDOWPOSCHANGING);
+  APyDelphiWrapper.DefineVar('WM_WINDOWPOSCHANGED', WM_WINDOWPOSCHANGED);
+  APyDelphiWrapper.DefineVar('WM_POWER', WM_POWER);
+  APyDelphiWrapper.DefineVar('WM_COPYGLOBALDATA', WM_COPYGLOBALDATA);
+  APyDelphiWrapper.DefineVar('WM_COPYDATA', WM_COPYDATA);
+  APyDelphiWrapper.DefineVar('WM_CANCELJOURNAL', WM_CANCELJOURNAL);
+  APyDelphiWrapper.DefineVar('WM_NOTIFY', WM_NOTIFY);
+  APyDelphiWrapper.DefineVar('WM_INPUTLANGCHANGEREQUEST', WM_INPUTLANGCHANGEREQUEST);
+  APyDelphiWrapper.DefineVar('WM_INPUTLANGCHANGE', WM_INPUTLANGCHANGE);
+  APyDelphiWrapper.DefineVar('WM_TCARD', WM_TCARD);
+  APyDelphiWrapper.DefineVar('WM_HELP', WM_HELP);
+  APyDelphiWrapper.DefineVar('WM_USERCHANGED', WM_USERCHANGED);
+  APyDelphiWrapper.DefineVar('WM_NOTIFYFORMAT', WM_NOTIFYFORMAT);
+  APyDelphiWrapper.DefineVar('WM_CONTEXTMENU', WM_CONTEXTMENU);
+  APyDelphiWrapper.DefineVar('WM_STYLECHANGING', WM_STYLECHANGING);
+  APyDelphiWrapper.DefineVar('WM_STYLECHANGED', WM_STYLECHANGED);
+  APyDelphiWrapper.DefineVar('WM_DISPLAYCHANGE', WM_DISPLAYCHANGE);
+  APyDelphiWrapper.DefineVar('WM_GETICON', WM_GETICON);
+  APyDelphiWrapper.DefineVar('WM_SETICON', WM_SETICON);
+  APyDelphiWrapper.DefineVar('WM_NCCREATE', WM_NCCREATE);
+  APyDelphiWrapper.DefineVar('WM_NCDESTROY', WM_NCDESTROY);
+  APyDelphiWrapper.DefineVar('WM_NCCALCSIZE', WM_NCCALCSIZE);
+  APyDelphiWrapper.DefineVar('WM_NCHITTEST', WM_NCHITTEST);
+  APyDelphiWrapper.DefineVar('WM_NCPAINT', WM_NCPAINT);
+  APyDelphiWrapper.DefineVar('WM_NCACTIVATE', WM_NCACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_GETDLGCODE', WM_GETDLGCODE);
+  APyDelphiWrapper.DefineVar('WM_NCMOUSEMOVE', WM_NCMOUSEMOVE);
+  APyDelphiWrapper.DefineVar('WM_NCLBUTTONDOWN', WM_NCLBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_NCLBUTTONUP', WM_NCLBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_NCLBUTTONDBLCLK', WM_NCLBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_NCRBUTTONDOWN', WM_NCRBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_NCRBUTTONUP', WM_NCRBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_NCRBUTTONDBLCLK', WM_NCRBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_NCMBUTTONDOWN', WM_NCMBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_NCMBUTTONUP', WM_NCMBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_NCMBUTTONDBLCLK', WM_NCMBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_NCXBUTTONDOWN', WM_NCXBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_NCXBUTTONUP', WM_NCXBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_NCXBUTTONDBLCLK', WM_NCXBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_INPUT_DEVICE_CHANGE', WM_INPUT_DEVICE_CHANGE);
+  APyDelphiWrapper.DefineVar('WM_INPUT', WM_INPUT);
+  APyDelphiWrapper.DefineVar('WM_KEYFIRST', WM_KEYFIRST);
+  APyDelphiWrapper.DefineVar('WM_KEYDOWN', WM_KEYDOWN);
+  APyDelphiWrapper.DefineVar('WM_KEYUP', WM_KEYUP);
+  APyDelphiWrapper.DefineVar('WM_CHAR', WM_CHAR);
+  APyDelphiWrapper.DefineVar('WM_DEADCHAR', WM_DEADCHAR);
+  APyDelphiWrapper.DefineVar('WM_SYSKEYDOWN', WM_SYSKEYDOWN);
+  APyDelphiWrapper.DefineVar('WM_SYSKEYUP', WM_SYSKEYUP);
+  APyDelphiWrapper.DefineVar('WM_SYSCHAR', WM_SYSCHAR);
+  APyDelphiWrapper.DefineVar('WM_SYSDEADCHAR', WM_SYSDEADCHAR);
+  APyDelphiWrapper.DefineVar('WM_UNICHAR', WM_UNICHAR);
+  APyDelphiWrapper.DefineVar('WM_KEYLAST', WM_KEYLAST);
+  APyDelphiWrapper.DefineVar('WM_INITDIALOG', WM_INITDIALOG);
+  APyDelphiWrapper.DefineVar('WM_COMMAND', WM_COMMAND);
+  APyDelphiWrapper.DefineVar('WM_SYSCOMMAND', WM_SYSCOMMAND);
+  APyDelphiWrapper.DefineVar('WM_TIMER', WM_TIMER);
+  APyDelphiWrapper.DefineVar('WM_HSCROLL', WM_HSCROLL);
+  APyDelphiWrapper.DefineVar('WM_VSCROLL', WM_VSCROLL);
+  APyDelphiWrapper.DefineVar('WM_INITMENU', WM_INITMENU);
+  APyDelphiWrapper.DefineVar('WM_INITMENUPOPUP', WM_INITMENUPOPUP);
+  APyDelphiWrapper.DefineVar('WM_GESTURE', WM_GESTURE);
+  APyDelphiWrapper.DefineVar('WM_GESTURENOTIFY', WM_GESTURENOTIFY);
+  APyDelphiWrapper.DefineVar('WM_MENUSELECT', WM_MENUSELECT);
+  APyDelphiWrapper.DefineVar('WM_MENUCHAR', WM_MENUCHAR);
+  APyDelphiWrapper.DefineVar('WM_ENTERIDLE', WM_ENTERIDLE);
+  APyDelphiWrapper.DefineVar('WM_MENURBUTTONUP', WM_MENURBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_MENUDRAG', WM_MENUDRAG);
+  APyDelphiWrapper.DefineVar('WM_MENUGETOBJECT', WM_MENUGETOBJECT);
+  APyDelphiWrapper.DefineVar('WM_UNINITMENUPOPUP', WM_UNINITMENUPOPUP);
+  APyDelphiWrapper.DefineVar('WM_MENUCOMMAND', WM_MENUCOMMAND);
+  APyDelphiWrapper.DefineVar('WM_CHANGEUISTATE', WM_CHANGEUISTATE);
+  APyDelphiWrapper.DefineVar('WM_UPDATEUISTATE', WM_UPDATEUISTATE);
+  APyDelphiWrapper.DefineVar('WM_QUERYUISTATE', WM_QUERYUISTATE);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORMSGBOX', WM_CTLCOLORMSGBOX);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLOREDIT', WM_CTLCOLOREDIT);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORLISTBOX', WM_CTLCOLORLISTBOX);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORBTN', WM_CTLCOLORBTN);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORDLG', WM_CTLCOLORDLG);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORSCROLLBAR=', WM_CTLCOLORSCROLLBAR);
+  APyDelphiWrapper.DefineVar('WM_CTLCOLORSTATIC', WM_CTLCOLORSTATIC);
+  APyDelphiWrapper.DefineVar('WM_MOUSEFIRST', WM_MOUSEFIRST);
+  APyDelphiWrapper.DefineVar('WM_MOUSEMOVE', WM_MOUSEMOVE);
+  APyDelphiWrapper.DefineVar('WM_LBUTTONDOWN', WM_LBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_LBUTTONUP', WM_LBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_LBUTTONDBLCLK', WM_LBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_RBUTTONDOWN', WM_RBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_RBUTTONUP', WM_RBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_RBUTTONDBLCLK', WM_RBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_MBUTTONDOWN', WM_MBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_MBUTTONUP', WM_MBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_MBUTTONDBLCLK', WM_MBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_MOUSEWHEEL', WM_MOUSEWHEEL);
+  APyDelphiWrapper.DefineVar('WM_XBUTTONDOWN', WM_XBUTTONDOWN);
+  APyDelphiWrapper.DefineVar('WM_XBUTTONUP', WM_XBUTTONUP);
+  APyDelphiWrapper.DefineVar('WM_XBUTTONDBLCLK', WM_XBUTTONDBLCLK);
+  APyDelphiWrapper.DefineVar('WM_MOUSEHWHEEL', WM_MOUSEHWHEEL);
+  APyDelphiWrapper.DefineVar('WM_MOUSELAST', WM_MOUSELAST);
+  APyDelphiWrapper.DefineVar('WM_PARENTNOTIFY', WM_PARENTNOTIFY);
+  APyDelphiWrapper.DefineVar('WM_ENTERMENULOOP', WM_ENTERMENULOOP);
+  APyDelphiWrapper.DefineVar('WM_EXITMENULOOP', WM_EXITMENULOOP);
+  APyDelphiWrapper.DefineVar('WM_NEXTMENU', WM_NEXTMENU);
+  APyDelphiWrapper.DefineVar('WM_SIZING', WM_SIZING);
+  APyDelphiWrapper.DefineVar('WM_CAPTURECHANGED', WM_CAPTURECHANGED);
+  APyDelphiWrapper.DefineVar('WM_MOVING', WM_MOVING);
+  APyDelphiWrapper.DefineVar('WM_POWERBROADCAST', WM_POWERBROADCAST);
+  APyDelphiWrapper.DefineVar('WM_DEVICECHANGE', WM_DEVICECHANGE);
+  APyDelphiWrapper.DefineVar('WM_IME_STARTCOMPOSITION', WM_IME_STARTCOMPOSITION);
+  APyDelphiWrapper.DefineVar('WM_IME_ENDCOMPOSITION', WM_IME_ENDCOMPOSITION);
+  APyDelphiWrapper.DefineVar('WM_IME_COMPOSITION', WM_IME_COMPOSITION);
+  APyDelphiWrapper.DefineVar('WM_IME_KEYLAST', WM_IME_KEYLAST);
+  APyDelphiWrapper.DefineVar('WM_IME_SETCONTEXT', WM_IME_SETCONTEXT);
+  APyDelphiWrapper.DefineVar('WM_IME_NOTIFY', WM_IME_NOTIFY);
+  APyDelphiWrapper.DefineVar('WM_IME_CONTROL', WM_IME_CONTROL);
+  APyDelphiWrapper.DefineVar('WM_IME_COMPOSITIONFULL', WM_IME_COMPOSITIONFULL);
+  APyDelphiWrapper.DefineVar('WM_IME_SELECT', WM_IME_SELECT);
+  APyDelphiWrapper.DefineVar('WM_IME_CHAR', WM_IME_CHAR);
+  APyDelphiWrapper.DefineVar('WM_IME_REQUEST', WM_IME_REQUEST);
+  APyDelphiWrapper.DefineVar('WM_IME_KEYDOWN', WM_IME_KEYDOWN);
+  APyDelphiWrapper.DefineVar('WM_IME_KEYUP', WM_IME_KEYUP);
+  APyDelphiWrapper.DefineVar('WM_MDICREATE', WM_MDICREATE);
+  APyDelphiWrapper.DefineVar('WM_MDIDESTROY', WM_MDIDESTROY);
+  APyDelphiWrapper.DefineVar('WM_MDIACTIVATE', WM_MDIACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_MDIRESTORE', WM_MDIRESTORE);
+  APyDelphiWrapper.DefineVar('WM_MDINEXT', WM_MDINEXT);
+  APyDelphiWrapper.DefineVar('WM_MDIMAXIMIZE', WM_MDIMAXIMIZE);
+  APyDelphiWrapper.DefineVar('WM_MDITILE', WM_MDITILE);
+  APyDelphiWrapper.DefineVar('WM_MDICASCADE', WM_MDICASCADE);
+  APyDelphiWrapper.DefineVar('WM_MDIICONARRANGE', WM_MDIICONARRANGE);
+  APyDelphiWrapper.DefineVar('WM_MDIGETACTIVE', WM_MDIGETACTIVE);
+  APyDelphiWrapper.DefineVar('WM_MDISETMENU', WM_MDISETMENU);
+  APyDelphiWrapper.DefineVar('WM_ENTERSIZEMOVE', WM_ENTERSIZEMOVE);
+  APyDelphiWrapper.DefineVar('WM_EXITSIZEMOVE', WM_EXITSIZEMOVE);
+  APyDelphiWrapper.DefineVar('WM_DROPFILES', WM_DROPFILES);
+  APyDelphiWrapper.DefineVar('WM_MDIREFRESHMENU', WM_MDIREFRESHMENU);
+  APyDelphiWrapper.DefineVar('WM_POINTERDEVICECHANGE', WM_POINTERDEVICECHANGE);
+  APyDelphiWrapper.DefineVar('WM_POINTERDEVICEINRANGE', WM_POINTERDEVICEINRANGE);
+  APyDelphiWrapper.DefineVar('WM_POINTERDEVICEOUTOFRANGE', WM_POINTERDEVICEOUTOFRANGE);
+  APyDelphiWrapper.DefineVar('WM_TOUCH', WM_TOUCH);
+  APyDelphiWrapper.DefineVar('WM_NCPOINTERUPDATE', WM_NCPOINTERUPDATE);
+  APyDelphiWrapper.DefineVar('WM_NCPOINTERDOWN', WM_NCPOINTERDOWN);
+  APyDelphiWrapper.DefineVar('WM_NCPOINTERUP', WM_NCPOINTERUP);
+  APyDelphiWrapper.DefineVar('WM_POINTERUPDATE', WM_POINTERUPDATE);
+  APyDelphiWrapper.DefineVar('WM_POINTERDOWN', WM_POINTERDOWN);
+  APyDelphiWrapper.DefineVar('WM_POINTERUP', WM_POINTERUP);
+  APyDelphiWrapper.DefineVar('WM_POINTERENTER', WM_POINTERENTER);
+  APyDelphiWrapper.DefineVar('WM_POINTERLEAVE', WM_POINTERLEAVE);
+  APyDelphiWrapper.DefineVar('WM_POINTERACTIVATE', WM_POINTERACTIVATE);
+  APyDelphiWrapper.DefineVar('WM_POINTERCAPTURECHANGED', WM_POINTERCAPTURECHANGED);
+  APyDelphiWrapper.DefineVar('WM_TOUCHHITTESTING', WM_TOUCHHITTESTING);
+  APyDelphiWrapper.DefineVar('WM_POINTERWHEEL', WM_POINTERWHEEL);
+  APyDelphiWrapper.DefineVar('WM_POINTERHWHEEL', WM_POINTERHWHEEL);
+  APyDelphiWrapper.DefineVar('DM_POINTERHITTEST', DM_POINTERHITTEST);
+  APyDelphiWrapper.DefineVar('WM_POINTERROUTEDTO', WM_POINTERROUTEDTO);
+  APyDelphiWrapper.DefineVar('WM_POINTERROUTEDAWAY', WM_POINTERROUTEDAWAY);
+  APyDelphiWrapper.DefineVar('WM_POINTERROUTEDRELEASED', WM_POINTERROUTEDRELEASED);
+  APyDelphiWrapper.DefineVar('WM_MOUSEHOVER', WM_MOUSEHOVER);
+  APyDelphiWrapper.DefineVar('WM_MOUSELEAVE', WM_MOUSELEAVE);
+  APyDelphiWrapper.DefineVar('WM_NCMOUSEHOVER', WM_NCMOUSEHOVER);
+  APyDelphiWrapper.DefineVar('WM_NCMOUSELEAVE', WM_NCMOUSELEAVE);
+  APyDelphiWrapper.DefineVar('WM_WTSSESSION_CHANGE', WM_WTSSESSION_CHANGE);
+  APyDelphiWrapper.DefineVar('WM_TABLET_FIRST', WM_TABLET_FIRST);
+  APyDelphiWrapper.DefineVar('WM_TABLET_LAST', WM_TABLET_LAST);
+  APyDelphiWrapper.DefineVar('WM_DPICHANGED', WM_DPICHANGED);
+  APyDelphiWrapper.DefineVar('WM_DPICHANGED_BEFOREPARENT', WM_DPICHANGED_BEFOREPARENT);
+  APyDelphiWrapper.DefineVar('WM_DPICHANGED_AFTERPARENT', WM_DPICHANGED_AFTERPARENT);
+  APyDelphiWrapper.DefineVar('WM_GETDPISCALEDSIZE', WM_GETDPISCALEDSIZE);
+  APyDelphiWrapper.DefineVar('WM_CUT', WM_CUT);
+  APyDelphiWrapper.DefineVar('WM_COPY', WM_COPY);
+  APyDelphiWrapper.DefineVar('WM_PASTE', WM_PASTE);
+  APyDelphiWrapper.DefineVar('WM_CLEAR', WM_CLEAR);
+  APyDelphiWrapper.DefineVar('WM_UNDO', WM_UNDO);
+  APyDelphiWrapper.DefineVar('WM_RENDERFORMAT', WM_RENDERFORMAT);
+  APyDelphiWrapper.DefineVar('WM_RENDERALLFORMATS', WM_RENDERALLFORMATS);
+  APyDelphiWrapper.DefineVar('WM_DESTROYCLIPBOARD', WM_DESTROYCLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_DRAWCLIPBOARD', WM_DRAWCLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_PAINTCLIPBOARD', WM_PAINTCLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_VSCROLLCLIPBOARD', WM_VSCROLLCLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_SIZECLIPBOARD', WM_SIZECLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_ASKCBFORMATNAME', WM_ASKCBFORMATNAME);
+  APyDelphiWrapper.DefineVar('WM_CHANGECBCHAIN', WM_CHANGECBCHAIN);
+  APyDelphiWrapper.DefineVar('WM_HSCROLLCLIPBOARD', WM_HSCROLLCLIPBOARD);
+  APyDelphiWrapper.DefineVar('WM_QUERYNEWPALETTE', WM_QUERYNEWPALETTE);
+  APyDelphiWrapper.DefineVar('WM_PALETTEISCHANGING=', WM_PALETTEISCHANGING);
+  APyDelphiWrapper.DefineVar('WM_PALETTECHANGED', WM_PALETTECHANGED);
+  APyDelphiWrapper.DefineVar('WM_HOTKEY', WM_HOTKEY);
+  APyDelphiWrapper.DefineVar('WM_PRINT', WM_PRINT);
+  APyDelphiWrapper.DefineVar('WM_PRINTCLIENT', WM_PRINTCLIENT);
+  APyDelphiWrapper.DefineVar('WM_APPCOMMAND', WM_APPCOMMAND);
+  APyDelphiWrapper.DefineVar('WM_THEMECHANGED', WM_THEMECHANGED);
+  APyDelphiWrapper.DefineVar('WM_CLIPBOARDUPDATE', WM_CLIPBOARDUPDATE);
+  APyDelphiWrapper.DefineVar('WM_HANDHELDFIRST', WM_HANDHELDFIRST);
+  APyDelphiWrapper.DefineVar('WM_HANDHELDLAST', WM_HANDHELDLAST);
+  APyDelphiWrapper.DefineVar('WM_PENWINFIRST', WM_PENWINFIRST);
+  APyDelphiWrapper.DefineVar('WM_PENWINLAST', WM_PENWINLAST);
+  APyDelphiWrapper.DefineVar('WM_COALESCE_FIRST', WM_COALESCE_FIRST);
+  APyDelphiWrapper.DefineVar('WM_COALESCE_LAST', WM_COALESCE_LAST);
+  APyDelphiWrapper.DefineVar('WM_DDE_FIRST', WM_DDE_FIRST);
+  APyDelphiWrapper.DefineVar('WM_DDE_INITIATE', WM_DDE_INITIATE);
+  APyDelphiWrapper.DefineVar('WM_DDE_TERMINATE', WM_DDE_TERMINATE);
+  APyDelphiWrapper.DefineVar('WM_DDE_ADVISE', WM_DDE_ADVISE);
+  APyDelphiWrapper.DefineVar('WM_DDE_UNADVISE', WM_DDE_UNADVISE);
+  APyDelphiWrapper.DefineVar('WM_DDE_ACK', WM_DDE_ACK);
+  APyDelphiWrapper.DefineVar('WM_DDE_DATA', WM_DDE_DATA);
+  APyDelphiWrapper.DefineVar('WM_DDE_REQUEST', WM_DDE_REQUEST);
+  APyDelphiWrapper.DefineVar('WM_DDE_POKE', WM_DDE_POKE);
+  APyDelphiWrapper.DefineVar('WM_DDE_EXECUTE', WM_DDE_EXECUTE);
+  APyDelphiWrapper.DefineVar('WM_DDE_LAST', WM_DDE_LAST);
+  APyDelphiWrapper.DefineVar('WM_DWMCOMPOSITIONCHANGED', WM_DWMCOMPOSITIONCHANGED);
+  APyDelphiWrapper.DefineVar('WM_DWMNCRENDERINGCHANGED', WM_DWMNCRENDERINGCHANGED);
+  APyDelphiWrapper.DefineVar('WM_DWMCOLORIZATIONCOLORCHANGED', WM_DWMCOLORIZATIONCOLORCHANGED);
+  APyDelphiWrapper.DefineVar('WM_DWMWINDOWMAXIMIZEDCHANGE', WM_DWMWINDOWMAXIMIZEDCHANGE);
+  APyDelphiWrapper.DefineVar('WM_DWMSENDICONICTHUMBNAIL', WM_DWMSENDICONICTHUMBNAIL);
+  APyDelphiWrapper.DefineVar('WM_DWMSENDICONICLIVEPREVIEWBITMAP', WM_DWMSENDICONICLIVEPREVIEWBITMAP);
+  APyDelphiWrapper.DefineVar('WM_GETTITLEBARINFOEX', WM_GETTITLEBARINFOEX);
+  APyDelphiWrapper.DefineVar('WM_TABLET_DEFBASE', WM_TABLET_DEFBASE);
+  APyDelphiWrapper.DefineVar('WM_TABLET_MAXOFFSET', WM_TABLET_MAXOFFSET);
+  APyDelphiWrapper.DefineVar('WM_TABLET_ADDED', WM_TABLET_ADDED);
+  APyDelphiWrapper.DefineVar('WM_TABLET_DELETED', WM_TABLET_DELETED);
+  APyDelphiWrapper.DefineVar('WM_TABLET_FLICK', WM_TABLET_FLICK);
+  APyDelphiWrapper.DefineVar('WM_TABLET_QUERYSYSTEMGESTURESTATUS', WM_TABLET_QUERYSYSTEMGESTURESTATUS);
+  APyDelphiWrapper.DefineVar('WM_APP', WM_APP);
+  APyDelphiWrapper.DefineVar('WM_USER', WM_USER);
+  APyDelphiWrapper.DefineVar('BN_CLICKED', BN_CLICKED);
+  APyDelphiWrapper.DefineVar('BN_PAINT', BN_PAINT);
+  APyDelphiWrapper.DefineVar('BN_HILITE', BN_HILITE);
+  APyDelphiWrapper.DefineVar('BN_UNHILITE', BN_UNHILITE);
+  APyDelphiWrapper.DefineVar('BN_DISABLE', BN_DISABLE);
+  APyDelphiWrapper.DefineVar('BN_DOUBLECLICKED', BN_DOUBLECLICKED);
+  APyDelphiWrapper.DefineVar('BN_PUSHED', BN_PUSHED);
+  APyDelphiWrapper.DefineVar('BN_UNPUSHED', BN_UNPUSHED);
+  APyDelphiWrapper.DefineVar('BN_DBLCLK', BN_DBLCLK);
+  APyDelphiWrapper.DefineVar('BN_SETFOCUS', BN_SETFOCUS);
+  APyDelphiWrapper.DefineVar('BN_KILLFOCUS', BN_KILLFOCUS);
+  APyDelphiWrapper.DefineVar('BM_GETCHECK', BM_GETCHECK);
+  APyDelphiWrapper.DefineVar('BM_SETCHECK', BM_SETCHECK);
+  APyDelphiWrapper.DefineVar('BM_GETSTATE', BM_GETSTATE);
+  APyDelphiWrapper.DefineVar('BM_SETSTATE', BM_SETSTATE);
+  APyDelphiWrapper.DefineVar('BM_SETSTYLE', BM_SETSTYLE);
+  APyDelphiWrapper.DefineVar('BM_CLICK', BM_CLICK);
+  APyDelphiWrapper.DefineVar('BM_GETIMAGE', BM_GETIMAGE);
+  APyDelphiWrapper.DefineVar('BM_SETIMAGE', BM_SETIMAGE);
+  APyDelphiWrapper.DefineVar('BM_SETDONTCLICK', BM_SETDONTCLICK);
+  APyDelphiWrapper.DefineVar('LBN_ERRSPACE', LBN_ERRSPACE);
+  APyDelphiWrapper.DefineVar('LBN_SELCHANGE', LBN_SELCHANGE);
+  APyDelphiWrapper.DefineVar('LBN_DBLCLK', LBN_DBLCLK);
+  APyDelphiWrapper.DefineVar('LBN_SELCANCEL', LBN_SELCANCEL);
+  APyDelphiWrapper.DefineVar('LBN_SETFOCUS', LBN_SETFOCUS);
+  APyDelphiWrapper.DefineVar('LBN_KILLFOCUS', LBN_KILLFOCUS);
+  APyDelphiWrapper.DefineVar('LB_ADDSTRING', LB_ADDSTRING);
+  APyDelphiWrapper.DefineVar('LB_INSERTSTRING', LB_INSERTSTRING);
+  APyDelphiWrapper.DefineVar('LB_DELETESTRING', LB_DELETESTRING);
+  APyDelphiWrapper.DefineVar('LB_SELITEMRANGEEX', LB_SELITEMRANGEEX);
+  APyDelphiWrapper.DefineVar('LB_RESETCONTENT', LB_RESETCONTENT);
+  APyDelphiWrapper.DefineVar('LB_SETSEL', LB_SETSEL);
+  APyDelphiWrapper.DefineVar('LB_SETCURSEL', LB_SETCURSEL);
+  APyDelphiWrapper.DefineVar('LB_GETSEL', LB_GETSEL);
+  APyDelphiWrapper.DefineVar('LB_GETCURSEL', LB_GETCURSEL);
+  APyDelphiWrapper.DefineVar('LB_GETTEXT', LB_GETTEXT);
+  APyDelphiWrapper.DefineVar('LB_GETTEXTLEN', LB_GETTEXTLEN);
+  APyDelphiWrapper.DefineVar('LB_GETCOUNT', LB_GETCOUNT);
+  APyDelphiWrapper.DefineVar('LB_SELECTSTRING', LB_SELECTSTRING);
+  APyDelphiWrapper.DefineVar('LB_DIR', LB_DIR);
+  APyDelphiWrapper.DefineVar('LB_GETTOPINDEX', LB_GETTOPINDEX);
+  APyDelphiWrapper.DefineVar('LB_FINDSTRING', LB_FINDSTRING);
+  APyDelphiWrapper.DefineVar('LB_GETSELCOUNT', LB_GETSELCOUNT);
+  APyDelphiWrapper.DefineVar('LB_GETSELITEMS', LB_GETSELITEMS);
+  APyDelphiWrapper.DefineVar('LB_SETTABSTOPS', LB_SETTABSTOPS);
+  APyDelphiWrapper.DefineVar('LB_GETHORIZONTALEXTENT', LB_GETHORIZONTALEXTENT);
+  APyDelphiWrapper.DefineVar('LB_SETHORIZONTALEXTENT', LB_SETHORIZONTALEXTENT);
+  APyDelphiWrapper.DefineVar('LB_SETCOLUMNWIDTH', LB_SETCOLUMNWIDTH);
+  APyDelphiWrapper.DefineVar('LB_ADDFILE', LB_ADDFILE);
+  APyDelphiWrapper.DefineVar('LB_SETTOPINDEX', LB_SETTOPINDEX);
+  APyDelphiWrapper.DefineVar('LB_GETITEMRECT', LB_GETITEMRECT);
+  APyDelphiWrapper.DefineVar('LB_GETITEMDATA', LB_GETITEMDATA);
+  APyDelphiWrapper.DefineVar('LB_SETITEMDATA', LB_SETITEMDATA);
+  APyDelphiWrapper.DefineVar('LB_SELITEMRANGE', LB_SELITEMRANGE);
+  APyDelphiWrapper.DefineVar('LB_SETANCHORINDEX', LB_SETANCHORINDEX);
+  APyDelphiWrapper.DefineVar('LB_GETANCHORINDEX', LB_GETANCHORINDEX);
+  APyDelphiWrapper.DefineVar('LB_SETCARETINDEX', LB_SETCARETINDEX);
+  APyDelphiWrapper.DefineVar('LB_GETCARETINDEX', LB_GETCARETINDEX);
+  APyDelphiWrapper.DefineVar('LB_SETITEMHEIGHT', LB_SETITEMHEIGHT);
+  APyDelphiWrapper.DefineVar('LB_GETITEMHEIGHT', LB_GETITEMHEIGHT);
+  APyDelphiWrapper.DefineVar('LB_FINDSTRINGEXACT', LB_FINDSTRINGEXACT);
+  APyDelphiWrapper.DefineVar('LB_SETLOCALE', LB_SETLOCALE);
+  APyDelphiWrapper.DefineVar('LB_GETLOCALE', LB_GETLOCALE);
+  APyDelphiWrapper.DefineVar('LB_SETCOUNT', LB_SETCOUNT);
+  APyDelphiWrapper.DefineVar('LB_INITSTORAGE', LB_INITSTORAGE);
+  APyDelphiWrapper.DefineVar('LB_ITEMFROMPOINT', LB_ITEMFROMPOINT);
+  APyDelphiWrapper.DefineVar('LB_MSGMAX', LB_MSGMAX);
+  APyDelphiWrapper.DefineVar('CBN_ERRSPACE', CBN_ERRSPACE);
+  APyDelphiWrapper.DefineVar('CBN_SELCHANGE', CBN_SELCHANGE);
+  APyDelphiWrapper.DefineVar('CBN_DBLCLK', CBN_DBLCLK);
+  APyDelphiWrapper.DefineVar('CBN_SETFOCUS', CBN_SETFOCUS);
+  APyDelphiWrapper.DefineVar('CBN_KILLFOCUS', CBN_KILLFOCUS);
+  APyDelphiWrapper.DefineVar('CBN_EDITCHANGE', CBN_EDITCHANGE);
+  APyDelphiWrapper.DefineVar('CBN_EDITUPDATE', CBN_EDITUPDATE);
+  APyDelphiWrapper.DefineVar('CBN_DROPDOWN', CBN_DROPDOWN);
+  APyDelphiWrapper.DefineVar('CBN_CLOSEUP', CBN_CLOSEUP);
+  APyDelphiWrapper.DefineVar('CBN_SELENDOK', CBN_SELENDOK);
+  APyDelphiWrapper.DefineVar('CBN_SELENDCANCEL', CBN_SELENDCANCEL);
+  APyDelphiWrapper.DefineVar('CB_GETEDITSEL', CB_GETEDITSEL);
+  APyDelphiWrapper.DefineVar('CB_LIMITTEXT', CB_LIMITTEXT);
+  APyDelphiWrapper.DefineVar('CB_SETEDITSEL', CB_SETEDITSEL);
+  APyDelphiWrapper.DefineVar('CB_ADDSTRING', CB_ADDSTRING);
+  APyDelphiWrapper.DefineVar('CB_DELETESTRING', CB_DELETESTRING);
+  APyDelphiWrapper.DefineVar('CB_DIR', CB_DIR);
+  APyDelphiWrapper.DefineVar('CB_GETCOUNT', CB_GETCOUNT);
+  APyDelphiWrapper.DefineVar('CB_GETCURSEL', CB_GETCURSEL);
+  APyDelphiWrapper.DefineVar('CB_GETLBTEXT', CB_GETLBTEXT);
+  APyDelphiWrapper.DefineVar('CB_GETLBTEXTLEN', CB_GETLBTEXTLEN);
+  APyDelphiWrapper.DefineVar('CB_INSERTSTRING', CB_INSERTSTRING);
+  APyDelphiWrapper.DefineVar('CB_RESETCONTENT', CB_RESETCONTENT);
+  APyDelphiWrapper.DefineVar('CB_FINDSTRING', CB_FINDSTRING);
+  APyDelphiWrapper.DefineVar('CB_SELECTSTRING', CB_SELECTSTRING);
+  APyDelphiWrapper.DefineVar('CB_SETCURSEL', CB_SETCURSEL);
+  APyDelphiWrapper.DefineVar('CB_SHOWDROPDOWN', CB_SHOWDROPDOWN);
+  APyDelphiWrapper.DefineVar('CB_GETITEMDATA', CB_GETITEMDATA);
+  APyDelphiWrapper.DefineVar('CB_SETITEMDATA', CB_SETITEMDATA);
+  APyDelphiWrapper.DefineVar('CB_GETDROPPEDCONTROLRECT', CB_GETDROPPEDCONTROLRECT);
+  APyDelphiWrapper.DefineVar('CB_SETITEMHEIGHT', CB_SETITEMHEIGHT);
+  APyDelphiWrapper.DefineVar('CB_GETITEMHEIGHT', CB_GETITEMHEIGHT);
+  APyDelphiWrapper.DefineVar('CB_SETEXTENDEDUI', CB_SETEXTENDEDUI);
+  APyDelphiWrapper.DefineVar('CB_GETEXTENDEDUI', CB_GETEXTENDEDUI);
+  APyDelphiWrapper.DefineVar('CB_GETDROPPEDSTATE', CB_GETDROPPEDSTATE);
+  APyDelphiWrapper.DefineVar('CB_FINDSTRINGEXACT', CB_FINDSTRINGEXACT);
+  APyDelphiWrapper.DefineVar('CB_SETLOCALE', CB_SETLOCALE);
+  APyDelphiWrapper.DefineVar('CB_GETLOCALE', CB_GETLOCALE);
+  APyDelphiWrapper.DefineVar('CB_GETTOPINDEX', CB_GETTOPINDEX);
+  APyDelphiWrapper.DefineVar('CB_SETTOPINDEX', CB_SETTOPINDEX);
+  APyDelphiWrapper.DefineVar('CB_GETHORIZONTALEXTENT', CB_GETHORIZONTALEXTENT);
+  APyDelphiWrapper.DefineVar('CB_SETHORIZONTALEXTENT', CB_SETHORIZONTALEXTENT);
+  APyDelphiWrapper.DefineVar('CB_GETDROPPEDWIDTH', CB_GETDROPPEDWIDTH);
+  APyDelphiWrapper.DefineVar('CB_SETDROPPEDWIDTH', CB_SETDROPPEDWIDTH);
+  APyDelphiWrapper.DefineVar('CB_INITSTORAGE', CB_INITSTORAGE);
+  APyDelphiWrapper.DefineVar('CB_MSGMAX', CB_MSGMAX);
+  APyDelphiWrapper.DefineVar('EN_SETFOCUS', EN_SETFOCUS);
+  APyDelphiWrapper.DefineVar('EN_KILLFOCUS', EN_KILLFOCUS);
+  APyDelphiWrapper.DefineVar('EN_CHANGE', EN_CHANGE);
+  APyDelphiWrapper.DefineVar('EN_UPDATE', EN_UPDATE);
+  APyDelphiWrapper.DefineVar('EN_ERRSPACE', EN_ERRSPACE);
+  APyDelphiWrapper.DefineVar('EN_MAXTEXT', EN_MAXTEXT);
+  APyDelphiWrapper.DefineVar('EN_HSCROLL', EN_HSCROLL);
+  APyDelphiWrapper.DefineVar('EN_VSCROLL', EN_VSCROLL);
+  APyDelphiWrapper.DefineVar('EM_GETSEL', EM_GETSEL);
+  APyDelphiWrapper.DefineVar('EM_SETSEL', EM_SETSEL);
+  APyDelphiWrapper.DefineVar('EM_GETRECT', EM_GETRECT);
+  APyDelphiWrapper.DefineVar('EM_SETRECT', EM_SETRECT);
+  APyDelphiWrapper.DefineVar('EM_SETRECTNP', EM_SETRECTNP);
+  APyDelphiWrapper.DefineVar('EM_SCROLL', EM_SCROLL);
+  APyDelphiWrapper.DefineVar('EM_LINESCROLL', EM_LINESCROLL);
+  APyDelphiWrapper.DefineVar('EM_SCROLLCARET', EM_SCROLLCARET);
+  APyDelphiWrapper.DefineVar('EM_GETMODIFY', EM_GETMODIFY);
+  APyDelphiWrapper.DefineVar('EM_SETMODIFY', EM_SETMODIFY);
+  APyDelphiWrapper.DefineVar('EM_GETLINECOUNT', EM_GETLINECOUNT);
+  APyDelphiWrapper.DefineVar('EM_LINEINDEX', EM_LINEINDEX);
+  APyDelphiWrapper.DefineVar('EM_SETHANDLE', EM_SETHANDLE);
+  APyDelphiWrapper.DefineVar('EM_GETHANDLE', EM_GETHANDLE);
+  APyDelphiWrapper.DefineVar('EM_GETTHUMB', EM_GETTHUMB);
+  APyDelphiWrapper.DefineVar('EM_LINELENGTH', EM_LINELENGTH);
+  APyDelphiWrapper.DefineVar('EM_REPLACESEL', EM_REPLACESEL);
+  APyDelphiWrapper.DefineVar('EM_GETLINE', EM_GETLINE);
+  APyDelphiWrapper.DefineVar('EM_LIMITTEXT', EM_LIMITTEXT);
+  APyDelphiWrapper.DefineVar('EM_CANUNDO', EM_CANUNDO);
+  APyDelphiWrapper.DefineVar('EM_UNDO', EM_UNDO);
+  APyDelphiWrapper.DefineVar('EM_FMTLINES', EM_FMTLINES);
+  APyDelphiWrapper.DefineVar('EM_LINEFROMCHAR', EM_LINEFROMCHAR);
+  APyDelphiWrapper.DefineVar('EM_SETTABSTOPS', EM_SETTABSTOPS);
+  APyDelphiWrapper.DefineVar('EM_SETPASSWORDCHAR', EM_SETPASSWORDCHAR);
+  APyDelphiWrapper.DefineVar('EM_EMPTYUNDOBUFFER', EM_EMPTYUNDOBUFFER);
+  APyDelphiWrapper.DefineVar('EM_GETFIRSTVISIBLELINE', EM_GETFIRSTVISIBLELINE);
+  APyDelphiWrapper.DefineVar('EM_SETREADONLY', EM_SETREADONLY);
+  APyDelphiWrapper.DefineVar('EM_SETWORDBREAKPROC', EM_SETWORDBREAKPROC);
+  APyDelphiWrapper.DefineVar('EM_GETWORDBREAKPROC', EM_GETWORDBREAKPROC);
+  APyDelphiWrapper.DefineVar('EM_GETPASSWORDCHAR', EM_GETPASSWORDCHAR);
+  APyDelphiWrapper.DefineVar('EM_SETMARGINS', EM_SETMARGINS);
+  APyDelphiWrapper.DefineVar('EM_GETMARGINS', EM_GETMARGINS);
+  APyDelphiWrapper.DefineVar('EM_SETLIMITTEXT', EM_SETLIMITTEXT);
+  APyDelphiWrapper.DefineVar('EM_GETLIMITTEXT', EM_GETLIMITTEXT);
+  APyDelphiWrapper.DefineVar('EM_POSFROMCHAR', EM_POSFROMCHAR);
+  APyDelphiWrapper.DefineVar('EM_CHARFROMPOS', EM_CHARFROMPOS);
+  APyDelphiWrapper.DefineVar('EM_SETIMESTATUS', EM_SETIMESTATUS);
+  APyDelphiWrapper.DefineVar('EM_GETIMESTATUS', EM_GETIMESTATUS);
+  APyDelphiWrapper.DefineVar('EM_ENABLEFEATURE', EM_ENABLEFEATURE);
+  APyDelphiWrapper.DefineVar('SBM_SETPOS', SBM_SETPOS);
+  APyDelphiWrapper.DefineVar('SBM_GETPOS', SBM_GETPOS);
+  APyDelphiWrapper.DefineVar('SBM_SETRANGE', SBM_SETRANGE);
+  APyDelphiWrapper.DefineVar('SBM_SETRANGEREDRAW', SBM_SETRANGEREDRAW);
+  APyDelphiWrapper.DefineVar('SBM_GETRANGE', SBM_GETRANGE);
+  APyDelphiWrapper.DefineVar('SBM_ENABLE_ARROWS', SBM_ENABLE_ARROWS);
+  APyDelphiWrapper.DefineVar('SBM_SETSCROLLINFO', SBM_SETSCROLLINFO);
+  APyDelphiWrapper.DefineVar('SBM_GETSCROLLINFO', SBM_GETSCROLLINFO);
+  APyDelphiWrapper.DefineVar('SBM_GETSCROLLBARINFO', SBM_GETSCROLLBARINFO);
+  APyDelphiWrapper.DefineVar('DM_GETDEFID', DM_GETDEFID);
+  APyDelphiWrapper.DefineVar('DM_SETDEFID', DM_SETDEFID);
+  APyDelphiWrapper.DefineVar('DM_REPOSITION', DM_REPOSITION);
+
 end;
 
 function TFormsRegistration.Name: string;
@@ -598,20 +1052,20 @@ end;
 class procedure TPyDelphiCustomForm.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('Close', @TPyDelphiCustomForm.Close_Wrapper,
-    PAnsiChar('TForm.Close()'#10 +
-    'Closes the wrapped Form'));
+    'TForm.Close()'#10 +
+    'Closes the wrapped Form');
   PythonType.AddMethod('CloseQuery', @TPyDelphiCustomForm.CloseQuery_Wrapper,
-    PAnsiChar('TForm.CloseQuery()'#10 +
-    'Asked the wrapped Form if it can close'));
+    'TForm.CloseQuery()'#10 +
+    'Asked the wrapped Form if it can close');
   PythonType.AddMethod('ShowModal', @TPyDelphiCustomForm.ShowModal_Wrapper,
-    PAnsiChar('TForm.ShowModal()'#10 +
-    'Shows the wrapped Form as a modal form'));
+    'TForm.ShowModal()'#10 +
+    'Shows the wrapped Form as a modal form');
   PythonType.AddMethod('Release', @TPyDelphiCustomForm.Release_Wrapper,
-    PAnsiChar('TForm.Release()'#10 +
-    'Releases (destroys) the wrapped Form'));
+    'TForm.Release()'#10 +
+    'Releases (destroys) the wrapped Form');
   PythonType.AddMethod('LoadProps', @TPyDelphiCustomForm.LoadProps_Wrapper,
-    PAnsiChar('TForm.LoadProps()'#10 +
-    'Load properties from a .pydfm file'));
+    'TForm.LoadProps()'#10 +
+    'Load properties from a .pydfm file');
 end;
 
 class function TPyDelphiCustomForm.DelphiObjectClass: TClass;
@@ -676,7 +1130,7 @@ begin
   except
     on E: Exception do
       with GetPythonEngine() do
-        PyErr_SetString(PyExc_RuntimeError^, PAnsiChar(AnsiString(E.Message)));
+        PyErr_SetString(PyExc_RuntimeError^, PAnsiChar(EncodeString(E.Message)));
   end;
   Result := nil;
 end;
@@ -1169,20 +1623,20 @@ end;
 class procedure TPyDelphiScreen.RegisterMethods(PythonType: TPythonType);
 begin
   PythonType.AddMethod('DisableAlign', @TPyDelphiScreen.DisableAlign_Wrapper,
-    PAnsiChar('TScreen.DisableAlign()'#10 +
-    'Prevents forms from being aligned in the screen.'));
+    'TScreen.DisableAlign()'#10 +
+    'Prevents forms from being aligned in the screen.');
   PythonType.AddMethod('EnableAlign', @TPyDelphiScreen.EnableAlign_Wrapper,
-    PAnsiChar('TScreen.EnableAlign()'#10 +
-    'Allows forms to be aligned in the screen.'));
+    'TScreen.EnableAlign()'#10 +
+    'Allows forms to be aligned in the screen.');
   PythonType.AddMethod('Realign', @TPyDelphiScreen.Realign_Wrapper,
-    PAnsiChar('TScreen.Realign()'#10 +
-    'Realigns the screen''s forms according to their Align properties.'));
+    'TScreen.Realign()'#10 +
+    'Realigns the screen''s forms according to their Align properties.');
   PythonType.AddMethod('ResetFonts', @TPyDelphiScreen.ResetFonts_Wrapper,
-    PAnsiChar('TScreen.ResetFonts()'#10 +
-    'Reinitializes the fonts listed in the Fonts property.'));
+    'TScreen.ResetFonts()'#10 +
+    'Reinitializes the fonts listed in the Fonts property.');
   PythonType.AddMethod('MonitorFromPoint', @TPyDelphiScreen.MonitorFromPoint_Wrapper,
-    PAnsiChar('TScreen.MonitorFromPoint(APoint, AMonitorDefault)'#10 +
-    'Returns the monitor where a specified point is located.'));
+    'TScreen.MonitorFromPoint(APoint, AMonitorDefault)'#10 +
+    'Returns the monitor where a specified point is located.');
 end;
 
 procedure TPyDelphiScreen.SetDelphiObject(const Value: TScreen);
@@ -1932,6 +2386,46 @@ begin
   end;
 end;
 
+function TPyDelphiApplication.SendMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
+var
+  _hwnd: HWND;
+  _msg: UINT;
+  _wparam: NativeUInt;
+  _lparam: NativeInt;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:SendMessage', @_hwnd, @_msg, @_wparam,
+      @_lparam) <> 0) then
+    begin
+      Result := PyLong_FromLong(SendMessage(_hwnd, _msg, _wparam, _lparam));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PostMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
+var
+  _hwnd: HWND;
+  _msg: UINT;
+  _wparam: NativeUInt;
+  _lparam: NativeInt;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:PostMessage', @_hwnd, @_msg, @_wparam,
+      @_lparam) <> 0) then
+    begin
+      Result := PyBool_FromLong(LongInt(PostMessage(_hwnd, _msg, _wparam, _lparam)));
+    end else
+      Result := nil;
+  end;
+end;
+
 function TPyDelphiApplication.GetSystemPath_Wrapper(
   args: PPyObject): PPyObject; cdecl;
 var
@@ -2111,116 +2605,123 @@ class procedure TPyDelphiApplication.RegisterMethods(
   PythonType: TPythonType);
 begin
   PythonType.AddMethod('ActivateHint', @TPyDelphiApplication.ActivateHint_Wrapper,
-    PAnsiChar('TApplication.ActivateHint()'#10 +
-    'Displays a hint window for the control at a specified position.'));
+    'TApplication.ActivateHint()'#10 +
+    'Displays a hint window for the control at a specified position.');
   PythonType.AddMethod('BringToFront', @TPyDelphiApplication.BringToFront_Wrapper,
-    PAnsiChar('TApplication.BringToFront()'#10 +
-    'Sets the last active window as the topmost window on the desktop above all other applications.'));
+    'TApplication.BringToFront()'#10 +
+    'Sets the last active window as the topmost window on the desktop above all other applications.');
   PythonType.AddMethod('CancelHint', @TPyDelphiApplication.CancelHint_Wrapper,
-    PAnsiChar('TApplication.CancelHint()'#10 +
-    'Cancels the display of a hint for a control.'));
+    'TApplication.CancelHint()'#10 +
+    'Cancels the display of a hint for a control.');
   PythonType.AddMethod('ExecuteAction', @TPyDelphiApplication.ExecuteAction_Wrapper,
-    PAnsiChar('TApplication.ExecuteAction()'#10 +
-    'Generates an OnActionExecute event.'));
+    'TApplication.ExecuteAction()'#10 +
+    'Generates an OnActionExecute event.');
   PythonType.AddMethod('HandleException', @TPyDelphiApplication.HandleException_Wrapper,
-    PAnsiChar('TApplication.HandleException()'#10 +
-    'Provides default handling of exceptions for the application.'));
+    'TApplication.HandleException()'#10 +
+    'Provides default handling of exceptions for the application.');
   PythonType.AddMethod('HandleMessage', @TPyDelphiApplication.HandleMessage_Wrapper,
-    PAnsiChar('TApplication.HandleMessage()'#10 +
-    'Interrupts the execution of an application while Windows processes a message in the Windows message queue. '));
+    'TApplication.HandleMessage()'#10 +
+    'Interrupts the execution of an application while Windows processes a message in the Windows message queue. ');
   PythonType.AddMethod('HelpCommand', @TPyDelphiApplication.HelpCommand_Wrapper,
-    PAnsiChar('TApplication.HelpCommand()'#10 +
-    'Provides quick access to any of the Help commands in the WinHelp API (application programming interface).'));
+    'TApplication.HelpCommand()'#10 +
+    'Provides quick access to any of the Help commands in the WinHelp API (application programming interface).');
   PythonType.AddMethod('HelpContext', @TPyDelphiApplication.HelpContext_Wrapper,
-    PAnsiChar('TApplication.HelpContext()'#10 +
-    'Displays a specified help topic.'));
+    'TApplication.HelpContext()'#10 +
+    'Displays a specified help topic.');
   PythonType.AddMethod('HelpJump', @TPyDelphiApplication.HelpJump_Wrapper,
-    PAnsiChar('TApplication.HelpJump()'#10 +
-    'Displays a specified help topic.'));
+    'TApplication.HelpJump()'#10 +
+    'Displays a specified help topic.');
   PythonType.AddMethod('HelpKeyword', @TPyDelphiApplication.HelpKeyword_Wrapper,
-    PAnsiChar('TApplication.HelpKeyword()'#10 +
-    'Displays a specified help topic.'));
+    'TApplication.HelpKeyword()'#10 +
+    'Displays a specified help topic.');
   PythonType.AddMethod('HideHint', @TPyDelphiApplication.HideHint_Wrapper,
-    PAnsiChar('TApplication.HideHint()'#10 +
-    'Hides the current hint.'));
+    'TApplication.HideHint()'#10 +
+    'Hides the current hint.');
   PythonType.AddMethod('Initialize', @TPyDelphiApplication.Initialize_Wrapper,
-    PAnsiChar('TApplication.Initialize()'#10 +
-    'Provides an opportunity to initialize subsystems.'));
+    'TApplication.Initialize()'#10 +
+    'Provides an opportunity to initialize subsystems.');
   PythonType.AddMethod('IsRightToLeft', @TPyDelphiApplication.IsRightToLeft_Wrapper,
-    PAnsiChar('TApplication.IsRightToLeft()'#10 +
-    'Specifies whether the application adjusts its interface for Middle Eastern locales.'));
+    'TApplication.IsRightToLeft()'#10 +
+    'Specifies whether the application adjusts its interface for Middle Eastern locales.');
   PythonType.AddMethod('MessageBox', @TPyDelphiApplication.MessageBox_Wrapper,
-    PAnsiChar('TApplication.MessageBox()'#10 +
-    'Displays a specified message to the user.'));
+    'TApplication.MessageBox()'#10 +
+    'Displays a specified message to the user.');
   PythonType.AddMethod('InputBox', @TPyDelphiApplication.InputBox_Wrapper,
-    PAnsiChar('InputBox_Wrapper()'#10 +
-    'Used to create a simple dialog box for users to input text.'));
+    'InputBox_Wrapper()'#10 +
+    'Used to create a simple dialog box for users to input text.');
   PythonType.AddMethod('SelectDirectory', @TPyDelphiApplication.SelectDirectory_Wrapper,
-    PAnsiChar('SelectDirectory_Wrapper()'#10 +
-    'Used to display a dialog box that allows users to select a folder and return the path of the selected folder.'));
+    'SelectDirectory_Wrapper()'#10 +
+    'Used to display a dialog box that allows users to select a folder and return the path of the selected folder.');
   PythonType.AddMethod('PrintText', @TPyDelphiApplication.PrintText_Wrapper,
-    PAnsiChar('PrintText_Wrapper()'#10 +
-    'Used to send a piece of text to the printer for printing.'));
+    'PrintText_Wrapper()'#10 +
+    'Used to send a piece of text to the printer for printing.');
   PythonType.AddMethod('PrintImage', @TPyDelphiApplication.PrintImage_Wrapper,
-    PAnsiChar('PrintImage_Wrapper()'#10 +
-    'Used to send a bitmap to a printer for printing.'));
+    'PrintImage_Wrapper()'#10 +
+    'Used to send a bitmap to a printer for printing.');
   PythonType.AddMethod('ColorToString', @TPyDelphiApplication.ColorToString_Wrapper,
-    PAnsiChar('ColorToString_Wrapper()'#10 +
-    'Converts a color value of type TColor to a string representation.'));
+    'ColorToString_Wrapper()'#10 +
+    'Converts a color value of type TColor to a string representation.');
   PythonType.AddMethod('WinExec', @TPyDelphiApplication.WinExec_Wrapper,
-    PAnsiChar('WinExec_Wrapper()'#10 +
-    'Used to run a Windows program asynchronously.'));
+    'WinExec_Wrapper()'#10 +
+    'Used to run a Windows program asynchronously.');
   PythonType.AddMethod('ShowWindow', @TPyDelphiApplication.ShowWindow_Wrapper,
-    PAnsiChar('ShowWindow_Wrapper()'#10 +
-    'Set the display status of the specified window.'));
+    'ShowWindow_Wrapper()'#10 +
+    'Set the display status of the specified window.');
   PythonType.AddMethod('ShellExecute', @TPyDelphiApplication.ShellExecute_Wrapper,
-    PAnsiChar('ShellExecute_Wrapper()'#10 +
-    'Run an external program (or open a registered file, open a directory, print a file, etc.) and have some control over the external program.'));
+    'ShellExecute_Wrapper()'#10 +
+    'Run an external program (or open a registered file, open a directory, print a file, etc.) and have some control over the external program.');
+  PythonType.AddMethod('SendMessage', @TPyDelphiApplication.SendMessage_Wrapper,
+    'SendMessage_Wrapper()'#10 +
+    'Send a message directly to a window procedure and wait for the message to be processed (synchronous operation).');
+  PythonType.AddMethod('PostMessage', @TPyDelphiApplication.PostMessage_Wrapper,
+    'PostMessage_Wrapper()'#10 +
+    'Asynchronously post a message to a windows message queue and return immediately without waiting for the message to be processed.'#10 +
+    'This is different from SendMessage, which blocks until the message is processed.');
   PythonType.AddMethod('GetSystemPath', @TPyDelphiApplication.GetSystemPath_Wrapper,
-    PAnsiChar('GetSystemPath_Wrapper()'#10 +
-    'Obtain various system paths.'));
+    'GetSystemPath_Wrapper()'#10 +
+    'Obtain various system paths.');
   PythonType.AddMethod('Minimize', @TPyDelphiApplication.Minimize_Wrapper,
-    PAnsiChar('TApplication.Minimize()'#10 +
-    'Shrinks an application to the Windows task bar.'));
+    'TApplication.Minimize()'#10 +
+    'Shrinks an application to the Windows task bar.');
   PythonType.AddMethod('ModalStarted', @TPyDelphiApplication.ModalStarted_Wrapper,
-    PAnsiChar('TApplication.ModalStarted()'#10 +
-    'Track opening of modal form.'));
+    'TApplication.ModalStarted()'#10 +
+    'Track opening of modal form.');
   PythonType.AddMethod('ModalFinished', @TPyDelphiApplication.ModalFinished_Wrapper,
-    PAnsiChar('TApplication.ModalFinished()'#10 +
-    'Track closing of modal form.'));
+    'TApplication.ModalFinished()'#10 +
+    'Track closing of modal form.');
   PythonType.AddMethod('NormalizeAllTopMosts', @TPyDelphiApplication.NormalizeAllTopMosts_Wrapper,
-    PAnsiChar('TApplication.NormalizeAllTopMosts()'#10 +
-    'Makes forms that have been designated as topmost forms (their FormStyle is fsStayOnTop) behave as if they were not topmost forms. '));
+    'TApplication.NormalizeAllTopMosts()'#10 +
+    'Makes forms that have been designated as topmost forms (their FormStyle is fsStayOnTop) behave as if they were not topmost forms. ');
   PythonType.AddMethod('RestoreTopMosts', @TPyDelphiApplication.RestoreTopMosts_Wrapper,
-    PAnsiChar('TApplication.RestoreTopMosts()'#10 +
-    'Restores forms designated as fsStayOnTop to be topmost again.'));
+    'TApplication.RestoreTopMosts()'#10 +
+    'Restores forms designated as fsStayOnTop to be topmost again.');
   PythonType.AddMethod('ProcessMessages', @TPyDelphiApplication.ProcessMessages_Wrapper,
-    PAnsiChar('TApplication.ProcessMessages()'#10 +
-    'Interrupts the execution of an application so that it can process the message queue.'));
+    'TApplication.ProcessMessages()'#10 +
+    'Interrupts the execution of an application so that it can process the message queue.');
   PythonType.AddMethod('Restore', @TPyDelphiApplication.Restore_Wrapper,
-    PAnsiChar('TApplication.Restore()'#10 +
-    'Restores a minimized application to its normal size.'));
+    'TApplication.Restore()'#10 +
+    'Restores a minimized application to its normal size.');
   PythonType.AddMethod('Run', @TPyDelphiApplication.Run_Wrapper,
-    PAnsiChar('TApplication.Run()'#10 +
-    'Executes the application.'));
+    'TApplication.Run()'#10 +
+    'Executes the application.');
   PythonType.AddMethod('ShowException', @TPyDelphiApplication.ShowException_Wrapper,
-    PAnsiChar('TApplication.ShowException()'#10 +
-    'Displays a message box for exceptions that are not caught by application code.'));
+    'TApplication.ShowException()'#10 +
+    'Displays a message box for exceptions that are not caught by application code.');
   PythonType.AddMethod('Terminate', @TPyDelphiApplication.Terminate_Wrapper,
-    PAnsiChar('TApplication.Terminate()'#10 +
-    'Ends application execution.'));
+    'TApplication.Terminate()'#10 +
+    'Ends application execution.');
   PythonType.AddMethod('UpdateAction', @TPyDelphiApplication.UpdateAction_Wrapper,
-    PAnsiChar('TApplication.UpdateAction()'#10 +
-    'Generates an OnActionUpdate event.'));
+    'TApplication.UpdateAction()'#10 +
+    'Generates an OnActionUpdate event.');
   PythonType.AddMethod('UseRightToLeftAlignment', @TPyDelphiApplication.UseRightToLeftAlignment_Wrapper,
-    PAnsiChar('TApplication.UseRightToLeftAlignment()'#10 +
-    'Specifies whether the application object is in a right-to-left alignment mode.'));
+    'TApplication.UseRightToLeftAlignment()'#10 +
+    'Specifies whether the application object is in a right-to-left alignment mode.');
   PythonType.AddMethod('UseRightToLeftReading', @TPyDelphiApplication.UseRightToLeftReading_Wrapper,
-    PAnsiChar('TApplication.UseRightToLeftReading()'#10 +
-    'Specifies whether the application object is in a right-to-left text mode.'));
+    'TApplication.UseRightToLeftReading()'#10 +
+    'Specifies whether the application object is in a right-to-left text mode.');
   PythonType.AddMethod('UseRightToLeftScrollBar', @TPyDelphiApplication.UseRightToLeftScrollBar_Wrapper,
-    PAnsiChar('TApplication.UseRightToLeftScrollBar()'#10 +
-    'Specifies whether the vertical scroll bar appears on the left side controls.'));
+    'TApplication.UseRightToLeftScrollBar()'#10 +
+    'Specifies whether the vertical scroll bar appears on the left side controls.');
 end;
 
 function TPyDelphiApplication.Restore_Wrapper(args: PPyObject): PPyObject;

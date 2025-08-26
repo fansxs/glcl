@@ -1,4 +1,4 @@
-(**************************************************************************)
+
 (*  This unit is part of the Python for Delphi (P4D) library              *)
 (*  Project home: https://github.com/pyscripter/python4delphi             *)
 (*                                                                        *)
@@ -438,6 +438,86 @@ begin
   APyDelphiWrapper.DefineVar('tcbCancel', 'tcbCancel');
   APyDelphiWrapper.DefineVar('tcbRetry', 'tcbRetry');
   APyDelphiWrapper.DefineVar('tcbClose', 'tcbClose');
+
+  { TOpenDialog }
+  APyDelphiWrapper.DefineVar('ofReadOnly', 'ofReadOnly');
+  APyDelphiWrapper.DefineVar('ofOverwritePrompt', 'ofOverwritePrompt');
+  APyDelphiWrapper.DefineVar('ofHideReadOnly', 'ofHideReadOnly');
+  APyDelphiWrapper.DefineVar('ofNoChangeDir', 'ofNoChangeDir');
+  APyDelphiWrapper.DefineVar('ofShowHelp', 'ofShowHelp');
+  APyDelphiWrapper.DefineVar('ofNoValidate', 'ofNoValidate');
+  APyDelphiWrapper.DefineVar('ofAllowMultiSelect', 'ofAllowMultiSelect');
+  APyDelphiWrapper.DefineVar('ofExtensionDifferent', 'ofExtensionDifferent');
+  APyDelphiWrapper.DefineVar('ofPathMustExist', 'ofPathMustExist');
+  APyDelphiWrapper.DefineVar('ofFileMustExist', 'ofFileMustExist');
+  APyDelphiWrapper.DefineVar('ofCreatePrompt', 'ofCreatePrompt');
+  APyDelphiWrapper.DefineVar('ofShareAware', 'ofShareAware');
+  APyDelphiWrapper.DefineVar('ofNoReadOnlyReturn', 'ofNoReadOnlyReturn');
+  APyDelphiWrapper.DefineVar('ofNoTestFileCreate', 'ofNoTestFileCreate');
+  APyDelphiWrapper.DefineVar('ofNoNetworkButton', 'ofNoNetworkButton');
+  APyDelphiWrapper.DefineVar('ofNoLongNames', 'ofNoLongNames');
+  APyDelphiWrapper.DefineVar('ofOldStyleDialog', 'ofOldStyleDialog');
+  APyDelphiWrapper.DefineVar('ofNoDereferenceLinks', 'ofNoDereferenceLinks');
+  APyDelphiWrapper.DefineVar('ofEnableIncludeNotify', 'ofEnableIncludeNotify');
+  APyDelphiWrapper.DefineVar('ofEnableSizing', 'ofEnableSizing');
+  APyDelphiWrapper.DefineVar('ofDontAddToRecent', 'ofDontAddToRecent');
+  APyDelphiWrapper.DefineVar('ofForceShowHidden', 'ofForceShowHidden');
+  APyDelphiWrapper.DefineVar('ofExNoPlacesBar', 'ofExNoPlacesBar');
+  APyDelphiWrapper.DefineVar('Standard', 'Standard');
+  APyDelphiWrapper.DefineVar('Directory', 'Directory');
+
+  { TPrintDialog }
+  APyDelphiWrapper.DefineVar('prAllPages', 'prAllPages');
+  APyDelphiWrapper.DefineVar('prSelection', 'prSelection');
+  APyDelphiWrapper.DefineVar('prPageNums', 'prPageNums');
+  APyDelphiWrapper.DefineVar('poPrintToFile', 'poPrintToFile');
+  APyDelphiWrapper.DefineVar('poPageNums', 'poPageNums');
+  APyDelphiWrapper.DefineVar('poSelection', 'poSelection');
+  APyDelphiWrapper.DefineVar('poWarning', 'poWarning');
+  APyDelphiWrapper.DefineVar('poHelp', 'poHelp');
+  APyDelphiWrapper.DefineVar('poDisablePrintToFile', 'poDisablePrintToFile');
+  APyDelphiWrapper.DefineVar('psoDefaultMinMargins', 'psoDefaultMinMargins');
+  APyDelphiWrapper.DefineVar('psoDisableMargins', 'psoDisableMargins');
+  APyDelphiWrapper.DefineVar('psoDisableOrientation', 'psoDisableOrientation');
+  APyDelphiWrapper.DefineVar('psoDisablePagePainting', 'psoDisablePagePainting');
+  APyDelphiWrapper.DefineVar('psoDisablePaper', 'psoDisablePaper');
+  APyDelphiWrapper.DefineVar('psoDisablePrinter', 'psoDisablePrinter');
+  APyDelphiWrapper.DefineVar('psoMargins', 'psoMargins');
+  APyDelphiWrapper.DefineVar('psoMinMargins', 'psoMinMargins');
+  APyDelphiWrapper.DefineVar('psoShowHelp', 'psoShowHelp');
+  APyDelphiWrapper.DefineVar('psoWarning', 'psoWarning');
+  APyDelphiWrapper.DefineVar('psoNoNetworkButton', 'psoNoNetworkButton');
+  APyDelphiWrapper.DefineVar('pkDotMatrix', 'pkDotMatrix');
+  APyDelphiWrapper.DefineVar('pkHPPCL', 'pkHPPCL');
+  APyDelphiWrapper.DefineVar('ptEnvelope', 'ptEnvelope');
+  APyDelphiWrapper.DefineVar('ptPaper', 'ptPaper');
+  APyDelphiWrapper.DefineVar('pmDefault', 'pmDefault');
+  APyDelphiWrapper.DefineVar('pmMillimeters', 'pmMillimeters');
+  APyDelphiWrapper.DefineVar('pmInches', 'pmInches');
+
+  { Message dialog }
+  APyDelphiWrapper.DefineVar('mtWarning', 'mtWarning');
+  APyDelphiWrapper.DefineVar('mtError', 'mtError');
+  APyDelphiWrapper.DefineVar('mtInformation', 'mtInformation');
+  APyDelphiWrapper.DefineVar('mtConfirmation', 'mtConfirmation');
+  APyDelphiWrapper.DefineVar('mtCustom', 'mtCustom');
+  APyDelphiWrapper.DefineVar('mbYes', 'mbYes');
+  APyDelphiWrapper.DefineVar('mbNo', 'mbNo');
+  APyDelphiWrapper.DefineVar('mbOK', 'mbOK');
+  APyDelphiWrapper.DefineVar('mbCancel', 'mbCancel');
+  APyDelphiWrapper.DefineVar('mbAbort', 'mbAbort');
+  APyDelphiWrapper.DefineVar('mbRetry', 'mbRetry');
+  APyDelphiWrapper.DefineVar('mbIgnore', 'mbIgnore');
+  APyDelphiWrapper.DefineVar('mbAll', 'mbAll');
+  APyDelphiWrapper.DefineVar('mbNoToAll', 'mbNoToAll');
+  APyDelphiWrapper.DefineVar('mbYesToAll', 'mbYesToAll');
+  APyDelphiWrapper.DefineVar('mbHelp', 'mbHelp');
+  APyDelphiWrapper.DefineVar('mbClose', 'mbClose');
+  APyDelphiWrapper.DefineVar('mdiNone', 'mdiNone');
+  APyDelphiWrapper.DefineVar('mdiWarning', 'mdiWarning');
+  APyDelphiWrapper.DefineVar('mdiError', 'mdiError');
+  APyDelphiWrapper.DefineVar('mdiInformation', 'mdiInformation');
+  APyDelphiWrapper.DefineVar('mdiShield', 'mdiShield');
 end;
 
 function TDialogRegistration.Name: string;
