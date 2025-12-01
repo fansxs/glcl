@@ -361,24 +361,24 @@ begin
   APyDelphiWrapper.DefineVar('pmMillimeters', 'pmMillimeters');
   APyDelphiWrapper.DefineVar('pmInches', 'pmInches');
 
-  APyDelphiWrapper.DefineVar('mtWarning', 'mtWarning');
-  APyDelphiWrapper.DefineVar('mtError', 'mtError');
-  APyDelphiWrapper.DefineVar('mtInformation', 'mtInformation');
-  APyDelphiWrapper.DefineVar('mtConfirmation', 'mtConfirmation');
+  APyDelphiWrapper.DefineVar('mtWarning', mtWarning);
+  APyDelphiWrapper.DefineVar('mtError', mtError);
+  APyDelphiWrapper.DefineVar('mtInformation', mtInformation);
+  APyDelphiWrapper.DefineVar('mtConfirmation', mtConfirmation);
   APyDelphiWrapper.DefineVar('mtCustom', 'mtCustom');
 
-  APyDelphiWrapper.DefineVar('mbYes', 'mbYes');
-  APyDelphiWrapper.DefineVar('mbNo', 'mbNo');
-  APyDelphiWrapper.DefineVar('mbOK', 'mbOK');
-  APyDelphiWrapper.DefineVar('mbCancel', 'mbCancel');
-  APyDelphiWrapper.DefineVar('mbAbort', 'mbAbort');
-  APyDelphiWrapper.DefineVar('mbRetry', 'mbRetry');
-  APyDelphiWrapper.DefineVar('mbIgnore', 'mbIgnore');
-  APyDelphiWrapper.DefineVar('mbAll', 'mbAll');
-  APyDelphiWrapper.DefineVar('mbNoToAll', 'mbNoToAll');
-  APyDelphiWrapper.DefineVar('mbYesToAll', 'mbYesToAll');
-  APyDelphiWrapper.DefineVar('mbHelp', 'mbHelp');
-  APyDelphiWrapper.DefineVar('mbClose', 'mbClose');
+  APyDelphiWrapper.DefineVar('mbYes', mbYes);
+  APyDelphiWrapper.DefineVar('mbNo', mbNo);
+  APyDelphiWrapper.DefineVar('mbOK', mbOK);
+  APyDelphiWrapper.DefineVar('mbCancel', mbCancel);
+  APyDelphiWrapper.DefineVar('mbAbort', mbAbort);
+  APyDelphiWrapper.DefineVar('mbRetry', mbRetry);
+  APyDelphiWrapper.DefineVar('mbIgnore', mbIgnore);
+  APyDelphiWrapper.DefineVar('mbAll', mbAll);
+  APyDelphiWrapper.DefineVar('mbNoToAll', mbNoToAll);
+  APyDelphiWrapper.DefineVar('mbYesToAll', mbYesToAll);
+  APyDelphiWrapper.DefineVar('mbHelp', mbHelp);
+  APyDelphiWrapper.DefineVar('mbClose', mbClose);
 
   APyDelphiWrapper.DefineVar('fdAnsiOnly', 'fdAnsiOnly');
   APyDelphiWrapper.DefineVar('fdTrueTypeOnly', 'fdTrueTypeOnly');
@@ -495,24 +495,6 @@ begin
   APyDelphiWrapper.DefineVar('pmMillimeters', 'pmMillimeters');
   APyDelphiWrapper.DefineVar('pmInches', 'pmInches');
 
-  { Message dialog }
-  APyDelphiWrapper.DefineVar('mtWarning', 'mtWarning');
-  APyDelphiWrapper.DefineVar('mtError', 'mtError');
-  APyDelphiWrapper.DefineVar('mtInformation', 'mtInformation');
-  APyDelphiWrapper.DefineVar('mtConfirmation', 'mtConfirmation');
-  APyDelphiWrapper.DefineVar('mtCustom', 'mtCustom');
-  APyDelphiWrapper.DefineVar('mbYes', 'mbYes');
-  APyDelphiWrapper.DefineVar('mbNo', 'mbNo');
-  APyDelphiWrapper.DefineVar('mbOK', 'mbOK');
-  APyDelphiWrapper.DefineVar('mbCancel', 'mbCancel');
-  APyDelphiWrapper.DefineVar('mbAbort', 'mbAbort');
-  APyDelphiWrapper.DefineVar('mbRetry', 'mbRetry');
-  APyDelphiWrapper.DefineVar('mbIgnore', 'mbIgnore');
-  APyDelphiWrapper.DefineVar('mbAll', 'mbAll');
-  APyDelphiWrapper.DefineVar('mbNoToAll', 'mbNoToAll');
-  APyDelphiWrapper.DefineVar('mbYesToAll', 'mbYesToAll');
-  APyDelphiWrapper.DefineVar('mbHelp', 'mbHelp');
-  APyDelphiWrapper.DefineVar('mbClose', 'mbClose');
   APyDelphiWrapper.DefineVar('mdiNone', 'mdiNone');
   APyDelphiWrapper.DefineVar('mdiWarning', 'mdiWarning');
   APyDelphiWrapper.DefineVar('mdiError', 'mdiError');

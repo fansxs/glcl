@@ -339,8 +339,8 @@ begin
   APyDelphiWrapper.DefineVar('alCustom', 'alCustom');
 
   APyDelphiWrapper.DefineVar('mbLeft', mbLeft);
-  APyDelphiWrapper.DefineVar('mbRight',mbRight);
-  APyDelphiWrapper.DefineVar('mbMiddle',mbMiddle);
+  APyDelphiWrapper.DefineVar('mbRight', mbRight);
+  APyDelphiWrapper.DefineVar('mbMiddle', mbMiddle);
 end;
 
 function TControlsRegistration.Name: string;

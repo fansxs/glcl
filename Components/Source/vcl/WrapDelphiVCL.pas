@@ -60,6 +60,16 @@ uses
   WrapVclSamplesCalendar,
   WrapVclWinXCalendars,
   WrapVclWinXPickers,
-  WrapVclWinXPanels;
+  WrapVclWinXPanels,
+  WrapUpgraders,
+  WrapMakerAi,
+  WrapPJDropFiles,
+  WrapVclInternet,
+  WrapVclDataAccess,
+  WrapVclDataControls,
+  WrapCharts,
+  WrapExtendGrids,
+  WrapNoBorder,
+  WrapPicShow;
 
 end.

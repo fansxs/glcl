@@ -20,7 +20,8 @@ interface
 
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses, WrapVclControls,
-  Windows, Forms, Graphics, TypInfo, osSysPath, Messages;
+  Windows, Forms, Graphics, TypInfo, osSysPath, Messages(*, DelphiC, libFPC.Utils,
+  libFPC*);
 
 type
   TCloseQueryEventHandler = class(TEventHandler)
@@ -277,6 +278,7 @@ type
     function Initialize_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function IsRightToLeft_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function MessageBox_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MessageDlg_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function InputBox_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function SelectDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function PrintText_Wrapper(args : PPyObject) : PPyObject; cdecl;
@@ -288,6 +290,17 @@ type
     function SendMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function PostMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function GetSystemPath_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ReleaseCapture_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetParent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetWindowPos_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ShowCursor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PtInRect_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ReleaseDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function BitBlt_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    //function CCompiler_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    //function CompileFPCFileToExeAndRun_Wrapper(args : PPyObject) : PPyObject; cdecl;
+//    function CompileFPCCodeToDllAndCall_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function Minimize_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function ModalStarted_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function ModalFinished_Wrapper(args : PPyObject) : PPyObject; cdecl;
@@ -944,6 +957,44 @@ begin
   APyDelphiWrapper.DefineVar('DM_SETDEFID', DM_SETDEFID);
   APyDelphiWrapper.DefineVar('DM_REPOSITION', DM_REPOSITION);
 
+  { SetWindowPos Flags }
+  APyDelphiWrapper.DefineVar('SWP_NOSIZE', SWP_NOSIZE);
+  APyDelphiWrapper.DefineVar('SWP_NOMOVE', SWP_NOMOVE);
+  APyDelphiWrapper.DefineVar('SWP_NOZORDER', SWP_NOZORDER);
+  APyDelphiWrapper.DefineVar('SWP_NOREDRAW', SWP_NOREDRAW);
+  APyDelphiWrapper.DefineVar('SWP_NOACTIVATE', SWP_NOACTIVATE);
+  APyDelphiWrapper.DefineVar('SWP_FRAMECHANGED', SWP_FRAMECHANGED);
+  APyDelphiWrapper.DefineVar('SWP_SHOWWINDOW', SWP_SHOWWINDOW);
+  APyDelphiWrapper.DefineVar('SWP_HIDEWINDOW', SWP_HIDEWINDOW);
+  APyDelphiWrapper.DefineVar('SWP_NOCOPYBITS', SWP_NOCOPYBITS);
+  APyDelphiWrapper.DefineVar('SWP_NOOWNERZORDER', SWP_NOOWNERZORDER);
+  APyDelphiWrapper.DefineVar('SWP_NOSENDCHANGING', SWP_NOSENDCHANGING);
+  APyDelphiWrapper.DefineVar('SWP_DRAWFRAME', SWP_DRAWFRAME);
+  APyDelphiWrapper.DefineVar('SWP_NOREPOSITION', SWP_NOREPOSITION);
+  APyDelphiWrapper.DefineVar('SWP_DEFERERASE', SWP_DEFERERASE);
+  APyDelphiWrapper.DefineVar('SWP_ASYNCWINDOWPOS', SWP_ASYNCWINDOWPOS);
+
+  APyDelphiWrapper.DefineVar('HWND_TOP', 0);
+  APyDelphiWrapper.DefineVar('HWND_BOTTOM', 1);
+  APyDelphiWrapper.DefineVar('HWND_TOPMOST', -1);
+  APyDelphiWrapper.DefineVar('HWND_NOTOPMOST', -2);
+
+  { Ternary raster operations }
+  APyDelphiWrapper.DefineVar('SRCCOPY', SRCCOPY);
+  APyDelphiWrapper.DefineVar('SRCPAINT', SRCPAINT);
+  APyDelphiWrapper.DefineVar('SRCAND', SRCAND);
+  APyDelphiWrapper.DefineVar('SRCINVERT', SRCINVERT);
+  APyDelphiWrapper.DefineVar('SRCERASE', SRCERASE);
+  APyDelphiWrapper.DefineVar('NOTSRCCOPY', NOTSRCCOPY);
+  APyDelphiWrapper.DefineVar('NOTSRCERASE', NOTSRCERASE);
+  APyDelphiWrapper.DefineVar('MERGECOPY', MERGECOPY);
+  APyDelphiWrapper.DefineVar('MERGEPAINT', MERGEPAINT);
+  APyDelphiWrapper.DefineVar('PATCOPY', PATCOPY);
+  APyDelphiWrapper.DefineVar('PATPAINT', PATPAINT);
+  APyDelphiWrapper.DefineVar('PATINVERT', PATINVERT);
+  APyDelphiWrapper.DefineVar('DSTINVERT', DSTINVERT);
+  APyDelphiWrapper.DefineVar('BLACKNESS', BLACKNESS);
+  APyDelphiWrapper.DefineVar('WHITENESS', WHITENESS);
 end;
 
 function TFormsRegistration.Name: string;
@@ -2178,6 +2229,29 @@ begin
   end;
 end;
 
+function TPyDelphiApplication.MessageDlg_Wrapper(
+  args: PPyObject): PPyObject;
+var
+  _msg : PPyObject;
+  _dlg_type : Integer;
+  _buttons : Integer;
+  _help_ctx : LongInt;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do begin
+    if (PyArg_ParseTuple( args, 'Oiii:MessageDlg', @_msg, @_dlg_type, @_buttons, @_help_ctx ) <> 0) and
+    CheckEnum('TMsgDlgType', _dlg_type, Ord(Low(TMsgDlgType)), Ord(High(TMsgDlgType))) and
+    CheckEnum('TMsgDlgBtn', _buttons, Ord(Low(TMsgDlgBtn)), Ord(High(TMsgDlgBtn))) then
+      begin
+        Result := PyLong_FromLong(
+          MessageDlg(PChar(PyObjectAsString(_msg)), TMsgDlgType(_dlg_type),
+          [TMsgDlgBtn(_buttons)], _help_ctx) );
+      end else
+        Result := nil;
+  end;
+end;
+
 function TPyDelphiApplication.InputBox_Wrapper(
   args: PPyObject): PPyObject; cdecl;
 var
@@ -2446,6 +2520,315 @@ begin
   end;
 end;
 
+function TPyDelphiApplication.ReleaseCapture_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':ReleaseCapture') <> 0) then
+    begin
+      if ReleaseCapture then
+        Result := ReturnTrue
+      else
+        Result := ReturnFalse;
+    end else
+      Result := ReturnFalse;
+  end;
+end;
+
+function TPyDelphiApplication.SetParent_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _hWndChild : HWND;
+  _hWndNewParent : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetParent', @_hWndChild, @_hWndNewParent) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetParent(_hWndChild, _hWndNewParent));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetWindowPos_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _hWndInsertAfter : HWND;
+  _X, _Y, _cx, _cy : Integer;
+  _uFlags : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiiii:SetWindowPos', @_hWnd, @_hWndInsertAfter,
+      @_X, @_Y, @_cx, @_cy, @_uFlags) <> 0) then
+    begin
+      Result := PyBool_FromLong(UINT(SetWindowPos(_hWnd, _hWndInsertAfter, _X, _Y,
+        _cx, _cy, _uFlags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ShowCursor_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _bShow: BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:ShowCursor', @_bShow) <> 0) then
+    begin
+      Result := PyLong_FromLong(ShowCursor(_bShow));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PtInRect_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _lprc : TRect;
+  _pt : TPoint;
+  LPyPoint: PPyObject;
+  LPyRect: PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PtInRect', @LPyRect, LPyPoint) <> 0) and
+      CheckPointAttribute(LPyPoint, 'TPoint', _pt) and
+      CheckRectAttribute(LPyRect, 'TRect', _lprc) then
+    begin
+      Result := PyBool_FromLong(Integer(PtInRect(_lprc, _pt)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDC_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetDC', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetDC(_hWnd));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ReleaseDC_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _hDC : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:ReleaseDC', @_hWnd, @_hDC) <> 0) then
+    begin
+      Result := PyLong_FromLong(ReleaseDC(_hWnd, _hDC));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.BitBlt_Wrapper(
+  args: PPyObject): PPyObject; cdecl;
+var
+  _destDC : HDC;
+  _X, _Y, _width, _height : Integer;
+  _srcDC : HDC;
+  _xSrc, _ySrc : Integer;
+  _rop : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiiiiii:BitBlt', @_destDC, @_X, @_Y, @_width,
+      @_height, @_srcDC, @_xSrc, @_ySrc, @_rop) <> 0) then
+    begin
+      Result := PyBool_FromLong(UINT(BitBlt(_destDC, _X, _Y, _width,
+        _height, _srcDC, _xSrc, _ySrc, _rop)));
+    end else
+      Result := nil;
+  end;
+end;
+
+(*
+function CCompiler(CCode, FileName: String): BOOL;
+var
+  LCompiler: TDelphiC;
+begin
+  try
+    LCompiler := TDelphiC.Create();
+    LCompiler.SetOuput(opEXE);
+    LCompiler.SetSubsystem(ssConsole);
+    LCompiler.CompileString(CCode);
+    Result := LCompiler.OutputFile(FileName);
+  except
+      Result := False;
+  end;
+  LCompiler.Free();
+end;
+
+function TPyDelphiApplication.CCompiler_Wrapper(args : PPyObject) : PPyObject; cdecl;
+var
+  LPyCCode, LPyFileName: PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:CCompiler', @LPyCCode, @LPyFileName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CCompiler(PyObjectAsString(LPyCCode),
+        PyObjectAsString(LPyFileName))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function CompileFPCFileToExeAndRun(FileName: String; Params: String): Integer;
+var
+  LlibFPC: TLibFPC;
+  LExitCode: DWORD;
+begin
+  // Create an instance of TLibFPC
+  LlibFPC := TLibFPC.Create();
+  try
+    // Assign the Pascal source file to compile
+    LlibFPC.SetProjectSource(psFile, FileName);
+
+    // Set the output path to the in-memory cache directory
+    LlibFPC.SetOutputPathToCacheDir();
+
+    // Turn off debug mode
+    LlibFPC.SetDebugMode(False);
+
+    // Compile the file and check for success
+    if LlibFPC.Compile() then
+    begin
+      // Attempt to run EXE from cache with argument '7'
+      if LlibFPC.RunEXE(Params, LExitCode) then
+      begin
+        Result := LExitCode;
+      end
+      else
+        Result := 0; // Run failed.
+    end
+    else
+    begin
+      Result := -1; // Compile failed
+    end;
+  finally
+    // Free the instance to release resources
+    LlibFPC.Free();
+  end;
+end;
+
+function TPyDelphiApplication.CompileFPCFileToExeAndRun_Wrapper(args : PPyObject) : PPyObject; cdecl;
+var
+  LPyFileName, LPyParams: PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:CompileFPCFileToExeAndRun', @LPyFileName, @LPyParams) <> 0) then
+    begin
+      Result := PyLong_FromLong(CompileFPCFileToExeAndRun(PyObjectAsString(LPyFileName),
+        PyObjectAsString(LPyParams)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function CompileFPCCodeToDllAndCall(FPCCode: String; FunctionName: String): Integer;
+var
+  LlibFPC: TLibFPC;
+  LHandle: THandle;
+  Test1: procedure();
+begin
+  // Create an instance of TLibFPC
+  LlibFPC := TLibFPC.Create();
+  try
+    // Assign the Pascal source string to compile
+    LlibFPC.SetProjectSource(psString, FPCCode);
+
+    // Set the output path to the in-memory cache directory
+    LlibFPC.SetOutputPathToCacheDir();
+
+    // Turn off debug mode
+    LlibFPC.SetDebugMode(False);
+
+    // Compile the file and check for success
+    if LlibFPC.Compile() then
+    begin
+      // Attempt to load the DLL from cache
+      LHandle := LlibFPC.LoadDLL();
+      if LHandle <> 0 then
+      begin
+        // Resolve the 'Test01' exported procedure
+        Test1 := GetProcAddress(LHandle, PChar(FunctionName));
+        if Assigned(Test1) then
+        begin
+          Test1();                                   // Execute the export
+          Result := 1;
+        end;
+
+        FreeLibrary(LHandle);              // Unload the DLL after use
+      end
+      else
+        Result := 0;
+    end
+    else
+    begin
+      Result := -1;                        // Notify compile failure
+    end;
+  finally
+    // Free the instance to release resources
+    LlibFPC.Free();
+  end;
+end;
+
+function TPyDelphiApplication.CompileFPCCodeToDllAndCall_Wrapper(args : PPyObject) : PPyObject; cdecl;
+var
+  LPyFPCCode, LPyFuncName: PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:CompileFPCCodeToDllAndCall', @LPyFPCCode, @LPyFuncName) <> 0) then
+    begin
+      Result := PyLong_FromLong(CompileFPCCodeToDllAndCall(PyObjectAsString(LPyFPCCode),
+        PyObjectAsString(LPyFuncName)));
+    end else
+      Result := nil;
+  end;
+end;*)
+
 function TPyDelphiApplication.Minimize_Wrapper(args: PPyObject): PPyObject;
 begin
   // We adjust the transmitted self argument
@@ -2646,6 +3029,9 @@ begin
   PythonType.AddMethod('MessageBox', @TPyDelphiApplication.MessageBox_Wrapper,
     'TApplication.MessageBox()'#10 +
     'Displays a specified message to the user.');
+  PythonType.AddMethod('MessageDlg', @TPyDelphiApplication.MessageDlg_Wrapper,
+    'TApplication.MessageDlg()'#10 +
+    'Displays a specified message to the user.');
   PythonType.AddMethod('InputBox', @TPyDelphiApplication.InputBox_Wrapper,
     'InputBox_Wrapper()'#10 +
     'Used to create a simple dialog box for users to input text.');
@@ -2680,6 +3066,39 @@ begin
   PythonType.AddMethod('GetSystemPath', @TPyDelphiApplication.GetSystemPath_Wrapper,
     'GetSystemPath_Wrapper()'#10 +
     'Obtain various system paths.');
+  PythonType.AddMethod('ReleaseCapture', @TPyDelphiApplication.ReleaseCapture_Wrapper,
+    'ReleaseCapture_Wrapper()'#10 +
+    'Release the mouse capture of the window in the current thread.');
+  PythonType.AddMethod('SetParent', @TPyDelphiApplication.SetParent_Wrapper,
+    'SetParent_Wrapper()'#10 +
+    'Used to change the parent window of a window.');
+  PythonType.AddMethod('SetWindowPos', @TPyDelphiApplication.SetWindowPos_Wrapper,
+    'SetWindowPos_Wrapper()'#10 +
+    'Used to set the position, size, and Z-order (display order) of a window.');
+  PythonType.AddMethod('ShowCursor', @TPyDelphiApplication.ShowCursor_Wrapper,
+    'ShowCursor_Wrapper()'#10 +
+    'Used to control the display and hiding of the mouse cursor.');
+  PythonType.AddMethod('PtInRect', @TPyDelphiApplication.PtInRect_Wrapper,
+    'PtInRect_Wrapper()'#10 +
+    'Used to determine whether a point is within a specified rectangular area.');
+  PythonType.AddMethod('GetDC', @TPyDelphiApplication.GetDC_Wrapper,
+    'GetDC_Wrapper()'#10 +
+    'Retrieves a handle to a device context for the client area of the specified window.');
+  PythonType.AddMethod('ReleaseDC', @TPyDelphiApplication.ReleaseDC_Wrapper,
+    'ReleaseDC_Wrapper()'#10 +
+    'The ReleaseDC function releases a device context, freeing it for use by other applications.');
+  PythonType.AddMethod('BitBlt', @TPyDelphiApplication.BitBlt_Wrapper,
+    'BitBlt_Wrapper()'#10 +
+    'The BitBlt function performs a bit-block transfer of the color data.');
+//  PythonType.AddMethod('CCompiler', @TPyDelphiApplication.CCompiler_Wrapper,
+//    'CCompiler_Wrapper()'#10 +
+//    'Compile C code into an exe.');
+//  PythonType.AddMethod('CompileFPCFileToRun', @TPyDelphiApplication.CompileFPCFileToExeAndRun_Wrapper,
+//    'CompileFPCFileToExeAndRun_Wrapper()'#10 +
+//    'Compile the FPC file and then run it.');
+//  PythonType.AddMethod('CompileFPCCodeToDllAndCall', @TPyDelphiApplication.CompileFPCCodeToDllAndCall_Wrapper,
+//    'CompileFPCCodeToDllAndCall_Wrapper()'#10 +
+//    'Compile the FPC code into a DLL and then call the function.');
   PythonType.AddMethod('Minimize', @TPyDelphiApplication.Minimize_Wrapper,
     'TApplication.Minimize()'#10 +
     'Shrinks an application to the Windows task bar.');

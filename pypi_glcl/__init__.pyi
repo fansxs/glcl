@@ -41,7 +41,6 @@ MB_SYSTEMMODAL: int
 MB_TASKMODAL: int
 MB_YESNO: int
 MB_YESNOCANCEL: int
-Screen: Screen
 bkAbort: int
 bkAll: int
 bkCancel: int
@@ -1870,6 +1869,46 @@ gsSelCol: str
 gsCell: str
 gsColSize: str
 gsBoxDrag: str
+vpByDateTime: str
+vpByNumber: str
+bmNone: str
+bmTiled: str
+bmStretched: str
+bmCentered: str
+SWP_NOSIZE: int
+SWP_NOMOVE: int
+SWP_NOZORDER: int
+SWP_NOREDRAW: int
+SWP_NOACTIVATE: int
+SWP_FRAMECHANGED: int
+SWP_SHOWWINDOW: int
+SWP_HIDEWINDOW: int
+SWP_NOCOPYBITS: int
+SWP_NOOWNERZORDER: int
+SWP_NOSENDCHANGING: int
+SWP_DRAWFRAME: int
+SWP_NOREPOSITION: int
+SWP_DEFERERASE: int
+SWP_ASYNCWINDOWPOS: int
+HWND_TOP: int
+HWND_BOTTOM: int
+HWND_TOPMOST: int
+HWND_NOTOPMOST: int
+SRCCOPY: int
+SRCPAINT: int
+SRCAND: int
+SRCINVERT: int
+SRCERASE: int
+NOTSRCCOPY: int
+NOTSRCERASE: int
+MERGECOPY: int
+MERGEPAINT: int
+PATCOPY: int
+PATPAINT: int
+PATINVERT: int
+DSTINVERT: int
+BLACKNESS: int
+WHITENESS: int
 '''
 
 class Application(Component):
@@ -2522,7 +2561,7 @@ class Application(Component):
         主题切换：
         开发人员可以动态地在应用程序中启用或禁用 Metropolis UI 主题，以适应不同用户的喜好或特定的应用场景。通过设置 Application.UseMetropolisUI 属性，可以灵活地切换应用程序的界面风格，以满足不同的需求。
         总之，Application.UseMetropolisUI 属性用于启用或禁用 Metropolis UI 主题，从而美化应用程序的用户界面，提升用户体验，并保持界面风格的一致性。"""
-    def MessageBox(self, *args, **kwargs) -> int:
+    def MessageBox(Text: str, Caption: str, Type: int) -> int:
         """Application.MessageBox 是一个用于显示消息框的函数。它的作用是在应用程序中弹出一个消息框，向用户显示特定的消息，并根据用户的响应执行相应的操作。以下是关于 Application.MessageBox 函数的详细说明：
         消息显示：
         Application.MessageBox 可以用来向用户显示各种类型的消息，包括信息、警告、错误等。通过传递不同的消息文本和消息类型参数，可以在消息框中显示不同的内容，以提供给用户相应的提示或警告。
@@ -2532,7 +2571,11 @@ class Application(Component):
         Application.MessageBox 函数接受多个参数，其中包括消息文本、消息标题、消息类型和按钮选项等。通过设置这些参数，开发人员可以定制消息框的外观和行为，以满足特定的需求。
         模态与非模态：
         Application.MessageBox 函数可以以模态或非模态的方式显示消息框。在模态模式下，用户必须对消息框做出响应后才能继续操作应用程序；而在非模态模式下，用户可以在不关闭消息框的情况下继续操作应用程序。
-        总之，Application.MessageBox 函数是用于在 PythonStudio 应用程序中显示消息框的函数，通过向用户显示特定的消息，并根据用户的响应执行相应的操作，可以实现与用户的交互和信息提示。"""
+        总之，Application.MessageBox 函数是用于在 PythonStudio 应用程序中显示消息框的函数，通过向用户显示特定的消息，并根据用户的响应执行相应的操作，可以实现与用户的交互和信息提示。
+        提示：str
+        标题：str
+        类型：int
+		"""
     def InputBox(*args, **kwargs) -> Any:
         """用于创建一个简单的对话框供用户输入文本。
         标题：str
@@ -2583,7 +2626,61 @@ class Application(Component):
         """获取各种系统路径。路径缩写参见实例或文档。
         路径缩写：int
         结果：str"""
-
+    def ReleaseCapture(*args, **kwargs) -> bool:
+        """释放当前线程中窗口的鼠标捕获。
+        结果：bool"""
+    def SetParent(*args, **kwargs) -> int:
+        """用于改变一个窗口的父窗口。
+        参数说明：
+        hWndChild: int - 子窗口的句柄
+        hWndNewParent: int - 新的父窗口句柄
+        结果：int  返回先前父窗口的句柄 如果失败，返回 0"""
+    def SetWindowPos(*args, **kwargs) -> bool:
+        """用于设置窗口的位置、大小和 Z 序（显示顺序）。
+        hWnd: int
+        hWndInsertAfter: int
+        X: int
+        Y: int
+        cx: int
+        cy: int
+        uFlags: int
+        结果：int 成功：返回非零值 失败：返零"""
+    def ShowCursor(*args, **kwargs) -> int:
+        """用于控制鼠标光标的显示和隐藏。
+        参数说明
+        bShow: bool 描述：控制光标显示或隐藏的标志。
+        结果：int 返回新的光标显示计数值"""
+    def PtInRect(*args, **kwargs) -> bool:
+        """用于判断一个点是否位于指定的矩形区域内。
+        参数说明
+        lprc: Rect 描述：指向一个 Rect 结构，表示要检查的矩形区域。
+        pt: Point 描述：指向一个 TPoint 结构，表示要检查的点坐标。
+        结果：bool 如果点在矩形内，返回 True，如果点不在矩形内或在矩形边界上，返回 False"""
+    def GetDC(*args, **kwargs) -> int:
+        """获取指定窗口客户区的设备上下文句柄。
+        参数说明
+        hWnd: int 描述：要获取设备上下文的窗口句柄
+        特殊值：如果为 0，表示获取整个屏幕的设备上下文
+        结果：int 成功：返回设备上下文句柄（HDC） 失败：返回 0"""
+    def ReleaseDC(*args, **kwargs) -> int:
+        """ReleaseDC 函数用于释放一个设备上下文，使其可供其他应用程序使用。
+        参数说明
+        hWnd: int 描述：先前调用 GetDC 或 GetWindowDC 时传入的窗口句柄。
+        hDC: int 描述：要释放的设备上下文句柄，即 GetDC 或 GetWindowDC 的返回值。
+        结果：int 成功：返回 1 失败：返回 0"""
+    def BitBlt(*args, **kwargs) -> bool:
+        """BitBlt 函数执行颜色数据的位块传输。
+        参数说明
+        DestDC: int 描述：目标设备上下文的句柄。
+        X: int 描述：目标矩形左上角的坐标X。
+        Y: int 描述：目标矩形左上角的坐标Y。
+        Width: int 描述：目标矩形的宽度。
+        Height: int 描述：目标矩形的高度。
+        SrcDC: int 描述：源设备上下文的句柄。
+        XSrc: int 描述：源矩形左上角的坐标X。
+        YSrc: int 描述：源矩形左上角的坐标Y。
+        Rop: DWORD 描述：光栅操作代码。
+        结果：int 成功：返回非零值 失败：返零"""
 
 class Action(CustomAction):
     """TAction 是 VCL 动作对象的基类。 TAction 实现与菜单项和控件一起使用的操作。 TAction 操作的已发布属性和事件可以在设计时在对象检查器中进行管理。
@@ -14514,6 +14611,115 @@ class Form(CustomForm):
         self：当前对象的引用。
         name：属性的名称（字符串形式）。
         value：赋予属性的值。"""
+
+class Screen(Component):
+    """ 它提供了与屏幕和显示器相关的信息和功能。 """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def DisableAlign(self, *args, **kwargs) -> Any:
+        """ """
+    def EnableAlign(self, *args, **kwargs) -> Any:
+        """ """
+    def MonitorFromPoint(self, *args, **kwargs) -> Any:
+        """ """
+    def MonitorFromRect(self, *args, **kwargs) -> Any:
+        """ """
+    def MonitorFromWindow(self, *args, **kwargs) -> Any:
+        """ """
+    def Realign(self, *args, **kwargs) -> Any:
+        """ """
+    def ResetFonts(self, *args, **kwargs) -> Any:
+        """ """
+    ActiveControl: Any
+    """ """
+    ActiveCustomForm: Any
+    """ """
+    ActiveForm: Any
+    """ """
+    CustomFormCount: int
+    """ """
+    CustomForms: Any
+    """ """
+    CursorCount: int
+    """ """
+    Cursor: Any
+    """ """
+    Cursors: int
+    """ """
+    CursorHeightMargin: int
+    """ """
+    DataModules: Any
+    """ """
+    DataModuleCount: int
+    """ """
+    DefaultPixelsPerInch: int
+    """ """
+    FocusedForm: Any
+    """ """
+    SaveFocusedList: Any
+    """ """
+    MonitorCount: int
+    """ """
+    Monitors: Any
+    """ """
+    DesktopRect: Any
+    """ """
+    DesktopHeight: int
+    """ """
+    DesktopLeft: int
+    """ """
+    DesktopTop: int
+    """ """
+    DesktopWidth: int
+    """ """
+    WorkAreaRect: Any
+    """ """
+    WorkAreaHeight: int
+    """ """
+    WorkAreaLeft: int
+    """ """
+    WorkAreaTop: int
+    """ """
+    WorkAreaWidth: int
+    """ """
+    HintFont: Any
+    """ """
+    IconFont: Any
+    """ """
+    MenuFont: Any
+    """ """
+    MessageFont: Any
+    """ """
+    CaptionFont: Any
+    """ """
+    Fonts: Any
+    """ """
+    FormCount: int
+    """ """
+    Forms: Any
+    """ """
+    Imes: Any
+    """ """
+    DefaultIme: str
+    """ """
+    DefaultKbLayout: Any
+    """ """
+    Height: int
+    """ """
+    PixelsPerInch: int
+    """ """
+    PrimaryMonitor: Any
+    """ """
+    Width: int
+    """ """
+    OnActiveControlChange: Any
+    """ """
+    OnActiveFormChange: Any
+    """ """
+    UpdatingAllFonts: bool
+    """ """
 
 class Graphic(Persistent):
     """TGraphic 是可以存储和显示可视图像的对象（例如图标、位图和图元文件）的抽象基类类型。
@@ -37122,1085 +37328,6 @@ def StyleServices(*args, **kwargs) -> Any:
 
     StyleServices提供了一套服务和功能，允许开发者自定义和修改应用程序中控件的外观和感觉。"""
 
-class auCustomHTTP(Component):
-    """ """
-    def Create(self, AOwner) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Read(self, *args, **kwargs) -> bool:
-        """ """
-    def ReadRange(self, *args, **kwargs) -> Any:
-        """ """
-    def Upload(self, *args, **kwargs) -> bool:
-        """ """
-    def BeginPrepareUpload -> bool:
-        """ """
-    def UploadStream(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadString(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadInteger(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadBoolean(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadPicture(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadThumbnailedPicture(self, *args, **kwargs) -> Any:
-        """ """
-    def EndPrepareUpload(self, *args, **kwargs) -> Any:
-        """ """
-    def Abort(self, *args, **kwargs) -> Any:
-        """ """
-    def Pause(self, *args, **kwargs) -> Any:
-        """ """
-    def Resume -> bool:
-        """ """
-    def IsGlobalOffline -> bool:
-        """ """
-    Username: str
-    """ """
-    Password: str
-    """ """
-    Busy: bool
-    """ """
-    ThreadBusy: bool
-    """ """
-    FreeOnTerminate: bool
-    """ """
-    FileName: str
-    """ """
-    HostName: str
-    """ """
-    Thread: Any
-    """ """
-    AcceptTypes: str
-    """ """
-    AddHeaders: Any
-    """ """
-    Agent: str
-    """ """
-    Proxy: Any
-    """ """
-    ShowGoOnlineMessage: bool
-    """ """
-    CacheOptions: Any
-    """ """
-    InternetOptions: Any
-    """ """
-    OutputFileName: str
-    """ """
-    OutputFileAttributes: Any
-    """ """
-    URL: str
-    """ """
-    POSTData: str
-    """ """
-    Range: Any
-    """ """
-    Referer: str
-    """ """
-    RequestMethod: Any
-    """ """
-    Timeouts: Any
-    """ """
-    TransferBufferSize: Any
-    """ """
-    WorkOffline: bool
-    """ """
-    Data: Any
-    """ """
-    Suspended: bool
-    """ """
-    ThreadPriority: Any
-    """ """
-    WaitThread: bool
-    """ """
-    WaitTimeout: int
-    """ """
-    OnBeforeSendRequest: Any
-    """ """
-    OnHeaderInfo: Any
-    """ """
-    OnDone: Any
-    """ """
-    OnProgress: Any
-    """ """
-    OnStatusChanged: Any
-    """ """
-    OnRedirected: Any
-    """ """
-    OnUploadProgress: Any
-    """ """
-    OnUploadFieldRequest: Any
-    """ """
-    OnAnyError: Any
-    """ """
-    OnAborted: Any
-    """ """
-    OnConnLost: Any
-    """ """
-    OnDoneInterrupted: Any
-    """ """
-    OnOutputFileError: Any
-    """ """
-    OnPasswordRequest: Any
-    """ """
-    OnProxyAuthenticationRequest: Any
-    """ """
-    OnHostUnreachable: Any
-    """ """
-    OnHTTPError: Any
-    """ """
-    OnWaitTimeoutExpired: Any
-    """ """
-    OnBeforeCreateFile: Any
-    """ """
-    OnAfterCreateFile: Any
-    """ """
-class auAutoUpgrader(auCustomHTTP):
-    """ """
-    def Create(self, AOwner) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Loaded(self, *args, **kwargs) -> Any:
-        """ """
-    def CheckUpdate(self, *args, **kwargs) -> bool:
-        """ """
-    def Abort(self, *args, **kwargs) -> Any:
-        """ """
-    def RestartApplication(self, *args, **kwargs) -> Any:
-        """ """
-    def DeleteTemporaryFiles(self, *args, **kwargs) -> Any:
-        """ """
-    Aborted: bool
-    """ """
-    DownloadQueue: Any
-    """ """
-    QInfoStage: bool
-    """ """
-    Restarting: bool
-    """ """
-    Proxy: Any
-    """ """
-    InternetOptions: Any
-    """ """
-    ThreadPriority: Any
-    """ """
-    TransferBufferSize: Any
-    """ """
-    HTTPUsername: str
-    """ """
-    HTTPPassword: str
-    """ """
-    OnProxyAuthenticationRequest: Any
-    """ """
-    AutoCheck: bool
-    """ """
-    AutoCheckDelay: int
-    """ """
-    CacheOptions: Any
-    """ """
-    InfoFile: Any
-    """ """
-    InfoFileURL: str
-    """ """
-    RestartParams: str
-    """ """
-    MiscFilesUpgrade: Any
-    """ """
-    VersionControl: Any
-    """ """
-    VersionDate: str
-    """ """
-    VersionDateAutoSet: bool
-    """ """
-    VersionNumber: str
-    """ """
-    ShowMessages: Any
-    """ """
-    Wizard: Any
-    """ """
-    OnBeginUpgrade: Any
-    """ """
-    OnEndUpgrade: Any
-    """ """
-    OnLaterUpgrade: Any
-    """ """
-    OnProgress: Any
-    """ """
-    OnFileStart: Any
-    """ """
-    OnFileDone: Any
-    """ """
-    OnDoOwnCloseAppMethod: Any
-    """ """
-    OnAfterRestart: Any
-    """ """
-    OnAborted: Any
-    """ """
-    OnConnLost: Any
-    """ """
-    OnHostUnreachable: Any
-    """ """
-    OnNoUpdateAvailable: Any
-    """ """
-    OnNoInfoFile: Any
-    """ """
-    OnLostFile: Any
-    """ """
-    OnPasswordRequest: Any
-    """ """
-class auHTTP(auCustomHTTP):
-    """ """
-    AcceptTypes: Any
-    """ """
-    AddHeaders: Any
-    """ """
-    Agent: Any
-    """ """
-    Proxy: Any
-    """ """
-    URL: Any
-    """ """
-    Username: Any
-    """ """
-    CacheOptions: Any
-    """ """
-    InternetOptions: Any
-    """ """
-    OutputFileName: Any
-    """ """
-    OutputFileAttributes: Any
-    """ """
-    Password: Any
-    """ """
-    POSTData: Any
-    """ """
-    Range: Any
-    """ """
-    Referer: Any
-    """ """
-    RequestMethod: Any
-    """ """
-    ShowGoOnlineMessage: Any
-    """ """
-    Suspended: Any
-    """ """
-    Timeouts: Any
-    """ """
-    ThreadPriority: Any
-    """ """
-    TransferBufferSize: Any
-    """ """
-    WaitThread: Any
-    """ """
-    WaitTimeout: Any
-    """ """
-    WorkOffline: Any
-    """ """
-    OnBeforeSendRequest: Any
-    """ """
-    OnHeaderInfo: Any
-    """ """
-    OnDone: Any
-    """ """
-    OnDoneInterrupted: Any
-    """ """
-    OnOutputFileError: Any
-    """ """
-    OnProgress: Any
-    """ """
-    OnStatusChanged: Any
-    """ """
-    OnRedirected: Any
-    """ """
-    OnUploadProgress: Any
-    """ """
-    OnUploadFieldRequest: Any
-    """ """
-    OnAnyError: Any
-    """ """
-    OnAborted: Any
-    """ """
-    OnConnLost: Any
-    """ """
-    OnHTTPError: Any
-    """ """
-    OnHostUnreachable: Any
-    """ """
-    OnPasswordRequest: Any
-    """ """
-    OnProxyAuthenticationRequest: Any
-    """ """
-    OnWaitTimeoutExpired: Any
-    """ """
-class auCustomThread(Component):
-    """ """
-    def Create(self, AOwner) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Execute -> bool:
-        """ """
-    def ExecuteAndWaitForEvent(self, *args, **kwargs) -> Any:
-        """ """
-    def Synchronize(self, *args, **kwargs) -> Any:
-        """ """
-    def SynchronizeEx(self, *args, **kwargs) -> Any:
-        """ """
-    def Suspend(self, *args, **kwargs) -> Any:
-        """ """
-    def Resume(self, *args, **kwargs) -> Any:
-        """ """
-    def Terminate(self, *args, **kwargs) -> Any:
-        """ """
-    def WaitFor -> Any:
-        """ """
-    def WaitForEvent(self, *args, **kwargs) -> bool:
-        """ """
-    def Handle -> Any:
-        """ """
-    def Running -> bool:
-        """ """
-    def RunningAndNotSuspended -> bool:
-        """ """
-    Terminated: bool
-    """ """
-    ThreadID: Any
-    """ """
-    ReturnValue: int
-    """ """
-    FreeOwnerOnTerminate: bool
-    """ """
-    HandleExceptions: bool
-    """ """
-    Priority: Any
-    """ """
-    Suspended: bool
-    """ """
-    WaitThread: bool
-    """ """
-    WaitTimeout: Any
-    """ """
-    OnException: Any
-    """ """
-    OnExecute: Any
-    """ """
-    OnTerminate: Any
-    """ """
-    OnWaitTimeoutExpired: Any
-    """ """
-class auThread(auCustomThread):
-    """ """
-    HandleExceptions: Any
-    """ """
-    Priority: Any
-    """ """
-    Suspended: Any
-    """ """
-    WaitThread: Any
-    """ """
-    WaitTimeout: Any
-    """ """
-    OnException: Any
-    """ """
-    OnExecute: Any
-    """ """
-    OnTerminate: Any
-    """ """
-    OnWaitTimeoutExpired: Any
-    """ """
-
-class AiOpenAssistant(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def LoadAssistant(self, *args, **kwargs) -> bool:
-        """ """
-    def AddMessage(self, *args, **kwargs) -> Any:
-        """ """
-    def GetLasMessage -> Any:
-        """ """
-    def GetResponse -> str:
-        """ """
-    def CreateNewAssistant -> bool:
-        """ """
-    def RemoveAssistant -> bool:
-        """ """
-    def ApplyUpdates -> bool:
-        """ """
-    def RemoveThread -> bool:
-        """ """
-    def CreateNewThread(self, *args, **kwargs) -> bool:
-        """ """
-    def CancelRun(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadAssistantFile(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
-    def DeleteFile(self, *args, **kwargs) -> bool:
-        """ """
-    def DownloadFile(self, *args, **kwargs) -> Any:
-        """ """
-    def ListFiles -> str:
-        """ """
-    def ListFilesArray -> Any:
-        """ """
-    def GetAssistantsList -> str:
-        """ """
-    def GetModelsList -> str:
-        """ """
-    def Addfunction(self, *args, **kwargs) -> Any:
-        """ """
-    def Addfunction(self, *args, **kwargs) -> Any:
-        """ """
-    def Addfunction(self, *args, **kwargs) -> Any:
-        """ """
-    def Addfunction(self, *args, **kwargs) -> Any:
-        """ """
-    Assistant: Any
-    """ """
-    ThRead: Any
-    """ """
-    AiRun: Any
-    """ """
-    Status: str
-    """ """
-    Busy: Any
-    """ """
-    Metadata: Any
-    """ """
-    def Funciones -> Any:
-        """ """
-    Funciones: Any
-    """ """
-    def OnCallToolfunction -> Any:
-        """ """
-    OnCallToolfunction: Any
-    """ """
-    OnStatusChange: Any
-    """ """
-    OnResponse: Any
-    """ """
-    OnBeforeResponse: Any
-    """ """
-    Asynchronous: bool
-    """ """
-    ApiKey: str
-    """ """
-    AssistantName: str
-    """ """
-    AssistantId: str
-    """ """
-    ThReadId: str
-    """ """
-    Active: bool
-    """ """
-    AutoRemoveThread: bool
-    """ """
-    Model: str
-    """ """
-    Instructions: Any
-    """ """
-    CodeFilesIds: Any
-    """ """
-    VectorStoreIds: Any
-    """ """
-    Code_Interpreter: bool
-    """ """
-    FileSearch: bool
-    """ """
-    Tools: Any
-    """ """
-    Temperature: Any
-    """ """
-    Top_P: Any
-    """ """
-    Url: str
-    """ """
-
-class AiOpenChat(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def AddMessageAndRun(self, *args, **kwargs) -> Any:
-        """ """
-    def AddMessage(self, *args, **kwargs) -> Any:
-        """ """
-    def NewMessage(self, *args, **kwargs) -> Any:
-        """ """
-    def Run(self, *args, **kwargs) -> Any:
-        """ """
-    def GetLastMessage -> Any:
-        """ """
-    def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
-    def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
-    def AddToMemory(self, *args, **kwargs) -> Any:
-        """ """
-    def RemoveFromMemory(self, *args, **kwargs) -> Any:
-        """ """
-    def NewChat(self, *args, **kwargs) -> Any:
-        """ """
-    def Abort(self, *args, **kwargs) -> Any:
-        """ """
-    def function GetModels(self, *args, **kwargs) -> Any:
-        """ """
-    def GetModels -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
-    def publicChatToSend  -> str:
-        """ """
-    Messages: Any
-    """ """
-    LastError: str
-    """ """
-    ApiKey: str
-    """ """
-    Model: str
-    """ """
-    Frequency_penalty: Any
-    """ """
-    Logit_bias: str
-    """ """
-    Logprobs: bool
-    """ """
-    Top_logprobs: str
-    """ """
-    Max_tokens: Any
-    """ """
-    N: Any
-    """ """
-    Presence_penalty: Any
-    """ """
-    Response_format: Any
-    """ """
-    Seed: Any
-    """ """
-    Stop: str
-    """ """
-    Asynchronous: bool
-    """ """
-    Temperature: Any
-    """ """
-    Top_p: Any
-    """ """
-    Tools: Any
-    """ """
-    Tool_choice: str
-    """ """
-    Tool_Active: bool
-    """ """
-    User: str
-    """ """
-    InitialInstructions: Any
-    """ """
-    Prompt_tokens: Any
-    """ """
-    Completion_tokens: Any
-    """ """
-    Total_tokens: Any
-    """ """
-    LastContent: Any
-    """ """
-    LastPrompt: Any
-    """ """
-    Busy: Any
-    """ """
-    OnReceiveData: Any
-    """ """
-    OnReceiveDataEnd: Any
-    """ """
-    OnAddMessage: Any
-    """ """
-    def OnCallToolfunction -> Any:
-        """ """
-    OnCallToolfunction: Any
-    """ """
-    OnBeforeSendMessage: Any
-    """ """
-    OnInitChat: Any
-    """ """
-    Url: str
-    """ """
-    AIChatConfig: Any
-    """ """
-    ResponseTimeOut: Any
-    """ """
-    Memory: Any
-    """ """
-    def functions -> Any:
-        """ """
-    functions: Any
-    """ """
-    def Aifunctions -> Any:
-        """ """
-    Aifunctions: Any
-    """ """
-    OnProcessMediaFile: Any
-    """ """
-
-class AiOllamaChat(AiOpenChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Run(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiEmbeddings(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ToJsonArray -> Any:
-        """ """
-    def function ToJsonArray(self, *args, **kwargs) -> Any:
-        """ """
-    def function Magnitude(self, *args, **kwargs) -> Any:
-        """ """
-    def function DotProduct(self, *args, **kwargs) -> Any:
-        """ """
-    def function CosineSimilarity(self, *args, **kwargs) -> Any:
-        """ """
-    Data: Any
-    """ """
-    ApiKey: str
-    """ """
-    Model: str
-    """ """
-    prompt_tokens: int
-    """ """
-    total_tokens: int
-    """ """
-    Url: str
-    """ """
-    Dimensions: int
-    """ """
-
-class AiOlamalEmbeddings(AiEmbeddings):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiGroqChat(AiOpenChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiClaudeChat(AiOpenChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Run(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiRagChat(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def AskToAi(self, *args, **kwargs) -> Any:
-        """ """
-    def AskToAi(self, *args, **kwargs) -> Any:
-        """ """
-    def AskToAi(self, *args, **kwargs) -> Any:
-        """ """
-    Chat: Any
-    """ """
-    DataVec: Any
-    """ """
-
-class AiDataVec(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
-    def LoadFromStream(self, *args, **kwargs) -> Any:
-        """ """
-    def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
-    def LoadFromFile(self, *args, **kwargs) -> Any:
-        """ """
-    def Connect(self, *args, **kwargs) -> bool:
-        """ """
-    def Search(self, *args, **kwargs) -> Any:
-        """ """
-    def Search(self, *args, **kwargs) -> Any:
-        """ """
-    def BuildIndex(self, *args, **kwargs) -> Any:
-        """ """
-    def AddItem(self, *args, **kwargs) -> Any:
-        """ """
-    def AddItem(self, *args, **kwargs) -> Any:
-        """ """
-    def AddItemsFromJSonArray(self, *args, **kwargs) -> Any:
-        """ """
-    def AddItemsFromPlainText(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbeddingNode(self, *args, **kwargs) -> Any:
-        """ """
-    def Count -> int:
-        """ """
-    def Clear(self, *args, **kwargs) -> Any:
-        """ """
-    RagIndex: Any
-    """ """
-    Active: bool
-    """ """
-    Items: Any
-    """ """
-    OnDataVecAddItem: Any
-    """ """
-    OnDataVecSearch: Any
-    """ """
-    Embeddings: Any
-    """ """
-    Model: str
-    """ """
-    Dim: int
-    """ """
-    NameVec: str
-    """ """
-    Description: str
-    """ """
-
-class AiPrompts(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def IndexOf(self, *args, **kwargs) -> int:
-        """ """
-    def GetString(self, *args, **kwargs) -> str:
-        """ """
-    def AddString(self, *args, **kwargs) -> Any:
-        """ """
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
-    Items: Any
-    """ """
-
-class AIGraph(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Run(self, *args, **kwargs) -> str:
-        """ """
-    def Abort(self, *args, **kwargs) -> Any:
-        """ """
-    Busy: bool
-    """ """
-    StartNode: Any
-    """ """
-    EndNode: Any
-    """ """
-    OnPrint: Any
-    """ """
-    AiPrompts: Any
-    """ """
-    OnEnd: Any
-    """ """
-
-class AIGraphNode(AIGraphBase):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Print(self, *args, **kwargs) -> Any:
-        """ """
-    Error: bool
-    """ """
-    MsgError: str
-    """ """
-    Input: str
-    """ """
-    Output: str
-    """ """
-    Next: Any
-    """ """
-    Graph: Any
-    """ """
-    OnExecute: Any
-    """ """
-    PromptName: str
-    """ """
-
-class AIGraphLink(AIGraphBase):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Print(self, *args, **kwargs) -> Any:
-        """ """
-    def DoExecute(self, *args, **kwargs) -> Any:
-        """ """
-    NextA: Any
-    """ """
-    NextB: Any
-    """ """
-    NextC: Any
-    """ """
-    NextD: Any
-    """ """
-    NextNo: Any
-    """ """
-    Graph: Any
-    """ """
-    OnExecute: Any
-    """ """
-    MaxCicles: int
-    """ """
-    property Response: str
-    """ """
-
-class AiGeminiChat(AiOpenChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Run(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiAudio(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Speech(self, *args, **kwargs) -> Any:
-        """ """
-    def Transcription(self, *args, **kwargs) -> str:
-        """ """
-    def Translation(self, *args, **kwargs) -> str:
-        """ """
-    ApiKey: str
-    """ """
-    Url: str
-    """ """
-    Model: str
-    """ """
-    Voice: str
-    """ """
-    Format: str
-    """ """
-    Languaje: str
-    """ """
-    Speed: Any
-    """ """
-    Temperature: Any
-    """ """
-    ResponseFormat: str
-    """ """
-    Quality: str
-    """ """
-    timestamp_granularities: str
-    """ """
-
-class AiDalle(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Generate(self, *args, **kwargs) -> Any:
-        """ """
-    def Edit(self, *args, **kwargs) -> Any:
-        """ """
-    def Variation(self, *args, **kwargs) -> Any:
-        """ """
-    Url: str
-    """ """
-    ApiKey: str
-    """ """
-    Revised_Prompt: str
-    """ """
-    Images: Any
-    """ """
-    Prompt: Any
-    """ """
-    ResponseFormat: Any
-    """ """
-    HdQuality: bool
-    """ """
-    StyleFormat: Any
-    """ """
-    UseDalle3: bool
-    """ """
-    User: str
-    """ """
-
-class AiEmbeddings(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ToJsonArray -> Any:
-        """ """
-    def function ToJsonArray(self, *args, **kwargs) -> Any:
-        """ """
-    def function Magnitude(self, *args, **kwargs) -> Any:
-        """ """
-    def function DotProduct(self, *args, **kwargs) -> Any:
-        """ """
-    def function CosineSimilarity(self, *args, **kwargs) -> Any:
-        """ """
-    Data: Any
-    """ """
-    ApiKey: str
-    """ """
-    Model: str
-    """ """
-    prompt_tokens: int
-    """ """
-    total_tokens: int
-    """ """
-    Url: str
-    """ """
-    Dimensions: int
-    """ """
-
-class AiVision(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GenerateByUrl(self, *args, **kwargs) -> str:
-        """ """
-    def GenerateByBase64(self, *args, **kwargs) -> str:
-        """ """
-    def GenerateByStream(self, *args, **kwargs) -> str:
-        """ """
-    ApiKey: str
-    """ """
-    id: str
-    """ """
-    Model: str
-    """ """
-    Finish_reason: str
-    """ """
-    role: str
-    """ """
-    Content: str
-    """ """
-    Prompt_Tokenes: int
-    """ """
-    completion_tokens: int
-    """ """
-    total_tokens: int
-    """ """
-    Url: str
-    """ """
-
-class AiChatConfig(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    UrlApi: str
-    """ """
-    ApiKey: str
-    """ """
-    Model: str
-    """ """
-    Description: str
-    """ """
-    Max_tokens: Any
-    """ """
-    N: Any
-    """ """
-    Presence_penalty: Any
-    """ """
-    Response_format: Any
-    """ """
-    Seed: Any
-    """ """
-    Stop: str
-    """ """
-    Temperature: Any
-    """ """
-    Top_p: Any
-    """ """
-    Tool_choice: str
-    """ """
-    Tool_Active: bool
-    """ """
-    InitialInstructions: Any
-    """ """
-
-class Aifunctions(Component):
-    """ """
-    def = Class(self, *args, **kwargs) -> Any:
-        """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetTools -> Any:
-        """ """
-    def DoCallfunction(self, *args, **kwargs) -> Any:
-        """ """
-    def functions -> Any:
-        """ """
-    functions: Any
-    """ """
-
-class AiMistralChat(AiOpenChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def AddMessageFimAndRun(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiMistralEmbeddings(AiEmbeddings):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-
 class PJDropFiles(CustomControl):
     """ """
     def Create(self, AOwner) -> None:
@@ -39494,6 +38621,108 @@ class DBGrid(CustomDBGrid):
     OnTitleClick: Any
     """ """
 
+class NiceChart(CustomPanel):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def BeginUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def EndUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def AddSeries(self, *args, **kwargs) -> Any:
+        """ """
+    def ClientToChart(self, *args, **kwargs) -> Any:
+        """ """
+    def ClientToChart(self, *args, **kwargs) -> Any:
+        """ """
+    def RemoveSeries(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    Series: Any
+    """ """
+    SeriesCount: int
+    """ """
+    def CreateMetafile -> Any:
+        """ """
+    def CopyToClipboard(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateBitmap(self, *args, **kwargs) -> Any:
+        """ """
+    def CopyToClipboardAsBitmap(self, *args, **kwargs) -> Any:
+        """ """
+    AxisLineWidth: int
+    """ """
+    ShowLegend: bool
+    """ """
+    ShowTitle: bool
+    """ """
+    ShowXGrid: bool
+    """ """
+    ShowYGrid: bool
+    """ """
+    ShowXAxisLine: Any
+    """ """
+    ShowYAxisLine: bool
+    """ """
+    Title: str
+    """ """
+    TitleFont: Any
+    """ """
+    AxisXTitle: str
+    """ """
+    AxisYTitle: str
+    """ """
+    AxisXOnePerValue: bool
+    """ """
+    AxisXScale: Any
+    """ """
+    AxisYScale: Any
+    """ """
+    GridColor: Any
+    """ """
+    Monochrome: bool
+    """ """
+    SoftColors: bool
+    """ """
+    TickLength: int
+    """ """
+    Align: Any
+    """ """
+    Anchors: Any
+    """ """
+    BevelInner default bvNone: Any
+    """ """
+    BevelOuter default bvNone: Any
+    """ """
+    BorderStyle default bsSingle: Any
+    """ """
+    BevelKind: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    PopupMenu: Any
+    """ """
+
+class LedgerGrid(StringGrid):
+    """ """
+    Canvas: Any
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    DigitalNumber: int
+    """ """
+    AutoSize: bool
+    """ """
+    Version: str
+    """ """
+
 class EduStringGrid(StringGrid):
     """ """
     def Create(self, AOwner: Component) -> None:
@@ -39597,15 +38826,1785 @@ class EduStringGrid(StringGrid):
     OnEndSort: Any
     """ """
 
-class LedgerGrid(StringGrid):
-    """ """
-    Canvas: Any
+class NiceGrid(CustomPanel):
     """ """
     def Create(self, AOwner: Component) -> None:
         """ """
-    DigitalNumber: int
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def BeginUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def EndUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    Cells: Any
     """ """
-    AutoSize: bool
+    Objects: int
     """ """
-    Version: str
+    ColWidths: int
+    """ """
+    def EnsureVisible(self, *args, **kwargs) -> Any:
+        """ """
+    def CutToClipboard(self, *args, **kwargs) -> Any:
+        """ """
+    def CopyToClipboard(self, *args, **kwargs) -> Any:
+        """ """
+    def PasteFromClipboard(self, *args, **kwargs) -> Any:
+        """ """
+    def GetHitTestInfo(self, *args, **kwargs) -> Any:
+        """ """
+    def HeaderCellsCount -> int:
+        """ """
+    def HeaderCells(self, *args, **kwargs) -> Any:
+        """ """
+    Col: int
+    """ """
+    Row: int
+    """ """
+    SelectArea: Any
+    """ """
+    def DeleteRow(self, *args, **kwargs) -> Any:
+        """ """
+    def InsertRow(self, *args, **kwargs) -> Any:
+        """ """
+    def AddRow -> int:
+        """ """
+    HorzOffset: int
+    """ """
+    VertOffset: int
+    """ """
+    def MergeCells(self, *args, **kwargs) -> Any:
+        """ """
+    def ClearMergeCells(self, *args, **kwargs) -> Any:
+        """ """
+    Enabled: bool
+    """ """
+    ColCount: int
+    """ """
+    RowCount: int
+    """ """
+    AutoAddRow: bool
+    """ """
+    AutoFillDown: bool
+    """ """
+    AutoFillRight: bool
+    """ """
+    DefRowHeight: int
+    """ """
+    DefColWidth: int
+    """ """
+    Flat: bool
+    """ """
+    Color: Any
+    """ """
+    AlternateColor: Any
+    """ """
+    GridColor: Any
+    """ """
+    ShowGrid: bool
+    """ """
+    HeaderLine: int
+    """ """
+    HeaderColor: Any
+    """ """
+    HeaderLightColor: Any
+    """ """
+    HeaderDarkColor: Any
+    """ """
+    HeaderFont: Any
+    """ """
+    FooterFont: Any
+    """ """
+    SelectionColor: Any
+    """ """
+    FitToWidth: bool
+    """ """
+    AutoColWidth: bool
+    """ """
+    ReadOnly: bool
+    """ """
+    Columns: Any
+    """ """
+    GutterKind: Any
+    """ """
+    GutterWidth: int
+    """ """
+    GutterFont: Any
+    """ """
+    GutterStrings: Any
+    """ """
+    ShowFooter: bool
+    """ """
+    OnDrawCell: Any
+    """ """
+    OnDrawHeader: Any
+    """ """
+    OnDrawGutter: Any
+    """ """
+    OnDrawFooter: Any
+    """ """
+    OnFilterChar: Any
+    """ """
+    OnHeaderClick: Any
+    """ """
+    OnGutterClick: Any
+    """ """
+    OnCellChange: Any
+    """ """
+    OnCellChanging: Any
+    """ """
+    OnColRowChanged: Any
+    """ """
+    OnInsertRow: Any
+    """ """
+    OnDeleteRow: Any
+    """ """
+    OnCellAssignment: Any
+    """ """
+    Font: Any
+    """ """
+    Anchors: Any
+    """ """
+    Align: Any
+    """ """
+    BevelKind: Any
+    """ """
+    BorderStyle default bsSingle: Any
+    """ """
+    BevelOuter default bvNone: Any
+    """ """
+    BevelInner: Any
+    """ """
+    TabOrder: Any
+    """ """
+    TabStop default True: Any
+    """ """
+    Tag: Any
+    """ """
+    OnClick: Any
+    """ """
+    OnDblClick: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnKeyPress: Any
+    """ """
+    OnKeyDown: Any
+    """ """
+    OnKeyUp: Any
+    """ """
+    PopupMenu: Any
+    """ """
+
+class NiceGridSync(NiceGrid):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    Grid: Any
+    """ """
+
+class Upgrader(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Check(self, *args, **kwargs) -> bool:
+        """ """
+    def Start(self, *args, **kwargs) -> Any:
+        """ """
+    def Pause(self, *args, **kwargs) -> Any:
+        """ """
+    def Resume(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+    UpdateInfoURL: str
+    """ """
+    VersionPattern: Any
+    """ """
+    VersionAsDateTime: Any
+    """ """
+    VersionAsNumber: int
+    """ """
+    OnProgress: Any
+    """ """
+    OnFileBegin: Any
+    """ """
+    OnFileEnd: Any
+    """ """
+    Name: Any
+    """ """
+
+class NoBorderForm(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    EnabledShadow: bool
+    """ """
+    EnabledNoBorder: bool
+    """ """
+
+class YSizer(GraphicControl):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def   Paint(self, *args, **kwargs) -> Any:
+        """ """
+    def   UpdateXORFrame(self, *args, **kwargs) -> Any:
+        """ """
+    def   MouseDown(self, *args, **kwargs) -> Any:
+        """ """
+    def   MouseMove(self, *args, **kwargs) -> Any:
+        """ """
+    def   MouseUp(self, *args, **kwargs) -> Any:
+        """ """
+    Color: Any
+    """ """
+    Anchors: Any
+    """ """
+    Width default 16: Any
+    """ """
+    Height default 16: Any
+    """ """
+    Align: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+
+class CustomPicShow(CustomControl):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    def GetStyleNames(self, *args, **kwargs) -> int:
+        """ """
+    Busy: bool
+    """ """
+    Empty: bool
+    """ """
+    Progress: Any
+    """ """
+    About: Any
+    """ """
+
+class PicShow(CustomPicShow):
+    """ """
+    Align: Any
+    """ """
+    Anchors: Any
+    """ """
+    AutoSize: Any
+    """ """
+    BevelEdges: Any
+    """ """
+    BevelInner: Any
+    """ """
+    BevelOuter: Any
+    """ """
+    BevelKind: Any
+    """ """
+    BevelWidth: Any
+    """ """
+    BgMode: Any
+    """ """
+    BgPicture: Any
+    """ """
+    BorderWidth: Any
+    """ """
+    Center: Any
+    """ """
+    Color: Any
+    """ """
+    Constraints: Any
+    """ """
+    Delay: Any
+    """ """
+    DockSite: Any
+    """ """
+    DragCursor: Any
+    """ """
+    DragKind: Any
+    """ """
+    DragMode: Any
+    """ """
+    Enabled: Any
+    """ """
+    ExactTiming: Any
+    """ """
+    FrameColor: Any
+    """ """
+    FrameWidth: Any
+    """ """
+    Height: Any
+    """ """
+    Manual: Any
+    """ """
+    OverDraw: Any
+    """ """
+    ParentColor: Any
+    """ """
+    ParentShowHint: Any
+    """ """
+    Picture: Any
+    """ """
+    PopupMenu: Any
+    """ """
+    Proportional: Any
+    """ """
+    ShowHint: Any
+    """ """
+    Reverse: Any
+    """ """
+    Stretch: Any
+    """ """
+    Step: Any
+    """ """
+    Style: Any
+    """ """
+    StyleName: Any
+    """ """
+    TabOrder: Any
+    """ """
+    TabStop: Any
+    """ """
+    Threaded: Any
+    """ """
+    Visible: Any
+    """ """
+    Width: Any
+    """ """
+    OnAfterNewFrame: Any
+    """ """
+    OnBeforeNewFrame: Any
+    """ """
+    OnCanResize: Any
+    """ """
+    OnClick: Any
+    """ """
+    OnChange: Any
+    """ """
+    OnComplete: Any
+    """ """
+    OnConstrainedResize: Any
+    """ """
+    OnCustomDraw: Any
+    """ """
+    OnDblClick: Any
+    """ """
+    OnDockDrop: Any
+    """ """
+    OnDockOver: Any
+    """ """
+    OnDragDrop: Any
+    """ """
+    OnDragOver: Any
+    """ """
+    OnEndDock: Any
+    """ """
+    OnEndDrag: Any
+    """ """
+    OnEnter: Any
+    """ """
+    OnExit: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseEnter: Any
+    """ """
+    OnMouseLeave: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnKeyDown: Any
+    """ """
+    OnKeyPress: Any
+    """ """
+    OnKeyUp: Any
+    """ """
+    OnProgress: Any
+    """ """
+    OnResize: Any
+    """ """
+    OnStart: Any
+    """ """
+    OnStartDock: Any
+    """ """
+    OnStartDrag: Any
+    """ """
+    OnStop: Any
+    """ """
+    OnUnDock: Any
+    """ """
+
+class DBPicShow(CustomPicShow):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadPicture(self, *args, **kwargs) -> Any:
+        """ """
+    Field: Any
+    """ """
+    Picture: Any
+    """ """
+    AutoDisplay: bool
+    """ """
+    DataField: str
+    """ """
+    DataSource: Any
+    """ """
+    ReadOnly: bool
+    """ """
+    Align: Any
+    """ """
+    Anchors: Any
+    """ """
+    AutoSize: Any
+    """ """
+    BevelEdges: Any
+    """ """
+    BevelInner: Any
+    """ """
+    BevelOuter: Any
+    """ """
+    BevelKind: Any
+    """ """
+    BevelWidth: Any
+    """ """
+    BgMode: Any
+    """ """
+    BgPicture: Any
+    """ """
+    BorderWidth: Any
+    """ """
+    Center: Any
+    """ """
+    Color: Any
+    """ """
+    Constraints: Any
+    """ """
+    Delay: Any
+    """ """
+    DockSite: Any
+    """ """
+    DragKind: Any
+    """ """
+    DragCursor: Any
+    """ """
+    DragMode: Any
+    """ """
+    Enabled: Any
+    """ """
+    ExactTiming: Any
+    """ """
+    FrameColor: Any
+    """ """
+    FrameWidth: Any
+    """ """
+    Height: Any
+    """ """
+    Manual: Any
+    """ """
+    OverDraw: Any
+    """ """
+    ParentColor: Any
+    """ """
+    ParentShowHint: Any
+    """ """
+    PopupMenu: Any
+    """ """
+    Proportional: Any
+    """ """
+    ShowHint: Any
+    """ """
+    Reverse: Any
+    """ """
+    Stretch: Any
+    """ """
+    Step: Any
+    """ """
+    Style: Any
+    """ """
+    StyleName: Any
+    """ """
+    TabOrder: Any
+    """ """
+    TabStop: Any
+    """ """
+    Threaded: Any
+    """ """
+    Visible: Any
+    """ """
+    Width: Any
+    """ """
+    OnAfterLoadPicture: Any
+    """ """
+    OnAfterNewFrame: Any
+    """ """
+    OnBeforeNewFrame: Any
+    """ """
+    OnBeforeLoadPicture: Any
+    """ """
+    OnCanResize: Any
+    """ """
+    OnClick: Any
+    """ """
+    OnConstrainedResize: Any
+    """ """
+    OnComplete: Any
+    """ """
+    OnCustomDraw: Any
+    """ """
+    OnDblClick: Any
+    """ """
+    OnDockDrop: Any
+    """ """
+    OnDockOver: Any
+    """ """
+    OnDragDrop: Any
+    """ """
+    OnDragOver: Any
+    """ """
+    OnEndDock: Any
+    """ """
+    OnEndDrag: Any
+    """ """
+    OnEnter: Any
+    """ """
+    OnExit: Any
+    """ """
+    OnGetGraphicClass: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseEnter: Any
+    """ """
+    OnMouseLeave: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnKeyDown: Any
+    """ """
+    OnKeyPress: Any
+    """ """
+    OnKeyUp: Any
+    """ """
+    OnProgress: Any
+    """ """
+    OnResize: Any
+    """ """
+    OnStart: Any
+    """ """
+    OnStartDock: Any
+    """ """
+    OnStartDrag: Any
+    """ """
+    OnStop: Any
+    """ """
+    OnUnDock: Any
+    """ """
+
+class AiChat(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def AddMessageAndRun(self, *args, **kwargs) -> Any:
+        """ """
+    def AddMessageAndRunMsg(self, *args, **kwargs) -> Any:
+        """ """
+    def AddMessage(self, *args, **kwargs) -> Any:
+        """ """
+    def NewMessage(self, *args, **kwargs) -> Any:
+        """ """
+    def Run(self, *args, **kwargs) -> Any:
+        """ """
+    def GetLastMessage -> Any:
+        """ """
+    def RemoveMesage(self, *args, **kwargs) -> Any:
+        """ """
+    def RemoveMesage(self, *args, **kwargs) -> Any:
+        """ """
+    def AddToMemory(self, *args, **kwargs) -> Any:
+        """ """
+    def RemoveFromMemory(self, *args, **kwargs) -> Any:
+        """ """
+    def NewChat(self, *args, **kwargs) -> Any:
+        """ """
+    def Abort(self, *args, **kwargs) -> Any:
+        """ """
+    def Function GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def GetModels -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def PublicChatToSend -> str:
+        """ """
+    def FileCategoriesToString(self, *args, **kwargs) -> str:
+        """ """
+    def StringToFileCategories(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DownLoadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def CheckFileState(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveFile(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveFileList -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    Messages: Any
+    """ """
+    LastError: str
+    """ """
+    ApiKey: str
+    """ """
+    Model: str
+    """ """
+    Frequency_penalty: Any
+    """ """
+    Logit_bias: str
+    """ """
+    Logprobs: bool
+    """ """
+    Top_logprobs: str
+    """ """
+    Max_tokens: Any
+    """ """
+    N: Any
+    """ """
+    Presence_penalty: Any
+    """ """
+    Response_format: Any
+    """ """
+    Seed: Any
+    """ """
+    Stop: str
+    """ """
+    Asynchronous: bool
+    """ """
+    Temperature: Any
+    """ """
+    Top_p: Any
+    """ """
+    Tool_choice: str
+    """ """
+    Tool_Active: bool
+    """ """
+    User: str
+    """ """
+    InitialInstructions: Any
+    """ """
+    Prompt_tokens: Any
+    """ """
+    Completion_tokens: Any
+    """ """
+    Total_tokens: Any
+    """ """
+    LastContent: Any
+    """ """
+    LastPrompt: Any
+    """ """
+    Busy: Any
+    """ """
+    OnReceiveData: Any
+    """ """
+    OnReceiveDataEnd: Any
+    """ """
+    OnAddMessage: Any
+    """ """
+    def OnCallToolFunction -> Any:
+        """ """
+    OnCallToolFunction: Any
+    """ """
+    OnBeforeSendMessage: Any
+    """ """
+    OnInitChat: Any
+    """ """
+    OnProcessResponse: Any
+    """ """
+    Url: str
+    """ """
+    ResponseTimeOut: Any
+    """ """
+    Memory: Any
+    """ """
+    def AiFunctions -> Any:
+        """ """
+    AiFunctions: Any
+    """ """
+    OnProcessMediaFile: Any
+    """ """
+    JsonSchema: Any
+    """ """
+    Stream_Usage: bool
+    """ """
+    NativeInputFiles: Any
+    """ """
+    NativeOutputFiles: Any
+    """ """
+    ChatMediaSupports: Any
+    """ """
+    Voice: str
+    """ """
+    voice_format: str
+    """ """
+    OnError: Any
+    """ """
+    Language: str
+    """ """
+    Transcription_ResponseFormat: str
+    """ """
+    Transcription_TimestampGranularities: str
+    """ """
+    ReasoningFormat: str
+    """ """
+    ReasoningEffort: str
+    """ """
+
+class AiEmbeddingsCore(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def ToJsonArray -> Any:
+        """ """
+    def function ToJsonArray(self, *args, **kwargs) -> Any:
+        """ """
+    def function ToEmbeddingData(self, *args, **kwargs) -> Any:
+        """ """
+    def function Magnitude(self, *args, **kwargs) -> Any:
+        """ """
+    def function DotProduct(self, *args, **kwargs) -> Any:
+        """ """
+    def function CosineSimilarity(self, *args, **kwargs) -> Any:
+        """ """
+    def function EuclideanDistance(self, *args, **kwargs) -> Any:
+        """ """
+    def procedure Normalize(self, *args, **kwargs) -> Any:
+        """ """
+    def function FindNearest(self, *args, **kwargs) -> Any:
+        """ """
+    def function FindTopK(self, *args, **kwargs) -> Any:
+        """ """
+    def function VectorAdd(self, *args, **kwargs) -> Any:
+        """ """
+    def function VectorSubtract(self, *args, **kwargs) -> Any:
+        """ """
+    def function AverageEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    Data: Any
+    """ """
+    Model: str
+    """ """
+    Dimensions: int
+    """ """
+    prompt_tokens: int
+    """ """
+    total_tokens: int
+    """ """
+    OnGetEmbedding: Any
+    """ """
+
+class AiEmbeddings(AiEmbeddingsCore):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def ParseEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    ApiKey: str
+    """ """
+    Url: str
+    """ """
+
+class AiMCPServer(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Start(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+    def RegisterTool(self, *args, **kwargs) -> Any:
+        """ """
+    def RegisterResource(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadSettingsDefaults(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateDefaultSettingsFile(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadSettingsFromFile(self, *args, **kwargs) -> Any:
+        """ """
+    Port: int
+    """ """
+    Endpoint: str
+    """ """
+    CorsEnabled: bool
+    """ """
+    CorsAllowedOrigins: str
+    """ """
+    LogicServer: Any
+    """ """
+    IsActive: bool
+    """ """
+    User: str
+    """ """
+    SettingsFile: str
+    """ """
+
+class AIAgentsBase(Component):
+    """ """
+    Description: str
+    """ """
+    ID : str
+    """ """
+
+class AiToolBase(Component):
+    """ """
+    def Run(self, *args, **kwargs) -> Any:
+        """ """
+    Description: str
+    """ """
+    ID : str
+    """ """
+
+class AiChatConnection(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def UpdateParamsFromRegistry(self, *args, **kwargs) -> Any:
+        """ """
+    def AddMessageAndRun(self, *args, **kwargs) -> Any:
+        """ """
+    def AddMessage(self, *args, **kwargs) -> Any:
+        """ """
+    def NewMessage(self, *args, **kwargs) -> Any:
+        """ """
+    def Run(self, *args, **kwargs) -> Any:
+        """ """
+    def GetLastMessage -> Any:
+        """ """
+    def RemoveMesage(self, *args, **kwargs) -> Any:
+        """ """
+    def RemoveMesage(self, *args, **kwargs) -> Any:
+        """ """
+    def AddToMemory(self, *args, **kwargs) -> Any:
+        """ """
+    def RemoveFromMemory(self, *args, **kwargs) -> Any:
+        """ """
+    def NewChat(self, *args, **kwargs) -> Any:
+        """ """
+    def Abort(self, *args, **kwargs) -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def GetDriversNames -> Any:
+        """ """
+    def GetAvailableDrivers -> Any:
+        """ """
+    def GetModels -> Any:
+        """ """
+    def IsDriverAvailable(self, *args, **kwargs) -> bool:
+        """ """
+    def ResetParamsToDefaults(self, *args, **kwargs) -> Any:
+        """ """
+    def RegisterUserParam(self, *args, **kwargs) -> Any:
+        """ """
+    def RegisterUserParam(self, *args, **kwargs) -> Any:
+        """ """
+    def ClearRegisterParams(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateChatForDriver(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> str:
+        """ """
+    def CheckFileState(self, *args, **kwargs) -> str:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> str:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> str:
+        """ """
+    Messages: Any
+    """ """
+    LastError: str
+    """ """
+    Busy: bool
+    """ """
+    AiChat: Any
+    """ """
+    DriverName: str
+    """ """
+    Model: str
+    """ """
+    Params: Any
+    """ """
+    InitialInstructions: Any
+    """ """
+    Memory: Any
+    """ """
+    def AiFunctions -> Any:
+        """ """
+    AiFunctions: Any
+    """ """
+    Prompt_tokens: Any
+    """ """
+    Completion_tokens: Any
+    """ """
+    Total_tokens: Any
+    """ """
+    WebSearch: bool
+    """ """
+    CodeInterpreter: bool
+    """ """
+    ExtractTextFiles: bool
+    """ """
+    OnReceiveData: Any
+    """ """
+    OnReceiveDataEnd: Any
+    """ """
+    OnAddMessage: Any
+    """ """
+    def OnCallToolFunction -> Any:
+        """ """
+    OnCallToolFunction: Any
+    """ """
+    OnBeforeSendMessage: Any
+    """ """
+    OnInitChat: Any
+    """ """
+    OnProcessMediaFile: Any
+    """ """
+    OnError: Any
+    """ """
+    OnChatModelChange: Any
+    """ """
+    OnProcessResponse: Any
+    """ """
+    Version: Any
+    """ """
+
+class AiClaudeChat(AiChat):
+    """ """
+    def Function GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DownLoadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def CheckFileState(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveFile(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveFileList -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiDeepSeekChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiGeminiChat(AiChat):
+    """ """
+    def GetMessages -> Any:
+        """ """
+    def Function GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DownLoadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> Any:
+        """ """
+    def CheckFileState(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    VideoParams: Any
+    """ """
+
+class AiGeminiEmbeddings(AiEmbeddings):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def ParseEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiGrokChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiGroqChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiGroqEmbeddings(AiEmbeddings):
+    """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiMistralChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveFile(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    OcrIncludeImages: bool
+    """ """
+    DocumentImageLimit: Any
+    """ """
+    DocumentPageLimit: Any
+    """ """
+    OcrDocumentAnnotationSchema: Any
+    """ """
+    OcrBboxAnnotationSchema: Any
+    """ """
+    OcrAnnotationPages: str
+    """ """
+    OcrPagesNumbers: str
+    """ """
+
+class AiMistralEmbeddings(AiEmbeddings):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiOllamaChat(AiChat):
+    """ """
+    def Function GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    keep_alive: str
+    """ """
+
+class AiOllamaEmbeddings(AiEmbeddings):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def ParseEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiOpenChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Function GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def GetModels -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    Store: bool
+    """ """
+    Parallel_ToolCalls: bool
+    """ """
+    Service_Tier: str
+    """ """
+
+class AiOpenAiEmbeddings(AiEmbeddings):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def ParseEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiOpenAiResponses(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def function GetDriverName -> Any:
+        """ """
+    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def function CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    ResponseId: str
+    """ """
+    ResponseStatus: str
+    """ """
+    Store: bool
+    """ """
+    Truncation: str
+    """ """
+    Parallel_ToolCalls: bool
+    """ """
+    ReasoningEffort: str
+    """ """
+
+class AiPrompts(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def IndexOf(self, *args, **kwargs) -> int:
+        """ """
+    def GetString(self, *args, **kwargs) -> str:
+        """ """
+    def AddString(self, *args, **kwargs) -> Any:
+        """ """
+    def GetTemplate(self, *args, **kwargs) -> Any:
+        """ """
+    def GetTemplate(self, *args, **kwargs) -> Any:
+        """ """
+    def GetTemplate(self, *args, **kwargs) -> Any:
+        """ """
+    Items: Any
+    """ """
+
+class AIWhisper(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Speech(self, *args, **kwargs) -> Any:
+        """ """
+    def Transcription(self, *args, **kwargs) -> str:
+        """ """
+    def Translation(self, *args, **kwargs) -> str:
+        """ """
+    ApiKey: str
+    """ """
+    Url: str
+    """ """
+    Model: str
+    """ """
+    Voice: str
+    """ """
+    Format: str
+    """ """
+    Languaje: str
+    """ """
+    Speed: Any
+    """ """
+    Temperature: Any
+    """ """
+    ResponseFormat: str
+    """ """
+    Quality: str
+    """ """
+    timestamp_granularities: str
+    """ """
+
+class AiMCPHttpServer(AiMCPServer):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Start(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiMCPStdioServer(AiMCPServer):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Start(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiMCPDirectConnection(AiMCPServer):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Start(self, *args, **kwargs) -> Any:
+        """ """
+    def Stop(self, *args, **kwargs) -> Any:
+        """ """
+    def ListTools -> Any:
+        """ """
+    def ListResources -> Any:
+        """ """
+    def ReadResource(self, *args, **kwargs) -> Any:
+        """ """
+    def CallTool(self, *args, **kwargs) -> Any:
+        """ """
+    def CallTool(self, *args, **kwargs) -> Any:
+        """ """
+
+class AIVoiceMonitor(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    Active: bool
+    """ """
+    IsSpeaking: bool
+    """ """
+    Sensitivity: int
+    """ """
+    StopSensitivity: int
+    """ """
+    State: Any
+    """ """
+    SoundLevel: Any
+    """ """
+    NoiseLevel: int
+    """ """
+    SilenceDuration: int
+    """ """
+    SensitivityMultiplier: Any
+    """ """
+    StopSensitivityMultiplier: Any
+    """ """
+    WakeWordDurationMs: int
+    """ """
+    TranscriptionIntervalMs: int
+    """ """
+    TranscriptionMaxWaitMs: int
+    """ """
+    FragmentSplitRatio: Any
+    """ """
+    OnChangeState: Any
+    """ """
+    OnCalibrated: Any
+    """ """
+    OnUpdate: Any
+    """ """
+    OnError: Any
+    """ """
+    OnWakeWordCheck: Any
+    """ """
+    OnSpeechEnd: Any
+    """ """
+    OnTranscriptionFragment: Any
+    """ """
+    SampleRate: int
+    """ """
+    Channels: int
+    """ """
+    BitsPerSample: int
+    """ """
+    WakeWord: str
+    """ """
+    WakeWordActive: bool
+    """ """
+
+class AiRagGraphBuilder(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Process(self, *args, **kwargs) -> Any:
+        """ """
+    def FindExistingNode(self, *args, **kwargs) -> Any:
+        """ """
+    Graph: Any
+    """ """
+    Embeddings: Any
+    """ """
+
+class AiRagGraph(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def InternalHydrateNode(self, *args, **kwargs) -> Any:
+        """ """
+    def InternalHydrateEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def AddNode(self, *args, **kwargs) -> Any:
+        """ """
+    def AddNode(self, *args, **kwargs) -> Any:
+        """ """
+    def AddEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def AddEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def AddEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteNode(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteNode(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    def FindNodeByID(self, *args, **kwargs) -> Any:
+        """ """
+    def FindEdgeByID(self, *args, **kwargs) -> Any:
+        """ """
+    def FindNodesByLabel(self, *args, **kwargs) -> Any:
+        """ """
+    def FindEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def FindNodeByName(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToDot(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToMakerAi(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToGraphML(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromStream(self, *args, **kwargs) -> Any:
+        """ """
+    def BeginUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def EndUpdate(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToFile(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToFile(self, *args, **kwargs) -> Any:
+        """ """
+    def GetShortestPath(self, *args, **kwargs) -> Any:
+        """ """
+    def GetNodesByDegree(self, *args, **kwargs) -> Any:
+        """ """
+    def GetClosenessCentrality(self, *args, **kwargs) -> Any:
+        """ """
+    def Search(self, *args, **kwargs) -> Any:
+        """ """
+    def SearchText(self, *args, **kwargs) -> str:
+        """ """
+    def Query(self, *args, **kwargs) -> Any:
+        """ """
+    def GetAllShortestPaths(self, *args, **kwargs) -> Any:
+        """ """
+    def Match(self, *args, **kwargs) -> Any:
+        """ """
+    def GetUniqueNodeLabels -> Any:
+        """ """
+    def GetUniqueEdgeLabels -> Any:
+        """ """
+    def FindNodesByProperty(self, *args, **kwargs) -> Any:
+        """ """
+    FindNodesByProperty(const AKey: Any
+    """ """
+    def GetNeighbors(self, *args, **kwargs) -> Any:
+        """ """
+    def CountNodesByLabel(self, *args, **kwargs) -> int:
+        """ """
+    def CountEdgesByLabel(self, *args, **kwargs) -> int:
+        """ """
+    def ExtractSubgraph(self, *args, **kwargs) -> Any:
+        """ """
+    def MergeNodes(self, *args, **kwargs) -> Any:
+        """ """
+    MergeNodes(ASurvivingNode, ASubsumedNode: Any
+    """ """
+    def FindNodeNamesByLabel(self, *args, **kwargs) -> Any:
+        """ """
+    def EdgeExistsInMemory(self, *args, **kwargs) -> bool:
+        """ """
+    NodeCount: int
+    """ """
+    EdgeCount: int
+    """ """
+    Nodes: Any
+    """ """
+    Edges: Any
+    """ """
+    Embeddings: Any
+    """ """
+    InMemoryIndexType: Any
+    """ """
+    Driver: Any
+    """ """
+
+class AiRAGVector(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromStream(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToFile(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromFile(self, *args, **kwargs) -> Any:
+        """ """
+    def Connect(self, *args, **kwargs) -> bool:
+        """ """
+    def Search(self, *args, **kwargs) -> Any:
+        """ """
+    def Search(self, *args, **kwargs) -> Any:
+        """ """
+    def SearchText(self, *args, **kwargs) -> Any:
+        """ """
+    def SearchText(self, *args, **kwargs) -> Any:
+        """ """
+    def SearchText(self, *args, **kwargs) -> Any:
+        """ """
+    def BuildIndex(self, *args, **kwargs) -> Any:
+        """ """
+    def AddItem(self, *args, **kwargs) -> Any:
+        """ """
+    def AddItem(self, *args, **kwargs) -> Any:
+        """ """
+    def AddItemsFromJSonArray(self, *args, **kwargs) -> Any:
+        """ """
+    def AddItemsFromPlainText(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbeddingNode(self, *args, **kwargs) -> Any:
+        """ """
+    def Count -> int:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    RagIndex: Any
+    """ """
+    Active: bool
+    """ """
+    Items: Any
+    """ """
+    OnDataVecAddItem: Any
+    """ """
+    OnDataVecSearch: Any
+    """ """
+    OnGetEmbedding: Any
+    """ """
+    Embeddings: Any
+    """ """
+    Model: str
+    """ """
+    Dim: int
+    """ """
+    NameVec: str
+    """ """
+    Description: str
+    """ """
+    InMemoryIndexType: Any
+    """ """
+
+class AIAgents(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Abort(self, *args, **kwargs) -> Any:
+        """ """
+    def Run(self, *args, **kwargs) -> Any:
+        """ """
+    def FindNode(self, *args, **kwargs) -> Any:
+        """ """
+    def DoError(self, *args, **kwargs) -> Any:
+        """ """
+    def DoConfirm(self, *args, **kwargs) -> Any:
+        """ """
+    def SetOnPrintEvent(self, *args, **kwargs) -> Any:
+        """ """
+    def ClearGraph(self, *args, **kwargs) -> Any:
+        """ """
+    def AddNode(self, *args, **kwargs) -> Any:
+        """ """
+    def AddEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def AddConditionalEdge(self, *args, **kwargs) -> Any:
+        """ """
+    def SetEntryPoint(self, *args, **kwargs) -> Any:
+        """ """
+    def SetFinishPoint(self, *args, **kwargs) -> Any:
+        """ """
+    def Compile(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadFromStream(self, *args, **kwargs) -> Any:
+        """ """
+    def SaveStateToStream(self, *args, **kwargs) -> Any:
+        """ """
+    def LoadStateFromStream(self, *args, **kwargs) -> Any:
+        """ """
+    Busy: bool
+    """ """
+    Blackboard: Any
+    """ """
+    StartNode: Any
+    """ """
+    EndNode: Any
+    """ """
+    OnPrint: Any
+    """ """
+    OnEnd: Any
+    """ """
+    OnError: Any
+    """ """
+    OnConfirm: Any
+    """ """
+    OnEnterNode: Any
+    """ """
+    OnExitNode: Any
+    """ """
+    MaxConcurrentTasks: int
+    """ """
+    OnStart: Any
+    """ """
+    OnFinish: Any
+    """ """
+    TimeoutMs: Any
+    """ """
+    Description: str
+    """ """
+
+class AIAgentsNode(AIAgentsBase):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    def ForceFinalExecute(self, *args, **kwargs) -> Any:
+        """ """
+    def RequestConfirmation(self, *args, **kwargs) -> Any:
+        """ """
+    def RequestInput(self, *args, **kwargs) -> bool:
+        """ """
+    Error: bool
+    """ """
+    MsgError: str
+    """ """
+    Input: str
+    """ """
+    Output: str
+    """ """
+    Next: Any
+    """ """
+    Graph: Any
+    """ """
+    OnExecute: Any
+    """ """
+    PromptName: str
+    """ """
+    JoinMode: Any
+    """ """
+    Tool: Any
+    """ """
+
+class AIAgentsLink(AIAgentsBase):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    def DoExecute(self, *args, **kwargs) -> Any:
+        """ """
+    def AddConditionalTarget(self, *args, **kwargs) -> Any:
+        """ """
+    NextA: Any
+    """ """
+    NextB: Any
+    """ """
+    NextC: Any
+    """ """
+    NextD: Any
+    """ """
+    NextNo: Any
+    """ """
+    Graph: Any
+    """ """
+    OnExecute: Any
+    """ """
+    MaxCycles: int
+    """ """
+    Mode: Any
+    """ """
+    ConditionalKey: str
+    """ """
+    ManualTargetsKey: str
+    """ """
+    ExpressionA: str
+    """ """
+    ExpressionB: str
+    """ """
+    ExpressionC: str
+    """ """
+    ExpressionD: str
+    """ """
+
+class AiAgentsToolSample(AiToolBase):
+    """ """
+
+class AiFunctions(Component):
+    """ """
+    def = Class(self, *args, **kwargs) -> Any:
+        """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def GetTools(self, *args, **kwargs) -> Any:
+        """ """
+    def DoCallFunction(self, *args, **kwargs) -> Any:
+        """ """
+    def SetFunctionEnable(self, *args, **kwargs) -> bool:
+        """ """
+    def SetMCPClientEnable(self, *args, **kwargs) -> bool:
+        """ """
+    def ExtractFunctionNames -> Any:
+        """ """
+    def AddMCPClient(self, *args, **kwargs) -> Any:
+        """ """
+    def Functions -> Any:
+        """ """
+    Functions: Any
+    """ """
+    MCPClients: Any
+    """ """
+    OnLog: Any
+    """ """
+    OnStatusUpdate: Any
     """ """
