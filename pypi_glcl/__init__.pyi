@@ -1909,6 +1909,129 @@ PATINVERT: int
 DSTINVERT: int
 BLACKNESS: int
 WHITENESS: int
+rsmDefault: str
+rsmAuto: str
+rsmConcise: str
+rsmDetailed: str
+msIdle: str
+msRequestingPermission: str
+msCalibrating: str
+msMonitoring: str
+msError: str
+DEFAULT_SAMPLE_RATE: int
+DEFAULT_CHANNELS: int
+DEFAULT_BITS_PER_SAMPLE: int
+DEFAULT_BUFFER_DURATION_MS: int
+DEFAULT_CALIBRATION_DURATION_SEC: int
+DEFAULT_SILENCE_DURATION_MS: int
+DEFAULT_WAKE_WORD_DURATION_MS: int
+DEFAULT_TRANSCRIPTION_INTERVAL_MS: int
+DEFAULT_TRANSCRIPTION_MAX_WAIT_MS: int
+DEFAULT_FRAGMENT_SPLIT_RATIO: int
+gdOutgoing: str
+gdIncoming: str
+gdBoth: str
+dtIn: str
+dtOut: str
+dtTotal: str
+gefDOT: str
+gefGraphML: str
+gefGraphMkai: str
+TAIBasicIndex: str
+TAIHNSWIndex: str
+TAIEuclideanIndex: str
+msYes: str
+msNo: str
+msOK: str
+msCancel: str
+msAbort: str
+msRetry: str
+msIgnore: str
+msAll: str
+msNoToAll: str
+msYesToAll: str
+msHelp: str
+msClose: str
+jmAny: str
+jmAll: str
+lmFanout: str
+lmConditional: str
+lmManual: str
+lmExpression: str
+vmCustom: str
+vmVeo3_1: str
+vmVeo3_1_Fast: str
+vmVeo3_0: str
+vmVeo3_0_Fast: str
+vmVeo2_0: str
+arDefault: str
+ar16x9: str
+ar9x16: str
+vrDefault: str
+vr720p: str
+vr1080p: str
+pgDefault: str
+pgAllowAll: str
+pgAllowAdult: str
+pgDontAllow: str
+smSora2: str
+smCustom: str
+srDefault: str
+sr1280x720: str
+sr720x1280: str
+sr1920x1080: str
+sr1080x1920: str
+tts_1: str
+tts_1_hd: str
+gpt_4o_mini_tts: str
+tvAlloy: str
+tvAsh: str
+tvBallad: str
+tvCoral: str
+tvEcho: str
+tvFable: str
+tvOnyx: str
+tvNova: str
+tvSage: str
+tvShimmer: str
+tvVerse: str
+trfMp3: str
+trfOpus: str
+trfAac: str
+trfFlac: str
+trfWav: str
+trfPcm: str
+tmWhisper1: str
+tmGpt4o: str
+tmGpt4oMini: str
+tmGpt4oDiarize: str
+trfJson: str
+trfText: str
+trfSrt: str
+trfVerboseJson: str
+trfVtt: str
+trfDiarizedJson: str
+soNone: str
+soSpeech: str
+soTranscription: str
+tt_function: str
+ttNone: str
+ptString: str
+ptInteger: str
+ptBoolean: str
+ptFloat: str
+ptDate: str
+ptTime: str
+ptDateTime: str
+ptBase64: str
+tiaChatRfText: str
+tiaChatRfJson: str
+tiaChatRfJsonSchema: str
+cstUnknown: str
+cstDocument: str
+cstWeb: str
+cstFile: str
+cstDatabase: str
 '''
 
 class Application(Component):
@@ -39456,7 +39579,7 @@ class AiChat(Component):
         """ """
     def Abort(self, *args, **kwargs) -> Any:
         """ """
-    def Function GetModels(self, *args, **kwargs) -> Any:
+    def GetModels(self, *args, **kwargs) -> Any:
         """ """
     def GetModels -> Any:
         """ """
@@ -39482,11 +39605,11 @@ class AiChat(Component):
         """ """
     def UploadFileToCache(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def GetDriverName -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
     Messages: Any
     """ """
@@ -39504,15 +39627,15 @@ class AiChat(Component):
     """ """
     Top_logprobs: str
     """ """
-    Max_tokens: Any
+    Max_tokens: int
     """ """
-    N: Any
+    N: int
     """ """
     Presence_penalty: Any
     """ """
     Response_format: Any
     """ """
-    Seed: Any
+    Seed: int
     """ """
     Stop: str
     """ """
@@ -39522,25 +39645,31 @@ class AiChat(Component):
     """ """
     Top_p: Any
     """ """
+    K: int
+    """ """
     Tool_choice: str
     """ """
     Tool_Active: bool
     """ """
     User: str
     """ """
-    InitialInstructions: Any
+    SystemPrompt: Any
     """ """
-    Prompt_tokens: Any
+    Prompt_tokens: int
     """ """
-    Completion_tokens: Any
+    Completion_tokens: int
     """ """
-    Total_tokens: Any
+    Total_tokens: int
+    """ """
+    Thinking_tokens: int
     """ """
     LastContent: Any
     """ """
     LastPrompt: Any
     """ """
     Busy: Any
+    """ """
+    OnReceiveThinking: Any
     """ """
     OnReceiveData: Any
     """ """
@@ -39558,9 +39687,11 @@ class AiChat(Component):
     """ """
     OnProcessResponse: Any
     """ """
+    OnProgressEvent: Any
+    """ """
     Url: str
     """ """
-    ResponseTimeOut: Any
+    ResponseTimeOut: int
     """ """
     Memory: Any
     """ """
@@ -39594,118 +39725,21 @@ class AiChat(Component):
     """ """
     ReasoningFormat: str
     """ """
-    ReasoningEffort: str
+    ThinkingLevel: Any
     """ """
-
-class AiEmbeddingsCore(Component):
+    MediaResolution: Any
     """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ToJsonArray -> Any:
-        """ """
-    def function ToJsonArray(self, *args, **kwargs) -> Any:
-        """ """
-    def function ToEmbeddingData(self, *args, **kwargs) -> Any:
-        """ """
-    def function Magnitude(self, *args, **kwargs) -> Any:
-        """ """
-    def function DotProduct(self, *args, **kwargs) -> Any:
-        """ """
-    def function CosineSimilarity(self, *args, **kwargs) -> Any:
-        """ """
-    def function EuclideanDistance(self, *args, **kwargs) -> Any:
-        """ """
-    def procedure Normalize(self, *args, **kwargs) -> Any:
-        """ """
-    def function FindNearest(self, *args, **kwargs) -> Any:
-        """ """
-    def function FindTopK(self, *args, **kwargs) -> Any:
-        """ """
-    def function VectorAdd(self, *args, **kwargs) -> Any:
-        """ """
-    def function VectorSubtract(self, *args, **kwargs) -> Any:
-        """ """
-    def function AverageEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    Data: Any
+    VideoParams: Any
     """ """
-    Model: str
+    ImageParams: Any
     """ """
-    Dimensions: int
+    WebSearchParams: Any
     """ """
-    prompt_tokens: int
+    OnStateChange: Any
     """ """
-    total_tokens: int
+    ShellTool: Any
     """ """
-    OnGetEmbedding: Any
-    """ """
-
-class AiEmbeddings(AiEmbeddingsCore):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    ApiKey: str
-    """ """
-    Url: str
-    """ """
-
-class AiMCPServer(Component):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Start(self, *args, **kwargs) -> Any:
-        """ """
-    def Stop(self, *args, **kwargs) -> Any:
-        """ """
-    def RegisterTool(self, *args, **kwargs) -> Any:
-        """ """
-    def RegisterResource(self, *args, **kwargs) -> Any:
-        """ """
-    def LoadSettingsDefaults(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateDefaultSettingsFile(self, *args, **kwargs) -> Any:
-        """ """
-    def LoadSettingsFromFile(self, *args, **kwargs) -> Any:
-        """ """
-    Port: int
-    """ """
-    Endpoint: str
-    """ """
-    CorsEnabled: bool
-    """ """
-    CorsAllowedOrigins: str
-    """ """
-    LogicServer: Any
-    """ """
-    IsActive: bool
-    """ """
-    User: str
-    """ """
-    SettingsFile: str
-    """ """
-
-class AIAgentsBase(Component):
-    """ """
-    Description: str
-    """ """
-    ID : str
-    """ """
-
-class AiToolBase(Component):
-    """ """
-    def Run(self, *args, **kwargs) -> Any:
-        """ """
-    Description: str
-    """ """
-    ID : str
+    TextEditorTool: Any
     """ """
 
 class AiChatConnection(Component):
@@ -39780,7 +39814,7 @@ class AiChatConnection(Component):
     """ """
     Params: Any
     """ """
-    InitialInstructions: Any
+    SystemPrompt : Any
     """ """
     Memory: Any
     """ """
@@ -39794,11 +39828,7 @@ class AiChatConnection(Component):
     """ """
     Total_tokens: Any
     """ """
-    WebSearch: bool
-    """ """
-    CodeInterpreter: bool
-    """ """
-    ExtractTextFiles: bool
+    OnReceiveThinking: Any
     """ """
     OnReceiveData: Any
     """ """
@@ -39824,16 +39854,20 @@ class AiChatConnection(Component):
     """ """
     Version: Any
     """ """
+    ShellTool: Any
+    """ """
+    TextEditorTool : Any
+    """ """
 
 class AiClaudeChat(AiChat):
     """ """
-    def Function GetModels(self, *args, **kwargs) -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
     def Create(self, AOwner: Component) -> None:
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def GetMessages -> Any:
         """ """
     def UploadFile(self, *args, **kwargs) -> Any:
         """ """
@@ -39849,12 +39883,28 @@ class AiClaudeChat(AiChat):
         """ """
     def UploadFileToCache(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def CreateMessageBatch(self, *args, **kwargs) -> str:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def GetDriverName -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
+    def CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    def ConfigureAutoContextClearing(self, *args, **kwargs) -> Any:
+        """ """
+    ContextConfig: Any
+    """ """
+    CacheSystemPrompt: bool
+    """ """
+    EnableMemory: bool
+    """ """
+    EnableThinking: bool
+    """ """
+    ThinkingBudget: int
+    """ """
+    ServiceTier: str
+    """ """
 
 class AiDeepSeekChat(AiChat):
     """ """
@@ -39862,51 +39912,11 @@ class AiDeepSeekChat(AiChat):
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def GetDriverName -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
-
-class AiGeminiChat(AiChat):
-    """ """
-    def GetMessages -> Any:
-        """ """
-    def Function GetModels(self, *args, **kwargs) -> Any:
-        """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
-    def DownLoadFile(self, *args, **kwargs) -> Any:
-        """ """
-    def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
-    def CheckFileState(self, *args, **kwargs) -> Any:
-        """ """
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
-    def function GetDriverName -> Any:
-        """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
-    VideoParams: Any
-    """ """
-
-class AiGeminiEmbeddings(AiEmbeddings):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
 
 class AiGrokChat(AiChat):
@@ -39915,11 +39925,11 @@ class AiGrokChat(AiChat):
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def GetDriverName -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
 
 class AiGroqChat(AiChat):
@@ -39928,27 +39938,25 @@ class AiGroqChat(AiChat):
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def GetDriverName -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
 
 class AiGroqEmbeddings(AiEmbeddings):
     """ """
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
 
 class AiMistralChat(AiChat):
     """ """
     def Create(self, AOwner: Component) -> None:
         """ """
-    def function GetDriverName -> Any:
+    def GetDriverName -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
     def UploadFile(self, *args, **kwargs) -> Any:
         """ """
@@ -39982,7 +39990,7 @@ class AiMistralEmbeddings(AiEmbeddings):
 
 class AiOllamaChat(AiChat):
     """ """
-    def Function GetModels(self, *args, **kwargs) -> Any:
+    def GetModels(self, *args, **kwargs) -> Any:
         """ """
     def Create(self, AOwner: Component) -> None:
         """ """
@@ -39990,11 +39998,21 @@ class AiOllamaChat(AiChat):
         """ """
     def GetMessages -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def PullModel(self, *args, **kwargs) -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def CreateModel(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def ShowModelInfo(self, *args, **kwargs) -> Any:
+        """ """
+    def CopyModel(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteModel(self, *args, **kwargs) -> Any:
+        """ """
+    def GetDriverName -> Any:
+        """ """
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
     keep_alive: str
     """ """
@@ -40016,25 +40034,39 @@ class AiOpenChat(AiChat):
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def Function GetModels(self, *args, **kwargs) -> Any:
+    def GetDriverName -> Any:
         """ """
-    def GetModels -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def GetMessages -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
     def UploadFileToCache(self, *args, **kwargs) -> Any:
         """ """
-    def function GetDriverName -> Any:
+    def DeleteFile(self, *args, **kwargs) -> Any:
         """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    def DownLoadFile(self, *args, **kwargs) -> Any:
         """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
+    def DeleteAllUploadedFiles -> int:
+        """ """
+    def NewChat(self, *args, **kwargs) -> Any:
+        """ """
+    def InternalRunImageVideoGeneration(self, *args, **kwargs) -> Any:
         """ """
     Store: bool
     """ """
+    Truncation: str
+    """ """
     Parallel_ToolCalls: bool
     """ """
-    Service_Tier: str
+    Verbosity: str
+    """ """
+    OnApplyPatch: Any
+    """ """
+    OnShellCommand: Any
+    """ """
+    AllowAutoShell: bool
+    """ """
+    ReasoningSummary: Any
     """ """
 
 class AiOpenAiEmbeddings(AiEmbeddings):
@@ -40047,31 +40079,6 @@ class AiOpenAiEmbeddings(AiEmbeddings):
         """ """
     def ParseEmbedding(self, *args, **kwargs) -> Any:
         """ """
-
-class AiOpenAiResponses(AiChat):
-    """ """
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def function GetDriverName -> Any:
-        """ """
-    def procedure RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
-    def function CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
-    ResponseId: str
-    """ """
-    ResponseStatus: str
-    """ """
-    Store: bool
-    """ """
-    Truncation: str
-    """ """
-    Parallel_ToolCalls: bool
-    """ """
-    ReasoningEffort: str
-    """ """
 
 class AiPrompts(Component):
     """ """
@@ -40244,6 +40251,65 @@ class AiRagGraphBuilder(Component):
     Embeddings: Any
     """ """
 
+class AiRagGraphDriverBase(Component):
+    """ """
+    def EmbeddingToString(self, *args, **kwargs) -> str:
+        """ """
+    def PropertiesToJSONString(self, *args, **kwargs) -> str:
+        """ """
+    def AssignToGraph(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiRagGraphNode(AiEmbeddingNode):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def PropertiesToJSON -> Any:
+        """ """
+    def EnsureEdgesAreLoaded(self, *args, **kwargs) -> Any:
+        """ """
+    ID: str
+    """ """
+    Name: str
+    """ """
+    NodeLabel: str
+    """ """
+    Properties: Any
+    """ """
+    OutgoingEdges: Any
+    """ """
+    IncomingEdges: Any
+    """ """
+    OwnerGraph: Any
+    """ """
+
+class AiRagGraphEdge(AiEmbeddingNode):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def PropertiesToJSON -> Any:
+        """ """
+    ID: str
+    """ """
+    Name: str
+    """ """
+    EdgeLabel: str
+    """ """
+    FromNode: Any
+    """ """
+    ToNode: Any
+    """ """
+    Weight: Any
+    """ """
+    Properties: Any
+    """ """
+    OwnerGraph: Any
+    """ """
+
 class AiRagGraph(Component):
     """ """
     def Create(self, AOwner: Component) -> None:
@@ -40326,7 +40392,7 @@ class AiRagGraph(Component):
         """ """
     def FindNodesByProperty(self, *args, **kwargs) -> Any:
         """ """
-    FindNodesByProperty(const AKey: Any
+    FindNodesByProperty: Any
     """ """
     def GetNeighbors(self, *args, **kwargs) -> Any:
         """ """
@@ -40401,6 +40467,10 @@ class AiRAGVector(Component):
         """ """
     def Clear(self, *args, **kwargs) -> Any:
         """ """
+    def Rerank(self, *args, **kwargs) -> Any:
+        """ """
+    def Rerank(self, *args, **kwargs) -> Any:
+        """ """
     RagIndex: Any
     """ """
     Active: bool
@@ -40424,6 +40494,128 @@ class AiRAGVector(Component):
     Description: str
     """ """
     InMemoryIndexType: Any
+    """ """
+
+class AIBlackboard(Object):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Clear(self, *args, **kwargs) -> Any:
+        """ """
+    def SetValue(self, *args, **kwargs) -> Any:
+        """ """
+    def TryGetValue(self, *args, **kwargs) -> bool:
+        """ """
+    def SetString(self, *args, **kwargs) -> Any:
+        """ """
+    def GetString(self, *args, **kwargs) -> str:
+        """ """
+    def SetInteger(self, *args, **kwargs) -> Any:
+        """ """
+    def GetInteger(self, *args, **kwargs) -> int:
+        """ """
+    def SetBoolean(self, *args, **kwargs) -> Any:
+        """ """
+    def GetBoolean(self, *args, **kwargs) -> bool:
+        """ """
+
+class AiToolBase(Component):
+    """ """
+    def Run(self, *args, **kwargs) -> Any:
+        """ """
+    Description: str
+    """ """
+    ID : str
+    """ """
+
+class AiAgentsToolSample(AiToolBase):
+    """ """
+
+class AIAgentsBase(Component):
+    """ """
+    Description: str
+    """ """
+    ID : str
+    """ """
+
+class AIAgentsLink(AIAgentsBase):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    def DoExecute(self, *args, **kwargs) -> Any:
+        """ """
+    def AddConditionalTarget(self, *args, **kwargs) -> Any:
+        """ """
+    NextA: Any
+    """ """
+    NextB: Any
+    """ """
+    NextC: Any
+    """ """
+    NextD: Any
+    """ """
+    NextNo: Any
+    """ """
+    Graph: Any
+    """ """
+    OnExecute: Any
+    """ """
+    MaxCycles: int
+    """ """
+    Mode: Any
+    """ """
+    ConditionalKey: str
+    """ """
+    ManualTargetsKey: str
+    """ """
+    ExpressionA: str
+    """ """
+    ExpressionB: str
+    """ """
+    ExpressionC: str
+    """ """
+    ExpressionD: str
+    """ """
+
+class AIAgentsNode(AIAgentsBase):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Print(self, *args, **kwargs) -> Any:
+        """ """
+    def ForceFinalExecute(self, *args, **kwargs) -> Any:
+        """ """
+    def RequestConfirmation(self, *args, **kwargs) -> Any:
+        """ """
+    def RequestInput(self, *args, **kwargs) -> bool:
+        """ """
+    Error: bool
+    """ """
+    MsgError: str
+    """ """
+    Input: str
+    """ """
+    Output: str
+    """ """
+    Next: Any
+    """ """
+    Graph: Any
+    """ """
+    OnExecute: Any
+    """ """
+    PromptName: str
+    """ """
+    JoinMode: Any
+    """ """
+    Tool: Any
     """ """
 
 class AIAgents(Component):
@@ -40497,94 +40689,226 @@ class AIAgents(Component):
     Description: str
     """ """
 
-class AIAgentsNode(AIAgentsBase):
+class AiKimiChat(AiChat):
     """ """
     def Create(self, AOwner: Component) -> None:
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def Print(self, *args, **kwargs) -> Any:
+    def GetDriverName -> Any:
         """ """
-    def ForceFinalExecute(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def RequestConfirmation(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
-    def RequestInput(self, *args, **kwargs) -> bool:
-        """ """
-    Error: bool
-    """ """
-    MsgError: str
-    """ """
-    Input: str
-    """ """
-    Output: str
-    """ """
-    Next: Any
-    """ """
-    Graph: Any
-    """ """
-    OnExecute: Any
-    """ """
-    PromptName: str
-    """ """
-    JoinMode: Any
-    """ """
-    Tool: Any
-    """ """
 
-class AIAgentsLink(AIAgentsBase):
+class AiLMStudioChat(AiChat):
     """ """
     def Create(self, AOwner: Component) -> None:
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
         """ """
-    def Print(self, *args, **kwargs) -> Any:
+    def GetDriverName -> Any:
         """ """
-    def DoExecute(self, *args, **kwargs) -> Any:
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
         """ """
-    def AddConditionalTarget(self, *args, **kwargs) -> Any:
+    def CreateInstance(self, *args, **kwargs) -> Any:
         """ """
-    NextA: Any
+
+class AiLMStudioEmbeddings(AiEmbeddings):
     """ """
-    NextB: Any
-    """ """
-    NextC: Any
-    """ """
-    NextD: Any
-    """ """
-    NextNo: Any
-    """ """
-    Graph: Any
-    """ """
-    OnExecute: Any
-    """ """
-    MaxCycles: int
-    """ """
-    Mode: Any
-    """ """
-    ConditionalKey: str
-    """ """
-    ManualTargetsKey: str
-    """ """
-    ExpressionA: str
-    """ """
-    ExpressionB: str
-    """ """
-    ExpressionC: str
-    """ """
-    ExpressionD: str
+    def Create(self, AOwner: Component) -> None:
+        """ """
+
+class AiMediaFileGemini(AiMediaFile):
     """ """
 
-class AiAgentsToolSample(AiToolBase):
+class AiGeminiChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def GetMessages -> Any:
+        """ """
+    def GetModels(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DownLoadFile(self, *args, **kwargs) -> Any:
+        """ """
+    def DeleteFile(self, *args, **kwargs) -> Any:
+        """ """
+    def CheckFileState(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFileToCache(self, *args, **kwargs) -> Any:
+        """ """
+    def RetrieveCache(self, *args, **kwargs) -> Any:
+        """ """
+    def ListCaches -> Any:
+        """ """
+    def DeleteCache(self, *args, **kwargs) -> bool:
+        """ """
+    def CreateBatchJob(self, *args, **kwargs) -> str:
+        """ """
+    def GetBatchJob(self, *args, **kwargs) -> str:
+        """ """
+    def GetDriverName -> Any:
+        """ """
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+    ThinkingBudget: int
+    """ """
+    IncludeThoughts: bool
+    """ """
+    MediaResolution: Any
+    """ """
+
+class AiGeminiEmbeddings(AiEmbeddings):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+    def ParseEmbedding(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiVeoGenerator(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def GenerateFromText(self, *args, **kwargs) -> Any:
+        """ """
+    def GenerateFromImage(self, *args, **kwargs) -> Any:
+        """ """
+    def GenerateFromFrames(self, *args, **kwargs) -> Any:
+        """ """
+    def GenerateWithReferences(self, *args, **kwargs) -> Any:
+        """ """
+    def ExtendVideo(self, *args, **kwargs) -> Any:
+        """ """
+    def UploadFile(self, *args, **kwargs) -> str:
+        """ """
+    def UploadFileSync(self, *args, **kwargs) -> Any:
+        """ """
+    ApiKey: str
+    """ """
+    Model: Any
+    """ """
+    CustomModelName: str
+    """ """
+    AspectRatio: Any
+    """ """
+    Resolution: Any
+    """ """
+    DurationSeconds: int
+    """ """
+    PersonGeneration: Any
+    """ """
+    NegativePrompt: str
+    """ """
+    Seed: Any
+    """ """
+    OnProgress: Any
+    """ """
+    OnSuccess: Any
+    """ """
+    OnError: Any
+    """ """
+
+class AiSoraGenerator(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def GenerateFromText(self, *args, **kwargs) -> Any:
+        """ """
+    def GenerateFromImage(self, *args, **kwargs) -> Any:
+        """ """
+    def RemixVideo(self, *args, **kwargs) -> Any:
+        """ """
+    ApiKey: str
+    """ """
+    Model: Any
+    """ """
+    CustomModelName: str
+    """ """
+    Resolution: Any
+    """ """
+    Seconds: int
+    """ """
+    Seed: Any
+    """ """
+    OnProgress: Any
+    """ """
+    OnSuccess: Any
+    """ """
+    OnError: Any
+    """ """
+
+class AiOpenAiAudio(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Speech(self, *args, **kwargs) -> Any:
+        """ """
+    def Speech(self, *args, **kwargs) -> Any:
+        """ """
+    def SpeechStreamed(self, *args, **kwargs) -> Any:
+        """ """
+    def Transcribe(self, *args, **kwargs) -> Any:
+        """ """
+    def TranscribeStreamed(self, *args, **kwargs) -> Any:
+        """ """
+    def TranslateToEnglish(self, *args, **kwargs) -> Any:
+        """ """
+    ApiKey: str
+    """ """
+    Url: str
+    """ """
+    TTSModel: Any
+    """ """
+    TTSVoice: Any
+    """ """
+    TTSResponseFormat: Any
+    """ """
+    TTSSpeed: Any
+    """ """
+    TTSInstructions: str
+    """ """
+    TranscriptionModel: Any
+    """ """
+    TranscriptionResponseFormat: Any
+    """ """
+    TranscriptionLanguage: str
+    """ """
+    TranscriptionTemperature: Any
+    """ """
+    TranscriptionTimestampGranularities: Any
+    """ """
+    OnAudioChunkReceived: Any
+    """ """
+    OnSpeechCompleted: Any
+    """ """
+    OnTranscriptDeltaReceived: Any
+    """ """
+    OnTranscriptionCompleted: Any
+    """ """
+    OnAudioError: Any
     """ """
 
 class AiFunctions(Component):
     """ """
-    def = Class(self, *args, **kwargs) -> Any:
-        """ """
     def Create(self, AOwner: Component) -> None:
         """ """
     def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Loaded(self, *args, **kwargs) -> Any:
         """ """
     def GetTools(self, *args, **kwargs) -> Any:
         """ """
@@ -40598,6 +40922,10 @@ class AiFunctions(Component):
         """ """
     def AddMCPClient(self, *args, **kwargs) -> Any:
         """ """
+    def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
+        """ """
+    def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
+        """ """
     def Functions -> Any:
         """ """
     Functions: Any
@@ -40607,4 +40935,74 @@ class AiFunctions(Component):
     OnLog: Any
     """ """
     OnStatusUpdate: Any
+    """ """
+    OnMCPStreamMessage: Any
+    """ """
+
+class AiShell(Component):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    def ExecuteManual(self, *args, **kwargs) -> str:
+        """ """
+    def Restart(self, *args, **kwargs) -> Any:
+        """ """
+    Active: bool
+    """ """
+    TimeOut: Any
+    """ """
+    ShellPath: str
+    """ """
+    MaxOutputSize: int
+    """ """
+    OnCommand: Any
+    """ """
+    OnConsoleLog: Any
+    """ """
+
+class AiGenericChat(AiChat):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    def GetDriverName -> Any:
+        """ """
+    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+        """ """
+    def CreateInstance(self, *args, **kwargs) -> Any:
+        """ """
+
+class AiTextEditorTool(Component):
+    """ """
+    def Execute(self, *args, **kwargs) -> Any:
+        """ """
+    OnLoadFile: Any
+    """ """
+    OnSaveFile: Any
+    """ """
+    OnFileExists: Any
+    """ """
+    OnEnsureDirectory: Any
+    """ """
+    OnBeforeCommand: Any
+    """ """
+
+class AiRagGraphPostgresDriver(AiRagGraphDriverBase):
+    """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def CreateSchema(self, *args, **kwargs) -> Any:
+        """ """
+    Connection: Any
+    """ """
+    CurrentEntidad: str
+    """ """
+    TableName: str
     """ """

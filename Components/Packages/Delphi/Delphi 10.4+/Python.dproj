@@ -7,7 +7,7 @@
         <MainSource>Python.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <ProjectGuid>{018AAA56-F5BD-4A04-BCCA-A0043EAAA5CE}</ProjectGuid>
-        <ProjectVersion>20.2</ProjectVersion>
+        <ProjectVersion>20.3</ProjectVersion>
         <TargetedPlatforms>3</TargetedPlatforms>
         <ProjectName Condition="'$(ProjectName)'==''">Python</ProjectName>
     </PropertyGroup>

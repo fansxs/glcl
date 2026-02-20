@@ -8,6 +8,7 @@ unit PythonDocs;
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
+(*  Core developer:      fansxs (admin@glsite.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)

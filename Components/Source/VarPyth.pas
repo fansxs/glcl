@@ -6,6 +6,7 @@
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
+(*  Core developer:      fansxs (admin@glsite.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)
@@ -72,6 +73,7 @@ function VarIsNone(const AValue : Variant): Boolean;
 function VarIsTrue(const AValue : Variant): Boolean;
 
 function VarModuleHasObject(const AModule : Variant; aObj: AnsiString): Boolean;
+function VarHasAttr(const AValue: Variant; const AAttr: AnsiString): Boolean;
 
 function NewPythonList( const ASize : Integer = 0 ): Variant;
 function NewPythonTuple( const ASize : Integer ): Variant;
@@ -577,6 +579,13 @@ begin
               PyModule_Check(ExtractPythonObjectFrom(AModule)) and
               Assigned(PyDict_GetItemString(
                 PyModule_GetDict(ExtractPythonObjectFrom(AModule)),PAnsiChar(aObj)));
+end;
+
+function VarHasAttr(const AValue: Variant; const AAttr: AnsiString): Boolean;
+begin
+  with GetPythonEngine do
+    Result := VarIsPython(AValue) and
+      (PyObject_HasAttrString(ExtractPythonObjectFrom(AValue), PAnsiChar(AAttr)) = 1);
 end;
 
 function NewPythonList( const ASize : Integer = 0 ): Variant;

@@ -6,7 +6,7 @@
 (*  Original Authors:    Dr. Dietmar Budelsky (dbudelsky@web.de)          *)
 (*                       Morgan Martinet (https://github.com/mmm-experts) *)
 (*  Core developer:      Lucas Belo (lucas.belo@live.com)                 *)
-(*  Core developer:      fansxs (admin@gliste.com)                        *)
+(*  Core developer:      fansxs (admin@glsite.com)                        *)
 (*  Contributors:        See contributors.md at project home              *)
 (*                                                                        *)
 (*  LICENCE and Copyright: MIT (see project home)                         *)
@@ -20,15 +20,19 @@ interface
 
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses, System.JSON,
-  System.TypInfo, uMakerAi.ToolFunctions, uMakerAi.Agents,
-  uMakerAi.RAG.Vectors, uMakerAi.RAG.Graph.Core, uMakerAi.RAG.Graph.Builder,
-  uMakerAi.Utils.VoiceMonitor, UMakerAi.MCPServer.Direct,
-  UMakerAi.MCPServer.Stdio, uMakerAi.MCPServer.Core, UMakerAi.MCPServer.Http,
-  uMakerAi.Whisper, uMakerAi.Prompts, uMakerAi.Chat.OpenAiResponses,
-  uMakerAi.Chat.OpenAi, uMakerAi.Chat.Ollama, uMakerAi.Chat.Mistral,
-  uMakerAi.Chat.Groq, uMakerAi.Chat.Grok, uMakerAi.Embeddings.core,
-  uMakerAi.Embeddings, uMakerAi.Chat.Gemini, uMakerAi.Chat.DeepSeek,
-  uMakerAi.Chat, uMakerAi.Chat.Claude, uMakerAi.Chat.AiConnection;
+  System.TypInfo, uMakerAi.RAG.Graph.Core,
+  uMakerAi.RAG.Graph.Driver.Postgres, uMakerAi.Tools.TextEditor,
+  UMakerAi.MCPServer.SSE, uMakerAi.Chat.GenericLLM, uMakerAi.Tools.Shell,
+  uMakerAi.Tools.Functions, uMakerAi.OpenAI.Audio, uMakerAi.OpenAI.Sora,
+  uMakerAi.Gemini.Veo, uMakerAi.Chat.Gemini, uMakerAi.Chat.LMStudio,
+  uMakerAi.Chat.Kimi, uMakerAi.Agents, uMakerAi.RAG.Vectors,
+  uMakerAi.RAG.Graph.Builder, uMakerAi.Utils.VoiceMonitor,
+  UMakerAi.MCPServer.Direct, UMakerAi.MCPServer.Stdio, uMakerAi.MCPServer.Core,
+  UMakerAi.MCPServer.Http, uMakerAi.Whisper, uMakerAi.Prompts,
+  uMakerAi.Chat.OpenAi, uMakerAi.Chat.Ollama, uMakerAi.Embeddings.core,
+  uMakerAi.Embeddings, uMakerAi.Chat.Mistral, uMakerAi.Chat.Groq,
+  uMakerAi.Chat.Grok, uMakerAi.Chat.DeepSeek, uMakerAi.Chat,
+  uMakerAi.Chat.Claude, uMakerAi.Chat.AiConnection;
 
 type
   TPyDelphiAiChatConnection = class(TPyDelphiComponent)
@@ -171,17 +175,6 @@ type
     class function DelphiObjectClass: TClass; override;
     // Properties
     property DelphiObject: TAiOpenAiEmbeddings read GetDelphiObject
-      write SetDelphiObject;
-  end;
-
-  TPyDelphiAiOpenAiResponses = class(TPyDelphiComponent)
-  private
-    function GetDelphiObject: TAiOpenAiResponses;
-    procedure SetDelphiObject(const Value: TAiOpenAiResponses);
-  public
-    class function DelphiObjectClass: TClass; override;
-    // Properties
-    property DelphiObject: TAiOpenAiResponses read GetDelphiObject
       write SetDelphiObject;
   end;
 
@@ -328,6 +321,72 @@ type
       write SetDelphiObject;
   end;
 
+  TPyDelphiAiKimiChat = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiKimiChat;
+    procedure SetDelphiObject(const Value: TAiKimiChat);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiKimiChat read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiLMStudioChat = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiLMStudioChat;
+    procedure SetDelphiObject(const Value: TAiLMStudioChat);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiLMStudioChat read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiLMStudioEmbeddings = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiLMStudioEmbeddings;
+    procedure SetDelphiObject(const Value: TAiLMStudioEmbeddings);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiLMStudioEmbeddings read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiVeoGenerator = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiVeoGenerator;
+    procedure SetDelphiObject(const Value: TAiVeoGenerator);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiVeoGenerator read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiSoraGenerator = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiSoraGenerator;
+    procedure SetDelphiObject(const Value: TAiSoraGenerator);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiSoraGenerator read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiOpenAiAudio = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiOpenAiAudio;
+    procedure SetDelphiObject(const Value: TAiOpenAiAudio);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiOpenAiAudio read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
   TPyDelphiAiFunctions = class(TPyDelphiComponent)
   private
     function GetDelphiObject: TAiFunctions;
@@ -336,6 +395,61 @@ type
     class function DelphiObjectClass: TClass; override;
     // Properties
     property DelphiObject: TAiFunctions read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiShell = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiShell;
+    procedure SetDelphiObject(const Value: TAiShell);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiShell read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiGenericChat = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiGenericChat;
+    procedure SetDelphiObject(const Value: TAiGenericChat);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiGenericChat read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiMCPSSEHttpServer = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiMCPSSEHttpServer;
+    procedure SetDelphiObject(const Value: TAiMCPSSEHttpServer);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiMCPSSEHttpServer read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiTextEditorTool = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiTextEditorTool;
+    procedure SetDelphiObject(const Value: TAiTextEditorTool);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiTextEditorTool read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiAiRagGraphPostgresDriver = class(TPyDelphiComponent)
+  private
+    function GetDelphiObject: TAiRagGraphPostgresDriver;
+    procedure SetDelphiObject(const Value: TAiRagGraphPostgresDriver);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TAiRagGraphPostgresDriver read GetDelphiObject
       write SetDelphiObject;
   end;
 
@@ -369,7 +483,7 @@ end;
 
 function TMakerAiRegistration.Name: string;
 begin
-  Result := 'MakerAi';
+  Result := 'MakerAI';
 end;
 
 procedure TMakerAiRegistration.RegisterWrappers(APyDelphiWrapper
@@ -389,7 +503,6 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiOllamaEmbeddings);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiOpenChat);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiOpenAiEmbeddings);
-  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiOpenAiResponses);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiPrompts);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAIWhisper);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiMCPHttpServer);
@@ -403,7 +516,18 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAIAgentsNode);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAIAgentsLink);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiAgentsToolSample);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiKimiChat);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiLMStudioChat);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiLMStudioEmbeddings);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiVeoGenerator);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiSoraGenerator);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiOpenAiAudio);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiFunctions);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiShell);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiGenericChat);
+//  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiMCPSSEHttpServer);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiTextEditorTool);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiAiRagGraphPostgresDriver);
 end;
 
 { TPyDelphiAiChatConnection }
@@ -623,23 +747,6 @@ begin
 end;
 
 procedure TPyDelphiAiOpenAiEmbeddings.SetDelphiObject(const Value: TAiOpenAiEmbeddings);
-begin
-  inherited DelphiObject := Value;
-end;
-
-{ TPyDelphiAiOpenAiResponses }
-
-class function TPyDelphiAiOpenAiResponses.DelphiObjectClass: TClass;
-begin
-  Result := TAiOpenAiResponses;
-end;
-
-function TPyDelphiAiOpenAiResponses.GetDelphiObject: TAiOpenAiResponses;
-begin
-  Result := TAiOpenAiResponses(inherited DelphiObject);
-end;
-
-procedure TPyDelphiAiOpenAiResponses.SetDelphiObject(const Value: TAiOpenAiResponses);
 begin
   inherited DelphiObject := Value;
 end;
@@ -865,6 +972,108 @@ begin
   inherited DelphiObject := Value;
 end;
 
+{ TPyDelphiAiKimiChat }
+
+class function TPyDelphiAiKimiChat.DelphiObjectClass: TClass;
+begin
+  Result := TAiKimiChat;
+end;
+
+function TPyDelphiAiKimiChat.GetDelphiObject: TAiKimiChat;
+begin
+  Result := TAiKimiChat(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiKimiChat.SetDelphiObject(const Value: TAiKimiChat);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiLMStudioChat }
+
+class function TPyDelphiAiLMStudioChat.DelphiObjectClass: TClass;
+begin
+  Result := TAiLMStudioChat;
+end;
+
+function TPyDelphiAiLMStudioChat.GetDelphiObject: TAiLMStudioChat;
+begin
+  Result := TAiLMStudioChat(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiLMStudioChat.SetDelphiObject(const Value: TAiLMStudioChat);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiLMStudioEmbeddings }
+
+class function TPyDelphiAiLMStudioEmbeddings.DelphiObjectClass: TClass;
+begin
+  Result := TAiLMStudioEmbeddings;
+end;
+
+function TPyDelphiAiLMStudioEmbeddings.GetDelphiObject: TAiLMStudioEmbeddings;
+begin
+  Result := TAiLMStudioEmbeddings(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiLMStudioEmbeddings.SetDelphiObject(const Value: TAiLMStudioEmbeddings);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiVeoGenerator }
+
+class function TPyDelphiAiVeoGenerator.DelphiObjectClass: TClass;
+begin
+  Result := TAiVeoGenerator;
+end;
+
+function TPyDelphiAiVeoGenerator.GetDelphiObject: TAiVeoGenerator;
+begin
+  Result := TAiVeoGenerator(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiVeoGenerator.SetDelphiObject(const Value: TAiVeoGenerator);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiSoraGenerator }
+
+class function TPyDelphiAiSoraGenerator.DelphiObjectClass: TClass;
+begin
+  Result := TAiSoraGenerator;
+end;
+
+function TPyDelphiAiSoraGenerator.GetDelphiObject: TAiSoraGenerator;
+begin
+  Result := TAiSoraGenerator(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiSoraGenerator.SetDelphiObject(const Value: TAiSoraGenerator);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiOpenAiAudio }
+
+class function TPyDelphiAiOpenAiAudio.DelphiObjectClass: TClass;
+begin
+  Result := TAiOpenAiAudio;
+end;
+
+function TPyDelphiAiOpenAiAudio.GetDelphiObject: TAiOpenAiAudio;
+begin
+  Result := TAiOpenAiAudio(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiOpenAiAudio.SetDelphiObject(const Value: TAiOpenAiAudio);
+begin
+  inherited DelphiObject := Value;
+end;
+
 { TPyDelphiAiFunctions }
 
 class function TPyDelphiAiFunctions.DelphiObjectClass: TClass;
@@ -878,6 +1087,91 @@ begin
 end;
 
 procedure TPyDelphiAiFunctions.SetDelphiObject(const Value: TAiFunctions);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiShell }
+
+class function TPyDelphiAiShell.DelphiObjectClass: TClass;
+begin
+  Result := TAiShell;
+end;
+
+function TPyDelphiAiShell.GetDelphiObject: TAiShell;
+begin
+  Result := TAiShell(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiShell.SetDelphiObject(const Value: TAiShell);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiGenericChat }
+
+class function TPyDelphiAiGenericChat.DelphiObjectClass: TClass;
+begin
+  Result := TAiGenericChat;
+end;
+
+function TPyDelphiAiGenericChat.GetDelphiObject: TAiGenericChat;
+begin
+  Result := TAiGenericChat(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiGenericChat.SetDelphiObject(const Value: TAiGenericChat);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiMCPSSEHttpServer }
+
+class function TPyDelphiAiMCPSSEHttpServer.DelphiObjectClass: TClass;
+begin
+  Result := TAiMCPSSEHttpServer;
+end;
+
+function TPyDelphiAiMCPSSEHttpServer.GetDelphiObject: TAiMCPSSEHttpServer;
+begin
+  Result := TAiMCPSSEHttpServer(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiMCPSSEHttpServer.SetDelphiObject(const Value: TAiMCPSSEHttpServer);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiTextEditorTool }
+
+class function TPyDelphiAiTextEditorTool.DelphiObjectClass: TClass;
+begin
+  Result := TAiTextEditorTool;
+end;
+
+function TPyDelphiAiTextEditorTool.GetDelphiObject: TAiTextEditorTool;
+begin
+  Result := TAiTextEditorTool(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiTextEditorTool.SetDelphiObject(const Value: TAiTextEditorTool);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiAiRagGraphPostgresDriver }
+
+class function TPyDelphiAiRagGraphPostgresDriver.DelphiObjectClass: TClass;
+begin
+  Result := TAiRagGraphPostgresDriver;
+end;
+
+function TPyDelphiAiRagGraphPostgresDriver.GetDelphiObject: TAiRagGraphPostgresDriver;
+begin
+  Result := TAiRagGraphPostgresDriver(inherited DelphiObject);
+end;
+
+procedure TPyDelphiAiRagGraphPostgresDriver.SetDelphiObject(const Value: TAiRagGraphPostgresDriver);
 begin
   inherited DelphiObject := Value;
 end;
