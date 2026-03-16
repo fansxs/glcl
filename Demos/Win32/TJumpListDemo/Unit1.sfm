@@ -1,0 +1,32 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 61
+  ClientWidth = 217
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object JumpList1: TJumpList
+    Enabled = True
+    CustomCategories = <>
+    TaskList = <
+      item
+        FriendlyName = 'Jump List Item 1'
+      end
+      item
+        Path = 'C:/Windows/Notepad.exe'
+        FriendlyName = 'Jump List Item 2'
+      end
+      item
+        Path = 'C:/Windows/System32/Calc.exe'
+        FriendlyName = 'Jump List Item 3'
+      end>
+    Left = 24
+    Top = 16
+  end
+end

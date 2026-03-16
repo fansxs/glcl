@@ -1,0 +1,30 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 386
+  ClientWidth = 473
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object ListBox1: TListBox
+    Left = 8
+    Top = 8
+    Width = 201
+    Height = 369
+    ItemHeight = 20
+    Items.Strings = (
+      'abcdef'
+      '123456'
+      'uiop'
+      'zxvc'
+      'admin'
+      'pwd')
+    TabOrder = 0
+    OnClick = ListBox1Click
+  end
+end

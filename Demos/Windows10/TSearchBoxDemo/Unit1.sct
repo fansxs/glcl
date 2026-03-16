@@ -1,0 +1,3 @@
+def SearchBox1Click(Sender): 
+def SearchBox1Change(Sender): 
+def SearchBox1InvokeSearch(Sender): 

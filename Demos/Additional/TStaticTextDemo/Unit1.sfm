@@ -1,0 +1,32 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 278
+  ClientWidth = 397
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object StaticText1: TStaticText
+    Left = 32
+    Top = 160
+    Width = 85
+    Height = 24
+    BorderStyle = sbsSunken
+    Caption = 'Hello World'
+    Color = clWindow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    OnDblClick = StaticText1DblClick
+  end
+end

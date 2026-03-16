@@ -1,0 +1,40 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 84
+  ClientWidth = 318
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object CalendarPicker1: TCalendarPicker
+    Left = 24
+    Top = 24
+    Height = 32
+    CalendarHeaderInfo.DaysOfWeekFont.Charset = DEFAULT_CHARSET
+    CalendarHeaderInfo.DaysOfWeekFont.Color = clWindowText
+    CalendarHeaderInfo.DaysOfWeekFont.Height = -17
+    CalendarHeaderInfo.DaysOfWeekFont.Name = 'Segoe UI'
+    CalendarHeaderInfo.DaysOfWeekFont.Style = []
+    CalendarHeaderInfo.Font.Charset = DEFAULT_CHARSET
+    CalendarHeaderInfo.Font.Color = clWindowText
+    CalendarHeaderInfo.Font.Height = -25
+    CalendarHeaderInfo.Font.Name = 'Segoe UI'
+    CalendarHeaderInfo.Font.Style = []
+    Color = clWindow
+    FirstDayOfWeek = dwFriday
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    OnChange = CalendarPicker1Change
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'select a date'
+  end
+end

@@ -1,0 +1,27 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 174
+  ClientWidth = 294
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object DatePicker1: TDatePicker
+    Left = 16
+    Top = 128
+    Date = 45567.00000000000000000
+    DateFormat = 'yyyy/m/d'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 0
+    OnChange = DatePicker1Change
+  end
+end

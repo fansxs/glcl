@@ -1,0 +1,37 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object TimePicker1: TTimePicker
+    Left = 16
+    Top = 136
+    Width = 106
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    TabOrder = 0
+    Time = 45567.04596747685000000
+    TimeFormat = 'h:nn'
+    OnChange = TimePicker1Change
+  end
+  object Button1: TButton
+    Left = 136
+    Top = 136
+    Width = 147
+    Height = 25
+    Caption = #35774#32622#20026#24403#21069#31995#32479#26102#38388
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

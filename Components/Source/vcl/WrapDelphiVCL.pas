@@ -70,6 +70,7 @@ uses
   WrapCharts,
   WrapExtendGrids,
   WrapNoBorder,
-  WrapPicShow;
+  WrapPicShow,
+  WrapExtendButtons;
 
 end.

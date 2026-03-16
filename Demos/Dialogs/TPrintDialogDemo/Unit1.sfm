@@ -1,0 +1,36 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 175
+  ClientWidth = 300
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Button1: TButton
+    Left = 16
+    Top = 136
+    Width = 75
+    Height = 25
+    Caption = #25171#21360#22270#20687
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 16
+    Top = 88
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Left = 16
+    Top = 56
+  end
+end

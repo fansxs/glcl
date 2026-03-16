@@ -1,0 +1,26 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 199
+  ClientWidth = 266
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object ToggleSwitch1: TToggleSwitch
+    Left = 120
+    Top = 152
+    Width = 77
+    Height = 22
+    TabOrder = 0
+    OnClick = ToggleSwitch1Click
+  end
+  object ActivityIndicator1: TActivityIndicator
+    Left = 64
+    Top = 152
+  end
+end

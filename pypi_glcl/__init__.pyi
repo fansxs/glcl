@@ -2032,6 +2032,36 @@ cstDocument: str
 cstWeb: str
 cstFile: str
 cstDatabase: str
+paLeftJustify: str
+paCenter: str
+plGraphicCenter: str
+plGraphicBottom: str
+plGraphicTop: str
+stRoundRect: str
+stRectangle: str
+bsCustom: str
+bsPrimary: str
+bsSecondary: str
+bsSuccess: str
+bsDanger: str
+bsWarning: str
+bsInfo: str
+bsLight: str
+bsDark: str
+tsNone: int
+tsSave: int
+tsCancel: int
+tsEdit: int
+tsDelete: int
+tsPrint: int
+tsGear: int
+tsMenu: int
+tsHeart: int
+tsEmail: int
+tsInsert: int
+tsBack: int
+tsClose: int
+tsReport: int
 '''
 
 class Application(Component):
@@ -41005,4 +41035,149 @@ class AiRagGraphPostgresDriver(AiRagGraphDriverBase):
     CurrentEntidad: str
     """ """
     TableName: str
+    """ """
+
+class PraButtonStyle(GraphicControl):
+    """ """
+    Focused: bool
+    """ """
+    CanFocus: bool
+    """ """
+    def SetFocus(self, *args, **kwargs) -> Any:
+        """ """
+    def Click(self, *args, **kwargs) -> Any:
+        """ """
+    def Assign(self, *args, **kwargs) -> Any:
+        """ """
+    def SetBounds(self, *args, **kwargs) -> Any:
+        """ """
+    def Create(self, AOwner: Component) -> None:
+        """ """
+    def Destroy(self, *args, **kwargs) -> Any:
+        """ """
+    Action: Any
+    """ """
+    Align: Any
+    """ """
+    Anchors: Any
+    """ """
+    Cursor default crHandPoint: Any
+    """ """
+    DragCursor: Any
+    """ """
+    DragKind: Any
+    """ """
+    DragMode: Any
+    """ """
+    Enabled: Any
+    """ """
+    Constraints: Any
+    """ """
+    ParentShowHint: Any
+    """ """
+    ShowHint: Any
+    """ """
+    Touch: Any
+    """ """
+    Visible: Any
+    """ """
+    OnContextPopup: Any
+    """ """
+    OnDragDrop: Any
+    """ """
+    OnDragOver: Any
+    """ """
+    OnEndDock: Any
+    """ """
+    OnEndDrag: Any
+    """ """
+    OnMouseActivate: Any
+    """ """
+    OnMouseDown: Any
+    """ """
+    OnMouseEnter: Any
+    """ """
+    OnMouseLeave: Any
+    """ """
+    OnMouseMove: Any
+    """ """
+    OnMouseUp: Any
+    """ """
+    OnGesture: Any
+    """ """
+    OnStartDock: Any
+    """ """
+    OnStartDrag: Any
+    """ """
+    OnClick: Any
+    """ """
+    Font: Any
+    """ """
+    ParentFont default true: Any
+    """ """
+    Pen: Any
+    """ """
+    PenDown: Any
+    """ """
+    PenFocused: Any
+    """ """
+    PenDisabled: Any
+    """ """
+    Brush: Any
+    """ """
+    BrushDown: Any
+    """ """
+    BrushFocused: Any
+    """ """
+    BrushDisabled: Any
+    """ """
+    Picture: Any
+    """ """
+    PictureFocused: Any
+    """ """
+    PictureDisabled: Any
+    """ """
+    FontDown: Any
+    """ """
+    FontFocused: Any
+    """ """
+    FontDisabled: Any
+    """ """
+    Caption: Any
+    """ """
+    TabOrder: int
+    """ """
+    TabStop: bool
+    """ """
+    Radius: Any
+    """ """
+    Shape: Any
+    """ """
+    Spacing: Any
+    """ """
+    ShowCaption: bool
+    """ """
+    ClickOnEnter: bool
+    """ """
+    Alignment: Any
+    """ """
+    PictureCenter: bool
+    """ """
+    PictureMarginLeft: Any
+    """ """
+    Style: Any
+    """ """
+    StyleOutline: bool
+    """ """
+    TemplateStyle: Any
+    """ """
+    PictureLayout: Any
+    """ """
+    ImageList: Any
+    """ """
+    ImageIndexPicture: int
+    """ """
+    ImageIndexPictureFocused: int
+    """ """
+    ImageIndexPictureDisabled: int
     """ """

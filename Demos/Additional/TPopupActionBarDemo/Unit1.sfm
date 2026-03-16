@@ -1,0 +1,35 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 238
+  ClientWidth = 428
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  PopupMenu = PopupActionBar1
+  TextHeight = 20
+  object PopupActionBar1: TPopupActionBar
+    Left = 48
+    Top = 160
+    object MenuItem5: TMenuItem
+      Caption = 'MenuItem5'
+      OnClick = MenuItem5Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'MenuItem4'
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'MenuItem3'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'MenuItem2'
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'MenuItem1'
+    end
+  end
+end

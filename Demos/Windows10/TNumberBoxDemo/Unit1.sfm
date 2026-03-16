@@ -1,0 +1,34 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 166
+  ClientWidth = 262
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object NumberBox1: TNumberBox
+    Left = 24
+    Top = 120
+    Width = 121
+    Height = 28
+    Mode = nbmCurrency
+    TabOrder = 0
+    SpinButtonOptions.Placement = nbspInline
+    SpinButtonOptions.ArrowColor = clMaroon
+    OnChangeValue = NumberBox1ChangeValue
+  end
+  object Button1: TButton
+    Left = 160
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

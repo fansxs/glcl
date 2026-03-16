@@ -1,0 +1,31 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 430
+  ClientWidth = 413
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Animate1: TAnimate
+    Left = 8
+    Top = 374
+    Width = 60
+    Height = 39
+    FileName = 'cool.avi'
+    StopFrame = 13
+  end
+  object Button1: TButton
+    Left = 88
+    Top = 388
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

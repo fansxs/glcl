@@ -1,0 +1,36 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 450
+  ClientWidth = 236
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object RadioGroup1: TRadioGroup
+    Left = 16
+    Top = 224
+    Width = 185
+    Height = 161
+    Caption = #36873#25321#27700#26524
+    Items.Strings = (
+      #33529#26524
+      #39321#34121
+      #21704#23494#29916
+      #33889#33796)
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 126
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = #36141#20080
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

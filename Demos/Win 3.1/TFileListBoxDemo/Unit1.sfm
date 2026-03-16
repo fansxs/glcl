@@ -1,0 +1,31 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 355
+  ClientWidth = 489
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object FileListBox1: TFileListBox
+    Left = 240
+    Top = 24
+    Width = 233
+    Height = 257
+    ItemHeight = 20
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 398
+    Top = 288
+    Width = 75
+    Height = 25
+    Caption = #36873#25321#30446#24405
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

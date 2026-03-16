@@ -1,0 +1,48 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 515
+  ClientWidth = 548
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object FilterComboBox1: TFilterComboBox
+    Left = 8
+    Top = 480
+    Width = 529
+    Height = 28
+    FileList = FileListBox1
+    Filter = 'All files (*.*)|*.*|Py file (*.py)|*.py'
+    TabOrder = 0
+  end
+  object FileListBox1: TFileListBox
+    Left = 8
+    Top = 328
+    Width = 529
+    Height = 145
+    ItemHeight = 20
+    TabOrder = 1
+  end
+  object DirectoryListBox1: TDirectoryListBox
+    Left = 8
+    Top = 144
+    Width = 529
+    Height = 177
+    FileList = FileListBox1
+    ItemHeight = 20
+    TabOrder = 2
+  end
+  object DriveComboBox1: TDriveComboBox
+    Left = 8
+    Top = 112
+    Width = 529
+    Height = 26
+    DirList = DirectoryListBox1
+    TabOrder = 3
+  end
+end

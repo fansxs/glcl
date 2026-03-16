@@ -1,0 +1,14 @@
+def imgMenuClick(Sender): 
+def grpDisplayModeClick(Sender): 
+def grpPlacementClick(Sender): 
+def grpCloseStyleClick(Sender): 
+def chkUseAnimationClick(Sender): 
+def cbxVclStylesChange(Sender): 
+def trkAnimationDelayChange(Sender): 
+def trkAnimationStepChange(Sender): 
+def actHomeExecute(Sender): 
+def actLayoutExecute(Sender): 
+def actPowerExecute(Sender): 
+def SVClosed(Sender): 
+def SVOpened(Sender): 
+def SVOpening(Sender): 

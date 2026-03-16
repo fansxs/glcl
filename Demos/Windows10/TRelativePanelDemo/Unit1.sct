@@ -1,0 +1,12 @@
+def cb1AlignBottomWithPanelClick(Sender): 
+def cb1AlignHorizontalCenterWithPanelClick(Sender): 
+def cb1AlignLeftWithPanelClick(Sender): 
+def cb1AlignRightWithPanelClick(Sender): 
+def cb1AlignTopWithPanelClick(Sender): 
+def cb1AlignVerticalCenterWithPanelClick(Sender): 
+def cbx1AboveChange(Sender): 
+cbxAboveChange
+def cbxAboveChange(Sender): 
+def cbx1AlignBottomWithChange(Sender): 
+cbxAlignBottomWithChange
+def RelativePanel1DragDrop(Sender, Source, X, Y): 

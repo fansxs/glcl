@@ -1,0 +1,30 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Header1: THeader
+    Left = 0
+    Top = 180
+    Width = 382
+    Height = 25
+    Align = alBottom
+    Sections.Sections = (
+      #0'31'#0#21015'1'
+      #0'31'#0#21015'2'
+      #0'31'#0#21015'3'
+      #0'31'#0#21015'4')
+    TabOrder = 0
+    ExplicitLeft = 144
+    ExplicitTop = 160
+    ExplicitWidth = 250
+  end
+end

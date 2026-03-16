@@ -1,0 +1,35 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 244
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object SearchBox1: TSearchBox
+    Left = 16
+    Top = 96
+    Width = 121
+    Height = 28
+    TabOrder = 0
+    Text = 'AMD64'
+    OnInvokeSearch = SearchBox1InvokeSearch
+  end
+  object Memo1: TMemo
+    Left = 16
+    Top = 136
+    Width = 361
+    Height = 89
+    Lines.Strings = (
+      '*** Python 3.12.4 (heads/master-dirty:9c62cab, Jun  9 '
+      '2024, 14:50:38) [MSC v.1940 64 bit (AMD64)] on '
+      'win32. ***'
+      '*** '#36828#31243' Python '#24341#25806#21551#21160' ***')
+    TabOrder = 1
+  end
+end

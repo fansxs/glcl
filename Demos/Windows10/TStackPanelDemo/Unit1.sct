@@ -1,0 +1,6 @@
+def trkSpacingChange(Sender): 
+def trkPaddingChange(Sender): 
+def lstControlsClick(Sender): 
+def grpOrientationClick(Sender): 
+def grpControlPositioningClick(Sender): 
+def grpPositioningClick(Sender): 

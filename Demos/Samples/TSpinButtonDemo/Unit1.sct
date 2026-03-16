@@ -1,0 +1,2 @@
+def SpinButton1DownClick(Sender): 
+def SpinButton1UpClick(Sender): 

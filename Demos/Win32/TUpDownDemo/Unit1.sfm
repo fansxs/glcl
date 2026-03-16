@@ -1,0 +1,32 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 299
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object UpDown1: TUpDown
+    Left = 52
+    Top = 163
+    Width = 21
+    Height = 28
+    AlignButton = udLeft
+    Associate = Edit1
+    TabOrder = 0
+    OnClick = UpDown1Click
+  end
+  object Edit1: TEdit
+    Left = 72
+    Top = 163
+    Width = 121
+    Height = 28
+    TabOrder = 1
+    Text = '0'
+  end
+end

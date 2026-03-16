@@ -1,0 +1,4 @@
+def Button1Click(Sender): 
+def Button2Click(Sender): 
+def Button3Click(Sender): 
+def Button4Click(Sender): 

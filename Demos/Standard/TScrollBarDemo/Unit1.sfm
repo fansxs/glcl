@@ -1,0 +1,31 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 380
+  ClientWidth = 433
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 44
+    Height = 20
+    Caption = 'Label1'
+  end
+  object ScrollBar1: TScrollBar
+    Left = 400
+    Top = 24
+    Width = 17
+    Height = 329
+    Kind = sbVertical
+    PageSize = 0
+    TabOrder = 0
+    OnChange = ScrollBar1Change
+  end
+end

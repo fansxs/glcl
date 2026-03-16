@@ -1,0 +1,25 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 132
+  ClientWidth = 277
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object SpinEdit1: TSpinEdit
+    Left = 40
+    Top = 88
+    Width = 121
+    Height = 31
+    MaxValue = 100
+    MinValue = -10
+    TabOrder = 0
+    Value = 0
+    OnChange = SpinEdit1Change
+  end
+end

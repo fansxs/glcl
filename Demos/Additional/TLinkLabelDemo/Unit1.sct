@@ -1,0 +1,1 @@
+def LinkLabel1LinkClick(Sender, Link, LinkType): 

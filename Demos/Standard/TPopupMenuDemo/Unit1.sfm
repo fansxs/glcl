@@ -1,0 +1,62 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = #21491#38190#31383#20307#24377#20986#33756#21333
+  ClientHeight = 148
+  ClientWidth = 277
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  PopupMenu = PopupMenu1
+  TextHeight = 20
+  object Button1: TButton
+    Left = 40
+    Top = 56
+    Width = 203
+    Height = 25
+    Caption = #20195#30721#26041#24335#21019#24314'PopupMenu'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 240
+    Top = 8
+    object MenuItem5: TMenuItem
+      Caption = #25991#20214
+      OnClick = MenuItem5Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = #32534#36753
+      object MenuItem10: TMenuItem
+        Caption = #25764#38144
+      end
+      object MenuItem11: TMenuItem
+        Caption = #37325#20570
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = #26597#25214
+    end
+    object MenuItem2: TMenuItem
+      Caption = #35270#22270
+      object MenuItem6: TMenuItem
+        Caption = #25918#22823#32534#36753#22120
+      end
+      object MenuItem7: TMenuItem
+        Caption = #20998#21106#32534#36753#22120
+        object MenuItem9: TMenuItem
+          Caption = 'MenuItem9'
+        end
+      end
+      object MenuItem8: TMenuItem
+        Caption = #32553#23567#32534#36753#22120
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'MenuItem1'
+    end
+  end
+end

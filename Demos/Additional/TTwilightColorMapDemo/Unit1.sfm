@@ -1,0 +1,21 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object TwilightColorMap1: TTwilightColorMap
+    HighlightColor = clBlack
+    BtnFrameColor = clBlack
+    DisabledColor = cl3DDkShadow
+    Left = 112
+    Top = 64
+  end
+end

@@ -1,0 +1,39 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 432
+  ClientWidth = 270
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object CheckListBox1: TCheckListBox
+    Left = 16
+    Top = 248
+    Width = 169
+    Height = 145
+    ItemHeight = 20
+    Items.Strings = (
+      #39321#34121
+      #33529#26524
+      #33889#33796
+      #21704#23494#29916
+      #27185#26691
+      #34013#33683)
+    TabOrder = 0
+    OnClickCheck = CheckListBox1ClickCheck
+  end
+  object Button1: TButton
+    Left = 78
+    Top = 400
+    Width = 107
+    Height = 25
+    Caption = #33719#21462#36873#20013#30340#39033
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

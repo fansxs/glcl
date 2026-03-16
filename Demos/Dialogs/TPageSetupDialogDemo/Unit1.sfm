@@ -1,0 +1,37 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 196
+  ClientWidth = 283
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Button1: TButton
+    Left = 64
+    Top = 152
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object PageSetupDialog1: TPageSetupDialog
+    MinMarginLeft = 0
+    MinMarginTop = 0
+    MinMarginRight = 0
+    MinMarginBottom = 0
+    MarginLeft = 2500
+    MarginTop = 2500
+    MarginRight = 2500
+    MarginBottom = 2500
+    PageWidth = 21000
+    PageHeight = 29700
+    Left = 24
+    Top = 152
+  end
+end

@@ -1,0 +1,2 @@
+def ScrollBox1MouseWheel(Sender, Shift, WheelDelta, MousePos, Handled): 
+def FormMouseWheel(Sender, Shift, WheelDelta, MousePos, Handled): 

@@ -1,0 +1,83 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 522
+  ClientWidth = 681
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object CategoryPanelGroup1: TCategoryPanelGroup
+    Left = 0
+    Top = 0
+    Height = 522
+    VertScrollBar.Tracking = True
+    HeaderFont.Charset = DEFAULT_CHARSET
+    HeaderFont.Color = clWindowText
+    HeaderFont.Height = -15
+    HeaderFont.Name = 'Segoe UI'
+    HeaderFont.Style = []
+    TabOrder = 0
+    ExplicitLeft = 88
+    ExplicitTop = 48
+    ExplicitHeight = 350
+    object CategoryPanel3: TCategoryPanel
+      Top = 400
+      Caption = 'CategoryPanel3'
+      TabOrder = 0
+      ExplicitWidth = 196
+    end
+    object CategoryPanel2: TCategoryPanel
+      Top = 200
+      Caption = 'CategoryPanel2'
+      TabOrder = 1
+      ExplicitWidth = 196
+    end
+    object CategoryPanel1: TCategoryPanel
+      Top = 0
+      Caption = 'CategoryPanel1'
+      TabOrder = 2
+      ExplicitWidth = 196
+    end
+  end
+  object Button1: TButton
+    Left = 224
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 224
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 224
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 224
+    Top = 176
+    Width = 75
+    Height = 25
+    Caption = 'Button4'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+end

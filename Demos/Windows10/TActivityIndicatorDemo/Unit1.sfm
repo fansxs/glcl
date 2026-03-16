@@ -1,0 +1,37 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 151
+  ClientWidth = 206
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object ActivityIndicator1: TActivityIndicator
+    Left = 8
+    Top = 88
+    IndicatorType = aitSectorRing
+  end
+  object Button1: TButton
+    Left = 48
+    Top = 88
+    Width = 75
+    Height = 25
+    Caption = #21551#29992
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 48
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = #20572#29992
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+end

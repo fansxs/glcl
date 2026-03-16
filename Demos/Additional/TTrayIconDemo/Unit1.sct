@@ -1,0 +1,6 @@
+def FormCloseQuery(Sender, CanClose): 
+def MenuItem1Click(Sender): 
+def MenuItem2Click(Sender): 
+def MenuItem3Click(Sender): 
+def TrayIcon1Click(Sender): 
+def Button1Click(Sender): 

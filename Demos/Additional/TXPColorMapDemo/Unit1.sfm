@@ -1,0 +1,22 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object XPColorMap1: TXPColorMap
+    HighlightColor = clWhite
+    MenuColor = clMaroon
+    BtnSelectedColor = clBtnFace
+    UnusedColor = clWhite
+    Left = 120
+    Top = 80
+  end
+end

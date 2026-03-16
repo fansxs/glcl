@@ -1,0 +1,3 @@
+def actNextCardExecute(Sender): 
+def actPreviousCardExecute(Sender): 
+def chkLoopClick(Sender): 

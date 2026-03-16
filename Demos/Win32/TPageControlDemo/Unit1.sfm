@@ -1,0 +1,170 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 342
+  ClientWidth = 501
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object PageControl1: TPageControl
+    Left = 8
+    Top = 8
+    Width = 481
+    Height = 289
+    ActivePage = TabSheet1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      object Panel1: TPanel
+        Left = 12
+        Top = 9
+        Width = 449
+        Height = 233
+        Caption = 'Panel1'
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 40
+          Top = 40
+          Width = 44
+          Height = 20
+          Caption = 'Label1'
+        end
+        object Edit1: TEdit
+          Left = 120
+          Top = 40
+          Width = 121
+          Height = 28
+          TabOrder = 0
+          Text = 'Edit1'
+        end
+        object Button1: TButton
+          Left = 280
+          Top = 40
+          Width = 75
+          Height = 25
+          Caption = 'Button1'
+          TabOrder = 1
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      object CheckBox1: TCheckBox
+        Left = 44
+        Top = 73
+        Width = 97
+        Height = 17
+        Caption = 'CheckBox1'
+        TabOrder = 0
+      end
+      object RadioButton1: TRadioButton
+        Left = 204
+        Top = 73
+        Width = 113
+        Height = 17
+        Caption = 'RadioButton1'
+        TabOrder = 1
+      end
+      object ComboBox1: TComboBox
+        Left = 44
+        Top = 153
+        Width = 145
+        Height = 28
+        TabOrder = 2
+        Text = 'ComboBox1'
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'TabSheet3'
+      object GroupBox1: TGroupBox
+        Left = 20
+        Top = 25
+        Width = 409
+        Height = 177
+        Caption = 'GroupBox1'
+        TabOrder = 0
+        object CheckBox2: TCheckBox
+          Left = 48
+          Top = 56
+          Width = 97
+          Height = 17
+          Caption = 'CheckBox2'
+          TabOrder = 0
+        end
+        object CheckBox3: TCheckBox
+          Left = 48
+          Top = 120
+          Width = 97
+          Height = 17
+          Caption = 'CheckBox3'
+          TabOrder = 1
+        end
+        object CheckBox4: TCheckBox
+          Left = 264
+          Top = 56
+          Width = 97
+          Height = 17
+          Caption = 'CheckBox4'
+          TabOrder = 2
+        end
+        object CheckBox5: TCheckBox
+          Left = 264
+          Top = 120
+          Width = 97
+          Height = 17
+          Caption = 'CheckBox5'
+          TabOrder = 3
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'TabSheet4'
+      object ComboBox2: TComboBox
+        Left = 28
+        Top = 25
+        Width = 145
+        Height = 28
+        TabOrder = 0
+        Text = 'ComboBox2'
+      end
+      object ComboBox3: TComboBox
+        Left = 28
+        Top = 81
+        Width = 145
+        Height = 28
+        TabOrder = 1
+        Text = 'ComboBox3'
+      end
+      object ComboBox4: TComboBox
+        Left = 28
+        Top = 137
+        Width = 145
+        Height = 28
+        TabOrder = 2
+        Text = 'ComboBox4'
+      end
+      object ComboBox5: TComboBox
+        Left = 28
+        Top = 193
+        Width = 145
+        Height = 28
+        TabOrder = 3
+        Text = 'ComboBox5'
+      end
+    end
+  end
+  object Button2: TButton
+    Left = 414
+    Top = 304
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+end

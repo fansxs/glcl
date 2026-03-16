@@ -1,0 +1,31 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 445
+  ClientWidth = 482
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object StringGrid1: TStringGrid
+    Left = 16
+    Top = 248
+    Width = 288
+    Height = 120
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 16
+    Top = 384
+    Width = 131
+    Height = 25
+    Caption = #26174#31034#36873#20013#21333#20803#26684
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

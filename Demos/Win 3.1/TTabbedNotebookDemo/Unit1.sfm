@@ -1,0 +1,54 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 430
+  ClientWidth = 398
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object TabbedNotebook1: TTabbedNotebook
+    Left = 16
+    Top = 248
+    Width = 300
+    Height = 170
+    TabFont.Charset = DEFAULT_CHARSET
+    TabFont.Color = clBtnText
+    TabFont.Height = -15
+    TabFont.Name = 'Segoe UI'
+    TabFont.Style = []
+    TabOrder = 0
+    OnClick = TabbedNotebook1Click
+    object TTabPage
+      Left = 4
+      Top = 31
+      Caption = #26631#31614#39029'1'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+    end
+    object TTabPage
+      Left = 4
+      Top = 31
+      Caption = #26631#31614#39029'2'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+    end
+    object TTabPage
+      Left = 4
+      Top = 31
+      Caption = #26631#31614#39029'3'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+    end
+  end
+end

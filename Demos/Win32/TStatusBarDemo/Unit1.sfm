@@ -1,0 +1,33 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 205
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 186
+    Width = 382
+    Height = 19
+    Panels = <>
+    ExplicitLeft = 363
+    ExplicitTop = 0
+    ExplicitWidth = 205
+  end
+  object Button1: TButton
+    Left = 280
+    Top = 72
+    Width = 91
+    Height = 25
+    Caption = 'SimpleText'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

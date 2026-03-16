@@ -1,0 +1,33 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 260
+  ClientWidth = 405
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object MaskEdit1: TMaskEdit
+    Left = 56
+    Top = 192
+    Width = 119
+    Height = 28
+    EditMask = '\(999\)9000-0000;1;_'
+    MaxLength = 14
+    TabOrder = 0
+    Text = '(   )    -    '
+  end
+  object Button1: TButton
+    Left = 200
+    Top = 195
+    Width = 75
+    Height = 25
+    Caption = #26174#31034#36755#20837
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

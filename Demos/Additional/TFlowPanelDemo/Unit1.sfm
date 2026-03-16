@@ -1,0 +1,35 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 478
+  ClientWidth = 300
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Top = 0
+    Width = 300
+    Height = 478
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 64
+    ExplicitTop = 120
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object FlowPanel1: TFlowPanel
+      Left = 0
+      Top = 0
+      Width = 296
+      Height = 465
+      Align = alTop
+      AutoSize = True
+      TabOrder = 0
+    end
+  end
+end

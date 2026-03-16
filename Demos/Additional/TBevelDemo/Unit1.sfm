@@ -1,0 +1,28 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 361
+  ClientWidth = 504
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Bevel1: TBevel
+    Left = 24
+    Top = 264
+    Width = 218
+    Height = 50
+    Shape = bsFrame
+  end
+  object Label2: TLabel
+    Left = 104
+    Top = 280
+    Width = 44
+    Height = 20
+    Caption = 'Label2'
+  end
+end

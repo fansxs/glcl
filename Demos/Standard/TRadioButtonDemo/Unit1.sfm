@@ -1,0 +1,32 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 306
+  ClientWidth = 434
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object RadioButton1: TRadioButton
+    Left = 32
+    Top = 24
+    Width = 113
+    Height = 17
+    Caption = 'Apple'
+    TabOrder = 0
+    OnClick = RadioButton1Click
+  end
+  object RadioButton2: TRadioButton
+    Left = 240
+    Top = 24
+    Width = 113
+    Height = 17
+    Caption = 'Orange'
+    TabOrder = 1
+    OnClick = RadioButton2Click
+  end
+end
