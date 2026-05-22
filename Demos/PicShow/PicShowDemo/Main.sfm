@@ -1,0 +1,506 @@
+object MainForm: TForm
+  Left = 0
+  Top = 0
+  Caption = 'TPicShow - Demo'
+  ClientHeight = 432
+  ClientWidth = 656
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  Position = poScreenCenter
+  OnCloseQuery = FormCloseQuery
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  TextHeight = 13
+  object Bevel1: TBevel
+    Left = 220
+    Top = 0
+    Width = 1
+    Height = 413
+    Align = alLeft
+    Shape = bsLeftLine
+    Style = bsRaised
+    ExplicitHeight = 420
+  end
+  object PicShow: TPicShow
+    Tag = 8
+    Left = 221
+    Top = 0
+    Width = 435
+    Height = 413
+    Hint = 'Double click for FULL SCREEN'
+    Align = alClient
+    BgPicture.Data = {
+      0A544A504547496D61676583030000FFD8FFE000104A46494600010200006400
+      640000FFEC00114475636B79000100040000003C0000FFEE000E41646F626500
+      64C000000001FFDB0084000604040405040605050609060506090B080606080B
+      0C0A0A0B0A0A0C100C0C0C0C0C0C100C0E0F100F0E0C1313141413131C1B1B1B
+      1C1F1F1F1F1F1F1F1F1F1F010707070D0C0D181010181A1511151A1F1F1F1F1F
+      1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F1F
+      1F1F1F1F1F1F1F1F1F1F1F1FFFC00011080080008003011100021101031101FF
+      C400570000030101010000000000000000000000000103020408010100000000
+      0000000000000000000000001000030101000301000000000000000000000102
+      110321121331110100000000000000000000000000000000FFDA000C03010002
+      110311003F00F2F0000000000000060060000D2034A180FD1807A3032E5A032D
+      00000000000000F0069007AB016016E7CF40BAE480D7CD0197CD013BE6042A71
+      81800C01E006006002406E618168E5A017CF10124BC8169A52806FB002EC06E6
+      F402BF00E5EBFA0480603406B3406A00D2840526501684805D16A039BD5E80FD
+      5B007CE80C39680D45302AEBC01CFD1F902680600069501A54069581B560562D
+      30299A80CFCD00D4CA0359204BB7358072FE3034EBC012A7E40C80C000000035
+      80D530291D1A03A23B2C00AEC8093EAC0DC746051D6A0393A2CA030D81960003
+      C01A034A7407F3603F9300F93032E5A016B401ECC06B40AC2606DEE011E80480
+      40300C01A4053981D1120554201FCE408F5E6901CD480CA96C0B73E4C0E89E78
+      06BD1013BE2981CFD396011680680A44681A7C580E39BD03A616201BB480CBEC
+      80974E9A04735816E7C80BA49003A4801580F40877680E47FA0080E8E5807424
+      807EA80CDDA4042FA36049D3017B014E6B581D52924066FA24046BA790351405
+      1DE2039BADEB022000522F00BCF64037DC09574D0125A0150C09E63029CEB181
+      6AEBE0085F46D8184C0B430174BF0041B0100680F4069B00F6606A75B03A3940
+      157CD34073F5E780475A600E9819004C0A2A0334F40C30000000180D202DCA00
+      EB89C406C09759D0392E1E81372C040003D0100800000101A405625303A39C81
+      75F800C0C5012A4808D4A025480C80B4034000000000698148BC03A39F4405E6
+      900AAD012AEA809D744062AC09D5681860000000000000001A06E6DA028BB3C0
+      15756C0C3B602F601680800000000000FFD9}
+    Center = True
+    Color = clBlack
+    Delay = 30
+    ExactTiming = True
+    FrameColor = clGray
+    FrameWidth = 1
+    ParentColor = False
+    ParentShowHint = False
+    Proportional = True
+    ShowHint = True
+    Step = 3
+    Style = 0
+    TabOrder = 0
+    OnDblClick = PicShowDblClick
+    OnProgress = PicShowProgress
+    OnStart = PicShowStart
+    OnStop = PicShowStop
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Top = 413
+    Width = 656
+    Height = 19
+    Panels = <
+      item
+        Width = 150
+      end
+      item
+        Width = 150
+      end
+      item
+        Alignment = taCenter
+        Width = 100
+      end
+      item
+        Width = 50
+      end>
+  end
+  object PageControl: TPageControl
+    Left = 0
+    Top = 0
+    Width = 220
+    Height = 413
+    ActivePage = TabSheet1
+    Align = alLeft
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Transition'
+      DesignSize = (
+        212
+        385)
+      object lblStyle: TLabel
+        Left = 8
+        Top = 8
+        Width = 28
+        Height = 13
+        Caption = 'Style:'
+        FocusControl = cbStyle
+      end
+      object lblStyleNo: TLabel
+        Left = 176
+        Top = 8
+        Width = 28
+        Height = 13
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        Caption = '[ #0 ]'
+      end
+      object cbStyle: TComboBox
+        Left = 8
+        Top = 24
+        Width = 196
+        Height = 21
+        Style = csDropDownList
+        Anchors = [akLeft, akTop, akRight]
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        OnChange = cbStyleChange
+      end
+      object rgStyleControl: TRadioGroup
+        Left = 8
+        Top = 56
+        Width = 196
+        Height = 105
+        Anchors = [akLeft, akTop, akRight]
+        Caption = ' Auto Style Change '
+        ItemIndex = 0
+        Items.Strings = (
+          'Sequentially'
+          'Randomly'
+          'Disabled')
+        TabOrder = 1
+      end
+      object gbProgressControl: TGroupBox
+        Left = 8
+        Top = 172
+        Width = 196
+        Height = 213
+        Anchors = [akLeft, akTop, akRight]
+        Caption = ' Progress Control '
+        TabOrder = 2
+        DesignSize = (
+          196
+          213)
+        object lblProgressStep: TLabel
+          Left = 42
+          Top = 50
+          Width = 48
+          Height = 13
+          Caption = 'Step (%):'
+          FocusControl = edtProgressStep
+        end
+        object lblProgressDelay: TLabel
+          Left = 42
+          Top = 78
+          Width = 66
+          Height = 13
+          Caption = 'Interval (ms):'
+          FocusControl = edtProgressDelay
+        end
+        object rbProgressAuto: TRadioButton
+          Left = 16
+          Top = 24
+          Width = 164
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Automatic'
+          TabOrder = 0
+          OnClick = rbProgressAutoClick
+        end
+        object rbProgressManual: TRadioButton
+          Left = 16
+          Top = 156
+          Width = 164
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Manual'
+          TabOrder = 7
+          OnClick = rbProgressManualClick
+        end
+        object tbProgress: TTrackBar
+          Left = 27
+          Top = 174
+          Width = 160
+          Height = 29
+          Anchors = [akLeft, akTop, akRight]
+          Max = 100
+          ParentShowHint = False
+          PageSize = 5
+          Frequency = 10
+          ShowHint = False
+          TabOrder = 8
+          OnChange = tbProgressChange
+        end
+        object edtProgressStep: TEdit
+          Left = 131
+          Top = 46
+          Width = 33
+          Height = 21
+          Anchors = [akTop, akRight]
+          TabOrder = 1
+          Text = '1'
+        end
+        object udProgressStep: TUpDown
+          Left = 164
+          Top = 46
+          Width = 17
+          Height = 21
+          Anchors = [akTop, akRight]
+          Associate = edtProgressStep
+          Min = 1
+          Max = 25
+          Position = 1
+          TabOrder = 2
+          OnClick = udProgressStepClick
+        end
+        object edtProgressDelay: TEdit
+          Left = 131
+          Top = 74
+          Width = 33
+          Height = 21
+          Anchors = [akTop, akRight]
+          TabOrder = 3
+          Text = '5'
+        end
+        object udProgressDelay: TUpDown
+          Left = 164
+          Top = 74
+          Width = 16
+          Height = 21
+          Anchors = [akTop, akRight]
+          Associate = edtProgressDelay
+          Min = 5
+          Max = 1000
+          Increment = 5
+          Position = 5
+          TabOrder = 4
+          OnClick = udProgressDelayClick
+        end
+        object ckExactTiming: TCheckBox
+          Left = 40
+          Top = 103
+          Width = 138
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Preserve Exact Timing'
+          TabOrder = 5
+          OnClick = ckExactTimingClick
+        end
+        object ckThreaded: TCheckBox
+          Left = 40
+          Top = 128
+          Width = 138
+          Height = 16
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Use Separate Thread'
+          TabOrder = 6
+          OnClick = ckThreadedClick
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Layout'
+      ImageIndex = 1
+      DesignSize = (
+        212
+        385)
+      object gbBackground: TGroupBox
+        Left = 8
+        Top = 122
+        Width = 196
+        Height = 113
+        Caption = ' Background '
+        TabOrder = 1
+        DesignSize = (
+          196
+          113)
+        object lblBackgroundMode: TLabel
+          Left = 16
+          Top = 24
+          Width = 30
+          Height = 13
+          Caption = 'Mode:'
+          FocusControl = cbBackgroundMode
+        end
+        object cbBackgroundMode: TComboBox
+          Left = 16
+          Top = 40
+          Width = 164
+          Height = 21
+          Style = csDropDownList
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 0
+          OnChange = cbBackgroundModeChange
+          Items.Strings = (
+            'None'
+            'Tile'
+            'Stretch'
+            'Center')
+        end
+        object btnChangeBackground: TButton
+          Left = 16
+          Top = 72
+          Width = 164
+          Height = 25
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Change Background...'
+          TabOrder = 1
+          OnClick = btnChangeBackgroundClick
+        end
+      end
+      object gbImagePlacement: TGroupBox
+        Left = 8
+        Top = 8
+        Width = 196
+        Height = 103
+        Caption = ' Image Placement '
+        TabOrder = 0
+        DesignSize = (
+          196
+          103)
+        object ckCenter: TCheckBox
+          Left = 16
+          Top = 24
+          Width = 164
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Center'
+          TabOrder = 0
+          OnClick = ckCenterClick
+        end
+        object ckProportional: TCheckBox
+          Left = 16
+          Top = 72
+          Width = 164
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Preserve Aspect Ratio'
+          TabOrder = 2
+          OnClick = ckProportionalClick
+        end
+        object ckStretch: TCheckBox
+          Left = 16
+          Top = 48
+          Width = 164
+          Height = 17
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Stretch / Shrink'
+          TabOrder = 1
+          OnClick = ckStretchClick
+        end
+      end
+      object gbFrame: TGroupBox
+        Left = 8
+        Top = 248
+        Width = 196
+        Height = 89
+        Anchors = [akLeft, akTop, akRight]
+        Caption = ' Frame '
+        TabOrder = 2
+        DesignSize = (
+          196
+          89)
+        object lblFrameWidth: TLabel
+          Left = 16
+          Top = 24
+          Width = 32
+          Height = 13
+          Caption = 'Width:'
+        end
+        object edtFrameWidth: TEdit
+          Left = 131
+          Top = 20
+          Width = 33
+          Height = 21
+          Anchors = [akTop, akRight]
+          TabOrder = 0
+          Text = '1'
+          OnChange = edtFrameWidthChange
+        end
+        object udFrameWidth: TUpDown
+          Left = 164
+          Top = 20
+          Width = 16
+          Height = 21
+          Anchors = [akTop, akRight]
+          Associate = edtFrameWidth
+          Max = 10
+          Position = 1
+          TabOrder = 1
+        end
+        object btnChangeFrameColor: TButton
+          Left = 16
+          Top = 48
+          Width = 164
+          Height = 25
+          Anchors = [akLeft, akTop, akRight]
+          Caption = 'Change Color...'
+          TabOrder = 2
+          OnClick = btnChangeFrameColorClick
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Images'
+      ImageIndex = 2
+      DesignSize = (
+        212
+        385)
+      object lblDisplayInterval: TLabel
+        Left = 8
+        Top = 72
+        Width = 79
+        Height = 13
+        Caption = 'Display Interval:'
+      end
+      object lblDisplayIntervalValue: TLabel
+        Left = 129
+        Top = 72
+        Width = 73
+        Height = 13
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        Caption = '[ 1.0 Seconds ]'
+      end
+      object ckOverDraw: TCheckBox
+        Left = 8
+        Top = 44
+        Width = 196
+        Height = 17
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Over Draw Images (same size only)'
+        TabOrder = 1
+        OnClick = ckOverDrawClick
+      end
+      object tbDisplayInterval: TTrackBar
+        Left = 1
+        Top = 86
+        Width = 208
+        Height = 29
+        Anchors = [akLeft, akTop, akRight]
+        LineSize = 500
+        Max = 9500
+        Min = 500
+        PageSize = 500
+        Frequency = 500
+        Position = 1000
+        TabOrder = 2
+        OnChange = tbDisplayIntervalChange
+      end
+      object btnChangePath: TButton
+        Left = 8
+        Top = 8
+        Width = 193
+        Height = 25
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Select Images Folder...'
+        TabOrder = 0
+        OnClick = btnChangePathClick
+      end
+    end
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerTimer
+    Left = 232
+    Top = 8
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    Title = 'Select Background Image'
+    Left = 264
+    Top = 8
+  end
+  object ColorDialog: TColorDialog
+    Left = 304
+    Top = 8
+  end
+end

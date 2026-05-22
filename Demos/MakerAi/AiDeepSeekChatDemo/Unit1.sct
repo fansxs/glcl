@@ -1,0 +1,4 @@
+def Button1Click(Sender): 
+def Button2Click(Sender): 
+def AiDeepSeekChat1ReceiveData(Sender, aMsg, aResponse, aRole, aText): 
+def AiDeepSeekChat1ReceiveDataEnd(Sender, aMsg, aResponse, aRole, aText): 

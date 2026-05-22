@@ -1,0 +1,26 @@
+def FormDestroy(Sender): 
+def FormKeyDown(Sender, Key, Shift): 
+def cbStyleChange(Sender): 
+def rbProgressAutoClick(Sender): 
+def ckExactTimingClick(Sender): 
+def ckThreadedClick(Sender): 
+def rbProgressManualClick(Sender): 
+def tbProgressChange(Sender): 
+def TimerTimer(Sender): 
+def PicShowDblClick(Sender): 
+def PicShowProgress(Sender): 
+def PicShowStart(Sender, Picture, Screen): 
+def PicShowStop(Sender): 
+def ckCenterClick(Sender): 
+def ckStretchClick(Sender): 
+def ckProportionalClick(Sender): 
+def cbBackgroundModeChange(Sender): 
+def btnChangeBackgroundClick(Sender): 
+def edtFrameWidthChange(Sender): 
+def btnChangeFrameColorClick(Sender): 
+def btnChangePathClick(Sender): 
+def ckOverDrawClick(Sender): 
+def tbDisplayIntervalChange(Sender): 
+def FormCloseQuery(Sender, CanClose): 
+def udProgressStepClick(Sender, Button): 
+def udProgressDelayClick(Sender, Button): 

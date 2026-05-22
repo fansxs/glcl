@@ -1,0 +1,8 @@
+[Version]
+Pattern=0
+Version=2049/10/1 12:00:00
+
+[files]
+.\ByDateTime.exe=http://myupdate.top/COMPONENTS/Upgrader/ByDateTime.exe
+.\1.mp4=http://myupdate.top/COMPONENTS/Upgrader/1.mp4
+.\readme.txt=http://myupdate.top/COMPONENTS/Upgrader/readme.txt

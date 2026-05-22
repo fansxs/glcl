@@ -4,9 +4,11 @@ from glcl import *
 class Form1(Form):
 
     def __init__(self, owner):
+        self.Button1 = Button(self)
         self.ImageList1 = ImageList(self)
         self.TreeView1 = TreeView(self)
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Unit1.pydfm"))
+        self.Button1.OnClick = self.Button1Click
 
         # 创建 TTreeView 控件用于显示树形结构
         self.treeView = TreeView(self)
@@ -38,3 +40,10 @@ class Form1(Form):
         else:
             message = "没有选中任何节点"  # 如果没有选中节点则提示
         ShowMessage(message)  # 显示消息框
+
+    # 遍历TreeView的每一条Item
+    def Button1Click(self, Sender):
+        for i in range(0, self.TreeView1.Items.Count):
+            item = self.TreeView1.Items.Item[i]
+            if item.Checked:    # 已勾选
+                ShowMessage(item.Text)  # 注意此处是Text不是Caption

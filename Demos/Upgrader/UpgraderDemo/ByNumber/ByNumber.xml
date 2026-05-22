@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptproject language="Python">
+	<pythonproject path="ByNumber.py"/>
+	<scriptform path="Main.sct" formname="frmMain"/>
+</scriptproject>

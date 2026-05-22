@@ -1,0 +1,313 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'EduStringGrid '#28436#31034
+  ClientHeight = 562
+  ClientWidth = 872
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  WindowState = wsMaximized
+  TextHeight = 13
+  object SuperGrid1: TEduStringGrid
+    Left = 0
+    Top = 143
+    Width = 872
+    Height = 419
+    Align = alClient
+    Ctl3D = False
+    FixedRows = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected]
+    ParentCtl3D = False
+    TabOrder = 0
+    BevelStyle = cbNone
+    BlockName = 'test'
+    AlignmentVert = taMiddle
+    AlignmentHorz = taCenter
+    ClickSorting = True
+    ClickDown = False
+    ProportionalScrollBars = False
+    ExtendedKeys = True
+    MultiLines = True
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 872
+    Height = 143
+    Align = alTop
+    BevelOuter = bvNone
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 292
+      Top = 38
+      Width = 60
+      Height = 13
+      AutoSize = False
+      Caption = #20998#21106#31526#21495#65306
+    end
+    object Button1: TButton
+      Left = 125
+      Top = 7
+      Width = 64
+      Height = 25
+      Caption = #28165#38500#34701#21512
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 81
+      Top = 7
+      Width = 43
+      Height = 25
+      Caption = #34701#21512'2'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 6
+      Top = 7
+      Width = 71
+      Height = 25
+      Caption = #22635#20805#25968#25454'1'
+      TabOrder = 2
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 292
+      Top = 7
+      Width = 105
+      Height = 25
+      Caption = #33258#21160#23485#24230#25152#26377#21015
+      TabOrder = 3
+      OnClick = Button4Click
+    end
+    object Button6: TButton
+      Left = 403
+      Top = 7
+      Width = 84
+      Height = 25
+      Caption = 'printpreview'
+      TabOrder = 4
+      OnClick = Button6Click
+    end
+    object Button7: TButton
+      Left = 494
+      Top = 7
+      Width = 72
+      Height = 25
+      Caption = 'PrintSetup'
+      TabOrder = 5
+      OnClick = Button7Click
+    end
+    object Button8: TButton
+      Left = 572
+      Top = 7
+      Width = 49
+      Height = 25
+      Caption = 'print'
+      TabOrder = 6
+      OnClick = Button8Click
+    end
+    object Button12: TButton
+      Left = 7
+      Top = 33
+      Width = 199
+      Height = 25
+      Caption = #23548#20986#20026#20854#20182#25991#20214'('#27604#22914'HTML,DOC,TXT)'
+      TabOrder = 7
+      OnClick = Button12Click
+    end
+    object AColEdit: TEdit
+      Left = 7
+      Top = 67
+      Width = 24
+      Height = 20
+      TabOrder = 8
+      Text = '4'
+    end
+    object BColEdit: TEdit
+      Left = 33
+      Top = 67
+      Width = 24
+      Height = 20
+      TabOrder = 9
+      Text = '6'
+    end
+    object Button13: TButton
+      Left = 165
+      Top = 65
+      Width = 49
+      Height = 25
+      Caption = #21015#31227#21160
+      TabOrder = 10
+      OnClick = Button13Click
+    end
+    object Button14: TButton
+      Left = 59
+      Top = 65
+      Width = 54
+      Height = 25
+      Caption = #21015#20132#25442
+      TabOrder = 11
+      OnClick = Button14Click
+    end
+    object Button15: TButton
+      Left = 282
+      Top = 65
+      Width = 49
+      Height = 25
+      Caption = #21024#38500#34892
+      TabOrder = 12
+      OnClick = Button15Click
+    end
+    object Button16: TButton
+      Left = 420
+      Top = 65
+      Width = 53
+      Height = 25
+      Caption = #21024#38500#21015
+      TabOrder = 13
+      OnClick = Button16Click
+    end
+    object DeleteRowEdit: TEdit
+      Left = 380
+      Top = 67
+      Width = 24
+      Height = 20
+      TabOrder = 14
+      Text = '10'
+    end
+    object DeleteColEdit: TEdit
+      Left = 521
+      Top = 67
+      Width = 20
+      Height = 20
+      TabOrder = 15
+      Text = '8'
+    end
+    object Button17: TButton
+      Left = 112
+      Top = 65
+      Width = 51
+      Height = 25
+      Caption = #34892#20132#25442
+      TabOrder = 16
+      OnClick = Button17Click
+    end
+    object Button18: TButton
+      Left = 213
+      Top = 65
+      Width = 49
+      Height = 25
+      Caption = #34892#31227#21160
+      TabOrder = 17
+      OnClick = Button18Click
+    end
+    object Button19: TButton
+      Left = 330
+      Top = 65
+      Width = 48
+      Height = 25
+      Caption = #25554#20837#34892
+      TabOrder = 18
+      OnClick = Button19Click
+    end
+    object Button20: TButton
+      Left = 472
+      Top = 65
+      Width = 47
+      Height = 25
+      Caption = #25554#20837#21015
+      TabOrder = 19
+      OnClick = Button20Click
+    end
+    object Button21: TButton
+      Left = 559
+      Top = 65
+      Width = 62
+      Height = 25
+      Caption = #28165#38500#25968#25454
+      TabOrder = 20
+      OnClick = Button21Click
+    end
+    object GDCheckBox: TCheckBox
+      Left = 623
+      Top = 69
+      Width = 97
+      Height = 17
+      Caption = #28165#38500#22266#23450#34892
+      TabOrder = 21
+    end
+    object Button22: TButton
+      Left = 7
+      Top = 94
+      Width = 83
+      Height = 25
+      Caption = #35774#32622#26174#31034#21015
+      TabOrder = 22
+      OnClick = Button22Click
+    end
+    object Button23: TButton
+      Left = 95
+      Top = 94
+      Width = 71
+      Height = 25
+      Caption = #31934#30830#26597#25214
+      TabOrder = 23
+      OnClick = Button23Click
+    end
+    object Button25: TButton
+      Left = 208
+      Top = 33
+      Width = 75
+      Height = 25
+      Caption = #20174#25991#20214#35013#20837
+      TabOrder = 24
+      OnClick = Button25Click
+    end
+    object FGEdit: TEdit
+      Left = 351
+      Top = 38
+      Width = 15
+      Height = 20
+      TabOrder = 25
+      Text = ';'
+    end
+    object Button26: TButton
+      Left = 192
+      Top = 7
+      Width = 91
+      Height = 25
+      Caption = #21333#21015#33258#21160#23485#24230
+      TabOrder = 26
+      OnClick = Button26Click
+    end
+    object Button27: TButton
+      Left = 171
+      Top = 94
+      Width = 123
+      Height = 25
+      Caption = #22823#25968#25454#27979#35797'(50001'#26465')'
+      TabOrder = 27
+      OnClick = Button27Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 448
+    Top = 232
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 480
+    Top = 232
+  end
+end

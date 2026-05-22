@@ -30,7 +30,7 @@ class Form2(Form):
 
         # 打开文件的事件处理函数
     def open_file(self, Sender):
-        ShowMessage('Open menu item clicked')
+        print('Open menu item clicked')
         ShowMessage('代码方式创建菜单')
 
     # 退出应用的事件处理函数

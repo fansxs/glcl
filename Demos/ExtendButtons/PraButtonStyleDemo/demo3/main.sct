@@ -1,0 +1,6 @@
+def ComboBox1Click(Sender): 
+def ComboBox2Click(Sender): 
+def ComboBox1Select(Sender): 
+def ComboBox2Select(Sender): 
+def CheckBox2Click(Sender): 
+def CheckBox1Click(Sender): 

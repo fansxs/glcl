@@ -4,8 +4,10 @@ from glcl import *
 class Form1(Form):
 
     def __init__(self, owner):
+        self.Button1 = Button(self)
         self.ListView1 = ListView(self)
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Unit1.pydfm"))
+        self.Button1.OnClick = self.Button1Click
 
         # 创建 TListView 控件用于显示列表
         self.listView = ListView(self)
@@ -38,3 +40,10 @@ class Form1(Form):
         else:
             message = "没有选中任何项"  # 如果没有选中项则提示
         ShowMessage(message)  # 显示消息框
+
+    # 遍历ListView的每一条Item
+    def Button1Click(self, Sender):
+        for i in range(0, self.ListView1.Items.Count):
+            item = self.ListView1.Items.Item[i]
+            if item.Checked:    # 已勾选
+                ShowMessage(item.Caption)

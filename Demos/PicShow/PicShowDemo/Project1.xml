@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptproject language="Python">
+	<pythonproject path="Project1.py"/>
+	<scriptform path="Main.sct" formname="MainForm"/>
+	<scriptform path="Splash.sct" formname="SplashForm"/>
+</scriptproject>

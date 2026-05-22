@@ -1,0 +1,55 @@
+def FormShow(Sender): 
+def EditorChange(Sender): 
+def FileNewCmdExecute(Sender): 
+def FileOpenCmdExecute(Sender): 
+def FileSaveCmdExecute(Sender): 
+def FilePrintCmdExecute(Sender): 
+def FileExitCmdExecute(Sender): 
+def FileSaveAsCmdExecute(Sender): 
+def EditUndoCmdExecute(Sender): 
+def EditCutCmdExecute(Sender): 
+def EditCopyCmdExecute(Sender): 
+def EditPasteCmdExecute(Sender): 
+def EditFontCmdExecute(Sender): 
+def FormatRichEditBoldCmdExecute(Sender): 
+def FormatRichEditItalicCmdExecute(Sender): 
+def FormatRichEditUnderlineCmdExecute(Sender): 
+def FormatRichEditStrikeOutCmdExecute(Sender): 
+def FormatRichEditBulletsCmdExecute(Sender): 
+def FormatRichEditAlignLeftCmdExecute(Sender): 
+def FormatRichEditAlignRightCmdExecute(Sender): 
+def FormatRichEditAlignCenterCmdExecute(Sender): 
+def SuperscriptCmdExecute(Sender): 
+def SubscriptCmdExecute(Sender): 
+def miEditFontClick(Sender): 
+def RichEditTransparentItemClick(Sender): 
+def RichEditWordWrapItemClick(Sender): 
+def HelpAboutItemClick(Sender): 
+def FirstIndMouseDown(Sender, Button, Shift, X, Y): 
+def FirstIndMouseMove(Sender, Shift, X, Y): 
+def FirstIndMouseUp(Sender, Button, Shift, X, Y): 
+def LeftIndMouseDown(Sender, Button, Shift, X, Y): 
+def LeftIndMouseMove(Sender, Shift, X, Y): 
+def LeftIndMouseUp(Sender, Button, Shift, X, Y): 
+RulerItemMouseDown
+def RulerItemMouseDown(Sender, Button, Shift, X, Y): 
+RulerItemMouseMove
+def RulerItemMouseMove(Sender, Shift, X, Y): 
+def RightIndMouseUp(Sender, Button, Shift, X, Y): 
+def FontNameChange(Sender): 
+def FormCloseQuery(Sender, CanClose): 
+def EditorClick(Sender): 
+def EditorLinkClick(Sender, URL, Button): 
+def FormatRichEditBoldCmdUpdate(Sender): 
+def FormatRichEditItalicCmdUpdate(Sender): 
+def FormatRichEditUnderlineCmdUpdate(Sender): 
+def FormatRichEditStrikeOutCmdUpdate(Sender): 
+def FormatRichEditBulletsCmdUpdate(Sender): 
+def FormatRichEditAlignLeftCmdUpdate(Sender): 
+def FormatRichEditAlignRightCmdUpdate(Sender): 
+def FormatRichEditAlignCenterCmdUpdate(Sender): 
+def SuperscriptCmdUpdate(Sender): 
+def SubscriptCmdUpdate(Sender): 
+def FGColorBoxChange(Sender): 
+def BGColorBoxChange(Sender): 
+def FontSizeChange(Sender): 

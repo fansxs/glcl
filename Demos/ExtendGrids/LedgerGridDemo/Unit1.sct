@@ -1,0 +1,2 @@
+def LedgerGrid1GetEditText(Sender, ACol, ARow, Value): 
+def LedgerGrid1SelectCell(Sender, ACol, ARow, CanSelect): 

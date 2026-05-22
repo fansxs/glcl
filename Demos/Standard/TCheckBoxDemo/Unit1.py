@@ -26,13 +26,13 @@ class Form1(Form):
     # 事件处理程序方法
     def check_box_click(self, Sender):
         if self.check_box.Checked:
-            ShowMessage("复选框已选中")
+            print("复选框已选中")
         else:
-            ShowMessage("复选框未选中")
+            print("复选框未选中")
 
 
     def CheckBox1Click(self, Sender):
         if self.CheckBox1.Checked:
-            ShowMessage("复选框已选中")
+            print("复选框已选中")
         else:
-            ShowMessage("复选框未选中")
+            print("复选框未选中")

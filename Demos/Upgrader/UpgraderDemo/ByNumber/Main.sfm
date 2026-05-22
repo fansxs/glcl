@@ -1,0 +1,90 @@
+object frmMain: TForm
+  Left = 0
+  Top = 0
+  Caption = 'version=1'
+  ClientHeight = 341
+  ClientWidth = 451
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  TextHeight = 12
+  object Label1: TLabel
+    Left = 120
+    Top = 96
+    Width = 48
+    Height = 12
+    Caption = #19979#36733#20449#24687
+  end
+  object ProgressBar1: TProgressBar
+    Left = 24
+    Top = 24
+    Width = 409
+    Height = 17
+    TabOrder = 0
+  end
+  object ProgressBar2: TProgressBar
+    Left = 24
+    Top = 64
+    Width = 409
+    Height = 17
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 24
+    Top = 160
+    Width = 409
+    Height = 169
+    ScrollBars = ssBoth
+    TabOrder = 2
+  end
+  object btnStart: TButton
+    Left = 119
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = #21551#21160
+    TabOrder = 3
+    OnClick = btnStartClick
+  end
+  object btnPause: TButton
+    Left = 200
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = #26242#20572
+    TabOrder = 4
+    OnClick = btnPauseClick
+  end
+  object btnResume: TButton
+    Left = 280
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = #32487#32493
+    TabOrder = 5
+    OnClick = btnResumeClick
+  end
+  object btnStop: TButton
+    Left = 360
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = #20572#27490
+    TabOrder = 6
+    OnClick = btnStopClick
+  end
+  object Upgrader1: TUpgrader
+    UpdateInfoURL = 'http://myupdate.top/COMPONENTS/Upgrader/update1.inf'
+    VersionPattern = vpByNumber
+    VersionAsDateTime = 45909.83333333335000000
+    VersionAsNumber = 1
+    OnProgress = Upgrader1Progress
+    OnFileBegin = Upgrader1FileBegin
+    OnFileEnd = Upgrader1FileEnd
+    Left = 24
+    Top = 88
+  end
+end

@@ -1,0 +1,12 @@
+def NiceGrid1DrawHeader(Sender, ACanvas, Rc, Str, Handled): 
+def NiceGrid1InsertRow(Sender, ARow): 
+def CheckBox1Click(Sender): 
+def CheckBox2Click(Sender): 
+def CheckBox3Click(Sender): 
+def CheckBox5Click(Sender): 
+def CheckBox4Click(Sender): 
+def CheckBox6Click(Sender): 
+def Button2Click(Sender): 
+def Button3Click(Sender): 
+def Button1Click(Sender): 
+def Button4Click(Sender): 

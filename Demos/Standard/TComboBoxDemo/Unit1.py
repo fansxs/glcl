@@ -22,7 +22,7 @@ class Form1(Form):
         combo_box.Items.Add("Option 3")  # 添加第三个选项
 
     def combo_boxSelect(self, Sender):
-        ShowMessage('select')
+        print('select')
 
     def ComboBox1Change(self, Sender):
-        ShowMessage('change')
+        print('change')

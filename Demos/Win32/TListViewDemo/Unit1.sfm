@@ -16,6 +16,7 @@ object Form1: TForm
     Top = 288
     Width = 481
     Height = 201
+    Checkboxes = True
     Columns = <
       item
         Caption = #22995#21517
@@ -38,5 +39,14 @@ object Form1: TForm
       0000000000000002310037000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF}
     TabOrder = 0
     ViewStyle = vsReport
+  end
+  object Button1: TButton
+    Left = 374
+    Top = 256
+    Width = 115
+    Height = 25
+    Caption = #33719#21462#21246#36873#36873#39033
+    TabOrder = 1
+    OnClick = Button1Click
   end
 end

@@ -1,0 +1,8 @@
+[Version]
+Pattern=1
+Version=2
+
+[files]
+.\ByNumber.exe=http://myupdate.top/COMPONENTS/Upgrader/ByNumber.exe
+.\1.mp4=http://myupdate.top/COMPONENTS/Upgrader/1.mp4
+.\readme.txt=http://myupdate.top/COMPONENTS/Upgrader/readme.txt

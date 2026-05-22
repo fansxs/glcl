@@ -28,13 +28,14 @@ class Form1(Form):
         self.button.Top = 200  # 设置按钮上边距
         self.button.OnClick = self.on_button_click  # 绑定按钮点击事件
 
-    def on_button_click(self, Sender):
+    def on_button_click(self, sender):
         # 处理按钮点击事件
         selected_option = self.radio_group.ItemIndex  # 获取选中的选项索引
         if selected_option != -1:  # 检查是否有选项被选中
             ShowMessage(f'Selected: {self.radio_group.Items[selected_option]}')  # 显示选中的选项
         else:
             ShowMessage('No option selected')  # 显示未选择任何选项的消息
+
 
     def Button1Click(self, Sender):
         # 处理按钮点击事件

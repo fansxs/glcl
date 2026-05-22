@@ -393,6 +393,11 @@ begin
   APyDelphiWrapper.DefineVar('bsBDiagonal', 'bsBDiagonal');
   APyDelphiWrapper.DefineVar('bsCross', 'bsCross');
   APyDelphiWrapper.DefineVar('bsDiagCross', 'bsDiagCross');
+
+  APyDelphiWrapper.DefineVar('fsBold', 'fsBold');
+  APyDelphiWrapper.DefineVar('fsItalic', 'fsItalic');
+  APyDelphiWrapper.DefineVar('fsUnderline', 'fsUnderline');
+  APyDelphiWrapper.DefineVar('fsStrikeOut', 'fsStrikeOut');
 end;
 
 function TGraphicsRegistration.Name: string;

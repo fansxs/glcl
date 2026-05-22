@@ -18,11 +18,12 @@ class Form1(Form):
         self.scroll_bar.Left = 40  # 左边距
         self.scroll_bar.Top = 80  # 上边距
         self.scroll_bar.Width = 400  # 宽度
+        self.scroll_bar.Position = 0  # 滑块位置
 
         # 绑定滚动条的OnChange事件
         self.scroll_bar.OnChange = self.on_scroll_change
 
-    def on_scroll_change(self, Sender):
+    def on_scroll_change(self, sender):
         # 当滚动条值变化时更新标签内容
         self.Label1.Caption = f'Scroll Value: {self.scroll_bar.Position}'
 

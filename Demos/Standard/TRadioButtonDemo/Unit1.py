@@ -51,18 +51,18 @@ class Form1(Form):
     # 事件处理程序方法
     def radio_button_click(self, Sender):
         if Sender == self.radio_button1:
-            ShowMessage("选择了选项 1")
+            print("选择了选项 1")
         elif Sender == self.radio_button2:
-            ShowMessage("选择了选项 2")
+            print("选择了选项 2")
         elif Sender == self.radio_button3:
-            ShowMessage("选择了选项 3")
+            print("选择了选项 3")
         elif Sender == self.RadioButton1:
-            ShowMessage('手动指定的Apple')
+            print('手动指定的Apple')
         elif Sender == self.RadioButton2:
-            ShowMessage('手动指定的Orange')
+            print('手动指定的Orange')
 
     def RadioButton1Click(self, Sender):
-        ShowMessage('自动生成的Apple')
+        print('自动生成的Apple')
 
     def RadioButton2Click(self, Sender):
-        ShowMessage('自动生成的Orange')
+        print('自动生成的Orange')

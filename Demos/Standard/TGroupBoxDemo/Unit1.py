@@ -33,12 +33,13 @@ class Form1(Form):
         self.button.Top = 60  # 设置按钮上边距
         self.button.OnClick = self.on_button_click  # 绑定按钮点击事件
 
-    def on_button_click(self, Sender):
+    def on_button_click(self, sender):
         # 处理按钮点击事件
         if self.check_box.Checked:
             ShowMessage('Feature Enabled')  # 显示消息框
         else:
             ShowMessage('Feature Disabled')  # 显示消息框
+
 
     def Button1Click(self, Sender):
         self.Label1.Caption = 'TGroupBox'

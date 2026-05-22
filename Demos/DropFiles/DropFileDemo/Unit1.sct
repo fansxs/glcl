@@ -1,0 +1,17 @@
+def chkFormEnableFilterClick(Sender): 
+def dfFormFileFilter(Sender, FileName, IsFolder, Accept): 
+def chkPanelPassThruClick(Sender): 
+def chkPanelEnabledClick(Sender): 
+def chkRTFPassThruClick(Sender): 
+def chkRTFEnabledClick(Sender): 
+def chkShapePassThruClick(Sender): 
+def chkShapeEnabledClick(Sender): 
+def chkFormEnabledClick(Sender): 
+def dfFormDropFiles(Sender): 
+def edExtensionsChange(Sender): 
+def edWildcardChange(Sender): 
+def chkPanelEnableFilterClick(Sender): 
+def chkRTFEnableFilterClick(Sender): 
+def dfPanelDropFiles(Sender): 
+def dfRTFDropFiles(Sender): 
+def dfShapeDropFiles(Sender): 

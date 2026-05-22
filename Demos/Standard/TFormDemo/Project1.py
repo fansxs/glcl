@@ -1,4 +1,4 @@
-﻿# 从 glcl 模块导入所有内容。
+﻿# 从 glcl 模块导入所有内容。这个模块通常包含与 Delphi VCL 组件相关的功能。
 from glcl import *
 
 # 从 Unit1 模块导入所有内容。Unit1 通常包含定义了窗体的类，比如 Form1。

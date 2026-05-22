@@ -32,4 +32,4 @@ class Form1(Form):
 
     def ListBox1Click(self, Sender):
         text = self.ListBox1.Items[self.ListBox1.ItemIndex]
-        ShowMessage(text)
+        print(text)

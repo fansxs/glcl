@@ -1,0 +1,77 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'TAiOllamaChatDemo'
+  ClientHeight = 450
+  ClientWidth = 645
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object MemoChat: TMemo
+    Left = 16
+    Top = 8
+    Width = 617
+    Height = 201
+    TabOrder = 0
+  end
+  object MemoPrompt: TMemo
+    Left = 16
+    Top = 224
+    Width = 617
+    Height = 185
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 483
+    Top = 416
+    Width = 150
+    Height = 25
+    Caption = #31532#19968#31181#26041#24335
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 328
+    Top = 416
+    Width = 150
+    Height = 25
+    Caption = #31532#20108#31181#26041#24335
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object OllamaChat: TAiOllamaChat
+    ApiKey = '@OLLAMA_API_KEY'
+    Model = 'qwen2:7b'
+    Logprobs = False
+    Max_tokens = 300
+    N = 1
+    Response_format = tiaChatRfText
+    Seed = 0
+    Asynchronous = True
+    Temperature = 1.00000000000000000
+    Top_p = 1.00000000000000000
+    Tool_choice = 'auto'
+    Tool_Active = False
+    User = 'user'
+    InitialInstructions.Strings = (
+      'Eres un asistente muy '#40407'il y servicial')
+    Prompt_tokens = 0
+    Completion_tokens = 0
+    Total_tokens = 0
+    OnReceiveData = OllamaChatReceiveData
+    OnReceiveDataEnd = OllamaChatReceiveDataEnd
+    Url = 'http://192.168.1.33:11434/'
+    ResponseTimeOut = 350000
+    Stream_Usage = False
+    NativeInputFiles = []
+    NativeOutputFiles = []
+    ChatMediaSupports = []
+    keep_alive = '1m'
+    Left = 288
+    Top = 413
+  end
+end

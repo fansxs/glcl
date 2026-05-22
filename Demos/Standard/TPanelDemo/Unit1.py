@@ -26,9 +26,10 @@ class Form1(Form):
         self.button.Top = 20  # 设置按钮上边距
         self.button.OnClick = self.on_button_click  # 绑定按钮点击事件
 
-    def on_button_click(self, Sender):
+    def on_button_click(self, sender):
         # 处理按钮点击事件
         ShowMessage('Hello from TPanel!')  # 在面板上显示消息
+
 
     def Button1Click(self, Sender):
         ShowMessage(self.Panel1.Caption)

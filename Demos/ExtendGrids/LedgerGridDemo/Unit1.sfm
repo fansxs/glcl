@@ -1,0 +1,46 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'LedgerGrid'
+  ClientHeight = 186
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object LedgerGrid1: TLedgerGrid
+    Left = 8
+    Top = 8
+    Width = 606
+    Height = 170
+    DefaultRowHeight = 20
+    DrawingStyle = gdsClassic
+    FixedCols = 0
+    RowCount = 7
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs, goFixedRowDefAlign]
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnGetEditText = LedgerGrid1GetEditText
+    OnSelectCell = LedgerGrid1SelectCell
+    DigitalNumber = 8
+    AutoSize = False
+    Version = '1.0'
+    ColWidths = (
+      180
+      120
+      120
+      90
+      90)
+    RowHeights = (
+      40
+      20
+      20
+      20
+      20
+      20
+      20)
+  end
+end

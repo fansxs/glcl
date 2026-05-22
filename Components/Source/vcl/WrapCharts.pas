@@ -20,7 +20,7 @@ interface
 
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses,
-  WrapVclExtCtrls, NiceChart;
+  WrapVclExtCtrls, NiceChart, StockChart, WrapVclControls;
 
 type
   TPyDelphiNiceChart = class(TPyDelphiCustomPanel)
@@ -31,6 +31,17 @@ type
     class function DelphiObjectClass: TClass; override;
     // Properties
     property DelphiObject: TNiceChart read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiStockChart = class(TPyDelphiCustomControl)
+  private
+    function GetDelphiObject: TStockChart;
+    procedure SetDelphiObject(const Value: TStockChart);
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TStockChart read GetDelphiObject
       write SetDelphiObject;
   end;
 
@@ -62,6 +73,12 @@ begin
   APyDelphiWrapper.DefineVar('skLine', 'skLine');
   APyDelphiWrapper.DefineVar('skSmooth', 'skSmooth');
   APyDelphiWrapper.DefineVar('skBar', 'skBar');
+  APyDelphiWrapper.DefineVar('psCeil', 'psCeil');
+  APyDelphiWrapper.DefineVar('psUp', 'psUp');
+  APyDelphiWrapper.DefineVar('psEven', 'psEven');
+  APyDelphiWrapper.DefineVar('psDown', 'psDown');
+  APyDelphiWrapper.DefineVar('psFloor', 'psFloor');
+  APyDelphiWrapper.DefineVar('psNonTrade', 'psNonTrade');
 end;
 
 function TChartsRegistration.Name: string;
@@ -74,6 +91,7 @@ procedure TChartsRegistration.RegisterWrappers(APyDelphiWrapper
 begin
   inherited;
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiNiceChart);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiStockChart);
 end;
 
 { TPyDelphiNiceChart }
@@ -89,6 +107,23 @@ begin
 end;
 
 procedure TPyDelphiNiceChart.SetDelphiObject(const Value: TNiceChart);
+begin
+  inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiStockChart }
+
+class function TPyDelphiStockChart.DelphiObjectClass: TClass;
+begin
+  Result := TStockChart;
+end;
+
+function TPyDelphiStockChart.GetDelphiObject: TStockChart;
+begin
+  Result := TStockChart(inherited DelphiObject);
+end;
+
+procedure TPyDelphiStockChart.SetDelphiObject(const Value: TStockChart);
 begin
   inherited DelphiObject := Value;
 end;

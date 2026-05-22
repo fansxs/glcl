@@ -1,0 +1,8 @@
+def btnStartClick(Sender): 
+def btnPauseClick(Sender): 
+def btnResumeClick(Sender): 
+def btnStopClick(Sender): 
+def Upgrader1FileBegin(url, localfile, Size): 
+def Upgrader1Progress(ProgressEx, ulStatusCode, szStatusText): 
+def Upgrader1Progress2(SingleProgress, MultiProgress, RemnantTime, Speed, ulStatusCode, szStatusText): 
+def Upgrader1FileEnd(url, localfile, Size): 

@@ -1,0 +1,78 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'Form1'
+  ClientHeight = 524
+  ClientWidth = 863
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poScreenCenter
+  DesignSize = (
+    863
+    524)
+  TextHeight = 13
+  object YSizer1: TYSizer
+    Left = 839
+    Top = 499
+    Height = 17
+    Cursor = crSizeAll
+    Color = clTeal
+    Anchors = [akRight, akBottom]
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 863
+    Height = 33
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clDarkblue
+    ParentBackground = False
+    TabOrder = 0
+    OnDblClick = Panel1DblClick
+    OnMouseDown = Panel1MouseDown
+    object Button1: TButton
+      Left = 706
+      Top = 1
+      Width = 75
+      Height = 25
+      Align = alCustom
+      Anchors = [akTop, akRight]
+      Caption = 'Maximized'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 781
+      Top = 1
+      Width = 75
+      Height = 25
+      Align = alCustom
+      Anchors = [akTop, akRight]
+      Caption = 'Close'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 631
+      Top = 1
+      Width = 75
+      Height = 25
+      Align = alCustom
+      Anchors = [akTop, akRight]
+      Caption = 'Minimized'
+      TabOrder = 2
+      OnClick = Button3Click
+    end
+  end
+  object NoBorderForm1: TNoBorderForm
+    EnabledShadow = False
+    Left = 800
+    Top = 472
+  end
+end

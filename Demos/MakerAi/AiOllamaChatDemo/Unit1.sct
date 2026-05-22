@@ -1,0 +1,6 @@
+def FormClose(Sender, Action): 
+def OllamaChatReceiveData(Sender, aMsg, aResponse, aRole, aText): 
+def OllamaChatReceiveDataEnd(Sender, aMsg, aResponse, aRole, aText): 
+def Button1Click(Sender): 
+def FormShow(Sender): 
+def Button2Click(Sender): 

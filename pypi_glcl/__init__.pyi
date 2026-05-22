@@ -2062,6 +2062,522 @@ tsInsert: int
 tsBack: int
 tsClose: int
 tsReport: int
+ERROR_SUCCESS: int
+ERROR_INVALID_FUNCTION: int
+ERROR_FILE_NOT_FOUND: int
+ERROR_PATH_NOT_FOUND: int
+ERROR_TOO_MANY_OPEN_FILES: int
+ERROR_ACCESS_DENIED: int
+ERROR_INVALID_HANDLE: int
+ERROR_ARENA_TRASHED: int
+ERROR_NOT_ENOUGH_MEMORY: int
+ERROR_INVALID_BLOCK: int
+ERROR_BAD_ENVIRONMENT: int
+ERROR_BAD_FORMAT: int
+ERROR_INVALID_ACCESS: int
+ERROR_INVALID_DATA: int
+ERROR_OUTOFMEMORY: int
+ERROR_INVALID_DRIVE: int
+ERROR_CURRENT_DIRECTORY: int
+ERROR_NOT_SAME_DEVICE: int
+ERROR_NO_MORE_FILES: int
+ERROR_WRITE_PROTECT: int
+ERROR_BAD_UNIT: int
+ERROR_NOT_READY: int
+ERROR_BAD_COMMAND: int
+ERROR_CRC: int
+ERROR_BAD_LENGTH: int
+ERROR_SEEK: int
+ERROR_NOT_DOS_DISK: int
+ERROR_SECTOR_NOT_FOUND: int
+ERROR_OUT_OF_PAPER: int
+ERROR_WRITE_FAULT: int
+ERROR_READ_FAULT: int
+ERROR_GEN_FAILURE: int
+ERROR_SHARING_VIOLATION: int
+ERROR_LOCK_VIOLATION: int
+ERROR_WRONG_DISK: int
+ERROR_SHARING_BUFFER_EXCEEDED: int
+ERROR_HANDLE_EOF: int
+ERROR_HANDLE_DISK_FULL: int
+ERROR_NOT_SUPPORTED: int
+ERROR_REM_NOT_LIST: int
+ERROR_DUP_NAME: int
+ERROR_BAD_NETPATH: int
+ERROR_NETWORK_BUSY: int
+ERROR_DEV_NOT_EXIST: int
+ERROR_TOO_MANY_CMDS: int
+ERROR_ADAP_HDW_ERR: int
+ERROR_BAD_NET_RESP: int
+ERROR_UNEXP_NET_ERR: int
+ERROR_BAD_REM_ADAP: int
+ERROR_PRINTQ_FULL: int
+ERROR_NO_SPOOL_SPACE: int
+ERROR_PRINT_CANCELLED: int
+ERROR_NETNAME_DELETED: int
+ERROR_NETWORK_ACCESS_DENIED: int
+ERROR_BAD_DEV_TYPE: int
+ERROR_BAD_NET_NAME: int
+ERROR_TOO_MANY_NAMES: int
+ERROR_TOO_MANY_SESS: int
+ERROR_SHARING_PAUSED: int
+ERROR_REQ_NOT_ACCEP: int
+ERROR_REDIR_PAUSED: int
+ERROR_FILE_EXISTS: int
+ERROR_CANNOT_MAKE: int
+ERROR_FAIL_I24: int
+ERROR_OUT_OF_STRUCTURES: int
+ERROR_ALREADY_ASSIGNED: int
+ERROR_INVALID_PASSWORD: int
+ERROR_INVALID_PARAMETER: int
+ERROR_NET_WRITE_FAULT: int
+ERROR_NO_PROC_SLOTS: int
+ERROR_TOO_MANY_SEMAPHORES: int
+ERROR_EXCL_SEM_ALREADY_OWNED: int
+ERROR_SEM_IS_SET: int
+ERROR_TOO_MANY_SEM_REQUESTS: int
+ERROR_INVALID_AT_INTERRUPT_TIME: int
+ERROR_SEM_OWNER_DIED: int
+ERROR_SEM_USER_LIMIT: int
+ERROR_DISK_CHANGE: int
+ERROR_DRIVE_LOCKED: int
+ERROR_BROKEN_PIPE: int
+ERROR_OPEN_FAILED: int
+ERROR_BUFFER_OVERFLOW: int
+ERROR_DISK_FULL: int
+ERROR_NO_MORE_SEARCH_HANDLES: int
+ERROR_INVALID_TARGET_HANDLE: int
+ERROR_INVALID_CATEGORY: int
+ERROR_INVALID_VERIFY_SWITCH: int
+ERROR_BAD_DRIVER_LEVEL: int
+ERROR_CALL_NOT_IMPLEMENTED: int
+ERROR_SEM_TIMEOUT: int
+ERROR_INSUFFICIENT_BUFFER: int
+ERROR_INVALID_NAME: int
+ERROR_INVALID_LEVEL: int
+ERROR_NO_VOLUME_LABEL: int
+ERROR_MOD_NOT_FOUND: int
+ERROR_PROC_NOT_FOUND: int
+ERROR_WAIT_NO_CHILDREN: int
+ERROR_CHILD_NOT_COMPLETE: int
+ERROR_DIRECT_ACCESS_HANDLE: int
+ERROR_NEGATIVE_SEEK: int
+ERROR_SEEK_ON_DEVICE: int
+ERROR_IS_JOIN_TARGET: int
+ERROR_IS_JOINED: int
+ERROR_IS_SUBSTED: int
+ERROR_NOT_JOINED: int
+ERROR_NOT_SUBSTED: int
+ERROR_JOIN_TO_JOIN: int
+ERROR_SUBST_TO_SUBST: int
+ERROR_JOIN_TO_SUBST: int
+ERROR_SUBST_TO_JOIN: int
+ERROR_BUSY_DRIVE: int
+ERROR_SAME_DRIVE: int
+ERROR_DIR_NOT_ROOT: int
+ERROR_DIR_NOT_EMPTY: int
+ERROR_IS_SUBST_PATH: int
+ERROR_IS_JOIN_PATH: int
+ERROR_PATH_BUSY: int
+ERROR_IS_SUBST_TARGET: int
+ERROR_SYSTEM_TRACE: int
+ERROR_INVALID_EVENT_COUNT: int
+ERROR_TOO_MANY_MUXWAITERS: int
+ERROR_INVALID_LIST_FORMAT: int
+ERROR_LABEL_TOO_LONG: int
+ERROR_TOO_MANY_TCBS: int
+ERROR_SIGNAL_REFUSED: int
+ERROR_DISCARDED: int
+ERROR_NOT_LOCKED: int
+ERROR_BAD_THREADID_ADDR: int
+ERROR_BAD_ARGUMENTS: int
+ERROR_BAD_PATHNAME: int
+ERROR_SIGNAL_PENDING: int
+ERROR_MAX_THRDS_REACHED: int
+ERROR_LOCK_FAILED: int
+ERROR_BUSY: int
+ERROR_CANCEL_VIOLATION: int
+ERROR_ATOMIC_LOCKS_NOT_SUPPORTED: int
+ERROR_INVALID_SEGMENT_NUMBER: int
+ERROR_INVALID_ORDINAL: int
+ERROR_ALREADY_EXISTS: int
+ERROR_INVALID_FLAG_NUMBER: int
+ERROR_SEM_NOT_FOUND: int
+ERROR_INVALID_STARTING_CODESEG: int
+ERROR_INVALID_STACKSEG: int
+ERROR_INVALID_MODULETYPE: int
+ERROR_INVALID_EXE_SIGNATURE: int
+ERROR_EXE_MARKED_INVALID: int
+ERROR_BAD_EXE_FORMAT: int
+ERROR_ITERATED_DATA_EXCEEDS_64k: int
+ERROR_INVALID_MINALLOCSIZE: int
+ERROR_DYNLINK_FROM_INVALID_RING: int
+ERROR_IOPL_NOT_ENABLED: int
+ERROR_INVALID_SEGDPL: int
+ERROR_AUTODATASEG_EXCEEDS_64k: int
+ERROR_RING2SEG_MUST_BE_MOVABLE: int
+ERROR_RELOC_CHAIN_XEEDS_SEGLIM: int
+ERROR_INFLOOP_IN_RELOC_CHAIN: int
+ERROR_ENVVAR_NOT_FOUND: int
+ERROR_NO_SIGNAL_SENT: int
+ERROR_FILENAME_EXCED_RANGE: int
+ERROR_RING2_STACK_IN_USE: int
+ERROR_META_EXPANSION_TOO_LONG: int
+ERROR_INVALID_SIGNAL_NUMBER: int
+ERROR_THREAD_1_INACTIVE: int
+ERROR_LOCKED: int
+ERROR_TOO_MANY_MODULES: int
+ERROR_NESTING_NOT_ALLOWED: int
+ERROR_EXE_MACHINE_TYPE_MISMATCH: int
+ERROR_BAD_PIPE: int
+ERROR_PIPE_BUSY: int
+ERROR_NO_DATA: int
+ERROR_PIPE_NOT_CONNECTED: int
+ERROR_MORE_DATA: int
+ERROR_VC_DISCONNECTED: int
+ERROR_INVALID_EA_NAME: int
+ERROR_EA_LIST_INCONSISTENT: int
+ERROR_NO_MORE_ITEMS: int
+ERROR_CANNOT_COPY: int
+ERROR_DIRECTORY: int
+ERROR_EAS_DIDNT_FIT: int
+ERROR_EA_FILE_CORRUPT: int
+ERROR_EA_TABLE_FULL: int
+ERROR_INVALID_EA_HANDLE: int
+ERROR_EAS_NOT_SUPPORTED: int
+ERROR_NOT_OWNER: int
+ERROR_TOO_MANY_POSTS: int
+ERROR_PARTIAL_COPY: int
+ERROR_MR_MID_NOT_FOUND: int
+ERROR_INVALID_ADDRESS: int
+ERROR_ARITHMETIC_OVERFLOW: int
+ERROR_PIPE_CONNECTED: int
+ERROR_PIPE_LISTENING: int
+ERROR_EA_ACCESS_DENIED: int
+ERROR_OPERATION_ABORTED: int
+ERROR_IO_INCOMPLETE: int
+ERROR_IO_PENDING: int
+ERROR_NOACCESS: int
+ERROR_SWAPERROR: int
+ERROR_STACK_OVERFLOW: int
+ERROR_INVALID_MESSAGE: int
+ERROR_CAN_NOT_COMPLETE: int
+ERROR_INVALID_FLAGS: int
+ERROR_UNRECOGNIZED_VOLUME: int
+ERROR_FILE_INVALID: int
+ERROR_FULLSCREEN_MODE: int
+ERROR_NO_TOKEN: int
+ERROR_BADDB: int
+ERROR_BADKEY: int
+ERROR_CANTOPEN: int
+ERROR_CANTREAD: int
+ERROR_CANTWRITE: int
+ERROR_REGISTRY_RECOVERED: int
+ERROR_REGISTRY_CORRUPT: int
+ERROR_REGISTRY_IO_FAILED: int
+ERROR_NOT_REGISTRY_FILE: int
+ERROR_KEY_DELETED: int
+ERROR_NO_LOG_SPACE: int
+ERROR_KEY_HAS_CHILDREN: int
+ERROR_CHILD_MUST_BE_VOLATILE: int
+ERROR_NOTIFY_ENUM_DIR: int
+ERROR_DEPENDENT_SERVICES_RUNNING: int
+ERROR_INVALID_SERVICE_CONTROL: int
+ERROR_SERVICE_REQUEST_TIMEOUT: int
+ERROR_SERVICE_NO_THREAD: int
+ERROR_SERVICE_DATABASE_LOCKED: int
+ERROR_SERVICE_ALREADY_RUNNING: int
+ERROR_INVALID_SERVICE_ACCOUNT: int
+ERROR_SERVICE_DISABLED: int
+ERROR_CIRCULAR_DEPENDENCY: int
+ERROR_SERVICE_DOES_NOT_EXIST: int
+ERROR_SERVICE_CANNOT_ACCEPT_CTRL: int
+ERROR_SERVICE_NOT_ACTIVE: int
+ERROR_FAILED_SERVICE_CONTROLLER_: int
+ERROR_EXCEPTION_IN_SERVICE: int
+ERROR_DATABASE_DOES_NOT_EXIST: int
+ERROR_SERVICE_SPECIFIC_ERROR: int
+ERROR_PROCESS_ABORTED: int
+ERROR_SERVICE_DEPENDENCY_FAIL: int
+ERROR_SERVICE_LOGON_FAILED: int
+ERROR_SERVICE_START_HANG: int
+ERROR_INVALID_SERVICE_LOCK: int
+ERROR_SERVICE_MARKED_FOR_DELETE: int
+ERROR_SERVICE_EXISTS: int
+ERROR_ALREADY_RUNNING_LKG: int
+ERROR_SERVICE_DEPENDENCY_DELETED: int
+ERROR_BOOT_ALREADY_ACCEPTED: int
+ERROR_SERVICE_NEVER_STARTED: int
+ERROR_DUPLICATE_SERVICE_NAME: int
+ERROR_DIFFERENT_SERVICE_ACCOUNT: int
+ERROR_END_OF_MEDIA: int
+ERROR_FILEMARK_DETECTED: int
+ERROR_BEGINNING_OF_MEDIA: int
+ERROR_SETMARK_DETECTED: int
+ERROR_NO_DATA_DETECTED: int
+ERROR_PARTITION_FAILURE: int
+ERROR_INVALID_BLOCK_LENGTH: int
+ERROR_DEVICE_NOT_PARTITIONED: int
+ERROR_UNABLE_TO_LOCK_MEDIA: int
+ERROR_UNABLE_TO_UNLOAD_MEDIA: int
+ERROR_MEDIA_CHANGED: int
+ERROR_BUS_RESET: int
+ERROR_NO_MEDIA_IN_DRIVE: int
+ERROR_NO_UNICODE_TRANSLATION: int
+ERROR_DLL_INIT_FAILED: int
+ERROR_SHUTDOWN_IN_PROGRESS: int
+ERROR_NO_SHUTDOWN_IN_PROGRESS: int
+ERROR_IO_DEVICE: int
+ERROR_SERIAL_NO_DEVICE: int
+ERROR_IRQ_BUSY: int
+ERROR_MORE_WRITES: int
+ERROR_COUNTER_TIMEOUT: int
+ERROR_FLOPPY_ID_MARK_NOT_FOUND: int
+ERROR_FLOPPY_WRONG_CYLINDER: int
+ERROR_FLOPPY_UNKNOWN_ERROR: int
+ERROR_FLOPPY_BAD_REGISTERS: int
+ERROR_DISK_RECALIBRATE_FAILED: int
+ERROR_DISK_OPERATION_FAILED: int
+ERROR_DISK_RESET_FAILED: int
+ERROR_EOM_OVERFLOW: int
+ERROR_NOT_ENOUGH_SERVER_MEMORY: int
+ERROR_POSSIBLE_DEADLOCK: int
+ERROR_MAPPED_ALIGNMENT: int
+ERROR_SET_POWER_STATE_VETOED: int
+ERROR_SET_POWER_STATE_FAILED: int
+ERROR_TOO_MANY_LINKS: int
+ERROR_OLD_WIN_VERSION: int
+ERROR_APP_WRONG_OS: int
+ERROR_SINGLE_INSTANCE_APP: int
+ERROR_RMODE_APP: int
+ERROR_INVALID_DLL: int
+ERROR_NO_ASSOCIATION: int
+ERROR_DDE_FAIL: int
+ERROR_DLL_NOT_FOUND: int
+ERROR_BAD_USERNAME: int
+ERROR_NOT_CONNECTED: int
+ERROR_OPEN_FILES: int
+ERROR_ACTIVE_CONNECTIONS: int
+ERROR_DEVICE_IN_USE: int
+ERROR_BAD_DEVICE: int
+ERROR_CONNECTION_UNAVAIL: int
+ERROR_DEVICE_ALREADY_REMEMBERED: int
+ERROR_NO_NET_OR_BAD_PATH: int
+ERROR_BAD_PROVIDER: int
+ERROR_CANNOT_OPEN_PROFILE: int
+ERROR_BAD_PROFILE: int
+ERROR_NOT_CONTAINER: int
+ERROR_EXTENDED_ERROR: int
+ERROR_INVALID_GROUPNAME: int
+ERROR_INVALID_COMPUTERNAME: int
+ERROR_INVALID_EVENTNAME: int
+ERROR_INVALID_DOMAINNAME: int
+ERROR_INVALID_SERVICENAME: int
+ERROR_INVALID_NETNAME: int
+ERROR_INVALID_SHARENAME: int
+ERROR_INVALID_PASSWORDNAME: int
+ERROR_INVALID_MESSAGENAME: int
+ERROR_INVALID_MESSAGEDEST: int
+ERROR_SESSION_CREDENTIAL_CONFLICT: int
+ERROR_REMOTE_SESSION_LIMIT_EXCEEDED: int
+ERROR_DUP_DOMAINNAME: int
+ERROR_NO_NETWORK: int
+ERROR_CANCELLED: int
+ERROR_USER_MAPPED_FILE: int
+ERROR_CONNECTION_REFUSED: int
+ERROR_GRACEFUL_DISCONNECT: int
+ERROR_ADDRESS_ALREADY_ASSOCIATED: int
+ERROR_ADDRESS_NOT_ASSOCIATED: int
+ERROR_CONNECTION_INVALID: int
+ERROR_CONNECTION_ACTIVE: int
+ERROR_NETWORK_UNREACHABLE: int
+ERROR_HOST_UNREACHABLE: int
+ERROR_PROTOCOL_UNREACHABLE: int
+ERROR_PORT_UNREACHABLE: int
+ERROR_REQUEST_ABORTED: int
+ERROR_CONNECTION_ABORTED: int
+ERROR_RETRY: int
+ERROR_CONNECTION_COUNT_LIMIT: int
+ERROR_LOGIN_TIME_RESTRICTION: int
+ERROR_LOGIN_WKSTA_RESTRICTION: int
+ERROR_INCORRECT_ADDRESS: int
+ERROR_ALREADY_REGISTERED: int
+ERROR_SERVICE_NOT_FOUND: int
+ERROR_NOT_AUTHENTICATED: int
+ERROR_NOT_LOGGED_ON: int
+ERROR_CONTINUE: int
+ERROR_ALREADY_INITIALIZED: int
+ERROR_NO_MORE_DEVICES: int
+ERROR_NOT_ALL_ASSIGNED: int
+ERROR_SOME_NOT_MAPPED: int
+ERROR_NO_QUOTAS_FOR_ACCOUNT: int
+ERROR_LOCAL_USER_SESSION_KEY: int
+ERROR_NULL_LM_PASSWORD: int
+ERROR_UNKNOWN_REVISION: int
+ERROR_REVISION_MISMATCH: int
+ERROR_INVALID_OWNER: int
+ERROR_INVALID_PRIMARY_GROUP: int
+ERROR_NO_IMPERSONATION_TOKEN: int
+ERROR_CANT_DISABLE_MANDATORY: int
+ERROR_NO_LOGON_SERVERS: int
+ERROR_NO_SUCH_LOGON_SESSION: int
+ERROR_NO_SUCH_PRIVILEGE: int
+ERROR_PRIVILEGE_NOT_HELD: int
+ERROR_INVALID_ACCOUNT_NAME: int
+ERROR_USER_EXISTS: int
+ERROR_NO_SUCH_USER: int
+ERROR_GROUP_EXISTS: int
+ERROR_NO_SUCH_GROUP: int
+ERROR_MEMBER_IN_GROUP: int
+ERROR_MEMBER_NOT_IN_GROUP: int
+ERROR_LAST_ADMIN: int
+ERROR_WRONG_PASSWORD: int
+ERROR_ILL_FORMED_PASSWORD: int
+ERROR_PASSWORD_RESTRICTION: int
+ERROR_LOGON_FAILURE: int
+ERROR_ACCOUNT_RESTRICTION: int
+ERROR_INVALID_LOGON_HOURS: int
+ERROR_INVALID_WORKSTATION: int
+ERROR_PASSWORD_EXPIRED: int
+ERROR_ACCOUNT_DISABLED: int
+ERROR_NONE_MAPPED: int
+ERROR_TOO_MANY_LUIDS_REQUESTED: int
+ERROR_LUIDS_EXHAUSTED: int
+ERROR_INVALID_SUB_AUTHORITY: int
+ERROR_INVALID_ACL: int
+ERROR_INVALID_SID: int
+ERROR_INVALID_SECURITY_DESCR: int
+ERROR_BAD_INHERITANCE_ACL: int
+ERROR_SERVER_DISABLED: int
+ERROR_SERVER_NOT_DISABLED: int
+ERROR_INVALID_ID_AUTHORITY: int
+ERROR_ALLOTTED_SPACE_EXCEEDED: int
+ERROR_INVALID_GROUP_ATTRIBUTES: int
+ERROR_BAD_IMPERSONATION_LEVEL: int
+ERROR_CANT_OPEN_ANONYMOUS: int
+ERROR_BAD_VALIDATION_CLASS: int
+ERROR_BAD_TOKEN_TYPE: int
+ERROR_NO_SECURITY_ON_OBJECT: int
+ERROR_CANT_ACCESS_DOMAIN_INFO: int
+ERROR_INVALID_SERVER_STATE: int
+ERROR_INVALID_DOMAIN_STATE: int
+ERROR_INVALID_DOMAIN_ROLE: int
+ERROR_NO_SUCH_DOMAIN: int
+ERROR_DOMAIN_EXISTS: int
+ERROR_DOMAIN_LIMIT_EXCEEDED: int
+ERROR_INTERNAL_DB_CORRUPTION: int
+ERROR_INTERNAL_ERROR: int
+ERROR_GENERIC_NOT_MAPPED: int
+ERROR_BAD_DESCRIPTOR_FORMAT: int
+ERROR_NOT_LOGON_PROCESS: int
+ERROR_LOGON_SESSION_EXISTS: int
+ERROR_NO_SUCH_PACKAGE: int
+ERROR_BAD_LOGON_SESSION_STATE: int
+ERROR_LOGON_SESSION_COLLISION: int
+ERROR_INVALID_LOGON_TYPE: int
+ERROR_CANNOT_IMPERSONATE: int
+ERROR_RXACT_INVALID_STATE: int
+ERROR_RXACT_COMMIT_FAILURE: int
+ERROR_SPECIAL_ACCOUNT: int
+ERROR_SPECIAL_GROUP: int
+ERROR_SPECIAL_USER: int
+ERROR_MEMBERS_PRIMARY_GROUP: int
+ERROR_TOKEN_ALREADY_IN_USE: int
+ERROR_NO_SUCH_ALIAS: int
+ERROR_MEMBER_NOT_IN_ALIAS: int
+ERROR_MEMBER_IN_ALIAS: int
+ERROR_ALIAS_EXISTS: int
+ERROR_LOGON_NOT_GRANTED: int
+ERROR_TOO_MANY_SECRETS: int
+ERROR_SECRET_TOO_LONG: int
+ERROR_INTERNAL_DB_ERROR: int
+ERROR_TOO_MANY_CONTEXT_IDS: int
+ERROR_LOGON_TYPE_NOT_GRANTED: int
+ERROR_NT_CROSS_ENCRYPTION_REQUIRED: int
+ERROR_NO_SUCH_MEMBER: int
+ERROR_INVALID_MEMBER: int
+ERROR_TOO_MANY_SIDS: int
+ERROR_LM_CROSS_ENCRYPTION_REQUIRED: int
+ERROR_NO_INHERITANCE: int
+ERROR_FILE_CORRUPT: int
+ERROR_DISK_CORRUPT: int
+ERROR_NO_USER_SESSION_KEY: int
+ERROR_LICENSE_QUOTA_EXCEEDED: int
+ERROR_INVALID_WINDOW_HANDLE: int
+ERROR_INVALID_MENU_HANDLE: int
+ERROR_INVALID_CURSOR_HANDLE: int
+ERROR_INVALID_ACCEL_HANDLE: int
+ERROR_INVALID_HOOK_HANDLE: int
+ERROR_INVALID_DWP_HANDLE: int
+ERROR_TLW_WITH_WSCHILD: int
+ERROR_CANNOT_FIND_WND_CLASS: int
+ERROR_WINDOW_OF_OTHER_THREAD: int
+ERROR_HOTKEY_ALREADY_REGISTERED: int
+ERROR_CLASS_ALREADY_EXISTS: int
+ERROR_CLASS_DOES_NOT_EXIST: int
+ERROR_CLASS_HAS_WINDOWS: int
+ERROR_INVALID_INDEX: int
+ERROR_INVALID_ICON_HANDLE: int
+ERROR_PRIVATE_DIALOG_INDEX: int
+ERROR_LISTBOX_ID_NOT_FOUND: int
+ERROR_NO_WILDCARD_CHARACTERS: int
+ERROR_CLIPBOARD_NOT_OPEN: int
+ERROR_HOTKEY_NOT_REGISTERED: int
+ERROR_WINDOW_NOT_DIALOG: int
+ERROR_CONTROL_ID_NOT_FOUND: int
+ERROR_INVALID_COMBOBOX_MESSAGE: int
+ERROR_WINDOW_NOT_COMBOBOX: int
+ERROR_INVALID_EDIT_HEIGHT: int
+ERROR_DC_NOT_FOUND: int
+ERROR_INVALID_HOOK_FILTER: int
+ERROR_INVALID_FILTER_PROC: int
+ERROR_HOOK_NEEDS_HMOD: int
+ERROR_GLOBAL_ONLY_HOOK: int
+ERROR_JOURNAL_HOOK_SET: int
+ERROR_HOOK_NOT_INSTALLED: int
+ERROR_INVALID_LB_MESSAGE: int
+ERROR_SETCOUNT_ON_BAD_LB: int
+ERROR_LB_WITHOUT_TABSTOPS: int
+ERROR_DESTROY_OBJECT_OF_OTHER_THREAD: int
+ERROR_CHILD_WINDOW_MENU: int
+ERROR_NO_SYSTEM_MENU: int
+ERROR_INVALID_MSGBOX_STYLE: int
+ERROR_INVALID_SPI_VALUE: int
+ERROR_SCREEN_ALREADY_LOCKED: int
+ERROR_HWNDS_HAVE_DIFF_PARENT: int
+ERROR_NOT_CHILD_WINDOW: int
+ERROR_INVALID_GW_COMMAND: int
+ERROR_INVALID_THREAD_ID: int
+ERROR_NON_MDICHILD_WINDOW: int
+ERROR_POPUP_ALREADY_ACTIVE: int
+ERROR_NO_SCROLLBARS: int
+ERROR_INVALID_SCROLLBAR_RANGE: int
+ERROR_INVALID_SHOWWIN_COMMAND: int
+ERROR_NO_SYSTEM_RESOURCES: int
+ERROR_NONPAGED_SYSTEM_RESOURCES: int
+ERROR_PAGED_SYSTEM_RESOURCES: int
+ERROR_WORKING_SET_QUOTA: int
+ERROR_PAGEFILE_QUOTA: int
+ERROR_COMMITMENT_LIMIT: int
+ERROR_MENU_ITEM_NOT_FOUND: int
+ERROR_INVALID_KEYBOARD_HANDLE: int
+ERROR_HOOK_TYPE_NOT_ALLOWED: int
+ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION: int
+ERROR_TIMEOUT: int
+ERROR_EVENTLOG_FILE_CORRUPT: int
+ERROR_EVENTLOG_CANT_START: int
+ERROR_LOG_FILE_FULL: int
+ERROR_EVENTLOG_FILE_CHANGED: int
+psCeil: str
+psUp: str
+psEven: str
+psDown: str
+psFloor: str
+psNonTrade: str
+fsBold: str
+fsItalic: str
+fsUnderline: str
+fsStrikeOut: str
 '''
 
 class Application(Component):
@@ -2834,6 +3350,32 @@ class Application(Component):
         YSrc: int 描述：源矩形左上角的坐标Y。
         Rop: DWORD 描述：光栅操作代码。
         结果：int 成功：返回非零值 失败：返零"""
+    def CreateMutex(*args, **kwargs) -> int:
+        """CreateMutex 函数用于创建一个命名的互斥锁对象，通过检查是否已存在同名互斥锁来判断程序是否已在运行，从而实现程序单实例控制。
+        参数说明
+        Name: str 描述：互斥锁名称。
+        结果：int 成功：返回句柄 失败：返零"""
+    def OpenMutex(*args, **kwargs) -> int:
+        """OpenMutex 函数用于打开一个已存在的命名互斥锁对象，从而获取其句柄以便后续等待或释放操作。
+        参数说明
+        Name: str 描述：互斥锁名称。
+        结果：int 成功：返回句柄 失败：返零"""
+    def CloseHandle(*args, **kwargs) -> bool:
+        """CloseHandle 函数用于关闭一个打开的对象句柄（如互斥锁、文件等），释放系统为该句柄分配的资源。
+        参数说明
+        Handle: int 描述：要关闭的句柄。
+        结果：bool 成功：返回非零值（TRUE） 失败：返回 0（FALSE），可通过 GetLastError 获取"""
+    def GetLastError(*args, **kwargs) -> int:
+        """GetLastError 函数用于获取当前线程上一次调用 Windows API 函数时返回的错误代码，从而判断 API 调用是否成功及失败的具体原因。
+        参数说明
+        结果：int 返回当前线程的上一个错误代码"""
+    def RGB(*args, **kwargs) -> int:
+        """RGB 函数通过组合红、绿、蓝三个颜色分量（0-255）返回一个代表颜色的整数值（COLORREF）。
+        参数说明
+        r: int 描述：红色值。
+        g: int 描述：绿色值。
+        b: int 描述：蓝色值。
+        结果：int 返回一个代表颜色的整数值（COLORREF）"""
 
 class Action(CustomAction):
     """TAction 是 VCL 动作对象的基类。 TAction 实现与菜单项和控件一起使用的操作。 TAction 操作的已发布属性和事件可以在设计时在对象检查器中进行管理。
@@ -37482,3702 +38024,3821 @@ def StyleServices(*args, **kwargs) -> Any:
     StyleServices提供了一套服务和功能，允许开发者自定义和修改应用程序中控件的外观和感觉。"""
 
 class PJDropFiles(CustomControl):
-    """ """
+    """文件拖放组件，允许用户通过拖放操作将文件从文件系统拖入应用程序中。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Paint(self, *args, **kwargs) -> Any:
-        """ """
+        """绘制组件的内容，在需要自定义绘制时重写此方法。"""
     Count: int
-    """ """
+    """获取集合中项目的数量。"""
     Files: str
-    """ """
+    """获取拖放操作中涉及的所有文件完整路径列表。"""
     FileName: str
-    """ """
+    """获取或设置文件名。"""
     IsFolder: bool
-    """ """
+    """指示当前项是否为文件夹目录。"""
     DropPoint: Any
-    """ """
+    """获取拖放操作发生时鼠标在屏幕上的位置坐标。"""
     DropControl: Any
-    """ """
+    """获取拖放操作发生时鼠标下方的目标控件。"""
     Enabled: bool
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     ParentShowHint: bool
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     ShowHint: bool
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     TabOrder: int
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: bool
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Visible: bool
-    """ """
+    """指定组件是否可见。"""
     Width: int
-    """ """
+    """指定组件的宽度（以像素为单位）。"""
     Height: int
-    """ """
+    """指定组件的高度（以像素为单位）。"""
     Filter: Any
-    """ """
+    """指定文件过滤规则，支持通配符格式。"""
     ForegroundOnDrop: bool
-    """ """
+    """指定拖放文件后是否自动将窗口置为前台。"""
     Options: Any
-    """ """
+    """指定组件的详细选项配置集合。"""
     PassThrough: bool
-    """ """
+    """指定拖放事件是否透传给父控件处理。"""
     OnBeforeDrop: Any
-    """ """
+    """OnBeforeDrop事件，在相关操作发生时触发。"""
     OnDropFiles: Any
-    """ """
+    """OnDropFiles事件，在相关操作发生时触发。"""
     OnFileFilter: Any
-    """ """
+    """OnFileFilter事件，在相关操作发生时触发。"""
 
 class PJSubClassedDropFiles(Component):
-    """ """
+    """文件拖放组件的子类化版本，通过子类化窗口控件来接收文件拖放消息。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     Count: int
-    """ """
+    """获取集合中项目的数量。"""
     DropControl : Any
-    """ """
+    """获取拖放操作发生时鼠标下方的目标控件。"""
     DropPoint: Any
-    """ """
+    """获取拖放操作发生时鼠标在屏幕上的位置坐标。"""
     FileName: str
-    """ """
+    """获取或设置文件名。"""
     Files: str
-    """ """
+    """获取拖放操作中涉及的所有文件完整路径列表。"""
     IsFolder: bool
-    """ """
+    """指示当前项是否为文件夹目录。"""
     Enabled: bool
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     Filter: Any
-    """ """
+    """指定文件过滤规则，支持通配符格式。"""
     ForegroundOnDrop: bool
-    """ """
+    """指定拖放文件后是否自动将窗口置为前台。"""
     Options: Any
-    """ """
+    """指定组件的详细选项配置集合。"""
     OnBeforeDrop: Any
-    """ """
+    """OnBeforeDrop事件，在相关操作发生时触发。"""
     OnDropFiles: Any
-    """ """
+    """OnDropFiles事件，在相关操作发生时触发。"""
     OnFileFilter: Any
-    """ """
+    """OnFileFilter事件，在相关操作发生时触发。"""
 
 class PJFormDropFiles(PJSubClassedDropFiles):
-    """ """
+    """专为窗体设计的文件拖放组件，自动绑定到所在窗体的文件拖放事件。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
 
 class PJCtrlDropFiles(PJSubClassedDropFiles):
-    """ """
+    """专为特定控件设计的文件拖放组件，可绑定到任意窗口控件实现文件拖放功能。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     ManagedControl: Any
-    """ """
+    """获取或设置被当前组件管理的目标控件。"""
     PassThrough: bool
-    """ """
+    """指定拖放事件是否透传给父控件处理。"""
 
 class PJExtFileFilter(Component):
-    """ """
+    """文件扩展名过滤器组件，用于根据文件扩展名对拖放的文件进行过滤。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Accept(self, *args, **kwargs) -> bool:
-        """ """
+        """检查文件是否满足过滤条件。"""
     Extensions: str
-    """ """
+    """指定允许的文件扩展名列表。"""
     Style: Any
-    """ """
+    """指定组件的显示样式。"""
 
 class PJWildCardFileFilter(Component):
-    """ """
+    """通配符文件过滤器组件，用于根据通配符模式对拖放的文件进行过滤。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Accept(self, *args, **kwargs) -> bool:
-        """ """
+        """检查文件是否满足过滤条件。"""
     WildCard: str
-    """ """
+    """获取或设置通配符过滤模式。"""
 
 class OleControl(WinControl):
-    """ """
+    """OLE容器控件，用于在应用程序中嵌入和管理OLE对象。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def BrowseProperties(self, *args, **kwargs) -> Any:
-        """ """
+        """浏览OLE对象的属性列表。"""
     def DefaultHandler(self, *args, **kwargs) -> Any:
-        """ """
+        """处理未由其他消息处理函数处理的消息。"""
     def DoObjectVerb(self, *args, **kwargs) -> Any:
-        """ """
+        """执行OLE对象的指定动词操作。"""
     def GetEnumPropDesc(self, *args, **kwargs) -> Any:
-        """ """
+        """获取枚举类型属性的描述信息。"""
     def GetHelpContext(self, *args, **kwargs) -> int:
-        """ """
+        """获取与组件关联的帮助上下文ID。"""
     def GetObjectVerbs(self, *args, **kwargs) -> Any:
-        """ """
+        """获取OLE对象支持的所有动词列表。"""
     def GetPropDisplayString(self, *args, **kwargs) -> str:
-        """ """
+        """获取属性的当前显示字符串。"""
     def GetPropDisplayStrings(self, *args, **kwargs) -> Any:
-        """ """
+        """获取属性的所有可选显示字符串。"""
     def IsCustomProperty(self, *args, **kwargs) -> bool:
-        """ """
+        """检查属性是否为自定义扩展属性属性。"""
     def IsPropPageProperty(self, *args, **kwargs) -> bool:
-        """ """
+        """检查属性是否为属性页中的属性。"""
     def SetBounds(self, *args, **kwargs) -> Any:
-        """ """
+        """一次性设置组件的Left、Top、Width和Height属性。"""
     def SetPropDisplayString(self, *args, **kwargs) -> Any:
-        """ """
+        """设置属性的显示字符串。"""
     def ShowAboutBox(self, *args, **kwargs) -> Any:
-        """ """
+        """显示组件的关于对话框。"""
     OleObject: Any
-    """ """
+    """获取底层的OLE对象引用。"""
     PerPropBrowsing: Any
-    """ """
+    """获取逐属性浏览接口。"""
     DefaultDispatch: Any
-    """ """
+    """获取默认的IDispatch调度接口。"""
     TabStop: bool
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     ServiceQuery: Any
-    """ """
+    """获取或设置服务查询接口。"""
 
 class WebBrowser(OleControl):
-    """ """
+    """Web浏览器控件，封装了Internet Explorer的WebBrowser控件，提供网页导航和浏览功能。"""
     def Create(self, AOwner) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def SetFocus(self, *args, **kwargs) -> Any:
-        """ """
+        """将输入焦点设置到该组件上。"""
     def GoBack(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到历史记录中的上一个页面。"""
     def GoForward(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到历史记录中的下一个页面。"""
     def GoHome(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到浏览器设置的主页。"""
     def GoSearch(self, *args, **kwargs) -> Any:
-        """ """
+        """在默认搜索引擎中执行搜索。"""
     def Navigate(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL地址。"""
     def Navigate(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL地址。"""
     def Navigate(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL地址。"""
     def Navigate(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL地址。"""
     def Navigate(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL地址。"""
     def Refresh(self, *args, **kwargs) -> Any:
-        """ """
+        """刷新组件的内容或状态。"""
     def Refresh2(self, *args, **kwargs) -> Any:
-        """ """
+        """刷新当前页面，支持指定刷新级别。"""
     def Refresh2(self, *args, **kwargs) -> Any:
-        """ """
+        """刷新当前页面，支持指定刷新级别。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
     def Quit(self, *args, **kwargs) -> Any:
-        """ """
+        """退出浏览器控件并释放资源。"""
     def ClientToWindow(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端坐标转换为窗口坐标。"""
     def PutProperty(self, *args, **kwargs) -> Any:
-        """ """
+        """设置浏览器控件的属性值。"""
     def GetProperty(self, *args, **kwargs) -> Any:
-        """ """
+        """获取浏览器控件的属性值。"""
     def Navigate2(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL，支持更高级的参数选项。"""
     def Navigate2(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL，支持更高级的参数选项。"""
     def Navigate2(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL，支持更高级的参数选项。"""
     def Navigate2(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL，支持更高级的参数选项。"""
     def Navigate2(self, *args, **kwargs) -> Any:
-        """ """
+        """导航到指定的URL，支持更高级的参数选项。"""
     def QueryStatusWB(self, *args, **kwargs) -> Any:
-        """ """
+        """查询浏览器命令当前的可用状态。"""
     def ExecWB(self, *args, **kwargs) -> Any:
-        """ """
+        """执行指定的浏览器命令。"""
     def ExecWB(self, *args, **kwargs) -> Any:
-        """ """
+        """执行指定的浏览器命令。"""
     def ExecWB(self, *args, **kwargs) -> Any:
-        """ """
+        """执行指定的浏览器命令。"""
     def ShowBrowserBar(self, *args, **kwargs) -> Any:
-        """ """
+        """显示或隐藏浏览器的指定工具栏。"""
     def ShowBrowserBar(self, *args, **kwargs) -> Any:
-        """ """
+        """显示或隐藏浏览器的指定工具栏。"""
     def ShowBrowserBar(self, *args, **kwargs) -> Any:
-        """ """
+        """显示或隐藏浏览器的指定工具栏。"""
     ActiveEngine: Any
-    """ """
+    """获取或设置当前活动的浏览器引擎。"""
     ControlInterface: Any
-    """ """
+    """获取控件的COM接口引用。"""
     DefaultInterface: Any
-    """ """
+    """获取控件的默认COM调度接口。"""
     Application: Any
-    """ """
+    """获取浏览器应用程序对象。"""
     Parent: Any
-    """ """
+    """获取组件的父容器。"""
     Container: Any
-    """ """
+    """获取浏览器的容器对象。"""
     Document: Any
-    """ """
+    """获取当前加载页面的HTML文档对象。"""
     TopLevelContainer: Any
-    """ """
+    """指示当前浏览器是否为顶级容器窗口。"""
     type_: Any
-    """ """
+    """获取对象的类型信息。"""
     LocationName: Any
-    """ """
+    """获取当前网页的标题文本。"""
     LocationURL: Any
-    """ """
+    """获取当前网页的完整URL地址。"""
     Busy: Any
-    """ """
+    """指示组件当前是否正在执行操作。"""
     Name: Any
-    """ """
+    """指定组件的名称，用于在代码中引用。"""
     HWND: Any
-    """ """
+    """获取浏览器控件的窗口句柄。"""
     FullName: Any
-    """ """
+    """获取可执行文件的完整路径。"""
     Path: Any
-    """ """
+    """获取文件路径或对象路径。"""
     ReadyState: Any
-    """ """
+    """获取浏览器的当前就绪状态。"""
     EdgeBrowserExecutableFolder: str
-    """ """
+    """获取或设置Edge浏览器可执行文件所在目录。"""
     EdgeUserDataFolder: str
-    """ """
+    """获取或设置Edge浏览器的用户数据目录。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     TabStop: bool
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     DragCursor: Any
-    """ """
+    """指定拖动组件时鼠标指针的样式。"""
     DragMode: Any
-    """ """
+    """指定组件是否可被拖动及拖动方式。"""
     ParentShowHint: bool
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
     ShowHint: bool
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     TabOrder: int
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     StyleElements: Any
-    """ """
+    """指定组件启用或禁用的样式元素。"""
     OnDragDrop: Any
-    """ """
+    """OnDragDrop事件，在相关操作发生时触发。"""
     OnDragOver: Any
-    """ """
+    """OnDragOver事件，在相关操作发生时触发。"""
     OnEndDrag: Any
-    """ """
+    """OnEndDrag事件，在相关操作发生时触发。"""
     OnEnter: Any
-    """ """
+    """OnEnter事件，在相关操作发生时触发。"""
     OnExit: Any
-    """ """
+    """OnExit事件，在相关操作发生时触发。"""
     OnStartDrag: Any
-    """ """
+    """OnStartDrag事件，在相关操作发生时触发。"""
     SelectedEngine: Any
-    """ """
+    """获取或设置当前选择的浏览器引擎。"""
     Visible: bool
-    """ """
+    """指定组件是否可见。"""
     StatusBar: Any
-    """ """
+    """指定是否显示浏览器状态栏。"""
     StatusText: Any
-    """ """
+    """获取浏览器状态栏的文本信息。"""
     ToolBar: int
-    """ """
+    """指定浏览器工具栏的可见性。"""
     MenuBar: Any
-    """ """
+    """指定浏览器菜单栏的可见性。"""
     FullScreen: Any
-    """ """
+    """指定浏览器是否全屏显示。"""
     Offline: Any
-    """ """
+    """指定浏览器是否处于脱机工作模式。"""
     Silent: Any
-    """ """
+    """指定浏览器是否静默运行，不显示脚本错误。"""
     RegisterAsBrowser: Any
-    """ """
+    """指定是否将当前控件注册为系统默认浏览器。"""
     RegisterAsDropTarget: Any
-    """ """
+    """指定是否将当前控件注册为拖放目标。"""
     TheaterMode: Any
-    """ """
+    """指定是否开启浏览器影院模式。"""
     AddressBar: Any
-    """ """
+    """指定浏览器是否显示地址栏。"""
     Resizable: Any
-    """ """
+    """指定浏览器窗口是否可以调整大小。"""
     OnStatusTextChange: Any
-    """ """
+    """OnStatusTextChange事件，在相关操作发生时触发。"""
     OnProgressChange: Any
-    """ """
+    """OnProgressChange事件，在相关操作发生时触发。"""
     OnCommandStateChange: Any
-    """ """
+    """OnCommandStateChange事件，在相关操作发生时触发。"""
     OnDownloadBegin: Any
-    """ """
+    """OnDownloadBegin事件，在相关操作发生时触发。"""
     OnDownloadComplete: Any
-    """ """
+    """OnDownloadComplete事件，在相关操作发生时触发。"""
     OnTitleChange: Any
-    """ """
+    """OnTitleChange事件，在相关操作发生时触发。"""
     OnPropertyChange: Any
-    """ """
+    """OnPropertyChange事件，在相关操作发生时触发。"""
     OnBeforeNavigate2: Any
-    """ """
+    """OnBeforeNavigate2事件，在相关操作发生时触发。"""
     OnNewWindow2: Any
-    """ """
+    """OnNewWindow2事件，在相关操作发生时触发。"""
     OnNavigateComplete2: Any
-    """ """
+    """OnNavigateComplete2事件，在相关操作发生时触发。"""
     OnDocumentComplete: Any
-    """ """
+    """OnDocumentComplete事件，在相关操作发生时触发。"""
     OnQuit: Any
-    """ """
+    """OnQuit事件，在相关操作发生时触发。"""
     OnVisible: Any
-    """ """
+    """OnVisible事件，在相关操作发生时触发。"""
     OnToolBar: Any
-    """ """
+    """OnToolBar事件，在相关操作发生时触发。"""
     OnMenuBar: Any
-    """ """
+    """OnMenuBar事件，在相关操作发生时触发。"""
     OnStatusBar: Any
-    """ """
+    """OnStatusBar事件，在相关操作发生时触发。"""
     OnFullScreen: Any
-    """ """
+    """OnFullScreen事件，在相关操作发生时触发。"""
     OnTheaterMode: Any
-    """ """
+    """OnTheaterMode事件，在相关操作发生时触发。"""
     OnWindowSetResizable: Any
-    """ """
+    """OnWindowSetResizable事件，在相关操作发生时触发。"""
     OnWindowSetLeft: Any
-    """ """
+    """OnWindowSetLeft事件，在相关操作发生时触发。"""
     OnWindowSetTop: Any
-    """ """
+    """OnWindowSetTop事件，在相关操作发生时触发。"""
     OnWindowSetWidth: Any
-    """ """
+    """OnWindowSetWidth事件，在相关操作发生时触发。"""
     OnWindowSetHeight: Any
-    """ """
+    """OnWindowSetHeight事件，在相关操作发生时触发。"""
     OnWindowClosing: Any
-    """ """
+    """OnWindowClosing事件，在相关操作发生时触发。"""
     OnClientToHostWindow: Any
-    """ """
+    """OnClientToHostWindow事件，在相关操作发生时触发。"""
     OnSetSecureLockIcon: Any
-    """ """
+    """OnSetSecureLockIcon事件，在相关操作发生时触发。"""
     OnFileDownload: Any
-    """ """
+    """OnFileDownload事件，在相关操作发生时触发。"""
     OnNavigateError: Any
-    """ """
+    """OnNavigateError事件，在相关操作发生时触发。"""
     OnPrintTemplateInstantiation: Any
-    """ """
+    """OnPrintTemplateInstantiation事件，在相关操作发生时触发。"""
     OnPrintTemplateTeardown: Any
-    """ """
+    """OnPrintTemplateTeardown事件，在相关操作发生时触发。"""
     OnUpdatePageStatus: Any
-    """ """
+    """OnUpdatePageStatus事件，在相关操作发生时触发。"""
     OnPrivacyImpactedStateChange: Any
-    """ """
+    """OnPrivacyImpactedStateChange事件，在相关操作发生时触发。"""
     OnNewWindow3: Any
-    """ """
+    """OnNewWindow3事件，在相关操作发生时触发。"""
     OnSetPhishingFilterStatus: Any
-    """ """
+    """OnSetPhishingFilterStatus事件，在相关操作发生时触发。"""
     OnWindowStateChanged: Any
-    """ """
+    """OnWindowStateChanged事件，在相关操作发生时触发。"""
     OnNewProcess: Any
-    """ """
+    """OnNewProcess事件，在相关操作发生时触发。"""
     OnThirdPartyUrlBlocked: Any
-    """ """
+    """OnThirdPartyUrlBlocked事件，在相关操作发生时触发。"""
     OnRedirectXDomainBlocked: Any
-    """ """
+    """OnRedirectXDomainBlocked事件，在相关操作发生时触发。"""
     OnBeforeScriptExecute: Any
-    """ """
+    """OnBeforeScriptExecute事件，在相关操作发生时触发。"""
     OnWebWorkerStarted: Any
-    """ """
+    """OnWebWorkerStarted事件，在相关操作发生时触发。"""
     OnWebWorkerFinsihed: Any
-    """ """
+    """OnWebWorkerFinsihed事件，在相关操作发生时触发。"""
     OnShowScriptError: Any
-    """ """
+    """OnShowScriptError事件，在相关操作发生时触发。"""
 
 class DataSet(Component):
     """TDataSet是数据库编程的核心抽象基类，它为各种数据访问提供了统一的接口和功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def ActiveBuffer -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ActiveBuffer(self, *args, **kwargs) -> Any:
+        """获取当前活动的数据缓冲区指针。"""
     def Append(self, *args, **kwargs) -> Any:
-        """ """
+        """在数据集末尾添加一条新的空记录。"""
     def AppendRecord(self, *args, **kwargs) -> Any:
-        """ """
+        """添加一条新记录并设置其字段值。"""
     def BookmarkValid(self, *args, **kwargs) -> Any:
-        """ """
+        """检查指定的书签是否仍然有效。"""
     def Cancel(self, *args, **kwargs) -> Any:
-        """ """
+        """取消对当前记录的编辑修改。"""
     def CheckBrowseMode(self, *args, **kwargs) -> Any:
-        """ """
+        """检查并确保数据集处于浏览模式。"""
     def ClearFields(self, *args, **kwargs) -> Any:
-        """ """
+        """清除当前记录的所有字段值。"""
     def Close(self, *args, **kwargs) -> Any:
-        """ """
-    def  ControlsDisabled -> Any:
-        """ """
+        """关闭组件、对话框或连接。"""
+    def  ControlsDisabled(self, *args, **kwargs) -> Any:
+        """检查是否已禁用数据感知控件的更新。"""
     def CompareBookmarks(self, *args, **kwargs) -> Any:
-        """ """
+        """比较两个书签的位置关系。"""
     def CreateBlobStream(self, *args, **kwargs) -> Any:
-        """ """
+        """创建用于读写BLOB字段的流对象。"""
     def CursorPosChanged(self, *args, **kwargs) -> Any:
-        """ """
+        """响应数据集游标位置已发生变化。"""
     def Delete(self, *args, **kwargs) -> Any:
-        """ """
+        """从集合中删除指定的项目。"""
     def DisableControls(self, *args, **kwargs) -> Any:
-        """ """
+        """禁用所有关联的数据感知控件以提高批量操作性能。"""
     def Edit(self, *args, **kwargs) -> Any:
-        """ """
+        """进入编辑模式，允许修改当前记录数据。"""
     def EnableControls(self, *args, **kwargs) -> Any:
-        """ """
+        """重新启用所有之前被禁用的数据感知控件。"""
     def FieldByName(self, *args, **kwargs) -> Any:
-        """ """
+        """根据字段名称查找字段对象。"""
     def FindField(self, *args, **kwargs) -> Any:
-        """ """
-    def FindFirst -> bool:
-        """ """
-    def FindLast -> bool:
-        """ """
-    def FindNext -> bool:
-        """ """
-    def FindPrior -> bool:
-        """ """
+        """根据字段名称查找字段，未找到返回nil。"""
+    def FindFirst(self, *args, **kwargs) -> bool:
+        """查找并定位到满足过滤条件的第一条记录。"""
+    def FindLast(self, *args, **kwargs) -> bool:
+        """查找并定位到满足过滤条件的最后一条记录。"""
+    def FindNext(self, *args, **kwargs) -> bool:
+        """查找并定位到满足过滤条件的下一条记录。"""
+    def FindPrior(self, *args, **kwargs) -> bool:
+        """查找并定位到满足过滤条件的上一条记录。"""
     def First(self, *args, **kwargs) -> Any:
-        """ """
+        """移动到第一条记录。"""
     def FreeBookmark(self, *args, **kwargs) -> Any:
-        """ """
-    def GetBookmark -> Any:
-        """ """
+        """释放之前获取的书签资源。"""
+    def GetBookmark(self, *args, **kwargs) -> Any:
+        """获取当前记录位置的书签指针。"""
     def GetClonedDataSet(self, *args, **kwargs) -> Any:
-        """ """
+        """获取该数据集的克隆版本。"""
     def GetCurrentRecord(self, *args, **kwargs) -> Any:
-        """ """
+        """获取当前记录的数据缓冲区内容。"""
     def GetDetailDataSets(self, *args, **kwargs) -> Any:
-        """ """
+        """获取当前数据集的所有从属数据集。"""
     def GetDetailLinkFields(self, *args, **kwargs) -> Any:
-        """ """
+        """获取主从表之间的关联字段信息。"""
     def GetBlobFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取BLOB字段的原始数据。"""
     def GetFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定字段的数据值。"""
     def GetFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定字段的数据值。"""
     def GetFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定字段的数据值。"""
     def GetFieldList(self, *args, **kwargs) -> Any:
-        """ """
+        """获取字段对象列表。"""
     def GetFieldNames(self, *args, **kwargs) -> Any:
-        """ """
+        """获取所有字段的名称列表。"""
     def GotoBookmark(self, *args, **kwargs) -> Any:
-        """ """
+        """跳转到之前保存的书签位置。"""
     def Insert(self, *args, **kwargs) -> Any:
-        """ """
+        """在指定位置插入一个新项目。"""
     def InsertRecord(self, *args, **kwargs) -> Any:
-        """ """
-    def IsEmpty -> Any:
-        """ """
+        """插入一条新记录并设置字段值。"""
+    def IsEmpty(self, *args, **kwargs) -> Any:
+        """检查数据集是否为空（没有记录）。"""
     def IsLinkedTo(self, *args, **kwargs) -> bool:
-        """ """
-    def IsSequenced -> Any:
-        """ """
+        """检查是否已连接到指定对象。"""
+    def IsSequenced(self, *args, **kwargs) -> Any:
+        """检查数据集是否支持有序的记录序列访问。"""
     def Last(self, *args, **kwargs) -> Any:
-        """ """
+        """移动到最后一条记录。"""
     def Locate(self, *args, **kwargs) -> Any:
-        """ """
+        """查找并定位到指定条件的记录。"""
     def Lookup(self, *args, **kwargs) -> Any:
-        """ """
+        """查找指定条件的记录并返回字段值。"""
     def MoveBy(self, *args, **kwargs) -> Any:
-        """ """
+        """将当前记录指针移动指定的偏移量。"""
     def Next(self, *args, **kwargs) -> Any:
-        """ """
+        """移动到下一条记录。"""
     def Open(self, *args, **kwargs) -> Any:
-        """ """
+        """打开组件、对话框或建立连接。"""
     def Post(self, *args, **kwargs) -> Any:
-        """ """
+        """将当前编辑的记录提交到数据集。"""
     def Prior(self, *args, **kwargs) -> Any:
-        """ """
+        """移动到上一条记录。"""
     def Refresh(self, *args, **kwargs) -> Any:
-        """ """
+        """刷新组件的内容或状态。"""
     def Resync(self, *args, **kwargs) -> Any:
-        """ """
+        """重新同步数据集与底层数据源。"""
     def SetFields(self, *args, **kwargs) -> Any:
-        """ """
+        """设置当前记录的多个字段值。"""
     def CopyFields(self, *args, **kwargs) -> int:
-        """ """
+        """复制指定来源的字段值到当前记录。"""
     def UpdateCursorPos(self, *args, **kwargs) -> Any:
-        """ """
+        """更新数据集内部游标位置信息。"""
     def UpdateRecord(self, *args, **kwargs) -> Any:
-        """ """
-    def UpdateStatus -> Any:
-        """ """
+        """更新当前记录的底层数据。"""
+    def UpdateStatus(self, *args, **kwargs) -> Any:
+        """获取当前记录的更新状态。"""
     AggFields: Any
-    """ """
+    """获取数据集的聚合字段列表。"""
     Bof: bool
-    """ """
+    """指示数据集的当前记录位置是否在第一条记录之前。"""
     Bookmark: Any
-    """ """
+    """获取或设置当前记录的书签指针。"""
     CanModify: bool
-    """ """
+    """指示数据集是否允许修改数据。"""
     CanRefresh: bool
-    """ """
+    """指示数据集是否支持刷新操作。"""
     DataSetField: Any
-    """ """
+    """获取或设置嵌套数据集对应的字段。"""
     DataSource: Any
-    """ """
-    def DefaultFields -> Any:
-        """ """
+    """获取或设置与组件关联的数据源。"""
+    def DefaultFields(self, *args, **kwargs) -> Any:
+        """检查数据集是否使用默认字段定义。"""
     Designer: Any
-    """ """
+    """获取表单设计器接口引用。"""
     Eof: bool
-    """ """
+    """指示数据集的当前记录位置是否在最后一条记录之后。"""
     BlockReadSize: int
-    """ """
+    """指定块读取模式下一次读取的记录数。"""
     FieldCount: int
-    """ """
+    """获取数据集中的字段数量。"""
     FieldDefs: Any
-    """ """
+    """获取数据集的字段定义集合。"""
     FieldDefList: Any
-    """ """
+    """获取字段定义内部列表。"""
     Fields: Any
-    """ """
+    """获取数据集的字段对象列表。"""
     FieldList: Any
-    """ """
+    """获取字段内部列表。"""
     FieldValues: Any
-    """ """
+    """通过字段名称获取或设置当前记录的字段值。"""
     Found: bool
-    """ """
+    """指示最近的查找或定位操作是否成功。"""
     IsUniDirectional: bool
-    """ """
+    """指示数据集是否仅支持单向向前遍历。"""
     Modified: bool
-    """ """
+    """指示当前记录的数据是否已被修改但尚未提交。"""
     ObjectView: bool
-    """ """
+    """指定数据集是否以对象视图方式显示嵌套数据集。"""
     StoredFieldKinds: Any
-    """ """
+    """指定存储的字段类型集合。"""
     RecordCount: int
-    """ """
+    """获取数据集中的记录总数。"""
     RecNo: int
-    """ """
+    """获取或设置当前记录的记录序号。"""
     RecordSize: Any
-    """ """
+    """获取每条记录的字节大小。"""
     SparseArrays: bool
-    """ """
+    """指定是否使用稀疏数组存储数据。"""
     State: Any
-    """ """
+    """获取数据集的当前操作状态。"""
     Filter: str
-    """ """
+    """指定文件过滤规则，支持通配符格式。"""
     Filtered: bool
-    """ """
+    """指定是否启用数据集的过滤功能。"""
     FilterOptions: Any
-    """ """
+    """设置过滤选项。"""
     Active: bool
-    """ """
+    """指定组件是否处于活动状态。"""
     AutoCalcFields: bool
-    """ """
+    """指定是否自动触发OnCalcFields事件事件。"""
     BeforeOpen: Any
-    """ """
+    """在数据集打开之前触发的事件。"""
     AfterOpen: Any
-    """ """
+    """在数据集打开之后触发的事件。"""
     BeforeClose: Any
-    """ """
+    """在数据集关闭之前触发的事件。"""
     AfterClose: Any
-    """ """
+    """在数据集关闭之后触发的事件。"""
     BeforeInsert: Any
-    """ """
+    """在插入新记录之前触发的事件。"""
     AfterInsert: Any
-    """ """
+    """在插入新记录之后触发的事件。"""
     BeforeEdit: Any
-    """ """
+    """在进入编辑模式之前触发的事件。"""
     AfterEdit: Any
-    """ """
+    """在进入编辑模式之后触发的事件。"""
     BeforePost: Any
-    """ """
+    """在提交记录之前触发的事件。"""
     AfterPost: Any
-    """ """
+    """在提交记录之后触发的事件。"""
     BeforeCancel: Any
-    """ """
+    """在取消修改之前触发的事件。"""
     AfterCancel: Any
-    """ """
+    """在取消修改之后触发的事件。"""
     BeforeDelete: Any
-    """ """
+    """在删除记录之前触发的事件。"""
     AfterDelete: Any
-    """ """
+    """在删除记录之后触发的事件。"""
     BeforeScroll: Any
-    """ """
+    """在滚动到其他记录之前触发的事件。"""
     AfterScroll: Any
-    """ """
+    """在滚动到其他记录之后触发的事件。"""
     BeforeRefresh: Any
-    """ """
+    """在刷新数据集之前触发的事件。"""
     AfterRefresh: Any
-    """ """
+    """在刷新数据集之后触发的事件。"""
     OnCalcFields: Any
-    """ """
+    """OnCalcFields事件，在相关操作发生时触发。"""
     OnDeleteError: Any
-    """ """
+    """OnDeleteError事件，在相关操作发生时触发。"""
     OnEditError: Any
-    """ """
+    """OnEditError事件，在相关操作发生时触发。"""
     OnFilterRecord: Any
-    """ """
+    """OnFilterRecord事件，在相关操作发生时触发。"""
     OnNewRecord: Any
-    """ """
+    """OnNewRecord事件，在相关操作发生时触发。"""
     OnPostError: Any
-    """ """
+    """OnPostError事件，在相关操作发生时触发。"""
 
 class CustomClientDataSet(DataSet):
     """TCustomClientDataSet是ClientDataSet组件的基类，它是一个功能强大的内存数据集组件，提供了不依赖于物理数据库的本地数据存储和处理能力。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     PersistDataPacket: Any
-    """ """
+    """获取或设置客户端数据集是否持久化数据包。"""
     Active: Any
-    """ """
+    """指定组件是否处于活动状态。"""
     DataSetField: Any
-    """ """
+    """获取或设置嵌套数据集对应的字段。"""
     ProviderName: str
-    """ """
+    """获取或设置提供程序的名称。"""
     FileName: str
-    """ """
+    """获取或设置文件名。"""
     ConnectionBroker: Any
-    """ """
+    """获取或设置连接代理组件。"""
     IndexFieldNames: str
-    """ """
+    """获取或设置索引字段名称列表。"""
     MasterFields: str
-    """ """
+    """获取或设置主从表关联的主表字段名。"""
     PacketRecords: int
-    """ """
+    """获取或设置每次获取的记录包大小。"""
     RemoteServer: Any
-    """ """
+    """获取或设置远程应用服务器连接。"""
     def AddIndex(self, *args, **kwargs) -> Any:
-        """ """
+        """向数据集添加一个新的索引。"""
     def AppendData(self, *args, **kwargs) -> Any:
-        """ """
+        """向客户端数据集追加数据包。"""
     def ApplyRange(self, *args, **kwargs) -> Any:
-        """ """
+        """应用已设置的数据范围限制。"""
     def ApplyUpdates(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端数据集的更改提交到数据库服务器。"""
     def BookmarkValid(self, *args, **kwargs) -> Any:
-        """ """
+        """检查指定的书签是否仍然有效。"""
     def Cancel(self, *args, **kwargs) -> Any:
-        """ """
+        """取消对当前记录的编辑修改。"""
     def CancelRange(self, *args, **kwargs) -> Any:
-        """ """
+        """取消当前的数据范围限制。"""
     def CancelUpdates(self, *args, **kwargs) -> Any:
-        """ """
+        """取消所有未提交的更改。"""
     def CreateBlobStream(self, *args, **kwargs) -> Any:
-        """ """
+        """创建用于读写BLOB字段的流对象。"""
     def CreateDataSet(self, *args, **kwargs) -> Any:
-        """ """
+        """根据字段定义在内存中创建数据集结构。"""
     def CloneCursor(self, *args, **kwargs) -> Any:
-        """ """
+        """创建数据集游标的克隆。"""
     def GetClonedDataSet(self, *args, **kwargs) -> Any:
-        """ """
+        """获取该数据集的克隆版本。"""
     def CompareBookmarks(self, *args, **kwargs) -> Any:
-        """ """
-    def ConstraintsDisabled -> bool:
-        """ """
+        """比较两个书签的位置关系。"""
+    def ConstraintsDisabled(self, *args, **kwargs) -> bool:
+        """检查数据约束是否已被禁用。"""
     def DataRequest(self, *args, **kwargs) -> Any:
-        """ """
+        """向应用服务器发送数据请求。"""
     def DeleteIndex(self, *args, **kwargs) -> Any:
-        """ """
+        """删除指定的索引。"""
     def DisableConstraints(self, *args, **kwargs) -> Any:
-        """ """
+        """临时禁用数据约束检查。"""
     def EnableConstraints(self, *args, **kwargs) -> Any:
-        """ """
+        """重新启用数据约束检查。"""
     def EditKey(self, *args, **kwargs) -> Any:
-        """ """
+        """进入键值编辑模式以进行基于键的查找。"""
     def EditRangeEnd(self, *args, **kwargs) -> Any:
-        """ """
+        """编辑范围结束值。"""
     def EditRangeStart(self, *args, **kwargs) -> Any:
-        """ """
+        """编辑范围起始值。"""
     def EmptyDataSet(self, *args, **kwargs) -> Any:
-        """ """
+        """清空数据集中的所有数据。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     def FetchBlobs(self, *args, **kwargs) -> Any:
-        """ """
+        """获取所有BLOB字段的数据。"""
     def FetchDetails(self, *args, **kwargs) -> Any:
-        """ """
+        """获取当前记录的详细信息。"""
     def RefreshRecord(self, *args, **kwargs) -> Any:
-        """ """
+        """刷新当前记录的数据。"""
     def FetchParams(self, *args, **kwargs) -> Any:
-        """ """
+        """从服务器获取参数信息。"""
     def FindKey(self, *args, **kwargs) -> Any:
-        """ """
+        """根据键值查找记录。"""
     def FindNearest(self, *args, **kwargs) -> Any:
-        """ """
+        """查找最接近指定键值的记录。"""
     def GetCurrentRecord(self, *args, **kwargs) -> Any:
-        """ """
+        """获取当前记录的数据缓冲区内容。"""
     def GetDetailLinkFields(self, *args, **kwargs) -> Any:
-        """ """
+        """获取主从表之间的关联字段信息。"""
     def GetFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定字段的数据值。"""
     def GetFieldData(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定字段的数据值。"""
     def GetGroupState(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定分组的状态信息。"""
     def GetIndexInfo(self, *args, **kwargs) -> Any:
-        """ """
+        """获取索引的详细信息。"""
     def GetIndexNames(self, *args, **kwargs) -> Any:
-        """ """
-    def GetNextPacket -> Any:
-        """ """
+        """获取所有可用索引的名称列表。"""
+    def GetNextPacket(self, *args, **kwargs) -> Any:
+        """从服务器获取下一批数据记录包。"""
     def GetOptionalParam(self, *args, **kwargs) -> Any:
-        """ """
+        """获取可选的参数值。"""
     def GotoCurrent(self, *args, **kwargs) -> Any:
-        """ """
-    def GotoKey -> bool:
-        """ """
+        """跳转到另一个数据集中的相同记录位置。"""
+    def GotoKey(self, *args, **kwargs) -> bool:
+        """跳转到之前通过SetKey和FindKey找到的记录。"""
     def GotoNearest(self, *args, **kwargs) -> Any:
-        """ """
+        """跳转到最接近指定键值的记录。"""
     HasAppServer: bool
-    """ """
+    """指示数据集是否已连接应用服务器。"""
     def Locate(self, *args, **kwargs) -> Any:
-        """ """
+        """查找并定位到指定条件的记录。"""
     def Lookup(self, *args, **kwargs) -> Any:
-        """ """
+        """查找指定条件的记录并返回字段值。"""
     def LoadFromFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从指定文件加载数据。"""
     def LoadFromStream(self, *args, **kwargs) -> Any:
-        """ """
+        """从流中加载数据。"""
     def MergeChangeLog(self, *args, **kwargs) -> Any:
-        """ """
+        """合并更改日志到主数据集。"""
     def ParamByName(self, *args, **kwargs) -> Any:
-        """ """
+        """根据参数名称查找参数对象。"""
     def Post(self, *args, **kwargs) -> Any:
-        """ """
+        """将当前编辑的记录提交到数据集。"""
     def Reconcile(self, *args, **kwargs) -> bool:
-        """ """
+        """协调解决数据更新冲突。"""
     def RevertRecord(self, *args, **kwargs) -> Any:
-        """ """
+        """撤销对当前记录的更改。"""
     def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到指定文件。"""
     def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到流中。"""
     def SetKey(self, *args, **kwargs) -> Any:
-        """ """
+        """进入基于键值查找的设置模式。"""
     def SetOptionalParam(self, *args, **kwargs) -> Any:
-        """ """
+        """设置可选的参数值。"""
     def SetProvider(self, *args, **kwargs) -> Any:
-        """ """
+        """设置数据提供者。"""
     def SetRange(self, *args, **kwargs) -> Any:
-        """ """
+        """设置数据筛选范围。"""
     def SetRangeEnd(self, *args, **kwargs) -> Any:
-        """ """
+        """设置范围结束值。"""
     def SetRangeStart(self, *args, **kwargs) -> Any:
-        """ """
+        """设置范围起始值。"""
     def UndoLastChange(self, *args, **kwargs) -> bool:
-        """ """
-    def UpdateStatus -> Any:
-        """ """
+        """撤消最近一次的数据更改操作。"""
+    def UpdateStatus(self, *args, **kwargs) -> Any:
+        """获取当前记录的更新状态。"""
     ActiveAggs: Any
-    """ """
+    """获取当前活跃的聚合函数列表。"""
     ChangeCount: Any
-    """ """
+    """获取客户端数据集未提交的更改数量。"""
     UpdatesPending: bool
-    """ """
+    """指示客户端数据集是否有未提交的更新。"""
     CloneSource: Any
-    """ """
+    """获取该数据集克隆操作的源数据集。"""
     Data: Any
-    """ """
+    """获取或设置客户端数据集的二进制数据包。"""
     XMLData: str
-    """ """
+    """获取或设置客户端数据集的XML表示。"""
     AppServer: Any
-    """ """
+    """获取或设置应用服务器接口。"""
     DataSize: int
-    """ """
+    """获取客户端数据集数据的内存大小。"""
     Delta: Any
-    """ """
+    """获取客户端数据集的增量更改数据包。"""
     GroupingLevel: int
-    """ """
+    """获取或设置数据的分组级别。"""
     IndexFieldCount: int
-    """ """
+    """获取索引字段的数量。"""
     IndexFields: Any
-    """ """
+    """获取索引字段列表。"""
     KeyExclusive: bool
-    """ """
+    """指定键值查找时是否排除匹配的记录。"""
     KeyFieldCount: int
-    """ """
+    """获取键字段的数量。"""
     KeySize: Any
-    """ """
+    """获取键字段的总大小。"""
     LogChanges: bool
-    """ """
+    """指定是否记录数据更改日志。"""
     SavePoint: Any
-    """ """
+    """获取或设置保存点的名称。"""
     StatusFilter: Any
-    """ """
+    """指定状态过滤条件。"""
     Ranged: bool
-    """ """
+    """指示当前是否设置了数据范围限制。"""
 
 class ClientDataSet(CustomClientDataSet):
     """TClientDataSet是一个非常重要的内存数据集组件，它提供了强大的客户端数据处理能力。"""
     PersistDataPacket: Any
-    """ """
+    """获取或设置客户端数据集是否持久化数据包。"""
     Active: Any
-    """ """
+    """指定组件是否处于活动状态。"""
     Aggregates: Any
-    """ """
+    """获取或设置聚合函数定义集合。"""
     AggregatesActive: Any
-    """ """
+    """指定是否激活聚合计算。"""
     AutoCalcFields: Any
-    """ """
+    """指定是否自动触发OnCalcFields事件事件。"""
     CommandText: Any
-    """ """
+    """获取或设置要执行的SQL命令文本。"""
     ConnectionBroker: Any
-    """ """
+    """获取或设置连接代理组件。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     DataSetField: Any
-    """ """
+    """获取或设置嵌套数据集对应的字段。"""
     DisableStringTrim: Any
-    """ """
+    """指定是否禁用字符串自动修剪。"""
     FieldOptions: Any
-    """ """
+    """获取字段选项配置。"""
     FileName: Any
-    """ """
+    """获取或设置文件名。"""
     Filter: Any
-    """ """
+    """指定文件过滤规则，支持通配符格式。"""
     Filtered: Any
-    """ """
+    """指定是否启用数据集的过滤功能。"""
     FilterOptions: Any
-    """ """
+    """设置过滤选项。"""
     FieldDefs: Any
-    """ """
+    """获取数据集的字段定义集合。"""
     IncludeBlobsInDelta: Any
-    """ """
+    """指定增量包中是否包含BLOB字段。"""
     IndexDefs: Any
-    """ """
+    """获取索引定义集合。"""
     IndexFieldNames: Any
-    """ """
+    """获取或设置索引字段名称列表。"""
     IndexName: Any
-    """ """
+    """获取或设置当前使用的索引名称。"""
     FetchOnDemand: Any
-    """ """
+    """指定是否按需获取数据包。"""
     MasterFields: Any
-    """ """
+    """获取或设置主从表关联的主表字段名。"""
     MasterSource: Any
-    """ """
+    """获取或设置主表数据源。"""
     ObjectView: Any
-    """ """
+    """指定数据集是否以对象视图方式显示嵌套数据集。"""
     PacketRecords: Any
-    """ """
+    """获取或设置每次获取的记录包大小。"""
     Params: Any
-    """ """
+    """获取或设置参数集合。"""
     ProviderName: Any
-    """ """
+    """获取或设置提供程序的名称。"""
     ReadOnly: Any
-    """ """
+    """指定组件是否处于只读模式。"""
     RemoteServer: Any
-    """ """
+    """获取或设置远程应用服务器连接。"""
     StoreDefs: Any
-    """ """
+    """指定是否在DFM文件中存储字段和索引定义。"""
     BeforeOpen: Any
-    """ """
+    """在数据集打开之前触发的事件。"""
     AfterOpen: Any
-    """ """
+    """在数据集打开之后触发的事件。"""
     BeforeClose: Any
-    """ """
+    """在数据集关闭之前触发的事件。"""
     AfterClose: Any
-    """ """
+    """在数据集关闭之后触发的事件。"""
     BeforeInsert: Any
-    """ """
+    """在插入新记录之前触发的事件。"""
     AfterInsert: Any
-    """ """
+    """在插入新记录之后触发的事件。"""
     BeforeEdit: Any
-    """ """
+    """在进入编辑模式之前触发的事件。"""
     AfterEdit: Any
-    """ """
+    """在进入编辑模式之后触发的事件。"""
     BeforePost: Any
-    """ """
+    """在提交记录之前触发的事件。"""
     AfterPost: Any
-    """ """
+    """在提交记录之后触发的事件。"""
     BeforeCancel: Any
-    """ """
+    """在取消修改之前触发的事件。"""
     AfterCancel: Any
-    """ """
+    """在取消修改之后触发的事件。"""
     BeforeDelete: Any
-    """ """
+    """在删除记录之前触发的事件。"""
     AfterDelete: Any
-    """ """
+    """在删除记录之后触发的事件。"""
     BeforeScroll: Any
-    """ """
+    """在滚动到其他记录之前触发的事件。"""
     AfterScroll: Any
-    """ """
+    """在滚动到其他记录之后触发的事件。"""
     BeforeRefresh: Any
-    """ """
+    """在刷新数据集之前触发的事件。"""
     AfterRefresh: Any
-    """ """
+    """在刷新数据集之后触发的事件。"""
     OnCalcFields: Any
-    """ """
+    """OnCalcFields事件，在相关操作发生时触发。"""
     OnDeleteError: Any
-    """ """
+    """OnDeleteError事件，在相关操作发生时触发。"""
     OnEditError: Any
-    """ """
+    """OnEditError事件，在相关操作发生时触发。"""
     OnFilterRecord: Any
-    """ """
+    """OnFilterRecord事件，在相关操作发生时触发。"""
     OnNewRecord: Any
-    """ """
+    """OnNewRecord事件，在相关操作发生时触发。"""
     OnPostError: Any
-    """ """
+    """OnPostError事件，在相关操作发生时触发。"""
     OnReconcileError: Any
-    """ """
+    """OnReconcileError事件，在相关操作发生时触发。"""
     BeforeApplyUpdates: Any
-    """ """
+    """在应用更新之前触发事件。"""
     AfterApplyUpdates: Any
-    """ """
+    """在应用更新之后触发事件。"""
     BeforeGetRecords: Any
-    """ """
+    """在获取记录之前触发事件。"""
     AfterGetRecords: Any
-    """ """
+    """在获取记录之后触发事件。"""
     BeforeRowRequest: Any
-    """ """
+    """在行请求之前触发事件。"""
     AfterRowRequest: Any
-    """ """
+    """在行请求之后触发事件。"""
     BeforeExecute: Any
-    """ """
+    """在执行命令之前触发事件。"""
     AfterExecute: Any
-    """ """
+    """在执行命令之后触发事件。"""
     BeforeGetParams: Any
-    """ """
+    """在获取参数之前触发事件。"""
     AfterGetParams: Any
-    """ """
+    """在获取参数之后触发事件。"""
 
 class DataSource(Component):
     """TDataSource是数据库应用程序中的关键组件，它充当数据桥梁的角色，连接数据集组件(TDataSet及其派生类)和数据感知控件(如TDBGrid、TDBEdit等)。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Edit(self, *args, **kwargs) -> Any:
-        """ """
+        """进入编辑模式，允许修改当前记录数据。"""
     def IsLinkedTo(self, *args, **kwargs) -> bool:
-        """ """
+        """检查是否已连接到指定对象。"""
     State: Any
-    """ """
+    """获取数据集的当前操作状态。"""
     AutoEdit: bool
-    """ """
+    """指定是否自动进入编辑模式。"""
     DataSet: Any
-    """ """
+    """获取或设置关联的数据集。"""
     Enabled: bool
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     OnStateChange: Any
-    """ """
+    """OnStateChange事件，在相关操作发生时触发。"""
     OnDataChange: Any
-    """ """
+    """OnDataChange事件，在相关操作发生时触发。"""
     OnUpdateData: Any
-    """ """
+    """OnUpdateData事件，在相关操作发生时触发。"""
 
 class CustomProvider(Component):
     """TCustomProvider是数据访问架构中的一个抽象基类，它为数据提供者(Provider)组件定义了基本行为和接口，主要用于多层数据库应用中的数据交换。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def ApplyUpdates(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端数据集的更改提交到数据库服务器。"""
     def ApplyUpdates(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端数据集的更改提交到数据库服务器。"""
     def GetRecords(self, *args, **kwargs) -> Any:
-        """ """
+        """获取数据记录。"""
     def GetRecords(self, *args, **kwargs) -> Any:
-        """ """
+        """获取数据记录。"""
     def RowRequest(self, *args, **kwargs) -> Any:
-        """ """
+        """请求获取指定行的数据。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     def GetParams(self, *args, **kwargs) -> Any:
-        """ """
+        """获取参数信息。"""
     def DataRequest(self, *args, **kwargs) -> Any:
-        """ """
+        """向应用服务器发送数据请求。"""
     Data: Any
-    """ """
+    """获取或设置客户端数据集的二进制数据包。"""
     Exported: bool
-    """ """
+    """指示是否已导出数据。"""
 
 class BaseProvider(CustomProvider):
     """TBaseProvider是数据库架构中的一个重要基类，它为数据提供者(Provider)组件提供了核心功能，主要用于多层数据库应用中的数据交换和远程数据访问。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     Resolver: Any
-    """ """
+    """获取或设置更新冲突解析器。"""
     Options: Any
-    """ """
+    """指定组件的详细选项配置集合。"""
     UpdateMode: Any
-    """ """
+    """获取或设置更新模式。"""
     OnDataRequest: Any
-    """ """
+    """OnDataRequest事件，在相关操作发生时触发。"""
     OnGetData: Any
-    """ """
+    """OnGetData事件，在相关操作发生时触发。"""
     OnUpdateData: Any
-    """ """
+    """OnUpdateData事件，在相关操作发生时触发。"""
     OnUpdateError: Any
-    """ """
+    """OnUpdateError事件，在相关操作发生时触发。"""
     BeforeUpdateRecord: Any
-    """ """
+    """在更新记录之前触发事件。"""
     AfterUpdateRecord: Any
-    """ """
+    """在更新记录之后触发事件。"""
     BeforeCommit: Any
-    """ """
+    """在提交事务之前触发事件。"""
 
 class DataSetProvider(BaseProvider):
     """TDataSetProvider是多层数据库架构中的核心组件，主要负责在客户端和服务器之间协调数据交换，是实现分布式应用的关键组件之一。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     ActiveUpdateException: Any
-    """ """
+    """获取当前活跃的更新异常信息。"""
     OwnerData: Any
-    """ """
+    """获取或设置所有者自定义数据。"""
     Params: Any
-    """ """
+    """获取或设置参数集合。"""
     DataSet: Any
-    """ """
+    """获取或设置关联的数据集。"""
     Constraints: bool
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     ResolveToDataSet: bool
-    """ """
+    """指定是否直接更新数据集而不是使用SQL。"""
     Exported: Any
-    """ """
+    """指示是否已导出数据。"""
     Options: Any
-    """ """
+    """指定组件的详细选项配置集合。"""
     UpdateMode: Any
-    """ """
+    """获取或设置更新模式。"""
     OnDataRequest: Any
-    """ """
+    """OnDataRequest事件，在相关操作发生时触发。"""
     OnGetData: Any
-    """ """
+    """OnGetData事件，在相关操作发生时触发。"""
     OnUpdateData: Any
-    """ """
+    """OnUpdateData事件，在相关操作发生时触发。"""
     OnUpdateError: Any
-    """ """
+    """OnUpdateError事件，在相关操作发生时触发。"""
     AfterUpdateRecord: Any
-    """ """
+    """在更新记录之后触发事件。"""
     BeforeUpdateRecord: Any
-    """ """
+    """在更新记录之前触发事件。"""
     OnValidate: Any
-    """ """
+    """OnValidate事件，在相关操作发生时触发。"""
     BeforeApplyUpdates: Any
-    """ """
+    """在应用更新之前触发事件。"""
     AfterApplyUpdates: Any
-    """ """
+    """在应用更新之后触发事件。"""
     BeforeGetRecords: Any
-    """ """
+    """在获取记录之前触发事件。"""
     AfterGetRecords: Any
-    """ """
+    """在获取记录之后触发事件。"""
     BeforeRowRequest: Any
-    """ """
+    """在行请求之前触发事件。"""
     AfterRowRequest: Any
-    """ """
+    """在行请求之后触发事件。"""
     BeforeExecute: Any
-    """ """
+    """在执行命令之前触发事件。"""
     AfterExecute: Any
-    """ """
+    """在执行命令之后触发事件。"""
     BeforeGetParams: Any
-    """ """
+    """在获取参数之前触发事件。"""
     AfterGetParams: Any
-    """ """
+    """在获取参数之后触发事件。"""
     OnGetTableName: Any
-    """ """
+    """OnGetTableName事件，在相关操作发生时触发。"""
     OnGetDataSetProperties: Any
-    """ """
+    """OnGetDataSetProperties事件，在相关操作发生时触发。"""
     BeforeCommit: Any
-    """ """
+    """在提交事务之前触发事件。"""
 
 class CustomDBGrid(CustomGrid):
     """TCustomDBGrid是DBGrid组件的基类，它是一个抽象类，为数据感知网格控件提供了基础框架和核心功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def DefaultDrawDataCell(self, *args, **kwargs) -> Any:
-        """ """
+        """默认绘制数据单元格的内容。"""
     def DefaultDrawColumnCell(self, *args, **kwargs) -> Any:
-        """ """
+        """默认绘制列单元格的内容。"""
     def DefaultHandler(self, *args, **kwargs) -> Any:
-        """ """
+        """处理未由其他消息处理函数处理的消息。"""
     def ExecuteAction(self, *args, **kwargs) -> Any:
-        """ """
+        """执行指定的操作。"""
     def ShowPopupEditor(self, *args, **kwargs) -> Any:
-        """ """
+        """显示弹出式编辑器。"""
     def UpdateAction(self, *args, **kwargs) -> Any:
-        """ """
+        """更新操作的状态。"""
     def ValidFieldIndex(self, *args, **kwargs) -> bool:
-        """ """
+        """检查指定的字段索引是否有效。"""
     EditorMode: Any
-    """ """
+    """指定网格是否处于单元格编辑模式。"""
     FieldCount: int
-    """ """
+    """获取数据集中的字段数量。"""
     Fields: Any
-    """ """
+    """获取数据集的字段对象列表。"""
     SelectedField: Any
-    """ """
+    """获取当前选中的字段对象。"""
     SelectedIndex: int
-    """ """
+    """获取或设置当前选中的列索引。"""
     DataSource: Any
-    """ """
+    """获取或设置与组件关联的数据源。"""
 
 class DBGrid(CustomDBGrid):
     """TDBGrid是最重要的数据感知控件之一，它提供了一个表格形式的界面来显示和编辑数据库中的数据。"""
     Canvas: Any
-    """ """
+    """获取组件的绘图画布对象。"""
     SelectedRows: Any
-    """ """
+    """获取网格中所有选中行的书签列表。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     BiDiMode: Any
-    """ """
+    """获取或设置双向文本显示模式。"""
     BorderStyle: Any
-    """ """
+    """指定组件的边框样式。"""
     Color: Any
-    """ """
+    """指定组件的背景颜色。"""
     Columns: Any
-    """ """
+    """获取或设置网格的列集合。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     Ctl3D: Any
-    """ """
+    """指定组件是否显示三维立体边框效果。"""
     DataSource: Any
-    """ """
+    """获取或设置与组件关联的数据源。"""
     DefaultDrawing: Any
-    """ """
+    """指定是否使用默认绘制方式。"""
     DragCursor: Any
-    """ """
+    """指定拖动组件时鼠标指针的样式。"""
     DragKind: Any
-    """ """
+    """指定拖动操作的类。"""
     DragMode: Any
-    """ """
+    """指定组件是否可被拖动及拖动方式。"""
     DrawingStyle: Any
-    """ """
+    """获取或设置网格的绘制样式。"""
     Enabled: Any
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     FixedColor: Any
-    """ """
+    """获取或设置固定行列的背景颜色。"""
     GradientEndColor: Any
-    """ """
+    """获取或设置渐变结束颜色。"""
     GradientStartColor: Any
-    """ """
+    """获取或设置渐变起始颜色。"""
     Font: Any
-    """ """
+    """指定组件中文本的字体样式。"""
     ImeMode: Any
-    """ """
+    """获取或设置输入法编辑器模式。"""
     ImeName: Any
-    """ """
+    """获取或设置输入法编辑器名称。"""
     Options: Any
-    """ """
+    """指定组件的详细选项配置集合。"""
     ParentBiDiMode: Any
-    """ """
+    """指定组件是否继承父容器的双向文本模式。"""
     ParentColor: Any
-    """ """
+    """指定组件是否继承父容器的背景颜色。"""
     ParentCtl3D: Any
-    """ """
+    """指定组件是否继承父容器的三维边框效果。"""
     ParentFont: Any
-    """ """
+    """指定组件是否继承父容器的字体设置。"""
     ParentShowHint: Any
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
     ReadOnly: Any
-    """ """
+    """指定组件是否处于只读模式。"""
     ShowHint: Any
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     TabOrder: Any
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: Any
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     TitleFont: Any
-    """ """
+    """获取或设置标题栏的字体样式。"""
     Touch: Any
-    """ """
+    """指定与组件关联的触摸手势管理器。"""
     Visible: Any
-    """ """
+    """指定组件是否可见。"""
     StyleElements: Any
-    """ """
+    """指定组件启用或禁用的样式元素。"""
     StyleName: Any
-    """ """
+    """指定组件应用的VCL样式名称。"""
     OnCellClick: Any
-    """ """
+    """OnCellClick事件，在相关操作发生时触发。"""
     OnColEnter: Any
-    """ """
+    """OnColEnter事件，在相关操作发生时触发。"""
     OnColExit: Any
-    """ """
+    """OnColExit事件，在相关操作发生时触发。"""
     OnColumnMoved: Any
-    """ """
+    """OnColumnMoved事件，在相关操作发生时触发。"""
     OnDrawDataCell: Any
-    """ """
+    """OnDrawDataCell事件，在相关操作发生时触发。"""
     OnDrawColumnCell: Any
-    """ """
+    """OnDrawColumnCell事件，在相关操作发生时触发。"""
     OnDblClick: Any
-    """ """
+    """OnDblClick事件，在相关操作发生时触发。"""
     OnDragDrop: Any
-    """ """
+    """OnDragDrop事件，在相关操作发生时触发。"""
     OnDragOver: Any
-    """ """
+    """OnDragOver事件，在相关操作发生时触发。"""
     OnEditButtonClick: Any
-    """ """
+    """OnEditButtonClick事件，在相关操作发生时触发。"""
     OnEndDock: Any
-    """ """
+    """OnEndDock事件，在相关操作发生时触发。"""
     OnEndDrag: Any
-    """ """
+    """OnEndDrag事件，在相关操作发生时触发。"""
     OnEnter: Any
-    """ """
+    """OnEnter事件，在相关操作发生时触发。"""
     OnExit: Any
-    """ """
+    """OnExit事件，在相关操作发生时触发。"""
     OnGesture: Any
-    """ """
+    """OnGesture事件，在相关操作发生时触发。"""
     OnKeyDown: Any
-    """ """
+    """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
-    """ """
+    """OnKeyPress事件，在相关操作发生时触发。"""
     OnKeyUp: Any
-    """ """
+    """OnKeyUp事件，在相关操作发生时触发。"""
     OnMouseActivate: Any
-    """ """
+    """OnMouseActivate事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseEnter: Any
-    """ """
+    """OnMouseEnter事件，在相关操作发生时触发。"""
     OnMouseLeave: Any
-    """ """
+    """OnMouseLeave事件，在相关操作发生时触发。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     OnMouseWheel: Any
-    """ """
+    """OnMouseWheel事件，在相关操作发生时触发。"""
     OnMouseWheelDown: Any
-    """ """
+    """OnMouseWheelDown事件，在相关操作发生时触发。"""
     OnMouseWheelUp: Any
-    """ """
+    """OnMouseWheelUp事件，在相关操作发生时触发。"""
     OnStartDock: Any
-    """ """
+    """OnStartDock事件，在相关操作发生时触发。"""
     OnStartDrag: Any
-    """ """
+    """OnStartDrag事件，在相关操作发生时触发。"""
     OnTitleClick: Any
-    """ """
+    """OnTitleClick事件，在相关操作发生时触发。"""
 
 class NiceChart(CustomPanel):
-    """ """
+    """功能丰富的图表控件，支持多种图表类型，可用于数据可视化展示。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def BeginUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """开始批量更新操作，暂停屏幕重绘以提高性能。"""
     def EndUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
     def AddSeries(self, *args, **kwargs) -> Any:
-        """ """
+        """向图表中添加一个数据系列。"""
     def ClientToChart(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端坐标转换为图表坐标系中的值。"""
     def ClientToChart(self, *args, **kwargs) -> Any:
-        """ """
+        """将客户端坐标转换为图表坐标系中的值。"""
     def RemoveSeries(self, *args, **kwargs) -> Any:
-        """ """
+        """从图表中移除指定的数据系列。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     Series: Any
-    """ """
+    """获取图表中的数据系列集合。"""
     SeriesCount: int
-    """ """
-    def CreateMetafile -> Any:
-        """ """
+    """获取图表中的数据系列数量。"""
+    def CreateMetafile(self, *args, **kwargs) -> Any:
+        """创建图表的Windows图元文件图像。"""
     def CopyToClipboard(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据复制到剪贴板。"""
     def CreateBitmap(self, *args, **kwargs) -> Any:
-        """ """
+        """创建图表的位图图像。"""
     def CopyToClipboardAsBitmap(self, *args, **kwargs) -> Any:
-        """ """
+        """将图表以位图格式复制到剪贴板。"""
     AxisLineWidth: int
-    """ """
+    """获取或设置轴线宽度。"""
     ShowLegend: bool
-    """ """
+    """指定是否显示图例。"""
     ShowTitle: bool
-    """ """
+    """指定是否显示标题。"""
     ShowXGrid: bool
-    """ """
+    """指定是否显示X轴网格线。"""
     ShowYGrid: bool
-    """ """
+    """指定是否显示Y轴网格线。"""
     ShowXAxisLine: Any
-    """ """
+    """指定是否显示X轴线。"""
     ShowYAxisLine: bool
-    """ """
+    """指定是否显示Y轴线。"""
     Title: str
-    """ """
+    """获取或设置标题文本。"""
     TitleFont: Any
-    """ """
+    """获取或设置标题栏的字体样式。"""
     AxisXTitle: str
-    """ """
+    """获取或设置X轴标题。"""
     AxisYTitle: str
-    """ """
+    """获取或设置Y轴标题。"""
     AxisXOnePerValue: bool
-    """ """
+    """指定是否每个数据值显示一个X轴刻度。"""
     AxisXScale: Any
-    """ """
+    """获取或设置X轴刻度范围。"""
     AxisYScale: Any
-    """ """
+    """获取或设置Y轴刻度范围。"""
     GridColor: Any
-    """ """
+    """获取或设置网格线颜色。"""
     Monochrome: bool
-    """ """
+    """指定是否使用单色显示。"""
     SoftColors: bool
-    """ """
+    """指定是否使用柔和颜色。"""
     TickLength: int
-    """ """
+    """获取或设置刻度线长度。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
-    BevelInner default bvNone: Any
-    """ """
-    BevelOuter default bvNone: Any
-    """ """
-    BorderStyle default bsSingle: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
+    BevelInner: Any
+    """指定组件内斜角的样式。"""
+    BevelOuter: Any
+    """指定组件外斜角的样式。"""
+    BorderStyle: Any
+    """指定组件的边框样式。"""
     BevelKind: Any
-    """ """
+    """指定组件斜线边缘的样式类型。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
 
 class LedgerGrid(StringGrid):
-    """ """
+    """LED风格的数字显示网格控件，常用于模拟LED显示屏效果。"""
     Canvas: Any
-    """ """
+    """获取组件的绘图画布对象。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     DigitalNumber: int
-    """ """
+    """获取或设置LED数码管显示的数字。"""
     AutoSize: bool
-    """ """
+    """指定组件是否根据其内容自动调整大小。"""
     Version: str
-    """ """
+    """获取或设置组件的版本信息。"""
 
 class EduStringGrid(StringGrid):
-    """ """
+    """增强型的字符串网格控件，提供了单元格合并、排序和打印等高级功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def InAllMerge(self, *args, **kwargs) -> int:
-        """ """
+        """检查指定单元格是否处于合并区域内。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     def InsertRow(self, *args, **kwargs) -> Any:
-        """ """
+        """在指定位置插入一行。"""
     def InsertColumn(self, *args, **kwargs) -> Any:
-        """ """
+        """在指定位置插入一列。"""
     def DeleteRow(self, *args, **kwargs) -> Any:
-        """ """
+        """删除指定行。"""
     def DeleteColumn(self, *args, **kwargs) -> Any:
-        """ """
+        """删除指定列。"""
     def MoveTo(self, *args, **kwargs) -> Any:
-        """ """
+        """移动记录指针到指定位置。"""
     def MoveRow(self, *args, **kwargs) -> Any:
-        """ """
+        """将指定行移动到新位置。"""
     def MoveColumn(self, *args, **kwargs) -> Any:
-        """ """
+        """将指定列移动到新位置。"""
     def SwapRows(self, *args, **kwargs) -> Any:
-        """ """
+        """交换两行的位置。"""
     def SwapColumns(self, *args, **kwargs) -> Any:
-        """ """
+        """交换两列的位置。"""
     def InitializeFormatOptions(self, *args, **kwargs) -> Any:
-        """ """
+        """初始化格式选项设置。"""
     def AutoSizeCol(self, *args, **kwargs) -> Any:
-        """ """
+        """根据内容自动调整列宽。"""
     def AutoSizeColumns(self, *args, **kwargs) -> Any:
-        """ """
+        """根据内容自动调整所有列的宽度。"""
     def SortByColumn(self, *args, **kwargs) -> Any:
-        """ """
+        """根据指定列的内容进行排序。"""
     def DoSort(self, *args, **kwargs) -> Any:
-        """ """
+        """执行排序操作。"""
     def IsCell(self, *args, **kwargs) -> bool:
-        """ """
+        """检查指定位置是否是有效的单元格。"""
     def LoadFromFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从指定文件加载数据。"""
     def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到指定文件。"""
     def GetCellDrawState(self, *args, **kwargs) -> Any:
-        """ """
+        """获取单元格的绘制状态信息。"""
     def SetViewCol(self, *args, **kwargs) -> Any:
-        """ """
+        """设置当前视图的列位置。"""
     def DoGoto(self, *args, **kwargs) -> Any:
-        """ """
+        """跳转到指定的行或单元格。"""
     def MergeCells(self, *args, **kwargs) -> Any:
-        """ """
+        """合并指定的单元格区域。"""
     def MergeClear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有单元格合并设置。"""
     def PrintSetup(self, *args, **kwargs) -> Any:
-        """ """
+        """打开打印设置对话框。"""
     def Preview(self, *args, **kwargs) -> Any:
-        """ """
+        """预览打印效果。"""
     def Print(self, *args, **kwargs) -> Any:
-        """ """
+        """打印内容。"""
     BevelStyle : Any
-    """ """
+    """获取或设置斜角边框样式。"""
     BlockName: str
-    """ """
+    """获取或设置区块名称。"""
     AlignmentVert: Any
-    """ """
+    """获取或设置垂直对齐方式。"""
     AlignmentHorz: Any
-    """ """
+    """获取或设置水平对齐方式。"""
     ClickSorting: bool
-    """ """
+    """指定点击列头时是否进行排序。"""
     ClickDown: bool
-    """ """
+    """指示点击时鼠标是否处于按下状态。"""
     CustomDrawCell: bool
-    """ """
+    """指定是否自定义绘制单元格。"""
     ProportionalScrollBars: bool
-    """ """
+    """指定滚动条是否按比例显示。"""
     ExtendedKeys: bool
-    """ """
+    """指定是否启用扩展键盘功能。"""
     MultiLines : bool
-    """ """
+    """指定是否支持多行文本。"""
     OnGetCellFormat: Any
-    """ """
+    """OnGetCellFormat事件，在相关操作发生时触发。"""
     OnClickSort: Any
-    """ """
+    """OnClickSort事件，在相关操作发生时触发。"""
     OnRowInsert: Any
-    """ """
+    """OnRowInsert事件，在相关操作发生时触发。"""
     OnRowDelete: Any
-    """ """
+    """OnRowDelete事件，在相关操作发生时触发。"""
     OnColumnInsert: Any
-    """ """
+    """OnColumnInsert事件，在相关操作发生时触发。"""
     OnColumnDelete: Any
-    """ """
+    """OnColumnDelete事件，在相关操作发生时触发。"""
     OnColumnWidthsChanged: Any
-    """ """
+    """OnColumnWidthsChanged事件，在相关操作发生时触发。"""
     OnRowHeightsChanged: Any
-    """ """
+    """OnRowHeightsChanged事件，在相关操作发生时触发。"""
     OnSizeChanged: Any
-    """ """
+    """OnSizeChanged事件，在相关操作发生时触发。"""
     OnBeginSort: Any
-    """ """
+    """OnBeginSort事件，在相关操作发生时触发。"""
     OnEndSort: Any
-    """ """
+    """OnEndSort事件，在相关操作发生时触发。"""
 
 class NiceGrid(CustomPanel):
-    """ """
+    """高级网格控件，提供了丰富的单元格编辑、格式化和自定义绘制功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def BeginUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """开始批量更新操作，暂停屏幕重绘以提高性能。"""
     def EndUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     Cells: Any
-    """ """
+    """获取或设置指定单元格的文本内容。"""
     Objects: int
-    """ """
+    """获取或设置与单元格关联的对象。"""
     ColWidths: int
-    """ """
+    """获取或设置各列的宽度。"""
     def EnsureVisible(self, *args, **kwargs) -> Any:
-        """ """
+        """确保指定行或列可见，必要时滚动视图。"""
     def CutToClipboard(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据剪切到剪贴板。"""
     def CopyToClipboard(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据复制到剪贴板。"""
     def PasteFromClipboard(self, *args, **kwargs) -> Any:
-        """ """
+        """从剪贴板粘贴数据。"""
     def GetHitTestInfo(self, *args, **kwargs) -> Any:
-        """ """
-    def HeaderCellsCount -> int:
-        """ """
+        """获取指定位置的点击测试信息。"""
+    def HeaderCellsCount(self, *args, **kwargs) -> int:
+        """获取表头单元格的个数。"""
     def HeaderCells(self, *args, **kwargs) -> Any:
-        """ """
+        """获取表头单元格集合。"""
     Col: int
-    """ """
+    """获取或设置当前列位置。"""
     Row: int
-    """ """
+    """获取或设置当前行位置。"""
     SelectArea: Any
-    """ """
+    """获取当前选中的区域范围。"""
     def DeleteRow(self, *args, **kwargs) -> Any:
-        """ """
+        """删除指定行。"""
     def InsertRow(self, *args, **kwargs) -> Any:
-        """ """
-    def AddRow -> int:
-        """ """
+        """在指定位置插入一行。"""
+    def AddRow(self, *args, **kwargs) -> int:
+        """在表格末尾添加一个新行。"""
     HorzOffset: int
-    """ """
+    """获取或设置水平滚动偏移量。"""
     VertOffset: int
-    """ """
+    """获取或设置垂直滚动偏移量。"""
     def MergeCells(self, *args, **kwargs) -> Any:
-        """ """
+        """合并指定的单元格区域。"""
     def ClearMergeCells(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有已合并的单元格。"""
     Enabled: bool
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     ColCount: int
-    """ """
+    """获取或设置列数。"""
     RowCount: int
-    """ """
+    """获取或设置行数。"""
     AutoAddRow: bool
-    """ """
+    """指定是否在最后一行输入时自动添加新行。"""
     AutoFillDown: bool
-    """ """
+    """指定是否自动向下填充数据。"""
     AutoFillRight: bool
-    """ """
+    """指定是否自动向右填充数据。"""
     DefRowHeight: int
-    """ """
+    """获取或设置默认行高。"""
     DefColWidth: int
-    """ """
+    """获取或设置默认列宽。"""
     Flat: bool
-    """ """
+    """指定控件是否为扁平外观。"""
     Color: Any
-    """ """
+    """指定组件的背景颜色。"""
     AlternateColor: Any
-    """ """
+    """获取或设置交替行颜色。"""
     GridColor: Any
-    """ """
+    """获取或设置网格线颜色。"""
     ShowGrid: bool
-    """ """
+    """指定是否显示网格线。"""
     HeaderLine: int
-    """ """
+    """获取或设置表头行数。"""
     HeaderColor: Any
-    """ """
+    """获取或设置表头背景色。"""
     HeaderLightColor: Any
-    """ """
+    """获取或设置表头高亮颜色。"""
     HeaderDarkColor: Any
-    """ """
+    """获取或设置表头阴影颜色。"""
     HeaderFont: Any
-    """ """
+    """获取或设置表头字体样式。"""
     FooterFont: Any
-    """ """
+    """获取或设置页脚字体样式。"""
     SelectionColor: Any
-    """ """
+    """获取或设置选中项的颜色。"""
     FitToWidth: bool
-    """ """
+    """指定是否自动适应宽度。"""
     AutoColWidth: bool
-    """ """
+    """指定是否自动调整列宽。"""
     ReadOnly: bool
-    """ """
+    """指定组件是否处于只读模式。"""
     Columns: Any
-    """ """
+    """获取或设置网格的列集合。"""
     GutterKind: Any
-    """ """
+    """指定行号区域类型。"""
     GutterWidth: int
-    """ """
+    """获取或设置行号区域宽度。"""
     GutterFont: Any
-    """ """
+    """获取或设置行号字体。"""
     GutterStrings: Any
-    """ """
+    """获取或设置行号文本列表。"""
     ShowFooter: bool
-    """ """
+    """指定是否显示页脚。"""
     OnDrawCell: Any
-    """ """
+    """OnDrawCell事件，在相关操作发生时触发。"""
     OnDrawHeader: Any
-    """ """
+    """OnDrawHeader事件，在相关操作发生时触发。"""
     OnDrawGutter: Any
-    """ """
+    """OnDrawGutter事件，在相关操作发生时触发。"""
     OnDrawFooter: Any
-    """ """
+    """OnDrawFooter事件，在相关操作发生时触发。"""
     OnFilterChar: Any
-    """ """
+    """OnFilterChar事件，在相关操作发生时触发。"""
     OnHeaderClick: Any
-    """ """
+    """OnHeaderClick事件，在相关操作发生时触发。"""
     OnGutterClick: Any
-    """ """
+    """OnGutterClick事件，在相关操作发生时触发。"""
     OnCellChange: Any
-    """ """
+    """OnCellChange事件，在相关操作发生时触发。"""
     OnCellChanging: Any
-    """ """
+    """OnCellChanging事件，在相关操作发生时触发。"""
     OnColRowChanged: Any
-    """ """
+    """OnColRowChanged事件，在相关操作发生时触发。"""
     OnInsertRow: Any
-    """ """
+    """OnInsertRow事件，在相关操作发生时触发。"""
     OnDeleteRow: Any
-    """ """
+    """OnDeleteRow事件，在相关操作发生时触发。"""
     OnCellAssignment: Any
-    """ """
+    """OnCellAssignment事件，在相关操作发生时触发。"""
     Font: Any
-    """ """
+    """指定组件中文本的字体样式。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     BevelKind: Any
-    """ """
-    BorderStyle default bsSingle: Any
-    """ """
-    BevelOuter default bvNone: Any
-    """ """
+    """指定组件斜线边缘的样式类型。"""
+    BorderStyle: Any
+    """指定组件的边框样式。"""
+    BevelOuter: Any
+    """指定组件外斜角的样式。"""
     BevelInner: Any
-    """ """
+    """指定组件内斜角的样式。"""
     TabOrder: Any
-    """ """
-    TabStop default True: Any
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
+    TabStop: Any
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Tag: Any
-    """ """
+    """存储与组件关联的任意整数值。"""
     OnClick: Any
-    """ """
+    """OnClick事件，在相关操作发生时触发。"""
     OnDblClick: Any
-    """ """
+    """OnDblClick事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     OnKeyPress: Any
-    """ """
+    """OnKeyPress事件，在相关操作发生时触发。"""
     OnKeyDown: Any
-    """ """
+    """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyUp: Any
-    """ """
+    """OnKeyUp事件，在相关操作发生时触发。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
 
 class NiceGridSync(NiceGrid):
-    """ """
+    """网格同步控件，用于同步多个NiceGrid控件的滚动和选择状态。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     Grid: Any
-    """ """
+    """获取或设置关联的同步网格。"""
 
 class Upgrader(Component):
-    """ """
+    """应用程序自动升级组件，用于检查更新、下载和安装新版本。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Check(self, *args, **kwargs) -> bool:
-        """ """
+        """检查更新是否可用。"""
     def Start(self, *args, **kwargs) -> Any:
-        """ """
+        """开始执行操作或启动服务。"""
     def Pause(self, *args, **kwargs) -> Any:
-        """ """
+        """暂停当前正在执行的操作。"""
     def Resume(self, *args, **kwargs) -> Any:
-        """ """
+        """恢复暂停的操作。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
     UpdateInfoURL: str
-    """ """
+    """获取或设置更新信息检查URL。"""
     VersionPattern: Any
-    """ """
+    """获取或设置版本号匹配模式。"""
     VersionAsDateTime: Any
-    """ """
+    """将版本号作为日期时间表示。"""
     VersionAsNumber: int
-    """ """
+    """将版本号作为数值表示。"""
     OnProgress: Any
-    """ """
+    """OnProgress事件，在相关操作发生时触发。"""
     OnFileBegin: Any
-    """ """
+    """OnFileBegin事件，在相关操作发生时触发。"""
     OnFileEnd: Any
-    """ """
+    """OnFileEnd事件，在相关操作发生时触发。"""
     Name: Any
-    """ """
+    """指定组件的名称，用于在代码中引用。"""
 
 class NoBorderForm(Component):
-    """ """
+    """无边框窗体辅助组件，用于创建无边框窗口并支持阴影效果。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     EnabledShadow: bool
-    """ """
+    """指定是否启用窗口阴影效果。"""
     EnabledNoBorder: bool
-    """ """
+    """指定是否启用无边框模式。"""
 
 class YSizer(GraphicControl):
-    """ """
+    """大小调整控件，提供可视化的拖拽调整大小功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def   Paint(self, *args, **kwargs) -> Any:
-        """ """
-    def   UpdateXORFrame(self, *args, **kwargs) -> Any:
-        """ """
-    def   MouseDown(self, *args, **kwargs) -> Any:
-        """ """
-    def   MouseMove(self, *args, **kwargs) -> Any:
-        """ """
-    def   MouseUp(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Paint(self, *args, **kwargs) -> Any:
+        """绘制YSizer控件的调整手柄图形。"""
+    def UpdateXORFrame(self, *args, **kwargs) -> Any:
+        """更新拖拽时的异或框选框架。"""
+    def MouseDown(self, *args, **kwargs) -> Any:
+        """处理鼠标按下事件以开始拖拽调整大小。"""
+    def MouseMove(self, *args, **kwargs) -> Any:
+        """处理鼠标移动事件以实时更新调整大小位置。"""
+    def MouseUp(self, *args, **kwargs) -> Any:
+        """处理鼠标释放事件以完成大小调整操作。"""
     Color: Any
-    """ """
+    """指定组件的背景颜色。"""
     Anchors: Any
-    """ """
-    Width default 16: Any
-    """ """
-    Height default 16: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
+    Width: Any
+    """指定组件的宽度（以像素为单位）。"""
+    Height: Any
+    """指定组件的高度（以像素为单位）。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
 
 class CustomPicShow(CustomControl):
-    """ """
+    """图片展示控件的基类，提供了图片加载、显示和切换的基本框架。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     def GetStyleNames(self, *args, **kwargs) -> int:
-        """ """
+        """获取所有可用的过渡效果样式名称。"""
     Busy: bool
-    """ """
+    """指示组件当前是否正在执行操作。"""
     Empty: bool
-    """ """
+    """指示是否为空状态。"""
     Progress: Any
-    """ """
+    """获取或设置当前进度。"""
     About: Any
-    """ """
+    """显示关于信息。"""
 
 class PicShow(CustomPicShow):
-    """ """
+    """高级图片展示控件，支持多种图片格式、过渡效果和幻灯片播放功能。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     AutoSize: Any
-    """ """
+    """指定组件是否根据其内容自动调整大小。"""
     BevelEdges: Any
-    """ """
+    """指定组件哪些边缘具有斜角效果。"""
     BevelInner: Any
-    """ """
+    """指定组件内斜角的样式。"""
     BevelOuter: Any
-    """ """
+    """指定组件外斜角的样式。"""
     BevelKind: Any
-    """ """
+    """指定组件斜线边缘的样式类型。"""
     BevelWidth: Any
-    """ """
+    """指定组件斜角的宽度。"""
     BgMode: Any
-    """ """
+    """获取或设置背景模式。"""
     BgPicture: Any
-    """ """
+    """获取或设置背景图片。"""
     BorderWidth: Any
-    """ """
+    """指定组件边框的宽度。"""
     Center: Any
-    """ """
+    """指定图像是否居中显示。"""
     Color: Any
-    """ """
+    """指定组件的背景颜色。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     Delay: Any
-    """ """
+    """获取或设置延迟时间（毫秒）。"""
     DockSite: Any
-    """ """
+    """指定组件是否可以作为其他控件的停靠目标。"""
     DragCursor: Any
-    """ """
+    """指定拖动组件时鼠标指针的样式。"""
     DragKind: Any
-    """ """
+    """指定拖动操作的类。"""
     DragMode: Any
-    """ """
+    """指定组件是否可被拖动及拖动方式。"""
     Enabled: Any
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     ExactTiming: Any
-    """ """
+    """指定是否使用精确计时。"""
     FrameColor: Any
-    """ """
+    """获取或设置边框颜色。"""
     FrameWidth: Any
-    """ """
+    """获取或设置边框宽度。"""
     Height: Any
-    """ """
+    """指定组件的高度（以像素为单位）。"""
     Manual: Any
-    """ """
+    """指定是否为手动模式。"""
     OverDraw: Any
-    """ """
+    """指定是否允许重叠绘制。"""
     ParentColor: Any
-    """ """
+    """指定组件是否继承父容器的背景颜色。"""
     ParentShowHint: Any
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     Picture: Any
-    """ """
+    """获取或设置显示的图片。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
     Proportional: Any
-    """ """
+    """指定图像是否等比缩放。"""
     ShowHint: Any
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     Reverse: Any
-    """ """
+    """指定是否反向播放。"""
     Stretch: Any
-    """ """
+    """指定图像是否拉伸适应。"""
     Step: Any
-    """ """
+    """获取或设置步进值。"""
     Style: Any
-    """ """
+    """指定组件的显示样式。"""
     StyleName: Any
-    """ """
+    """指定组件应用的VCL样式名称。"""
     TabOrder: Any
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: Any
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Threaded: Any
-    """ """
+    """指定是否使用多线程。"""
     Visible: Any
-    """ """
+    """指定组件是否可见。"""
     Width: Any
-    """ """
+    """指定组件的宽度（以像素为单位）。"""
     OnAfterNewFrame: Any
-    """ """
+    """OnAfterNewFrame事件，在相关操作发生时触发。"""
     OnBeforeNewFrame: Any
-    """ """
+    """OnBeforeNewFrame事件，在相关操作发生时触发。"""
     OnCanResize: Any
-    """ """
+    """OnCanResize事件，在相关操作发生时触发。"""
     OnClick: Any
-    """ """
+    """OnClick事件，在相关操作发生时触发。"""
     OnChange: Any
-    """ """
+    """OnChange事件，在相关操作发生时触发。"""
     OnComplete: Any
-    """ """
+    """OnComplete事件，在相关操作发生时触发。"""
     OnConstrainedResize: Any
-    """ """
+    """OnConstrainedResize事件，在相关操作发生时触发。"""
     OnCustomDraw: Any
-    """ """
+    """OnCustomDraw事件，在相关操作发生时触发。"""
     OnDblClick: Any
-    """ """
+    """OnDblClick事件，在相关操作发生时触发。"""
     OnDockDrop: Any
-    """ """
+    """OnDockDrop事件，在相关操作发生时触发。"""
     OnDockOver: Any
-    """ """
+    """OnDockOver事件，在相关操作发生时触发。"""
     OnDragDrop: Any
-    """ """
+    """OnDragDrop事件，在相关操作发生时触发。"""
     OnDragOver: Any
-    """ """
+    """OnDragOver事件，在相关操作发生时触发。"""
     OnEndDock: Any
-    """ """
+    """OnEndDock事件，在相关操作发生时触发。"""
     OnEndDrag: Any
-    """ """
+    """OnEndDrag事件，在相关操作发生时触发。"""
     OnEnter: Any
-    """ """
+    """OnEnter事件，在相关操作发生时触发。"""
     OnExit: Any
-    """ """
+    """OnExit事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseEnter: Any
-    """ """
+    """OnMouseEnter事件，在相关操作发生时触发。"""
     OnMouseLeave: Any
-    """ """
+    """OnMouseLeave事件，在相关操作发生时触发。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     OnKeyDown: Any
-    """ """
+    """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
-    """ """
+    """OnKeyPress事件，在相关操作发生时触发。"""
     OnKeyUp: Any
-    """ """
+    """OnKeyUp事件，在相关操作发生时触发。"""
     OnProgress: Any
-    """ """
+    """OnProgress事件，在相关操作发生时触发。"""
     OnResize: Any
-    """ """
+    """OnResize事件，在相关操作发生时触发。"""
     OnStart: Any
-    """ """
+    """OnStart事件，在相关操作发生时触发。"""
     OnStartDock: Any
-    """ """
+    """OnStartDock事件，在相关操作发生时触发。"""
     OnStartDrag: Any
-    """ """
+    """OnStartDrag事件，在相关操作发生时触发。"""
     OnStop: Any
-    """ """
+    """OnStop事件，在相关操作发生时触发。"""
     OnUnDock: Any
-    """ """
+    """OnUnDock事件，在相关操作发生时触发。"""
 
 class DBPicShow(CustomPicShow):
-    """ """
+    """数据感知的图片展示控件，可绑定到数据集的图片字段。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def LoadPicture(self, *args, **kwargs) -> Any:
-        """ """
+        """从数据源字段加载图片内容。"""
     Field: Any
-    """ """
+    """获取或设置绑定的数据字段。"""
     Picture: Any
-    """ """
+    """获取或设置显示的图片。"""
     AutoDisplay: bool
-    """ """
+    """指定是否自动显示图片内容。"""
     DataField: str
-    """ """
+    """获取或设置数据字段名。"""
     DataSource: Any
-    """ """
+    """获取或设置与组件关联的数据源。"""
     ReadOnly: bool
-    """ """
+    """指定组件是否处于只读模式。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
     AutoSize: Any
-    """ """
+    """指定组件是否根据其内容自动调整大小。"""
     BevelEdges: Any
-    """ """
+    """指定组件哪些边缘具有斜角效果。"""
     BevelInner: Any
-    """ """
+    """指定组件内斜角的样式。"""
     BevelOuter: Any
-    """ """
+    """指定组件外斜角的样式。"""
     BevelKind: Any
-    """ """
+    """指定组件斜线边缘的样式类型。"""
     BevelWidth: Any
-    """ """
+    """指定组件斜角的宽度。"""
     BgMode: Any
-    """ """
+    """获取或设置背景模式。"""
     BgPicture: Any
-    """ """
+    """获取或设置背景图片。"""
     BorderWidth: Any
-    """ """
+    """指定组件边框的宽度。"""
     Center: Any
-    """ """
+    """指定图像是否居中显示。"""
     Color: Any
-    """ """
+    """指定组件的背景颜色。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     Delay: Any
-    """ """
+    """获取或设置延迟时间（毫秒）。"""
     DockSite: Any
-    """ """
+    """指定组件是否可以作为其他控件的停靠目标。"""
     DragKind: Any
-    """ """
+    """指定拖动操作的类。"""
     DragCursor: Any
-    """ """
+    """指定拖动组件时鼠标指针的样式。"""
     DragMode: Any
-    """ """
+    """指定组件是否可被拖动及拖动方式。"""
     Enabled: Any
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     ExactTiming: Any
-    """ """
+    """指定是否使用精确计时。"""
     FrameColor: Any
-    """ """
+    """获取或设置边框颜色。"""
     FrameWidth: Any
-    """ """
+    """获取或设置边框宽度。"""
     Height: Any
-    """ """
+    """指定组件的高度（以像素为单位）。"""
     Manual: Any
-    """ """
+    """指定是否为手动模式。"""
     OverDraw: Any
-    """ """
+    """指定是否允许重叠绘制。"""
     ParentColor: Any
-    """ """
+    """指定组件是否继承父容器的背景颜色。"""
     ParentShowHint: Any
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     PopupMenu: Any
-    """ """
+    """指定与组件关联的右键弹出菜单。"""
     Proportional: Any
-    """ """
+    """指定图像是否等比缩放。"""
     ShowHint: Any
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     Reverse: Any
-    """ """
+    """指定是否反向播放。"""
     Stretch: Any
-    """ """
+    """指定图像是否拉伸适应。"""
     Step: Any
-    """ """
+    """获取或设置步进值。"""
     Style: Any
-    """ """
+    """指定组件的显示样式。"""
     StyleName: Any
-    """ """
+    """指定组件应用的VCL样式名称。"""
     TabOrder: Any
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: Any
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Threaded: Any
-    """ """
+    """指定是否使用多线程。"""
     Visible: Any
-    """ """
+    """指定组件是否可见。"""
     Width: Any
-    """ """
+    """指定组件的宽度（以像素为单位）。"""
     OnAfterLoadPicture: Any
-    """ """
+    """OnAfterLoadPicture事件，在相关操作发生时触发。"""
     OnAfterNewFrame: Any
-    """ """
+    """OnAfterNewFrame事件，在相关操作发生时触发。"""
     OnBeforeNewFrame: Any
-    """ """
+    """OnBeforeNewFrame事件，在相关操作发生时触发。"""
     OnBeforeLoadPicture: Any
-    """ """
+    """OnBeforeLoadPicture事件，在相关操作发生时触发。"""
     OnCanResize: Any
-    """ """
+    """OnCanResize事件，在相关操作发生时触发。"""
     OnClick: Any
-    """ """
+    """OnClick事件，在相关操作发生时触发。"""
     OnConstrainedResize: Any
-    """ """
+    """OnConstrainedResize事件，在相关操作发生时触发。"""
     OnComplete: Any
-    """ """
+    """OnComplete事件，在相关操作发生时触发。"""
     OnCustomDraw: Any
-    """ """
+    """OnCustomDraw事件，在相关操作发生时触发。"""
     OnDblClick: Any
-    """ """
+    """OnDblClick事件，在相关操作发生时触发。"""
     OnDockDrop: Any
-    """ """
+    """OnDockDrop事件，在相关操作发生时触发。"""
     OnDockOver: Any
-    """ """
+    """OnDockOver事件，在相关操作发生时触发。"""
     OnDragDrop: Any
-    """ """
+    """OnDragDrop事件，在相关操作发生时触发。"""
     OnDragOver: Any
-    """ """
+    """OnDragOver事件，在相关操作发生时触发。"""
     OnEndDock: Any
-    """ """
+    """OnEndDock事件，在相关操作发生时触发。"""
     OnEndDrag: Any
-    """ """
+    """OnEndDrag事件，在相关操作发生时触发。"""
     OnEnter: Any
-    """ """
+    """OnEnter事件，在相关操作发生时触发。"""
     OnExit: Any
-    """ """
+    """OnExit事件，在相关操作发生时触发。"""
     OnGetGraphicClass: Any
-    """ """
+    """OnGetGraphicClass事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseEnter: Any
-    """ """
+    """OnMouseEnter事件，在相关操作发生时触发。"""
     OnMouseLeave: Any
-    """ """
+    """OnMouseLeave事件，在相关操作发生时触发。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     OnKeyDown: Any
-    """ """
+    """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
-    """ """
+    """OnKeyPress事件，在相关操作发生时触发。"""
     OnKeyUp: Any
-    """ """
+    """OnKeyUp事件，在相关操作发生时触发。"""
     OnProgress: Any
-    """ """
+    """OnProgress事件，在相关操作发生时触发。"""
     OnResize: Any
-    """ """
+    """OnResize事件，在相关操作发生时触发。"""
     OnStart: Any
-    """ """
+    """OnStart事件，在相关操作发生时触发。"""
     OnStartDock: Any
-    """ """
+    """OnStartDock事件，在相关操作发生时触发。"""
     OnStartDrag: Any
-    """ """
+    """OnStartDrag事件，在相关操作发生时触发。"""
     OnStop: Any
-    """ """
+    """OnStop事件，在相关操作发生时触发。"""
     OnUnDock: Any
-    """ """
+    """OnUnDock事件，在相关操作发生时触发。"""
 
 class AiChat(Component):
-    """ """
+    """AI聊天组件，封装了与各种AI模型的交互功能，支持消息管理和流式响应。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def AddMessageAndRun(self, *args, **kwargs) -> Any:
-        """ """
+        """添加消息后立即执行AI对话请求。"""
     def AddMessageAndRunMsg(self, *args, **kwargs) -> Any:
-        """ """
+        """添加消息后立即执行AI对话并返回消息结果。"""
     def AddMessage(self, *args, **kwargs) -> Any:
-        """ """
+        """向对话历史中添加一条消息。"""
     def NewMessage(self, *args, **kwargs) -> Any:
-        """ """
+        """创建一条新的对话消息对象。"""
     def Run(self, *args, **kwargs) -> Any:
-        """ """
-    def GetLastMessage -> Any:
-        """ """
+        """运行或执行主要功能。"""
+    def GetLastMessage(self, *args, **kwargs) -> Any:
+        """获取对话历史中最后一条消息的内容。"""
     def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
+        """从对话中移除指定消息。"""
     def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
+        """从对话中移除指定消息。"""
     def AddToMemory(self, *args, **kwargs) -> Any:
-        """ """
+        """将信息添加到AI的记忆中。"""
     def RemoveFromMemory(self, *args, **kwargs) -> Any:
-        """ """
+        """从AI的记忆中移除指定信息。"""
     def NewChat(self, *args, **kwargs) -> Any:
-        """ """
+        """开始一个新的对话，清空当前消息历史。"""
     def Abort(self, *args, **kwargs) -> Any:
-        """ """
+        """中止当前正在执行的操作。"""
     def GetModels(self, *args, **kwargs) -> Any:
-        """ """
-    def GetModels -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
-    def PublicChatToSend -> str:
-        """ """
+        """获取可用的AI模型列表。"""
+    def GetModels(self, *args, **kwargs) -> Any:
+        """获取可用的AI模型列表。"""
+    def GetMessages(self, *args, **kwargs) -> Any:
+        """获取当前对话的所有消息列表。"""
+    def PublicChatToSend(self, *args, **kwargs) -> str:
+        """获取将要发送到AI的公开对话内容。"""
     def FileCategoriesToString(self, *args, **kwargs) -> str:
-        """ """
+        """将文件分类信息列表转换为字符串格式。"""
     def StringToFileCategories(self, *args, **kwargs) -> Any:
-        """ """
+        """将字符串解析为文件分类信息列表。"""
     def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器供处理。"""
     def DownLoadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从服务器下载已处理的文件。"""
     def CheckFileState(self, *args, **kwargs) -> Any:
-        """ """
+        """检查已上传文件的处理状态。"""
     def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
+        """删除已上传到服务器的文件。"""
     def RetrieveFile(self, *args, **kwargs) -> Any:
-        """ """
-    def RetrieveFileList -> Any:
-        """ """
+        """检索已上传文件的信息。"""
+    def RetrieveFileList(self, *args, **kwargs) -> Any:
+        """获取所有已上传到服务器的文件列表。"""
     def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """将文件上传到服务器缓存中。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     Messages: Any
-    """ """
+    """获取或设置AI对话的消息列表。"""
     LastError: str
-    """ """
+    """获取最近一次操作的错误信息。"""
     ApiKey: str
-    """ """
+    """获取或设置API密钥用于服务认证。"""
     Model: str
-    """ """
+    """获取或设置使用的AI模型名称。"""
     Frequency_penalty: Any
-    """ """
+    """获取或设置频率惩罚系数，控制生成内容的重复度。"""
     Logit_bias: str
-    """ """
+    """获取或设置logit偏置参数，影响特定token的出现概率。"""
     Logprobs: bool
-    """ """
+    """指定是否返回每个token的对数概率。"""
     Top_logprobs: str
-    """ """
+    """获取或设置返回最高概率token的数量。"""
     Max_tokens: int
-    """ """
+    """获取或设置AI生成的最大token数量。"""
     N: int
-    """ """
+    """获取或设置每次请求生成的回复数量。"""
     Presence_penalty: Any
-    """ """
+    """获取或设置存在惩罚系数，鼓励讨论新主题。"""
     Response_format: Any
-    """ """
+    """获取或设置AI响应的格式类型。"""
     Seed: int
-    """ """
+    """获取或设置随机种子。"""
     Stop: str
-    """ """
+    """获取或设置停止生成的标记序列。"""
     Asynchronous: bool
-    """ """
+    """指定是否以异步模式执行请求。"""
     Temperature: Any
-    """ """
+    """获取或设置AI生成的随机性参数。"""
     Top_p: Any
-    """ """
+    """获取或设置核采样参数。"""
     K: int
-    """ """
+    """获取或设置Top-K采样参数。"""
     Tool_choice: str
-    """ """
+    """获取或设置工具调用模式。"""
     Tool_Active: bool
-    """ """
+    """指定是否启用工具调用功能。"""
     User: str
-    """ """
+    """获取或设置用户标识。"""
     SystemPrompt: Any
-    """ """
+    """获取或设置AI系统的提示词。"""
     Prompt_tokens: int
-    """ """
+    """获取请求消耗的token数量。"""
     Completion_tokens: int
-    """ """
+    """获取响应生成的token数量。"""
     Total_tokens: int
-    """ """
+    """获取总消耗的token数量。"""
     Thinking_tokens: int
-    """ """
+    """获取思考过程中消耗的token数量。"""
     LastContent: Any
-    """ """
+    """获取最后一次响应的内容。"""
     LastPrompt: Any
-    """ """
+    """获取最后一次发送的提示内容。"""
     Busy: Any
-    """ """
+    """指示组件当前是否正在执行操作。"""
     OnReceiveThinking: Any
-    """ """
+    """OnReceiveThinking事件，在相关操作发生时触发。"""
     OnReceiveData: Any
-    """ """
+    """OnReceiveData事件，在相关操作发生时触发。"""
     OnReceiveDataEnd: Any
-    """ """
+    """OnReceiveDataEnd事件，在相关操作发生时触发。"""
     OnAddMessage: Any
-    """ """
-    def OnCallToolFunction -> Any:
-        """ """
+    """OnAddMessage事件，在相关操作发生时触发。"""
+    def OnCallToolFunction(self, *args, **kwargs) -> Any:
+        """在AI调用工具函数时触发的事件。"""
     OnCallToolFunction: Any
-    """ """
+    """OnCallToolFunction事件，在相关操作发生时触发。"""
     OnBeforeSendMessage: Any
-    """ """
+    """OnBeforeSendMessage事件，在相关操作发生时触发。"""
     OnInitChat: Any
-    """ """
+    """OnInitChat事件，在相关操作发生时触发。"""
     OnProcessResponse: Any
-    """ """
+    """OnProcessResponse事件，在相关操作发生时触发。"""
     OnProgressEvent: Any
-    """ """
+    """OnProgressEvent事件，在相关操作发生时触发。"""
     Url: str
-    """ """
+    """获取或设置API服务的基础URL地址。"""
     ResponseTimeOut: int
-    """ """
+    """获取或设置API请求的超时时间（毫秒）。"""
     Memory: Any
-    """ """
-    def AiFunctions -> Any:
-        """ """
+    """获取或设置AI记忆模块，用于长期记忆功能。"""
+    def AiFunctions(self, *args, **kwargs) -> Any:
+        """获取或设置AI可调用的函数集合。"""
     AiFunctions: Any
-    """ """
+    """获取或设置AI可调用的函数集合。"""
     OnProcessMediaFile: Any
-    """ """
+    """OnProcessMediaFile事件，在相关操作发生时触发。"""
     JsonSchema: Any
-    """ """
+    """获取或设置JSON Schema格式约束。"""
     Stream_Usage: bool
-    """ """
+    """指定流式响应时是否返回token用量信息。"""
     NativeInputFiles: Any
-    """ """
+    """获取或设置本地输入文件列表。"""
     NativeOutputFiles: Any
-    """ """
+    """获取或设置本地输出文件列表。"""
     ChatMediaSupports: Any
-    """ """
+    """获取当前聊天支持的多媒体类型。"""
     Voice: str
-    """ """
+    """获取或设置语音合成的声音类型。"""
     voice_format: str
-    """ """
+    """获取或设置语音输出格式。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
     Language: str
-    """ """
+    """获取或设置语言设置。"""
     Transcription_ResponseFormat: str
-    """ """
+    """获取或设置语音转录的响应格式。"""
     Transcription_TimestampGranularities: str
-    """ """
+    """获取或设置语音转录的时间戳粒度。"""
     ReasoningFormat: str
-    """ """
+    """获取或设置推理过程的输出格式。"""
     ThinkingLevel: Any
-    """ """
+    """获取或设置AI的思考级别。"""
     MediaResolution: Any
-    """ """
+    """获取或设置媒体处理的分辨率。"""
     VideoParams: Any
-    """ """
+    """获取或设置视频生成参数。"""
     ImageParams: Any
-    """ """
+    """获取或设置图像生成参数。"""
     WebSearchParams: Any
-    """ """
+    """获取或设置网络搜索参数。"""
     OnStateChange: Any
-    """ """
+    """OnStateChange事件，在相关操作发生时触发。"""
     ShellTool: Any
-    """ """
+    """获取或设置Shell命令执行工具。"""
     TextEditorTool: Any
-    """ """
+    """获取或设置文本编辑器工具。"""
 
 class AiChatConnection(Component):
-    """ """
+    """AI聊天连接管理组件，用于管理多个AI聊天驱动的连接。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def UpdateParamsFromRegistry(self, *args, **kwargs) -> Any:
-        """ """
+        """从系统注册表更新AI驱动的参数配置。"""
     def AddMessageAndRun(self, *args, **kwargs) -> Any:
-        """ """
+        """添加消息后立即执行AI对话请求。"""
     def AddMessage(self, *args, **kwargs) -> Any:
-        """ """
+        """向对话历史中添加一条消息。"""
     def NewMessage(self, *args, **kwargs) -> Any:
-        """ """
+        """创建一条新的对话消息对象。"""
     def Run(self, *args, **kwargs) -> Any:
-        """ """
-    def GetLastMessage -> Any:
-        """ """
+        """运行或执行主要功能。"""
+    def GetLastMessage(self, *args, **kwargs) -> Any:
+        """获取对话历史中最后一条消息的内容。"""
     def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
+        """从对话中移除指定消息。"""
     def RemoveMesage(self, *args, **kwargs) -> Any:
-        """ """
+        """从对话中移除指定消息。"""
     def AddToMemory(self, *args, **kwargs) -> Any:
-        """ """
+        """将信息添加到AI的记忆中。"""
     def RemoveFromMemory(self, *args, **kwargs) -> Any:
-        """ """
+        """从AI的记忆中移除指定信息。"""
     def NewChat(self, *args, **kwargs) -> Any:
-        """ """
+        """开始一个新的对话，清空当前消息历史。"""
     def Abort(self, *args, **kwargs) -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
-    def GetDriversNames -> Any:
-        """ """
-    def GetAvailableDrivers -> Any:
-        """ """
-    def GetModels -> Any:
-        """ """
+        """中止当前正在执行的操作。"""
+    def GetMessages(self, *args, **kwargs) -> Any:
+        """获取当前对话的所有消息列表。"""
+    def GetDriversNames(self, *args, **kwargs) -> Any:
+        """获取所有已注册的AI驱动名称列表。"""
+    def GetAvailableDrivers(self, *args, **kwargs) -> Any:
+        """获取当前可用的所有AI驱动列表。"""
+    def GetModels(self, *args, **kwargs) -> Any:
+        """获取可用的AI模型列表。"""
     def IsDriverAvailable(self, *args, **kwargs) -> bool:
-        """ """
+        """检查指定的AI驱动在当前环境是否可用。"""
     def ResetParamsToDefaults(self, *args, **kwargs) -> Any:
-        """ """
+        """将所有参数重置为默认配置。"""
     def RegisterUserParam(self, *args, **kwargs) -> Any:
-        """ """
+        """注册用户自定义参数。"""
     def RegisterUserParam(self, *args, **kwargs) -> Any:
-        """ """
+        """注册用户自定义参数。"""
     def ClearRegisterParams(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有用户注册的自定义参数。"""
     def CreateChatForDriver(self, *args, **kwargs) -> Any:
-        """ """
+        """为指定的AI驱动创建聊天实例。"""
     def UploadFile(self, *args, **kwargs) -> str:
-        """ """
+        """将文件上传到服务器供处理。"""
     def CheckFileState(self, *args, **kwargs) -> str:
-        """ """
+        """检查已上传文件的处理状态。"""
     def DeleteFile(self, *args, **kwargs) -> str:
-        """ """
+        """删除已上传到服务器的文件。"""
     def UploadFileToCache(self, *args, **kwargs) -> str:
-        """ """
+        """将文件上传到服务器缓存中。"""
     Messages: Any
-    """ """
+    """获取或设置AI对话的消息列表。"""
     LastError: str
-    """ """
+    """获取最近一次操作的错误信息。"""
     Busy: bool
-    """ """
+    """指示组件当前是否正在执行操作。"""
     AiChat: Any
-    """ """
+    """获取或设置关联的AI聊天组件。"""
     DriverName: str
-    """ """
+    """获取或设置AI驱动的名称。"""
     Model: str
-    """ """
+    """获取或设置使用的AI模型名称。"""
     Params: Any
-    """ """
+    """获取或设置参数集合。"""
     SystemPrompt : Any
-    """ """
+    """获取或设置AI系统的提示词。"""
     Memory: Any
-    """ """
-    def AiFunctions -> Any:
-        """ """
+    """获取或设置AI记忆模块，用于长期记忆功能。"""
+    def AiFunctions(self, *args, **kwargs) -> Any:
+        """获取或设置AI可调用的函数集合。"""
     AiFunctions: Any
-    """ """
+    """获取或设置AI可调用的函数集合。"""
     Prompt_tokens: Any
-    """ """
+    """获取请求消耗的token数量。"""
     Completion_tokens: Any
-    """ """
+    """获取响应生成的token数量。"""
     Total_tokens: Any
-    """ """
+    """获取总消耗的token数量。"""
     OnReceiveThinking: Any
-    """ """
+    """OnReceiveThinking事件，在相关操作发生时触发。"""
     OnReceiveData: Any
-    """ """
+    """OnReceiveData事件，在相关操作发生时触发。"""
     OnReceiveDataEnd: Any
-    """ """
+    """OnReceiveDataEnd事件，在相关操作发生时触发。"""
     OnAddMessage: Any
-    """ """
-    def OnCallToolFunction -> Any:
-        """ """
+    """OnAddMessage事件，在相关操作发生时触发。"""
+    def OnCallToolFunction(self, *args, **kwargs) -> Any:
+        """在AI调用工具函数时触发的事件。"""
     OnCallToolFunction: Any
-    """ """
+    """OnCallToolFunction事件，在相关操作发生时触发。"""
     OnBeforeSendMessage: Any
-    """ """
+    """OnBeforeSendMessage事件，在相关操作发生时触发。"""
     OnInitChat: Any
-    """ """
+    """OnInitChat事件，在相关操作发生时触发。"""
     OnProcessMediaFile: Any
-    """ """
+    """OnProcessMediaFile事件，在相关操作发生时触发。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
     OnChatModelChange: Any
-    """ """
+    """OnChatModelChange事件，在相关操作发生时触发。"""
     OnProcessResponse: Any
-    """ """
+    """OnProcessResponse事件，在相关操作发生时触发。"""
     Version: Any
-    """ """
+    """获取或设置组件的版本信息。"""
     ShellTool: Any
-    """ """
+    """获取或设置Shell命令执行工具。"""
     TextEditorTool : Any
-    """ """
+    """获取或设置文本编辑器工具。"""
 
 class AiClaudeChat(AiChat):
-    """ """
+    """专为Anthropic Claude模型设计的AI聊天组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def GetModels(self, *args, **kwargs) -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
+        """获取可用的AI模型列表。"""
+    def GetMessages(self, *args, **kwargs) -> Any:
+        """获取当前对话的所有消息列表。"""
     def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器供处理。"""
     def DownLoadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从服务器下载已处理的文件。"""
     def CheckFileState(self, *args, **kwargs) -> Any:
-        """ """
+        """检查已上传文件的处理状态。"""
     def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
+        """删除已上传到服务器的文件。"""
     def RetrieveFile(self, *args, **kwargs) -> Any:
-        """ """
-    def RetrieveFileList -> Any:
-        """ """
+        """检索已上传文件的信息。"""
+    def RetrieveFileList(self, *args, **kwargs) -> Any:
+        """获取所有已上传到服务器的文件列表。"""
     def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器缓存中。"""
     def CreateMessageBatch(self, *args, **kwargs) -> str:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """创建批量消息处理任务用于大规模处理。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     def ConfigureAutoContextClearing(self, *args, **kwargs) -> Any:
-        """ """
+        """配置在上下文超限时自动清理的策略。"""
     ContextConfig: Any
-    """ """
+    """获取或设置上下文管理配置。"""
     CacheSystemPrompt: bool
-    """ """
+    """指定是否缓存系统提示词以优化性能。"""
     EnableMemory: bool
-    """ """
+    """指定是否启用AI长期记忆功能。"""
     EnableThinking: bool
-    """ """
+    """指定是否启用AI思考过程。"""
     ThinkingBudget: int
-    """ """
+    """获取或设置思考过程的预算额度。"""
     ServiceTier: str
-    """ """
+    """获取或设置服务等级。"""
 
 class AiDeepSeekChat(AiChat):
-    """ """
+    """专为DeepSeek模型设计的AI聊天组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiGrokChat(AiChat):
-    """ """
+    """AiGrokChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiGroqChat(AiChat):
-    """ """
+    """AiGroqChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiGroqEmbeddings(AiEmbeddings):
-    """ """
+    """AiGroqEmbeddings组件。"""
 
 class AiMistralChat(AiChat):
-    """ """
+    """AiMistralChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器供处理。"""
     def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
+        """删除已上传到服务器的文件。"""
     def RetrieveFile(self, *args, **kwargs) -> Any:
-        """ """
+        """检索已上传文件的信息。"""
     def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器缓存中。"""
     OcrIncludeImages: bool
-    """ """
+    """指定OCR识别时是否包含图像信息。"""
     DocumentImageLimit: Any
-    """ """
+    """获取或设置文档处理的图像数量限制。"""
     DocumentPageLimit: Any
-    """ """
+    """获取或设置文档处理的页数限制。"""
     OcrDocumentAnnotationSchema: Any
-    """ """
+    """获取或设置OCR文档标注模式。"""
     OcrBboxAnnotationSchema: Any
-    """ """
+    """获取或设置OCR边界框标注模式。"""
     OcrAnnotationPages: str
-    """ """
+    """获取或设置OCR标注的页面范围。"""
     OcrPagesNumbers: str
-    """ """
+    """获取或设置OCR处理的页面编号。"""
 
 class AiMistralEmbeddings(AiEmbeddings):
-    """ """
+    """AiMistralEmbeddings组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """创建文本的向量嵌入表示。"""
 
 class AiOllamaChat(AiChat):
-    """ """
+    """AiOllamaChat组件。"""
     def GetModels(self, *args, **kwargs) -> Any:
-        """ """
+        """获取可用的AI模型列表。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetMessages(self, *args, **kwargs) -> Any:
+        """获取当前对话的所有消息列表。"""
     def PullModel(self, *args, **kwargs) -> Any:
-        """ """
+        """从远程仓库拉取AI模型。"""
     def CreateModel(self, *args, **kwargs) -> Any:
-        """ """
+        """创建一个新的AI模型实例。"""
     def ShowModelInfo(self, *args, **kwargs) -> Any:
-        """ """
+        """显示AI模型的详细信息。"""
     def CopyModel(self, *args, **kwargs) -> Any:
-        """ """
+        """复制AI模型。"""
     def DeleteModel(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """删除指定的AI模型。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     keep_alive: str
-    """ """
+    """获取或设置Ollama模型的保持活动时间。"""
 
 class AiOllamaEmbeddings(AiEmbeddings):
-    """ """
+    """AiOllamaEmbeddings组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """创建文本的向量嵌入表示。"""
     def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """解析向量嵌入数据。"""
 
 class AiOpenChat(AiChat):
-    """ """
+    """通用的OpenAI兼容API聊天组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器缓存中。"""
     def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
+        """删除已上传到服务器的文件。"""
     def DownLoadFile(self, *args, **kwargs) -> Any:
-        """ """
-    def DeleteAllUploadedFiles -> int:
-        """ """
+        """从服务器下载已处理的文件。"""
+    def DeleteAllUploadedFiles(self, *args, **kwargs) -> int:
+        """删除所有已上传到服务器的文件。"""
     def NewChat(self, *args, **kwargs) -> Any:
-        """ """
+        """开始一个新的对话，清空当前消息历史。"""
     def InternalRunImageVideoGeneration(self, *args, **kwargs) -> Any:
-        """ """
+        """内部方法：执行图像或视频生成请求。"""
     Store: bool
-    """ """
+    """指定是否存储对话历史。"""
     Truncation: str
-    """ """
+    """获取或设置截断策略。"""
     Parallel_ToolCalls: bool
-    """ """
+    """指定是否允许并行执行工具调用。"""
     Verbosity: str
-    """ """
+    """获取或设置日志的详细程度。"""
     OnApplyPatch: Any
-    """ """
+    """OnApplyPatch事件，在相关操作发生时触发。"""
     OnShellCommand: Any
-    """ """
+    """OnShellCommand事件，在相关操作发生时触发。"""
     AllowAutoShell: bool
-    """ """
+    """指定是否允许AI自动执行Shell命令。"""
     ReasoningSummary: Any
-    """ """
+    """获取推理过程的摘要信息。"""
 
 class AiOpenAiEmbeddings(AiEmbeddings):
-    """ """
+    """使用OpenAI模型进行文本嵌入的组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """创建文本的向量嵌入表示。"""
     def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """解析向量嵌入数据。"""
 
 class AiPrompts(Component):
-    """ """
+    """提示词管理组件，用于管理AI对话中的提示模板。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def IndexOf(self, *args, **kwargs) -> int:
-        """ """
+        """返回指定项目在集合中的索引位置。"""
     def GetString(self, *args, **kwargs) -> str:
-        """ """
+        """根据索引获取提示词模板字符串。"""
     def AddString(self, *args, **kwargs) -> Any:
-        """ """
+        """向提示词集合中添加新的模板字符串。"""
     def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定名称的提示词模板内容。"""
     def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定名称的提示词模板内容。"""
     def GetTemplate(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定名称的提示词模板内容。"""
     Items: Any
-    """ """
+    """获取或设置集合中的项目数组。"""
 
 class AIWhisper(Component):
-    """ """
+    """语音处理组件，实现语音识别和文本转语音功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Speech(self, *args, **kwargs) -> Any:
-        """ """
+        """将文本合成为语音。"""
     def Transcription(self, *args, **kwargs) -> str:
-        """ """
+        """执行语音识别，将音频转换为文字。"""
     def Translation(self, *args, **kwargs) -> str:
-        """ """
+        """执行语音翻译。"""
     ApiKey: str
-    """ """
+    """获取或设置API密钥用于服务认证。"""
     Url: str
-    """ """
+    """获取或设置API服务的基础URL地址。"""
     Model: str
-    """ """
+    """获取或设置使用的AI模型名称。"""
     Voice: str
-    """ """
+    """获取或设置语音合成的声音类型。"""
     Format: str
-    """ """
+    """获取或设置音频格式。"""
     Languaje: str
-    """ """
+    """获取或设置语言选项。"""
     Speed: Any
-    """ """
+    """获取或设置播放速度。"""
     Temperature: Any
-    """ """
+    """获取或设置AI生成的随机性参数。"""
     ResponseFormat: str
-    """ """
+    """获取或设置响应的数据格式。"""
     Quality: str
-    """ """
+    """获取或设置输出质量。"""
     timestamp_granularities: str
-    """ """
+    """获取或设置时间戳粒度。"""
 
 class AiMCPHttpServer(AiMCPServer):
-    """ """
+    """AiMCPHttpServer组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Start(self, *args, **kwargs) -> Any:
-        """ """
+        """开始执行操作或启动服务。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
 
 class AiMCPStdioServer(AiMCPServer):
-    """ """
+    """AiMCPStdioServer组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Start(self, *args, **kwargs) -> Any:
-        """ """
+        """开始执行操作或启动服务。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
 
 class AiMCPDirectConnection(AiMCPServer):
-    """ """
+    """AiMCPDirectConnection组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Start(self, *args, **kwargs) -> Any:
-        """ """
+        """开始执行操作或启动服务。"""
     def Stop(self, *args, **kwargs) -> Any:
-        """ """
-    def ListTools -> Any:
-        """ """
-    def ListResources -> Any:
-        """ """
+        """停止当前正在执行的操作。"""
+    def ListTools(self, *args, **kwargs) -> Any:
+        """列出此MCP服务器提供的所有工具。"""
+    def ListResources(self, *args, **kwargs) -> Any:
+        """列出此MCP服务器提供的所有资源。"""
     def ReadResource(self, *args, **kwargs) -> Any:
-        """ """
+        """读取指定资源的内容。"""
     def CallTool(self, *args, **kwargs) -> Any:
-        """ """
+        """调用指定的工具函数。"""
     def CallTool(self, *args, **kwargs) -> Any:
-        """ """
+        """调用指定的工具函数。"""
 
 class AIVoiceMonitor(Component):
-    """ """
+    """语音活动检测组件，用于监控麦克风输入并检测语音活动。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     Active: bool
-    """ """
+    """指定组件是否处于活动状态。"""
     IsSpeaking: bool
-    """ """
+    """指示当前是否正在说话。"""
     Sensitivity: int
-    """ """
+    """获取或设置语音检测的灵敏度。"""
     StopSensitivity: int
-    """ """
+    """获取或设置停止检测的灵敏度阈值。"""
     State: Any
-    """ """
+    """获取数据集的当前操作状态。"""
     SoundLevel: Any
-    """ """
+    """获取当前检测到的音量水平。"""
     NoiseLevel: int
-    """ """
+    """获取当前环境的噪音水平。"""
     SilenceDuration: int
-    """ """
+    """获取或设置静音持续判定时间。"""
     SensitivityMultiplier: Any
-    """ """
+    """获取或设置灵敏度倍率。"""
     StopSensitivityMultiplier: Any
-    """ """
+    """获取或设置停止灵敏度倍率。"""
     WakeWordDurationMs: int
-    """ """
+    """获取或设置唤醒词的检测时长(毫秒)。"""
     TranscriptionIntervalMs: int
-    """ """
+    """获取或设置转录的采样间隔(毫秒)。"""
     TranscriptionMaxWaitMs: int
-    """ """
+    """获取或设置转录的最大等待时间(毫秒)。"""
     FragmentSplitRatio: Any
-    """ """
+    """获取或设置语音片段分割比例。"""
     OnChangeState: Any
-    """ """
+    """OnChangeState事件，在相关操作发生时触发。"""
     OnCalibrated: Any
-    """ """
+    """OnCalibrated事件，在相关操作发生时触发。"""
     OnUpdate: Any
-    """ """
+    """OnUpdate事件，在相关操作发生时触发。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
     OnWakeWordCheck: Any
-    """ """
+    """OnWakeWordCheck事件，在相关操作发生时触发。"""
     OnSpeechEnd: Any
-    """ """
+    """OnSpeechEnd事件，在相关操作发生时触发。"""
     OnTranscriptionFragment: Any
-    """ """
+    """OnTranscriptionFragment事件，在相关操作发生时触发。"""
     SampleRate: int
-    """ """
+    """获取或设置音频采样率。"""
     Channels: int
-    """ """
+    """获取或设置音频通道数。"""
     BitsPerSample: int
-    """ """
+    """获取或设置音频位深度。"""
     WakeWord: str
-    """ """
+    """获取或设置唤醒词文本。"""
     WakeWordActive: bool
-    """ """
+    """指定唤醒词检测是否激活。"""
 
 class AiRagGraphBuilder(Component):
-    """ """
+    """知识图谱构建组件，用于从文本数据中自动构建知识图谱。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Process(self, *args, **kwargs) -> Any:
-        """ """
+        """执行数据处理操作。"""
     def FindExistingNode(self, *args, **kwargs) -> Any:
-        """ """
+        """查找图谱中已存在的节点。"""
     Graph: Any
-    """ """
+    """获取或设置关联的知识图谱组件。"""
     Embeddings: Any
-    """ """
+    """获取或设置关联的文本嵌入组件。"""
 
 class AiRagGraphDriverBase(Component):
-    """ """
+    """AiRagGraphDriverBase组件。"""
     def EmbeddingToString(self, *args, **kwargs) -> str:
-        """ """
+        """将嵌入向量数据转换为字符串表示。"""
     def PropertiesToJSONString(self, *args, **kwargs) -> str:
-        """ """
+        """将属性集合转换为JSON字符串。"""
     def AssignToGraph(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据分配到图谱结构中。"""
 
 class AiRagGraphNode(AiEmbeddingNode):
-    """ """
+    """知识图谱中的节点类，代表图中的一个实体。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def PropertiesToJSON -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def PropertiesToJSON(self, *args, **kwargs) -> Any:
+        """将节点或边的属性转换为JSON格式。"""
     def EnsureEdgesAreLoaded(self, *args, **kwargs) -> Any:
-        """ """
+        """确保所有关联的边数据已加载到内存。"""
     ID: str
-    """ """
+    """获取或设置节点的唯一标识符。"""
     Name: str
-    """ """
+    """指定组件的名称，用于在代码中引用。"""
     NodeLabel: str
-    """ """
+    """获取或设置节点的类型标签。"""
     Properties: Any
-    """ """
+    """获取或设置属性集合。"""
     OutgoingEdges: Any
-    """ """
+    """获取从该节点出发的所有边。"""
     IncomingEdges: Any
-    """ """
+    """获取指向该节点的所有边。"""
     OwnerGraph: Any
-    """ """
+    """获取该节点所属的图谱。"""
 
 class AiRagGraphEdge(AiEmbeddingNode):
-    """ """
+    """知识图谱中的边类，代表图中节点之间的关系。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def PropertiesToJSON -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def PropertiesToJSON(self, *args, **kwargs) -> Any:
+        """将节点或边的属性转换为JSON格式。"""
     ID: str
-    """ """
+    """获取或设置节点的唯一标识符。"""
     Name: str
-    """ """
+    """指定组件的名称，用于在代码中引用。"""
     EdgeLabel: str
-    """ """
+    """获取或设置边的类型标签。"""
     FromNode: Any
-    """ """
+    """获取边的起始节点。"""
     ToNode: Any
-    """ """
+    """获取边的目标节点。"""
     Weight: Any
-    """ """
+    """获取或设置边的权重值。"""
     Properties: Any
-    """ """
+    """获取或设置属性集合。"""
     OwnerGraph: Any
-    """ """
+    """获取该节点所属的图谱。"""
 
 class AiRagGraph(Component):
-    """ """
+    """知识图谱组件，支持节点和边的管理和图搜索功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def InternalHydrateNode(self, *args, **kwargs) -> Any:
-        """ """
+        """内部方法：从持久化数据恢复节点信息。"""
     def InternalHydrateEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """内部方法：从持久化数据恢复边信息。"""
     def AddNode(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一个节点。"""
     def AddNode(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一个节点。"""
     def AddEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一条边。"""
     def AddEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一条边。"""
     def AddEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一条边。"""
     def DeleteNode(self, *args, **kwargs) -> Any:
-        """ """
+        """从图中删除指定节点。"""
     def DeleteNode(self, *args, **kwargs) -> Any:
-        """ """
+        """从图中删除指定节点。"""
     def DeleteEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """从图中删除指定边。"""
     def DeleteEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """从图中删除指定边。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     def FindNodeByID(self, *args, **kwargs) -> Any:
-        """ """
+        """根据节点ID查找节点。"""
     def FindEdgeByID(self, *args, **kwargs) -> Any:
-        """ """
+        """根据边ID查找边。"""
     def FindNodesByLabel(self, *args, **kwargs) -> Any:
-        """ """
+        """根据标签查找所有匹配的节点。"""
     def FindEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """根据条件查找边。"""
     def FindNodeByName(self, *args, **kwargs) -> Any:
-        """ """
+        """根据节点名称查找节点。"""
     def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到流中。"""
     def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到流中。"""
     def SaveToDot(self, *args, **kwargs) -> Any:
-        """ """
+        """以DOT格式保存图形数据。"""
     def SaveToMakerAi(self, *args, **kwargs) -> Any:
-        """ """
+        """以Google Maker AI格式保存图形数据。"""
     def SaveToGraphML(self, *args, **kwargs) -> Any:
-        """ """
+        """以GraphML格式保存图形数据。"""
     def LoadFromStream(self, *args, **kwargs) -> Any:
-        """ """
+        """从流中加载数据。"""
     def BeginUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """开始批量更新操作，暂停屏幕重绘以提高性能。"""
     def EndUpdate(self, *args, **kwargs) -> Any:
-        """ """
+        """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
     def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到指定文件。"""
     def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到指定文件。"""
     def GetShortestPath(self, *args, **kwargs) -> Any:
-        """ """
+        """计算两个节点之间的最短路径。"""
     def GetNodesByDegree(self, *args, **kwargs) -> Any:
-        """ """
+        """按节点度数排序获取节点列表。"""
     def GetClosenessCentrality(self, *args, **kwargs) -> Any:
-        """ """
+        """计算指定节点的接近中心性。"""
     def Search(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中执行搜索操作。"""
     def SearchText(self, *args, **kwargs) -> str:
-        """ """
+        """在图中搜索文本内容。"""
     def Query(self, *args, **kwargs) -> Any:
-        """ """
+        """执行图查询操作。"""
     def GetAllShortestPaths(self, *args, **kwargs) -> Any:
-        """ """
+        """获取两个节点之间的所有最短路径。"""
     def Match(self, *args, **kwargs) -> Any:
-        """ """
-    def GetUniqueNodeLabels -> Any:
-        """ """
-    def GetUniqueEdgeLabels -> Any:
-        """ """
+        """执行图模式匹配操作。"""
+    def GetUniqueNodeLabels(self, *args, **kwargs) -> Any:
+        """获取图中所有唯一的节点标签列表。"""
+    def GetUniqueEdgeLabels(self, *args, **kwargs) -> Any:
+        """获取图中所有唯一的边标签列表。"""
     def FindNodesByProperty(self, *args, **kwargs) -> Any:
-        """ """
+        """根据属性条件查找匹配的节点。"""
     FindNodesByProperty: Any
-    """ """
+    """根据属性条件查找匹配的节点。"""
     def GetNeighbors(self, *args, **kwargs) -> Any:
-        """ """
+        """获取指定节点的所有邻居节点。"""
     def CountNodesByLabel(self, *args, **kwargs) -> int:
-        """ """
+        """统计指定类型标签的节点数量。"""
     def CountEdgesByLabel(self, *args, **kwargs) -> int:
-        """ """
+        """统计指定类型标签的边数量。"""
     def ExtractSubgraph(self, *args, **kwargs) -> Any:
-        """ """
+        """从图中提取子图。"""
     def MergeNodes(self, *args, **kwargs) -> Any:
-        """ """
-    MergeNodes(ASurvivingNode, ASubsumedNode: Any
-    """ """
+        """合并两个节点为一个节点。"""
     def FindNodeNamesByLabel(self, *args, **kwargs) -> Any:
-        """ """
+        """根据标签查找所有匹配的节点名称。"""
     def EdgeExistsInMemory(self, *args, **kwargs) -> bool:
-        """ """
+        """检查指定边是否已加载到内存中。"""
     NodeCount: int
-    """ """
+    """获取图中的节点总数。"""
     EdgeCount: int
-    """ """
+    """获取图中的边总数。"""
     Nodes: Any
-    """ """
+    """获取图中的所有节点列表。"""
     Edges: Any
-    """ """
+    """获取图中的所有边列表。"""
     Embeddings: Any
-    """ """
+    """获取或设置关联的文本嵌入组件。"""
     InMemoryIndexType: Any
-    """ """
+    """获取或设置内存索引的类型。"""
     Driver: Any
-    """ """
+    """获取或设置图数据库的驱动。"""
 
 class AiRAGVector(Component):
-    """ """
+    """向量数据库组件，用于存储和检索文本的向量嵌入。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到流中。"""
     def LoadFromStream(self, *args, **kwargs) -> Any:
-        """ """
+        """从流中加载数据。"""
     def SaveToFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到指定文件。"""
     def LoadFromFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从指定文件加载数据。"""
     def Connect(self, *args, **kwargs) -> bool:
-        """ """
+        """建立与服务器或资源的连接。"""
     def Search(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中执行搜索操作。"""
     def Search(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中执行搜索操作。"""
     def SearchText(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中搜索文本内容。"""
     def SearchText(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中搜索文本内容。"""
     def SearchText(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中搜索文本内容。"""
     def BuildIndex(self, *args, **kwargs) -> Any:
-        """ """
+        """构建向量索引。"""
     def AddItem(self, *args, **kwargs) -> Any:
-        """ """
+        """向集合中添加一个项目。"""
     def AddItem(self, *args, **kwargs) -> Any:
-        """ """
+        """向集合中添加一个项目。"""
     def AddItemsFromJSonArray(self, *args, **kwargs) -> Any:
-        """ """
+        """从JSON数组批量添加项目。"""
     def AddItemsFromPlainText(self, *args, **kwargs) -> Any:
-        """ """
+        """从纯文本批量添加项目。"""
     def CreateEmbeddingNode(self, *args, **kwargs) -> Any:
-        """ """
-    def Count -> int:
-        """ """
+        """创建嵌入向量节点。"""
+    def Count(self, *args, **kwargs) -> int:
+        """获取集合中的项目数量。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     def Rerank(self, *args, **kwargs) -> Any:
-        """ """
+        """对搜索结果进行重新排序。"""
     def Rerank(self, *args, **kwargs) -> Any:
-        """ """
+        """对搜索结果进行重新排序。"""
     RagIndex: Any
-    """ """
+    """获取或设置RAG索引对象。"""
     Active: bool
-    """ """
+    """指定组件是否处于活动状态。"""
     Items: Any
-    """ """
+    """获取或设置集合中的项目数组。"""
     OnDataVecAddItem: Any
-    """ """
+    """OnDataVecAddItem事件，在相关操作发生时触发。"""
     OnDataVecSearch: Any
-    """ """
+    """OnDataVecSearch事件，在相关操作发生时触发。"""
     OnGetEmbedding: Any
-    """ """
+    """OnGetEmbedding事件，在相关操作发生时触发。"""
     Embeddings: Any
-    """ """
+    """获取或设置关联的文本嵌入组件。"""
     Model: str
-    """ """
+    """获取或设置使用的AI模型名称。"""
     Dim: int
-    """ """
+    """获取或设置向量维度。"""
     NameVec: str
-    """ """
+    """获取或设置向量名称。"""
     Description: str
-    """ """
+    """获取或设置描述文本。"""
     InMemoryIndexType: Any
-    """ """
+    """获取或设置内存索引的类型。"""
 
 class AIBlackboard(Object):
-    """ """
+    """黑板数据结构组件，用于在AI代理之间共享数据和状态。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Clear(self, *args, **kwargs) -> Any:
-        """ """
+        """清除所有数据或内容，将组件重置为初始状态。"""
     def SetValue(self, *args, **kwargs) -> Any:
-        """ """
+        """在黑板上设置指定键的值。"""
     def TryGetValue(self, *args, **kwargs) -> bool:
-        """ """
+        """尝试获取指定键的值，成功返回True。"""
     def SetString(self, *args, **kwargs) -> Any:
-        """ """
+        """设置字符串类型的值。"""
     def GetString(self, *args, **kwargs) -> str:
-        """ """
+        """根据索引获取提示词模板字符串。"""
     def SetInteger(self, *args, **kwargs) -> Any:
-        """ """
+        """设置整数类型的值。"""
     def GetInteger(self, *args, **kwargs) -> int:
-        """ """
+        """获取整数类型的值。"""
     def SetBoolean(self, *args, **kwargs) -> Any:
-        """ """
+        """设置布尔类型的值。"""
     def GetBoolean(self, *args, **kwargs) -> bool:
-        """ """
+        """获取布尔类型的值。"""
 
 class AiToolBase(Component):
-    """ """
+    """AiToolBase组件。"""
     def Run(self, *args, **kwargs) -> Any:
-        """ """
+        """运行或执行主要功能。"""
     Description: str
-    """ """
+    """获取或设置描述文本。"""
     ID : str
-    """ """
+    """获取或设置节点的唯一标识符。"""
 
 class AiAgentsToolSample(AiToolBase):
-    """ """
+    """AiAgentsToolSample组件。"""
 
 class AIAgentsBase(Component):
-    """ """
+    """AIAgentsBase组件。"""
     Description: str
-    """ """
+    """获取或设置描述文本。"""
     ID : str
-    """ """
+    """获取或设置节点的唯一标识符。"""
 
 class AIAgentsLink(AIAgentsBase):
-    """ """
+    """AI代理流程图中的连接线组件，定义节点之间的执行流程。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Print(self, *args, **kwargs) -> Any:
-        """ """
+        """打印内容。"""
     def DoExecute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行连接逻辑的处理。"""
     def AddConditionalTarget(self, *args, **kwargs) -> Any:
-        """ """
+        """添加条件跳转的目标节点。"""
     NextA: Any
-    """ """
+    """获取或设置条件A的下一目标。"""
     NextB: Any
-    """ """
+    """获取或设置条件B的下一目标。"""
     NextC: Any
-    """ """
+    """获取或设置条件C的下一目标。"""
     NextD: Any
-    """ """
+    """获取或设置条件D的下一目标。"""
     NextNo: Any
-    """ """
+    """获取或设置默认无条件的下一目标。"""
     Graph: Any
-    """ """
+    """获取或设置关联的知识图谱组件。"""
     OnExecute: Any
-    """ """
+    """OnExecute事件，在相关操作发生时触发。"""
     MaxCycles: int
-    """ """
+    """获取或设置最大循环次数。"""
     Mode: Any
-    """ """
+    """获取或设置操作模式。"""
     ConditionalKey: str
-    """ """
+    """获取或设置条件判断的键名。"""
     ManualTargetsKey: str
-    """ """
+    """获取或设置手动跳转目标的键名。"""
     ExpressionA: str
-    """ """
+    """获取或设置条件A的表达式。"""
     ExpressionB: str
-    """ """
+    """获取或设置条件B的表达式。"""
     ExpressionC: str
-    """ """
+    """获取或设置条件C的表达式。"""
     ExpressionD: str
-    """ """
+    """获取或设置条件D的表达式。"""
 
 class AIAgentsNode(AIAgentsBase):
-    """ """
+    """AI代理流程图中的节点组件，代表一个执行步骤。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Print(self, *args, **kwargs) -> Any:
-        """ """
+        """打印内容。"""
     def ForceFinalExecute(self, *args, **kwargs) -> Any:
-        """ """
+        """强制执行最终处理步骤。"""
     def RequestConfirmation(self, *args, **kwargs) -> Any:
-        """ """
+        """请求用户确认操作。"""
     def RequestInput(self, *args, **kwargs) -> bool:
-        """ """
+        """请求用户输入信息。"""
     Error: bool
-    """ """
+    """指示是否发生错误。"""
     MsgError: str
-    """ """
+    """获取错误消息文本。"""
     Input: str
-    """ """
+    """获取或设置输入内容。"""
     Output: str
-    """ """
+    """获取或设置输出内容。"""
     Next: Any
-    """ """
+    """获取或设置下一个节点的引用。"""
     Graph: Any
-    """ """
+    """获取或设置关联的知识图谱组件。"""
     OnExecute: Any
-    """ """
+    """OnExecute事件，在相关操作发生时触发。"""
     PromptName: str
-    """ """
+    """获取或设置提示词模板的名称。"""
     JoinMode: Any
-    """ """
+    """获取或设置节点合并模式。"""
     Tool: Any
-    """ """
+    """获取或设置关联的工具。"""
 
 class AIAgents(Component):
-    """ """
+    """AI代理工作流引擎组件，通过图形化的节点和连接定义执行流程。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Abort(self, *args, **kwargs) -> Any:
-        """ """
+        """中止当前正在执行的操作。"""
     def Run(self, *args, **kwargs) -> Any:
-        """ """
+        """运行或执行主要功能。"""
     def FindNode(self, *args, **kwargs) -> Any:
-        """ """
+        """在流程图中查找指定节点。"""
     def DoError(self, *args, **kwargs) -> Any:
-        """ """
+        """处理和记录错误信息。"""
     def DoConfirm(self, *args, **kwargs) -> Any:
-        """ """
+        """执行确认操作。"""
     def SetOnPrintEvent(self, *args, **kwargs) -> Any:
-        """ """
+        """设置打印事件的处理回调函数。"""
     def ClearGraph(self, *args, **kwargs) -> Any:
-        """ """
+        """清除流程图中的所有节点和连线。"""
     def AddNode(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一个节点。"""
     def AddEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """在图中添加一条边。"""
     def AddConditionalEdge(self, *args, **kwargs) -> Any:
-        """ """
+        """添加条件判断的连接线。"""
     def SetEntryPoint(self, *args, **kwargs) -> Any:
-        """ """
+        """设置流程图的入口点。"""
     def SetFinishPoint(self, *args, **kwargs) -> Any:
-        """ """
+        """设置流程图的结束点。"""
     def Compile(self, *args, **kwargs) -> Any:
-        """ """
+        """编译流程图定义。"""
     def SaveToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将数据保存到流中。"""
     def LoadFromStream(self, *args, **kwargs) -> Any:
-        """ """
+        """从流中加载数据。"""
     def SaveStateToStream(self, *args, **kwargs) -> Any:
-        """ """
+        """将当前状态保存到流中。"""
     def LoadStateFromStream(self, *args, **kwargs) -> Any:
-        """ """
+        """从流中恢复之前保存的状态。"""
     Busy: bool
-    """ """
+    """指示组件当前是否正在执行操作。"""
     Blackboard: Any
-    """ """
+    """获取或设置黑板数据存储。"""
     StartNode: Any
-    """ """
+    """获取或设置流程图的起始节点。"""
     EndNode: Any
-    """ """
+    """获取或设置流程图的结束节点。"""
     OnPrint: Any
-    """ """
+    """OnPrint事件，在相关操作发生时触发。"""
     OnEnd: Any
-    """ """
+    """OnEnd事件，在相关操作发生时触发。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
     OnConfirm: Any
-    """ """
+    """OnConfirm事件，在相关操作发生时触发。"""
     OnEnterNode: Any
-    """ """
+    """OnEnterNode事件，在相关操作发生时触发。"""
     OnExitNode: Any
-    """ """
+    """OnExitNode事件，在相关操作发生时触发。"""
     MaxConcurrentTasks: int
-    """ """
+    """获取或设置最大并发任务数。"""
     OnStart: Any
-    """ """
+    """OnStart事件，在相关操作发生时触发。"""
     OnFinish: Any
-    """ """
+    """OnFinish事件，在相关操作发生时触发。"""
     TimeoutMs: Any
-    """ """
+    """获取或设置超时时间（毫秒）。"""
     Description: str
-    """ """
+    """获取或设置描述文本。"""
 
 class AiKimiChat(AiChat):
-    """ """
+    """AiKimiChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiLMStudioChat(AiChat):
-    """ """
+    """AiLMStudioChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiLMStudioEmbeddings(AiEmbeddings):
-    """ """
+    """AiLMStudioEmbeddings组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
 
 class AiMediaFileGemini(AiMediaFile):
-    """ """
+    """AiMediaFileGemini组件。"""
 
 class AiGeminiChat(AiChat):
-    """ """
+    """专为Google Gemini模型设计的AI聊天组件，支持文件上传和缓存功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetMessages -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetMessages(self, *args, **kwargs) -> Any:
+        """获取当前对话的所有消息列表。"""
     def GetModels(self, *args, **kwargs) -> Any:
-        """ """
+        """获取可用的AI模型列表。"""
     def UploadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器供处理。"""
     def DownLoadFile(self, *args, **kwargs) -> Any:
-        """ """
+        """从服务器下载已处理的文件。"""
     def DeleteFile(self, *args, **kwargs) -> Any:
-        """ """
+        """删除已上传到服务器的文件。"""
     def CheckFileState(self, *args, **kwargs) -> Any:
-        """ """
+        """检查已上传文件的处理状态。"""
     def UploadFileToCache(self, *args, **kwargs) -> Any:
-        """ """
+        """将文件上传到服务器缓存中。"""
     def RetrieveCache(self, *args, **kwargs) -> Any:
-        """ """
-    def ListCaches -> Any:
-        """ """
+        """检索缓存中的内容。"""
+    def ListCaches(self, *args, **kwargs) -> Any:
+        """列出所有缓存的内容。"""
     def DeleteCache(self, *args, **kwargs) -> bool:
-        """ """
+        """删除指定缓存内容。"""
     def CreateBatchJob(self, *args, **kwargs) -> str:
-        """ """
+        """创建批量处理任务。"""
     def GetBatchJob(self, *args, **kwargs) -> str:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """获取批量处理任务的执行状态和结果。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
     ThinkingBudget: int
-    """ """
+    """获取或设置思考过程的预算额度。"""
     IncludeThoughts: bool
-    """ """
+    """指定是否在响应中包含思考过程。"""
     MediaResolution: Any
-    """ """
+    """获取或设置媒体处理的分辨率。"""
 
 class AiGeminiEmbeddings(AiEmbeddings):
-    """ """
+    """使用Google Gemini模型进行文本嵌入的组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def CreateEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """创建文本的向量嵌入表示。"""
     def ParseEmbedding(self, *args, **kwargs) -> Any:
-        """ """
+        """解析向量嵌入数据。"""
 
 class AiVeoGenerator(Component):
-    """ """
+    """Google Veo视频生成组件，支持从文本和图片生成视频。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def GenerateFromText(self, *args, **kwargs) -> Any:
-        """ """
+        """从文本描述生成视频。"""
     def GenerateFromImage(self, *args, **kwargs) -> Any:
-        """ """
+        """从参考图片生成视频。"""
     def GenerateFromFrames(self, *args, **kwargs) -> Any:
-        """ """
+        """从视频帧序列生成视频。"""
     def GenerateWithReferences(self, *args, **kwargs) -> Any:
-        """ """
+        """使用参考素材生成视频。"""
     def ExtendVideo(self, *args, **kwargs) -> Any:
-        """ """
+        """延长已有视频的时长。"""
     def UploadFile(self, *args, **kwargs) -> str:
-        """ """
+        """将文件上传到服务器供处理。"""
     def UploadFileSync(self, *args, **kwargs) -> Any:
-        """ """
+        """以同步方式上传文件。"""
     ApiKey: str
-    """ """
+    """获取或设置API密钥用于服务认证。"""
     Model: Any
-    """ """
+    """获取或设置使用的AI模型名称。"""
     CustomModelName: str
-    """ """
+    """获取或设置自定义模型名称。"""
     AspectRatio: Any
-    """ """
+    """获取或设置画面宽高比。"""
     Resolution: Any
-    """ """
+    """获取或设置输出分辨率。"""
     DurationSeconds: int
-    """ """
+    """获取或设置视频时长（秒）。"""
     PersonGeneration: Any
-    """ """
+    """获取或设置人物生成模式。"""
     NegativePrompt: str
-    """ """
+    """获取或设置反向提示词。"""
     Seed: Any
-    """ """
+    """获取或设置随机种子。"""
     OnProgress: Any
-    """ """
+    """OnProgress事件，在相关操作发生时触发。"""
     OnSuccess: Any
-    """ """
+    """OnSuccess事件，在相关操作发生时触发。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
 
 class AiSoraGenerator(Component):
-    """ """
+    """OpenAI Sora视频生成组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def GenerateFromText(self, *args, **kwargs) -> Any:
-        """ """
+        """从文本描述生成视频。"""
     def GenerateFromImage(self, *args, **kwargs) -> Any:
-        """ """
+        """从参考图片生成视频。"""
     def RemixVideo(self, *args, **kwargs) -> Any:
-        """ """
+        """对已有视频进行重新混剪。"""
     ApiKey: str
-    """ """
+    """获取或设置API密钥用于服务认证。"""
     Model: Any
-    """ """
+    """获取或设置使用的AI模型名称。"""
     CustomModelName: str
-    """ """
+    """获取或设置自定义模型名称。"""
     Resolution: Any
-    """ """
+    """获取或设置输出分辨率。"""
     Seconds: int
-    """ """
+    """获取或设置视频时长（秒）。"""
     Seed: Any
-    """ """
+    """获取或设置随机种子。"""
     OnProgress: Any
-    """ """
+    """OnProgress事件，在相关操作发生时触发。"""
     OnSuccess: Any
-    """ """
+    """OnSuccess事件，在相关操作发生时触发。"""
     OnError: Any
-    """ """
+    """OnError事件，在相关操作发生时触发。"""
 
 class AiOpenAiAudio(Component):
-    """ """
+    """OpenAI音频处理组件，支持文本转语音和语音转文本功能。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Speech(self, *args, **kwargs) -> Any:
-        """ """
+        """将文本合成为语音。"""
     def Speech(self, *args, **kwargs) -> Any:
-        """ """
+        """将文本合成为语音。"""
     def SpeechStreamed(self, *args, **kwargs) -> Any:
-        """ """
+        """以流式方式将文本逐步合成为语音。"""
     def Transcribe(self, *args, **kwargs) -> Any:
-        """ """
+        """将音频转录为文本。"""
     def TranscribeStreamed(self, *args, **kwargs) -> Any:
-        """ """
+        """以流式方式将音频逐步转录为文字。"""
     def TranslateToEnglish(self, *args, **kwargs) -> Any:
-        """ """
+        """将音频内容翻译为英文文本。"""
     ApiKey: str
-    """ """
+    """获取或设置API密钥用于服务认证。"""
     Url: str
-    """ """
+    """获取或设置API服务的基础URL地址。"""
     TTSModel: Any
-    """ """
+    """获取或设置TTS语音合成模型。"""
     TTSVoice: Any
-    """ """
+    """获取或设置TTS语音音色。"""
     TTSResponseFormat: Any
-    """ """
+    """获取或设置TTS响应格式。"""
     TTSSpeed: Any
-    """ """
+    """获取或设置TTS语速。"""
     TTSInstructions: str
-    """ """
+    """获取或设置TTS语音的指令参数。"""
     TranscriptionModel: Any
-    """ """
+    """获取或设置语音转录模型。"""
     TranscriptionResponseFormat: Any
-    """ """
+    """获取或设置语音转录响应格式。"""
     TranscriptionLanguage: str
-    """ """
+    """获取或设置语音识别的目标语言。"""
     TranscriptionTemperature: Any
-    """ """
+    """获取或设置语音识别的温度参数。"""
     TranscriptionTimestampGranularities: Any
-    """ """
+    """获取或设置语音识别的时间戳粒度。"""
     OnAudioChunkReceived: Any
-    """ """
+    """OnAudioChunkReceived事件，在相关操作发生时触发。"""
     OnSpeechCompleted: Any
-    """ """
+    """OnSpeechCompleted事件，在相关操作发生时触发。"""
     OnTranscriptDeltaReceived: Any
-    """ """
+    """OnTranscriptDeltaReceived事件，在相关操作发生时触发。"""
     OnTranscriptionCompleted: Any
-    """ """
+    """OnTranscriptionCompleted事件，在相关操作发生时触发。"""
     OnAudioError: Any
-    """ """
+    """OnAudioError事件，在相关操作发生时触发。"""
 
 class AiFunctions(Component):
-    """ """
+    """AI函数调用管理组件，用于管理AI可调用的函数和工具。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Loaded(self, *args, **kwargs) -> Any:
-        """ """
+        """在组件从流中加载完成后执行初始化。"""
     def GetTools(self, *args, **kwargs) -> Any:
-        """ """
+        """获取所有已注册的AI工具函数列表。"""
     def DoCallFunction(self, *args, **kwargs) -> Any:
-        """ """
+        """执行指定的AI工具函数调用。"""
     def SetFunctionEnable(self, *args, **kwargs) -> bool:
-        """ """
+        """启用或禁用指定函数。"""
     def SetMCPClientEnable(self, *args, **kwargs) -> bool:
-        """ """
-    def ExtractFunctionNames -> Any:
-        """ """
+        """启用或禁用指定MCP客户端。"""
+    def ExtractFunctionNames(self, *args, **kwargs) -> Any:
+        """提取所有已注册函数的名称列表。"""
     def AddMCPClient(self, *args, **kwargs) -> Any:
-        """ """
+        """添加MCP客户端连接。"""
     def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
-        """ """
+        """导入Claude MCP配置文件。"""
     def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
-        """ """
-    def Functions -> Any:
-        """ """
+        """导入Claude MCP配置文件。"""
+    def Functions(self, *args, **kwargs) -> Any:
+        """获取或设置已注册的函数集合。"""
     Functions: Any
-    """ """
+    """获取或设置已注册的函数集合。"""
     MCPClients: Any
-    """ """
+    """获取或设置MCP客户端列表。"""
     OnLog: Any
-    """ """
+    """OnLog事件，在相关操作发生时触发。"""
     OnStatusUpdate: Any
-    """ """
+    """OnStatusUpdate事件，在相关操作发生时触发。"""
     OnMCPStreamMessage: Any
-    """ """
+    """OnMCPStreamMessage事件，在相关操作发生时触发。"""
 
 class AiShell(Component):
-    """ """
+    """AI命令行执行组件，允许AI模型执行系统命令。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     def ExecuteManual(self, *args, **kwargs) -> str:
-        """ """
+        """手动执行命令，等待用户确认。"""
     def Restart(self, *args, **kwargs) -> Any:
-        """ """
+        """重新启动组件或服务。"""
     Active: bool
-    """ """
+    """指定组件是否处于活动状态。"""
     TimeOut: Any
-    """ """
+    """获取或设置操作超时时间。"""
     ShellPath: str
-    """ """
+    """获取或设置Shell执行路径。"""
     MaxOutputSize: int
-    """ """
+    """获取或设置最大输出大小限制。"""
     OnCommand: Any
-    """ """
+    """OnCommand事件，在相关操作发生时触发。"""
     OnConsoleLog: Any
-    """ """
+    """OnConsoleLog事件，在相关操作发生时触发。"""
 
 class AiGenericChat(AiChat):
-    """ """
+    """AiGenericChat组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def GetDriverName -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetDriverName(self, *args, **kwargs) -> Any:
+        """获取当前使用的AI驱动名称。"""
     def RegisterDefaultParams(self, *args, **kwargs) -> Any:
-        """ """
+        """注册默认的API请求参数。"""
     def CreateInstance(self, *args, **kwargs) -> Any:
-        """ """
+        """创建AI聊天驱动的新实例。"""
 
 class AiTextEditorTool(Component):
-    """ """
+    """AiTextEditorTool组件。"""
     def Execute(self, *args, **kwargs) -> Any:
-        """ """
+        """执行操作或显示对话框。"""
     OnLoadFile: Any
-    """ """
+    """OnLoadFile事件，在相关操作发生时触发。"""
     OnSaveFile: Any
-    """ """
+    """OnSaveFile事件，在相关操作发生时触发。"""
     OnFileExists: Any
-    """ """
+    """OnFileExists事件，在相关操作发生时触发。"""
     OnEnsureDirectory: Any
-    """ """
+    """OnEnsureDirectory事件，在相关操作发生时触发。"""
     OnBeforeCommand: Any
-    """ """
+    """OnBeforeCommand事件，在相关操作发生时触发。"""
 
 class AiRagGraphPostgresDriver(AiRagGraphDriverBase):
-    """ """
+    """AiRagGraphPostgresDriver组件。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def CreateSchema(self, *args, **kwargs) -> Any:
-        """ """
+        """创建数据库模式结构。"""
     Connection: Any
-    """ """
+    """获取或设置数据库连接对象。"""
     CurrentEntidad: str
-    """ """
+    """获取或设置当前实体。"""
     TableName: str
-    """ """
+    """获取或设置数据库表名。"""
 
 class PraButtonStyle(GraphicControl):
-    """ """
+    """自定义按钮样式控件，支持多种视觉状态的样式定制。"""
     Focused: bool
-    """ """
+    """指示组件当前是否具有输入焦点。"""
     CanFocus: bool
-    """ """
+    """指示控件是否可以接收焦点。"""
     def SetFocus(self, *args, **kwargs) -> Any:
-        """ """
+        """将输入焦点设置到该组件上。"""
     def Click(self, *args, **kwargs) -> Any:
-        """ """
+        """模拟鼠标单击操作，触发OnClick事件。"""
     def Assign(self, *args, **kwargs) -> Any:
-        """ """
+        """将另一个对象的属性值复制到当前对象。"""
     def SetBounds(self, *args, **kwargs) -> Any:
-        """ """
+        """一次性设置组件的Left、Top、Width和Height属性。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
     def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """销毁组件实例并释放其占用的所有资源。"""
     Action: Any
-    """ """
+    """获取或设置关联的操作对象。"""
     Align: Any
-    """ """
+    """指定组件在其父容器中的对齐方式。"""
     Anchors: Any
-    """ """
-    Cursor default crHandPoint: Any
-    """ """
+    """指定组件相对于父容器边缘的锚定方式。"""
+    Cursor: Any
+    """指定当鼠标指针悬停在组件上时显示的光标形状。"""
     DragCursor: Any
-    """ """
+    """指定拖动组件时鼠标指针的样式。"""
     DragKind: Any
-    """ """
+    """指定拖动操作的类。"""
     DragMode: Any
-    """ """
+    """指定组件是否可被拖动及拖动方式。"""
     Enabled: Any
-    """ """
+    """指定组件是否可交互，False时禁用组件。"""
     Constraints: Any
-    """ """
+    """指定组件的最小和最大尺寸限制。"""
     ParentShowHint: Any
-    """ """
+    """指定组件是否继承父容器的提示信息显示设置。"""
     ShowHint: Any
-    """ """
+    """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     Touch: Any
-    """ """
+    """指定与组件关联的触摸手势管理器。"""
     Visible: Any
-    """ """
+    """指定组件是否可见。"""
     OnContextPopup: Any
-    """ """
+    """OnContextPopup事件，在相关操作发生时触发。"""
     OnDragDrop: Any
-    """ """
+    """OnDragDrop事件，在相关操作发生时触发。"""
     OnDragOver: Any
-    """ """
+    """OnDragOver事件，在相关操作发生时触发。"""
     OnEndDock: Any
-    """ """
+    """OnEndDock事件，在相关操作发生时触发。"""
     OnEndDrag: Any
-    """ """
+    """OnEndDrag事件，在相关操作发生时触发。"""
     OnMouseActivate: Any
-    """ """
+    """OnMouseActivate事件，在相关操作发生时触发。"""
     OnMouseDown: Any
-    """ """
+    """OnMouseDown事件，在相关操作发生时触发。"""
     OnMouseEnter: Any
-    """ """
+    """OnMouseEnter事件，在相关操作发生时触发。"""
     OnMouseLeave: Any
-    """ """
+    """OnMouseLeave事件，在相关操作发生时触发。"""
     OnMouseMove: Any
-    """ """
+    """OnMouseMove事件，在相关操作发生时触发。"""
     OnMouseUp: Any
-    """ """
+    """OnMouseUp事件，在相关操作发生时触发。"""
     OnGesture: Any
-    """ """
+    """OnGesture事件，在相关操作发生时触发。"""
     OnStartDock: Any
-    """ """
+    """OnStartDock事件，在相关操作发生时触发。"""
     OnStartDrag: Any
-    """ """
+    """OnStartDrag事件，在相关操作发生时触发。"""
     OnClick: Any
-    """ """
+    """OnClick事件，在相关操作发生时触发。"""
     Font: Any
-    """ """
-    ParentFont default true: Any
-    """ """
+    """指定组件中文本的字体样式。"""
+    ParentFont: Any
+    """指定组件是否继承父容器的字体设置。"""
     Pen: Any
-    """ """
+    """获取或设置画笔对象，用于绘制线条和边框。"""
     PenDown: Any
-    """ """
+    """获取或设置按钮按下状态的画笔。"""
     PenFocused: Any
-    """ """
+    """获取或设置按钮聚焦状态的画笔。"""
     PenDisabled: Any
-    """ """
+    """获取或设置按钮禁用状态的画笔。"""
     Brush: Any
-    """ """
+    """获取或设置画刷对象，用于填充背景。"""
     BrushDown: Any
-    """ """
+    """获取或设置按钮按下状态的画刷。"""
     BrushFocused: Any
-    """ """
+    """获取或设置按钮聚焦状态的画刷。"""
     BrushDisabled: Any
-    """ """
+    """获取或设置按钮禁用状态的画刷。"""
     Picture: Any
-    """ """
+    """获取或设置显示的图片。"""
     PictureFocused: Any
-    """ """
+    """获取或设置按钮聚焦状态的图片。"""
     PictureDisabled: Any
-    """ """
+    """获取或设置按钮禁用状态的图片。"""
     FontDown: Any
-    """ """
+    """获取或设置按钮按下状态的字体。"""
     FontFocused: Any
-    """ """
+    """获取或设置按钮聚焦状态的字体。"""
     FontDisabled: Any
-    """ """
+    """获取或设置按钮禁用状态的字体。"""
     Caption: Any
-    """ """
+    """指定组件上显示的标题文本。"""
     TabOrder: int
-    """ """
+    """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: bool
-    """ """
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Radius: Any
-    """ """
+    """获取或设置圆角半径。"""
     Shape: Any
-    """ """
+    """获取或设置形状类型。"""
     Spacing: Any
-    """ """
+    """获取或设置间距大小。"""
     ShowCaption: bool
-    """ """
+    """指定是否显示标题文本。"""
     ClickOnEnter: bool
-    """ """
+    """指定按Enter键时是否触发表单的默认按钮点击。"""
     Alignment: Any
-    """ """
+    """获取或设置内容对齐方式。"""
     PictureCenter: bool
-    """ """
+    """指定图片是否居中显示。"""
     PictureMarginLeft: Any
-    """ """
+    """获取或设置图片左间距。"""
     Style: Any
-    """ """
+    """指定组件的显示样式。"""
     StyleOutline: bool
-    """ """
+    """指定是否使用轮廓样式。"""
     TemplateStyle: Any
-    """ """
+    """获取或设置模板样式。"""
     PictureLayout: Any
-    """ """
+    """获取或设置图片布局方式。"""
     ImageList: Any
-    """ """
+    """获取或设置关联的图像列表。"""
     ImageIndexPicture: int
-    """ """
+    """获取或设置按钮图片在图像列表中的索引。"""
     ImageIndexPictureFocused: int
-    """ """
+    """获取或设置聚焦状态按钮图片的索引。"""
     ImageIndexPictureDisabled: int
-    """ """
+    """获取或设置禁用状态按钮图片的索引。"""
+
+class StockChart(CustomControl):
+    """股票K线图控件，用于显示股票数据的K线图和技术指标。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self, *args, **kwargs) -> Any:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def LoadStock(self, *args, **kwargs) -> Any:
+        """加载股票数据，从指定数据源读取股票历史行情。"""
+    def ScrollLeft(self, *args, **kwargs) -> Any:
+        """将K线图向左滚动，显示更早的股票数据。"""
+    def ScrollRight(self, *args, **kwargs) -> Any:
+        """将K线图向右滚动，显示更新的股票数据。"""
+    def ScrollToFirst(self, *args, **kwargs) -> Any:
+        """滚动到K线图的起始位置，显示最早的数据。"""
+    def ScrollToLast(self, *args, **kwargs) -> Any:
+        """滚动到K线图的最新位置，显示最新的数据。"""
+    def ZoomIn(self, *args, **kwargs) -> Any:
+        """放大K线图，显示更少的K线以查看更多细节。"""
+    def ZoomOut(self, *args, **kwargs) -> Any:
+        """缩小K线图，显示更多的K线以查看更长时间范围。"""
+    def GetCurrentData(self, *args, **kwargs) -> Any:
+        """获取当前鼠标位置对应的股票数据详情。"""
+    def GetDataCount(self, *args, **kwargs) -> int:
+        """获取已加载的股票数据总条数。"""
+    def GetMACycle(self, *args, **kwargs) -> int:
+        """获取移动平均线(MA)的计算周期。"""
+    def SetMACycle(self, *args, **kwargs) -> Any:
+        """设置移动平均线(MA)的计算周期。"""
+    def GetVMACycle(self, *args, **kwargs) -> int:
+        """获取成交量移动平均线的计算周期。"""
+    def SetVMACycle(self, *args, **kwargs) -> Any:
+        """设置成交量移动平均线的计算周期。"""
+    def GetRSICycle(self, *args, **kwargs) -> int:
+        """获取相对强弱指标(RSI)的计算周期。"""
+    def SetRSICycle(self, *args, **kwargs) -> Any:
+        """设置相对强弱指标(RSI)的计算周期。"""
+    def GetMAColor(self, *args, **kwargs) -> Any:
+        """获取移动平均线的显示颜色。"""
+    def SetMAColor(self, *args, **kwargs) -> Any:
+        """设置移动平均线的显示颜色。"""
+    DataFile: Any
+    """获取或设置数据文件路径。"""
+    DataPerPage: int
+    """获取或设置每页显示的数据条数。"""
+    Align: Any
+    """指定组件在其父容器中的对齐方式。"""
+    Anchors: Any
+    """指定组件相对于父容器边缘的锚定方式。"""
+    Enabled: Any
+    """指定组件是否可交互，False时禁用组件。"""
+    Font: Any
+    """指定组件中文本的字体样式。"""
+    ParentFont: Any
+    """指定组件是否继承父容器的字体设置。"""
+    TabOrder: Any
+    """指定组件在父容器Tab键顺序中的位置。"""
+    TabStop: Any
+    """指定用户是否可以通过Tab键将焦点切换到该组件。"""
+    Visible: Any
+    """指定组件是否可见。"""
+    OnClick: Any
+    """OnClick事件，在相关操作发生时触发。"""
+    OnDblClick: Any
+    """OnDblClick事件，在相关操作发生时触发。"""
+    OnMouseDown: Any
+    """OnMouseDown事件，在相关操作发生时触发。"""
+    OnMouseMove: Any
+    """OnMouseMove事件，在相关操作发生时触发。"""
+    OnMouseUp: Any
+    """OnMouseUp事件，在相关操作发生时触发。"""
+    OnKeyDown: Any
+    """OnKeyDown事件，在相关操作发生时触发。"""
+    OnKeyPress: Any
+    """OnKeyPress事件，在相关操作发生时触发。"""
+    OnKeyUp: Any
+    """OnKeyUp事件，在相关操作发生时触发。"""
+    OnResize: Any
+    """OnResize事件，在相关操作发生时触发。"""
+    StockName: str
+    """获取或设置股票名称代码。"""
+    DataPath: str
+    """获取或设置数据文件所在路径。"""
+    UnitWidth: int
+    """获取或设置每根K线的宽度（像素）。"""
+    DataIndex: int
+    """获取或设置当前数据索引位置。"""
+    PageStart: int
+    """获取或设置当前页的起始位置。"""
+    ShowMA: bool
+    """指定是否显示移动平均线。"""
+    ShowVolumeMA: bool
+    """指定是否显示成交量移动平均线。"""
+    ShowDateScale: bool
+    """指定是否显示日期刻度。"""
+    ShowDotLine: bool
+    """指定是否显示虚线辅助线。"""
+    ShowHighLowLabel: bool
+    """指定是否显示最高最低价标签。"""
+    ShowRSI: bool
+    """指定是否显示相对强弱指标。"""
+    BackColor: Any
+    """获取或设置背景颜色。"""
+    UpColor: Any
+    """获取或设置阳线(K线上涨)的颜色。"""
+    DownColor: Any
+    """获取或设置阴线(K线下跌)的颜色。"""
+    EvenColor: Any
+    """获取或设置平盘线的颜色。"""
+    KLineRatio: Any
+    """获取或设置K线图区域的比例。"""
+    VolumeRatio: Any
+    """获取或设置成交量图区域的比例。"""
+    HeaderHeight: int
+    """获取或设置顶部标题栏高度。"""
+    OnDataIndexChange: Any
+    """OnDataIndexChange事件，在相关操作发生时触发。"""
+    OnStockLoaded: Any
+    """OnStockLoaded事件，在相关操作发生时触发。"""
+    OnStockNotFound: Any
+    """OnStockNotFound事件，在相关操作发生时触发。"""

@@ -1,0 +1,5 @@
+def btEasyClick(Sender): 
+def DataSource1DataChange(Sender, Field): 
+def bt10wClick(Sender): 
+def btClearClick(Sender): 
+def btPandasClick(Sender): 

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<DATAPACKET Version="2.0">
+<METADATA>
+    <FIELDS>
+      <FIELD attrname="aaa" fieldtype="string" WIDTH="20"/>
+    </FIELDS>
+    <PARAMS/>
+</METADATA>
+<ROWDATA>
+    <ROW RowState="4" aaa="aaa"/>
+    <ROW RowState="4" aaa="bbbb"/>
+    <ROW RowState="4" aaa="cccc"/>
+</ROWDATA>
+</DATAPACKET>
