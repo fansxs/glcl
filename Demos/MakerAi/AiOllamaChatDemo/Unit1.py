@@ -4,16 +4,14 @@ from glcl import *
 class Form1(Form):
 
     def __init__(self, owner):
+        self.AiOllamaChat1 = AiOllamaChat(self)
         self.Button2 = Button(self)
-        self.OllamaChat = AiOllamaChat(self)
         self.Button1 = Button(self)
         self.MemoPrompt = Memo(self)
         self.MemoChat = Memo(self)
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Unit1.pydfm"))
         self.Button2.OnClick = self.Button2Click
         self.Button1.OnClick = self.Button1Click
-        self.OllamaChat.OnReceiveDataEnd = self.OllamaChatReceiveDataEnd
-        self.OllamaChat.OnReceiveData = self.OllamaChatReceiveData
         '''
         使用方法：
         1.网页搜索Ollama运行千问大模型，下载Ollama客户端安装并用命令下载合适的千问大模型

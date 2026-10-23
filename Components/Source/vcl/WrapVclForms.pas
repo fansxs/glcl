@@ -303,6 +303,247 @@ type
     function CloseHandle_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function GetLastError_Wrapper(args : PPyObject) : PPyObject; cdecl;
     function RGB_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    // ---- Additional Win32 API functions (kernel32/user32/gdi32) ----
+    function Beep_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function Sleep_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetTickCount_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCurrentProcessId_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCurrentThreadId_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCurrentProcess_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCurrentThread_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetLastError_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MulDiv_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetComputerName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetEnvironmentVariable_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetEnvironmentVariable_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetSystemDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowsDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetTempPath_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCurrentDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetCurrentDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RemoveDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DeleteFile_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CopyFile_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MoveFile_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetFileAttributes_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetFileAttributes_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetFullPathName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetLogicalDrives_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDriveType_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OutputDebugString_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetModuleFileName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function LoadLibrary_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function FreeLibrary_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function TerminateProcess_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenProcess_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function WaitForSingleObject_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateEvent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenEvent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetEvent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ResetEvent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PulseEvent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ReleaseMutex_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateSemaphore_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenSemaphore_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ReleaseSemaphore_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsDebuggerPresent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetVersion_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MessageBeep_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function FindWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function FindWindowEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowText_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetWindowText_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowTextLength_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetClassName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsWindowVisible_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsWindowEnabled_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsIconic_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsZoomed_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsChild_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function EnableWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DestroyWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MoveWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetParent_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDesktopWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetForegroundWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetForegroundWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetActiveWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetActiveWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowLong_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetWindowLong_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetSystemMetrics_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetAsyncKeyState_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetKeyState_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function keybd_event_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function mouse_event_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetCursorPos_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCapture_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetCapture_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ShowWindowAsync_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function AnimateWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function FlashWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function BringWindowToTop_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function UpdateWindow_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegisterWindowMessage_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegisterClipboardFormat_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenClipboard_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CloseClipboard_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function EmptyClipboard_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsClipboardFormatAvailable_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CountClipboardFormats_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDlgItem_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDlgCtrlID_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetDlgItemText_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetDlgItemInt_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CheckDlgButton_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsDlgButtonChecked_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetSystemMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetMenuItemCount_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetMenuItemID_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function EnableMenuItem_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DeleteMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RemoveMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreatePopupMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DestroyMenu_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetCursor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCursor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function LoadCursorFromFile_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetSysColor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDoubleClickTime_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetDoubleClickTime_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateCompatibleDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateCompatibleBitmap_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DeleteDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DeleteObject_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SelectObject_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetStockObject_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateSolidBrush_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateHatchBrush_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreatePen_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateRectRgn_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateEllipticRgn_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CreateRoundRectRgn_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CombineRgn_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function EqualRgn_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PtInRegion_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function LineTo_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function Rectangle_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RoundRect_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function Ellipse_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetPixel_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetPixel_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetTextColor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetTextColor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetBkColor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetBkColor_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetBkMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetBkMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function TextOut_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDeviceCaps_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SaveDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RestoreDC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetMapMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetMapMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetROP2_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetROP2_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetStretchBltMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetStretchBltMode_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StretchBlt_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PatBlt_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    // ---- Batch 2: advapi32 (registry/service) / shlwapi / winmm / shell32 ----
+    function RegOpenKeyEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegCreateKeyEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegCloseKey_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegDeleteKey_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegDeleteValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegFlushKey_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegEnumKeyEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegEnumValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegQueryStringValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegSetStringValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegQueryDWordValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegSetDWordValue_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function RegConnectRegistry_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetUserName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenSCManager_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function OpenService_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function CloseServiceHandle_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function QueryServiceState_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StartService_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ControlService_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function DeleteService_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathFileExists_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsDirectory_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsRoot_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsRelative_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsUNC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsURL_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathRemoveBackslash_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathAddBackslash_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathRemoveExtension_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathRemoveFileSpec_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathFindExtension_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathFindFileName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathGetDriveNumber_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathStripPath_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsPrefix_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathMatchSpec_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathIsSameRoot_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathCombine_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathAppend_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathQuoteSpaces_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathUnquoteSpaces_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PathCanonicalize_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StrToInt_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StrFormatByteSize_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function timeGetTime_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function timeBeginPeriod_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function timeEndPeriod_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function PlaySound_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function sndPlaySound_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function waveOutGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function waveInGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function midiOutGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function midiInGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function auxGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function joyGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function mixerGetNumDevs_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function mmioStringToFOURCC_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SHGetFolderPath_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ShellAbout_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ExtractIcon_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SHGetFileTypeDescription_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function IsUserAnAdmin_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    // ---- Batch 3: restored + additional kernel32/shlwapi/shell32 functions ----
+    function ExitWindowsEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function LockWorkStation_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SHFileOperationDelete_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SHEmptyRecycleBin_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StrChr_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function StrStr_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetProcAddress_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetExitCodeProcess_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function SetPriorityClass_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetPriorityClass_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetFileSize_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetLocalTime_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetSystemTime_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetCursorPos_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetWindowRect_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetClientRect_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ClientToScreen_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function ScreenToClient_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function MoveToEx_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetShortPathName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetLongPathName_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetLogicalDriveStrings_Wrapper(args : PPyObject) : PPyObject; cdecl;
+    function GetDlgItemText_Wrapper(args : PPyObject) : PPyObject; cdecl;
     //function CCompiler_Wrapper(args : PPyObject) : PPyObject; cdecl;
     //function CompileFPCFileToExeAndRun_Wrapper(args : PPyObject) : PPyObject; cdecl;
 //    function CompileFPCCodeToDllAndCall_Wrapper(args : PPyObject) : PPyObject; cdecl;
@@ -381,7 +622,7 @@ implementation
 
 uses
   WrapDelphiTypes, System.IOUtils, System.Rtti, FileCtrl, Vcl.Dialogs, Printers,
-  StrUtils, ShellAPI;
+  StrUtils, ShellAPI, ShlwApi, MMSystem, WinSvc, ShlObj;
 
 { Global Functions }
 function FreeConsole_Wrapper(pself, args: PPyObject): PPyObject; cdecl;
@@ -1509,6 +1750,388 @@ begin
   APyDelphiWrapper.DefineVar('ERROR_LOG_FILE_FULL', ERROR_LOG_FILE_FULL);
   APyDelphiWrapper.DefineVar('ERROR_EVENTLOG_FILE_CHANGED', ERROR_EVENTLOG_FILE_CHANGED);
 
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_READONLY',               FILE_ATTRIBUTE_READONLY);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_HIDDEN',               FILE_ATTRIBUTE_HIDDEN);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_SYSTEM',               FILE_ATTRIBUTE_SYSTEM);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_DIRECTORY',               FILE_ATTRIBUTE_DIRECTORY);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_ARCHIVE',               FILE_ATTRIBUTE_ARCHIVE);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_NORMAL',               FILE_ATTRIBUTE_NORMAL);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_TEMPORARY',               FILE_ATTRIBUTE_TEMPORARY);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_COMPRESSED',               FILE_ATTRIBUTE_COMPRESSED);
+  APyDelphiWrapper.DefineVar('FILE_ATTRIBUTE_OFFLINE',               FILE_ATTRIBUTE_OFFLINE);
+  APyDelphiWrapper.DefineVar('DRIVE_UNKNOWN',               DRIVE_UNKNOWN);
+  APyDelphiWrapper.DefineVar('DRIVE_NO_ROOT_DIR',               DRIVE_NO_ROOT_DIR);
+  APyDelphiWrapper.DefineVar('DRIVE_REMOVABLE',               DRIVE_REMOVABLE);
+  APyDelphiWrapper.DefineVar('DRIVE_FIXED',               DRIVE_FIXED);
+  APyDelphiWrapper.DefineVar('DRIVE_REMOTE',               DRIVE_REMOTE);
+  APyDelphiWrapper.DefineVar('DRIVE_CDROM',               DRIVE_CDROM);
+  APyDelphiWrapper.DefineVar('DRIVE_RAMDISK',               DRIVE_RAMDISK);
+  APyDelphiWrapper.DefineVar('PROCESS_TERMINATE',               PROCESS_TERMINATE);
+  APyDelphiWrapper.DefineVar('PROCESS_QUERY_INFORMATION',               PROCESS_QUERY_INFORMATION);
+  APyDelphiWrapper.DefineVar('PROCESS_SET_QUOTA',               PROCESS_SET_QUOTA);
+  APyDelphiWrapper.DefineVar('PROCESS_VM_READ',               PROCESS_VM_READ);
+  APyDelphiWrapper.DefineVar('PROCESS_VM_WRITE',               PROCESS_VM_WRITE);
+  APyDelphiWrapper.DefineVar('PROCESS_VM_OPERATION',               PROCESS_VM_OPERATION);
+  APyDelphiWrapper.DefineVar('SYNCHRONIZE',               SYNCHRONIZE);
+//  APyDelphiWrapper.DefineVar('INFINITE',               INFINITE);
+  APyDelphiWrapper.DefineVar('WAIT_OBJECT_0',               WAIT_OBJECT_0);
+  APyDelphiWrapper.DefineVar('WAIT_TIMEOUT',               WAIT_TIMEOUT);
+//  APyDelphiWrapper.DefineVar('WAIT_FAILED',               WAIT_FAILED);
+  APyDelphiWrapper.DefineVar('WAIT_ABANDONED',               WAIT_ABANDONED);
+  APyDelphiWrapper.DefineVar('CREATE_EVENT_INITIAL_SET',               CREATE_EVENT_INITIAL_SET);
+  APyDelphiWrapper.DefineVar('CREATE_EVENT_MANUAL_RESET',               CREATE_EVENT_MANUAL_RESET);
+  APyDelphiWrapper.DefineVar('EVENT_MODIFY_STATE',               EVENT_MODIFY_STATE);
+  APyDelphiWrapper.DefineVar('SEMAPHORE_MODIFY_STATE',               SEMAPHORE_MODIFY_STATE);
+  APyDelphiWrapper.DefineVar('MB_ICONHAND',               MB_ICONHAND);
+  APyDelphiWrapper.DefineVar('MB_ICONQUESTION',               MB_ICONQUESTION);
+  APyDelphiWrapper.DefineVar('MB_ICONEXCLAMATION',               MB_ICONEXCLAMATION);
+  APyDelphiWrapper.DefineVar('MB_ICONASTERISK',               MB_ICONASTERISK);
+
+  APyDelphiWrapper.DefineVar('GWL_WNDPROC',               GWL_WNDPROC);
+  APyDelphiWrapper.DefineVar('GWL_HINSTANCE',               GWL_HINSTANCE);
+  APyDelphiWrapper.DefineVar('GWL_HWNDPARENT',               GWL_HWNDPARENT);
+  APyDelphiWrapper.DefineVar('GWL_USERDATA',               GWL_USERDATA);
+  APyDelphiWrapper.DefineVar('GWL_EXSTYLE',               GWL_EXSTYLE);
+  APyDelphiWrapper.DefineVar('GWL_STYLE',               GWL_STYLE);
+  APyDelphiWrapper.DefineVar('GWL_ID',               GWL_ID);
+  APyDelphiWrapper.DefineVar('SM_CXSCREEN',               SM_CXSCREEN);
+  APyDelphiWrapper.DefineVar('SM_CYSCREEN',               SM_CYSCREEN);
+  APyDelphiWrapper.DefineVar('SM_CXFULLSCREEN',               SM_CXFULLSCREEN);
+  APyDelphiWrapper.DefineVar('SM_CYFULLSCREEN',               SM_CYFULLSCREEN);
+  APyDelphiWrapper.DefineVar('SM_CXICON',               SM_CXICON);
+  APyDelphiWrapper.DefineVar('SM_CYICON',               SM_CYICON);
+  APyDelphiWrapper.DefineVar('SM_CXCURSOR',               SM_CXCURSOR);
+  APyDelphiWrapper.DefineVar('SM_CYCURSOR',               SM_CYCURSOR);
+  APyDelphiWrapper.DefineVar('SM_CXSIZE',               SM_CXSIZE);
+  APyDelphiWrapper.DefineVar('SM_CYSIZE',               SM_CYSIZE);
+  APyDelphiWrapper.DefineVar('SM_CXMIN',               SM_CXMIN);
+  APyDelphiWrapper.DefineVar('SM_CYMIN',               SM_CYMIN);
+  APyDelphiWrapper.DefineVar('SM_CXMAXIMIZED',               SM_CXMAXIMIZED);
+  APyDelphiWrapper.DefineVar('SM_CYMAXIMIZED',               SM_CYMAXIMIZED);
+  APyDelphiWrapper.DefineVar('VK_LBUTTON',               VK_LBUTTON);
+  APyDelphiWrapper.DefineVar('VK_RBUTTON',               VK_RBUTTON);
+  APyDelphiWrapper.DefineVar('VK_MBUTTON',               VK_MBUTTON);
+  APyDelphiWrapper.DefineVar('VK_BACK',               VK_BACK);
+  APyDelphiWrapper.DefineVar('VK_TAB',               VK_TAB);
+  APyDelphiWrapper.DefineVar('VK_RETURN',               VK_RETURN);
+  APyDelphiWrapper.DefineVar('VK_SHIFT',               VK_SHIFT);
+  APyDelphiWrapper.DefineVar('VK_CONTROL',               VK_CONTROL);
+  APyDelphiWrapper.DefineVar('VK_MENU',               VK_MENU);
+  APyDelphiWrapper.DefineVar('VK_PAUSE',               VK_PAUSE);
+  APyDelphiWrapper.DefineVar('VK_CAPITAL',               VK_CAPITAL);
+  APyDelphiWrapper.DefineVar('VK_ESCAPE',               VK_ESCAPE);
+  APyDelphiWrapper.DefineVar('VK_SPACE',               VK_SPACE);
+  APyDelphiWrapper.DefineVar('VK_PRIOR',               VK_PRIOR);
+  APyDelphiWrapper.DefineVar('VK_NEXT',               VK_NEXT);
+  APyDelphiWrapper.DefineVar('VK_END',               VK_END);
+  APyDelphiWrapper.DefineVar('VK_HOME',               VK_HOME);
+  APyDelphiWrapper.DefineVar('VK_LEFT',               VK_LEFT);
+  APyDelphiWrapper.DefineVar('VK_UP',               VK_UP);
+  APyDelphiWrapper.DefineVar('VK_RIGHT',               VK_RIGHT);
+  APyDelphiWrapper.DefineVar('VK_DOWN',               VK_DOWN);
+  APyDelphiWrapper.DefineVar('VK_SNAPSHOT',               VK_SNAPSHOT);
+  APyDelphiWrapper.DefineVar('VK_INSERT',               VK_INSERT);
+  APyDelphiWrapper.DefineVar('VK_DELETE',               VK_DELETE);
+
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_MOVE',               MOUSEEVENTF_MOVE);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_LEFTDOWN',               MOUSEEVENTF_LEFTDOWN);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_LEFTUP',               MOUSEEVENTF_LEFTUP);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_RIGHTDOWN',               MOUSEEVENTF_RIGHTDOWN);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_RIGHTUP',               MOUSEEVENTF_RIGHTUP);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_MIDDLEDOWN',               MOUSEEVENTF_MIDDLEDOWN);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_MIDDLEUP',               MOUSEEVENTF_MIDDLEUP);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_WHEEL',               MOUSEEVENTF_WHEEL);
+  APyDelphiWrapper.DefineVar('MOUSEEVENTF_ABSOLUTE',               MOUSEEVENTF_ABSOLUTE);
+  APyDelphiWrapper.DefineVar('SW_HIDE',               SW_HIDE);
+  APyDelphiWrapper.DefineVar('SW_SHOWNORMAL',               SW_SHOWNORMAL);
+  APyDelphiWrapper.DefineVar('SW_SHOWMINIMIZED',               SW_SHOWMINIMIZED);
+  APyDelphiWrapper.DefineVar('SW_SHOWMAXIMIZED',               SW_SHOWMAXIMIZED);
+  APyDelphiWrapper.DefineVar('SW_SHOWNOACTIVATE',               SW_SHOWNOACTIVATE);
+  APyDelphiWrapper.DefineVar('SW_SHOW',               SW_SHOW);
+  APyDelphiWrapper.DefineVar('SW_MINIMIZE',               SW_MINIMIZE);
+  APyDelphiWrapper.DefineVar('SW_SHOWMINNOACTIVE',               SW_SHOWMINNOACTIVE);
+  APyDelphiWrapper.DefineVar('SW_SHOWNA',               SW_SHOWNA);
+  APyDelphiWrapper.DefineVar('SW_RESTORE',               SW_RESTORE);
+  APyDelphiWrapper.DefineVar('SW_SHOWDEFAULT',               SW_SHOWDEFAULT);
+  APyDelphiWrapper.DefineVar('SW_FORCEMINIMIZE',               SW_FORCEMINIMIZE);
+  APyDelphiWrapper.DefineVar('AW_HOR_POSITIVE',               AW_HOR_POSITIVE);
+  APyDelphiWrapper.DefineVar('AW_HOR_NEGATIVE',               AW_HOR_NEGATIVE);
+  APyDelphiWrapper.DefineVar('AW_VER_POSITIVE',               AW_VER_POSITIVE);
+  APyDelphiWrapper.DefineVar('AW_VER_NEGATIVE',               AW_VER_NEGATIVE);
+  APyDelphiWrapper.DefineVar('AW_CENTER',               AW_CENTER);
+  APyDelphiWrapper.DefineVar('AW_HIDE',               AW_HIDE);
+  APyDelphiWrapper.DefineVar('AW_ACTIVATE',               AW_ACTIVATE);
+  APyDelphiWrapper.DefineVar('AW_SLIDE',               AW_SLIDE);
+  APyDelphiWrapper.DefineVar('AW_BLEND',               AW_BLEND);
+  APyDelphiWrapper.DefineVar('FLASHW_STOP',               FLASHW_STOP);
+  APyDelphiWrapper.DefineVar('FLASHW_CAPTION',               FLASHW_CAPTION);
+  APyDelphiWrapper.DefineVar('FLASHW_TRAY',               FLASHW_TRAY);
+  APyDelphiWrapper.DefineVar('FLASHW_ALL',               FLASHW_ALL);
+  APyDelphiWrapper.DefineVar('FLASHW_TIMER',               FLASHW_TIMER);
+  APyDelphiWrapper.DefineVar('FLASHW_TIMERNOFG',               FLASHW_TIMERNOFG);
+  APyDelphiWrapper.DefineVar('BST_CHECKED',               BST_CHECKED);
+  APyDelphiWrapper.DefineVar('BST_UNCHECKED',               BST_UNCHECKED);
+  APyDelphiWrapper.DefineVar('BST_INDETERMINATE',               BST_INDETERMINATE);
+  APyDelphiWrapper.DefineVar('MF_BYCOMMAND',               MF_BYCOMMAND);
+  APyDelphiWrapper.DefineVar('MF_BYPOSITION',               MF_BYPOSITION);
+  APyDelphiWrapper.DefineVar('MF_ENABLED',               MF_ENABLED);
+  APyDelphiWrapper.DefineVar('MF_GRAYED',               MF_GRAYED);
+  APyDelphiWrapper.DefineVar('MF_DISABLED',               MF_DISABLED);
+  APyDelphiWrapper.DefineVar('COLOR_SCROLLBAR',               COLOR_SCROLLBAR);
+  APyDelphiWrapper.DefineVar('COLOR_BACKGROUND',               COLOR_BACKGROUND);
+  APyDelphiWrapper.DefineVar('COLOR_DESKTOP',               COLOR_DESKTOP);
+  APyDelphiWrapper.DefineVar('COLOR_ACTIVECAPTION',               COLOR_ACTIVECAPTION);
+  APyDelphiWrapper.DefineVar('COLOR_INACTIVECAPTION',               COLOR_INACTIVECAPTION);
+  APyDelphiWrapper.DefineVar('COLOR_MENU',               COLOR_MENU);
+  APyDelphiWrapper.DefineVar('COLOR_WINDOW',               COLOR_WINDOW);
+  APyDelphiWrapper.DefineVar('COLOR_WINDOWFRAME',               COLOR_WINDOWFRAME);
+  APyDelphiWrapper.DefineVar('COLOR_MENUTEXT',               COLOR_MENUTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_WINDOWTEXT',               COLOR_WINDOWTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_CAPTIONTEXT',               COLOR_CAPTIONTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_ACTIVEBORDER',               COLOR_ACTIVEBORDER);
+  APyDelphiWrapper.DefineVar('COLOR_INACTIVEBORDER',               COLOR_INACTIVEBORDER);
+  APyDelphiWrapper.DefineVar('COLOR_APPWORKSPACE',               COLOR_APPWORKSPACE);
+  APyDelphiWrapper.DefineVar('COLOR_HIGHLIGHT',               COLOR_HIGHLIGHT);
+  APyDelphiWrapper.DefineVar('COLOR_HIGHLIGHTTEXT',               COLOR_HIGHLIGHTTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_BTNFACE',               COLOR_BTNFACE);
+  APyDelphiWrapper.DefineVar('COLOR_BTNSHADOW',               COLOR_BTNSHADOW);
+  APyDelphiWrapper.DefineVar('COLOR_GRAYTEXT',               COLOR_GRAYTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_BTNTEXT',               COLOR_BTNTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_INACTIVECAPTIONTEXT',               COLOR_INACTIVECAPTIONTEXT);
+  APyDelphiWrapper.DefineVar('COLOR_BTNHIGHLIGHT',               COLOR_BTNHIGHLIGHT);
+  APyDelphiWrapper.DefineVar('BLACK_BRUSH',               BLACK_BRUSH);
+  APyDelphiWrapper.DefineVar('DKGRAY_BRUSH',               DKGRAY_BRUSH);
+  APyDelphiWrapper.DefineVar('GRAY_BRUSH',               GRAY_BRUSH);
+  APyDelphiWrapper.DefineVar('HOLLOW_BRUSH',               HOLLOW_BRUSH);
+  APyDelphiWrapper.DefineVar('LTGRAY_BRUSH',               LTGRAY_BRUSH);
+  APyDelphiWrapper.DefineVar('NULL_BRUSH',               NULL_BRUSH);
+  APyDelphiWrapper.DefineVar('WHITE_BRUSH',               WHITE_BRUSH);
+  APyDelphiWrapper.DefineVar('BLACK_PEN',               BLACK_PEN);
+  APyDelphiWrapper.DefineVar('WHITE_PEN',               WHITE_PEN);
+  APyDelphiWrapper.DefineVar('DC_PEN',               DC_PEN);
+  APyDelphiWrapper.DefineVar('ANSI_FIXED_FONT',               ANSI_FIXED_FONT);
+  APyDelphiWrapper.DefineVar('ANSI_VAR_FONT',               ANSI_VAR_FONT);
+  APyDelphiWrapper.DefineVar('DEFAULT_GUI_FONT',               DEFAULT_GUI_FONT);
+  APyDelphiWrapper.DefineVar('OEM_FIXED_FONT',               OEM_FIXED_FONT);
+  APyDelphiWrapper.DefineVar('SYSTEM_FONT',               SYSTEM_FONT);
+  APyDelphiWrapper.DefineVar('SYSTEM_FIXED_FONT',               SYSTEM_FIXED_FONT);
+  APyDelphiWrapper.DefineVar('DEFAULT_PALETTE',               DEFAULT_PALETTE);
+  APyDelphiWrapper.DefineVar('PS_SOLID',               PS_SOLID);
+  APyDelphiWrapper.DefineVar('PS_DASH',               PS_DASH);
+  APyDelphiWrapper.DefineVar('PS_DOT',               PS_DOT);
+  APyDelphiWrapper.DefineVar('PS_DASHDOT',               PS_DASHDOT);
+  APyDelphiWrapper.DefineVar('PS_DASHDOTDOT',               PS_DASHDOTDOT);
+  APyDelphiWrapper.DefineVar('PS_NULL',               PS_NULL);
+  APyDelphiWrapper.DefineVar('PS_INSIDEFRAME',               PS_INSIDEFRAME);
+  APyDelphiWrapper.DefineVar('RGN_AND',               RGN_AND);
+  APyDelphiWrapper.DefineVar('RGN_OR',               RGN_OR);
+  APyDelphiWrapper.DefineVar('RGN_XOR',               RGN_XOR);
+  APyDelphiWrapper.DefineVar('RGN_DIFF',               RGN_DIFF);
+  APyDelphiWrapper.DefineVar('RGN_COPY',               RGN_COPY);
+  APyDelphiWrapper.DefineVar('RGN_MIN',               RGN_MIN);
+  APyDelphiWrapper.DefineVar('RGN_MAX',               RGN_MAX);
+  APyDelphiWrapper.DefineVar('TRANSPARENT',               TRANSPARENT);
+  APyDelphiWrapper.DefineVar('OPAQUE',               OPAQUE);
+  APyDelphiWrapper.DefineVar('DRIVERVERSION',               DRIVERVERSION);
+  APyDelphiWrapper.DefineVar('TECHNOLOGY',               TECHNOLOGY);
+  APyDelphiWrapper.DefineVar('HORZSIZE',               HORZSIZE);
+  APyDelphiWrapper.DefineVar('VERTSIZE',               VERTSIZE);
+  APyDelphiWrapper.DefineVar('HORZRES',               HORZRES);
+  APyDelphiWrapper.DefineVar('VERTRES',               VERTRES);
+  APyDelphiWrapper.DefineVar('BITSPIXEL',               BITSPIXEL);
+  APyDelphiWrapper.DefineVar('PLANES',               PLANES);
+  APyDelphiWrapper.DefineVar('NUMBRUSHES',               NUMBRUSHES);
+  APyDelphiWrapper.DefineVar('NUMPENS',               NUMPENS);
+  APyDelphiWrapper.DefineVar('NUMFONTS',               NUMFONTS);
+  APyDelphiWrapper.DefineVar('NUMCOLORS',               NUMCOLORS);
+  APyDelphiWrapper.DefineVar('ASPECTX',               ASPECTX);
+  APyDelphiWrapper.DefineVar('ASPECTY',               ASPECTY);
+  APyDelphiWrapper.DefineVar('ASPECTXY',               ASPECTXY);
+  APyDelphiWrapper.DefineVar('LOGPIXELSX',               LOGPIXELSX);
+  APyDelphiWrapper.DefineVar('LOGPIXELSY',               LOGPIXELSY);
+  APyDelphiWrapper.DefineVar('SIZEPALETTE',               SIZEPALETTE);
+  APyDelphiWrapper.DefineVar('NUMRESERVED',               NUMRESERVED);
+  APyDelphiWrapper.DefineVar('COLORRES',               COLORRES);
+  APyDelphiWrapper.DefineVar('RASTERCAPS',               RASTERCAPS);
+  APyDelphiWrapper.DefineVar('CURVECAPS',               CURVECAPS);
+  APyDelphiWrapper.DefineVar('LINECAPS',               LINECAPS);
+  APyDelphiWrapper.DefineVar('POLYGONALCAPS',               POLYGONALCAPS);
+  APyDelphiWrapper.DefineVar('TEXTCAPS',               TEXTCAPS);
+  APyDelphiWrapper.DefineVar('CLIPCAPS',               CLIPCAPS);
+  APyDelphiWrapper.DefineVar('SHADEBLENDCAPS',               SHADEBLENDCAPS);
+  APyDelphiWrapper.DefineVar('MM_TEXT',               MM_TEXT);
+  APyDelphiWrapper.DefineVar('MM_LOMETRIC',               MM_LOMETRIC);
+  APyDelphiWrapper.DefineVar('MM_HIMETRIC',               MM_HIMETRIC);
+  APyDelphiWrapper.DefineVar('MM_LOENGLISH',               MM_LOENGLISH);
+  APyDelphiWrapper.DefineVar('MM_HIENGLISH',               MM_HIENGLISH);
+  APyDelphiWrapper.DefineVar('MM_TWIPS',               MM_TWIPS);
+  APyDelphiWrapper.DefineVar('MM_ISOTROPIC',               MM_ISOTROPIC);
+  APyDelphiWrapper.DefineVar('MM_ANISOTROPIC',               MM_ANISOTROPIC);
+  APyDelphiWrapper.DefineVar('R2_BLACK',               R2_BLACK);
+  APyDelphiWrapper.DefineVar('R2_WHITE',               R2_WHITE);
+  APyDelphiWrapper.DefineVar('R2_NOP',               R2_NOP);
+  APyDelphiWrapper.DefineVar('R2_NOT',               R2_NOT);
+  APyDelphiWrapper.DefineVar('R2_COPYPEN',               R2_COPYPEN);
+  APyDelphiWrapper.DefineVar('R2_NOTCOPYPEN',               R2_NOTCOPYPEN);
+  APyDelphiWrapper.DefineVar('R2_MERGEPENNOT',               R2_MERGEPENNOT);
+  APyDelphiWrapper.DefineVar('R2_MASKPENNOT',               R2_MASKPENNOT);
+  APyDelphiWrapper.DefineVar('R2_MERGENOTPEN',               R2_MERGENOTPEN);
+  APyDelphiWrapper.DefineVar('R2_MASKNOTPEN',               R2_MASKNOTPEN);
+  APyDelphiWrapper.DefineVar('R2_MERGEPEN',               R2_MERGEPEN);
+  APyDelphiWrapper.DefineVar('R2_NOTMERGEPEN',               R2_NOTMERGEPEN);
+  APyDelphiWrapper.DefineVar('R2_MASKPEN',               R2_MASKPEN);
+  APyDelphiWrapper.DefineVar('R2_NOTMASKPEN',               R2_NOTMASKPEN);
+  APyDelphiWrapper.DefineVar('R2_XORPEN',               R2_XORPEN);
+  APyDelphiWrapper.DefineVar('R2_NOTXORPEN',               R2_NOTXORPEN);
+  APyDelphiWrapper.DefineVar('STRETCH_ANDSCANS',               STRETCH_ANDSCANS);
+  APyDelphiWrapper.DefineVar('STRETCH_ORSCANS',               STRETCH_ORSCANS);
+  APyDelphiWrapper.DefineVar('STRETCH_DELETESCANS',               STRETCH_DELETESCANS);
+  APyDelphiWrapper.DefineVar('STRETCH_HALFTONE',               STRETCH_HALFTONE);
+
+  APyDelphiWrapper.DefineVar('MB_ICONWARNING',               MB_ICONWARNING);
+  APyDelphiWrapper.DefineVar('MB_ICONERROR',               MB_ICONERROR);
+  APyDelphiWrapper.DefineVar('MB_ICONINFORMATION',               MB_ICONINFORMATION);
+  APyDelphiWrapper.DefineVar('MB_ICONSTOP',               MB_ICONSTOP);
+  APyDelphiWrapper.DefineVar('MB_DEFBUTTON1',               MB_DEFBUTTON1);
+  APyDelphiWrapper.DefineVar('MB_DEFBUTTON2',               MB_DEFBUTTON2);
+  APyDelphiWrapper.DefineVar('MB_DEFBUTTON3',               MB_DEFBUTTON3);
+  APyDelphiWrapper.DefineVar('MB_APPLMODAL',               MB_APPLMODAL);
+  APyDelphiWrapper.DefineVar('MB_SYSTEMMODAL',               MB_SYSTEMMODAL);
+  APyDelphiWrapper.DefineVar('MB_TASKMODAL',               MB_TASKMODAL);
+  APyDelphiWrapper.DefineVar('MB_HELP',               MB_HELP);
+  APyDelphiWrapper.DefineVar('MB_SETFOREGROUND',               MB_SETFOREGROUND);
+  APyDelphiWrapper.DefineVar('MB_DEFAULT_DESKTOP_ONLY',               MB_DEFAULT_DESKTOP_ONLY);
+
+  APyDelphiWrapper.DefineVar('KEY_ALL_ACCESS',               KEY_ALL_ACCESS);
+  APyDelphiWrapper.DefineVar('KEY_READ',               KEY_READ);
+  APyDelphiWrapper.DefineVar('KEY_WRITE',               KEY_WRITE);
+  APyDelphiWrapper.DefineVar('KEY_EXECUTE',               KEY_EXECUTE);
+  APyDelphiWrapper.DefineVar('KEY_QUERY_VALUE',               KEY_QUERY_VALUE);
+  APyDelphiWrapper.DefineVar('KEY_SET_VALUE',               KEY_SET_VALUE);
+  APyDelphiWrapper.DefineVar('KEY_CREATE_SUB_KEY',               KEY_CREATE_SUB_KEY);
+  APyDelphiWrapper.DefineVar('KEY_ENUMERATE_SUB_KEYS',               KEY_ENUMERATE_SUB_KEYS);
+  APyDelphiWrapper.DefineVar('KEY_NOTIFY',               KEY_NOTIFY);
+  APyDelphiWrapper.DefineVar('KEY_CREATE_LINK',               KEY_CREATE_LINK);
+  APyDelphiWrapper.DefineVar('KEY_WOW64_64KEY',               KEY_WOW64_64KEY);
+  APyDelphiWrapper.DefineVar('KEY_WOW64_32KEY',               KEY_WOW64_32KEY);
+  APyDelphiWrapper.DefineVar('REG_OPTION_NON_VOLATILE',               REG_OPTION_NON_VOLATILE);
+  APyDelphiWrapper.DefineVar('REG_OPTION_VOLATILE',               REG_OPTION_VOLATILE);
+  APyDelphiWrapper.DefineVar('REG_OPTION_BACKUP_RESTORE',               REG_OPTION_BACKUP_RESTORE);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_CONNECT',               SC_MANAGER_CONNECT);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_CREATE_SERVICE',               SC_MANAGER_CREATE_SERVICE);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_ENUMERATE_SERVICE',               SC_MANAGER_ENUMERATE_SERVICE);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_LOCK',               SC_MANAGER_LOCK);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_QUERY_LOCK_STATUS',               SC_MANAGER_QUERY_LOCK_STATUS);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_MODIFY_BOOT_CONFIG',               SC_MANAGER_MODIFY_BOOT_CONFIG);
+  APyDelphiWrapper.DefineVar('SC_MANAGER_ALL_ACCESS',               SC_MANAGER_ALL_ACCESS);
+  APyDelphiWrapper.DefineVar('SERVICE_QUERY_CONFIG',               SERVICE_QUERY_CONFIG);
+  APyDelphiWrapper.DefineVar('SERVICE_CHANGE_CONFIG',               SERVICE_CHANGE_CONFIG);
+  APyDelphiWrapper.DefineVar('SERVICE_QUERY_STATUS',               SERVICE_QUERY_STATUS);
+  APyDelphiWrapper.DefineVar('SERVICE_ENUMERATE_DEPENDENTS',               SERVICE_ENUMERATE_DEPENDENTS);
+  APyDelphiWrapper.DefineVar('SERVICE_START',               SERVICE_START);
+  APyDelphiWrapper.DefineVar('SERVICE_STOP',               SERVICE_STOP);
+  APyDelphiWrapper.DefineVar('SERVICE_PAUSE_CONTINUE',               SERVICE_PAUSE_CONTINUE);
+  APyDelphiWrapper.DefineVar('SERVICE_INTERROGATE',               SERVICE_INTERROGATE);
+  APyDelphiWrapper.DefineVar('SERVICE_ALL_ACCESS',               SERVICE_ALL_ACCESS);
+  APyDelphiWrapper.DefineVar('SERVICE_STOPPED',               SERVICE_STOPPED);
+  APyDelphiWrapper.DefineVar('SERVICE_START_PENDING',               SERVICE_START_PENDING);
+  APyDelphiWrapper.DefineVar('SERVICE_STOP_PENDING',               SERVICE_STOP_PENDING);
+  APyDelphiWrapper.DefineVar('SERVICE_RUNNING',               SERVICE_RUNNING);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTINUE_PENDING',               SERVICE_CONTINUE_PENDING);
+  APyDelphiWrapper.DefineVar('SERVICE_PAUSE_PENDING',               SERVICE_PAUSE_PENDING);
+  APyDelphiWrapper.DefineVar('SERVICE_PAUSED',               SERVICE_PAUSED);
+  APyDelphiWrapper.DefineVar('SERVICE_BOOT_START',               SERVICE_BOOT_START);
+  APyDelphiWrapper.DefineVar('SERVICE_SYSTEM_START',               SERVICE_SYSTEM_START);
+  APyDelphiWrapper.DefineVar('SERVICE_AUTO_START',               SERVICE_AUTO_START);
+  APyDelphiWrapper.DefineVar('SERVICE_DEMAND_START',               SERVICE_DEMAND_START);
+  APyDelphiWrapper.DefineVar('SERVICE_DISABLED',               SERVICE_DISABLED);
+  APyDelphiWrapper.DefineVar('SERVICE_ERROR_IGNORE',               SERVICE_ERROR_IGNORE);
+  APyDelphiWrapper.DefineVar('SERVICE_ERROR_NORMAL',               SERVICE_ERROR_NORMAL);
+  APyDelphiWrapper.DefineVar('SERVICE_ERROR_SEVERE',               SERVICE_ERROR_SEVERE);
+  APyDelphiWrapper.DefineVar('SERVICE_ERROR_CRITICAL',               SERVICE_ERROR_CRITICAL);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_STOP',               SERVICE_CONTROL_STOP);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_PAUSE',               SERVICE_CONTROL_PAUSE);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_CONTINUE',               SERVICE_CONTROL_CONTINUE);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_INTERROGATE',               SERVICE_CONTROL_INTERROGATE);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_PARAMCHANGE',               SERVICE_CONTROL_PARAMCHANGE);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_SHUTDOWN',               SERVICE_CONTROL_SHUTDOWN);
+  APyDelphiWrapper.DefineVar('SERVICE_CONTROL_PRESHUTDOWN',               SERVICE_CONTROL_PRESHUTDOWN);
+  APyDelphiWrapper.DefineVar('SND_SYNC',               SND_SYNC);
+  APyDelphiWrapper.DefineVar('SND_ASYNC',               SND_ASYNC);
+  APyDelphiWrapper.DefineVar('SND_NODEFAULT',               SND_NODEFAULT);
+  APyDelphiWrapper.DefineVar('SND_MEMORY',               SND_MEMORY);
+  APyDelphiWrapper.DefineVar('SND_LOOP',               SND_LOOP);
+  APyDelphiWrapper.DefineVar('SND_NOSTOP',               SND_NOSTOP);
+  APyDelphiWrapper.DefineVar('SND_NOWAIT',               SND_NOWAIT);
+  APyDelphiWrapper.DefineVar('SND_FILENAME',               SND_FILENAME);
+  APyDelphiWrapper.DefineVar('SND_RESOURCE',               SND_RESOURCE);
+  APyDelphiWrapper.DefineVar('SND_PURGE',               SND_PURGE);
+  APyDelphiWrapper.DefineVar('SND_APPLICATION',               SND_APPLICATION);
+  APyDelphiWrapper.DefineVar('SND_ALIAS',               SND_ALIAS);
+  APyDelphiWrapper.DefineVar('CSIDL_DESKTOP',               CSIDL_DESKTOP);
+  APyDelphiWrapper.DefineVar('CSIDL_INTERNET',               CSIDL_INTERNET);
+  APyDelphiWrapper.DefineVar('CSIDL_PROGRAMS',               CSIDL_PROGRAMS);
+  APyDelphiWrapper.DefineVar('CSIDL_CONTROLS',               CSIDL_CONTROLS);
+  APyDelphiWrapper.DefineVar('CSIDL_PRINTERS',               CSIDL_PRINTERS);
+  APyDelphiWrapper.DefineVar('CSIDL_PERSONAL',               CSIDL_PERSONAL);
+  APyDelphiWrapper.DefineVar('CSIDL_FAVORITES',               CSIDL_FAVORITES);
+  APyDelphiWrapper.DefineVar('CSIDL_STARTUP',               CSIDL_STARTUP);
+  APyDelphiWrapper.DefineVar('CSIDL_RECENT',               CSIDL_RECENT);
+  APyDelphiWrapper.DefineVar('CSIDL_SENDTO',               CSIDL_SENDTO);
+  APyDelphiWrapper.DefineVar('CSIDL_BITBUCKET',               CSIDL_BITBUCKET);
+  APyDelphiWrapper.DefineVar('CSIDL_STARTMENU',               CSIDL_STARTMENU);
+  APyDelphiWrapper.DefineVar('CSIDL_MYDOCUMENTS',               CSIDL_MYDOCUMENTS);
+  APyDelphiWrapper.DefineVar('CSIDL_MYMUSIC',               CSIDL_MYMUSIC);
+  APyDelphiWrapper.DefineVar('CSIDL_MYVIDEO',               CSIDL_MYVIDEO);
+  APyDelphiWrapper.DefineVar('CSIDL_DESKTOPDIRECTORY',               CSIDL_DESKTOPDIRECTORY);
+  APyDelphiWrapper.DefineVar('CSIDL_DRIVES',               CSIDL_DRIVES);
+  APyDelphiWrapper.DefineVar('CSIDL_NETWORK',               CSIDL_NETWORK);
+  APyDelphiWrapper.DefineVar('CSIDL_FONTS',               CSIDL_FONTS);
+  APyDelphiWrapper.DefineVar('CSIDL_TEMPLATES',               CSIDL_TEMPLATES);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_STARTMENU',               CSIDL_COMMON_STARTMENU);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_PROGRAMS',               CSIDL_COMMON_PROGRAMS);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_STARTUP',               CSIDL_COMMON_STARTUP);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_DESKTOPDIRECTORY',               CSIDL_COMMON_DESKTOPDIRECTORY);
+  APyDelphiWrapper.DefineVar('CSIDL_APPDATA',               CSIDL_APPDATA);
+  APyDelphiWrapper.DefineVar('CSIDL_PRINTHOOD',               CSIDL_PRINTHOOD);
+  APyDelphiWrapper.DefineVar('CSIDL_LOCAL_APPDATA',               CSIDL_LOCAL_APPDATA);
+  APyDelphiWrapper.DefineVar('CSIDL_ALTSTARTUP',               CSIDL_ALTSTARTUP);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_ALTSTARTUP',               CSIDL_COMMON_ALTSTARTUP);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_FAVORITES',               CSIDL_COMMON_FAVORITES);
+  APyDelphiWrapper.DefineVar('CSIDL_INTERNET_CACHE',               CSIDL_INTERNET_CACHE);
+  APyDelphiWrapper.DefineVar('CSIDL_COOKIES',               CSIDL_COOKIES);
+  APyDelphiWrapper.DefineVar('CSIDL_HISTORY',               CSIDL_HISTORY);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_APPDATA',               CSIDL_COMMON_APPDATA);
+  APyDelphiWrapper.DefineVar('CSIDL_WINDOWS',               CSIDL_WINDOWS);
+  APyDelphiWrapper.DefineVar('CSIDL_SYSTEM',               CSIDL_SYSTEM);
+  APyDelphiWrapper.DefineVar('CSIDL_PROGRAM_FILES',               CSIDL_PROGRAM_FILES);
+  APyDelphiWrapper.DefineVar('CSIDL_MYPICTURES',               CSIDL_MYPICTURES);
+  APyDelphiWrapper.DefineVar('CSIDL_PROFILE',               CSIDL_PROFILE);
+  APyDelphiWrapper.DefineVar('CSIDL_SYSTEMX86',               CSIDL_SYSTEMX86);
+  APyDelphiWrapper.DefineVar('CSIDL_PROGRAM_FILESX86',               CSIDL_PROGRAM_FILESX86);
+  APyDelphiWrapper.DefineVar('CSIDL_PROGRAM_FILES_COMMON',               CSIDL_PROGRAM_FILES_COMMON);
+  APyDelphiWrapper.DefineVar('CSIDL_PROGRAM_FILES_COMMONX86',               CSIDL_PROGRAM_FILES_COMMONX86);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_TEMPLATES',               CSIDL_COMMON_TEMPLATES);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_DOCUMENTS',               CSIDL_COMMON_DOCUMENTS);
+  APyDelphiWrapper.DefineVar('CSIDL_COMMON_ADMINTOOLS',               CSIDL_COMMON_ADMINTOOLS);
+  APyDelphiWrapper.DefineVar('CSIDL_ADMINTOOLS',               CSIDL_ADMINTOOLS);
+  APyDelphiWrapper.DefineVar('SHERB_NOCONFIRMATION',               SHERB_NOCONFIRMATION);
+  APyDelphiWrapper.DefineVar('SHERB_NOPROGRESSUI',               SHERB_NOPROGRESSUI);
+  APyDelphiWrapper.DefineVar('SHERB_NOSOUND',               SHERB_NOSOUND);
+  APyDelphiWrapper.DefineVar('STILL_ACTIVE',               STILL_ACTIVE);
+  APyDelphiWrapper.DefineVar('IDLE_PRIORITY_CLASS',               IDLE_PRIORITY_CLASS);
+  APyDelphiWrapper.DefineVar('BELOW_NORMAL_PRIORITY_CLASS',               BELOW_NORMAL_PRIORITY_CLASS);
+  APyDelphiWrapper.DefineVar('NORMAL_PRIORITY_CLASS',               NORMAL_PRIORITY_CLASS);
+  APyDelphiWrapper.DefineVar('ABOVE_NORMAL_PRIORITY_CLASS',               ABOVE_NORMAL_PRIORITY_CLASS);
+  APyDelphiWrapper.DefineVar('HIGH_PRIORITY_CLASS',               HIGH_PRIORITY_CLASS);
+  APyDelphiWrapper.DefineVar('REALTIME_PRIORITY_CLASS',               REALTIME_PRIORITY_CLASS);
+//  APyDelphiWrapper.DefineVar('INVALID_FILE_SIZE',               INVALID_FILE_SIZE);
+  APyDelphiWrapper.DefineVar('EWX_LOGOFF',               EWX_LOGOFF);
+  APyDelphiWrapper.DefineVar('EWX_SHUTDOWN',               EWX_SHUTDOWN);
+  APyDelphiWrapper.DefineVar('EWX_REBOOT',               EWX_REBOOT);
+  APyDelphiWrapper.DefineVar('EWX_POWEROFF',               EWX_POWEROFF);
+  APyDelphiWrapper.DefineVar('EWX_FORCE',               EWX_FORCE);
+  APyDelphiWrapper.DefineVar('EWX_FORCEIFHUNG',               EWX_FORCEIFHUNG);
 end;
 
 function TFormsRegistration.Name: string;
@@ -3121,7 +3744,7 @@ begin
   Adjust(@Self);
   with GetPythonEngine do
   begin
-    if (PyArg_ParseTuple(args, 'OO:PtInRect', @LPyRect, LPyPoint) <> 0) and
+    if (PyArg_ParseTuple(args, 'OO:PtInRect', @LPyRect, @LPyPoint) <> 0) and
       CheckPointAttribute(LPyPoint, 'TPoint', _pt) and
       CheckRectAttribute(LPyRect, 'TRect', _lprc) then
     begin
@@ -3262,6 +3885,4129 @@ begin
     if (PyArg_ParseTuple(args, 'iii:RGB', @_r, @_g, @_b) <> 0) then
     begin
       Result := PyLong_FromLong(RGB(_r, _g, _b));
+    end else
+      Result := nil;
+  end;
+end;
+
+{ Additional Win32 API functions (kernel32/user32/gdi32) }
+
+function TPyDelphiApplication.Beep_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwFreq : DWORD;
+  _dwDuration : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:Beep', @_dwFreq, @_dwDuration) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(Beep(_dwFreq, _dwDuration)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.Sleep_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwMilliseconds : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:Sleep', @_dwMilliseconds) <> 0) then
+    begin
+      Sleep(_dwMilliseconds);
+      Result := ReturnNone;
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetTickCount_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetTickCount') <> 0) then
+    begin
+      Result := PyLong_FromLong(GetTickCount());
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCurrentProcessId_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCurrentProcessId') <> 0) then
+    begin
+      Result := PyLong_FromLong(GetCurrentProcessId());
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCurrentThreadId_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCurrentThreadId') <> 0) then
+    begin
+      Result := PyLong_FromLong(GetCurrentThreadId());
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCurrentProcess_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCurrentProcess') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetCurrentProcess()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCurrentThread_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCurrentThread') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetCurrentThread()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetLastError_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwErrCode : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetLastError', @_dwErrCode) <> 0) then
+    begin
+      SetLastError(_dwErrCode);
+      Result := ReturnNone;
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.MulDiv_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nNumber : Integer;
+  _nNumerator : Integer;
+  _nDenominator : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:MulDiv', @_nNumber, @_nNumerator, @_nDenominator) <> 0) then
+    begin
+      Result := PyLong_FromLong(MulDiv(_nNumber, _nNumerator, _nDenominator));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetComputerName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..255] of Char;
+  _size: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetComputerName') <> 0) then
+    begin
+      _size := 256;
+      if Windows.GetComputerName(_buf, _size) then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetEnvironmentVariable_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpName : PPyObject;
+  _lpValue : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:SetEnvironmentVariable', @_lpName, @_lpValue) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetEnvironmentVariable(PChar(PyObjectAsString(_lpName)), PChar(PyObjectAsString(_lpValue)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetEnvironmentVariable_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpName : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetEnvironmentVariable', @_lpName) <> 0) then
+    begin
+      Windows.GetEnvironmentVariable(PChar(PyObjectAsString(_lpName)), _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetSystemDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetSystemDirectory') <> 0) then
+    begin
+      Windows.GetSystemDirectory(_buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowsDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetWindowsDirectory') <> 0) then
+    begin
+      Windows.GetWindowsDirectory(_buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetTempPath_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetTempPath') <> 0) then
+    begin
+      Windows.GetTempPath(1024, _buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCurrentDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCurrentDirectory') <> 0) then
+    begin
+      Windows.GetCurrentDirectory(1024, _buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetCurrentDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpPathName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:SetCurrentDirectory', @_lpPathName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetCurrentDirectory(PChar(PyObjectAsString(_lpPathName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpPathName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:CreateDirectory', @_lpPathName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CreateDirectory(PChar(PyObjectAsString(_lpPathName)), nil)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RemoveDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpPathName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:RemoveDirectory', @_lpPathName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(RemoveDirectory(PChar(PyObjectAsString(_lpPathName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DeleteFile_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpFileName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:DeleteFile', @_lpFileName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DeleteFile(PChar(PyObjectAsString(_lpFileName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CopyFile_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpExistingFileName : PPyObject;
+  _lpNewFileName : PPyObject;
+  _bFailIfExists : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OOi:CopyFile', @_lpExistingFileName, @_lpNewFileName, @_bFailIfExists) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CopyFile(PChar(PyObjectAsString(_lpExistingFileName)), PChar(PyObjectAsString(_lpNewFileName)), _bFailIfExists)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.MoveFile_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpExistingFileName : PPyObject;
+  _lpNewFileName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:MoveFile', @_lpExistingFileName, @_lpNewFileName) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(MoveFile(PChar(PyObjectAsString(_lpExistingFileName)), PChar(PyObjectAsString(_lpNewFileName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetFileAttributes_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpFileName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetFileAttributes', @_lpFileName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetFileAttributes(PChar(PyObjectAsString(_lpFileName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetFileAttributes_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpFileName : PPyObject;
+  _dwFileAttributes : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:SetFileAttributes', @_lpFileName, @_dwFileAttributes) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetFileAttributes(PChar(PyObjectAsString(_lpFileName)), _dwFileAttributes)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetFullPathName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpFileName : PPyObject;
+  _buf: array[0..1023] of Char;
+  _filePart: PChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetFullPathName', @_lpFileName) <> 0) then
+    begin
+      _filePart := nil;
+      Windows.GetFullPathName(PChar(PyObjectAsString(_lpFileName)), 1024, _buf, _filePart);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetLogicalDrives_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetLogicalDrives') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetLogicalDrives()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDriveType_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpRootPathName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetDriveType', @_lpRootPathName) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetDriveType(PChar(PyObjectAsString(_lpRootPathName))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OutputDebugString_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpOutputString : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:OutputDebugString', @_lpOutputString) <> 0) then
+    begin
+      OutputDebugString(PChar(PyObjectAsString(_lpOutputString)));
+      Result := ReturnNone;
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetModuleFileName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hModule : HMODULE;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetModuleFileName', @_hModule) <> 0) then
+    begin
+      Windows.GetModuleFileName(_hModule, _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.LoadLibrary_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpLibFileName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:LoadLibrary', @_lpLibFileName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(LoadLibrary(PChar(PyObjectAsString(_lpLibFileName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.FreeLibrary_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hLibModule : HMODULE;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:FreeLibrary', @_hLibModule) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(FreeLibrary(_hLibModule)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.TerminateProcess_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hProcess : THandle;
+  _uExitCode : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:TerminateProcess', @_hProcess, @_uExitCode) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(TerminateProcess(_hProcess, _uExitCode)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenProcess_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwDesiredAccess : DWORD;
+  _bInheritHandle : BOOL;
+  _dwProcessId : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:OpenProcess', @_dwDesiredAccess, @_bInheritHandle, @_dwProcessId) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(OpenProcess(_dwDesiredAccess, _bInheritHandle, _dwProcessId)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.WaitForSingleObject_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hHandle : THandle;
+  _dwMilliseconds : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:WaitForSingleObject', @_hHandle, @_dwMilliseconds) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(WaitForSingleObject(_hHandle, _dwMilliseconds)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateEvent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _bManualReset : BOOL;
+  _bInitialState : BOOL;
+  _lpName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiO:CreateEvent', @_bManualReset, @_bInitialState, @_lpName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateEvent(nil, _bManualReset, _bInitialState, PChar(PyObjectAsString(_lpName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenEvent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwDesiredAccess : DWORD;
+  _bInheritHandle : BOOL;
+  _lpName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiO:OpenEvent', @_dwDesiredAccess, @_bInheritHandle, @_lpName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(OpenEvent(_dwDesiredAccess, _bInheritHandle, PChar(PyObjectAsString(_lpName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetEvent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hEvent : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetEvent', @_hEvent) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetEvent(_hEvent)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ResetEvent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hEvent : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:ResetEvent', @_hEvent) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ResetEvent(_hEvent)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PulseEvent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hEvent : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:PulseEvent', @_hEvent) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PulseEvent(_hEvent)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ReleaseMutex_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMutex : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:ReleaseMutex', @_hMutex) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ReleaseMutex(_hMutex)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateSemaphore_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lInitialCount : Longint;
+  _lMaximumCount : Longint;
+  _lpName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiO:CreateSemaphore', @_lInitialCount, @_lMaximumCount, @_lpName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateSemaphore(nil, _lInitialCount, _lMaximumCount, PChar(PyObjectAsString(_lpName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenSemaphore_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwDesiredAccess : DWORD;
+  _bInheritHandle : BOOL;
+  _lpName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiO:OpenSemaphore', @_dwDesiredAccess, @_bInheritHandle, @_lpName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(OpenSemaphore(_dwDesiredAccess, _bInheritHandle, PChar(PyObjectAsString(_lpName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ReleaseSemaphore_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hSemaphore : THandle;
+  _lReleaseCount : Longint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:ReleaseSemaphore', @_hSemaphore, @_lReleaseCount) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ReleaseSemaphore(_hSemaphore, _lReleaseCount, nil)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsDebuggerPresent_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':IsDebuggerPresent') <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsDebuggerPresent()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetVersion_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetVersion') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetVersion()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.MessageBeep_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _uType : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:MessageBeep', @_uType) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(MessageBeep(_uType)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.FindWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpClassName : PPyObject;
+  _lpWindowName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:FindWindow', @_lpClassName, @_lpWindowName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(FindWindow(PChar(PyObjectAsString(_lpClassName)), PChar(PyObjectAsString(_lpWindowName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.FindWindowEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWndParent : HWND;
+  _hWndChildAfter : HWND;
+  _lpszClass : PPyObject;
+  _lpszWindow : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiOO:FindWindowEx', @_hWndParent, @_hWndChildAfter, @_lpszClass, @_lpszWindow) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(FindWindowEx(_hWndParent, _hWndChildAfter, PChar(PyObjectAsString(_lpszClass)), PChar(PyObjectAsString(_lpszWindow)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowText_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetWindowText', @_hWnd) <> 0) then
+    begin
+      Windows.GetWindowText(_hWnd, _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetWindowText_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _lpString : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:SetWindowText', @_hWnd, @_lpString) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetWindowText(_hWnd, PChar(PyObjectAsString(_lpString)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowTextLength_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetWindowTextLength', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetWindowTextLength(_hWnd));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetClassName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetClassName', @_hWnd) <> 0) then
+    begin
+      Windows.GetClassName(_hWnd, _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsWindow', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsWindow(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsWindowVisible_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsWindowVisible', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsWindowVisible(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsWindowEnabled_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsWindowEnabled', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsWindowEnabled(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsIconic_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsIconic', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsIconic(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsZoomed_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsZoomed', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsZoomed(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsChild_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWndParent : HWND;
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:IsChild', @_hWndParent, @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsChild(_hWndParent, _hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.EnableWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _bEnable : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:EnableWindow', @_hWnd, @_bEnable) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(EnableWindow(_hWnd, _bEnable)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DestroyWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:DestroyWindow', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DestroyWindow(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.MoveWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _X : Integer;
+  _Y : Integer;
+  _nWidth : Integer;
+  _nHeight : Integer;
+  _bRepaint : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiii:MoveWindow', @_hWnd, @_X, @_Y, @_nWidth, @_nHeight, @_bRepaint) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(MoveWindow(_hWnd, _X, _Y, _nWidth, _nHeight, _bRepaint)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetParent_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetParent', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetParent(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDesktopWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetDesktopWindow') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetDesktopWindow()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetForegroundWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetForegroundWindow') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetForegroundWindow()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetForegroundWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetForegroundWindow', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetForegroundWindow(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetActiveWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetActiveWindow') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetActiveWindow()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetActiveWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetActiveWindow', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetActiveWindow(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowLong_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _nIndex : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetWindowLong', @_hWnd, @_nIndex) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetWindowLong(_hWnd, _nIndex));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetWindowLong_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _nIndex : Integer;
+  _dwNewLong : Longint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:SetWindowLong', @_hWnd, @_nIndex, @_dwNewLong) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetWindowLong(_hWnd, _nIndex, _dwNewLong));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetSystemMetrics_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nIndex : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetSystemMetrics', @_nIndex) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetSystemMetrics(_nIndex));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetAsyncKeyState_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _vKey : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetAsyncKeyState', @_vKey) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetAsyncKeyState(_vKey));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetKeyState_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nVirtKey : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetKeyState', @_nVirtKey) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetKeyState(_nVirtKey));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.keybd_event_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _bVk : Byte;
+  _bScan : Byte;
+  _dwFlags : DWORD;
+  _dwExtraInfo : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:keybd_event', @_bVk, @_bScan, @_dwFlags, @_dwExtraInfo) <> 0) then
+    begin
+      keybd_event(_bVk, _bScan, _dwFlags, _dwExtraInfo);
+      Result := ReturnNone;
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.mouse_event_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _dwFlags : DWORD;
+  _dx : DWORD;
+  _dy : DWORD;
+  _dwData : DWORD;
+  _dwExtraInfo : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiii:mouse_event', @_dwFlags, @_dx, @_dy, @_dwData, @_dwExtraInfo) <> 0) then
+    begin
+      mouse_event(_dwFlags, _dx, _dy, _dwData, _dwExtraInfo);
+      Result := ReturnNone;
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetCursorPos_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _X : Integer;
+  _Y : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetCursorPos', @_X, @_Y) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetCursorPos(_X, _Y)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCapture_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCapture') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetCapture()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetCapture_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetCapture', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetCapture(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ShowWindowAsync_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _nCmdShow : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:ShowWindowAsync', @_hWnd, @_nCmdShow) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ShowWindowAsync(_hWnd, _nCmdShow)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.AnimateWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _dwTime : DWORD;
+  _dwFlags : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:AnimateWindow', @_hWnd, @_dwTime, @_dwFlags) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(AnimateWindow(_hWnd, _dwTime, _dwFlags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.FlashWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _bInvert : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:FlashWindow', @_hWnd, @_bInvert) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(FlashWindow(_hWnd, _bInvert)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.BringWindowToTop_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:BringWindowToTop', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(BringWindowToTop(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.UpdateWindow_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:UpdateWindow', @_hWnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(UpdateWindow(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegisterWindowMessage_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpString : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:RegisterWindowMessage', @_lpString) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(RegisterWindowMessage(PChar(PyObjectAsString(_lpString)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegisterClipboardFormat_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpszFormat : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:RegisterClipboardFormat', @_lpszFormat) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(RegisterClipboardFormat(PChar(PyObjectAsString(_lpszFormat)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenClipboard_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWndNewOwner : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:OpenClipboard', @_hWndNewOwner) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(OpenClipboard(_hWndNewOwner)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CloseClipboard_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':CloseClipboard') <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CloseClipboard()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.EmptyClipboard_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':EmptyClipboard') <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(EmptyClipboard()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsClipboardFormatAvailable_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _format : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:IsClipboardFormatAvailable', @_format) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsClipboardFormatAvailable(_format)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CountClipboardFormats_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':CountClipboardFormats') <> 0) then
+    begin
+      Result := PyLong_FromLong(CountClipboardFormats());
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowDC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetWindowDC', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetWindowDC(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDlgItem_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDDlgItem : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetDlgItem', @_hDlg, @_nIDDlgItem) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetDlgItem(_hDlg, _nIDDlgItem)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDlgCtrlID_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetDlgCtrlID', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetDlgCtrlID(_hWnd));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetDlgItemText_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDDlgItem : Integer;
+  _lpString : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiO:SetDlgItemText', @_hDlg, @_nIDDlgItem, @_lpString) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetDlgItemText(_hDlg, _nIDDlgItem, PChar(PyObjectAsString(_lpString)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetDlgItemInt_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDDlgItem : Integer;
+  _uValue : UINT;
+  _bSigned : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:SetDlgItemInt', @_hDlg, @_nIDDlgItem, @_uValue, @_bSigned) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetDlgItemInt(_hDlg, _nIDDlgItem, _uValue, _bSigned)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CheckDlgButton_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDButton : Integer;
+  _uCheck : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:CheckDlgButton', @_hDlg, @_nIDButton, @_uCheck) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CheckDlgButton(_hDlg, _nIDButton, _uCheck)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsDlgButtonChecked_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDButton : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:IsDlgButtonChecked', @_hDlg, @_nIDButton) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(IsDlgButtonChecked(_hDlg, _nIDButton)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetMenu', @_hWnd) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetMenu(_hWnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _hMenu : HMENU;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetMenu', @_hWnd, @_hMenu) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetMenu(_hWnd, _hMenu)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetSystemMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _bRevert : BOOL;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetSystemMenu', @_hWnd, @_bRevert) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetSystemMenu(_hWnd, _bRevert)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetMenuItemCount_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetMenuItemCount', @_hMenu) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetMenuItemCount(_hMenu));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetMenuItemID_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+  _nPos : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetMenuItemID', @_hMenu, @_nPos) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetMenuItemID(_hMenu, _nPos)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.EnableMenuItem_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+  _uIDEnableItem : UINT;
+  _uEnable : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:EnableMenuItem', @_hMenu, @_uIDEnableItem, @_uEnable) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(EnableMenuItem(_hMenu, _uIDEnableItem, _uEnable)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DeleteMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+  _uPosition : UINT;
+  _uFlags : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:DeleteMenu', @_hMenu, @_uPosition, @_uFlags) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DeleteMenu(_hMenu, _uPosition, _uFlags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RemoveMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+  _uPosition : UINT;
+  _uFlags : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:RemoveMenu', @_hMenu, @_uPosition, @_uFlags) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(RemoveMenu(_hMenu, _uPosition, _uFlags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':CreateMenu') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateMenu()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreatePopupMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':CreatePopupMenu') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreatePopupMenu()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DestroyMenu_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hMenu : HMENU;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:DestroyMenu', @_hMenu) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DestroyMenu(_hMenu)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetCursor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hCursor : HCURSOR;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetCursor', @_hCursor) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetCursor(_hCursor)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCursor_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCursor') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetCursor()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.LoadCursorFromFile_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpFileName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:LoadCursorFromFile', @_lpFileName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(LoadCursorFromFile(PChar(PyObjectAsString(_lpFileName)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetSysColor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nIndex : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetSysColor', @_nIndex) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetSysColor(_nIndex)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDoubleClickTime_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetDoubleClickTime') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetDoubleClickTime()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetDoubleClickTime_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _uInterval : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SetDoubleClickTime', @_uInterval) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetDoubleClickTime(_uInterval)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateCompatibleDC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:CreateCompatibleDC', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateCompatibleDC(_hdc)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateCompatibleBitmap_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _cx : Integer;
+  _cy : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:CreateCompatibleBitmap', @_hdc, @_cx, @_cy) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateCompatibleBitmap(_hdc, _cx, _cy)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DeleteDC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:DeleteDC', @_hdc) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DeleteDC(_hdc)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DeleteObject_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hObject : HGDIOBJ;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:DeleteObject', @_hObject) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DeleteObject(_hObject)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SelectObject_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _hgdiobj : HGDIOBJ;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SelectObject', @_hdc, @_hgdiobj) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SelectObject(_hdc, _hgdiobj)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetStockObject_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _fnObject : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetStockObject', @_fnObject) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetStockObject(_fnObject)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateSolidBrush_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _color : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:CreateSolidBrush', @_color) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateSolidBrush(ColorToRGB(_color))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateHatchBrush_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _fnStyle : Integer;
+  _clrref : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:CreateHatchBrush', @_fnStyle, @_clrref) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateHatchBrush(_fnStyle, ColorToRGB(_clrref))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreatePen_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _fnPenStyle : Integer;
+  _nWidth : Integer;
+  _crColor : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:CreatePen', @_fnPenStyle, @_nWidth, @_crColor) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreatePen(_fnPenStyle, _nWidth, ColorToRGB(_crColor))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateRectRgn_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nLeftRect : Integer;
+  _nTopRect : Integer;
+  _nRightRect : Integer;
+  _nBottomRect : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:CreateRectRgn', @_nLeftRect, @_nTopRect, @_nRightRect, @_nBottomRect) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateRectRgn(_nLeftRect, _nTopRect, _nRightRect, _nBottomRect)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateEllipticRgn_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _nLeftRect : Integer;
+  _nTopRect : Integer;
+  _nRightRect : Integer;
+  _nBottomRect : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:CreateEllipticRgn', @_nLeftRect, @_nTopRect, @_nRightRect, @_nBottomRect) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateEllipticRgn(_nLeftRect, _nTopRect, _nRightRect, _nBottomRect)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CreateRoundRectRgn_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _x1 : Integer;
+  _y1 : Integer;
+  _x2 : Integer;
+  _y2 : Integer;
+  _x3 : Integer;
+  _y3 : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiii:CreateRoundRectRgn', @_x1, @_y1, @_x2, @_y2, @_x3, @_y3) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(CreateRoundRectRgn(_x1, _y1, _x2, _y2, _x3, _y3)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CombineRgn_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hrgnDest : HRGN;
+  _hrgnSrc1 : HRGN;
+  _hrgnSrc2 : HRGN;
+  _fnCombineMode : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:CombineRgn', @_hrgnDest, @_hrgnSrc1, @_hrgnSrc2, @_fnCombineMode) <> 0) then
+    begin
+      Result := PyLong_FromLong(CombineRgn(_hrgnDest, _hrgnSrc1, _hrgnSrc2, _fnCombineMode));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.EqualRgn_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hSrcRgn1 : HRGN;
+  _hSrcRgn2 : HRGN;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:EqualRgn', @_hSrcRgn1, @_hSrcRgn2) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(EqualRgn(_hSrcRgn1, _hSrcRgn2)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PtInRegion_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hrgn : HRGN;
+  _x : Integer;
+  _y : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:PtInRegion', @_hrgn, @_x, @_y) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PtInRegion(_hrgn, _x, _y)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.LineTo_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nXEnd : Integer;
+  _nYEnd : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:LineTo', @_hdc, @_nXEnd, @_nYEnd) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(LineTo(_hdc, _nXEnd, _nYEnd)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.Rectangle_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nLeftRect : Integer;
+  _nTopRect : Integer;
+  _nRightRect : Integer;
+  _nBottomRect : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiii:Rectangle', @_hdc, @_nLeftRect, @_nTopRect, @_nRightRect, @_nBottomRect) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(Windows.Rectangle(_hdc, _nLeftRect, _nTopRect, _nRightRect, _nBottomRect)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RoundRect_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nLeftRect : Integer;
+  _nTopRect : Integer;
+  _nRightRect : Integer;
+  _nBottomRect : Integer;
+  _nWidth : Integer;
+  _nHeight : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiiii:RoundRect', @_hdc, @_nLeftRect, @_nTopRect, @_nRightRect, @_nBottomRect, @_nWidth, @_nHeight) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(Windows.RoundRect(_hdc, _nLeftRect, _nTopRect, _nRightRect, _nBottomRect, _nWidth, _nHeight)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.Ellipse_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nLeftRect : Integer;
+  _nTopRect : Integer;
+  _nRightRect : Integer;
+  _nBottomRect : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiii:Ellipse', @_hdc, @_nLeftRect, @_nTopRect, @_nRightRect, @_nBottomRect) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(Windows.Ellipse(_hdc, _nLeftRect, _nTopRect, _nRightRect, _nBottomRect)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetPixel_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nXPos : Integer;
+  _nYPos : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:GetPixel', @_hdc, @_nXPos, @_nYPos) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetPixel(_hdc, _nXPos, _nYPos)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetPixel_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _X : Integer;
+  _Y : Integer;
+  _crColor : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiii:SetPixel', @_hdc, @_X, @_Y, @_crColor) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetPixel(_hdc, _X, _Y, ColorToRGB(_crColor))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetTextColor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetTextColor', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetTextColor(_hdc)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetTextColor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _crColor : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetTextColor', @_hdc, @_crColor) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetTextColor(_hdc, ColorToRGB(_crColor))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetBkColor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetBkColor', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetBkColor(_hdc)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetBkColor_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _crColor : TColor;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetBkColor', @_hdc, @_crColor) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(SetBkColor(_hdc, ColorToRGB(_crColor))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetBkMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _iBkMode : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetBkMode', @_hdc, @_iBkMode) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetBkMode(_hdc, _iBkMode));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetBkMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetBkMode', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetBkMode(_hdc));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.TextOut_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nXStart : Integer;
+  _nYStart : Integer;
+  _lpString : PPyObject;
+  _s: string;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiO:TextOut', @_hdc, @_nXStart, @_nYStart, @_lpString) <> 0) then
+    begin
+      _s := PyObjectAsString(_lpString);
+      Result := PyBool_FromLong(Integer(Windows.TextOut(_hdc, _nXStart, _nYStart, PChar(_s), Length(_s))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDeviceCaps_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nIndex : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetDeviceCaps', @_hdc, @_nIndex) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetDeviceCaps(_hdc, _nIndex));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SaveDC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SaveDC', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(SaveDC(_hdc));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RestoreDC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nSavedDC : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:RestoreDC', @_hdc, @_nSavedDC) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(RestoreDC(_hdc, _nSavedDC)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetMapMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _fnMapMode : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetMapMode', @_hdc, @_fnMapMode) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetMapMode(_hdc, _fnMapMode));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetMapMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetMapMode', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetMapMode(_hdc));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetROP2_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _fnDrawMode : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetROP2', @_hdc, @_fnDrawMode) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetROP2(_hdc, _fnDrawMode));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetROP2_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetROP2', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetROP2(_hdc));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetStretchBltMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _fnStretchMode : Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetStretchBltMode', @_hdc, @_fnStretchMode) <> 0) then
+    begin
+      Result := PyLong_FromLong(SetStretchBltMode(_hdc, _fnStretchMode));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetStretchBltMode_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetStretchBltMode', @_hdc) <> 0) then
+    begin
+      Result := PyLong_FromLong(GetStretchBltMode(_hdc));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StretchBlt_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdcDest : HDC;
+  _xDest : Integer;
+  _yDest : Integer;
+  _wDest : Integer;
+  _hDest : Integer;
+  _hdcSrc : HDC;
+  _xSrc : Integer;
+  _ySrc : Integer;
+  _wSrc : Integer;
+  _hSrc : Integer;
+  _rop : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiiiiiiii:StretchBlt', @_hdcDest, @_xDest, @_yDest, @_wDest, @_hDest, @_hdcSrc, @_xSrc, @_ySrc, @_wSrc, @_hSrc, @_rop) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(StretchBlt(_hdcDest, _xDest, _yDest, _wDest, _hDest, _hdcSrc, _xSrc, _ySrc, _wSrc, _hSrc, _rop)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PatBlt_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _nXLeft : Integer;
+  _nYLeft : Integer;
+  _nWidth : Integer;
+  _nHeight : Integer;
+  _dwRop : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iiiiii:PatBlt', @_hdc, @_nXLeft, @_nYLeft, @_nWidth, @_nHeight, @_dwRop) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PatBlt(_hdc, _nXLeft, _nYLeft, _nWidth, _nHeight, _dwRop)));
+    end else
+      Result := nil;
+  end;
+end;
+
+{ Batch 2: advapi32 (registry/service) / shlwapi / winmm / shell32 }
+
+function TPyDelphiApplication.RegOpenKeyEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpSubKey : PPyObject;
+  _samDesired : REGSAM;
+  _hResult: HKEY;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOi:RegOpenKeyEx', @_hKey, @_lpSubKey, @_samDesired) <> 0) then
+    begin
+      if Windows.RegOpenKeyEx(_hKey, PChar(PyObjectAsString(_lpSubKey)), 0, _samDesired, _hResult) = 0 then
+        Result := PyLong_FromLong(Integer(_hResult))
+      else
+        Result := PyLong_FromLong(0);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegCreateKeyEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpSubKey : PPyObject;
+  _samDesired : REGSAM;
+  _hResult: HKEY;
+  _disp: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOi:RegCreateKeyEx', @_hKey, @_lpSubKey, @_samDesired) <> 0) then
+    begin
+      if Windows.RegCreateKeyEx(_hKey, PChar(PyObjectAsString(_lpSubKey)), 0, nil, 0, _samDesired, nil, _hResult, @_disp) = 0 then
+        Result := PyLong_FromLong(Integer(_hResult))
+      else
+        Result := PyLong_FromLong(0);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegCloseKey_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:RegCloseKey', @_hKey) <> 0) then
+    begin
+      Result := PyLong_FromLong(Windows.RegCloseKey(_hKey));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegDeleteKey_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpSubKey : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:RegDeleteKey', @_hKey, @_lpSubKey) <> 0) then
+    begin
+      Result := PyLong_FromLong(Windows.RegDeleteKey(_hKey, PChar(PyObjectAsString(_lpSubKey))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegDeleteValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpValueName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:RegDeleteValue', @_hKey, @_lpValueName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Windows.RegDeleteValue(_hKey, PChar(PyObjectAsString(_lpValueName))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegFlushKey_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:RegFlushKey', @_hKey) <> 0) then
+    begin
+      Result := PyLong_FromLong(Windows.RegFlushKey(_hKey));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegEnumKeyEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _dwIndex : DWORD;
+  _buf: array[0..255] of Char;
+  _len: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:RegEnumKeyEx', @_hKey, @_dwIndex) <> 0) then
+    begin
+      _len := 256;
+      if Windows.RegEnumKeyEx(_hKey, _dwIndex, _buf, _len, nil, nil, nil, nil) = 0 then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegEnumValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _dwIndex : DWORD;
+  _buf: array[0..255] of Char;
+  _len: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:RegEnumValue', @_hKey, @_dwIndex) <> 0) then
+    begin
+      _len := 256;
+      if Windows.RegEnumValue(_hKey, _dwIndex, _buf, _len, nil, nil, nil, nil) = 0 then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegQueryStringValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpValueName : PPyObject;
+  _buf: array[0..1023] of Char;
+  _len: DWORD;
+  _dtype: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:RegQueryStringValue', @_hKey, @_lpValueName) <> 0) then
+    begin
+      _len := SizeOf(_buf);
+      if Windows.RegQueryValueEx(_hKey, PChar(PyObjectAsString(_lpValueName)), nil, @_dtype, @_buf, @_len) = 0 then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegSetStringValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpValueName : PPyObject;
+  _lpData : PPyObject;
+  _data: string;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOO:RegSetStringValue', @_hKey, @_lpValueName, @_lpData) <> 0) then
+    begin
+      _data := PyObjectAsString(_lpData);
+      Result := PyLong_FromLong(Windows.RegSetValueEx(_hKey, PChar(PyObjectAsString(_lpValueName)), 0, REG_SZ, PChar(_data), (Length(_data) + 1) * SizeOf(Char)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegQueryDWordValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpValueName : PPyObject;
+  _data: DWORD;
+  _len: DWORD;
+  _dtype: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:RegQueryDWordValue', @_hKey, @_lpValueName) <> 0) then
+    begin
+      _data := 0;
+      _len := SizeOf(_data);
+      Windows.RegQueryValueEx(_hKey, PChar(PyObjectAsString(_lpValueName)), nil, @_dtype, @_data, @_len);
+      Result := PyLong_FromLong(Integer(_data));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegSetDWordValue_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hKey : HKEY;
+  _lpValueName : PPyObject;
+  _dwData : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOi:RegSetDWordValue', @_hKey, @_lpValueName, @_dwData) <> 0) then
+    begin
+      Result := PyLong_FromLong(Windows.RegSetValueEx(_hKey, PChar(PyObjectAsString(_lpValueName)), 0, REG_DWORD, @_dwData, SizeOf(_dwData)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.RegConnectRegistry_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpMachineName : PPyObject;
+  _hKey : HKEY;
+  _hResult: HKEY;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:RegConnectRegistry', @_lpMachineName, @_hKey) <> 0) then
+    begin
+      if Windows.RegConnectRegistry(PChar(PyObjectAsString(_lpMachineName)), _hKey, _hResult) = 0 then
+        Result := PyLong_FromLong(Integer(_hResult))
+      else
+        Result := PyLong_FromLong(0);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetUserName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..255] of Char;
+  _size: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetUserName') <> 0) then
+    begin
+      _size := 256;
+      if Windows.GetUserName(_buf, _size) then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenSCManager_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpMachineName : PPyObject;
+  _lpDatabaseName : PPyObject;
+  _dwDesiredAccess : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OOi:OpenSCManager', @_lpMachineName, @_lpDatabaseName, @_dwDesiredAccess) <> 0) then
+    begin
+      if (PyObjectAsString(_lpMachineName) = '') and (PyObjectAsString(_lpDatabaseName) = '') then
+        Result := PyLong_FromLong(Integer(OpenSCManager(nil, nil, _dwDesiredAccess)))
+      else
+        Result := PyLong_FromLong(Integer(OpenSCManager(PChar(PyObjectAsString(_lpMachineName)), PChar(PyObjectAsString(_lpDatabaseName)), _dwDesiredAccess)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.OpenService_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hSCManager : SC_HANDLE;
+  _lpServiceName : PPyObject;
+  _dwDesiredAccess : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOi:OpenService', @_hSCManager, @_lpServiceName, @_dwDesiredAccess) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(OpenService(_hSCManager, PChar(PyObjectAsString(_lpServiceName)), _dwDesiredAccess)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.CloseServiceHandle_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hSCObject : SC_HANDLE;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:CloseServiceHandle', @_hSCObject) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(CloseServiceHandle(_hSCObject)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.QueryServiceState_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hService : SC_HANDLE;
+  _status: TServiceStatus;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:QueryServiceState', @_hService) <> 0) then
+    begin
+      if QueryServiceStatus(_hService, _status) then
+        Result := PyLong_FromLong(Integer(_status.dwCurrentState))
+      else
+        Result := PyLong_FromLong(0);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StartService_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hService : SC_HANDLE;
+  _argp: PWideChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:StartService', @_hService) <> 0) then
+    begin
+      _argp := nil;
+      Result := PyBool_FromLong(Integer(StartService(_hService, 0, _argp)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ControlService_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hService : SC_HANDLE;
+  _dwControl : DWORD;
+  _status: TServiceStatus;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:ControlService', @_hService, @_dwControl) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ControlService(_hService, _dwControl, _status)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.DeleteService_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hService : SC_HANDLE;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:DeleteService', @_hService) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(DeleteService(_hService)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathFileExists_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathFileExists', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathFileExists(PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsDirectory_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathIsDirectory', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(Integer(PathIsDirectory(PChar(PyObjectAsString(_Path)))) <> 0));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsRoot_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathIsRoot', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsRoot(PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsRelative_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathIsRelative', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsRelative(PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsUNC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathIsUNC', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsUNC(PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsURL_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathIsURL', @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsURL(PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathRemoveBackslash_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathRemoveBackslash', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      PathRemoveBackslash(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathAddBackslash_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathAddBackslash', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1020);
+      PathAddBackslash(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathRemoveExtension_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathRemoveExtension', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      PathRemoveExtension(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathRemoveFileSpec_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathRemoveFileSpec', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      PathRemoveFileSpec(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathFindExtension_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+  _p: PChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathFindExtension', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      _p := PathFindExtension(_buf);
+      Result := PyUnicodeFromString(_p);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathFindFileName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+  _p: PChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathFindFileName', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      _p := PathFindFileName(_buf);
+      Result := PyUnicodeFromString(_p);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathGetDriveNumber_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathGetDriveNumber', @_Path) <> 0) then
+    begin
+      Result := PyLong_FromLong(PathGetDriveNumber(PChar(PyObjectAsString(_Path))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathStripPath_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathStripPath', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      PathStripPath(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsPrefix_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Prefix : PPyObject;
+  _Path : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PathIsPrefix', @_Prefix, @_Path) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsPrefix(PChar(PyObjectAsString(_Prefix)), PChar(PyObjectAsString(_Path)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathMatchSpec_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _FileName : PPyObject;
+  _Spec : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PathMatchSpec', @_FileName, @_Spec) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathMatchSpec(PChar(PyObjectAsString(_FileName)), PChar(PyObjectAsString(_Spec)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathIsSameRoot_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path1 : PPyObject;
+  _Path2 : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PathIsSameRoot', @_Path1, @_Path2) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PathIsSameRoot(PChar(PyObjectAsString(_Path1)), PChar(PyObjectAsString(_Path2)))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathCombine_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Dir : PPyObject;
+  _FileName : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PathCombine', @_Dir, @_FileName) <> 0) then
+    begin
+      PathCombine(_buf, PChar(PyObjectAsString(_Dir)), PChar(PyObjectAsString(_FileName)));
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathAppend_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _More : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:PathAppend', @_Path, @_More) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 700);
+      PathAppend(_buf, PChar(PyObjectAsString(_More)));
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathQuoteSpaces_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathQuoteSpaces', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1020);
+      PathQuoteSpaces(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathUnquoteSpaces_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathUnquoteSpaces', @_Path) <> 0) then
+    begin
+      StrPLCopy(_buf, PyObjectAsString(_Path), 1023);
+      PathUnquoteSpaces(_buf);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PathCanonicalize_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Path : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:PathCanonicalize', @_Path) <> 0) then
+    begin
+      PathCanonicalize(_buf, PChar(PyObjectAsString(_Path)));
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StrToInt_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Text : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:StrToInt', @_Text) <> 0) then
+    begin
+      Result := PyLong_FromLong(StrToInt(PChar(PyObjectAsString(_Text))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StrFormatByteSize_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Size : Integer;
+  _buf: array[0..255] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:StrFormatByteSize', @_Size) <> 0) then
+    begin
+      StrFormatByteSize(_Size, _buf, 255);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.timeGetTime_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':timeGetTime') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(timeGetTime()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.timeBeginPeriod_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _uPeriod : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:timeBeginPeriod', @_uPeriod) <> 0) then
+    begin
+      Result := PyLong_FromLong(timeBeginPeriod(_uPeriod));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.timeEndPeriod_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _uPeriod : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:timeEndPeriod', @_uPeriod) <> 0) then
+    begin
+      Result := PyLong_FromLong(timeEndPeriod(_uPeriod));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.PlaySound_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _SoundName : PPyObject;
+  _Flags : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:PlaySound', @_SoundName, @_Flags) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(PlaySound(PChar(PyObjectAsString(_SoundName)), 0, _Flags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.sndPlaySound_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _SoundName : PPyObject;
+  _Flags : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:sndPlaySound', @_SoundName, @_Flags) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(sndPlaySound(PChar(PyObjectAsString(_SoundName)), _Flags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.waveOutGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':waveOutGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(waveOutGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.waveInGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':waveInGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(waveInGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.midiOutGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':midiOutGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(midiOutGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.midiInGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':midiInGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(midiInGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.auxGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':auxGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(auxGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.joyGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':joyGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(joyGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.mixerGetNumDevs_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':mixerGetNumDevs') <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(mixerGetNumDevs()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.mmioStringToFOURCC_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Text : PPyObject;
+  _uFlags : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:mmioStringToFOURCC', @_Text, @_uFlags) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(mmioStringToFOURCC(PChar(PyObjectAsString(_Text)), _uFlags)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SHGetFolderPath_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Csidl : Integer;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:SHGetFolderPath', @_Csidl) <> 0) then
+    begin
+      if SHGetFolderPath(0, _Csidl, 0, 0, _buf) = S_OK then
+        Result := PyUnicodeFromString(_buf)
+      else
+        Result := PyUnicodeFromString('');
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ShellAbout_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _AppName : PPyObject;
+  _OtherStuff : PPyObject;
+  _Icon : HICON;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOOi:ShellAbout', @_hWnd, @_AppName, @_OtherStuff, @_Icon) <> 0) then
+    begin
+      Result := PyLong_FromLong(ShellAbout(_hWnd, PChar(PyObjectAsString(_AppName)), PChar(PyObjectAsString(_OtherStuff)), _Icon));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ExtractIcon_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hInst : HINST;
+  _FileName : PPyObject;
+  _IconIndex : UINT;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iOi:ExtractIcon', @_hInst, @_FileName, @_IconIndex) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(ExtractIcon(_hInst, PChar(PyObjectAsString(_FileName)), _IconIndex)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SHGetFileTypeDescription_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _FileName : PPyObject;
+  _shfi: TSHFileInfo;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:SHGetFileTypeDescription', @_FileName) <> 0) then
+    begin
+      FillChar(_shfi, SizeOf(_shfi), 0);
+      SHGetFileInfo(PChar(PyObjectAsString(_FileName)), 0, _shfi, SizeOf(_shfi), SHGFI_TYPENAME);
+      Result := PyUnicodeFromString(_shfi.szTypeName);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.IsUserAnAdmin_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':IsUserAnAdmin') <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(IsUserAnAdmin()));
+    end else
+      Result := nil;
+  end;
+end;
+
+{ Batch 3: restored + additional kernel32/shlwapi/shell32 functions }
+
+function TPyDelphiApplication.ExitWindowsEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _uFlags : UINT;
+  _dwReason : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:ExitWindowsEx', @_uFlags, @_dwReason) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(ExitWindowsEx(_uFlags, _dwReason)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.LockWorkStation_Wrapper(args: PPyObject): PPyObject; cdecl;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':LockWorkStation') <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(LockWorkStation()));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SHFileOperationDelete_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _FileName : PPyObject;
+  _AllowUndo : BOOL;
+  _s: string;
+  _buf: array[0..1023] of Char;
+  _op: TSHFileOpStruct;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'Oi:SHFileOperationDelete', @_FileName, @_AllowUndo) <> 0) then
+    begin
+      _s := PyObjectAsString(_FileName);
+      FillChar(_buf, SizeOf(_buf), 0);
+      StrPLCopy(_buf, _s, 1020);
+      FillChar(_op, SizeOf(_op), 0);
+      _op.Wnd := 0;
+      _op.wFunc := FO_DELETE;
+      _op.pFrom := _buf;
+      _op.pTo := nil;
+      _op.fFlags := FOF_NOCONFIRMATION or FOF_SILENT;
+      if _AllowUndo then
+        _op.fFlags := _op.fFlags or FOF_ALLOWUNDO;
+      Result := PyLong_FromLong(SHFileOperation(_op));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SHEmptyRecycleBin_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _RootPath : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:SHEmptyRecycleBin', @_RootPath) <> 0) then
+    begin
+      Result := PyLong_FromLong(SHEmptyRecycleBin(0, PChar(PyObjectAsString(_RootPath)), 0));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StrChr_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Text : PPyObject;
+  _Ch : PPyObject;
+  _s, _chs: string;
+  _c: Word;
+  _p: PChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:StrChr', @_Text, @_Ch) <> 0) then
+    begin
+      _s := PyObjectAsString(_Text);
+      _chs := PyObjectAsString(_Ch);
+      if Length(_chs) > 0 then _c := Word(_chs[1]) else _c := Word(#0);
+      _p := StrChr(PChar(_s), _c);
+      if _p = nil then
+        Result := PyLong_FromLong(0)
+      else
+        Result := PyLong_FromLong((NativeUInt(_p) - NativeUInt(PChar(_s))) div SizeOf(Char) + 1);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.StrStr_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _Text : PPyObject;
+  _Search : PPyObject;
+  _s: string;
+  _p: PChar;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'OO:StrStr', @_Text, @_Search) <> 0) then
+    begin
+      _s := PyObjectAsString(_Text);
+      _p := StrStr(PChar(_s), PChar(PyObjectAsString(_Search)));
+      if _p = nil then
+        Result := PyLong_FromLong(0)
+      else
+        Result := PyLong_FromLong((NativeUInt(_p) - NativeUInt(PChar(_s))) div SizeOf(Char) + 1);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetProcAddress_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hModule : HMODULE;
+  _ProcName : PPyObject;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:GetProcAddress', @_hModule, @_ProcName) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetProcAddress(_hModule, PAnsiChar(AnsiString(PyObjectAsString(_ProcName))))));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetExitCodeProcess_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hProcess : THandle;
+  _code: DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetExitCodeProcess', @_hProcess) <> 0) then
+    begin
+      _code := 0;
+      GetExitCodeProcess(_hProcess, _code);
+      Result := PyLong_FromLong(Integer(_code));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.SetPriorityClass_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hProcess : THandle;
+  _dwPriorityClass : DWORD;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:SetPriorityClass', @_hProcess, @_dwPriorityClass) <> 0) then
+    begin
+      Result := PyBool_FromLong(Integer(SetPriorityClass(_hProcess, _dwPriorityClass)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetPriorityClass_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hProcess : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetPriorityClass', @_hProcess) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetPriorityClass(_hProcess)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetFileSize_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hFile : THandle;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetFileSize', @_hFile) <> 0) then
+    begin
+      Result := PyLong_FromLong(Integer(GetFileSize(_hFile, nil)));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetLocalTime_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _st: TSystemTime;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetLocalTime') <> 0) then
+    begin
+      Windows.GetLocalTime(_st);
+      Result := PyUnicodeFromString(Format('%.4d-%.2d-%.2d %.2d:%.2d:%.2d', [_st.wYear, _st.wMonth, _st.wDay, _st.wHour, _st.wMinute, _st.wSecond]));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetSystemTime_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _st: TSystemTime;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetSystemTime') <> 0) then
+    begin
+      Windows.GetSystemTime(_st);
+      Result := PyUnicodeFromString(Format('%.4d-%.2d-%.2d %.2d:%.2d:%.2d', [_st.wYear, _st.wMonth, _st.wDay, _st.wHour, _st.wMinute, _st.wSecond]));
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetCursorPos_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _pt: TPoint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetCursorPos') <> 0) then
+    begin
+      Windows.GetCursorPos(_pt);
+      Result := WrapPoint(PyDelphiWrapper, _pt);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetWindowRect_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _r: TRect;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetWindowRect', @_hWnd) <> 0) then
+    begin
+      Windows.GetWindowRect(_hWnd, _r);
+      Result := WrapRect(PyDelphiWrapper, _r);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetClientRect_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _r: TRect;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'i:GetClientRect', @_hWnd) <> 0) then
+    begin
+      Windows.GetClientRect(_hWnd, _r);
+      Result := WrapRect(PyDelphiWrapper, _r);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ClientToScreen_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _APoint : PPyObject;
+  _pt: TPoint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:ClientToScreen', @_hWnd, @_APoint) <> 0) then
+    begin
+      if not CheckPointAttribute(_APoint, 'APoint', _pt) then begin Result := nil; Exit; end;
+      Windows.ClientToScreen(_hWnd, _pt);
+      Result := WrapPoint(PyDelphiWrapper, _pt);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.ScreenToClient_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hWnd : HWND;
+  _APoint : PPyObject;
+  _pt: TPoint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iO:ScreenToClient', @_hWnd, @_APoint) <> 0) then
+    begin
+      if not CheckPointAttribute(_APoint, 'APoint', _pt) then begin Result := nil; Exit; end;
+      Windows.ScreenToClient(_hWnd, _pt);
+      Result := WrapPoint(PyDelphiWrapper, _pt);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.MoveToEx_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hdc : HDC;
+  _X : Integer;
+  _Y : Integer;
+  _pt: TPoint;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'iii:MoveToEx', @_hdc, @_X, @_Y) <> 0) then
+    begin
+      Windows.MoveToEx(_hdc, _X, _Y, @_pt);
+      Result := WrapPoint(PyDelphiWrapper, _pt);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetShortPathName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpszLongPath : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetShortPathName', @_lpszLongPath) <> 0) then
+    begin
+      Windows.GetShortPathName(PChar(PyObjectAsString(_lpszLongPath)), _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetLongPathName_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _lpszShortPath : PPyObject;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'O:GetLongPathName', @_lpszShortPath) <> 0) then
+    begin
+      Windows.GetLongPathName(PChar(PyObjectAsString(_lpszShortPath)), _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetLogicalDriveStrings_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _buf: array[0..1023] of Char;
+  _n, _i: Integer;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, ':GetLogicalDriveStrings') <> 0) then
+    begin
+      _n := Windows.GetLogicalDriveStrings(1024, _buf);
+      for _i := 0 to _n - 1 do
+        if _buf[_i] = #0 then _buf[_i] := '|';
+      Result := PyUnicodeFromString(_buf);
+    end else
+      Result := nil;
+  end;
+end;
+
+function TPyDelphiApplication.GetDlgItemText_Wrapper(args: PPyObject): PPyObject; cdecl;
+var
+  _hDlg : HWND;
+  _nIDDlgItem : Integer;
+  _buf: array[0..1023] of Char;
+begin
+  // We adjust the transmitted self argument
+  Adjust(@Self);
+  with GetPythonEngine do
+  begin
+    if (PyArg_ParseTuple(args, 'ii:GetDlgItemText', @_hDlg, @_nIDDlgItem) <> 0) then
+    begin
+      Windows.GetDlgItemText(_hDlg, _nIDDlgItem, _buf, 1024);
+      Result := PyUnicodeFromString(_buf);
     end else
       Result := nil;
   end;
@@ -3697,6 +8443,723 @@ begin
   PythonType.AddMethod('RGB', @TPyDelphiApplication.RGB_Wrapper,
     'RGB_Wrapper()'#10 +
     'Returns an integer value (COLORREF) representing a color by combining the red, green, and blue color components (0-255).');
+  // ---- Additional Win32 API functions (kernel32/user32/gdi32) ----
+  PythonType.AddMethod('Beep', @TPyDelphiApplication.Beep_Wrapper,
+    'Beep_Wrapper()'#10 +
+    'Generates simple tones on the speaker.');
+  PythonType.AddMethod('Sleep', @TPyDelphiApplication.Sleep_Wrapper,
+    'Sleep_Wrapper()'#10 +
+    'Suspends the execution of the current thread for the specified interval.');
+  PythonType.AddMethod('GetTickCount', @TPyDelphiApplication.GetTickCount_Wrapper,
+    'GetTickCount_Wrapper()'#10 +
+    'Retrieves the number of milliseconds that have elapsed since the system was started.');
+  PythonType.AddMethod('GetCurrentProcessId', @TPyDelphiApplication.GetCurrentProcessId_Wrapper,
+    'GetCurrentProcessId_Wrapper()'#10 +
+    'Retrieves the process identifier of the calling process.');
+  PythonType.AddMethod('GetCurrentThreadId', @TPyDelphiApplication.GetCurrentThreadId_Wrapper,
+    'GetCurrentThreadId_Wrapper()'#10 +
+    'Retrieves the thread identifier of the calling thread.');
+  PythonType.AddMethod('GetCurrentProcess', @TPyDelphiApplication.GetCurrentProcess_Wrapper,
+    'GetCurrentProcess_Wrapper()'#10 +
+    'Retrieves a pseudo handle for the current process.');
+  PythonType.AddMethod('GetCurrentThread', @TPyDelphiApplication.GetCurrentThread_Wrapper,
+    'GetCurrentThread_Wrapper()'#10 +
+    'Retrieves a pseudo handle for the current thread.');
+  PythonType.AddMethod('SetLastError', @TPyDelphiApplication.SetLastError_Wrapper,
+    'SetLastError_Wrapper()'#10 +
+    'Sets the last-error code for the calling thread.');
+  PythonType.AddMethod('MulDiv', @TPyDelphiApplication.MulDiv_Wrapper,
+    'MulDiv_Wrapper()'#10 +
+    'Multiplies two 32-bit values and then divides the result by a third 32-bit value.');
+  PythonType.AddMethod('GetComputerName', @TPyDelphiApplication.GetComputerName_Wrapper,
+    'GetComputerName_Wrapper()'#10 +
+    'Retrieves the NetBIOS name of the local computer.');
+  PythonType.AddMethod('SetEnvironmentVariable', @TPyDelphiApplication.SetEnvironmentVariable_Wrapper,
+    'SetEnvironmentVariable_Wrapper()'#10 +
+    'Sets the value of an environment variable for the current process.');
+  PythonType.AddMethod('GetEnvironmentVariable', @TPyDelphiApplication.GetEnvironmentVariable_Wrapper,
+    'GetEnvironmentVariable_Wrapper()'#10 +
+    'Retrieves the value of an environment variable for the current process.');
+  PythonType.AddMethod('GetSystemDirectory', @TPyDelphiApplication.GetSystemDirectory_Wrapper,
+    'GetSystemDirectory_Wrapper()'#10 +
+    'Retrieves the path of the Windows system directory.');
+  PythonType.AddMethod('GetWindowsDirectory', @TPyDelphiApplication.GetWindowsDirectory_Wrapper,
+    'GetWindowsDirectory_Wrapper()'#10 +
+    'Retrieves the path of the Windows directory.');
+  PythonType.AddMethod('GetTempPath', @TPyDelphiApplication.GetTempPath_Wrapper,
+    'GetTempPath_Wrapper()'#10 +
+    'Retrieves the path of the directory designated for temporary files.');
+  PythonType.AddMethod('GetCurrentDirectory', @TPyDelphiApplication.GetCurrentDirectory_Wrapper,
+    'GetCurrentDirectory_Wrapper()'#10 +
+    'Retrieves the current directory for the current process.');
+  PythonType.AddMethod('SetCurrentDirectory', @TPyDelphiApplication.SetCurrentDirectory_Wrapper,
+    'SetCurrentDirectory_Wrapper()'#10 +
+    'Changes the current directory for the current process.');
+  PythonType.AddMethod('CreateDirectory', @TPyDelphiApplication.CreateDirectory_Wrapper,
+    'CreateDirectory_Wrapper()'#10 +
+    'Creates a new directory.');
+  PythonType.AddMethod('RemoveDirectory', @TPyDelphiApplication.RemoveDirectory_Wrapper,
+    'RemoveDirectory_Wrapper()'#10 +
+    'Deletes an existing empty directory.');
+  PythonType.AddMethod('DeleteFile', @TPyDelphiApplication.DeleteFile_Wrapper,
+    'DeleteFile_Wrapper()'#10 +
+    'Deletes an existing file.');
+  PythonType.AddMethod('CopyFile', @TPyDelphiApplication.CopyFile_Wrapper,
+    'CopyFile_Wrapper()'#10 +
+    'Copies an existing file to a new file.');
+  PythonType.AddMethod('MoveFile', @TPyDelphiApplication.MoveFile_Wrapper,
+    'MoveFile_Wrapper()'#10 +
+    'Moves (or renames) an existing file or a directory.');
+  PythonType.AddMethod('GetFileAttributes', @TPyDelphiApplication.GetFileAttributes_Wrapper,
+    'GetFileAttributes_Wrapper()'#10 +
+    'Retrieves file system attributes for a specified file or directory.');
+  PythonType.AddMethod('SetFileAttributes', @TPyDelphiApplication.SetFileAttributes_Wrapper,
+    'SetFileAttributes_Wrapper()'#10 +
+    'Sets the attributes for a file or directory.');
+  PythonType.AddMethod('GetFullPathName', @TPyDelphiApplication.GetFullPathName_Wrapper,
+    'GetFullPathName_Wrapper()'#10 +
+    'Retrieves the full path and file name of a specified file.');
+  PythonType.AddMethod('GetLogicalDrives', @TPyDelphiApplication.GetLogicalDrives_Wrapper,
+    'GetLogicalDrives_Wrapper()'#10 +
+    'Retrieves a bitmask representing the currently available disk drives.');
+  PythonType.AddMethod('GetDriveType', @TPyDelphiApplication.GetDriveType_Wrapper,
+    'GetDriveType_Wrapper()'#10 +
+    'Determines whether a disk drive is removable, fixed, CD-ROM, RAM disk, or network drive.');
+  PythonType.AddMethod('OutputDebugString', @TPyDelphiApplication.OutputDebugString_Wrapper,
+    'OutputDebugString_Wrapper()'#10 +
+    'Sends a string to the debugger for display.');
+  PythonType.AddMethod('GetModuleFileName', @TPyDelphiApplication.GetModuleFileName_Wrapper,
+    'GetModuleFileName_Wrapper()'#10 +
+    'Retrieves the full path of the executable file of a specified module (pass 0 for the current process).');
+  PythonType.AddMethod('LoadLibrary', @TPyDelphiApplication.LoadLibrary_Wrapper,
+    'LoadLibrary_Wrapper()'#10 +
+    'Loads the specified module into the address space of the calling process.');
+  PythonType.AddMethod('FreeLibrary', @TPyDelphiApplication.FreeLibrary_Wrapper,
+    'FreeLibrary_Wrapper()'#10 +
+    'Frees a previously loaded dynamic-link library.');
+  PythonType.AddMethod('TerminateProcess', @TPyDelphiApplication.TerminateProcess_Wrapper,
+    'TerminateProcess_Wrapper()'#10 +
+    'Terminates the specified process and all of its threads.');
+  PythonType.AddMethod('OpenProcess', @TPyDelphiApplication.OpenProcess_Wrapper,
+    'OpenProcess_Wrapper()'#10 +
+    'Opens an existing local process object.');
+  PythonType.AddMethod('WaitForSingleObject', @TPyDelphiApplication.WaitForSingleObject_Wrapper,
+    'WaitForSingleObject_Wrapper()'#10 +
+    'Waits until the specified object is in the signaled state or the time-out interval elapses.');
+  PythonType.AddMethod('CreateEvent', @TPyDelphiApplication.CreateEvent_Wrapper,
+    'CreateEvent_Wrapper()'#10 +
+    'Creates or opens a named or unnamed event object.');
+  PythonType.AddMethod('OpenEvent', @TPyDelphiApplication.OpenEvent_Wrapper,
+    'OpenEvent_Wrapper()'#10 +
+    'Opens an existing named event object.');
+  PythonType.AddMethod('SetEvent', @TPyDelphiApplication.SetEvent_Wrapper,
+    'SetEvent_Wrapper()'#10 +
+    'Sets the specified event object to the signaled state.');
+  PythonType.AddMethod('ResetEvent', @TPyDelphiApplication.ResetEvent_Wrapper,
+    'ResetEvent_Wrapper()'#10 +
+    'Sets the specified event object to the nonsignaled state.');
+  PythonType.AddMethod('PulseEvent', @TPyDelphiApplication.PulseEvent_Wrapper,
+    'PulseEvent_Wrapper()'#10 +
+    'Sets the specified event object to the signaled state and then resets it after releasing waiting threads.');
+  PythonType.AddMethod('ReleaseMutex', @TPyDelphiApplication.ReleaseMutex_Wrapper,
+    'ReleaseMutex_Wrapper()'#10 +
+    'Releases ownership of the specified mutex object.');
+  PythonType.AddMethod('CreateSemaphore', @TPyDelphiApplication.CreateSemaphore_Wrapper,
+    'CreateSemaphore_Wrapper()'#10 +
+    'Creates or opens a named or unnamed semaphore object.');
+  PythonType.AddMethod('OpenSemaphore', @TPyDelphiApplication.OpenSemaphore_Wrapper,
+    'OpenSemaphore_Wrapper()'#10 +
+    'Opens an existing named semaphore object.');
+  PythonType.AddMethod('ReleaseSemaphore', @TPyDelphiApplication.ReleaseSemaphore_Wrapper,
+    'ReleaseSemaphore_Wrapper()'#10 +
+    'Increases the count of the specified semaphore object by a specified amount.');
+  PythonType.AddMethod('IsDebuggerPresent', @TPyDelphiApplication.IsDebuggerPresent_Wrapper,
+    'IsDebuggerPresent_Wrapper()'#10 +
+    'Determines whether the calling process is being debugged by a user-mode debugger.');
+  PythonType.AddMethod('GetVersion', @TPyDelphiApplication.GetVersion_Wrapper,
+    'GetVersion_Wrapper()'#10 +
+    'Retrieves information about the current version of the operating system.');
+  PythonType.AddMethod('MessageBeep', @TPyDelphiApplication.MessageBeep_Wrapper,
+    'MessageBeep_Wrapper()'#10 +
+    'Plays a waveform sound associated with a system event.');
+  PythonType.AddMethod('FindWindow', @TPyDelphiApplication.FindWindow_Wrapper,
+    'FindWindow_Wrapper()'#10 +
+    'Retrieves a handle to the top-level window whose class name and window name match the specified strings.');
+  PythonType.AddMethod('FindWindowEx', @TPyDelphiApplication.FindWindowEx_Wrapper,
+    'FindWindowEx_Wrapper()'#10 +
+    'Retrieves a handle to a window whose class name and window name match the specified strings, with support for a starting child window.');
+  PythonType.AddMethod('GetWindowText', @TPyDelphiApplication.GetWindowText_Wrapper,
+    'GetWindowText_Wrapper()'#10 +
+    'Retrieves the text of the specified window''s title bar (for controls, the control text).');
+  PythonType.AddMethod('SetWindowText', @TPyDelphiApplication.SetWindowText_Wrapper,
+    'SetWindowText_Wrapper()'#10 +
+    'Sets the text of the specified window''s title bar (for controls, the control text).');
+  PythonType.AddMethod('GetWindowTextLength', @TPyDelphiApplication.GetWindowTextLength_Wrapper,
+    'GetWindowTextLength_Wrapper()'#10 +
+    'Retrieves the length, in characters, of the specified window''s title bar text.');
+  PythonType.AddMethod('GetClassName', @TPyDelphiApplication.GetClassName_Wrapper,
+    'GetClassName_Wrapper()'#10 +
+    'Retrieves the name of the class to which the specified window belongs.');
+  PythonType.AddMethod('IsWindow', @TPyDelphiApplication.IsWindow_Wrapper,
+    'IsWindow_Wrapper()'#10 +
+    'Determines whether the specified window handle identifies an existing window.');
+  PythonType.AddMethod('IsWindowVisible', @TPyDelphiApplication.IsWindowVisible_Wrapper,
+    'IsWindowVisible_Wrapper()'#10 +
+    'Determines the visibility state of the specified window.');
+  PythonType.AddMethod('IsWindowEnabled', @TPyDelphiApplication.IsWindowEnabled_Wrapper,
+    'IsWindowEnabled_Wrapper()'#10 +
+    'Determines whether the specified window is enabled for mouse and keyboard input.');
+  PythonType.AddMethod('IsIconic', @TPyDelphiApplication.IsIconic_Wrapper,
+    'IsIconic_Wrapper()'#10 +
+    'Determines whether the specified window is minimized.');
+  PythonType.AddMethod('IsZoomed', @TPyDelphiApplication.IsZoomed_Wrapper,
+    'IsZoomed_Wrapper()'#10 +
+    'Determines whether the specified window is maximized.');
+  PythonType.AddMethod('IsChild', @TPyDelphiApplication.IsChild_Wrapper,
+    'IsChild_Wrapper()'#10 +
+    'Determines whether a window is a child (or descendant) window of a specified parent window.');
+  PythonType.AddMethod('EnableWindow', @TPyDelphiApplication.EnableWindow_Wrapper,
+    'EnableWindow_Wrapper()'#10 +
+    'Enables or disables mouse and keyboard input to the specified window.');
+  PythonType.AddMethod('DestroyWindow', @TPyDelphiApplication.DestroyWindow_Wrapper,
+    'DestroyWindow_Wrapper()'#10 +
+    'Destroys the specified window.');
+  PythonType.AddMethod('MoveWindow', @TPyDelphiApplication.MoveWindow_Wrapper,
+    'MoveWindow_Wrapper()'#10 +
+    'Changes the position and dimensions of the specified window.');
+  PythonType.AddMethod('GetParent', @TPyDelphiApplication.GetParent_Wrapper,
+    'GetParent_Wrapper()'#10 +
+    'Retrieves a handle to the specified window''s parent or owner.');
+  PythonType.AddMethod('GetDesktopWindow', @TPyDelphiApplication.GetDesktopWindow_Wrapper,
+    'GetDesktopWindow_Wrapper()'#10 +
+    'Retrieves a handle to the desktop window.');
+  PythonType.AddMethod('GetForegroundWindow', @TPyDelphiApplication.GetForegroundWindow_Wrapper,
+    'GetForegroundWindow_Wrapper()'#10 +
+    'Retrieves a handle to the foreground window.');
+  PythonType.AddMethod('SetForegroundWindow', @TPyDelphiApplication.SetForegroundWindow_Wrapper,
+    'SetForegroundWindow_Wrapper()'#10 +
+    'Brings the specified window to the foreground.');
+  PythonType.AddMethod('GetActiveWindow', @TPyDelphiApplication.GetActiveWindow_Wrapper,
+    'GetActiveWindow_Wrapper()'#10 +
+    'Retrieves the handle to the active window attached to the calling thread.');
+  PythonType.AddMethod('SetActiveWindow', @TPyDelphiApplication.SetActiveWindow_Wrapper,
+    'SetActiveWindow_Wrapper()'#10 +
+    'Activates a window.');
+  PythonType.AddMethod('GetWindowLong', @TPyDelphiApplication.GetWindowLong_Wrapper,
+    'GetWindowLong_Wrapper()'#10 +
+    'Retrieves information about the specified window.');
+  PythonType.AddMethod('SetWindowLong', @TPyDelphiApplication.SetWindowLong_Wrapper,
+    'SetWindowLong_Wrapper()'#10 +
+    'Changes an attribute of the specified window.');
+  PythonType.AddMethod('GetSystemMetrics', @TPyDelphiApplication.GetSystemMetrics_Wrapper,
+    'GetSystemMetrics_Wrapper()'#10 +
+    'Retrieves the specified system metric or system configuration setting.');
+  PythonType.AddMethod('GetAsyncKeyState', @TPyDelphiApplication.GetAsyncKeyState_Wrapper,
+    'GetAsyncKeyState_Wrapper()'#10 +
+    'Determines whether a key is up or down at the time the function is called, and whether it was pressed after a previous call.');
+  PythonType.AddMethod('GetKeyState', @TPyDelphiApplication.GetKeyState_Wrapper,
+    'GetKeyState_Wrapper()'#10 +
+    'Retrieves the status of the specified virtual key.');
+  PythonType.AddMethod('keybd_event', @TPyDelphiApplication.keybd_event_Wrapper,
+    'keybd_event_Wrapper()'#10 +
+    'Synthesizes a keystroke.');
+  PythonType.AddMethod('mouse_event', @TPyDelphiApplication.mouse_event_Wrapper,
+    'mouse_event_Wrapper()'#10 +
+    'Synthesizes mouse motion and button clicks.');
+  PythonType.AddMethod('SetCursorPos', @TPyDelphiApplication.SetCursorPos_Wrapper,
+    'SetCursorPos_Wrapper()'#10 +
+    'Moves the cursor to the specified screen coordinates.');
+  PythonType.AddMethod('GetCapture', @TPyDelphiApplication.GetCapture_Wrapper,
+    'GetCapture_Wrapper()'#10 +
+    'Retrieves a handle to the window that has captured the mouse.');
+  PythonType.AddMethod('SetCapture', @TPyDelphiApplication.SetCapture_Wrapper,
+    'SetCapture_Wrapper()'#10 +
+    'Sets the mouse capture to the specified window.');
+  PythonType.AddMethod('ShowWindowAsync', @TPyDelphiApplication.ShowWindowAsync_Wrapper,
+    'ShowWindowAsync_Wrapper()'#10 +
+    'Sets the show state of a window created by a different thread.');
+  PythonType.AddMethod('AnimateWindow', @TPyDelphiApplication.AnimateWindow_Wrapper,
+    'AnimateWindow_Wrapper()'#10 +
+    'Enables you to produce special effects when showing or hiding windows.');
+  PythonType.AddMethod('FlashWindow', @TPyDelphiApplication.FlashWindow_Wrapper,
+    'FlashWindow_Wrapper()'#10 +
+    'Flashes the specified window one time.');
+  PythonType.AddMethod('BringWindowToTop', @TPyDelphiApplication.BringWindowToTop_Wrapper,
+    'BringWindowToTop_Wrapper()'#10 +
+    'Brings the specified window to the top of the Z order.');
+  PythonType.AddMethod('UpdateWindow', @TPyDelphiApplication.UpdateWindow_Wrapper,
+    'UpdateWindow_Wrapper()'#10 +
+    'Updates the client area of the specified window.');
+  PythonType.AddMethod('RegisterWindowMessage', @TPyDelphiApplication.RegisterWindowMessage_Wrapper,
+    'RegisterWindowMessage_Wrapper()'#10 +
+    'Defines a new window message that is guaranteed to be unique throughout the system.');
+  PythonType.AddMethod('RegisterClipboardFormat', @TPyDelphiApplication.RegisterClipboardFormat_Wrapper,
+    'RegisterClipboardFormat_Wrapper()'#10 +
+    'Registers a new clipboard format.');
+  PythonType.AddMethod('OpenClipboard', @TPyDelphiApplication.OpenClipboard_Wrapper,
+    'OpenClipboard_Wrapper()'#10 +
+    'Opens the clipboard for examination.');
+  PythonType.AddMethod('CloseClipboard', @TPyDelphiApplication.CloseClipboard_Wrapper,
+    'CloseClipboard_Wrapper()'#10 +
+    'Closes the clipboard.');
+  PythonType.AddMethod('EmptyClipboard', @TPyDelphiApplication.EmptyClipboard_Wrapper,
+    'EmptyClipboard_Wrapper()'#10 +
+    'Empties the clipboard and frees handles to data in the clipboard.');
+  PythonType.AddMethod('IsClipboardFormatAvailable', @TPyDelphiApplication.IsClipboardFormatAvailable_Wrapper,
+    'IsClipboardFormatAvailable_Wrapper()'#10 +
+    'Determines whether the clipboard contains data in the specified format.');
+  PythonType.AddMethod('CountClipboardFormats', @TPyDelphiApplication.CountClipboardFormats_Wrapper,
+    'CountClipboardFormats_Wrapper()'#10 +
+    'Retrieves the number of different data formats currently on the clipboard.');
+  PythonType.AddMethod('GetWindowDC', @TPyDelphiApplication.GetWindowDC_Wrapper,
+    'GetWindowDC_Wrapper()'#10 +
+    'Retrieves the device context (DC) for the entire window, including title bar, menus, and scroll bars.');
+  PythonType.AddMethod('GetDlgItem', @TPyDelphiApplication.GetDlgItem_Wrapper,
+    'GetDlgItem_Wrapper()'#10 +
+    'Retrieves a handle to a control in the specified dialog box.');
+  PythonType.AddMethod('GetDlgCtrlID', @TPyDelphiApplication.GetDlgCtrlID_Wrapper,
+    'GetDlgCtrlID_Wrapper()'#10 +
+    'Retrieves the identifier of the specified control.');
+  PythonType.AddMethod('SetDlgItemText', @TPyDelphiApplication.SetDlgItemText_Wrapper,
+    'SetDlgItemText_Wrapper()'#10 +
+    'Sets the text of a control in a dialog box.');
+  PythonType.AddMethod('SetDlgItemInt', @TPyDelphiApplication.SetDlgItemInt_Wrapper,
+    'SetDlgItemInt_Wrapper()'#10 +
+    'Sets the text of a control in a dialog box to the string representation of a specified integer value.');
+  PythonType.AddMethod('CheckDlgButton', @TPyDelphiApplication.CheckDlgButton_Wrapper,
+    'CheckDlgButton_Wrapper()'#10 +
+    'Changes the check state of a button control.');
+  PythonType.AddMethod('IsDlgButtonChecked', @TPyDelphiApplication.IsDlgButtonChecked_Wrapper,
+    'IsDlgButtonChecked_Wrapper()'#10 +
+    'Determines the check state of a button control.');
+  PythonType.AddMethod('GetMenu', @TPyDelphiApplication.GetMenu_Wrapper,
+    'GetMenu_Wrapper()'#10 +
+    'Retrieves a handle to the menu assigned to the specified window.');
+  PythonType.AddMethod('SetMenu', @TPyDelphiApplication.SetMenu_Wrapper,
+    'SetMenu_Wrapper()'#10 +
+    'Assigns a new menu to the specified window.');
+  PythonType.AddMethod('GetSystemMenu', @TPyDelphiApplication.GetSystemMenu_Wrapper,
+    'GetSystemMenu_Wrapper()'#10 +
+    'Enables the application to access the window menu (also known as the System menu or Control menu) for copying and modifying.');
+  PythonType.AddMethod('GetMenuItemCount', @TPyDelphiApplication.GetMenuItemCount_Wrapper,
+    'GetMenuItemCount_Wrapper()'#10 +
+    'Determines the number of items in the specified menu.');
+  PythonType.AddMethod('GetMenuItemID', @TPyDelphiApplication.GetMenuItemID_Wrapper,
+    'GetMenuItemID_Wrapper()'#10 +
+    'Retrieves the menu item identifier of a menu item located at a specified position.');
+  PythonType.AddMethod('EnableMenuItem', @TPyDelphiApplication.EnableMenuItem_Wrapper,
+    'EnableMenuItem_Wrapper()'#10 +
+    'Enables, disables, or grays a menu item.');
+  PythonType.AddMethod('DeleteMenu', @TPyDelphiApplication.DeleteMenu_Wrapper,
+    'DeleteMenu_Wrapper()'#10 +
+    'Deletes an item from the specified menu.');
+  PythonType.AddMethod('RemoveMenu', @TPyDelphiApplication.RemoveMenu_Wrapper,
+    'RemoveMenu_Wrapper()'#10 +
+    'Removes an item from the specified menu without destroying a submenu handle.');
+  PythonType.AddMethod('CreateMenu', @TPyDelphiApplication.CreateMenu_Wrapper,
+    'CreateMenu_Wrapper()'#10 +
+    'Creates a menu.');
+  PythonType.AddMethod('CreatePopupMenu', @TPyDelphiApplication.CreatePopupMenu_Wrapper,
+    'CreatePopupMenu_Wrapper()'#10 +
+    'Creates a drop-down menu, submenu, or shortcut menu.');
+  PythonType.AddMethod('DestroyMenu', @TPyDelphiApplication.DestroyMenu_Wrapper,
+    'DestroyMenu_Wrapper()'#10 +
+    'Destroys the specified menu.');
+  PythonType.AddMethod('SetCursor', @TPyDelphiApplication.SetCursor_Wrapper,
+    'SetCursor_Wrapper()'#10 +
+    'Sets the cursor shape.');
+  PythonType.AddMethod('GetCursor', @TPyDelphiApplication.GetCursor_Wrapper,
+    'GetCursor_Wrapper()'#10 +
+    'Retrieves a handle to the current cursor.');
+  PythonType.AddMethod('LoadCursorFromFile', @TPyDelphiApplication.LoadCursorFromFile_Wrapper,
+    'LoadCursorFromFile_Wrapper()'#10 +
+    'Creates a cursor from a cursor or animated cursor file.');
+  PythonType.AddMethod('GetSysColor', @TPyDelphiApplication.GetSysColor_Wrapper,
+    'GetSysColor_Wrapper()'#10 +
+    'Retrieves the current color of a display element.');
+  PythonType.AddMethod('GetDoubleClickTime', @TPyDelphiApplication.GetDoubleClickTime_Wrapper,
+    'GetDoubleClickTime_Wrapper()'#10 +
+    'Retrieves the current double-click time for the mouse.');
+  PythonType.AddMethod('SetDoubleClickTime', @TPyDelphiApplication.SetDoubleClickTime_Wrapper,
+    'SetDoubleClickTime_Wrapper()'#10 +
+    'Sets the double-click time for the mouse.');
+  PythonType.AddMethod('CreateCompatibleDC', @TPyDelphiApplication.CreateCompatibleDC_Wrapper,
+    'CreateCompatibleDC_Wrapper()'#10 +
+    'Creates a memory device context (DC) compatible with the specified device.');
+  PythonType.AddMethod('CreateCompatibleBitmap', @TPyDelphiApplication.CreateCompatibleBitmap_Wrapper,
+    'CreateCompatibleBitmap_Wrapper()'#10 +
+    'Creates a bitmap compatible with the device that is associated with the specified device context.');
+  PythonType.AddMethod('DeleteDC', @TPyDelphiApplication.DeleteDC_Wrapper,
+    'DeleteDC_Wrapper()'#10 +
+    'Deletes the specified device context.');
+  PythonType.AddMethod('DeleteObject', @TPyDelphiApplication.DeleteObject_Wrapper,
+    'DeleteObject_Wrapper()'#10 +
+    'Deletes a logical pen, brush, font, bitmap, region, or palette.');
+  PythonType.AddMethod('SelectObject', @TPyDelphiApplication.SelectObject_Wrapper,
+    'SelectObject_Wrapper()'#10 +
+    'Selects an object into the specified device context.');
+  PythonType.AddMethod('GetStockObject', @TPyDelphiApplication.GetStockObject_Wrapper,
+    'GetStockObject_Wrapper()'#10 +
+    'Retrieves a handle to one of the stock pens, brushes, fonts, or palettes.');
+  PythonType.AddMethod('CreateSolidBrush', @TPyDelphiApplication.CreateSolidBrush_Wrapper,
+    'CreateSolidBrush_Wrapper()'#10 +
+    'Creates a logical brush that has the specified solid color.');
+  PythonType.AddMethod('CreateHatchBrush', @TPyDelphiApplication.CreateHatchBrush_Wrapper,
+    'CreateHatchBrush_Wrapper()'#10 +
+    'Creates a logical brush that has the specified hatch pattern and color.');
+  PythonType.AddMethod('CreatePen', @TPyDelphiApplication.CreatePen_Wrapper,
+    'CreatePen_Wrapper()'#10 +
+    'Creates a logical pen that has the specified style, width, and color.');
+  PythonType.AddMethod('CreateRectRgn', @TPyDelphiApplication.CreateRectRgn_Wrapper,
+    'CreateRectRgn_Wrapper()'#10 +
+    'Creates a rectangular region.');
+  PythonType.AddMethod('CreateEllipticRgn', @TPyDelphiApplication.CreateEllipticRgn_Wrapper,
+    'CreateEllipticRgn_Wrapper()'#10 +
+    'Creates an elliptical region.');
+  PythonType.AddMethod('CreateRoundRectRgn', @TPyDelphiApplication.CreateRoundRectRgn_Wrapper,
+    'CreateRoundRectRgn_Wrapper()'#10 +
+    'Creates a rectangular region with rounded corners.');
+  PythonType.AddMethod('CombineRgn', @TPyDelphiApplication.CombineRgn_Wrapper,
+    'CombineRgn_Wrapper()'#10 +
+    'Combines two regions and stores the result in the destination region.');
+  PythonType.AddMethod('EqualRgn', @TPyDelphiApplication.EqualRgn_Wrapper,
+    'EqualRgn_Wrapper()'#10 +
+    'Checks the two specified regions to determine whether they are identical.');
+  PythonType.AddMethod('PtInRegion', @TPyDelphiApplication.PtInRegion_Wrapper,
+    'PtInRegion_Wrapper()'#10 +
+    'Determines whether the specified point is inside the specified region.');
+  PythonType.AddMethod('LineTo', @TPyDelphiApplication.LineTo_Wrapper,
+    'LineTo_Wrapper()'#10 +
+    'Draws a line from the current position up to, but not including, the specified point.');
+  PythonType.AddMethod('Rectangle', @TPyDelphiApplication.Rectangle_Wrapper,
+    'Rectangle_Wrapper()'#10 +
+    'Draws a rectangle.');
+  PythonType.AddMethod('RoundRect', @TPyDelphiApplication.RoundRect_Wrapper,
+    'RoundRect_Wrapper()'#10 +
+    'Draws a rectangle with rounded corners.');
+  PythonType.AddMethod('Ellipse', @TPyDelphiApplication.Ellipse_Wrapper,
+    'Ellipse_Wrapper()'#10 +
+    'Draws an ellipse.');
+  PythonType.AddMethod('GetPixel', @TPyDelphiApplication.GetPixel_Wrapper,
+    'GetPixel_Wrapper()'#10 +
+    'Retrieves the color of the pixel at the specified coordinates.');
+  PythonType.AddMethod('SetPixel', @TPyDelphiApplication.SetPixel_Wrapper,
+    'SetPixel_Wrapper()'#10 +
+    'Sets the pixel at the specified coordinates to the specified color.');
+  PythonType.AddMethod('GetTextColor', @TPyDelphiApplication.GetTextColor_Wrapper,
+    'GetTextColor_Wrapper()'#10 +
+    'Retrieves the current text color for the specified device context.');
+  PythonType.AddMethod('SetTextColor', @TPyDelphiApplication.SetTextColor_Wrapper,
+    'SetTextColor_Wrapper()'#10 +
+    'Sets the text color for the specified device context to the specified color.');
+  PythonType.AddMethod('GetBkColor', @TPyDelphiApplication.GetBkColor_Wrapper,
+    'GetBkColor_Wrapper()'#10 +
+    'Retrieves the current background color for the specified device context.');
+  PythonType.AddMethod('SetBkColor', @TPyDelphiApplication.SetBkColor_Wrapper,
+    'SetBkColor_Wrapper()'#10 +
+    'Sets the current background color to the specified color.');
+  PythonType.AddMethod('SetBkMode', @TPyDelphiApplication.SetBkMode_Wrapper,
+    'SetBkMode_Wrapper()'#10 +
+    'Sets the background mix mode of the specified device context.');
+  PythonType.AddMethod('GetBkMode', @TPyDelphiApplication.GetBkMode_Wrapper,
+    'GetBkMode_Wrapper()'#10 +
+    'Retrieves the current background mix mode.');
+  PythonType.AddMethod('TextOut', @TPyDelphiApplication.TextOut_Wrapper,
+    'TextOut_Wrapper()'#10 +
+    'Writes a character string at the specified location, using the currently selected font.');
+  PythonType.AddMethod('GetDeviceCaps', @TPyDelphiApplication.GetDeviceCaps_Wrapper,
+    'GetDeviceCaps_Wrapper()'#10 +
+    'Retrieves device-specific information about a specified device.');
+  PythonType.AddMethod('SaveDC', @TPyDelphiApplication.SaveDC_Wrapper,
+    'SaveDC_Wrapper()'#10 +
+    'Saves the current state of the specified device context.');
+  PythonType.AddMethod('RestoreDC', @TPyDelphiApplication.RestoreDC_Wrapper,
+    'RestoreDC_Wrapper()'#10 +
+    'Restores a device context to the specified state.');
+  PythonType.AddMethod('SetMapMode', @TPyDelphiApplication.SetMapMode_Wrapper,
+    'SetMapMode_Wrapper()'#10 +
+    'Sets the mapping mode of the specified device context.');
+  PythonType.AddMethod('GetMapMode', @TPyDelphiApplication.GetMapMode_Wrapper,
+    'GetMapMode_Wrapper()'#10 +
+    'Retrieves the current mapping mode.');
+  PythonType.AddMethod('SetROP2', @TPyDelphiApplication.SetROP2_Wrapper,
+    'SetROP2_Wrapper()'#10 +
+    'Sets the current foreground mix mode.');
+  PythonType.AddMethod('GetROP2', @TPyDelphiApplication.GetROP2_Wrapper,
+    'GetROP2_Wrapper()'#10 +
+    'Retrieves the foreground mix mode of the specified device context.');
+  PythonType.AddMethod('SetStretchBltMode', @TPyDelphiApplication.SetStretchBltMode_Wrapper,
+    'SetStretchBltMode_Wrapper()'#10 +
+    'Sets the bitmap stretching mode.');
+  PythonType.AddMethod('GetStretchBltMode', @TPyDelphiApplication.GetStretchBltMode_Wrapper,
+    'GetStretchBltMode_Wrapper()'#10 +
+    'Retrieves the current bitmap-stretching mode.');
+  PythonType.AddMethod('StretchBlt', @TPyDelphiApplication.StretchBlt_Wrapper,
+    'StretchBlt_Wrapper()'#10 +
+    'Copies a bitmap from a source rectangle into a destination rectangle, stretching or compressing to fit.');
+  PythonType.AddMethod('PatBlt', @TPyDelphiApplication.PatBlt_Wrapper,
+    'PatBlt_Wrapper()'#10 +
+    'Paints the specified rectangle using the brush that is currently selected into the device context.');
+  // ---- Batch 2: advapi32 (registry/service) / shlwapi / winmm / shell32 ----
+  PythonType.AddMethod('RegOpenKeyEx', @TPyDelphiApplication.RegOpenKeyEx_Wrapper,
+    'RegOpenKeyEx_Wrapper()'#10 +
+    'Opens the specified registry key and returns its handle (0 on failure).');
+  PythonType.AddMethod('RegCreateKeyEx', @TPyDelphiApplication.RegCreateKeyEx_Wrapper,
+    'RegCreateKeyEx_Wrapper()'#10 +
+    'Creates the specified registry key (or opens it if it already exists) and returns its handle (0 on failure).');
+  PythonType.AddMethod('RegCloseKey', @TPyDelphiApplication.RegCloseKey_Wrapper,
+    'RegCloseKey_Wrapper()'#10 +
+    'Closes a handle to the specified registry key. Returns 0 on success.');
+  PythonType.AddMethod('RegDeleteKey', @TPyDelphiApplication.RegDeleteKey_Wrapper,
+    'RegDeleteKey_Wrapper()'#10 +
+    'Deletes a subkey (which must not itself have subkeys). Returns 0 on success.');
+  PythonType.AddMethod('RegDeleteValue', @TPyDelphiApplication.RegDeleteValue_Wrapper,
+    'RegDeleteValue_Wrapper()'#10 +
+    'Removes a named value from the specified registry key. Returns 0 on success.');
+  PythonType.AddMethod('RegFlushKey', @TPyDelphiApplication.RegFlushKey_Wrapper,
+    'RegFlushKey_Wrapper()'#10 +
+    'Writes all the attributes of the specified key to the registry. Returns 0 on success.');
+  PythonType.AddMethod('RegEnumKeyEx', @TPyDelphiApplication.RegEnumKeyEx_Wrapper,
+    'RegEnumKeyEx_Wrapper()'#10 +
+    'Returns the name of the subkey at the given zero-based index, or an empty string when there are no more subkeys.');
+  PythonType.AddMethod('RegEnumValue', @TPyDelphiApplication.RegEnumValue_Wrapper,
+    'RegEnumValue_Wrapper()'#10 +
+    'Returns the name of the value at the given zero-based index, or an empty string when there are no more values.');
+  PythonType.AddMethod('RegQueryStringValue', @TPyDelphiApplication.RegQueryStringValue_Wrapper,
+    'RegQueryStringValue_Wrapper()'#10 +
+    'Reads a REG_SZ / REG_EXPAND_SZ string value.');
+  PythonType.AddMethod('RegSetStringValue', @TPyDelphiApplication.RegSetStringValue_Wrapper,
+    'RegSetStringValue_Wrapper()'#10 +
+    'Writes a REG_SZ string value.');
+  PythonType.AddMethod('RegQueryDWordValue', @TPyDelphiApplication.RegQueryDWordValue_Wrapper,
+    'RegQueryDWordValue_Wrapper()'#10 +
+    'Reads a REG_DWORD value (returns 0 if the value does not exist).');
+  PythonType.AddMethod('RegSetDWordValue', @TPyDelphiApplication.RegSetDWordValue_Wrapper,
+    'RegSetDWordValue_Wrapper()'#10 +
+    'Writes a REG_DWORD value.');
+  PythonType.AddMethod('RegConnectRegistry', @TPyDelphiApplication.RegConnectRegistry_Wrapper,
+    'RegConnectRegistry_Wrapper()'#10 +
+    'Establishes a connection to a predefined registry key on another computer.');
+  PythonType.AddMethod('GetUserName', @TPyDelphiApplication.GetUserName_Wrapper,
+    'GetUserName_Wrapper()'#10 +
+    'Retrieves the name of the user associated with the current thread.');
+  PythonType.AddMethod('OpenSCManager', @TPyDelphiApplication.OpenSCManager_Wrapper,
+    'OpenSCManager_Wrapper()'#10 +
+    'Establishes a connection to the service control manager and opens the specified database.');
+  PythonType.AddMethod('OpenService', @TPyDelphiApplication.OpenService_Wrapper,
+    'OpenService_Wrapper()'#10 +
+    'Opens a handle to the specified service.');
+  PythonType.AddMethod('CloseServiceHandle', @TPyDelphiApplication.CloseServiceHandle_Wrapper,
+    'CloseServiceHandle_Wrapper()'#10 +
+    'Closes a handle to a service control manager or service object.');
+  PythonType.AddMethod('QueryServiceState', @TPyDelphiApplication.QueryServiceState_Wrapper,
+    'QueryServiceState_Wrapper()'#10 +
+    'Returns the current state of the specified service (e.g. SERVICE_RUNNING = 4, SERVICE_STOPPED = 1).');
+  PythonType.AddMethod('StartService', @TPyDelphiApplication.StartService_Wrapper,
+    'StartService_Wrapper()'#10 +
+    'Starts a service with no extra start arguments.');
+  PythonType.AddMethod('ControlService', @TPyDelphiApplication.ControlService_Wrapper,
+    'ControlService_Wrapper()'#10 +
+    'Sends a control code (e.g. SERVICE_CONTROL_STOP = 1) to a service.');
+  PythonType.AddMethod('DeleteService', @TPyDelphiApplication.DeleteService_Wrapper,
+    'DeleteService_Wrapper()'#10 +
+    'Marks the specified service for deletion from the service control manager database.');
+  PythonType.AddMethod('PathFileExists', @TPyDelphiApplication.PathFileExists_Wrapper,
+    'PathFileExists_Wrapper()'#10 +
+    'Determines whether a path to a file system object such as a file or folder is valid.');
+  PythonType.AddMethod('PathIsDirectory', @TPyDelphiApplication.PathIsDirectory_Wrapper,
+    'PathIsDirectory_Wrapper()'#10 +
+    'Verifies that a path is a valid directory.');
+  PythonType.AddMethod('PathIsRoot', @TPyDelphiApplication.PathIsRoot_Wrapper,
+    'PathIsRoot_Wrapper()'#10 +
+    'Determines whether a path is a root path.');
+  PythonType.AddMethod('PathIsRelative', @TPyDelphiApplication.PathIsRelative_Wrapper,
+    'PathIsRelative_Wrapper()'#10 +
+    'Determines whether a path is relative.');
+  PythonType.AddMethod('PathIsUNC', @TPyDelphiApplication.PathIsUNC_Wrapper,
+    'PathIsUNC_Wrapper()'#10 +
+    'Determines whether a path string is a valid universal naming convention (UNC) path.');
+  PythonType.AddMethod('PathIsURL', @TPyDelphiApplication.PathIsURL_Wrapper,
+    'PathIsURL_Wrapper()'#10 +
+    'Tests a given string to determine if it conforms to a valid URL format.');
+  PythonType.AddMethod('PathRemoveBackslash', @TPyDelphiApplication.PathRemoveBackslash_Wrapper,
+    'PathRemoveBackslash_Wrapper()'#10 +
+    'Removes the trailing backslash from a path, if one is present, and returns the result.');
+  PythonType.AddMethod('PathAddBackslash', @TPyDelphiApplication.PathAddBackslash_Wrapper,
+    'PathAddBackslash_Wrapper()'#10 +
+    'Adds a trailing backslash to a path, if it does not already have one, and returns the result.');
+  PythonType.AddMethod('PathRemoveExtension', @TPyDelphiApplication.PathRemoveExtension_Wrapper,
+    'PathRemoveExtension_Wrapper()'#10 +
+    'Removes the file name extension from a path, if present, and returns the result.');
+  PythonType.AddMethod('PathRemoveFileSpec', @TPyDelphiApplication.PathRemoveFileSpec_Wrapper,
+    'PathRemoveFileSpec_Wrapper()'#10 +
+    'Removes the trailing file name and backslash from a path, if present, and returns the result.');
+  PythonType.AddMethod('PathFindExtension', @TPyDelphiApplication.PathFindExtension_Wrapper,
+    'PathFindExtension_Wrapper()'#10 +
+    'Returns the extension (including the leading dot) of a file name, or an empty string if it has none.');
+  PythonType.AddMethod('PathFindFileName', @TPyDelphiApplication.PathFindFileName_Wrapper,
+    'PathFindFileName_Wrapper()'#10 +
+    'Returns the filename portion (without directory) of a path.');
+  PythonType.AddMethod('PathGetDriveNumber', @TPyDelphiApplication.PathGetDriveNumber_Wrapper,
+    'PathGetDriveNumber_Wrapper()'#10 +
+    'Returns the drive number (0 = A:, 1 = B:, ...) from a path, or -1 if no drive letter is present.');
+  PythonType.AddMethod('PathStripPath', @TPyDelphiApplication.PathStripPath_Wrapper,
+    'PathStripPath_Wrapper()'#10 +
+    'Removes the directory portion of a path in place, leaving just the file name, and returns the result.');
+  PythonType.AddMethod('PathIsPrefix', @TPyDelphiApplication.PathIsPrefix_Wrapper,
+    'PathIsPrefix_Wrapper()'#10 +
+    'Determines whether a path string is a valid prefix for another path string.');
+  PythonType.AddMethod('PathMatchSpec', @TPyDelphiApplication.PathMatchSpec_Wrapper,
+    'PathMatchSpec_Wrapper()'#10 +
+    'Searches a string using a Microsoft MS-DOS wild card match type, e.g. ''*.txt''.');
+  PythonType.AddMethod('PathIsSameRoot', @TPyDelphiApplication.PathIsSameRoot_Wrapper,
+    'PathIsSameRoot_Wrapper()'#10 +
+    'Compares two paths to determine if they have a common root component.');
+  PythonType.AddMethod('PathCombine', @TPyDelphiApplication.PathCombine_Wrapper,
+    'PathCombine_Wrapper()'#10 +
+    'Concatenates two paths into a single, well-formed path.');
+  PythonType.AddMethod('PathAppend', @TPyDelphiApplication.PathAppend_Wrapper,
+    'PathAppend_Wrapper()'#10 +
+    'Appends one path to the end of another and returns the combined result.');
+  PythonType.AddMethod('PathQuoteSpaces', @TPyDelphiApplication.PathQuoteSpaces_Wrapper,
+    'PathQuoteSpaces_Wrapper()'#10 +
+    'Places quotation marks around a path if it contains spaces, and returns the result.');
+  PythonType.AddMethod('PathUnquoteSpaces', @TPyDelphiApplication.PathUnquoteSpaces_Wrapper,
+    'PathUnquoteSpaces_Wrapper()'#10 +
+    'Removes quotation marks from the beginning and end of a path, and returns the result.');
+  PythonType.AddMethod('PathCanonicalize', @TPyDelphiApplication.PathCanonicalize_Wrapper,
+    'PathCanonicalize_Wrapper()'#10 +
+    'Resolves ''.'' and ''..'' segments in a path and returns the simplified result.');
+  PythonType.AddMethod('StrToInt', @TPyDelphiApplication.StrToInt_Wrapper,
+    'StrToInt_Wrapper()'#10 +
+    'Converts a string representation of a number to an integer value.');
+  PythonType.AddMethod('StrFormatByteSize', @TPyDelphiApplication.StrFormatByteSize_Wrapper,
+    'StrFormatByteSize_Wrapper()'#10 +
+    'Formats a byte count as a human readable string (e.g. ''1.44 MB'').');
+  PythonType.AddMethod('timeGetTime', @TPyDelphiApplication.timeGetTime_Wrapper,
+    'timeGetTime_Wrapper()'#10 +
+    'Retrieves the system time, in milliseconds.');
+  PythonType.AddMethod('timeBeginPeriod', @TPyDelphiApplication.timeBeginPeriod_Wrapper,
+    'timeBeginPeriod_Wrapper()'#10 +
+    'Requests a minimum timer resolution for the application (returns 0 on success).');
+  PythonType.AddMethod('timeEndPeriod', @TPyDelphiApplication.timeEndPeriod_Wrapper,
+    'timeEndPeriod_Wrapper()'#10 +
+    'Clears a previously set minimum timer resolution (returns 0 on success).');
+  PythonType.AddMethod('PlaySound', @TPyDelphiApplication.PlaySound_Wrapper,
+    'PlaySound_Wrapper()'#10 +
+    'Plays a sound specified by a file name, system event alias, or resource (see SND_* flags).');
+  PythonType.AddMethod('sndPlaySound', @TPyDelphiApplication.sndPlaySound_Wrapper,
+    'sndPlaySound_Wrapper()'#10 +
+    'Plays a waveform sound specified by a file name or system event alias (legacy API, simpler than PlaySound).');
+  PythonType.AddMethod('waveOutGetNumDevs', @TPyDelphiApplication.waveOutGetNumDevs_Wrapper,
+    'waveOutGetNumDevs_Wrapper()'#10 +
+    'Returns the number of waveform-audio output devices present.');
+  PythonType.AddMethod('waveInGetNumDevs', @TPyDelphiApplication.waveInGetNumDevs_Wrapper,
+    'waveInGetNumDevs_Wrapper()'#10 +
+    'Returns the number of waveform-audio input devices present.');
+  PythonType.AddMethod('midiOutGetNumDevs', @TPyDelphiApplication.midiOutGetNumDevs_Wrapper,
+    'midiOutGetNumDevs_Wrapper()'#10 +
+    'Returns the number of MIDI output devices present.');
+  PythonType.AddMethod('midiInGetNumDevs', @TPyDelphiApplication.midiInGetNumDevs_Wrapper,
+    'midiInGetNumDevs_Wrapper()'#10 +
+    'Returns the number of MIDI input devices present.');
+  PythonType.AddMethod('auxGetNumDevs', @TPyDelphiApplication.auxGetNumDevs_Wrapper,
+    'auxGetNumDevs_Wrapper()'#10 +
+    'Returns the number of auxiliary output devices present.');
+  PythonType.AddMethod('joyGetNumDevs', @TPyDelphiApplication.joyGetNumDevs_Wrapper,
+    'joyGetNumDevs_Wrapper()'#10 +
+    'Returns the number of joystick devices supported by the current driver.');
+  PythonType.AddMethod('mixerGetNumDevs', @TPyDelphiApplication.mixerGetNumDevs_Wrapper,
+    'mixerGetNumDevs_Wrapper()'#10 +
+    'Returns the number of mixer devices present.');
+  PythonType.AddMethod('mmioStringToFOURCC', @TPyDelphiApplication.mmioStringToFOURCC_Wrapper,
+    'mmioStringToFOURCC_Wrapper()'#10 +
+    'Converts a string of at most 4 characters to a four-character code (FOURCC).');
+  PythonType.AddMethod('SHGetFolderPath', @TPyDelphiApplication.SHGetFolderPath_Wrapper,
+    'SHGetFolderPath_Wrapper()'#10 +
+    'Retrieves the path of a well-known special folder (e.g. CSIDL_PERSONAL = 5 for My Documents, CSIDL_DESKTOP = 0, CSIDL_APPDATA = 26).');
+  PythonType.AddMethod('ShellAbout', @TPyDelphiApplication.ShellAbout_Wrapper,
+    'ShellAbout_Wrapper()'#10 +
+    'Displays the standard Windows ''About'' dialog box.');
+  PythonType.AddMethod('ExtractIcon', @TPyDelphiApplication.ExtractIcon_Wrapper,
+    'ExtractIcon_Wrapper()'#10 +
+    'Extracts an icon from the specified executable file, DLL, or icon file.');
+  PythonType.AddMethod('SHGetFileTypeDescription', @TPyDelphiApplication.SHGetFileTypeDescription_Wrapper,
+    'SHGetFileTypeDescription_Wrapper()'#10 +
+    'Retrieves the human-readable file type description for a file (e.g. ''Text Document'').');
+  PythonType.AddMethod('IsUserAnAdmin', @TPyDelphiApplication.IsUserAnAdmin_Wrapper,
+    'IsUserAnAdmin_Wrapper()'#10 +
+    'Determines whether the current process is running with administrative privileges.');
+  // ---- Batch 3: restored + additional kernel32/shlwapi/shell32 functions ----
+  PythonType.AddMethod('ExitWindowsEx', @TPyDelphiApplication.ExitWindowsEx_Wrapper,
+    'ExitWindowsEx_Wrapper()'#10 +
+    'Logs off, shuts down, or restarts the system (behaviour controlled by uFlags, e.g. EWX_LOGOFF=0, EWX_SHUTDOWN=1, EWX_REBOOT=2).');
+  PythonType.AddMethod('LockWorkStation', @TPyDelphiApplication.LockWorkStation_Wrapper,
+    'LockWorkStation_Wrapper()'#10 +
+    'Locks the workstation''s display, requiring the user to log back in.');
+  PythonType.AddMethod('SHFileOperationDelete', @TPyDelphiApplication.SHFileOperationDelete_Wrapper,
+    'SHFileOperationDelete_Wrapper()'#10 +
+    'Deletes a file using the Shell (so it goes to the Recycle Bin when AllowUndo is True). Returns 0 on success.');
+  PythonType.AddMethod('SHEmptyRecycleBin', @TPyDelphiApplication.SHEmptyRecycleBin_Wrapper,
+    'SHEmptyRecycleBin_Wrapper()'#10 +
+    'Empties the Recycle Bin for the given drive/root path (permanently deletes its contents). Returns 0 on success.');
+  PythonType.AddMethod('StrChr', @TPyDelphiApplication.StrChr_Wrapper,
+    'StrChr_Wrapper()'#10 +
+    'Returns the 1-based index of the first occurrence of a character in a string, or 0 if not found.');
+  PythonType.AddMethod('StrStr', @TPyDelphiApplication.StrStr_Wrapper,
+    'StrStr_Wrapper()'#10 +
+    'Returns the 1-based index of the first occurrence of a substring, or 0 if not found.');
+  PythonType.AddMethod('GetProcAddress', @TPyDelphiApplication.GetProcAddress_Wrapper,
+    'GetProcAddress_Wrapper()'#10 +
+    'Retrieves the address of an exported function or variable from a loaded DLL, as a raw integer address.');
+  PythonType.AddMethod('GetExitCodeProcess', @TPyDelphiApplication.GetExitCodeProcess_Wrapper,
+    'GetExitCodeProcess_Wrapper()'#10 +
+    'Retrieves the termination status of the specified process (still running = STILL_ACTIVE = 259).');
+  PythonType.AddMethod('SetPriorityClass', @TPyDelphiApplication.SetPriorityClass_Wrapper,
+    'SetPriorityClass_Wrapper()'#10 +
+    'Sets the priority class for the specified process.');
+  PythonType.AddMethod('GetPriorityClass', @TPyDelphiApplication.GetPriorityClass_Wrapper,
+    'GetPriorityClass_Wrapper()'#10 +
+    'Retrieves the priority class for the specified process.');
+  PythonType.AddMethod('GetFileSize', @TPyDelphiApplication.GetFileSize_Wrapper,
+    'GetFileSize_Wrapper()'#10 +
+    'Retrieves the size, in bytes, of a file that is open with the given handle (files under 4GB).');
+  PythonType.AddMethod('GetLocalTime', @TPyDelphiApplication.GetLocalTime_Wrapper,
+    'GetLocalTime_Wrapper()'#10 +
+    'Retrieves the current local date and time, formatted as ''YYYY-MM-DD HH:MM:SS''.');
+  PythonType.AddMethod('GetSystemTime', @TPyDelphiApplication.GetSystemTime_Wrapper,
+    'GetSystemTime_Wrapper()'#10 +
+    'Retrieves the current system (UTC) date and time, formatted as ''YYYY-MM-DD HH:MM:SS''.');
+  PythonType.AddMethod('GetCursorPos', @TPyDelphiApplication.GetCursorPos_Wrapper,
+    'GetCursorPos_Wrapper()'#10 +
+    'Retrieves the position of the mouse cursor, in screen coordinates.');
+  PythonType.AddMethod('GetWindowRect', @TPyDelphiApplication.GetWindowRect_Wrapper,
+    'GetWindowRect_Wrapper()'#10 +
+    'Retrieves the dimensions of the bounding rectangle of the specified window, in screen coordinates.');
+  PythonType.AddMethod('GetClientRect', @TPyDelphiApplication.GetClientRect_Wrapper,
+    'GetClientRect_Wrapper()'#10 +
+    'Retrieves the coordinates of a window''s client area.');
+  PythonType.AddMethod('ClientToScreen', @TPyDelphiApplication.ClientToScreen_Wrapper,
+    'ClientToScreen_Wrapper()'#10 +
+    'Converts the client-area coordinates of a specified point to screen coordinates.');
+  PythonType.AddMethod('ScreenToClient', @TPyDelphiApplication.ScreenToClient_Wrapper,
+    'ScreenToClient_Wrapper()'#10 +
+    'Converts the screen coordinates of a specified point to client-area coordinates.');
+  PythonType.AddMethod('MoveToEx', @TPyDelphiApplication.MoveToEx_Wrapper,
+    'MoveToEx_Wrapper()'#10 +
+    'Updates the current position to the specified point and returns the previous position.');
+  PythonType.AddMethod('GetShortPathName', @TPyDelphiApplication.GetShortPathName_Wrapper,
+    'GetShortPathName_Wrapper()'#10 +
+    'Retrieves the short path form of the specified path.');
+  PythonType.AddMethod('GetLongPathName', @TPyDelphiApplication.GetLongPathName_Wrapper,
+    'GetLongPathName_Wrapper()'#10 +
+    'Converts the specified path to its long form.');
+  PythonType.AddMethod('GetLogicalDriveStrings', @TPyDelphiApplication.GetLogicalDriveStrings_Wrapper,
+    'GetLogicalDriveStrings_Wrapper()'#10 +
+    'Retrieves a list of drive letters (root paths) of all logical drives, separated by ''|''.');
+  PythonType.AddMethod('GetDlgItemText', @TPyDelphiApplication.GetDlgItemText_Wrapper,
+    'GetDlgItemText_Wrapper()'#10 +
+    'Retrieves the text of a control in a dialog box.');
 //  PythonType.AddMethod('CCompiler', @TPyDelphiApplication.CCompiler_Wrapper,
 //    'CCompiler_Wrapper()'#10 +
 //    'Compile C code into an exe.');

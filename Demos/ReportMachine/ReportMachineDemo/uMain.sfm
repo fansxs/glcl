@@ -1,0 +1,549 @@
+object frmMain: TForm
+  Left = 0
+  Top = 0
+  Caption = 'ReportMachine '#22810#21151#33021#28436#31034
+  ClientHeight = 520
+  ClientWidth = 973
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  TextHeight = 15
+  object memLog: TMemo
+    Left = 0
+    Top = 390
+    Width = 973
+    Height = 130
+    Align = alBottom
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object memHelp: TMemo
+    Left = 523
+    Top = 0
+    Width = 450
+    Height = 390
+    Align = alRight
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object pnlClient: TPanel
+    Left = 0
+    Top = 0
+    Width = 523
+    Height = 390
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+    object pcMain: TPageControl
+      Left = 0
+      Top = 0
+      Width = 523
+      Height = 390
+      ActivePage = tsBuiltin
+      Align = alClient
+      TabOrder = 0
+      object tsBuiltin: TTabSheet
+        Caption = #20869#32622#28436#31034
+        object lblDemo1: TLabel
+          Left = 12
+          Top = 19
+          Width = 116
+          Height = 15
+          Caption = #28436#31034'1  '#23458#25143#28165#21333'('#21333#34920')'
+        end
+        object lblDemo2: TLabel
+          Left = 12
+          Top = 63
+          Width = 108
+          Height = 15
+          Caption = #28436#31034'2  '#35746#21333#20027#20174#26126#32454
+        end
+        object lblDemo3: TLabel
+          Left = 12
+          Top = 107
+          Width = 96
+          Height = 15
+          Caption = #28436#31034'3  '#21464#37327#19982#36807#28388
+        end
+        object lblCity: TLabel
+          Left = 12
+          Top = 151
+          Width = 113
+          Height = 15
+          Caption = '        '#36807#28388#22478#24066'('#28436#31034'3):'
+        end
+        object lblDemo4: TLabel
+          Left = 12
+          Top = 195
+          Width = 108
+          Height = 15
+          Caption = #28436#31034'4  '#21830#21697#20998#32452#27719#24635
+        end
+        object lblDemo5: TLabel
+          Left = 12
+          Top = 249
+          Width = 129
+          Height = 15
+          Caption = #28436#31034'5  '#39044#29983#25104#25253#34920'(.rmp)'
+        end
+        object lblDemo6: TLabel
+          Left = 12
+          Top = 293
+          Width = 60
+          Height = 15
+          Caption = #28436#31034'6  '#23548#20986
+        end
+        object lblTplDir: TLabel
+          Left = 12
+          Top = 337
+          Width = 48
+          Height = 15
+          Caption = #27169#26495#30446#24405
+        end
+        object btnDemo1Design: TButton
+          Tag = 10
+          Left = 260
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 0
+        end
+        object btnDemo1Preview: TButton
+          Tag = 11
+          Left = 330
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 1
+        end
+        object btnDemo1Print: TButton
+          Tag = 12
+          Left = 400
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 2
+        end
+        object btnDemo2Design: TButton
+          Tag = 20
+          Left = 260
+          Top = 58
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 3
+        end
+        object btnDemo2Preview: TButton
+          Tag = 21
+          Left = 330
+          Top = 58
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 4
+        end
+        object btnDemo2Print: TButton
+          Tag = 22
+          Left = 400
+          Top = 58
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 5
+        end
+        object btnDemo3Design: TButton
+          Tag = 30
+          Left = 260
+          Top = 102
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 6
+        end
+        object btnDemo3Preview: TButton
+          Tag = 31
+          Left = 330
+          Top = 102
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 7
+        end
+        object btnDemo3Print: TButton
+          Tag = 32
+          Left = 400
+          Top = 102
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 8
+        end
+        object cbCity: TComboBox
+          Left = 260
+          Top = 147
+          Width = 134
+          Height = 23
+          Style = csDropDownList
+          ItemIndex = 0
+          TabOrder = 9
+          Text = #20840#37096#22478#24066
+          Items.Strings = (
+            #20840#37096#22478#24066
+            #21271#20140
+            #19978#28023
+            #24191#24030
+            #28145#22323)
+        end
+        object btnDemo4Design: TButton
+          Tag = 40
+          Left = 260
+          Top = 190
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 10
+        end
+        object btnDemo4Preview: TButton
+          Tag = 41
+          Left = 330
+          Top = 190
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 11
+        end
+        object btnDemo4Print: TButton
+          Tag = 42
+          Left = 400
+          Top = 190
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 12
+        end
+        object btnPrepSave: TButton
+          Tag = 50
+          Left = 260
+          Top = 244
+          Width = 64
+          Height = 26
+          Caption = #29983#25104#20445#23384
+          TabOrder = 13
+        end
+        object btnPrepLoad: TButton
+          Tag = 51
+          Left = 330
+          Top = 244
+          Width = 64
+          Height = 26
+          Caption = #36733#20837#39044#35272
+          TabOrder = 14
+        end
+        object btnExpHtml: TButton
+          Tag = 60
+          Left = 260
+          Top = 288
+          Width = 64
+          Height = 26
+          Caption = 'HTML'
+          TabOrder = 15
+        end
+        object btnExpXls: TButton
+          Tag = 61
+          Left = 330
+          Top = 288
+          Width = 64
+          Height = 26
+          Caption = 'Excel'
+          TabOrder = 16
+        end
+        object btnOpenDir: TButton
+          Tag = 70
+          Left = 260
+          Top = 332
+          Width = 64
+          Height = 26
+          Caption = #25171#24320
+          TabOrder = 17
+        end
+      end
+      object tsSamples: TTabSheet
+        Caption = #26679#20363#27169#26495
+        object lblSample1: TLabel
+          Left = 12
+          Top = 19
+          Width = 181
+          Height = 15
+          Caption = #26679#20363'1 inware   '#20837#24211#26126#32454'('#22810#32423#20998#32452')'
+        end
+        object lblSample2: TLabel
+          Left = 12
+          Top = 57
+          Width = 186
+          Height = 15
+          Caption = #26679#20363'2 outware  '#20986#24211#26126#32454'('#22810#32423#20998#32452')'
+        end
+        object lblSample3: TLabel
+          Left = 12
+          Top = 95
+          Width = 185
+          Height = 15
+          Caption = #26679#20363'3 accident '#35760#24405#28165#21333'('#25353#26376#20998#32452')'
+        end
+        object lblSample4: TLabel
+          Left = 12
+          Top = 133
+          Width = 176
+          Height = 15
+          Caption = #26679#20363'4 cash     '#27969#27700#36134'('#24102#25253#34920#33050#26412')'
+        end
+        object lblSample5: TLabel
+          Left = 12
+          Top = 171
+          Width = 196
+          Height = 15
+          Caption = #26679#20363'5 elderdetail '#35814#24773'('#22270#29255'+'#33050#26412'+IF)'
+        end
+        object lblSample6: TLabel
+          Left = 12
+          Top = 209
+          Width = 184
+          Height = 15
+          Caption = #26679#20363'6 elderfeetable '#36153#29992#34920'('#32593#26684#39029')'
+        end
+        object btnSample1Preview: TButton
+          Tag = 100
+          Left = 270
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 0
+        end
+        object btnSample1Design: TButton
+          Tag = 101
+          Left = 340
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 1
+        end
+        object btnSample1Print: TButton
+          Tag = 102
+          Left = 410
+          Top = 14
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 2
+        end
+        object btnSample2Preview: TButton
+          Tag = 110
+          Left = 270
+          Top = 52
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 3
+        end
+        object btnSample2Design: TButton
+          Tag = 111
+          Left = 340
+          Top = 52
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 4
+        end
+        object btnSample2Print: TButton
+          Tag = 112
+          Left = 410
+          Top = 52
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 5
+        end
+        object btnSample3Preview: TButton
+          Tag = 120
+          Left = 270
+          Top = 90
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 6
+        end
+        object btnSample3Design: TButton
+          Tag = 121
+          Left = 340
+          Top = 90
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 7
+        end
+        object btnSample3Print: TButton
+          Tag = 122
+          Left = 410
+          Top = 90
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 8
+        end
+        object btnSample4Preview: TButton
+          Tag = 130
+          Left = 270
+          Top = 128
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 9
+        end
+        object btnSample4Design: TButton
+          Tag = 131
+          Left = 340
+          Top = 128
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 10
+        end
+        object btnSample4Print: TButton
+          Tag = 132
+          Left = 410
+          Top = 128
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 11
+        end
+        object btnSample5Preview: TButton
+          Tag = 140
+          Left = 270
+          Top = 166
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 12
+        end
+        object btnSample5Design: TButton
+          Tag = 141
+          Left = 340
+          Top = 166
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 13
+        end
+        object btnSample5Print: TButton
+          Tag = 142
+          Left = 410
+          Top = 166
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 14
+        end
+        object btnSample6Preview: TButton
+          Tag = 150
+          Left = 270
+          Top = 204
+          Width = 64
+          Height = 26
+          Caption = #39044#35272
+          TabOrder = 15
+        end
+        object btnSample6Design: TButton
+          Tag = 151
+          Left = 340
+          Top = 204
+          Width = 64
+          Height = 26
+          Caption = #35774#35745
+          TabOrder = 16
+        end
+        object btnSample6Print: TButton
+          Tag = 152
+          Left = 410
+          Top = 204
+          Width = 64
+          Height = 26
+          Caption = #25171#21360
+          TabOrder = 17
+        end
+        object chkTitle: TCheckBox
+          Left = 12
+          Top = 292
+          Width = 330
+          Height = 17
+          Caption = #39044#35272'/'#25171#21360#21069', '#29992#20195#30721#25913#20889#26631#39064#25991#26412#26694' Memo1:'
+          TabOrder = 18
+        end
+        object edtTitle: TEdit
+          Left = 12
+          Top = 314
+          Width = 300
+          Height = 23
+          TabOrder = 19
+          Text = #30001#31243#24207#36816#34892#26102#25913#20889#30340#26631#39064
+        end
+      end
+      object tsAdvanced: TTabSheet
+        Caption = #39640#32423#21151#33021
+        object lblOpenAny: TLabel
+          Left = 172
+          Top = 19
+          Width = 302
+          Height = 15
+          Caption = #36873#25321#20219#24847#27169#26495#25991#20214', '#39044#35272#25110#35774#35745'('#21487#29992#26469#27979#35797#20320#33258#24049#30340#27169#26495')'
+        end
+        object lblComposite: TLabel
+          Left = 172
+          Top = 63
+          Width = 179
+          Height = 15
+          Caption = #28436#31034'1+'#28436#31034'2 '#21512#24182#21040#19968#20010#39044#35272#31383#21475
+        end
+        object lblDatasets: TLabel
+          Left = 12
+          Top = 110
+          Width = 490
+          Height = 60
+          AutoSize = False
+          Caption = 
+            #25968#25454#38598#21517#31216'('#35774#35745#22120#37324#36873#29992'):'#13#10'  rmCustomer  rmOrder  rmOrderItem  rmProduct'#13#10' ' +
+            ' rmds1 rmds2 rmds4 rmds5 rmds6 rmds7 '
+        end
+        object btnOpenAny: TButton
+          Tag = 210
+          Left = 12
+          Top = 14
+          Width = 150
+          Height = 26
+          Caption = #25171#24320#20219#24847' .rmf ...'
+          TabOrder = 0
+        end
+        object btnComposite: TButton
+          Tag = 220
+          Left = 12
+          Top = 58
+          Width = 150
+          Height = 26
+          Caption = #22810#25253#34920#21512#24182#39044#35272
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

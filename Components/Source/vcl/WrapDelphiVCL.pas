@@ -71,6 +71,8 @@ uses
   WrapExtendGrids,
   WrapNoBorder,
   WrapPicShow,
-  WrapExtendButtons;
+  WrapExtendButtons,
+  WrapVcldbGo,
+  WrapReportMachine;
 
 end.

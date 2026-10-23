@@ -5,14 +5,12 @@ from glcl import *
 class Form1(Form):
 
     def __init__(self, owner):
+        self.AiDeepSeekChat1 = AiDeepSeekChat(self)
         self.Button2 = Button(self)
         self.Button1 = Button(self)
         self.Memo2 = Memo(self)
         self.Memo1 = Memo(self)
-        self.AiDeepSeekChat1 = AiDeepSeekChat(self)
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Unit1.pydfm"))
-        self.AiDeepSeekChat1.OnReceiveDataEnd = self.AiDeepSeekChat1ReceiveDataEnd
-        self.AiDeepSeekChat1.OnReceiveData = self.AiDeepSeekChat1ReceiveData
         self.Button2.OnClick = self.Button2Click
         self.Button1.OnClick = self.Button1Click
         # 也可以直接在对象检查器设置属性

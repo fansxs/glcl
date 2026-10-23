@@ -74,7 +74,7 @@ type
   end;
 const
 {$IFDEF MSWINDOWS}
-  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..8] of TPythonVersionProp =
     (
     (DllName: 'python38.dll'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'python39.dll'; RegVersion: '3.9'; APIVersion: 1013),
@@ -82,11 +82,12 @@ const
     (DllName: 'python311.dll'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'python312.dll'; RegVersion: '3.12'; APIVersion: 1013),
     (DllName: 'python313.dll'; RegVersion: '3.13'; APIVersion: 1013),
-    (DllName: 'python314.dll'; RegVersion: '3.14'; APIVersion: 1013)
+    (DllName: 'python314.dll'; RegVersion: '3.14'; APIVersion: 1013),
+    (DllName: 'python315.dll'; RegVersion: '3.15'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF _so_files}
-  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..8] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.so'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.so'; RegVersion: '3.9'; APIVersion: 1013),
@@ -94,11 +95,12 @@ const
     (DllName: 'libpython3.11.so'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'libpython3.12.so'; RegVersion: '3.12'; APIVersion: 1013),
     (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013),
-    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013)
+    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013),
+    (DllName: 'libpython3.15.so'; RegVersion: '3.15'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF DARWIN}
-  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..8] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.dylib'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.dylib'; RegVersion: '3.9'; APIVersion: 1013),
@@ -106,11 +108,12 @@ const
     (DllName: 'libpython3.11.dylib'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'libpython3.12.dylib'; RegVersion: '3.12'; APIVersion: 1013),
     (DllName: 'libpython3.13.dylib'; RegVersion: '3.13'; APIVersion: 1013),
-    (DllName: 'libpython3.14.dylib'; RegVersion: '3.14'; APIVersion: 1013)
+    (DllName: 'libpython3.14.dylib'; RegVersion: '3.14'; APIVersion: 1013),
+    (DllName: 'libpython3.15.dylib'; RegVersion: '3.15'; APIVersion: 1013)
     );
 {$ENDIF}
 {$IFDEF ANDROID}
-  PYTHON_KNOWN_VERSIONS: array[1..7] of TPythonVersionProp =
+  PYTHON_KNOWN_VERSIONS: array[1..8] of TPythonVersionProp =
     (
     (DllName: 'libpython3.8.so'; RegVersion: '3.8'; APIVersion: 1013),
     (DllName: 'libpython3.9.so'; RegVersion: '3.9'; APIVersion: 1013),
@@ -118,7 +121,8 @@ const
     (DllName: 'libpython3.11.so'; RegVersion: '3.11'; APIVersion: 1013),
     (DllName: 'libpython3.12.so'; RegVersion: '3.12'; APIVersion: 1013),
     (DllName: 'libpython3.13.so'; RegVersion: '3.13'; APIVersion: 1013),
-    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013)
+    (DllName: 'libpython3.14.so'; RegVersion: '3.14'; APIVersion: 1013),
+    (DllName: 'libpython3.15.so'; RegVersion: '3.15'; APIVersion: 1013)
     );
 {$ENDIF}
 

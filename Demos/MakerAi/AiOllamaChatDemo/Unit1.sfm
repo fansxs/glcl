@@ -2,8 +2,8 @@ object Form1: TForm
   Left = 0
   Top = 0
   Caption = 'TAiOllamaChatDemo'
-  ClientHeight = 450
-  ClientWidth = 645
+  ClientHeight = 451
+  ClientWidth = 647
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -43,35 +43,25 @@ object Form1: TForm
     TabOrder = 3
     OnClick = Button2Click
   end
-  object OllamaChat: TAiOllamaChat
+  object AiOllamaChat1: TAiOllamaChat
     ApiKey = '@OLLAMA_API_KEY'
-    Model = 'qwen2:7b'
-    Logprobs = False
-    Max_tokens = 300
-    N = 1
+    Model = 'gpt-oss:20b'
+    Max_tokens = 3000
     Response_format = tiaChatRfText
-    Seed = 0
-    Asynchronous = True
-    Temperature = 1.00000000000000000
-    Top_p = 1.00000000000000000
+    Asynchronous = False
+    K = 0
     Tool_choice = 'auto'
-    Tool_Active = False
     User = 'user'
-    InitialInstructions.Strings = (
-      'Eres un asistente muy '#40407'il y servicial')
-    Prompt_tokens = 0
+    SystemPrompt.Strings = (
+      'Eres un asistente muy ?til y servicial')
     Completion_tokens = 0
-    Total_tokens = 0
-    OnReceiveData = OllamaChatReceiveData
-    OnReceiveDataEnd = OllamaChatReceiveDataEnd
-    Url = 'http://192.168.1.33:11434/'
-    ResponseTimeOut = 350000
+    Url = 'http://localhost:11434/'
+    ResponseTimeOut = 120000
     Stream_Usage = False
-    NativeInputFiles = []
-    NativeOutputFiles = []
-    ChatMediaSupports = []
+    SanitizerActive = False
+    Temperature = 1.00000000000000000
     keep_alive = '1m'
     Left = 288
-    Top = 413
+    Top = 416
   end
 end

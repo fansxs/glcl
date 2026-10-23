@@ -1,0 +1,10 @@
+def btnParamAddClick(Sender): 
+def btnParamDeleteClick(Sender): 
+def btnParamModifyClick(Sender): 
+def btnParamQueryClick(Sender): 
+def btnRowAddClick(Sender): 
+def btnRowDeleteClick(Sender): 
+def btnRowModifyClick(Sender): 
+def btnRowQueryClick(Sender): 
+def Button1Click(Sender): 
+def Button3Click(Sender): 

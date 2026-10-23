@@ -1036,7 +1036,7 @@ WM_CTLCOLOREDIT: int
 WM_CTLCOLORLISTBOX: int
 WM_CTLCOLORBTN: int
 WM_CTLCOLORDLG: int
-WM_CTLCOLORSCROLLBAR=: int
+WM_CTLCOLORSCROLLBAR: int
 WM_CTLCOLORSTATIC: int
 WM_MOUSEFIRST: int
 WM_MOUSEMOVE: int
@@ -1140,7 +1140,7 @@ WM_ASKCBFORMATNAME: int
 WM_CHANGECBCHAIN: int
 WM_HSCROLLCLIPBOARD: int
 WM_QUERYNEWPALETTE: int
-WM_PALETTEISCHANGING=: int
+WM_PALETTEISCHANGING: int
 WM_PALETTECHANGED: int
 WM_HOTKEY: int
 WM_PRINT: int
@@ -2578,6 +2578,394 @@ fsBold: str
 fsItalic: str
 fsUnderline: str
 fsStrikeOut: str
+FILE_ATTRIBUTE_READONLY: int
+FILE_ATTRIBUTE_HIDDEN: int
+FILE_ATTRIBUTE_SYSTEM: int
+FILE_ATTRIBUTE_DIRECTORY: int
+FILE_ATTRIBUTE_ARCHIVE: int
+FILE_ATTRIBUTE_NORMAL: int
+FILE_ATTRIBUTE_TEMPORARY: int
+FILE_ATTRIBUTE_COMPRESSED: int
+FILE_ATTRIBUTE_OFFLINE: int
+DRIVE_UNKNOWN: int
+DRIVE_NO_ROOT_DIR: int
+DRIVE_REMOVABLE: int
+DRIVE_FIXED: int
+DRIVE_REMOTE: int
+DRIVE_CDROM: int
+DRIVE_RAMDISK: int
+PROCESS_TERMINATE: int
+PROCESS_QUERY_INFORMATION: int
+PROCESS_SET_QUOTA: int
+PROCESS_VM_READ: int
+PROCESS_VM_WRITE: int
+PROCESS_VM_OPERATION: int
+SYNCHRONIZE: int
+INFINITE: int
+WAIT_OBJECT_0: int
+WAIT_TIMEOUT: int
+WAIT_FAILED: int
+WAIT_ABANDONED: int
+CREATE_EVENT_INITIAL_SET: int
+CREATE_EVENT_MANUAL_RESET: int
+EVENT_MODIFY_STATE: int
+SEMAPHORE_MODIFY_STATE: int
+MB_ICONHAND: int
+MB_ICONQUESTION: int
+MB_ICONEXCLAMATION: int
+MB_ICONASTERISK: int
+GWL_WNDPROC: int
+GWL_HINSTANCE: int
+GWL_HWNDPARENT: int
+GWL_USERDATA: int
+GWL_EXSTYLE: int
+GWL_STYLE: int
+GWL_ID: int
+SM_CXSCREEN: int
+SM_CYSCREEN: int
+SM_CXFULLSCREEN: int
+SM_CYFULLSCREEN: int
+SM_CXICON: int
+SM_CYICON: int
+SM_CXCURSOR: int
+SM_CYCURSOR: int
+SM_CXSIZE: int
+SM_CYSIZE: int
+SM_CXMIN: int
+SM_CYMIN: int
+SM_CXMAXIMIZED: int
+SM_CYMAXIMIZED: int
+VK_LBUTTON: int
+VK_RBUTTON: int
+VK_MBUTTON: int
+VK_BACK: int
+VK_TAB: int
+VK_RETURN: int
+VK_SHIFT: int
+VK_CONTROL: int
+VK_MENU: int
+VK_PAUSE: int
+VK_CAPITAL: int
+VK_ESCAPE: int
+VK_SPACE: int
+VK_PRIOR: int
+VK_NEXT: int
+VK_END: int
+VK_HOME: int
+VK_LEFT: int
+VK_UP: int
+VK_RIGHT: int
+VK_DOWN: int
+VK_SNAPSHOT: int
+VK_INSERT: int
+VK_DELETE: int
+MOUSEEVENTF_MOVE: int
+MOUSEEVENTF_LEFTDOWN: int
+MOUSEEVENTF_LEFTUP: int
+MOUSEEVENTF_RIGHTDOWN: int
+MOUSEEVENTF_RIGHTUP: int
+MOUSEEVENTF_MIDDLEDOWN: int
+MOUSEEVENTF_MIDDLEUP: int
+MOUSEEVENTF_WHEEL: int
+MOUSEEVENTF_ABSOLUTE: int
+SW_HIDE: int
+SW_SHOWNORMAL: int
+SW_SHOWMINIMIZED: int
+SW_SHOWMAXIMIZED: int
+SW_SHOWNOACTIVATE: int
+SW_SHOW: int
+SW_MINIMIZE: int
+SW_SHOWMINNOACTIVE: int
+SW_SHOWNA: int
+SW_RESTORE: int
+SW_SHOWDEFAULT: int
+SW_FORCEMINIMIZE: int
+AW_HOR_POSITIVE: int
+AW_HOR_NEGATIVE: int
+AW_VER_POSITIVE: int
+AW_VER_NEGATIVE: int
+AW_CENTER: int
+AW_HIDE: int
+AW_ACTIVATE: int
+AW_SLIDE: int
+AW_BLEND: int
+FLASHW_STOP: int
+FLASHW_CAPTION: int
+FLASHW_TRAY: int
+FLASHW_ALL: int
+FLASHW_TIMER: int
+FLASHW_TIMERNOFG: int
+BST_CHECKED: int
+BST_UNCHECKED: int
+BST_INDETERMINATE: int
+MF_BYCOMMAND: int
+MF_BYPOSITION: int
+MF_ENABLED: int
+MF_GRAYED: int
+MF_DISABLED: int
+COLOR_SCROLLBAR: int
+COLOR_BACKGROUND: int
+COLOR_DESKTOP: int
+COLOR_ACTIVECAPTION: int
+COLOR_INACTIVECAPTION: int
+COLOR_MENU: int
+COLOR_WINDOW: int
+COLOR_WINDOWFRAME: int
+COLOR_MENUTEXT: int
+COLOR_WINDOWTEXT: int
+COLOR_CAPTIONTEXT: int
+COLOR_ACTIVEBORDER: int
+COLOR_INACTIVEBORDER: int
+COLOR_APPWORKSPACE: int
+COLOR_HIGHLIGHT: int
+COLOR_HIGHLIGHTTEXT: int
+COLOR_BTNFACE: int
+COLOR_BTNSHADOW: int
+COLOR_GRAYTEXT: int
+COLOR_BTNTEXT: int
+COLOR_INACTIVECAPTIONTEXT: int
+COLOR_BTNHIGHLIGHT: int
+BLACK_BRUSH: int
+DKGRAY_BRUSH: int
+GRAY_BRUSH: int
+HOLLOW_BRUSH: int
+LTGRAY_BRUSH: int
+NULL_BRUSH: int
+WHITE_BRUSH: int
+BLACK_PEN: int
+WHITE_PEN: int
+DC_PEN: int
+ANSI_FIXED_FONT: int
+ANSI_VAR_FONT: int
+DEFAULT_GUI_FONT: int
+OEM_FIXED_FONT: int
+SYSTEM_FONT: int
+SYSTEM_FIXED_FONT: int
+DEFAULT_PALETTE: int
+PS_SOLID: int
+PS_DASH: int
+PS_DOT: int
+PS_DASHDOT: int
+PS_DASHDOTDOT: int
+PS_NULL: int
+PS_INSIDEFRAME: int
+RGN_AND: int
+RGN_OR: int
+RGN_XOR: int
+RGN_DIFF: int
+RGN_COPY: int
+RGN_MIN: int
+RGN_MAX: int
+TRANSPARENT: int
+OPAQUE: int
+DRIVERVERSION: int
+TECHNOLOGY: int
+HORZSIZE: int
+VERTSIZE: int
+HORZRES: int
+VERTRES: int
+BITSPIXEL: int
+PLANES: int
+NUMBRUSHES: int
+NUMPENS: int
+NUMFONTS: int
+NUMCOLORS: int
+ASPECTX: int
+ASPECTY: int
+ASPECTXY: int
+LOGPIXELSX: int
+LOGPIXELSY: int
+SIZEPALETTE: int
+NUMRESERVED: int
+COLORRES: int
+RASTERCAPS: int
+CURVECAPS: int
+LINECAPS: int
+POLYGONALCAPS: int
+TEXTCAPS: int
+CLIPCAPS: int
+SHADEBLENDCAPS: int
+MM_TEXT: int
+MM_LOMETRIC: int
+MM_HIMETRIC: int
+MM_LOENGLISH: int
+MM_HIENGLISH: int
+MM_TWIPS: int
+MM_ISOTROPIC: int
+MM_ANISOTROPIC: int
+R2_BLACK: int
+R2_WHITE: int
+R2_NOP: int
+R2_NOT: int
+R2_COPYPEN: int
+R2_NOTCOPYPEN: int
+R2_MERGEPENNOT: int
+R2_MASKPENNOT: int
+R2_MERGENOTPEN: int
+R2_MASKNOTPEN: int
+R2_MERGEPEN: int
+R2_NOTMERGEPEN: int
+R2_MASKPEN: int
+R2_NOTMASKPEN: int
+R2_XORPEN: int
+R2_NOTXORPEN: int
+STRETCH_ANDSCANS: int
+STRETCH_ORSCANS: int
+STRETCH_DELETESCANS: int
+STRETCH_HALFTONE: int
+MB_ICONWARNING: int
+MB_ICONERROR: int
+MB_ICONINFORMATION: int
+MB_ICONSTOP: int
+MB_DEFBUTTON1: int
+MB_DEFBUTTON2: int
+MB_DEFBUTTON3: int
+MB_APPLMODAL: int
+MB_SYSTEMMODAL: int
+MB_TASKMODAL: int
+MB_HELP: int
+MB_SETFOREGROUND: int
+MB_DEFAULT_DESKTOP_ONLY: int
+KEY_ALL_ACCESS: int
+KEY_READ: int
+KEY_WRITE: int
+KEY_EXECUTE: int
+KEY_QUERY_VALUE: int
+KEY_SET_VALUE: int
+KEY_CREATE_SUB_KEY: int
+KEY_ENUMERATE_SUB_KEYS: int
+KEY_NOTIFY: int
+KEY_CREATE_LINK: int
+KEY_WOW64_64KEY: int
+KEY_WOW64_32KEY: int
+REG_OPTION_NON_VOLATILE: int
+REG_OPTION_VOLATILE: int
+REG_OPTION_BACKUP_RESTORE: int
+SC_MANAGER_CONNECT: int
+SC_MANAGER_CREATE_SERVICE: int
+SC_MANAGER_ENUMERATE_SERVICE: int
+SC_MANAGER_LOCK: int
+SC_MANAGER_QUERY_LOCK_STATUS: int
+SC_MANAGER_MODIFY_BOOT_CONFIG: int
+SC_MANAGER_ALL_ACCESS: int
+SERVICE_QUERY_CONFIG: int
+SERVICE_CHANGE_CONFIG: int
+SERVICE_QUERY_STATUS: int
+SERVICE_ENUMERATE_DEPENDENTS: int
+SERVICE_START: int
+SERVICE_STOP: int
+SERVICE_PAUSE_CONTINUE: int
+SERVICE_INTERROGATE: int
+SERVICE_ALL_ACCESS: int
+SERVICE_STOPPED: int
+SERVICE_START_PENDING: int
+SERVICE_STOP_PENDING: int
+SERVICE_RUNNING: int
+SERVICE_CONTINUE_PENDING: int
+SERVICE_PAUSE_PENDING: int
+SERVICE_PAUSED: int
+SERVICE_BOOT_START: int
+SERVICE_SYSTEM_START: int
+SERVICE_AUTO_START: int
+SERVICE_DEMAND_START: int
+SERVICE_DISABLED: int
+SERVICE_ERROR_IGNORE: int
+SERVICE_ERROR_NORMAL: int
+SERVICE_ERROR_SEVERE: int
+SERVICE_ERROR_CRITICAL: int
+SERVICE_CONTROL_STOP: int
+SERVICE_CONTROL_PAUSE: int
+SERVICE_CONTROL_CONTINUE: int
+SERVICE_CONTROL_INTERROGATE: int
+SERVICE_CONTROL_PARAMCHANGE: int
+SERVICE_CONTROL_SHUTDOWN: int
+SERVICE_CONTROL_PRESHUTDOWN: int
+SND_SYNC: int
+SND_ASYNC: int
+SND_NODEFAULT: int
+SND_MEMORY: int
+SND_LOOP: int
+SND_NOSTOP: int
+SND_NOWAIT: int
+SND_FILENAME: int
+SND_RESOURCE: int
+SND_PURGE: int
+SND_APPLICATION: int
+SND_ALIAS: int
+CSIDL_DESKTOP: int
+CSIDL_INTERNET: int
+CSIDL_PROGRAMS: int
+CSIDL_CONTROLS: int
+CSIDL_PRINTERS: int
+CSIDL_PERSONAL: int
+CSIDL_FAVORITES: int
+CSIDL_STARTUP: int
+CSIDL_RECENT: int
+CSIDL_SENDTO: int
+CSIDL_BITBUCKET: int
+CSIDL_STARTMENU: int
+CSIDL_MYDOCUMENTS: int
+CSIDL_MYMUSIC: int
+CSIDL_MYVIDEO: int
+CSIDL_DESKTOPDIRECTORY: int
+CSIDL_DRIVES: int
+CSIDL_NETWORK: int
+CSIDL_FONTS: int
+CSIDL_TEMPLATES: int
+CSIDL_COMMON_STARTMENU: int
+CSIDL_COMMON_PROGRAMS: int
+CSIDL_COMMON_STARTUP: int
+CSIDL_COMMON_DESKTOPDIRECTORY: int
+CSIDL_APPDATA: int
+CSIDL_PRINTHOOD: int
+CSIDL_LOCAL_APPDATA: int
+CSIDL_ALTSTARTUP: int
+CSIDL_COMMON_ALTSTARTUP: int
+CSIDL_COMMON_FAVORITES: int
+CSIDL_INTERNET_CACHE: int
+CSIDL_COOKIES: int
+CSIDL_HISTORY: int
+CSIDL_COMMON_APPDATA: int
+CSIDL_WINDOWS: int
+CSIDL_SYSTEM: int
+CSIDL_PROGRAM_FILES: int
+CSIDL_MYPICTURES: int
+CSIDL_PROFILE: int
+CSIDL_SYSTEMX86: int
+CSIDL_PROGRAM_FILESX86: int
+CSIDL_PROGRAM_FILES_COMMON: int
+CSIDL_PROGRAM_FILES_COMMONX86: int
+CSIDL_COMMON_TEMPLATES: int
+CSIDL_COMMON_DOCUMENTS: int
+CSIDL_COMMON_ADMINTOOLS: int
+CSIDL_ADMINTOOLS: int
+SHERB_NOCONFIRMATION: int
+SHERB_NOPROGRESSUI: int
+SHERB_NOSOUND: int
+STILL_ACTIVE: int
+IDLE_PRIORITY_CLASS: int
+BELOW_NORMAL_PRIORITY_CLASS: int
+NORMAL_PRIORITY_CLASS: int
+ABOVE_NORMAL_PRIORITY_CLASS: int
+HIGH_PRIORITY_CLASS: int
+REALTIME_PRIORITY_CLASS: int
+INVALID_FILE_SIZE: int
+EWX_LOGOFF: int
+EWX_SHUTDOWN: int
+EWX_REBOOT: int
+EWX_POWEROFF: int
+EWX_FORCE: int
+EWX_FORCEIFHUNG: int
+ckNone: str
+ckCheckBox: str
+ckCombobox: str
+ckOption: str
+pkString: str
+pkInteger: str
+pkBoolean: str
+pkDateTime: str
+pkDate: str
+pkTime: str
 '''
 
 class Application(Component):
@@ -2887,7 +3275,7 @@ class Application(Component):
         当操作系统的设置发生变化，例如主题、颜色方案、分辨率、字体、输入法、区域设置等发生变化时，Windows 会向所有正在运行的应用程序广播一个消息。这是一个WM_SETTINGCHANGE 消息，表示系统设置已更改。
         Application.OnSettingChange 事件允许你在应用程序中捕获并处理这个系统设置更改事件。当系统设置发生变化时，Application.OnSettingChange 事件会被触发，在这个事件中，你可以根据需要调整应用程序的界面或其他设置，以适应新的系统设置。
         例如，如果系统主题更改，你可能需要重新绘制界面元素以匹配新的主题；如果输入法设置发生变化，你可能需要调整输入法相关的逻辑等。"""
-    Handle: Any
+    Handle: int
     """Application.Handle 是一个整数值，表示当前应用程序的主窗口句柄（handle）。主窗口句柄是应用程序顶层窗口的唯一标识符，用于与操作系统进行交互，例如接收消息、绘制窗口等。
         主窗口句柄在应用程序启动时由 PythonStudio 运行时库自动生成，并在整个应用程序的生命周期中保持不变。它是应用程序与操作系统交互的主要通道之一。
         通过 Application.Handle，你可以获取当前应用程序的主窗口句柄，然后可以使用该句柄执行各种与窗口相关的操作，例如发送消息、设置窗口属性、获取窗口信息等。
@@ -2905,41 +3293,41 @@ class Application(Component):
         具体来说，当应用程序启动时，Create 事件被触发，允许开发人员在这个事件中执行一些初始化操作，例如设置全局变量、创建全局对象、初始化应用程序配置等。这样可以确保在应用程序的其他部分开始执行之前，必要的初始化工作已经完成。
         通常情况下，Create 事件用于执行应用程序级别的初始化，而不是窗体级别的初始化。例如，你可以在 Create 事件中设置全局的异常处理程序、初始化日志记录器、配置全局的数据库连接等。
         总之，Create 事件是 Application 对象的一个事件，用于在应用程序启动时执行初始化操作，确保应用程序在正常运行之前已经完成必要的准备工作。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Disposes of an instance of a TBasicAction object.
         Destroy 是 Application 对象的一个事件，用于在应用程序关闭时执行清理和释放资源的操作。
         具体来说，当应用程序关闭时，Destroy 事件被触发，允许开发人员在这个事件中执行一些清理操作，例如释放全局对象、关闭数据库连接、保存应用程序状态等。这样可以确保在应用程序关闭之前，必要的清理工作已经完成，避免资源泄漏和未处理的状态。
         通常情况下，Destroy 事件用于执行应用程序级别的清理工作，而不是窗体级别的清理。例如，你可以在 Destroy 事件中释放全局的对象、关闭全局的文件流、保存应用程序的配置等。
         总之，Destroy 事件是 Application 对象的一个事件，用于在应用程序关闭时执行清理和释放资源的操作，确保应用程序在退出时处于一个良好的状态。"""
-    def ActivateHint(self, *args, **kwargs) -> Any:
+    def ActivateHint(self, CursorPos: Any) -> None:
         """Application.ActivateHint 属性用于控制是否激活鼠标悬停提示（Hint）功能。当 ActivateHint 属性设置为 True 时，鼠标悬停在控件上时会显示提示信息，设置为 False 则禁用提示信息的显示。"""
-    def ApplyBiDiKeyboardLayout(self, *args, **kwargs) -> Any:
+    def ApplyBiDiKeyboardLayout(self) -> None:
         """ApplyBiDiKeyboardLayout是TApplication类的一个方法，用于将应用程序的键盘布局设置为双向（BiDi）模式。BiDi模式是为了支持双向文本（如阿拉伯文、希伯来文等）而设计的一种键盘布局模式。
         在双向文本中，文本的书写方向不仅可以是从左到右（LTR），还可以是从右到左（RTL）。为了正确处理双向文本输入，应用程序需要正确地配置键盘布局，以便用户在输入时能够方便地切换文本的书写方向。
         ApplyBiDiKeyboardLayout方法的作用就是根据当前的文本显示方向自动设置应用程序的键盘布局，以确保用户在输入双向文本时能够顺利切换书写方向，从而提升应用程序的国际化和本地化水平。
         总之，ApplyBiDiKeyboardLayout方法是用于在PythonStudio应用程序中自动设置双向文本输入所需的键盘布局的方法，以提高应用程序对多语言和多文本方向的支持。"""
-    def ApplyNonBiDiKeyboardLayout(self, *args, **kwargs) -> Any:
+    def ApplyNonBiDiKeyboardLayout(self) -> None:
         """Application的ApplyNonBiDiKeyboardLayout方法用于将应用程序的键盘布局设置为非双向文本（Non-BiDi）模式。非双向文本模式是指应用程序不需要支持双向文本（如阿拉伯文、希伯来文等）输入的情况，只需支持单一方向的文本输入，例如从左到右（LTR）的文本。
         通过调用ApplyNonBiDiKeyboardLayout方法，应用程序可以确保键盘布局适合处理单一方向的文本输入，从而避免在不需要双向文本支持的情况下出现意外的文本输入方向切换。
         这个方法通常用于确保应用程序在不需要双向文本支持的情况下能够正确处理文本输入，提高应用程序的稳定性和用户体验。
         总之，ApplyNonBiDiKeyboardLayout方法是用于将应用程序的键盘布局设置为非双向文本模式的方法，以确保在不需要双向文本支持的情况下正确处理文本输入。"""
-    def AddPopupForm(self, *args, **kwargs) -> int:
+    def AddPopupForm(self, PopupForm: Any) -> int:
         """Application的AddPopupForm方法用于向应用程序添加一个弹出窗口（Popup Form）。这个方法的作用是将一个窗体添加到应用程序的弹出窗口列表中。当应用程序处于多文档界面（MDI）模式时，这个方法用于将一个MDI子窗体添加到MDI父窗体的子窗体列表中。这样一来，用户就可以在应用程序中方便地管理多个窗体。"""
-    def BringToFront(self, *args, **kwargs) -> Any:
+    def BringToFront(self) -> None:
         """Application的BringToFront方法用于将应用程序主窗口置于其他窗口的前面，使其成为焦点窗口。这意味着调用BringToFront方法后，应用程序的主窗口将显示在其他窗口的前面，并且接收用户的输入事件。
         通常情况下，当应用程序的主窗口被其他窗口遮挡或失去焦点时，可以调用BringToFront方法来确保主窗口重新获得焦点，并且显示在其他窗口的前面，以便用户能够与应用程序进行交互。
         这个方法对于确保用户能够及时看到并与应用程序的主界面进行交互非常有用，特别是在需要及时响应用户输入的情况下。
         总之，BringToFront方法是用于将应用程序主窗口置于其他窗口前面的方法，以确保用户能够与应用程序进行交互。"""
-    def ControlDestroyed(self, *args, **kwargs) -> Any:
+    def ControlDestroyed(self) -> None:
         """Application.ControlDestroyed 是一个事件，用于指定当应用程序中的控件被销毁时所触发的处理程序。
         当一个控件被销毁时，它的资源会被释放，包括内存和句柄等。Application.ControlDestroyed 事件允许你在控件被销毁之前或之后执行一些特定的逻辑或操作。
         通过注册 Application.ControlDestroyed 事件处理程序，你可以捕获控件销毁的时机，并在其中执行一些必要的清理或处理操作，例如释放与该控件相关的资源、更新应用程序状态等。"""
-    def CancelHint(self, *args, **kwargs) -> Any:
+    def CancelHint(self) -> None:
         """Application的CancelHint方法用于取消当前显示的提示（Hint）。提示是一种在用户将鼠标悬停在控件上时显示的简短描述，通常用于提供关于控件功能或操作的帮助信息。
         当调用CancelHint方法时，当前显示的提示将会立即被取消，即使鼠标仍然悬停在控件上。这可以用于在某些情况下，例如用户操作发生变化或需要立即清除提示时。
         CancelHint方法是Application类的一个实例方法，因此可以在整个应用程序范围内调用，而不限于特定的窗口或控件。
         总之，CancelHint方法用于在PythonStudio应用程序中取消当前显示的提示，以便根据需要立即清除提示信息。"""
-    def CreateForm(self, *args, **kwargs) -> Any:
+    def CreateForm(self, InstanceClass: Any, Reference: Any) -> None:
         """Application的CreateForm方法用于创建并显示一个窗体（Form）对象。这个方法通常在应用程序的启动过程中被调用，用于创建主窗体或其他需要在应用程序运行期间显示的窗体。
         CreateForm方法需要传入一个窗体类的引用作为参数，然后它会创建该窗体的一个实例，并将其显示在屏幕上。这个方法负责窗体对象的创建、分配内存以及设置窗体的一些基本属性。
         通常情况下，CreateForm方法在应用程序的主程序文件（通常是.dpr文件）中被调用，用于创建应用程序的主窗体。例如：
@@ -2947,74 +3335,74 @@ class Application(Component):
         上面的代码将创建一个名为MainForm的窗体对象，并将其显示在屏幕上。TMainForm是MainForm窗体类的类型，MainForm是该窗体对象的变量名。
         通过调用CreateForm方法，可以方便地在PythonStudio应用程序中创建和管理窗体对象，从而构建出丰富的用户界面。
         总之，CreateForm方法用于在PythonStudio应用程序中创建并显示窗体对象，是构建用户界面的重要方法之一。"""
-    def CreateHandle(self, *args, **kwargs) -> Any:
+    def CreateHandle(self) -> None:
         """Application的CreateHandle方法用于创建应用程序的主窗口句柄（Handle）。窗口句柄是操作系统分配给窗口的唯一标识符，用于在系统中唯一标识和管理窗口。
         CreateHandle方法通常在应用程序启动时被调用，它确保应用程序的主窗口已经具有一个有效的窗口句柄。在创建主窗口之前或在访问主窗口句柄之前，调用CreateHandle方法可以确保主窗口已经被正确地创建并分配了一个句柄。
         在一些特定的情况下，可能需要在应用程序的生命周期中手动调用CreateHandle方法，以确保主窗口句柄的有效性。例如，在某些多线程应用程序中，可能需要在不同的线程中访问主窗口句柄，此时需要确保主窗口句柄已经被正确地创建。
         总之，CreateHandle方法用于在PythonStudio应用程序中创建应用程序的主窗口句柄，确保主窗口句柄的有效性和可用性。"""
-    def DoApplicationIdle(self, *args, **kwargs) -> Any:
+    def DoApplicationIdle(self) -> None:
         """Application的DoApplicationIdle方法用于处理应用程序处于空闲状态时的事件。在应用程序没有其他活动任务需要处理时，例如没有鼠标点击、键盘输入或其他事件需要响应时，就会触发空闲状态。
         DoApplicationIdle方法会在应用程序处于空闲状态时被调用，它允许应用程序执行一些额外的任务，例如更新界面、执行后台任务或进行资源回收等操作。通过在空闲状态时执行一些任务，可以提高应用程序的性能和响应性。
         开发人员可以通过重写Application类的DoApplicationIdle方法，来自定义在应用程序空闲时需要执行的任务。例如，可以在DoApplicationIdle方法中执行一些周期性的数据更新操作，或者执行一些需要在后台完成的任务，以提高用户体验或优化应用程序性能。
         总之，DoApplicationIdle方法用于在PythonStudio应用程序处于空闲状态时执行额外的任务，以提高应用程序的性能和响应性。"""
-    def ExecuteAction(self, *args, **kwargs) -> bool:
+    def ExecuteAction(self, Action: Any) -> bool:
         """Application的ExecuteAction方法用于执行与特定动作相关联的操作。动作（Action）是一个很重要的概念，在PythonStudio的应用程序中，动作通常代表用户界面上的一个操作，例如点击按钮、选择菜单项等。
         ExecuteAction方法允许开发人员以编程方式触发特定动作所代表的操作。通过调用ExecuteAction方法，并传入相应的动作对象作为参数，可以实现执行与该动作相关联的操作。这可以用于在某些情况下，例如在代码中响应特定的条件或事件，执行与动作相关的操作，而不需要直接操作用户界面上的控件。
         通常情况下，动作是通过在窗体上放置TActionList组件来创建和管理的。TActionList组件允许开发人员在设计时定义一组动作，并将这些动作与用户界面上的控件（例如按钮、菜单项等）关联起来。然后，可以在代码中通过调用ExecuteAction方法来触发这些动作所代表的操作。
         总之，ExecuteAction方法用于在PythonStudio应用程序中执行与特定动作相关联的操作，是通过编程方式响应用户界面上动作的一种方式。"""
-    def HandleException(self, *args, **kwargs) -> Any:
+    def HandleException(self, Sender: Any) -> None:
         """Application的HandleException方法用于处理应用程序中未被捕获的异常。当应用程序运行时发生未被捕获的异常时，通常会导致程序崩溃并显示标准的异常对话框，提示用户发生了错误并终止应用程序的执行。
         HandleException方法允许开发人员自定义异常处理的行为。通过重写Application类的HandleException方法，开发人员可以捕获并处理应用程序中的未被捕获的异常，而不是让它们导致应用程序崩溃。
         通过自定义HandleException方法，开发人员可以执行一些额外的操作，例如记录异常信息、向用户显示自定义的错误消息、尝试修复异常情况等。这样可以提高应用程序的健壮性和用户体验，同时更好地帮助开发人员调试和解决应用程序中的问题。
         总之，HandleException方法用于在PythonStudio应用程序中处理未被捕获的异常，允许开发人员自定义异常处理的行为，提高应用程序的健壮性和用户体验。"""
-    def HandleMessage(self, *args, **kwargs) -> Any:
+    def HandleMessage(self) -> None:
         """Application的HandleMessage方法是一个重要的消息处理器。它用于处理由操作系统发送给应用程序的消息。
         PythonStudio应用程序是事件驱动的，它们通过处理消息来响应用户的交互和系统事件。HandleMessage方法在应用程序的主消息循环中起到关键作用，它负责接收和分发消息给适当的处理程序。这些消息可以包括用户输入、窗口事件、定时器事件等。
         HandleMessage方法是通过轮询消息队列来实现的。当操作系统有新的消息发送给应用程序时，HandleMessage方法会接收并处理这些消息，然后将它们分发给相应的窗口或控件处理。这样，应用程序就可以响应用户的操作和系统事件，并进行相应的处理。
         开发人员通常不需要直接调用HandleMessage方法，因为它由应用程序框架自动管理。然而，在某些情况下，例如在多线程应用程序中，开发人员可能需要手动调用HandleMessage方法来处理消息队列中的未处理消息。
         总之，HandleMessage方法是PythonStudio应用程序中用于处理操作系统消息的关键方法，它负责接收和分发消息，使应用程序能够响应用户的操作和系统事件。"""
-    def HelpCommand(self, *args, **kwargs) -> bool:
+    def HelpCommand(self, Command: int, Data: int) -> bool:
         """Application的HelpCommand方法用于向应用程序发送帮助命令。这个方法通常用于请求显示帮助文档或执行其他与帮助相关的操作。
         HelpCommand方法接受一个整数参数，该参数指定要执行的帮助命令。具体的命令值可以根据应用程序的需求和帮助系统的实现而有所不同，但通常情况下，它们用于请求显示特定帮助主题、显示帮助索引、执行搜索等操作。
         通过调用HelpCommand方法，开发人员可以在应用程序中实现帮助功能的自定义行为。例如，在用户点击帮助菜单项或按下帮助快捷键时，可以调用HelpCommand方法来请求显示相应的帮助内容。
         总之，HelpCommand方法是PythonStudio应用程序中用于执行帮助相关操作的方法，它允许开发人员通过编程方式请求显示帮助文档或执行其他帮助功能。"""
-    def HelpContext(self, *args, **kwargs) -> bool:
+    def HelpContext(self, Context: int) -> bool:
         """Application的HelpContext属性用于设置或获取当前应用程序的帮助上下文标识符。帮助上下文标识符是一个整数值，用于唯一标识帮助系统中的特定主题或页面。
         当用户请求帮助时（例如点击帮助菜单项或按下帮助快捷键），应用程序可以使用HelpContext属性来指定应该显示哪个帮助主题或页面。通过将HelpContext属性设置为相应帮助主题的标识符，应用程序可以确保用户获得与当前操作或上下文相关的帮助信息。
         开发人员可以通过两种方式使用HelpContext属性：
         在设计时设置帮助上下文标识符： 在PythonStudio的可视化设计器中，可以为窗体或控件设置HelpContext属性，以指定与之相关联的帮助主题。这样，在运行时，当用户请求帮助时，应用程序将根据相应控件或窗体的HelpContext属性值来显示帮助内容。
         在运行时动态设置帮助上下文标识符： 在代码中，开发人员可以通过直接修改Application.HelpContext属性来动态设置当前应用程序的帮助上下文。这种方式可以根据应用程序的逻辑和用户的操作动态地确定要显示的帮助内容。
         总之，HelpContext属性是PythonStudio应用程序中用于设置和获取当前帮助上下文标识符的属性，它允许开发人员根据需要指定要显示的帮助主题或页面，从而为用户提供相关的帮助信息。"""
-    def HelpJump(self, *args, **kwargs) -> bool:
+    def HelpJump(self, JumpID: str) -> bool:
         """Application 的 HelpJump 方法用于向帮助系统发出跳转命令，将用户引导至指定的帮助主题或页面。
         具体来说，HelpJump 方法允许开发人员在应用程序中根据需要动态地引导用户到帮助系统中的特定主题或页面。这可以通过指定帮助系统中的帮助上下文标识符（context identifier）来实现。
         帮助上下文标识符是一个整数值，用于唯一标识帮助系统中的特定主题或页面。通过调用 HelpJump 方法并传递相应的帮助上下文标识符作为参数，应用程序可以请求帮助系统显示与该标识符相关联的帮助内容。
         通常情况下，HelpJump 方法会在用户请求帮助时（例如点击帮助菜单项或按下帮助快捷键时）被调用，以便将用户引导至与当前操作或上下文相关的帮助内容。
         总之，HelpJump 方法是 PythonStudio 应用程序中用于向帮助系统发出跳转命令的方法，它允许开发人员根据需要将用户引导至帮助系统中的特定主题或页面，以提供相关的帮助信息。"""
-    def HelpKeyword(self, *args, **kwargs) -> bool:
+    def HelpKeyword(self, Keyword: str) -> bool:
         """Application 的 HelpKeyword 属性用于设置或获取当前应用程序的帮助关键字（Help Keyword）。帮助关键字是一个字符串，用于标识帮助系统中的特定主题或页面。
         当用户请求帮助时（例如点击帮助菜单项或按下帮助快捷键），应用程序可以使用 HelpKeyword 属性来指定应该显示哪个帮助主题或页面。通过将 HelpKeyword 属性设置为相应的帮助关键字，应用程序可以确保用户获得与当前操作或上下文相关的帮助信息。
         开发人员可以通过两种方式使用 HelpKeyword 属性：
         在设计时设置帮助关键字： 在 PythonStudio 的可视化设计器中，可以为窗体或控件设置 HelpKeyword 属性，以指定与之相关联的帮助主题。这样，在运行时，当用户请求帮助时，应用程序将根据相应控件或窗体的 HelpKeyword 属性值来显示帮助内容。
         在运行时动态设置帮助关键字： 在代码中，开发人员可以通过直接修改 Application.HelpKeyword 属性来动态设置当前应用程序的帮助关键字。这种方式可以根据应用程序的逻辑和用户的操作动态地确定要显示的帮助内容。
         总之，HelpKeyword 属性是 PythonStudio 应用程序中用于设置和获取当前帮助关键字的属性，它允许开发人员根据需要指定要显示的帮助主题或页面，从而为用户提供相关的帮助信息。"""
-    def HelpShowTableOfContents(self, *args, **kwargs) -> bool:
+    def HelpShowTableOfContents(self) -> bool:
         """Application 的 HelpShowTableOfContents 方法用于显示帮助系统中的目录（Table of Contents）。
         当调用 HelpShowTableOfContents 方法时，帮助系统将会显示应用程序的帮助内容的目录，通常以树形结构展示，用户可以通过该目录浏览和查找应用程序的帮助主题。
         通常情况下，HelpShowTableOfContents 方法会在用户请求帮助时（例如点击帮助菜单项中的“显示目录”选项），或者在应用程序中提供了一个显示帮助目录的按钮时被调用。
         这个方法提供了一种方便的方式让用户快速浏览应用程序的帮助内容，以便找到他们感兴趣的主题或页面。
         总之，HelpShowTableOfContents 方法是 PythonStudio 应用程序中用于显示帮助系统目录的方法，它允许用户浏览和查找应用程序的帮助内容。"""
-    def HideHint(self, *args, **kwargs) -> Any:
+    def HideHint(self) -> None:
         """Application 的 HideHint 方法用于隐藏当前正在显示的提示（hint）。提示通常是在用户将鼠标悬停在控件上时显示的小窗口，用于显示与该控件相关的额外信息或说明。
         调用 HideHint 方法会立即隐藏当前正在显示的提示窗口，无论该提示窗口是哪个控件触发的。这可以用于在某些情况下，例如用户执行了某个操作后不再需要显示提示时，或者在特定事件发生时需要强制隐藏提示。
         通常情况下，HideHint 方法在处理用户输入事件或其他与控件交互的事件时被调用，以确保在某些情况下隐藏提示，以提供更好的用户体验。
         总之，HideHint 方法是 PythonStudio 应用程序中用于立即隐藏当前显示的提示窗口的方法，它允许开发人员在需要时控制提示的显示行为，以提供更好的用户体验。"""
-    def HintMouseMessage(self, *args, **kwargs) -> Any:
+    def HintMouseMessage(self, Control: Any, Message: Any) -> bool:
         """Application 的 HintMouseMessage 属性用于指定提示（hint）的触发消息。
         提示是当用户将鼠标悬停在控件上时显示的小窗口，通常用于显示与该控件相关的额外信息或说明。HintMouseMessage 属性指定了哪个消息将被视为触发提示的消息。默认情况下，它通常是 WM_MOUSEMOVE，表示当鼠标移动时触发提示。
         通过更改 HintMouseMessage 属性，开发人员可以指定其他消息来触发提示，例如 WM_MOUSEHOVER 或其他自定义消息。这使开发人员能够根据应用程序的需求来自定义提示的触发行为。
         总之，HintMouseMessage 属性是 PythonStudio 应用程序中用于指定提示触发消息的属性，允许开发人员根据应用程序的需求来自定义提示的触发行为。"""
-    def HookMainWindow(self, *args, **kwargs) -> Any:
+    def HookMainWindow(self, Hook: Any) -> bool:
         """Application 的 HookMainWindow 方法用于将一个窗口钩子（window hook）安装到应用程序的主窗口上。
         窗口钩子是一种机制，允许应用程序在其他窗口处理消息之前或之后拦截和处理这些消息。通过调用 HookMainWindow 方法并传递一个窗口过程函数，开发人员可以安装一个钩子函数到应用程序的主窗口，以便拦截和处理主窗口的消息。
         安装窗口钩子可以用于实现各种功能，例如：
@@ -3023,13 +3411,13 @@ class Application(Component):
         在特定消息发生时执行额外的操作，例如在窗口大小变化时调整其他界面元素的位置。
         需要注意的是，使用窗口钩子可能会影响应用程序的性能和稳定性，因此应该谨慎使用，并确保钩子函数的实现正确且高效。
         总之，HookMainWindow 方法是 PythonStudio 应用程序中用于安装窗口钩子到主窗口的方法，允许开发人员拦截和处理主窗口的消息，以实现各种功能需求。"""
-    def HookSynchronizeWakeup(self, *args, **kwargs) -> Any:
+    def HookSynchronizeWakeup(self, SyncProc: Any) -> None:
         """Application 的 HookSynchronizeWakeup 方法用于安装一个钩子函数，用于在调用 TThread.Synchronize 方法时唤醒线程。
         TThread.Synchronize 方法用于在主线程上执行一个委托（delegate），通常用于在工作线程中执行长时间运行的任务后，将结果传递给主线程更新用户界面。然而，在某些情况下，可能需要在主线程上执行的任务比较频繁，而 TThread.Synchronize 方法会在每次调用时都唤醒主线程，这可能会产生性能开销。
         通过调用 HookSynchronizeWakeup 方法并传递一个钩子函数，开发人员可以安装一个钩子函数，以在调用 TThread.Synchronize 方法时唤醒主线程时进行自定义处理。这允许开发人员对主线程唤醒进行优化或自定义处理，以满足特定需求。
         需要注意的是，HookSynchronizeWakeup 方法的使用需要谨慎，因为对线程同步的修改可能会影响应用程序的稳定性和性能。因此，应该在确实有需要并且清楚其影响的情况下使用该方法。
         总之，HookSynchronizeWakeup 方法是 PythonStudio 应用程序中用于安装一个钩子函数，以在调用 TThread.Synchronize 方法时自定义处理主线程唤醒的方法。"""
-    def Initialize(self, *args, **kwargs) -> Any:
+    def Initialize(self) -> None:
         """Application 的 Initialize 方法是应用程序初始化的一部分，它用于执行应用程序的一些初始化操作。
         具体来说，Initialize 方法通常用于以下目的：
         初始化全局变量和对象：在应用程序启动时，可能需要初始化一些全局变量、对象或设置一些全局参数。Initialize 方法提供了一个适当的地方来执行这些初始化操作。
@@ -3038,7 +3426,7 @@ class Application(Component):
         注册组件或服务：在 Initialize 方法中，可以注册一些组件或服务，以确保它们在整个应用程序的生命周期内都可用。
         通常情况下，Initialize 方法是在应用程序启动时自动调用的，它是应用程序生命周期中的第一个被调用的方法之一。开发人员可以重写这个方法，并在其中添加自己的初始化代码，以满足应用程序的特定需求。
         总之，Initialize 方法是 PythonStudio 应用程序中用于执行应用程序初始化操作的方法，通常用于初始化全局变量、设置应用程序属性、执行特定任务等。"""
-    def IsRightToLeft(self, *args, **kwargs) -> bool:
+    def IsRightToLeft(self) -> bool:
         """Application 的 IsRightToLeft 属性用于指示当前应用程序的界面布局是否采用从右到左的书写方向，例如阿拉伯语、希伯来语等。这个属性通常用于处理多语言界面或支持从右到左书写的应用程序。
         具体来说，IsRightToLeft 属性的作用是：
         确定界面布局方向：通过检查 IsRightToLeft 属性，可以确定当前应用程序的界面布局是从左到右还是从右到左。这对于处理不同语言和文化环境下的界面布局非常重要。
@@ -3046,7 +3434,7 @@ class Application(Component):
         影响图形和图标的显示：在从右到左的布局下，图形和图标的显示方式可能会有所调整，以适应不同的书写方向和语言。
         影响文本显示和输入：对于支持从右到左书写的文本，IsRightToLeft 属性的设置也会影响文本的显示和输入方式。
         总之，IsRightToLeft 属性在 PythonStudio 中用于指示当前应用程序的界面布局是否采用从右到左的书写方向，它影响界面的排列、对齐、图形显示以及文本输入和显示方式。"""
-    def Minimize(self, *args, **kwargs) -> Any:
+    def Minimize(self) -> None:
         """Application 的 Minimize 方法用于将当前应用程序的主窗口最小化到任务栏，即将应用程序的窗口图标化显示，从而最小化其占用的屏幕空间。
         具体来说，Minimize 方法的作用包括：
         最小化应用程序窗口：调用 Minimize 方法将导致当前应用程序的主窗口被最小化，并显示在任务栏上。这使用户可以轻松地切换到其他应用程序或窗口而不关闭当前应用程序。
@@ -3054,7 +3442,7 @@ class Application(Component):
         提供用户体验：通过允许用户最小化应用程序，用户可以方便地管理多个同时运行的应用程序，从而提高了用户体验。
         响应窗口管理命令：将应用程序最小化通常是响应用户操作或系统事件的一部分，例如用户点击最小化按钮或系统需要释放资源以提高性能。
         总之，Minimize 方法是 PythonStudio 中 Application 对象的一个方法，用于将当前应用程序的主窗口最小化到任务栏，以提供更好的用户体验和系统性能。"""
-    def ModalStarted(self, *args, **kwargs) -> Any:
+    def ModalStarted(self) -> None:
         """Application 的 ModalStarted 事件是一个事件，当模态对话框或窗口开始显示时触发。模态对话框是一种阻塞用户对主窗口以外的其他窗口的访问，直到对话框被关闭。
         具体来说，ModalStarted 事件的作用包括：
         通知应用程序模态对话框的开始：当模态对话框显示时，ModalStarted 事件会触发，向应用程序发送一个信号，表明模态对话框已经开始显示。
@@ -3062,7 +3450,7 @@ class Application(Component):
         提供用户反馈或响应：应用程序可以利用 ModalStarted 事件来提供用户反馈，例如显示进度条或状态信息，以指示某个操作正在进行中。
         定制模态对话框的行为：通过处理 ModalStarted 事件，开发人员可以定制模态对话框的行为，例如在对话框显示之前执行自定义验证或设置操作。
         总之，ModalStarted 事件是 PythonStudio 中 Application 对象的一个事件，用于通知应用程序模态对话框的开始，并允许应用程序执行特定的操作或提供用户反馈。"""
-    def ModalFinished(self, *args, **kwargs) -> Any:
+    def ModalFinished(self) -> None:
         """Application 的 ModalFinished 事件是一个事件，当模态对话框或窗口关闭时触发。模态对话框是一种阻塞用户对主窗口以外的其他窗口的访问，直到对话框被关闭。
         具体来说，ModalFinished 事件的作用包括：
         通知应用程序模态对话框的结束：当模态对话框关闭时，ModalFinished 事件会触发，向应用程序发送一个信号，表明模态对话框已经结束。
@@ -3070,7 +3458,7 @@ class Application(Component):
         处理对话框返回值：在模态对话框关闭时，应用程序可能需要处理对话框返回的值或结果。ModalFinished 事件提供了一个处理这些返回值的机会。
         更新界面状态：模态对话框关闭后，可能需要更新应用程序的界面状态或重新显示其他窗口。ModalFinished 事件可以用于触发这些更新操作。
         总之，ModalFinished 事件是 PythonStudio 中 Application 对象的一个事件，用于通知应用程序模态对话框的结束，并允许应用程序执行特定的操作或处理对话框返回的值。"""
-    def NormalizeAllTopMosts(self, *args, **kwargs) -> Any:
+    def NormalizeAllTopMosts(self) -> None:
         """Application 的 NormalizeAllTopMosts 方法用于将所有置顶窗口恢复为正常状态，以解决可能由于多个窗口都被设置为置顶而导致的窗口叠加或覆盖的问题。
         具体来说，NormalizeAllTopMosts 方法的作用包括：
         恢复窗口的 Z 轴顺序：当多个窗口都被设置为置顶时，可能会导致窗口之间的叠加或覆盖。调用 NormalizeAllTopMosts 方法会将所有置顶窗口的 Z 轴顺序恢复为正常状态，以确保它们按照正确的层次显示。
@@ -3078,7 +3466,7 @@ class Application(Component):
         提高用户体验：通过确保窗口的正确叠放顺序，NormalizeAllTopMosts 方法可以提高用户体验，使用户可以更轻松地使用应用程序的各个部分。
         修复窗口显示异常：某些情况下，窗口可能会由于程序错误或其他原因而显示异常。调用 NormalizeAllTopMosts 方法可以作为一种修复措施，帮助恢复窗口的正常显示状态。
         总之，NormalizeAllTopMosts 方法是 PythonStudio 中 Application 对象的一个方法，用于将所有置顶窗口恢复为正常状态，解决窗口叠加或覆盖的问题，提高用户体验并修复窗口显示异常。"""
-    def NormalizeTopMosts(self, *args, **kwargs) -> Any:
+    def NormalizeTopMosts(self) -> None:
         """Application 的 NormalizeTopMosts 方法用于将特定窗口置顶并确保其它窗口保持在它之下的正常状态，以解决可能由于多个窗口都被设置为置顶而导致的窗口叠加或覆盖的问题。
         具体来说，NormalizeTopMosts 方法的作用包括：
         将指定窗口置顶：通过调用 NormalizeTopMosts 方法，并指定需要置顶的窗口，可以确保该窗口在其他窗口之上显示，从而保持其可见性。
@@ -3086,7 +3474,7 @@ class Application(Component):
         解决窗口遮挡问题：通过将指定窗口置顶，并确保其他窗口在它之下，NormalizeTopMosts 方法可以解决窗口之间可能出现的遮挡或覆盖问题，确保用户可以正确地看到和操作窗口。
         提高用户体验：通过确保窗口正确的叠放顺序，NormalizeTopMosts 方法可以提高用户体验，使用户可以更轻松地使用应用程序的各个部分。
         总之，NormalizeTopMosts 方法是 PythonStudio 中 Application 对象的一个方法，用于将指定窗口置顶并确保其他窗口保持在它之下的正常状态，以解决窗口叠加或覆盖的问题，提高用户体验。"""
-    def ProcessMessages(self, *args, **kwargs) -> Any:
+    def ProcessMessages(self) -> None:
         """Application 的 ProcessMessages 方法用于处理消息队列中的所有待处理消息，并立即执行它们的相应操作。
         具体来说，ProcessMessages 方法的作用包括：
         处理消息队列中的消息：Windows 程序通常通过消息队列进行通信和事件处理。ProcessMessages 方法会检查消息队列中是否有待处理的消息，并立即处理它们，以确保及时响应用户的操作或系统事件。
@@ -3094,7 +3482,7 @@ class Application(Component):
         避免界面冻结：在某些情况下，长时间运行的任务可能会导致界面冻结，使用户无法进行操作或者应用程序没有响应。通过在适当的地方调用 ProcessMessages 方法，可以确保在长时间运行的任务中定期处理消息队列，从而避免界面冻结，保持应用程序的响应性。
         在多线程编程中的使用：在多线程编程中，主线程通常会负责处理界面和消息队列。在其他线程执行耗时任务时，可以在适当的地方调用 ProcessMessages 方法以确保主线程仍能够处理消息，保持界面的响应性。
         总之，ProcessMessages 方法是 PythonStudio 中 Application 对象的一个方法，用于处理消息队列中的所有待处理消息，更新界面状态，并确保应用程序的响应性。"""
-    def RemovePopupForm(self, *args, **kwargs) -> Any:
+    def RemovePopupForm(self, PopupForm: Any) -> None:
         """Application 的 RemovePopupForm 方法用于从应用程序的弹出窗口列表中移除指定的弹出窗口。
         具体来说，RemovePopupForm 方法的作用包括：
         移除指定的弹出窗口：通过调用 RemovePopupForm 方法，并指定需要移除的弹出窗口对象，可以从应用程序的弹出窗口列表中将该窗口移除，不再将其视为一个弹出窗口。
@@ -3102,7 +3490,7 @@ class Application(Component):
         释放资源：当不再需要某个弹出窗口时，调用 RemovePopupForm 方法可以将其从弹出窗口列表中移除，并释放与该窗口相关的资源，以避免资源泄漏和内存占用过高的问题。
         控制窗口显示：通过移除不需要显示的弹出窗口，可以在用户交互时更精确地控制窗口的显示和隐藏，以确保用户界面的简洁性和清晰度。
         总之，RemovePopupForm 方法是 PythonStudio 中 Application 对象的一个方法，用于从应用程序的弹出窗口列表中移除指定的弹出窗口，以便对弹出窗口进行管理并释放相关资源。"""
-    def Restore(self, *args, **kwargs) -> Any:
+    def Restore(self) -> None:
         """Application 的 Restore 方法用于将应用程序的主窗口从最小化状态还原到正常状态。
         具体来说，Restore 方法的作用包括：
         还原主窗口：当应用程序的主窗口处于最小化状态时，调用 Restore 方法可以将其还原为正常状态，使其重新显示在屏幕上，并恢复到之前的大小和位置。
@@ -3110,7 +3498,7 @@ class Application(Component):
         恢复应用程序状态：在某些情况下，应用程序可能会在最小化时保存一些状态信息，如窗口位置、大小或用户偏好设置。通过调用 Restore 方法，可以触发恢复这些状态信息，使应用程序在还原时表现得与最小化前一致。
         提高用户可见性：通过恢复主窗口的正常状态，可以提高应用程序的可见性和可操作性，使用户能够更轻松地与应用程序进行交互和操作。
         总之，Restore 方法是 PythonStudio 中 Application 对象的一个方法，用于将应用程序的主窗口从最小化状态还原到正常状态，以便用户可以继续与应用程序进行交互和操作。"""
-    def RestoreTopMosts(self, *args, **kwargs) -> Any:
+    def RestoreTopMosts(self) -> None:
         """Application 对象的 RestoreTopMosts 方法用于将应用程序中那些具有 "最顶层" 属性的窗口还原为最顶层状态。这在某些情况下非常有用，尤其是当应用程序需要确保特定窗口总是位于其他窗口之上。
         以下是 RestoreTopMosts 方法的具体作用和使用场景：
         恢复顶层窗口属性：有时，在执行某些操作时，应用程序可能需要暂时取消某些窗口的顶层属性。调用 RestoreTopMosts 方法可以恢复这些窗口的顶层属性，使它们再次位于其他窗口之上。
@@ -3118,7 +3506,7 @@ class Application(Component):
         处理窗口间的干扰：在多窗口应用中，可能会因为其他操作而导致某些窗口失去顶层状态，这可能会干扰用户体验。调用 RestoreTopMosts 可以确保关键窗口保持在最上方。
         确保应用程序的关键窗口可见：对于某些应用场景，如监控、提醒或通知，确保关键窗口始终可见是很重要的。在这种情况下，RestoreTopMosts 方法可以确保关键窗口的可见性。
         总结而言，RestoreTopMosts 是 PythonStudio 中 Application 对象的一种窗口管理工具，用于恢复特定窗口的顶层状态。这在处理多窗口应用、管理窗口层次、确保关键窗口可见性等方面非常有用。"""
-    def Run(self, *args, **kwargs) -> Any:
+    def Run(self) -> None:
         """Application.Run 方法是用于启动应用程序的消息循环并开始处理事件的关键方法。下面是关于 Application.Run 方法的作用和功能的详细说明：
         启动消息循环：
         Application.Run 方法会启动应用程序的主消息循环。在这个循环中，应用程序会不断接收和处理各种系统消息和事件，比如窗口消息、键盘输入、鼠标事件等。
@@ -3131,7 +3519,7 @@ class Application(Component):
         处理异常：
         Application.Run 也负责处理应用程序中的异常。如果应用程序的事件处理过程中发生了异常并且没有被捕获处理，Application.Run 会负责显示标准的异常处理对话框，并在用户处理完异常后继续运行应用程序。
         总之，Application.Run 是 PythonStudio 中用于启动应用程序主消息循环并处理事件的重要方法。它管理着应用程序的整个生命周期，确保应用程序能够响应用户输入和系统消息，并提供了良好的异常处理机制。"""
-    def ShowException(self, *args, **kwargs) -> Any:
+    def ShowException(self, E: Any) -> None:
         """Application.ShowException 方法用于显示应用程序中未处理的异常信息。以下是关于 Application.ShowException 方法的作用和功能的详细说明：
         显示异常信息：
         当应用程序中的代码抛出异常但未经过捕获处理时，异常会传递到 Application.Run 方法中。在这种情况下，Application.ShowException 负责显示异常信息给用户。通常情况下，它会显示一个标准的异常对话框，其中包含异常类型、异常消息以及可选的堆栈跟踪信息。
@@ -3142,7 +3530,7 @@ class Application(Component):
         定制化异常处理：
         Application.ShowException 方法可以根据应用程序的需求进行定制化。开发人员可以重写该方法，以提供自定义的异常处理行为，比如记录异常信息到日志文件、发送异常报告到服务器等。
         总之，Application.ShowException 是 PythonStudio 中用于显示应用程序中未处理异常信息的方法。它提供了一种友好的用户体验，避免程序因未处理的异常而崩溃，并可以根据需要进行定制化的异常处理。"""
-    def Terminate(self, *args, **kwargs) -> Any:
+    def Terminate(self) -> None:
         """Application.Terminate 方法用于终止应用程序的运行。以下是关于 Application.Terminate 方法的作用和功能的详细说明：
         退出应用程序：
         调用 Application.Terminate 方法会导致应用程序立即退出。这意味着应用程序的主消息循环会停止，所有的窗口和线程都会被关闭，资源会被释放，然后应用程序会终止执行。
@@ -3153,7 +3541,7 @@ class Application(Component):
         退出程序循序：
         在调用 Application.Terminate 方法之后，PythonStudio 应用程序会按照一定的退出程序循序来执行清理和关闭操作。这通常包括关闭主窗口、释放资源、触发 OnTerminate 事件等步骤。
         总之，Application.Terminate 是 PythonStudio 中用于终止应用程序运行并退出的方法。它能够立即结束应用程序的执行，执行必要的清理工作，并触发相应的事件，确保应用程序在退出时能够正确地关闭和释放资源。"""
-    def UnhookMainWindow(self, *args, **kwargs) -> Any:
+    def UnhookMainWindow(self, Hook: Any) -> None:
         """Application.UnhookMainWindow 方法用于取消挂钩（unhook）应用程序的主窗口消息处理过程。以下是关于 Application.UnhookMainWindow 方法的作用和功能的详细说明：
         取消挂钩主窗口消息处理过程：
         PythonStudio 应用程序通常会通过挂钩主窗口消息处理过程来处理用户输入、窗口消息等。这个过程允许应用程序拦截和处理特定类型的消息，以便执行相应的操作。调用 Application.UnhookMainWindow 方法会取消挂钩主窗口消息处理过程，从而停止应用程序对消息的拦截和处理。
@@ -3164,7 +3552,7 @@ class Application(Component):
         通常用于结束应用程序：
         通常情况下，Application.UnhookMainWindow 方法会在应用程序准备退出时被调用，以确保所有窗口的消息处理过程被恢复为默认状态。这是应用程序退出的一部分清理工作，以确保在退出时不会影响系统或其他应用程序的正常操作。
         总之，Application.UnhookMainWindow 是 PythonStudio 中用于取消挂钩应用程序主窗口消息处理过程的方法。它恢复默认的消息处理方式，通常在应用程序退出前被调用，以确保整个应用程序的消息处理过程被正确清理和恢复。"""
-    def UnhookSynchronizeWakeup(self, *args, **kwargs) -> Any:
+    def UnhookSynchronizeWakeup(self, SyncProc: Any) -> None:
         """Application.UnhookSynchronizeWakeup 方法用于取消挂钩应用程序的同步唤醒机制。以下是关于 Application.UnhookSynchronizeWakeup 方法的作用和功能的详细说明：
         取消挂钩同步唤醒机制：
         PythonStudio 应用程序中的同步方法（例如 TThread.Synchronize）通常会使用一种机制来确保在主线程上执行，这种机制涉及到唤醒主线程以执行同步方法。Application.UnhookSynchronizeWakeup 方法用于取消这种唤醒机制的挂钩，从而停止应用程序对同步方法的自动唤醒。
@@ -3175,7 +3563,7 @@ class Application(Component):
         适用于特定情况：
         Application.UnhookSynchronizeWakeup 方法通常用于特定的情况，例如在需要更精细控制同步操作的场景下。取消自动唤醒可以让开发人员更灵活地管理同步行为，但也需要更多的注意和手动管理。
         总之，Application.UnhookSynchronizeWakeup 是 PythonStudio 中用于取消挂钩应用程序同步唤醒机制的方法。它停止应用程序自动唤醒主线程来执行同步方法，需要开发人员手动管理同步操作，适用于特定需要更精细控制同步行为的场景。"""
-    def UpdateAction(self, *args, **kwargs) -> bool:
+    def UpdateAction(self, Action: Any) -> bool:
         """Application.UpdateAction 是一个方法，它用于触发应用程序中的动作（Action）更新。以下是关于 Application.UpdateAction 方法的作用和功能的详细说明：
         更新动作状态：
         PythonStudio 中的动作（Action）是一种用于执行特定操作的对象，例如菜单项、工具栏按钮等。动作通常与用户界面元素相关联，并且可以在用户交互时执行相应的操作。Application.UpdateAction 方法用于通知应用程序更新所有关联的动作的状态，以反映当前的应用程序状态。
@@ -3186,7 +3574,7 @@ class Application(Component):
         保持用户界面同步：
         通过调用 Application.UpdateAction 方法，应用程序可以确保用户界面中的动作状态与当前应用程序状态保持同步。这对于根据应用程序状态动态启用或禁用菜单项、工具栏按钮等非常重要，以提供一致的用户体验。
         总之，Application.UpdateAction 方法用于触发应用程序中动作对象的更新，以确保它们的状态与当前应用程序状态保持同步。通过激活动作对象的 OnUpdate 事件，动作对象可以检查应用程序状态并相应地更新自己的属性，从而保持用户界面的一致性和响应性。"""
-    def UseRightToLeftAlignment(self, *args, **kwargs) -> bool:
+    def UseRightToLeftAlignment(self) -> bool:
         """Application.UseRightToLeftAlignment 是一个布尔类型的属性，用于指定应用程序是否使用从右向左的对齐方式。以下是关于 Application.UseRightToLeftAlignment 属性的作用和功能的详细说明：
         从右向左对齐：
         在一些语言和文化中，文本和用户界面元素的对齐方式是从右向左的，例如阿拉伯语和希伯来语。通过设置 Application.UseRightToLeftAlignment 为 True，可以指示应用程序在绘制用户界面时使用从右向左的对齐方式。
@@ -3197,7 +3585,7 @@ class Application(Component):
         用户界面调整：
         在一些特殊情况下，需要根据用户的语言偏好调整用户界面的布局。通过动态设置 Application.UseRightToLeftAlignment 属性，可以实现根据用户的语言设置自动调整用户界面的对齐方式，从而提供更好的用户体验。
         总之，Application.UseRightToLeftAlignment 属性用于指定 PythonStudio 应用程序是否使用从右向左的对齐方式。通过设置此属性，可以全局影响整个应用程序的用户界面布局，以适应从右向左的语言环境，并提供更好的用户体验。"""
-    def UseRightToLeftReading(self, *args, **kwargs) -> bool:
+    def UseRightToLeftReading(self) -> bool:
         """Application.UseRightToLeftReading 是一个布尔类型的属性，用于指定应用程序是否使用从右向左的阅读顺序。以下是关于 Application.UseRightToLeftReading 属性的作用和功能的详细说明：
         从右向左阅读顺序：
         在一些语言和文化中，阅读顺序是从右向左的，例如阿拉伯语和希伯来语。通过设置 Application.UseRightToLeftReading 为 True，可以指示应用程序在绘制文本时使用从右向左的阅读顺序。
@@ -3208,7 +3596,7 @@ class Application(Component):
         用户界面调整：
         在一些特殊情况下，需要根据用户的语言偏好调整用户界面的文本显示方式。通过动态设置 Application.UseRightToLeftReading 属性，可以实现根据用户的语言设置自动调整文本的显示顺序，从而提供更好的用户体验。
         总之，Application.UseRightToLeftReading 属性用于指定 PythonStudio 应用程序是否使用从右向左的阅读顺序。通过设置此属性，可以全局影响整个应用程序的文本显示方式，以适应从右向左的语言环境，并提供更好的用户体验。"""
-    def UseRightToLeftScrollBar(self, *args, **kwargs) -> bool:
+    def UseRightToLeftScrollBar(self) -> bool:
         """Application.UseRightToLeftScrollBar 是一个布尔类型的属性，用于指定应用程序是否使用从右向左的滚动条。以下是关于 Application.UseRightToLeftScrollBar 属性的作用和功能的详细说明：
         从右向左滚动条：
         在一些语言和文化中，滚动条的滚动方向是从右向左的，例如阿拉伯语和希伯来语。通过设置 Application.UseRightToLeftScrollBar 为 True，可以指示应用程序在绘制滚动条时使用从右向左的滚动方向。
@@ -3219,7 +3607,7 @@ class Application(Component):
         用户界面调整：
         在一些特殊情况下，需要根据用户的语言偏好调整用户界面的滚动方式。通过动态设置 Application.UseRightToLeftScrollBar 属性，可以实现根据用户的语言设置自动调整滚动条的滚动方向，从而提供更好的用户体验。
         总之，Application.UseRightToLeftScrollBar 属性用于指定 PythonStudio 应用程序是否使用从右向左的滚动方向。通过设置此属性，可以全局影响整个应用程序的滚动条行为，以适应从右向左的语言环境，并提供更好的用户体验。"""
-    def UseMetropolisUI(self, *args, **kwargs) -> Any:
+    def UseMetropolisUI(self) -> Any:
         """Application.UseMetropolisUI 是一个布尔类型的属性，用于启用或禁用 Metropolis 用户界面（UI）主题。以下是关于 Application.UseMetropolisUI 属性的作用和功能的详细说明：
         Metropolis UI 主题：
         Metropolis UI 是一个现代化的用户界面主题，设计风格简洁、扁平化，具有清晰的图标和按钮样式。通过设置 Application.UseMetropolisUI 为 True，可以启用 Metropolis UI 主题，使应用程序的界面看起来更加现代化和吸引人。
@@ -3230,7 +3618,7 @@ class Application(Component):
         主题切换：
         开发人员可以动态地在应用程序中启用或禁用 Metropolis UI 主题，以适应不同用户的喜好或特定的应用场景。通过设置 Application.UseMetropolisUI 属性，可以灵活地切换应用程序的界面风格，以满足不同的需求。
         总之，Application.UseMetropolisUI 属性用于启用或禁用 Metropolis UI 主题，从而美化应用程序的用户界面，提升用户体验，并保持界面风格的一致性。"""
-    def MessageBox(Text: str, Caption: str, Type: int) -> int:
+    def MessageBox(self, Text: str, Caption: str, Type: int) -> int:
         """Application.MessageBox 是一个用于显示消息框的函数。它的作用是在应用程序中弹出一个消息框，向用户显示特定的消息，并根据用户的响应执行相应的操作。以下是关于 Application.MessageBox 函数的详细说明：
         消息显示：
         Application.MessageBox 可以用来向用户显示各种类型的消息，包括信息、警告、错误等。通过传递不同的消息文本和消息类型参数，可以在消息框中显示不同的内容，以提供给用户相应的提示或警告。
@@ -3245,44 +3633,65 @@ class Application(Component):
         标题：str
         类型：int
 		"""
-    def InputBox(*args, **kwargs) -> Any:
+    def MessageDlg(self, Text: str, DlgType: int, Buttons: int, HelpCtx: int) -> int:
+        """显示一个消息对话框(dlg_type/buttons为TMsgDlgType/TMsgDlgBtn的枚举序数值)，返回用户点击按钮对应的模态结果。
+        文本：str
+        DlgType：int
+        Buttons：int
+        HelpCtx：int
+        结果：int"""
+    def SendMessage(self, hWnd: int, Msg: int, wParam: int, lParam: int) -> int:
+        """向指定窗口发送一条消息，并等待其处理完成后返回处理结果。
+        窗口句柄：int
+        Msg：int
+        wParam：int
+        lParam：int
+        结果：int"""
+    def PostMessage(self, hWnd: int, Msg: int, wParam: int, lParam: int) -> bool:
+        """将一条消息投递到创建指定窗口的线程的消息队列中，不等待其被处理。
+        窗口句柄：int
+        Msg：int
+        wParam：int
+        lParam：int
+        结果：bool"""
+    def InputBox(self, ACaption: str, APrompt: str, ADefault: str) -> str:
         """用于创建一个简单的对话框供用户输入文本。
         标题：str
         提示：str
         默认值：str
         结果：str"""
-    def SelectDirectory(*args, **kwargs) -> Any:
+    def SelectDirectory(self, Caption: str, Root: str) -> str:
         """用于显示一个对话框，允许用户选择文件夹并返回所选文件夹的路径。
         标题：str
         根目录：str
         结果：str"""
-    def ColorToString(*args, **kwargs) -> Any:
+    def ColorToString(self, Color: int) -> str:
         """用于将颜色值转换为字符串表示形式，例如将clRed这个颜色值传入将返回'clRed'字符串。
         颜色：Color
         结果：str"""
-    def PrintText(*args, **kwargs) -> Any:
+    def PrintText(self, Text: str, X: int, Y: int) -> None:
         """用于向打印机发送一段文本以进行打印。
         文本：str
         x：int
         y：int
         字体：Font"""
-    def PrintImage(*args, **kwargs) -> Any:
+    def PrintImage(self, Bitmap: Any, X: int, Y: int) -> None:
         """用于向打印机发送一副位图以进行打印。
         位图：Bitmap
         x：int
         y：int
         缩放比例：int"""
-    def ShowWindow(*args, **kwargs) -> Any:
+    def ShowWindow(self, hWnd: int, nCmdShow: int) -> bool:
         """设置指定窗口的显示状态。
         窗口句柄：HWND
         显示命令：int
         结果：如果窗口之前可见，则返回值为非零。如果窗口之前被隐藏，则返回值为零。"""
-    def WinExec(*args, **kwargs) -> Any:
+    def WinExec(self, CmdLine: str, uCmdShow: int) -> int:
         """用于异步运行一个Windows程序。
         命令行：str
         显示选项：int
         结果：int"""
-    def ShellExecute(*args, **kwargs) -> Any:
+    def ShellExecute(self, hWnd: int, Operation: str, FileName: str, Parameters: str, Directory: str, ShowCmd: int) -> int:
         """运行一个外部程序（或者是打开一个已注册的文件、打开一个目录、打印一个文件等等），并对外部程序有一定的控制。
         窗口句柄：int
         操作：str
@@ -3291,20 +3700,20 @@ class Application(Component):
         目录：str
         显示选项：int
         结果：int"""
-    def GetSystemPath(*args, **kwargs) -> Any:
+    def GetSystemPath(self, Folder: int) -> str:
         """获取各种系统路径。路径缩写参见实例或文档。
         路径缩写：int
         结果：str"""
-    def ReleaseCapture(*args, **kwargs) -> bool:
+    def ReleaseCapture(self) -> bool:
         """释放当前线程中窗口的鼠标捕获。
         结果：bool"""
-    def SetParent(*args, **kwargs) -> int:
+    def SetParent(self, hWndChild: int, hWndNewParent: int) -> int:
         """用于改变一个窗口的父窗口。
         参数说明：
         hWndChild: int - 子窗口的句柄
         hWndNewParent: int - 新的父窗口句柄
         结果：int  返回先前父窗口的句柄 如果失败，返回 0"""
-    def SetWindowPos(*args, **kwargs) -> bool:
+    def SetWindowPos(self, hWnd: int, hWndInsertAfter: int, X: int, Y: int, cx: int, cy: int, uFlags: int) -> bool:
         """用于设置窗口的位置、大小和 Z 序（显示顺序）。
         hWnd: int
         hWndInsertAfter: int
@@ -3314,30 +3723,30 @@ class Application(Component):
         cy: int
         uFlags: int
         结果：int 成功：返回非零值 失败：返零"""
-    def ShowCursor(*args, **kwargs) -> int:
+    def ShowCursor(self, bShow: bool) -> int:
         """用于控制鼠标光标的显示和隐藏。
         参数说明
         bShow: bool 描述：控制光标显示或隐藏的标志。
         结果：int 返回新的光标显示计数值"""
-    def PtInRect(*args, **kwargs) -> bool:
+    def PtInRect(self, lprc: Any, pt: Any) -> bool:
         """用于判断一个点是否位于指定的矩形区域内。
         参数说明
         lprc: Rect 描述：指向一个 Rect 结构，表示要检查的矩形区域。
         pt: Point 描述：指向一个 TPoint 结构，表示要检查的点坐标。
         结果：bool 如果点在矩形内，返回 True，如果点不在矩形内或在矩形边界上，返回 False"""
-    def GetDC(*args, **kwargs) -> int:
+    def GetDC(self, hWnd: int) -> int:
         """获取指定窗口客户区的设备上下文句柄。
         参数说明
         hWnd: int 描述：要获取设备上下文的窗口句柄
         特殊值：如果为 0，表示获取整个屏幕的设备上下文
         结果：int 成功：返回设备上下文句柄（HDC） 失败：返回 0"""
-    def ReleaseDC(*args, **kwargs) -> int:
+    def ReleaseDC(self, hWnd: int, hDC: int) -> int:
         """ReleaseDC 函数用于释放一个设备上下文，使其可供其他应用程序使用。
         参数说明
         hWnd: int 描述：先前调用 GetDC 或 GetWindowDC 时传入的窗口句柄。
         hDC: int 描述：要释放的设备上下文句柄，即 GetDC 或 GetWindowDC 的返回值。
         结果：int 成功：返回 1 失败：返回 0"""
-    def BitBlt(*args, **kwargs) -> bool:
+    def BitBlt(self, hdcDest: int, x: int, y: int, cx: int, cy: int, hdcSrc: int, x1: int, y1: int, rop: int) -> bool:
         """BitBlt 函数执行颜色数据的位块传输。
         参数说明
         DestDC: int 描述：目标设备上下文的句柄。
@@ -3350,32 +3759,1120 @@ class Application(Component):
         YSrc: int 描述：源矩形左上角的坐标Y。
         Rop: DWORD 描述：光栅操作代码。
         结果：int 成功：返回非零值 失败：返零"""
-    def CreateMutex(*args, **kwargs) -> int:
+    def CreateMutex(self, lpMutexAttributes: Any, bInitialOwner: bool, lpName: str) -> int:
         """CreateMutex 函数用于创建一个命名的互斥锁对象，通过检查是否已存在同名互斥锁来判断程序是否已在运行，从而实现程序单实例控制。
         参数说明
         Name: str 描述：互斥锁名称。
         结果：int 成功：返回句柄 失败：返零"""
-    def OpenMutex(*args, **kwargs) -> int:
+    def OpenMutex(self, dwDesiredAccess: int, bInheritHandle: bool, lpName: str) -> int:
         """OpenMutex 函数用于打开一个已存在的命名互斥锁对象，从而获取其句柄以便后续等待或释放操作。
         参数说明
         Name: str 描述：互斥锁名称。
         结果：int 成功：返回句柄 失败：返零"""
-    def CloseHandle(*args, **kwargs) -> bool:
+    def CloseHandle(self, hObject: int) -> bool:
         """CloseHandle 函数用于关闭一个打开的对象句柄（如互斥锁、文件等），释放系统为该句柄分配的资源。
         参数说明
         Handle: int 描述：要关闭的句柄。
         结果：bool 成功：返回非零值（TRUE） 失败：返回 0（FALSE），可通过 GetLastError 获取"""
-    def GetLastError(*args, **kwargs) -> int:
+    def GetLastError(self) -> int:
         """GetLastError 函数用于获取当前线程上一次调用 Windows API 函数时返回的错误代码，从而判断 API 调用是否成功及失败的具体原因。
         参数说明
         结果：int 返回当前线程的上一个错误代码"""
-    def RGB(*args, **kwargs) -> int:
+    def RGB(self, r: int, g: int, b: int) -> int:
         """RGB 函数通过组合红、绿、蓝三个颜色分量（0-255）返回一个代表颜色的整数值（COLORREF）。
         参数说明
         r: int 描述：红色值。
         g: int 描述：绿色值。
         b: int 描述：蓝色值。
         结果：int 返回一个代表颜色的整数值（COLORREF）"""
+    def Beep(self, dwFreq: int, dwDuration: int) -> bool:
+        """在扬声器上产生简单的提示音。
+        频率(赫兹)：int
+        持续时间(毫秒)：int
+        结果：bool"""
+    def Sleep(self, dwMilliseconds: int) -> None:
+        """将当前线程挂起指定的时间间隔。
+        毫秒数：int"""
+    def GetTickCount(self) -> int:
+        """获取系统启动以来经过的毫秒数。
+        结果：int"""
+    def GetCurrentProcessId(self) -> int:
+        """获取调用进程的进程标识符。
+        结果：int"""
+    def GetCurrentThreadId(self) -> int:
+        """获取调用线程的线程标识符。
+        结果：int"""
+    def GetCurrentProcess(self) -> int:
+        """获取当前进程的伪句柄。
+        结果：int"""
+    def GetCurrentThread(self) -> int:
+        """获取当前线程的伪句柄。
+        结果：int"""
+    def SetLastError(self, dwErrCode: int) -> None:
+        """为调用线程设置最后错误代码。
+        错误代码：int"""
+    def MulDiv(self, nNumber: int, nNumerator: int, nDenominator: int) -> int:
+        """将两个32位值相乘，然后除以第三个32位值。
+        被乘数：int
+        乘数：int
+        除数：int
+        结果：int"""
+    def GetComputerName(self) -> str:
+        """获取本地计算机的NetBIOS名称。
+        结果：str"""
+    def SetEnvironmentVariable(self, lpName: str, lpValue: str) -> bool:
+        """为当前进程设置环境变量的值。
+        名称：str
+        值：str
+        结果：bool"""
+    def GetEnvironmentVariable(self, lpName: str) -> str:
+        """获取当前进程环境变量的值。
+        名称：str
+        结果：str"""
+    def GetSystemDirectory(self) -> str:
+        """获取Windows系统目录的路径。
+        结果：str"""
+    def GetWindowsDirectory(self) -> str:
+        """获取Windows目录的路径。
+        结果：str"""
+    def GetTempPath(self) -> str:
+        """获取用于存放临时文件的目录路径。
+        结果：str"""
+    def GetCurrentDirectory(self) -> str:
+        """获取当前进程的当前目录。
+        结果：str"""
+    def SetCurrentDirectory(self, lpPathName: str) -> bool:
+        """更改当前进程的当前目录。
+        路径名：str
+        结果：bool"""
+    def CreateDirectory(self, lpPathName: str) -> bool:
+        """创建一个新目录。
+        路径名：str
+        结果：bool"""
+    def RemoveDirectory(self, lpPathName: str) -> bool:
+        """删除一个已存在的空目录。
+        路径名：str
+        结果：bool"""
+    def DeleteFile(self, lpFileName: str) -> bool:
+        """删除一个已存在的文件。
+        文件名：str
+        结果：bool"""
+    def CopyFile(self, lpExistingFileName: str, lpNewFileName: str, bFailIfExists: int) -> bool:
+        """将一个已存在的文件复制到新文件。
+        现有文件名：str
+        新文件名：str
+        目标已存在时是否失败：int
+        结果：bool"""
+    def MoveFile(self, lpExistingFileName: str, lpNewFileName: str) -> bool:
+        """移动(或重命名)一个已存在的文件或目录。
+        现有文件名：str
+        新文件名：str
+        结果：bool"""
+    def GetFileAttributes(self, lpFileName: str) -> int:
+        """获取指定文件或目录的文件系统属性。
+        文件名：str
+        结果：int"""
+    def SetFileAttributes(self, lpFileName: str, dwFileAttributes: int) -> bool:
+        """设置文件或目录的属性。
+        文件名：str
+        文件属性：int
+        结果：bool"""
+    def GetFullPathName(self, lpFileName: str) -> str:
+        """获取指定文件的完整路径和文件名。
+        文件名：str
+        结果：str"""
+    def GetLogicalDrives(self) -> int:
+        """获取一个表示当前可用磁盘驱动器的位掩码。
+        结果：int"""
+    def GetDriveType(self, lpRootPathName: str) -> int:
+        """判断磁盘驱动器是可移动、固定、光驱、网络还是内存驱动器。
+        根路径名：str
+        结果：int"""
+    def OutputDebugString(self, lpOutputString: str) -> None:
+        """将一个字符串发送给调试器显示。
+        输出字符串：str"""
+    def GetModuleFileName(self, hModule: int) -> str:
+        """获取指定模块所在可执行文件的完整路径(传0表示当前进程)。
+        模块句柄：int
+        结果：str"""
+    def LoadLibrary(self, lpLibFileName: str) -> int:
+        """将指定的模块加载到调用进程的地址空间。
+        库文件名：str
+        结果：int"""
+    def FreeLibrary(self, hLibModule: int) -> bool:
+        """释放先前加载的动态链接库。
+        模块句柄：int
+        结果：bool"""
+    def TerminateProcess(self, hProcess: int, uExitCode: int) -> bool:
+        """终止指定的进程及其所有线程。
+        进程句柄：int
+        退出代码：int
+        结果：bool"""
+    def OpenProcess(self, dwDesiredAccess: int, bInheritHandle: int, dwProcessId: int) -> int:
+        """打开一个已存在的本地进程对象。
+        请求的访问权限：int
+        句柄是否可被子进程继承：int
+        进程ID：int
+        结果：int"""
+    def WaitForSingleObject(self, hHandle: int, dwMilliseconds: int) -> int:
+        """等待指定对象变为已激发状态，或等待超时时间到达。
+        句柄：int
+        毫秒数：int
+        结果：int"""
+    def CreateEvent(self, bManualReset: int, bInitialState: int, lpName: str) -> int:
+        """创建或打开一个有名称或无名称的事件对象。
+        是否需要手动重置：int
+        初始状态是否已激发：int
+        名称：str
+        结果：int"""
+    def OpenEvent(self, dwDesiredAccess: int, bInheritHandle: int, lpName: str) -> int:
+        """打开一个已存在的有名称事件对象。
+        请求的访问权限：int
+        句柄是否可被子进程继承：int
+        名称：str
+        结果：int"""
+    def SetEvent(self, hEvent: int) -> bool:
+        """将指定的事件对象设置为已激发状态。
+        事件句柄：int
+        结果：bool"""
+    def ResetEvent(self, hEvent: int) -> bool:
+        """将指定的事件对象设置为未激发状态。
+        事件句柄：int
+        结果：bool"""
+    def PulseEvent(self, hEvent: int) -> bool:
+        """将指定事件对象设为已激发状态，唤醒等待线程后再将其复位。
+        事件句柄：int
+        结果：bool"""
+    def ReleaseMutex(self, hMutex: int) -> bool:
+        """释放对指定互斥体对象的所有权。
+        互斥体句柄：int
+        结果：bool"""
+    def CreateSemaphore(self, lInitialCount: int, lMaximumCount: int, lpName: str) -> int:
+        """创建或打开一个有名称或无名称的信号量对象。
+        初始计数：int
+        最大计数：int
+        名称：str
+        结果：int"""
+    def OpenSemaphore(self, dwDesiredAccess: int, bInheritHandle: int, lpName: str) -> int:
+        """打开一个已存在的有名称信号量对象。
+        请求的访问权限：int
+        句柄是否可被子进程继承：int
+        名称：str
+        结果：int"""
+    def ReleaseSemaphore(self, hSemaphore: int, lReleaseCount: int) -> bool:
+        """将指定信号量对象的计数增加指定的数量。
+        信号量句柄：int
+        释放计数：int
+        结果：bool"""
+    def IsDebuggerPresent(self) -> bool:
+        """判断调用进程当前是否正被用户模式调试器调试。
+        结果：bool"""
+    def GetVersion(self) -> int:
+        """获取当前操作系统的版本信息。
+        结果：int"""
+    def MessageBeep(self, uType: int) -> bool:
+        """播放与系统事件相关联的声音。
+        类型：int
+        结果：bool"""
+    def FindWindow(self, lpClassName: str, lpWindowName: str) -> int:
+        """获取窗口类名和窗口名称都匹配指定字符串的顶层窗口的句柄。
+        窗口类名：str
+        窗口标题：str
+        结果：int"""
+    def FindWindowEx(self, hWndParent: int, hWndChildAfter: int, lpszClass: str, lpszWindow: str) -> int:
+        """获取窗口类名和窗口名称匹配指定字符串的窗口句柄，可从指定子窗口开始查找。
+        父窗口句柄：int
+        起始子窗口句柄：int
+        窗口类名：str
+        窗口标题：str
+        结果：int"""
+    def GetWindowText(self, hWnd: int) -> str:
+        """获取指定窗口标题栏的文本(控件则为控件文本)。
+        窗口句柄：int
+        结果：str"""
+    def SetWindowText(self, hWnd: int, lpString: str) -> bool:
+        """设置指定窗口标题栏的文本(控件则为控件文本)。
+        窗口句柄：int
+        字符串：str
+        结果：bool"""
+    def GetWindowTextLength(self, hWnd: int) -> int:
+        """获取指定窗口标题栏文本的长度(字符数)。
+        窗口句柄：int
+        结果：int"""
+    def GetClassName(self, hWnd: int) -> str:
+        """获取指定窗口所属窗口类的名称。
+        窗口句柄：int
+        结果：str"""
+    def IsWindow(self, hWnd: int) -> bool:
+        """判断指定的窗口句柄是否标识一个已存在的窗口。
+        窗口句柄：int
+        结果：bool"""
+    def IsWindowVisible(self, hWnd: int) -> bool:
+        """获取指定窗口的可见状态。
+        窗口句柄：int
+        结果：bool"""
+    def IsWindowEnabled(self, hWnd: int) -> bool:
+        """判断指定窗口是否已启用鼠标和键盘输入。
+        窗口句柄：int
+        结果：bool"""
+    def IsIconic(self, hWnd: int) -> bool:
+        """判断指定窗口是否已最小化。
+        窗口句柄：int
+        结果：bool"""
+    def IsZoomed(self, hWnd: int) -> bool:
+        """判断指定窗口是否已最大化。
+        窗口句柄：int
+        结果：bool"""
+    def IsChild(self, hWndParent: int, hWnd: int) -> bool:
+        """判断一个窗口是否是指定父窗口的子窗口(或后代窗口)。
+        父窗口句柄：int
+        窗口句柄：int
+        结果：bool"""
+    def EnableWindow(self, hWnd: int, bEnable: int) -> bool:
+        """启用或禁用指定窗口的鼠标和键盘输入。
+        窗口句柄：int
+        是否启用：int
+        结果：bool"""
+    def DestroyWindow(self, hWnd: int) -> bool:
+        """销毁指定的窗口。
+        窗口句柄：int
+        结果：bool"""
+    def MoveWindow(self, hWnd: int, X: int, Y: int, nWidth: int, nHeight: int, bRepaint: int) -> bool:
+        """改变指定窗口的位置和尺寸。
+        窗口句柄：int
+        X坐标：int
+        Y坐标：int
+        宽度：int
+        高度：int
+        是否重绘：int
+        结果：bool"""
+    def GetParent(self, hWnd: int) -> int:
+        """获取指定窗口的父窗口或所有者窗口的句柄。
+        窗口句柄：int
+        结果：int"""
+    def GetDesktopWindow(self) -> int:
+        """获取桌面窗口的句柄。
+        结果：int"""
+    def GetForegroundWindow(self) -> int:
+        """获取前台窗口(当前用户正在操作的窗口)的句柄。
+        结果：int"""
+    def SetForegroundWindow(self, hWnd: int) -> bool:
+        """将指定窗口置于前台。
+        窗口句柄：int
+        结果：bool"""
+    def GetActiveWindow(self) -> int:
+        """获取调用线程的消息队列中关联的活动窗口句柄。
+        结果：int"""
+    def SetActiveWindow(self, hWnd: int) -> int:
+        """激活一个窗口。
+        窗口句柄：int
+        结果：int"""
+    def GetWindowLong(self, hWnd: int, nIndex: int) -> int:
+        """获取指定窗口的相关信息。
+        窗口句柄：int
+        索引：int
+        结果：int"""
+    def SetWindowLong(self, hWnd: int, nIndex: int, dwNewLong: int) -> int:
+        """改变指定窗口的属性。
+        窗口句柄：int
+        索引：int
+        新值：int
+        结果：int"""
+    def GetSystemMetrics(self, nIndex: int) -> int:
+        """获取指定的系统度量值或系统配置项设置。
+        索引：int
+        结果：int"""
+    def GetAsyncKeyState(self, vKey: int) -> int:
+        """判断调用时某个按键是按下还是抬起，以及自上次调用后是否被按下过。
+        虚拟键码：int
+        结果：int"""
+    def GetKeyState(self, nVirtKey: int) -> int:
+        """获取指定虚拟键的状态。
+        虚拟键码：int
+        结果：int"""
+    def keybd_event(self, bVk: int, bScan: int, dwFlags: int, dwExtraInfo: int) -> None:
+        """模拟一次按键操作。
+        虚拟键码：int
+        硬件扫描码：int
+        标志：int
+        附加信息：int"""
+    def mouse_event(self, dwFlags: int, dx: int, dy: int, dwData: int, dwExtraInfo: int) -> None:
+        """模拟鼠标移动和按键点击。
+        标志：int
+        X方向偏移：int
+        Y方向偏移：int
+        数据值：int
+        附加信息：int"""
+    def SetCursorPos(self, X: int, Y: int) -> bool:
+        """将光标移动到指定的屏幕坐标。
+        X坐标：int
+        Y坐标：int
+        结果：bool"""
+    def GetCapture(self) -> int:
+        """获取已捕获鼠标的窗口句柄。
+        结果：int"""
+    def SetCapture(self, hWnd: int) -> int:
+        """将鼠标输入捕获设置到指定窗口。
+        窗口句柄：int
+        结果：int"""
+    def ShowWindowAsync(self, hWnd: int, nCmdShow: int) -> bool:
+        """设置由不同线程创建的窗口的显示状态(异步执行)。
+        窗口句柄：int
+        显示方式：int
+        结果：bool"""
+    def AnimateWindow(self, hWnd: int, dwTime: int, dwFlags: int) -> bool:
+        """在显示或隐藏窗口时产生特殊的过渡动画效果。
+        窗口句柄：int
+        持续时间(毫秒)：int
+        标志：int
+        结果：bool"""
+    def FlashWindow(self, hWnd: int, bInvert: int) -> bool:
+        """使指定窗口闪烁一次。
+        窗口句柄：int
+        是否反转显示：int
+        结果：bool"""
+    def BringWindowToTop(self, hWnd: int) -> bool:
+        """将指定窗口置于Z序的顶部。
+        窗口句柄：int
+        结果：bool"""
+    def UpdateWindow(self, hWnd: int) -> bool:
+        """更新指定窗口的客户区。
+        窗口句柄：int
+        结果：bool"""
+    def RegisterWindowMessage(self, lpString: str) -> int:
+        """定义一个在整个系统范围内唯一的新窗口消息。
+        字符串：str
+        结果：int"""
+    def RegisterClipboardFormat(self, lpszFormat: str) -> int:
+        """注册一种新的剪贴板格式。
+        格式名称：str
+        结果：int"""
+    def OpenClipboard(self, hWndNewOwner: int) -> bool:
+        """打开剪贴板以便进行检查。
+        新的剪贴板所有者窗口句柄：int
+        结果：bool"""
+    def CloseClipboard(self) -> bool:
+        """关闭剪贴板。
+        结果：bool"""
+    def EmptyClipboard(self) -> bool:
+        """清空剪贴板，并释放剪贴板中数据的句柄。
+        结果：bool"""
+    def IsClipboardFormatAvailable(self, format: int) -> bool:
+        """判断剪贴板中是否包含指定格式的数据。
+        格式：int
+        结果：bool"""
+    def CountClipboardFormats(self) -> int:
+        """获取当前剪贴板中不同数据格式的数量。
+        结果：int"""
+    def GetWindowDC(self, hWnd: int) -> int:
+        """获取整个窗口(包括标题栏、菜单、滚动条)的设备上下文句柄。
+        窗口句柄：int
+        结果：int"""
+    def GetDlgItem(self, hDlg: int, nIDDlgItem: int) -> int:
+        """获取指定对话框中某个控件的句柄。
+        对话框句柄：int
+        控件ID：int
+        结果：int"""
+    def GetDlgCtrlID(self, hWnd: int) -> int:
+        """获取指定控件的标识符。
+        窗口句柄：int
+        结果：int"""
+    def SetDlgItemText(self, hDlg: int, nIDDlgItem: int, lpString: str) -> bool:
+        """设置对话框中控件的文本。
+        对话框句柄：int
+        控件ID：int
+        字符串：str
+        结果：bool"""
+    def SetDlgItemInt(self, hDlg: int, nIDDlgItem: int, uValue: int, bSigned: int) -> bool:
+        """将对话框中控件的文本设置为指定整数值的字符串表示形式。
+        对话框句柄：int
+        控件ID：int
+        整数值：int
+        是否按有符号数处理：int
+        结果：bool"""
+    def CheckDlgButton(self, hDlg: int, nIDButton: int, uCheck: int) -> bool:
+        """改变按钮控件的选中状态。
+        对话框句柄：int
+        按钮ID：int
+        选中状态：int
+        结果：bool"""
+    def IsDlgButtonChecked(self, hDlg: int, nIDButton: int) -> int:
+        """获取按钮控件的选中状态。
+        对话框句柄：int
+        按钮ID：int
+        结果：int"""
+    def GetMenu(self, hWnd: int) -> int:
+        """获取分配给指定窗口的菜单句柄。
+        窗口句柄：int
+        结果：int"""
+    def SetMenu(self, hWnd: int, hMenu: int) -> bool:
+        """为指定窗口设置一个新菜单。
+        窗口句柄：int
+        菜单句柄：int
+        结果：bool"""
+    def GetSystemMenu(self, hWnd: int, bRevert: int) -> int:
+        """获取窗口菜单(系统菜单/控制菜单)的句柄以便复制或修改。
+        窗口句柄：int
+        是否恢复为默认系统菜单：int
+        结果：int"""
+    def GetMenuItemCount(self, hMenu: int) -> int:
+        """获取指定菜单中菜单项的数量。
+        菜单句柄：int
+        结果：int"""
+    def GetMenuItemID(self, hMenu: int, nPos: int) -> int:
+        """获取位于指定位置的菜单项的标识符。
+        菜单句柄：int
+        位置：int
+        结果：int"""
+    def EnableMenuItem(self, hMenu: int, uIDEnableItem: int, uEnable: int) -> int:
+        """启用、禁用或灰化一个菜单项。
+        菜单句柄：int
+        菜单项标识：int
+        启用状态标志：int
+        结果：int"""
+    def DeleteMenu(self, hMenu: int, uPosition: int, uFlags: int) -> bool:
+        """从指定菜单中删除一个菜单项。
+        菜单句柄：int
+        位置：int
+        标志：int
+        结果：bool"""
+    def RemoveMenu(self, hMenu: int, uPosition: int, uFlags: int) -> bool:
+        """从菜单中移除一个菜单项(不销毁子菜单句柄)。
+        菜单句柄：int
+        位置：int
+        标志：int
+        结果：bool"""
+    def CreateMenu(self) -> int:
+        """创建一个菜单。
+        结果：int"""
+    def CreatePopupMenu(self) -> int:
+        """创建一个下拉菜单、子菜单或快捷菜单。
+        结果：int"""
+    def DestroyMenu(self, hMenu: int) -> bool:
+        """销毁指定的菜单。
+        菜单句柄：int
+        结果：bool"""
+    def SetCursor(self, hCursor: int) -> int:
+        """设置光标的形状。
+        光标句柄：int
+        结果：int"""
+    def GetCursor(self) -> int:
+        """获取当前光标的句柄。
+        结果：int"""
+    def LoadCursorFromFile(self, lpFileName: str) -> int:
+        """从光标文件或动画光标文件创建一个光标。
+        文件名：str
+        结果：int"""
+    def GetSysColor(self, nIndex: int) -> int:
+        """获取指定显示元素的当前颜色。
+        索引：int
+        结果：int"""
+    def GetDoubleClickTime(self) -> int:
+        """获取鼠标当前的双击时间间隔。
+        结果：int"""
+    def SetDoubleClickTime(self, uInterval: int) -> bool:
+        """设置鼠标的双击时间间隔。
+        时间间隔(毫秒)：int
+        结果：bool"""
+    def CreateCompatibleDC(self, hdc: int) -> int:
+        """创建一个与指定设备兼容的内存设备上下文(DC)。
+        设备上下文句柄：int
+        结果：int"""
+    def CreateCompatibleBitmap(self, hdc: int, cx: int, cy: int) -> int:
+        """创建一个与指定设备上下文关联的设备兼容的位图。
+        设备上下文句柄：int
+        宽度：int
+        高度：int
+        结果：int"""
+    def DeleteDC(self, hdc: int) -> bool:
+        """删除指定的设备上下文。
+        设备上下文句柄：int
+        结果：bool"""
+    def DeleteObject(self, hObject: int) -> bool:
+        """删除一个逻辑画笔、画刷、字体、位图、区域或调色板。
+        对象句柄：int
+        结果：bool"""
+    def SelectObject(self, hdc: int, hgdiobj: int) -> int:
+        """将一个对象选入指定的设备上下文。
+        设备上下文句柄：int
+        GDI对象句柄：int
+        结果：int"""
+    def GetStockObject(self, fnObject: int) -> int:
+        """获取一个标准画笔、画刷、字体或调色板的句柄。
+        对象类型：int
+        结果：int"""
+    def CreateSolidBrush(self, color: int) -> int:
+        """创建一个具有指定纯色的逻辑画刷。
+        颜色值：int
+        结果：int"""
+    def CreateHatchBrush(self, fnStyle: int, clrref: int) -> int:
+        """创建一个具有指定阴影图案和颜色的逻辑画刷。
+        样式：int
+        颜色值：int
+        结果：int"""
+    def CreatePen(self, fnPenStyle: int, nWidth: int, crColor: int) -> int:
+        """创建一个具有指定样式、宽度和颜色的逻辑画笔。
+        画笔样式：int
+        宽度：int
+        颜色值：int
+        结果：int"""
+    def CreateRectRgn(self, nLeftRect: int, nTopRect: int, nRightRect: int, nBottomRect: int) -> int:
+        """创建一个矩形区域。
+        矩形左边坐标：int
+        矩形顶边坐标：int
+        矩形右边坐标：int
+        矩形底边坐标：int
+        结果：int"""
+    def CreateEllipticRgn(self, nLeftRect: int, nTopRect: int, nRightRect: int, nBottomRect: int) -> int:
+        """创建一个椭圆形区域。
+        矩形左边坐标：int
+        矩形顶边坐标：int
+        矩形右边坐标：int
+        矩形底边坐标：int
+        结果：int"""
+    def CreateRoundRectRgn(self, x1: int, y1: int, x2: int, y2: int, x3: int, y3: int) -> int:
+        """创建一个带圆角的矩形区域。
+        X坐标一：int
+        Y坐标一：int
+        X坐标二：int
+        Y坐标二：int
+        X坐标三：int
+        Y坐标三：int
+        结果：int"""
+    def CombineRgn(self, hrgnDest: int, hrgnSrc1: int, hrgnSrc2: int, fnCombineMode: int) -> int:
+        """合并两个区域，并将结果存入目标区域。
+        目标区域句柄：int
+        源区域句柄一：int
+        源区域句柄二：int
+        合并方式：int
+        结果：int"""
+    def EqualRgn(self, hSrcRgn1: int, hSrcRgn2: int) -> bool:
+        """检查两个指定区域是否完全相同。
+        源区域句柄一：int
+        源区域句柄二：int
+        结果：bool"""
+    def PtInRegion(self, hrgn: int, x: int, y: int) -> bool:
+        """判断指定的点是否位于指定区域之内。
+        区域句柄：int
+        X坐标：int
+        Y坐标：int
+        结果：bool"""
+    def LineTo(self, hdc: int, nXEnd: int, nYEnd: int) -> bool:
+        """从当前位置绘制一条直线到(但不包括)指定点。
+        设备上下文句柄：int
+        终点X坐标：int
+        终点Y坐标：int
+        结果：bool"""
+    def Rectangle(self, hdc: int, nLeftRect: int, nTopRect: int, nRightRect: int, nBottomRect: int) -> bool:
+        """绘制一个矩形。
+        设备上下文句柄：int
+        矩形左边坐标：int
+        矩形顶边坐标：int
+        矩形右边坐标：int
+        矩形底边坐标：int
+        结果：bool"""
+    def RoundRect(self, hdc: int, nLeftRect: int, nTopRect: int, nRightRect: int, nBottomRect: int, nWidth: int, nHeight: int) -> bool:
+        """绘制一个带圆角的矩形。
+        设备上下文句柄：int
+        矩形左边坐标：int
+        矩形顶边坐标：int
+        矩形右边坐标：int
+        矩形底边坐标：int
+        宽度：int
+        高度：int
+        结果：bool"""
+    def Ellipse(self, hdc: int, nLeftRect: int, nTopRect: int, nRightRect: int, nBottomRect: int) -> bool:
+        """绘制一个椭圆。
+        设备上下文句柄：int
+        矩形左边坐标：int
+        矩形顶边坐标：int
+        矩形右边坐标：int
+        矩形底边坐标：int
+        结果：bool"""
+    def GetPixel(self, hdc: int, nXPos: int, nYPos: int) -> int:
+        """获取指定坐标处像素的颜色。
+        设备上下文句柄：int
+        X坐标：int
+        Y坐标：int
+        结果：int"""
+    def SetPixel(self, hdc: int, X: int, Y: int, crColor: int) -> int:
+        """将指定坐标处的像素设置为指定颜色。
+        设备上下文句柄：int
+        X坐标：int
+        Y坐标：int
+        颜色值：int
+        结果：int"""
+    def GetTextColor(self, hdc: int) -> int:
+        """获取指定设备上下文当前的文本颜色。
+        设备上下文句柄：int
+        结果：int"""
+    def SetTextColor(self, hdc: int, crColor: int) -> int:
+        """将指定设备上下文的文本颜色设置为指定颜色。
+        设备上下文句柄：int
+        颜色值：int
+        结果：int"""
+    def GetBkColor(self, hdc: int) -> int:
+        """获取指定设备上下文当前的背景颜色。
+        设备上下文句柄：int
+        结果：int"""
+    def SetBkColor(self, hdc: int, crColor: int) -> int:
+        """将当前背景颜色设置为指定颜色。
+        设备上下文句柄：int
+        颜色值：int
+        结果：int"""
+    def SetBkMode(self, hdc: int, iBkMode: int) -> int:
+        """设置指定设备上下文的背景混合模式。
+        设备上下文句柄：int
+        背景模式：int
+        结果：int"""
+    def GetBkMode(self, hdc: int) -> int:
+        """获取当前的背景混合模式。
+        设备上下文句柄：int
+        结果：int"""
+    def TextOut(self, hdc: int, nXStart: int, nYStart: int, lpString: str) -> bool:
+        """使用当前选定的字体，在指定位置输出一个字符串。
+        设备上下文句柄：int
+        起点X坐标：int
+        起点Y坐标：int
+        字符串：str
+        结果：bool"""
+    def GetDeviceCaps(self, hdc: int, nIndex: int) -> int:
+        """获取指定设备的设备相关信息。
+        设备上下文句柄：int
+        索引：int
+        结果：int"""
+    def SaveDC(self, hdc: int) -> int:
+        """保存指定设备上下文当前的状态。
+        设备上下文句柄：int
+        结果：int"""
+    def RestoreDC(self, hdc: int, nSavedDC: int) -> bool:
+        """将设备上下文还原到指定的状态。
+        设备上下文句柄：int
+        保存的DC状态ID：int
+        结果：bool"""
+    def SetMapMode(self, hdc: int, fnMapMode: int) -> int:
+        """设置指定设备上下文的映射模式。
+        设备上下文句柄：int
+        映射模式：int
+        结果：int"""
+    def GetMapMode(self, hdc: int) -> int:
+        """获取当前的映射模式。
+        设备上下文句柄：int
+        结果：int"""
+    def SetROP2(self, hdc: int, fnDrawMode: int) -> int:
+        """设置当前的前景混合模式。
+        设备上下文句柄：int
+        绘图模式：int
+        结果：int"""
+    def GetROP2(self, hdc: int) -> int:
+        """获取指定设备上下文的前景混合模式。
+        设备上下文句柄：int
+        结果：int"""
+    def SetStretchBltMode(self, hdc: int, fnStretchMode: int) -> int:
+        """设置位图拉伸模式。
+        设备上下文句柄：int
+        拉伸模式：int
+        结果：int"""
+    def GetStretchBltMode(self, hdc: int) -> int:
+        """获取当前的位图拉伸模式。
+        设备上下文句柄：int
+        结果：int"""
+    def StretchBlt(self, hdcDest: int, xDest: int, yDest: int, wDest: int, hDest: int, hdcSrc: int, xSrc: int, ySrc: int, wSrc: int, hSrc: int, rop: int) -> bool:
+        """将位图从源矩形复制到目标矩形，必要时进行拉伸或压缩。
+        目标设备上下文句柄：int
+        目标X坐标：int
+        目标Y坐标：int
+        目标宽度：int
+        目标高度：int
+        源设备上下文句柄：int
+        源X坐标：int
+        源Y坐标：int
+        源宽度：int
+        源高度：int
+        光栅操作码：int
+        结果：bool"""
+    def PatBlt(self, hdc: int, nXLeft: int, nYLeft: int, nWidth: int, nHeight: int, dwRop: int) -> bool:
+        """使用设备上下文中当前选定的画刷绘制(填充)指定的矩形。
+        设备上下文句柄：int
+        左边X坐标：int
+        左边Y坐标：int
+        宽度：int
+        高度：int
+        光栅操作码：int
+        结果：bool"""
+    def RegOpenKeyEx(self, hKey: int, lpSubKey: str, samDesired: int) -> int:
+        """打开指定的注册表键并返回其句柄(失败返回0)。
+        注册表键句柄：int
+        子键名：str
+        请求的访问权限：int
+        结果：int"""
+    def RegCreateKeyEx(self, hKey: int, lpSubKey: str, samDesired: int) -> int:
+        """创建指定的注册表键(如果已存在则打开)并返回其句柄(失败返回0)。
+        注册表键句柄：int
+        子键名：str
+        请求的访问权限：int
+        结果：int"""
+    def RegCloseKey(self, hKey: int) -> int:
+        """关闭一个已打开的注册表键句柄。返回0表示成功。
+        注册表键句柄：int
+        结果：int"""
+    def RegDeleteKey(self, hKey: int, lpSubKey: str) -> int:
+        """删除一个子键(该子键本身不能再有子键)。返回0表示成功。
+        注册表键句柄：int
+        子键名：str
+        结果：int"""
+    def RegDeleteValue(self, hKey: int, lpValueName: str) -> int:
+        """从指定注册表键中删除一个命名值。返回0表示成功。
+        注册表键句柄：int
+        值名称：str
+        结果：int"""
+    def RegFlushKey(self, hKey: int) -> int:
+        """将指定键的所有属性写入注册表。返回0表示成功。
+        注册表键句柄：int
+        结果：int"""
+    def RegEnumKeyEx(self, hKey: int, dwIndex: int) -> str:
+        """返回指定索引位置的子键名称，如果没有更多子键则返回空字符串。
+        注册表键句柄：int
+        索引：int
+        结果：str"""
+    def RegEnumValue(self, hKey: int, dwIndex: int) -> str:
+        """返回指定索引位置的值名称，如果没有更多值则返回空字符串。
+        注册表键句柄：int
+        索引：int
+        结果：str"""
+    def RegQueryStringValue(self, hKey: int, lpValueName: str) -> str:
+        """读取一个REG_SZ/REG_EXPAND_SZ字符串类型的注册表值。
+        注册表键句柄：int
+        值名称：str
+        结果：str"""
+    def RegSetStringValue(self, hKey: int, lpValueName: str, lpData: str) -> int:
+        """写入一个REG_SZ字符串类型的注册表值。
+        注册表键句柄：int
+        值名称：str
+        数据：str
+        结果：int"""
+    def RegQueryDWordValue(self, hKey: int, lpValueName: str) -> int:
+        """读取一个REG_DWORD类型的注册表值(值不存在时返回0)。
+        注册表键句柄：int
+        值名称：str
+        结果：int"""
+    def RegSetDWordValue(self, hKey: int, lpValueName: str, dwData: int) -> int:
+        """写入一个REG_DWORD类型的注册表值。
+        注册表键句柄：int
+        值名称：str
+        数据值：int
+        结果：int"""
+    def RegConnectRegistry(self, lpMachineName: str, hKey: int) -> int:
+        """连接到另一台计算机上的预定义注册表键。
+        计算机名(空表示本机)：str
+        注册表键句柄：int
+        结果：int"""
+    def GetUserName(self) -> str:
+        """获取与当前线程关联的用户名。
+        结果：str"""
+    def OpenSCManager(self, lpMachineName: str, lpDatabaseName: str, dwDesiredAccess: int) -> int:
+        """建立与服务控制管理器的连接，并打开指定的数据库。
+        计算机名(空表示本机)：str
+        数据库名：str
+        请求的访问权限：int
+        结果：int"""
+    def OpenService(self, hSCManager: int, lpServiceName: str, dwDesiredAccess: int) -> int:
+        """打开指定服务的句柄。
+        服务控制管理器句柄：int
+        服务名：str
+        请求的访问权限：int
+        结果：int"""
+    def CloseServiceHandle(self, hSCObject: int) -> bool:
+        """关闭一个服务控制管理器或服务对象的句柄。
+        服务对象句柄：int
+        结果：bool"""
+    def QueryServiceState(self, hService: int) -> int:
+        """获取指定服务当前的运行状态(例如运行中SERVICE_RUNNING=4、已停止SERVICE_STOPPED=1)。
+        服务句柄：int
+        结果：int"""
+    def StartService(self, hService: int) -> bool:
+        """启动一个服务(不带额外的启动参数)。
+        服务句柄：int
+        结果：bool"""
+    def ControlService(self, hService: int, dwControl: int) -> bool:
+        """向服务发送一个控制代码(例如停止服务SERVICE_CONTROL_STOP=1)。
+        服务句柄：int
+        控制代码：int
+        结果：bool"""
+    def DeleteService(self, hService: int) -> bool:
+        """将指定服务标记为从服务控制管理器数据库中删除。
+        服务句柄：int
+        结果：bool"""
+    def PathFileExists(self, Path: str) -> bool:
+        """判断指定的文件或文件夹路径是否有效存在。
+        路径：str
+        结果：bool"""
+    def PathIsDirectory(self, Path: str) -> bool:
+        """验证指定路径是否为一个有效的目录。
+        路径：str
+        结果：bool"""
+    def PathIsRoot(self, Path: str) -> bool:
+        """判断指定路径是否为根路径。
+        路径：str
+        结果：bool"""
+    def PathIsRelative(self, Path: str) -> bool:
+        """判断指定路径是否为相对路径。
+        路径：str
+        结果：bool"""
+    def PathIsUNC(self, Path: str) -> bool:
+        """判断指定路径字符串是否为有效的UNC(通用命名规则)路径。
+        路径：str
+        结果：bool"""
+    def PathIsURL(self, Path: str) -> bool:
+        """测试给定的字符串是否符合有效的URL格式。
+        路径：str
+        结果：bool"""
+    def PathRemoveBackslash(self, Path: str) -> str:
+        """如果路径末尾有反斜杠则将其去除，并返回结果。
+        路径：str
+        结果：str"""
+    def PathAddBackslash(self, Path: str) -> str:
+        """如果路径末尾没有反斜杠则为其添加一个，并返回结果。
+        路径：str
+        结果：str"""
+    def PathRemoveExtension(self, Path: str) -> str:
+        """如果路径中存在文件扩展名则将其去除，并返回结果。
+        路径：str
+        结果：str"""
+    def PathRemoveFileSpec(self, Path: str) -> str:
+        """去除路径末尾的文件名和反斜杠，并返回结果。
+        路径：str
+        结果：str"""
+    def PathFindExtension(self, Path: str) -> str:
+        """返回文件名的扩展名(包含前导的点)，若没有扩展名则返回空字符串。
+        路径：str
+        结果：str"""
+    def PathFindFileName(self, Path: str) -> str:
+        """返回路径中的文件名部分(不含目录)。
+        路径：str
+        结果：str"""
+    def PathGetDriveNumber(self, Path: str) -> int:
+        """返回路径中的驱动器号(0代表A盘、1代表B盘……)，如果路径中没有驱动器号则返回-1。
+        路径：str
+        结果：int"""
+    def PathStripPath(self, Path: str) -> str:
+        """就地移除路径中的目录部分，只保留文件名，并返回结果。
+        路径：str
+        结果：str"""
+    def PathIsPrefix(self, Prefix: str, Path: str) -> bool:
+        """判断一个路径字符串是否是另一个路径字符串的有效前缀。
+        前缀：str
+        路径：str
+        结果：bool"""
+    def PathMatchSpec(self, FileName: str, Spec: str) -> bool:
+        """使用MS-DOS通配符规则(如"*.txt")对字符串进行匹配。
+        文件名：str
+        通配符规则：str
+        结果：bool"""
+    def PathIsSameRoot(self, Path1: str, Path2: str) -> bool:
+        """比较两个路径，判断它们是否具有相同的根路径部分。
+        路径一：str
+        路径二：str
+        结果：bool"""
+    def PathCombine(self, Dir: str, FileName: str) -> str:
+        """将两个路径拼接为一个格式规范的完整路径。
+        目录：str
+        文件名：str
+        结果：str"""
+    def PathAppend(self, Path: str, More: str) -> str:
+        """将一个路径追加到另一个路径的末尾，并返回拼接后的结果。
+        路径：str
+        追加路径：str
+        结果：str"""
+    def PathQuoteSpaces(self, Path: str) -> str:
+        """如果路径中包含空格，则在其前后加上引号，并返回结果。
+        路径：str
+        结果：str"""
+    def PathUnquoteSpaces(self, Path: str) -> str:
+        """去除路径开头和结尾的引号，并返回结果。
+        路径：str
+        结果：str"""
+    def PathCanonicalize(self, Path: str) -> str:
+        """解析路径中的"."和".."片段，并返回化简后的结果。
+        路径：str
+        结果：str"""
+    def StrToInt(self, Text: str) -> int:
+        """将数字的字符串表示形式转换为整数值。
+        文本：str
+        结果：int"""
+    def StrFormatByteSize(self, Size: int) -> str:
+        """将字节数格式化为易读的字符串(例如"1.44 MB")。
+        字节数：int
+        结果：str"""
+    def timeGetTime(self) -> int:
+        """获取系统时间，以毫秒为单位。
+        结果：int"""
+    def timeBeginPeriod(self, uPeriod: int) -> int:
+        """为应用程序请求一个最小的定时器精度(返回0表示成功)。
+        定时器精度(毫秒)：int
+        结果：int"""
+    def timeEndPeriod(self, uPeriod: int) -> int:
+        """清除先前设置的最小定时器精度(返回0表示成功)。
+        定时器精度(毫秒)：int
+        结果：int"""
+    def PlaySound(self, SoundName: str, Flags: int) -> bool:
+        """播放指定的声音，可以是文件名、系统事件别名或资源(参见SND_*标志)。
+        声音名称或文件名：str
+        标志：int
+        结果：bool"""
+    def sndPlaySound(self, SoundName: str, Flags: int) -> bool:
+        """播放由文件名或系统事件别名指定的波形声音(比PlaySound更简单的旧版接口)。
+        声音名称或文件名：str
+        标志：int
+        结果：bool"""
+    def waveOutGetNumDevs(self) -> int:
+        """获取当前系统中波形音频输出设备的数量。
+        结果：int"""
+    def waveInGetNumDevs(self) -> int:
+        """获取当前系统中波形音频输入设备的数量。
+        结果：int"""
+    def midiOutGetNumDevs(self) -> int:
+        """获取当前系统中MIDI输出设备的数量。
+        结果：int"""
+    def midiInGetNumDevs(self) -> int:
+        """获取当前系统中MIDI输入设备的数量。
+        结果：int"""
+    def auxGetNumDevs(self) -> int:
+        """获取当前系统中辅助输出设备的数量。
+        结果：int"""
+    def joyGetNumDevs(self) -> int:
+        """获取当前驱动程序支持的摇杆设备数量。
+        结果：int"""
+    def mixerGetNumDevs(self) -> int:
+        """获取当前系统中混音器设备的数量。
+        结果：int"""
+    def mmioStringToFOURCC(self, Text: str, uFlags: int) -> int:
+        """将最多4个字符的字符串转换为四字符代码(FOURCC)。
+        文本：str
+        标志：int
+        结果：int"""
+    def SHGetFolderPath(self, Csidl: int) -> str:
+        """获取一个已知特殊文件夹的路径(例如CSIDL_PERSONAL=5表示"我的文档"、CSIDL_DESKTOP=0表示桌面、CSIDL_APPDATA=26)。
+        特殊文件夹标识：int
+        结果：str"""
+    def ShellAbout(self, hWnd: int, AppName: str, OtherStuff: str, Icon: int) -> int:
+        """显示标准的Windows"关于"对话框。
+        窗口句柄：int
+        应用程序名：str
+        附加说明文字：str
+        图标句柄：int
+        结果：int"""
+    def ExtractIcon(self, hInst: int, FileName: str, IconIndex: int) -> int:
+        """从指定的可执行文件、DLL或图标文件中提取一个图标。
+        模块实例句柄：int
+        文件名：str
+        图标索引：int
+        结果：int"""
+    def SHGetFileTypeDescription(self, FileName: str) -> str:
+        """获取文件的可读文件类型说明(例如"文本文档")。
+        文件名：str
+        结果：str"""
+    def IsUserAnAdmin(self) -> bool:
+        """判断当前进程是否以管理员权限运行。
+        结果：bool"""
+    def ExitWindowsEx(self, uFlags: int, dwReason: int) -> bool:
+        """注销、关机或重启系统(具体行为由uFlags决定，例如注销EWX_LOGOFF=0、关机EWX_SHUTDOWN=1、重启EWX_REBOOT=2)。
+        标志：int
+        原因代码：int
+        结果：bool"""
+    def LockWorkStation(self) -> bool:
+        """锁定工作站的显示，要求用户重新登录。
+        结果：bool"""
+    def SHFileOperationDelete(self, FileName: str, AllowUndo: int) -> int:
+        """通过资源管理器删除一个文件(AllowUndo为True时会放入回收站)。返回0表示成功。
+        文件名：str
+        允许撤销(放入回收站)：int
+        结果：int"""
+    def SHEmptyRecycleBin(self, RootPath: str) -> int:
+        """清空指定驱动器/根路径对应的回收站内容(永久删除)。返回0表示成功。
+        根路径：str
+        结果：int"""
+    def StrChr(self, Text: str, Ch: str) -> int:
+        """返回字符在字符串中首次出现的位置(从1开始计数)，未找到返回0。
+        文本：str
+        字符：str
+        结果：int"""
+    def StrStr(self, Text: str, Search: str) -> int:
+        """返回子串在字符串中首次出现的位置(从1开始计数)，未找到返回0。
+        文本：str
+        查找的子串：str
+        结果：int"""
+    def GetProcAddress(self, hModule: int, ProcName: str) -> int:
+        """获取已加载DLL中导出函数或变量的地址，以整数形式返回。
+        模块句柄：int
+        函数名：str
+        结果：int"""
+    def GetExitCodeProcess(self, hProcess: int) -> int:
+        """获取指定进程的终止状态(仍在运行时返回STILL_ACTIVE=259)。
+        进程句柄：int
+        结果：int"""
+    def SetPriorityClass(self, hProcess: int, dwPriorityClass: int) -> bool:
+        """设置指定进程的优先级类别。
+        进程句柄：int
+        优先级类别：int
+        结果：bool"""
+    def GetPriorityClass(self, hProcess: int) -> int:
+        """获取指定进程的优先级类别。
+        进程句柄：int
+        结果：int"""
+    def GetFileSize(self, hFile: int) -> int:
+        """获取用给定句柄打开的文件的大小(字节数，适用于4GB以下的文件)。
+        文件句柄：int
+        结果：int"""
+    def GetLocalTime(self) -> str:
+        """获取当前本地日期和时间，格式为"YYYY-MM-DD HH:MM:SS"。
+        结果：str"""
+    def GetSystemTime(self) -> str:
+        """获取当前系统(UTC)日期和时间，格式为"YYYY-MM-DD HH:MM:SS"。
+        结果：str"""
+    def GetCursorPos(self) -> Any:
+        """获取鼠标光标在屏幕坐标系中的位置。
+        结果：Any"""
+    def GetWindowRect(self, hWnd: int) -> Any:
+        """获取指定窗口边界矩形的屏幕坐标。
+        窗口句柄：int
+        结果：Any"""
+    def GetClientRect(self, hWnd: int) -> Any:
+        """获取窗口客户区的坐标。
+        窗口句柄：int
+        结果：Any"""
+    def ClientToScreen(self, hWnd: int, APoint: Any) -> Any:
+        """将指定点从客户区坐标转换为屏幕坐标。
+        窗口句柄：int
+        点坐标：Any
+        结果：Any"""
+    def ScreenToClient(self, hWnd: int, APoint: Any) -> Any:
+        """将指定点从屏幕坐标转换为客户区坐标。
+        窗口句柄：int
+        点坐标：Any
+        结果：Any"""
+    def MoveToEx(self, hdc: int, X: int, Y: int) -> Any:
+        """将当前位置更新为指定点，并返回之前的位置。
+        设备上下文句柄：int
+        X坐标：int
+        Y坐标：int
+        结果：Any"""
+    def GetShortPathName(self, lpszLongPath: str) -> str:
+        """获取指定路径的短路径(8.3格式)形式。
+        完整路径：str
+        结果：str"""
+    def GetLongPathName(self, lpszShortPath: str) -> str:
+        """将指定的短路径转换为长路径形式。
+        短路径：str
+        结果：str"""
+    def GetLogicalDriveStrings(self) -> str:
+        """获取所有逻辑驱动器根路径的列表(以"|"分隔)。
+        结果：str"""
+    def GetDlgItemText(self, hDlg: int, nIDDlgItem: int) -> str:
+        """获取对话框中控件的文本。
+        对话框句柄：int
+        控件ID：int
+        结果：str"""
 
 class Action(CustomAction):
     """TAction 是 VCL 动作对象的基类。 TAction 实现与菜单项和控件一起使用的操作。 TAction 操作的已发布属性和事件可以在设计时在对象检查器中进行管理。
@@ -3471,7 +4968,7 @@ class Action(CustomAction):
         Visible 指定操作的可见状态（True 表示可见，False 表示不可见）。
         如果将客户端链接到操作的操作链接的 IsVisibleLinked 方法返回 True，则此 Visible 值将传播到操作的客户端。
         如果操作的 Visible 为 False，并且操作链接的 IsVisibleLinked 返回 True，则客户端（控件、菜单项或其他）的 Visible 也设置为 False，并且该客户端也是不可见的。通常，如果操作属于 TCustomViewAction，则操作链接的 IsVisibleLinked 返回 False。否则，当操作属于 TAction 时，操作链接的 IsVisibleLinked 返回 True。也就是说，当需要提供 Visible 设置为 True 的操作的客户端的可见表示时，使用 TCustomViewAction。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AOwner: Component) -> None:
         """TAction.Create(AOwner: 组件) -> 无
@@ -3542,11 +5039,11 @@ class ActionList(CustomActionList):
 
     注意：虽然可以使用 TActionList 维护应用程序的操作，但使用 Vcl.ActnMan.TActionManager 可能更简单。"""
     __hash__: ClassVar[None] = ...
-    ActionCount: Any
+    ActionCount: int
     """指示操作列表中的操作数量。"""
     Actions: Any
     """列出由操作列表维护的操作。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有的组件的迭代器"""
@@ -3567,7 +5064,7 @@ class ActionList(CustomActionList):
 
         State 可以是 TActionListState 类型中定义的常量之一：
         asNormal、asSuspished 和 asSuspishedEnabled。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -3679,7 +5176,7 @@ class ActivityIndicator(CustomActivityIndicator):
         aitSectorRing ：分段环的扇区按顺序突出显示，直到环完全突出显示。在下一次遍历中，每个扇区都以暗淡状态显示。"""
     Parent: Any
     """返回/设置控制父级"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -3772,13 +5269,13 @@ class ActivityIndicator(CustomActivityIndicator):
 class BaseBindScopeComponent(Component):
     """绑定范围组件的基类。 TBaseBindScopeComponent 是 TCustomBindScope 组件的祖先。 TBaseBindScopeComponent 提供添加作用域映射、获取作用域成员和值、返回作用域本身或成员作用域的功能。它还提供用于访问此范围内的绑定表达式和范围映射的属性。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents(prefix)
@@ -3802,7 +5299,7 @@ class BaseBindScopeComponent(Component):
 
         提示：将 Self 作为 Owner 参数传递时，请考虑 Self 引用的内容。如果一个组件在其一个方法中创建另一个组件，则 Self 引用第一个组件，而不是正在创建的组件，该组件随后由第一个组件拥有。
         注意：TComponent 构造函数部分是虚拟的，以允许类引用的多态实例化。这对于流系统和表单设计器至关重要。声明新组件的 Create 构造函数时，不要忘记使用 override 指令。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置组件及其拥有的组件。
 
         Data.Bind.Components.TBaseBindScopeComponent.Destroy 继承自 System.Classes.TComponent.Destroy。此行以下的所有内容均引用 System.Classes.TComponent.Destroy。
@@ -3871,7 +5368,7 @@ class BaseBindScopeComponent(Component):
 class BaseImageList(Component):
     """TBaseImageList 的包装"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -3879,14 +5376,14 @@ class BaseImageList(Component):
     """数量"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def BeforeDestruction(self, *args, **kwargs) -> Any:
+    def BeforeDestruction(self) -> None:
         """在调用第一个析构函数之前执行任何必要的操作。
 
         BeforeDestruction 在组件的第一个析构函数执行之前立即自动调用。不要在您的应用程序中显式调用它。
         正如在 TComponent 中实现的那样，BeforeDestruction 检查 Destroying 方法是否已被调用，如果没有，则调用它。在组件被销毁之前重写此方法以执行其他操作的后代应首先调用继承的方法以确保进行此检查。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any: ...
+    def BeginUpdate(self) -> None: ...
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
 
@@ -3894,8 +5391,8 @@ class BaseImageList(Component):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def Change(self, *args, **kwargs) -> Any: ...
-    def EndUpdate(self, *args, **kwargs) -> Any: ...
+    def Change(self, Index: int) -> None: ...
+    def EndUpdate(self) -> None: ...
     def GetParentComponent(self) -> Any:
         """TComponent.GetParentComponent()
 
@@ -3955,13 +5452,13 @@ class BaseImageList(Component):
 class BaseLinkingBindSource(BaseBindScopeComponent):
     """支持链接的作用域基类"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -4046,7 +5543,7 @@ class BaseObjectBindSource(BaseLinkingBindSource):
     """bool：指定绑定源是否有修改数据的权限。
 
         检查 CanModify 以确定是否可以编辑数据。当 CanModify 设置为 True 时，绑定源可以编辑数据。当 CanModify 设置为 False 时，绑定源无法编辑数据。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -4054,7 +5551,7 @@ class BaseObjectBindSource(BaseLinkingBindSource):
     """bool：指示数据是否处于编辑模式。
 
         阅读编辑以确定绑定源适配器当前是否可以编辑数据。如果 Editing 属性为 True，则绑定源适配器提供的数据处于编辑模式。否则，它是 False。"""
-    Eof: Any
+    Eof: bool
     """bool：指示绑定源适配器是否位于最后一条记录中。
 
         读取 Eof（文件结尾）以确定 ItemIndex 是否位于最后一条记录中。如果 Eof 为 True，则绑定源具有适配器，并且活动记录是最后一条或没有记录。如果 ItemIndex 位于任何其他位置，则 Eof 为 False。"""
@@ -4074,9 +5571,9 @@ class BaseObjectBindSource(BaseLinkingBindSource):
     """可调用[[对象，BindSourceAdapter]，无]："""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def ApplyUpdates(self, *args, **kwargs) -> Any:
+    def ApplyUpdates(self) -> None:
         """ 目前没有任何其他信息。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -4085,9 +5582,9 @@ class BaseObjectBindSource(BaseLinkingBindSource):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def Cancel(self, *args, **kwargs) -> Any:
+    def Cancel(self) -> None:
         """ 目前没有任何其他信息。"""
-    def CancelUpdates(self, *args, **kwargs) -> Any:
+    def CancelUpdates(self) -> None:
         """ 目前没有任何其他信息。"""
     def Create(self, AOwner: Component) -> None:
         """TBaseObjectBindSource.Create(AOwner: Component) -> 无
@@ -4104,9 +5601,9 @@ class BaseObjectBindSource(BaseLinkingBindSource):
 
         提示：将 Self 作为 Owner 参数传递时，请考虑 Self 引用的内容。如果一个组件在其一个方法中创建另一个组件，则 Self 引用第一个组件，而不是正在创建的组件，该组件随后由第一个组件拥有。
         注意：TComponent 构造函数部分是虚拟的，以允许类引用的多态实例化。这对于流系统和表单设计器至关重要。声明新组件的 Create 构造函数时，不要忘记使用 override 指令。"""
-    def Delete(self, *args, **kwargs) -> Any:
+    def Delete(self, Index: int) -> None:
         """ 目前没有任何其他信息。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置组件及其拥有的组件。
 
         Data.Bind.ObjectScope.TBaseObjectBindSource.Destroy 继承自 System.Classes.TComponent.Destroy。此行以下的所有内容均引用 System.Classes.TComponent.Destroy。
@@ -4116,9 +5613,9 @@ class BaseObjectBindSource(BaseLinkingBindSource):
         要销毁表单，请调用其 Release 方法。 Release 会等待所有表单的事件处理程序以及表单组件的事件处理程序执行完毕，然后再销毁表单。
 
         注意：表单拥有在设计模式下放置在其上的所有控件和非可视组件。当它被释放时，所有这些组件也会自动释放。默认情况下，所有表单均归全局 Application 对象所有。当应用程序终止时，它会释放全局 Application 对象，从而释放所有表单。对于不是组件的对象，以及使用 nil 所有者创建的组件，请务必在完成对象后调用 Free；否则分配给该对象的内存将丢失，直到应用程序终止。"""
-    def Edit(self, *args, **kwargs) -> Any:
+    def Edit(self) -> None:
         """ 目前没有任何其他信息。"""
-    def First(self, *args, **kwargs) -> Any:
+    def First(self) -> None:
         """ 目前没有任何其他信息。"""
     def GetFormatLink(self, AFieldName: str) -> IEditFormatLink:
         """TBaseObjectBindSource.GetFormatLink(AFieldName: str) -> IEditFormatLink
@@ -4141,7 +5638,7 @@ class BaseObjectBindSource(BaseLinkingBindSource):
         """TComponent.HasParent()
 
         指示组件是否有父组件来处理其归档。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self, Index: int, S: str) -> None:
         """ 目前没有任何其他信息。"""
     def IsRequired(self, AFieldName: str) -> bool:
         """TBaseObjectBindSource.IsRequired(AFieldName: str) -> bool
@@ -4151,23 +5648,23 @@ class BaseObjectBindSource(BaseLinkingBindSource):
         """TBaseObjectBindSource.IsValidChar(AFieldName: str, AChar: unicodechr(str)) -> bool
 
         目前没有任何其他信息。"""
-    def Last(self, *args, **kwargs) -> Any:
+    def Last(self) -> None:
         """ 目前没有任何其他信息。"""
     def Locate(self, KeyFields: str, KeyValues: Value) -> bool:
-    """TBaseObjectBindSource.Locate(KeyFields: str, KeyValues: Value) -> bool
+        """TBaseObjectBindSource.Locate(KeyFields: str, KeyValues: Value) -> bool
 
         目前没有任何其他信息。"""
     def Lookup(self, KeyFields: str, KeyValues: Value, ResultFields: str) -> Value:
         """TBaseObjectBindSource.Lookup(KeyFields: str, KeyValues: Value, ResultFields: str) -> Value
 
         目前没有任何其他信息。"""
-    def Next(self, *args, **kwargs) -> Any:
+    def Next(self) -> None:
         """ 目前没有任何其他信息。"""
-    def Post(self, *args, **kwargs) -> Any:
+    def Post(self) -> None:
         """ 目前没有任何其他信息。"""
-    def Prior(self, *args, **kwargs) -> Any:
+    def Prior(self) -> None:
         """ 目前没有任何其他信息。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """ 目前没有任何其他信息。"""
     def __contains__(self, other) -> bool:
         """返回对象本身是否包含参数 other。
@@ -4228,7 +5725,7 @@ class BasicAction(Component):
     """可调用[[对象]，无]："""
     OnUpdate: Callable[[Object],None]
     """可调用[[对象]，无]："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AOwner: Component) -> None:
         """TBasicAction.Create(AOwner: Component) -> None
@@ -4237,7 +5734,7 @@ class BasicAction(Component):
         应用程序无需直接实例化 TBasicAction。当您在操作列表编辑器中选择“新建操作”时，将自动创建操作。
         如果要在运行时创建操作，则应调用 FireMonkey 操作 (FMX.ActnList.TAction) 或 VCL 操作 (Vcl.ActnList.TAction) 或其任何子类的 Create 构造函数。Create 构造函数将 TActionList 组件分配给所创建操作的 ActionList 属性。
         Create 调用继承的构造函数，然后创建所创建操作的客户端列表。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """释放 TBasicAction 对象的实例。
 
         您不需要调用析构函数来执行操作。动作是一个组件，会被其所有者自动销毁，并在创建时传递给构造函数。如果必须手动销毁操作，请改为调用 Free，这会安全地调用析构函数。"""
@@ -4255,7 +5752,7 @@ class BasicAction(Component):
 
         引入一个接口，用于验证目标组件或控件的类型和状态是否适合该操作。
         HandlesTarget 在 TBasicAction 中不执行任何操作。 HandlesTarget 是在 TBasicAction 中引入的，以便后代可以重写它来检查目标的类型和状态。 HandlesTarget 可以验证与操作相关的目标的任何信息。如果目标满足指定条件，则 HandlesTarget 返回 True，否则返回 False。"""
-    def Suspended(self, *args, **kwargs) -> Any:
+    def Suspended(self) -> bool:
         """ 目前没有任何其他信息。"""
     def Update(self) -> Any:
         """TBasicAction.Update()
@@ -4317,13 +5814,13 @@ class BasicAction(Component):
 class BasicBindComponent(Component):
     """TBasicBindComponent 的包装器"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -4457,7 +5954,7 @@ class Bevel(Control):
         调用 Show 方法将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子代，Show 和 ShowModal 方法将 Visible 设置为 True，并将表单置于所有打开窗口的前面。
         对于 TTabSheet 子代，Visible 不控制运行时控件的可见性。有关更多信息，请参阅 TabVisible 属性的描述。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -4559,7 +6056,7 @@ class Bevel(Control):
 class BindComponentDelegate(ContainedBindComponent):
     """是一种包装一个或多个其他绑定组件的绑定组件。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -4575,7 +6072,7 @@ class BindComponentDelegate(ContainedBindComponent):
     """可调用[[对象，异常]，无]："""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -4584,7 +6081,7 @@ class BindComponentDelegate(ContainedBindComponent):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def GetDelegates(self, *args, **kwargs) -> Any:
+    def GetDelegates(self, ADelegates: Any) -> None:
         """获取此包装器绑定组件用于执行表达式并响应用户输入的委托（或包含的）绑定组件。"""
     def GetParentComponent(self) -> Any:
         """TComponent.GetParentComponent()
@@ -4645,7 +6142,7 @@ class BindComponentDelegate(ContainedBindComponent):
 class BindingsList(CustomBindingsList):
     """实现绑定列表组件。 TBindingsList 构建于 TCustomBindingsList 组件之上，并发布可从对象检查器内访问的附加属性。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -4659,7 +6156,7 @@ class BindingsList(CustomBindingsList):
     """bool： 目前没有任何其他信息。"""
     UseAppManager: bool
     """bool：指定绑定列表是否使用全局应用程序管理器进行托管绑定。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -4781,7 +6278,7 @@ class BitBtn(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -4819,7 +6316,7 @@ class BitBtn(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -4836,9 +6333,9 @@ class BitBtn(WinControl):
         如果仅存在一幅图像，则位按钮会尝试通过针对不同状态稍微更改图像来表示其他状态，尽管“向下”状态始终与“向上”状态相同。如果您对结果不满意，可以在位图中提供其他图像。
         如果位图中有多个图像，则必须使用 Num Glyphs 属性指定位图中的图像数量。
         注意：位图的左下像素保留用于“透明”颜色。位图中与左下像素匹配的任何像素都将是透明的。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HotImageIndex: int
     """整数：用于在控件处于鼠标悬停状态时指定显示的图像索引。"""
@@ -4931,7 +6428,7 @@ class BitBtn(WinControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -4955,7 +6452,7 @@ class BitBtn(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Spacing: int
     """int：确定图像和文本在位图或速度按钮上的显示位置。
@@ -4998,13 +6495,13 @@ class BitBtn(WinControl):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """布尔：用于控制文本是否自动换行"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
 
         指示控件是否可以获得焦点。"""
-    def Click(self, *args, **kwargs) -> Any:
+    def Click(self) -> None:
         """模拟鼠标单击，就好像用户单击了按钮一样。
 
         使用 Click 来模拟鼠标单击。单击执行以下任务：
@@ -5018,7 +6515,7 @@ class BitBtn(WinControl):
         构造按钮控件的实例并初始化其值。
         使用 Create 以编程方式实例化按钮。使用表单设计器添加的按钮是自动创建的。
         AOwner 参数指定负责释放按钮的组件（通常是表单）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁位图按钮对象。
 
         不要直接在应用程序中调用 Destroy。相反，请拨打免费电话。 Free 检查位图按钮不为零，然后调用 Destroy。"""
@@ -5088,7 +6585,7 @@ class Bitmap(Graphic):
         使用 AlphaFormat 更改 TBitmap 使用 32 位位图中每个像素的保留字节的方式。"""
     Canvas: Any
     """画布"""
-    Handle: Any
+    Handle: int
     """句柄"""
     HandleType: Any
     """句柄类型"""
@@ -5102,11 +6599,11 @@ class Bitmap(Graphic):
     """像素格式"""
     ScanLine: Pointer
     """指针："""
-    TransparentColor: Any
+    TransparentColor: bool
     """透明颜色"""
     TransparentMode: Any
     """透明模式"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Assign(self, Source: Persistent) -> None:
         """将新的位图图像复制到位图对象。
@@ -5120,7 +6617,7 @@ class Bitmap(Graphic):
         Vcl.Graphics.TBitmap.CanLoadFromStream 继承自Vcl.Graphics.TGraphic.CanLoadFromStream。该行以下所有内容均引用Vcl.Graphics.TGraphic.CanLoadFromStream。
         当指定的流包含特定 TGraphic 子类的流图像时，CanLoadFromStream 返回 True。
         该方法使用当前流位置，它不会更改当前流位置。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """实例化位图对象。
 
         调用 Create 在运行时实例化位图对象。当位图图像加载到 TImage 中时，也会自动调用 Create。
@@ -5128,7 +6625,7 @@ class Bitmap(Graphic):
         实例化位图对象。
         调用 Create 在运行时实例化位图对象。当位图图像加载到 TImage 中时，也会自动调用 Create。
         Create为位图对象分配内存，并调用继承的Create。然后它创建一个 TBitmapImage 作为表示位图的内部图像。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """释放位图对象的实例。
 
         Destroy 是 TBitmap 对象的析构函数。
@@ -5138,7 +6635,7 @@ class Bitmap(Graphic):
         """释放位图GDI资源"""
     def FreeImage(self) -> Any:
         """释放加载位图的原始数据占用的内存"""
-    def HandleAllocated(self, *args, **kwargs) -> Any:
+    def HandleAllocated(self) -> bool:
         """指示 TBitmap 对象是否已获取基础 GDI 对象的句柄。
 
         使用 HandleAllocation 确定 Handle 属性是否设置为 HBITMAP 值。 HandleAllocation 指示基础 GDI 对象是否已创建。使用 HandleAllocation 而不是读取 Handle 属性。当应用程序读取 Handle 属性时，如果基础 GDI 对象尚不存在，它会自动创建一个位图并返回其句柄。"""
@@ -5370,7 +6867,7 @@ class BoundLabel(Control):
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
     WordWrap: bool
     """布尔：用于控制文本是否自动换行。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -5473,13 +6970,13 @@ class BufferedFileStream(FileStream):
     
     注意：TBufferedFileStream 不会为随机位置读取或写入或大量读取或写入提供性能增益。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     __bound__: Any
     """如果包装器仍绑定到 实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有 实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AFileName: str, Mode: int, BufferSize: int) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AFileName: str, Mode: int, BufferSize: int) -> None:
         """TBufferedFileStream.Create(AFileName: str, Mode: int, BufferSize: int) -> None
@@ -5488,9 +6985,9 @@ class BufferedFileStream(FileStream):
         调用 Create 实例化文件流以读取或写入指定文件。指定文件名和文件打开方式作为参数。
         Mode 参数指示文件的打开方式。模式参数由开放模式和（可能）共享模式或组合在一起组成。
         如果无法打开文件，Create 会引发异常。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TBufferedFileStream 的此实例。"""
-    def FlushBuffer(self, *args, **kwargs) -> Any:
+    def FlushBuffer(self) -> None:
         """将尚未写入文件的缓冲数据写入。
 
         使用缓冲文件流时，调用FlushBuffer将缓冲区中尚未写入的数据写入文件。
@@ -5656,7 +7153,7 @@ class Button(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -5697,16 +7194,16 @@ class Button(WinControl):
         使用 Enabled 更改控件对用户的可用性。要禁用控件，请将 Enabled 设置为 False。一些禁用的控件显示为灰色（例如：按钮、复选框、标签），而其他控件（容器控件）只是失去其功能而不改变其外观。如果 Enabled 设置为 False，则控件将忽略鼠标、键盘和计时器事件。
         要重新启用控件，请将 Enabled 设置为 True。
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
 
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HotImageIndex: int
     """整数：用于在控件处于鼠标悬停状态时指定显示的图像索引。"""
@@ -5787,7 +7284,7 @@ class Button(WinControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -5811,7 +7308,7 @@ class Button(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Style: CustomButton.TButtonStyle
     """自定义Button.TButtonStyle："""
@@ -5851,7 +7348,7 @@ class Button(WinControl):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """布尔：用于控制文本是否自动换行。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -5919,13 +7416,13 @@ class BytesStream(MemoryStream):
     """tuple：指定存储的数据。
 
         Bytes 属性返回存储数据的缓冲区。使用 Size 属性查找缓冲区中的实际数据量。"""
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     __bound__: Any
     """如果包装器仍绑定到 组件 实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有 组件 实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, ABytes: tuple) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, ABytes: tuple) -> None:
         """TBytesStream.Create(ABytes: tuple) -> None
@@ -6042,7 +7539,7 @@ class Canvas(Persistent):
         设置 Font 以指定在图像上书写文本时使用的字体。Font 的值是 T Font 对象。设置 T Font 对象的属性以指定字体的字体、颜色、大小、样式以及字体的任何其他方面。
         只有当您拥有所有者绘制的列表框（您需要在其中使用画布）时，Canvas.Font 属性才保证等于 Font 属性。即使在这种情况下，也只有在第一个绘制消息正在进行时才保证等于 Font 属性。如果您在所有者绘制事件中使用画布，则一切都应按预期工作。出于超出其预期用途范围的原因使用画布可能会产生不可预测的结果。
         注意：设置 Font 属性会分配指定的 T Font 对象，而不是替换当前的 T Font 对象。"""
-    Handle: Any
+    Handle: int
     """指定此画布的句柄。"""
     LockCount: Any
     """表示画布被锁定以防止其他线程干扰的次数。"""
@@ -6059,7 +7556,7 @@ class Canvas(Persistent):
     """指定笔的当前绘图位置。"""
     TextFlags: Any
     """指定如何将文本写入画布。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def AngleArc(self, X: int, Y: int, Radius: int, StartAngle: float, SweepAngle: float) -> None:
         """TCanvas.AngleArc(X: int, Y: int, Radius: int, StartAngle: float, SweepAngle: float) -> None
@@ -6085,11 +7582,11 @@ class Canvas(Persistent):
         弦是由一个椭圆的边界矩形、起始角度和结束角度定义的。与TCanvas.Arc函数类似，但不同之处在于，TCanvas.Chord函数会封闭起始角度和结束角度之间的区域，形成一个封闭的扇形，类似于一个圆环的切片。"""
     def CopyRect(self) -> Any:
         """用于将一个画布（源矩形）上的图像拷贝到另一个画布（目标矩形）上。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """创建 TCanvas 的实例。
 
         调用 Create 在运行时实例化 TCanvas 对象。Create 为 TCanvas 实例分配内存，并为 Font、Brush 和 Pen 属性创建 TFont、TBrush 和 TPen 对象。Create 还将 CopyMode 初始化为 cmSrcCopy。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCanvas 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。"""
@@ -6109,7 +7606,7 @@ class Canvas(Persistent):
         """TCanvas.GetPixel(x, y) -> TColor
 
         这与 TCanvas.Pixels[x, y] 相同。\r返回当前 ClipRect 内像素的颜色。"""
-    def HandleAllocated(self, *args, **kwargs) -> Any:
+    def HandleAllocated(self) -> bool:
         """指示 TCanvas 对象是否已获取设备上下文的句柄。
 
         使用 HandleAllocation 确定 Handle 属性是否设置为 HDC 值。 HandleAllocation 指示画布是否已获取设备上下文。使用 HandleAllocation 而不是读取 Handle 属性。当应用程序读取 Handle 属性时，如果之前未设置该属性，TCanvas 会自动分配一个新的设备上下文并返回其句柄。"""
@@ -6252,7 +7749,7 @@ class CheckBox(WinControl):
         使用约束指定控件的最小和最大宽度和高度。当约束包含最大值或最小值时，无法调整控件大小以违反这些约束。
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -6286,16 +7783,16 @@ class CheckBox(WinControl):
         使用 Enabled 更改控件对用户的可用性。要禁用控件，请将 Enabled 设置为 False。一些禁用的控件显示为灰色（例如：按钮、复选框、标签），而其他控件（容器控件）只是失去其功能而不改变其外观。如果 Enabled 设置为 False，则控件将忽略鼠标、键盘和计时器事件。
         要重新启用控件，请将 Enabled 设置为 True。
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
 
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的底层 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """可调用[[对象]，无]："""
@@ -6368,7 +7865,7 @@ class CheckBox(WinControl):
         如果 ParentShowHint 为 True，则控件使用其父级的 ShowHint 属性值。如果 ParentShowHint 为 False，则控件使用其自己的 ShowHint 属性的值。
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -6384,7 +7881,7 @@ class CheckBox(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     State: CheckBoxState
     """复选框状态："""
@@ -6420,7 +7917,7 @@ class CheckBox(WinControl):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """布尔："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -6492,7 +7989,7 @@ class Collection(Persistent):
     """int：提供对内部 TList.Capacity 属性的访问。
 
         Capacity 属性指定 TList 对象维护的指针数组的分配大小。此值设置为列表需要包含的指针数量。"""
-    Count: Any
+    Count: int
     """返回集合项的数量"""
     ItemClass: CollectionItemClass
     """CollectionItemClass：指示集合项目所属的类。
@@ -6500,7 +7997,7 @@ class Collection(Persistent):
         ItemClass 是集合中的项目所属的类（从 TCollectionItem 派生）。例如，在 TCollection 后代 THeaderSections 的实例中，ItemClass 属性的值为 THeaderSection。"""
     Items: Any
     """返回集合项的迭代器"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, ItemClass: CollectionItemClass) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Add(self) -> Any:
         """TCollection.Add()
@@ -6518,7 +8015,7 @@ class Collection(Persistent):
         """TCollection.Clear()
 
         清除所有收集项目"""
-    def ClearAndResetID(self, *args, **kwargs) -> Any:
+    def ClearAndResetID(self) -> None:
         """作用是清空集合中的所有项，并重新设置每个项的 ID。"""
     def Create(self, ItemClass: CollectionItemClass) -> None:
         """TCollection.Create(ItemClass: CollectionItemClass) -> 无
@@ -6530,7 +8027,7 @@ class Collection(Persistent):
         """TCollection.Delete(索引)
 
         从集合中删除单个项目。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁集合及其中的每个项目。
 
         Destroy 使用 Clear 方法释放 Items 数组中引用的每个项目，然后销毁集合本身。"""
@@ -6543,7 +8040,7 @@ class Collection(Persistent):
 
         返回具有指定 ID 的项目。
         FindItemID 方法返回集合中的项目，该项目的 ID 属性作为参数传递给它。如果没有项目具有指定的 ID，FindItemID 将返回 空。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TCollection 枚举器。
 
         GetEnumerator 返回 TCollectionEnumerator 引用，该引用枚举集合中的所有项目。
@@ -6553,7 +8050,7 @@ class Collection(Persistent):
 
         返回集合中的指定项目。
         GetItem 是 Items 属性的受保护读取实现。"""
-    def GetNamePath(self, *args, **kwargs) -> Any:
+    def GetNamePath(self) -> str:
         """返回对象检查器使用的字符串。
 
         如果集合没有所有者，则 GetNamePath 返回集合的实际（运行时）类型的名称。
@@ -6563,7 +8060,7 @@ class Collection(Persistent):
         """TCollection.Insert（索引）
 
         将新的集合项插入集合中的 Index 位置"""
-    def Owner(self, *args, **kwargs) -> Any:
+    def Owner(self) -> Any:
         """返回集合的所有者。
 
         调用 Owner 来获取对拥有该集合的对象的引用。通常，所有者使用集合来实现其属性之一。"""
@@ -6688,7 +8185,7 @@ class ColorBox(CustomListControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -6718,7 +8215,7 @@ class ColorBox(CustomListControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -6726,9 +8223,9 @@ class ColorBox(CustomListControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     ItemHeight: int
     """整数：项高度"""
@@ -6813,7 +8310,7 @@ class ColorBox(CustomListControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """指明了控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -6831,7 +8328,7 @@ class ColorBox(CustomListControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Style: ColorBoxStyle
     """彩盒样式："""
@@ -6875,7 +8372,7 @@ class ColorBox(CustomListControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -7009,7 +8506,7 @@ class ComboBox(CustomListControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -7052,7 +8549,7 @@ class ComboBox(CustomListControl):
         注意：此属性适用于所有 TControl 后代。"""
     ExtendedUI: bool
     """布尔：用于控制 ComboBox 的外观样式和行为的扩展特性。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -7060,9 +8557,9 @@ class ComboBox(CustomListControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     ImeMode: ImeMode
     """ImeMode：确定输入法编辑器 (IME) 的行为。
@@ -7167,7 +8664,7 @@ class ComboBox(CustomListControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -7183,7 +8680,7 @@ class ComboBox(CustomListControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Sorted: bool
     """布尔：用于控制下拉列表中项的排序方式。"""
@@ -7238,7 +8735,7 @@ class ComboBox(CustomListControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -7318,7 +8815,7 @@ class Component(Persistent):
 
         使用 ComObject 将组件实现的 COM 接口分配给接口引用。此属性由支持 COM 接口的组件使用。
         如果该组件不是 COM 组件的包装器，则尝试读取 ComObject 会导致 TComponent 引发 EComponentError 异常。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     ComponentIndex: int
     """int：指示组件在其所有者的 Components 属性数组中的位置。
@@ -7363,9 +8860,9 @@ class Component(Persistent):
     """指针：表示支持COM的组件内部使用的信息。
 
         VCLComObject 仅供内部使用。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def BeforeDestruction(self, *args, **kwargs) -> Any:
+    def BeforeDestruction(self) -> None:
         """在调用第一个析构函数之前执行任何必要的操作。
 
         在组件的第一个析构函数执行之前，BeforeDestruction 会自动调用。请勿在应用程序中显式调用它。
@@ -7396,7 +8893,7 @@ class Component(Persistent):
 
         提示：将 Self 作为 Owner 参数传递时，请考虑 Self 引用的内容。如果一个组件在其一个方法中创建另一个组件，则 Self 引用第一个组件，而不是正在创建的组件，该组件随后由第一个组件拥有。
         注意：TComponent 构造函数部分是虚拟的，以允许类引用的多态实例化。这对于流系统和表单设计器至关重要。声明新组件的 Create 构造函数时，不要忘记使用 override 指令。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置组件及其拥有的组件。
 
         不要直接调用 Destroy。请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。
@@ -7404,12 +8901,12 @@ class Component(Persistent):
         要销毁表单，请调用其 Release 方法。 Release 会等待所有表单的事件处理程序以及表单组件的事件处理程序执行完毕，然后再销毁表单。
 
         注意：表单拥有在设计模式下放置在其上的所有控件和非可视组件。当它被释放时，所有这些组件也会自动释放。默认情况下，所有表单均归全局 Application 对象所有。当应用程序终止时，它会释放全局 Application 对象，从而释放所有表单。对于不是组件的对象，以及使用 nil 所有者创建的组件，请务必在完成对象后调用 Free；否则分配给该对象的内存将丢失，直到应用程序终止。"""
-    def DestroyComponents(self, *args, **kwargs) -> Any:
+    def DestroyComponents(self) -> None:
         """销毁所有拥有的组件。
 
         DestroyComponents 迭代该组件拥有的组件，从拥有的组件列表中删除每个组件并将其销毁。
         没有必要直接调用 DestroyComponents。当组件被销毁时，DestroyComponents 会被自动调用。"""
-    def Destroying(self, *args, **kwargs) -> Any:
+    def Destroying(self) -> None:
         """表示该组件及其拥有的组件即将被销毁。
 
         Destroying 在 ComponentState 属性中设置 csDestroying 标志。然后，它为每个拥有的组件调用 Destroying 方法，以便也设置其 csDestroying 标志。如果 csDestroying 已设置，则 Destroying 将不执行任何操作。
@@ -7445,16 +8942,16 @@ class Component(Persistent):
         确保通知 AComponent 该组件将被销毁。
         使用 FreeNotification 将 AComponent 注册为组件，当组件即将被销毁时应通知该组件。仅当组件具有不同的形式或具有不同的所有者时，才需要以这种方式注册组件。例如，如果AComponent是另一种形式，并使用该组件实现某个属性，则它必须调用FreeNotification，以便在该组件被销毁时调用其Notification方法。
         对于具有相同所有者的组件，当应用程序显式释放该组件时，会自动调用Notification方法。当隐式释放组件时，不会发送此通知，因为所有者已经被释放。"""
-    def FreeOnRelease(self, *args, **kwargs) -> Any:
+    def FreeOnRelease(self) -> None:
         """释放从 COM 类创建的组件的接口引用。
 
         当组件实现的接口被释放时，FreeOnRelease 被调用。 FreeOnRelease在内部使用，调用对应的接口方法。不必直接调用 FreeOnRelease。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TComponent 枚举器。
 
         GetEnumerator 返回一个 TComponentEnumerator 引用，该引用枚举指定包含组件中包含的组件。
         要处理所有这些子组件，请在 While MoveNext do 循环中调用 TComponentEnumerator GetCurrent 方法。"""
-    def GetNamePath(self, *args, **kwargs) -> Any:
+    def GetNamePath(self) -> str:
         """返回对象检查器使用的字符串。
 
         GetNamePath 用于确定要在对象检查器中显示的正在编辑的对象名称的文本。 GetNamePath 是在 TPersistent 中引入的，因此诸如集合之类的后代可以出现在对象检查器中。 TComponent 重写 GetNamePath 以返回组件的名称。不要直接调用 GetNamePath。"""
@@ -7685,7 +9182,7 @@ class ContainedAction(BasicAction):
         Visible 指定操作的可见状态（True 表示可见，False 表示不可见）。
         如果将客户端链接到操作的操作链接的 IsVisibleLinked 方法返回 True，则此 Visible 值将传播到操作的客户端。
         如果操作的 Visible 为 False，并且操作链接的 IsVisibleLinked 返回 True，则客户端（控件、菜单项或其他）的 Visible 也设置为 False，并且该客户端也是不可见的。通常，如果操作属于 TCustomViewAction，则操作链接的 IsVisibleLinked 返回 False。否则，当操作属于 TAction 时，操作链接的 IsVisibleLinked 返回 True。也就是说，当需要提供 Visible 设置为 True 的操作的客户端的可见表示时，使用 TCustomViewAction。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AOwner: Component) -> None:
         """TContainedAction.Create(AOwner: Component) -> 无
@@ -7694,7 +9191,7 @@ class ContainedAction(BasicAction):
         应用程序不需要直接调用Create。当您在“动作列表”编辑器中选择“新建动作”时，会自动创建动作。
         Create调用继承的System.Classes.TBasicAction.Create构造函数，然后
         初始化 Enabled（将其设置为 True）、Visible（将其设置为 True）和 ImageIndex（将其设置为 -1）属性。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁所包含操作的实例。
 
         如果该操作包含在操作列表或操作管理器中，则 Destroy 会从该列表中删除该操作。然后它调用继承的Destroy方法。"""
@@ -7709,11 +9206,11 @@ class ContainedAction(BasicAction):
         """TBasicAction.Execute()
 
         生成 OnExecute 事件。"""
-    def GetParentComponent(self, *args, **kwargs) -> Any:
+    def GetParentComponent(self) -> Any:
         """返回包含该操作的操作列表。
 
         GetParentComponent 返回包含该操作的操作列表。该操作列表存储在 ActionList 属性中。如果 ActionList 存储 nil，则 GetParentComponent 调用继承的 System.Classes.TComponent.GetParentComponent 方法。"""
-    def HasParent(self, *args, **kwargs) -> Any:
+    def HasParent(self) -> bool:
         """指示操作是否包含在操作列表中。
 
         如果操作包含在存储在 ActionList 属性中操作列表中，则 HasParent 返回 True。如果 ActionList 存储 nil，则 HasParent 调用继承的 System.Classes.TComponent.HasParent 方法。"""
@@ -7722,7 +9219,7 @@ class ContainedAction(BasicAction):
 
         设置包含该操作的操作列表。
         SetParentComponent 将指定的 AParent 操作列表设置为包含该操作的操作列表。该操作列表存储在 ActionList 属性中。"""
-    def Suspended(self, *args, **kwargs) -> Any:
+    def Suspended(self) -> bool:
         """如果操作的操作列表已暂停，则返回 True。"""
     def Update(self) -> Any:
         """TBasicAction.Update()
@@ -7784,11 +9281,11 @@ class ContainedActionList(Component):
     ActionCount 属性返回列表中的操作数量。
     OnStateChange 在状态发生变化时发送通知。"""
     __hash__: ClassVar[None] = ...
-    ActionCount: Any
+    ActionCount: int
     """指示操作列表中的操作数量。"""
     Actions: Any
     """列出由操作列表维护的操作。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -7801,7 +9298,7 @@ class ContainedActionList(Component):
 
         State 可以是 TActionListState 类型中定义的常量之一：
         asNormal、asSuspished 和 asSuspishedEnabled。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -7815,7 +9312,7 @@ class ContainedActionList(Component):
 
         创建 TContainedActionList 的实例。
         该创建器继承自 TComponent，请参阅 TComponent.Create 了解更多信息。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedActionList 的实例。
 
         该析构函数继承自 TComponent，有关详细信息，请参阅 TComponent.Destroy。"""
@@ -7839,7 +9336,7 @@ class ContainedActionList(Component):
 
         为操作列表的每个子操作调用指定的方法。
         GetChildren 由组件流系统使用。对于操作列表中的每个操作，GetChildren 都会调用 Proc 中传递的方法。这些操作按照组件流系统加载或保存的顺序传递给回调。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TContainedActionList 枚举器，即枚举列表中操作的 TActionListEnumerator 引用。
 
         要处理所有操作，请在 ?while MoveNext do? 中从枚举器中读取 Current。环形。"""
@@ -7920,7 +9417,7 @@ class ContainedBindComponent(BasicBindComponent):
         ShowMessage(BindExpressionForm121.Category)
 
         显示以下消息：绑定表达式。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -7932,7 +9429,7 @@ class ContainedBindComponent(BasicBindComponent):
     """int：返回该组件在绑定列表中的索引。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -7950,7 +9447,7 @@ class ContainedBindComponent(BasicBindComponent):
         """TContainedBindComponent.Create(AOwner: Component) -> 无
 
         创建 TContainedBindComponent 类的实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedBindComponent 类的实例。"""
     def GetParentComponent(self) -> Any:
         """TComponent.GetParentComponent()
@@ -8336,7 +9833,7 @@ class Control(Component):
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
     WindowProc: Callable[[Message],None]
     """可调用[[消息]，无]："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BeginDrag(self, Immediate: bool, Threshold: int) -> None:
         """TControl.BeginDrag(Immediate: bool, Threshold: int) -> 无
@@ -8349,7 +9846,7 @@ class Control(Component):
         """TControl.BringToFront()
 
         将该控件置于其父控件中所有其他控件的前面。"""
-    def CheckNonMainThreadUsage(self, *args, **kwargs) -> Any:
+    def CheckNonMainThreadUsage(self) -> None:
         """ 目前没有任何其他信息。"""
     def ClientToParent(self, Point: Point, AParent: WinControl) -> Point:
         """TControl.ClientToParent(Point: Point, AParent: WinControl) -> Point
@@ -8376,7 +9873,7 @@ class Control(Component):
         为没有特定处理程序的所有消息提供消息处理。
         重写 DefaultHandler 以扩展消息的默认处理。 DefaultHandler 是组件编写者处理控件消息的最后机会。 WindowProc 引用的方法提供了第一个机会。 Click 等单独的消息方法提供了额外的机会。
         DefaultHandler 处理 Windows 发送来管理控件文本的消息：WM_GETTEXT、WM_SETTEXT 和 WM_GETTEXTLENGTH。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TControl 的实例。
 
         不要直接在应用程序中调用 Destroy。请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。
@@ -8400,7 +9897,7 @@ class Control(Component):
         是一个 OnDragDrop 事件调度程序。
         创建从 TControl 派生的组件时，重写 DragDrop 以添加在调用 OnDragDrop 事件处理程序之前执行的其他代码。
         Source 参数是拖放到控件上的对象。 X 和 Y 参数是放置对象的鼠标坐标。"""
-    def Dragging(self, *args, **kwargs) -> Any:
+    def Dragging(self) -> bool:
         """指示控件是否正在被拖动。
 
         使用 Dragging 来确定控件的拖动状态。如果 Dragging 返回 true，则控件正在被拖动。如果 Dragging 为 false，则不会拖动控件。"""
@@ -8411,7 +9908,7 @@ class Control(Component):
         绘制控件的文本或标题时，调用 DrawTextBiDiModeFlags 获取画布的 TextFlags 属性的值。返回值也可以与 Windows API DrawText 函数一起使用。
         标志是当前文本标志，不受任何双向模式考虑因素的影响。
         DrawTextBiDiModeFlags 根据从 UseRightToLeftAlignment 和 UseRightToLeftReading 方法返回的值添加或删除 DT_RIGHT 或 DT_RTLREADING 标志。"""
-    def DrawTextBiDiModeFlagsReadingOnly(self, *args, **kwargs) -> Any:
+    def DrawTextBiDiModeFlagsReadingOnly(self) -> int:
         """返回要添加的文本标志，指示控件的文本是否应从右向左阅读。
 
         调用 DrawTextBiDiModeFlagsReadingOnly 来确定在调用 Windows API DrawText 或分配画布的 TextFlags 属性时是否应添加 DT_RTLREADING 标志。
@@ -8423,17 +9920,17 @@ class Control(Component):
         阻止控件被进一步拖动。
         使用 EndDrag 停止通过调用 BeginDrag 方法开始的拖动操作。
         如果 Drop 参数为 true，则拖动的控件将被放置或停靠。如果 Drop 参数为 false，则不会放置或停靠控件，并且会取消拖动。"""
-    def GetControlsAlignment(self, *args, **kwargs) -> Any:
+    def GetControlsAlignment(self) -> Any:
         """指示文本在控件内的对齐方式。
 
         使用 GetControlsAlignment 确定控件的对齐方式。对于没有 Alignment 属性的控件，GetControlsAlignment 返回 taLeftJustify。
 
         注意：GetControlsAlignment 返回由 BiDiMode 属性更改之前文本的对齐方式。要检查是否应反转对齐以反映 BiDiMode 属性，请调用 UseRightToLeftAlignment。"""
-    def GetParentComponent(self, *args, **kwargs) -> Any:
+    def GetParentComponent(self) -> Any:
         """返回控件的父级。
 
         GetParentComponent 由加载和保存 VCL 组件的流系统调用。GetParentComponent 返回的组件负责在流入或流出时加载和保存控件。如在 TControl 中实现的那样，GetParentComponent 返回 Parent 属性的值。"""
-    def GetStyleName(self, *args, **kwargs) -> Any:
+    def GetStyleName(self) -> str:
         """ 目前没有任何其他信息。"""
     def GetSystemMetrics(self, nIndex: int) -> int:
         """TControl.GetSystemMetrics(nIndex: int) -> int
@@ -8448,11 +9945,11 @@ class Control(Component):
 
         注意：GetTextBuf 可用于与 16 位代码兼容。如果向后兼容性不是问题，请使用 Text 属性。
         注意：要获取 AnsiString 形式的控件文本，请改用 Text 属性。"""
-    def GetTextLen(self, *args, **kwargs) -> Any:
+    def GetTextLen(self) -> int:
         """返回控件文本的长度。
 
         调用 GetTextLen 来查找控件文本的长度。这是 GetTextBuf 方法使用的文本缓冲区所需的大小。"""
-    def HasParent(self, *args, **kwargs) -> Any:
+    def HasParent(self) -> bool:
         """指示控件是否有父控件。
 
         HasParent 指示是否已为 Parent 属性分配了值。流系统使用此方法来确定控件是否有负责将其写入流的父控件。正如在 TControl 中实现的那样，如果 Parent 属性不为空，HasParent 返回 true，否则返回 false。"""
@@ -8460,7 +9957,7 @@ class Control(Component):
         """TControl.Hide()
 
         隐藏包裹的控件"""
-    def InitiateAction(self, *args, **kwargs) -> Any:
+    def InitiateAction(self) -> None:
         """如果控件与操作链接关联，则调用操作链接的 Update 方法。
 
         当应用程序空闲时，库会进行一系列调用以允许控件更新其关联的操作，以便它们反映控件的当前属性。第一个是每个窗体的 InitiateAction 方法，其次是其可见菜单和控件的 InitiateAction 方法。
@@ -8475,13 +9972,13 @@ class Control(Component):
         """TControl.Invalidate()
 
         完全重绘控制。"""
-    def IsCustomStyleActive(self, *args, **kwargs) -> Any:
+    def IsCustomStyleActive(self) -> bool:
         """ 用于确定当前窗体是否正在使用自定义样式（Custom Style）。自定义样式是指通过 VCL 样式（Visual Component Library Styles）来自定义窗体和控件外观的能力。"""
     def IsLightStyleColor(self, AColor: int) -> bool:
         """TControl.IsLightStyleColor(AColor: int) -> bool
 
         目前没有任何其他信息。"""
-    def IsRightToLeft(self, *args, **kwargs) -> Any:
+    def IsRightToLeft(self) -> bool:
         """指示控件是否应从右向左反转。
 
         使用 IsRightToLeft 确定是否应以任何方式反转控件，因为它在具有中东语言环境的系统上运行。 IsRightToLeft 旨在帮助组件编写者简化实现 BiDiMode 属性的过程。
@@ -8523,7 +10020,7 @@ class Control(Component):
         如同控件收到指定的 Windows 消息一样进行响应。
         调用 Perform 绕过 Windows 消息队列并将消息直接发送到控件的窗口过程。
         Perform 使用在 Msg 参数中传递的消息 ID、在 WParam 和 LParam 中传递的消息参数以及为零的结果字段来填充消息记录（类型为 TMessage）。 Perform 然后将消息记录传递给 WindowProc 方法进行处理。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """重新绘制屏幕上的控件。
 
         调用 Refresh 方法立即重新绘制控件。Refresh 调用 Repaint 方法。可交替使用 Refresh 和 Repaint 方法。"""
@@ -8592,17 +10089,17 @@ class Control(Component):
         """TControl.Update()
 
         立即处理任何待处理的绘制消息。"""
-    def UseRightToLeftAlignment(self, *args, **kwargs) -> Any:
+    def UseRightToLeftAlignment(self) -> bool:
         """指定控件的对齐方式是否应从右到左反转。
 
         控件在实现 BiDiMode 属性时调用 UseRightToLeftAlignment。 UseRightToLeftAlignment 指示控件的对齐方式是否应从右到左反转。绘制控件或响应鼠标事件时可以使用此信息。
         如果应用程序在具有中东语言环境的系统上运行且 BiDiMode 属性为 bdRightToLeft，则 UseRightToLeftAlignment 返回 True。否则，返回 False。如果中东语言环境中的对齐方式取决于其他因素，则后代将重写 UseRightToLeftAlignment。"""
-    def UseRightToLeftReading(self, *args, **kwargs) -> Any:
+    def UseRightToLeftReading(self) -> bool:
         """指定控件是否使用从右到左的读取顺序。
 
         控件在实现 BiDiMode 属性时调用 UseRightToLeftReading。 UseRightToLeftReading 指示控件的文本是否应从右向左阅读。此信息可用于确定在创建控件时要为控件设置哪些样式标志以及为绘制文本设置哪些标志。
         如果应用程序在具有中东语言环境的系统上运行并且 BiDiMode 属性不是 bdLeftToRight，则 UseRightToLeftReading 返回 true。否则，UseRightToLeftReading 返回 false。"""
-    def UseRightToLeftScrollBar(self, *args, **kwargs) -> Any:
+    def UseRightToLeftScrollBar(self) -> bool:
         """指定垂直滚动条是否出现在控件的左侧。
 
         控件在实现 BiDiMode 属性时调用 UseRightToLeftScrollBar。当垂直滚动条出现在控件左侧时，UseRightToLeftScrollBar 返回 true；当垂直滚动条出现在右侧时，则返回 false。
@@ -8735,7 +10232,7 @@ class ControlBar(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -8766,7 +10263,7 @@ class ControlBar(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     GradientDirection: GradientDirection
     """渐变方向："""
@@ -8774,9 +10271,9 @@ class ControlBar(CustomControl):
     """整数：用于指定控件渐变背景的属性之一。"""
     GradientStartColor: int
     """整数：用于指定控件渐变背景起始颜色的属性之一。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnAlignInsertBefore: Callable[[WinControl,Control,Control],bool]
     """可调用[[WinControl, Control, Control], bool]:"""
@@ -8876,7 +10373,7 @@ class ControlBar(CustomControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     Picture: Picture
     """图片："""
@@ -8898,7 +10395,7 @@ class ControlBar(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -8934,7 +10431,7 @@ class ControlBar(CustomControl):
         调用 Show 方法将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子代，Show 和 ShowModal 方法将 Visible 设置为 True，并将表单置于所有打开窗口的前面。
         对于 TTabSheet 子代，Visible 不控制运行时控件的可见性。有关更多信息，请参阅 TabVisible 属性的描述。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -9029,7 +10526,7 @@ class CustomAction(ContainedAction):
     """str：显示图像集合中链接项目的名称。"""
     Images: CustomImageList
     """CustomImageList： 用于指定控件显示图像的来源。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AOwner: Component) -> None:
         """TCustomAction.Create(AOwner: Component) -> 无
@@ -9040,7 +10537,7 @@ class CustomAction(ContainedAction):
         调用 Create 后，将 TActionList 或 TActionManager 组件添加到其 ActionList 属性。
         AOwner 是负责释放操作的组件。它成为所有者财产的价值。
         Create 只需调用继承的 System.Actions.TContainedAction.Create 构造函数。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """释放 TCustomAction 的实例。
 
         不要直接在应用程序中调用析构函数。相反，请调用Free并确保在调用析构函数之前操作不为空。
@@ -9104,11 +10601,11 @@ class CustomAction(ContainedAction):
 class CustomActionList(ContainedActionList):
     """VCL 中的常用操作列表（没有发布的属性）"""
     __hash__: ClassVar[None] = ...
-    ActionCount: Any
+    ActionCount: int
     """指示操作列表中的操作数量。"""
     Actions: Any
     """列出由操作列表维护的操作。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -9116,7 +10613,7 @@ class CustomActionList(ContainedActionList):
     """自定义图像列表：用于指定控件显示图像的来源。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -9130,7 +10627,7 @@ class CustomActionList(ContainedActionList):
 
         创建 TContainedActionList 的实例。
         该创建器继承自 TComponent，请参阅 TComponent.Create 了解更多信息。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedActionList 的实例。
 
         该析构函数继承自 TComponent，有关详细信息，请参阅 TComponent.Destroy。"""
@@ -9209,7 +10706,7 @@ class CustomActivityIndicator(CustomControl):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于标签页控件，在运行时更改此属性无效。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -9224,7 +10721,7 @@ class CustomActivityIndicator(CustomControl):
 
         创建 TCustomActivityIndi​​cator 的实例。
         创建为所有活动指示器属性设置默认值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomControl 的实例。
 
         Vcl.WinXCtrls.TCustomActivityIndi​​cator.Destroy 继承自 Vcl.Controls.TCustomControl.Destroy。该行以下的所有内容均引用Vcl.Controls.TCustomControl.Destroy。
@@ -9262,9 +10759,9 @@ class CustomActivityIndicator(CustomControl):
         """TControl.Show()
 
         显示包装的控件"""
-    def StartAnimation(self, *args, **kwargs) -> Any:
+    def StartAnimation(self) -> None:
         """将 Animate 属性设置为 True。"""
-    def StopAnimation(self, *args, **kwargs) -> Any:
+    def StopAnimation(self) -> None:
         """将 Animate 属性设置为 False。"""
     def Update(self) -> Any:
         """TControl.Update()
@@ -9327,7 +10824,7 @@ class CustomBindingsList(Component):
     """int： 它是指当前窗体或数据模块中数据绑定控件的数量。"""
     BindComps: ContainedBindComponent
     """包含的绑定组件："""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -9343,7 +10840,7 @@ class CustomBindingsList(Component):
     """bool： 目前没有任何其他信息。"""
     UseAppManager: bool
     """bool：指定绑定列表是否使用全局应用程序管理器进行托管绑定。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -9367,7 +10864,7 @@ class CustomBindingsList(Component):
 
         提示：在传入 Self 作为 Owner 参数时，请考虑 Self 引用的内容。如果组件在其某个方法中创建了另一个组件，则 Self 引用第一个组件，而不是正在创建的组件，该组件随后归第一个组件所有。
         注意：TComponent 构造函数是虚拟的，部分原因是为了允许类引用的多态实例化。这对于流式系统和 Form Designer 至关重要。声明新组件的 Create 构造函数时，不要忘记使用 override 指令。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置组件及其拥有的组件。
 
         Data.Bind.Components.TCustomBindingsList.Destroy 继承自 System.Classes.TComponent.Destroy。此行以下的所有内容均引用 System.Classes.TComponent.Destroy。
@@ -9387,16 +10884,16 @@ class CustomBindingsList(Component):
         GetChildren 需要一个接收所有枚举组件的 TGetChildProc 例程。
         Root 代表将被枚举的组件的所有者。
         此方法在 TComponent 中不执行任何操作，并且预计会在后代中被重写。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TComponent 枚举器。
 
         Data.Bind.Components.TCustomBindingsList.GetEnumerator 继承自 System.Classes.TComponent.GetEnumerator。此行以下所有内容均引用 System.Classes.TComponent.GetEnumerator。
         返回 TComponent 枚举器。
         GetEnumerator 返回 TComponentEnumerator 引用，该引用枚举指定包含组件中包含的组件。
         要处理所有这些子组件，请在 While MoveNext do 循环中调用 TComponentEnumerator GetCurrent 方法。"""
-    def GetMethodsScope(self, *args, **kwargs) -> Any:
+    def GetMethodsScope(self) -> Any:
         """ 目前没有任何其他信息。"""
-    def GetOutputConverter(self, *args, **kwargs) -> Any:
+    def GetOutputConverter(self, ATypeName: str) -> Any:
         """ 目前没有任何其他信息。"""
     def GetParentComponent(self) -> Any:
         """TComponent.GetParentComponent()
@@ -9468,7 +10965,7 @@ class CustomControl(WinControl):
     __hash__: ClassVar[None] = ...
     Parent: Any
     """返回/设置控制父级"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -9487,7 +10984,7 @@ class CustomControl(WinControl):
         当重写 Create 时，始终首先调用继承的 Create 方法，然后继续进行控件的初始化。请记住在重写 Create 方法时指定 override 指令。
 
         注意：如果组件的构造函数分配资源或内存，还需重写析构函数以释放这些资源。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomControl 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。
@@ -9585,11 +11082,11 @@ class CustomDrawGrid(CustomGrid):
     """指定为控件呈现绘图表面的 TCanvas 对象。"""
     CellAlignments: Alignment
     """对齐：用于指定在一个表格中每个单元格的文本或内容的对齐方式。"""
-    Col: Any
+    Col: int
     """指定包含选定单元格的列的索引。"""
     ColAlignments: Alignment
     """对齐：用于指定表格控件中每一列的默认对齐方式。"""
-    ColWidths: Any
+    ColWidths: int
     """指定网格的列宽"""
     DrawingStyle: GridDrawingStyle
     """GridDrawingStyle：确定绘制网格时使用的样式。
@@ -9603,25 +11100,25 @@ class CustomDrawGrid(CustomGrid):
         关于 Vcl.Grids.TStringGrid 的 DrawingStyle 的注意事项：
         除非您还将 DrawingStyle 设置为 gdsClassic，否则设置 FixedColor 无效。
         除非您将 DrawingStyle 的值设置为 gdsGradient，否则设置 GradientStartColor 和 GradientEndColor 无效。"""
-    EditorMode: Any
+    EditorMode: bool
     """确定当前单元格是否可以编辑。"""
-    GridHeight: Any
+    GridHeight: int
     """指定网格的高度（以像素为单位）。"""
-    GridWidth: Any
+    GridWidth: int
     """指定网格的宽度（以像素为单位）。"""
-    LeftCol: Any
+    LeftCol: int
     """指定网格中第一个可见的可滚动列的索引。"""
-    Row: Any
+    Row: int
     """指定包含所选单元格的行的索引。"""
-    RowHeights: Any
+    RowHeights: int
     """指定网格的行高"""
     Selection: Any
     """指示当前选择的边界。"""
     TabStops: bool
     """布尔："""
-    TopRow: Any
+    TopRow: int
     """指定网格中第一个可见的可滚动行的索引。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -9714,21 +11211,21 @@ class CustomEdit(WinControl):
         读取 CanUndo 以确定用户是否对文本进行了任何可以通过调用 Undo 方法撤消的更改。当启用或禁用与这些命令相对应的菜单项时，这非常有用。"""
     CanUndoSelText: bool
     """bool：当设置为 True 时，它​​允许您调用或调用 Undo 操作，以撤消之前使用 SetSelText 或 SetSelTextBuf 所做的更改。默认情况下它设置为 false。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Modified: bool
     """bool：指示用户是否编辑了编辑控件的文本。
 
         使用 Modified 确定用户是否更改了编辑控件的 Text 属性。仅当您为 Text 属性分配值时，Modified 才会重置为 False。特别是，当控件获得焦点时，它不会重置。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     ReadOnly: bool
     """bool：确定用户是否可以更改编辑控件的文本。
@@ -9741,13 +11238,13 @@ class CustomEdit(WinControl):
         读取 SelLength 以确定所选文本的长度（以字节为单位）。这与字符数相同，除非您使用多字节字符集。设置 SelLength 将选择更改为包含从 SelStart 开始的第一个 SelLength 字节。
 
         注意：将 SelLength 设置为大于从 SelStart 到文本末尾的字符数的值会导致选择从 SelStart 到文本末尾的所有字符。将 SelLength 设置为大于可用字符数的值后立即读取 SelLength 将返回实际选择的字符数，而不是刚刚设置的值。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
     SelText: str
     """str：指定编辑控件文本的选定部分。
 
         读取 SelText 以确定所选文本的值。设置 SelText 以用新字符串替换所选文本。如果没有选择，但编辑控件具有焦点，则设置 SelText 以将新字符串插入到光标处的文本中。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabStop: bool
     """bool：确定用户是否可以使用 Tab 键切换到控件。
@@ -9766,27 +11263,27 @@ class CustomEdit(WinControl):
     """str：当 Text 属性为空时显示的提示或消息。
 
         使用 TextHint 提示用户在文本字段中需要输入什么类型的内容。必须启用运行时主题。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
 
         指示控件是否可以获得焦点。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """从编辑控件中删除所有文本。
 
         使用 Clear 将 Text 属性替换为空字符串。Clear 会删除所有文本，而不仅仅是选定的文本。若要仅删除选定的文本，请使用 ClearSelection。"""
-    def ClearSelection(self, *args, **kwargs) -> Any:
+    def ClearSelection(self) -> None:
         """从编辑控件中删除选定的文本。
 
         使用 ClearSelection 从编辑控件中删除选定的文本。如果未选择任何文本，ClearSelection 将不执行任何操作。如果选择了所有文本，则 ClearSelection 会清除所有文本，就像 Clear 方法一样。
 
         注意：调用 ClearSelection 的作用与向编辑控件发送 WM_CLEAR 消息的作用相同。"""
-    def ClearUndo(self, *args, **kwargs) -> Any:
+    def ClearUndo(self) -> None:
         """清除撤消缓冲区，以便无法撤消对文本的任何更改。
 
         使用 ClearUndo 提交对 Text 属性的更改。调用 ClearUndo 后，CanUndo 属性为 false，Undo 方法不执行任何操作。"""
-    def CopyToClipboard(self, *args, **kwargs) -> Any:
+    def CopyToClipboard(self) -> None:
         """将编辑控件中选定的文本以 CF_TEXT 格式复制到剪贴板。
 
         使用 CopyToClipboard 将剪贴板的内容替换为所选文本。如果未选择任何文本，CopyToClipboard 不会清除剪贴板。如果未选择任何文本，CopyToClipboard 将不执行任何操作。
@@ -9799,7 +11296,7 @@ class CustomEdit(WinControl):
         调用 Create 创建并初始化 TCustomEdit 的实例。
         AOwner 是另一个组件，通常是表单，负责释放编辑控件。它成为所有者财产的价值。
         重写 Create 方法的派生对象应在执行任何其他初始化之前调用继承的 Create。"""
-    def CutToClipboard(self, *args, **kwargs) -> Any:
+    def CutToClipboard(self) -> None:
         """将选定的文本以 CF_TEXT 格式复制到剪贴板，然后删除所选内容。
 
         使用 CutToClipboard 将剪贴板的内容替换为选定的文本，同时清除选定的文本。如果没有选定文本，CutToClipboard 不会执行任何操作。
@@ -9812,7 +11309,7 @@ class CustomEdit(WinControl):
         重写 DefaultHandler 以更改编辑控件的默认消息处理。 Message参数可以转换为TMessage类型以获得消息的WParam、LParam和Result。如果消息的结果不为零，则消息已被处理。将 Result 字段设置为非零值，以防止继承的方法进一步处理消息。
 
         注意：如果祖先没有为正在处理的消息指定处理程序，则在消息处理方法中调用继承会导致调用祖先的 DefaultHandler 方法。"""
-    def GetControlsAlignment(self, *args, **kwargs) -> Any:
+    def GetControlsAlignment(self) -> Any:
         """指示文本在控件内的对齐方式。
 
         Vcl.StdCtrls.TCustomEdit.GetControlsAlignment继承自Vcl.Controls.TControl.GetControlsAlignment。该行下面的所有内容均引用Vcl.Controls.TControl.GetControlsAlignment。
@@ -9825,13 +11322,13 @@ class CustomEdit(WinControl):
 
         将选定的文本复制到缓冲区并返回复制的字符数。
         使用 GetSelTextBuf 将选定的文本复制到字符缓冲区中。如果没有选择，缓冲区会收到一个空字符串。如果所选内容包含多于 (BufSize - 1) 个字符，则仅复制前 (BufSize - 1) 个字符。 GetSelTextBuf 返回实际复制到缓冲区中的字符数。"""
-    def PasteFromClipboard(self, *args, **kwargs) -> Any:
+    def PasteFromClipboard(self) -> None:
         """将剪贴板的内容粘贴到编辑控件中，替换当前选择。
 
         使用 PasteFromClipboard 将所选文本替换为剪贴板的内容，或者，如果未选择任何文本，则在光标处插入剪贴板的内容。如果剪贴板为空，或者不包含 CF_TEXT 格式的任何内容，则 PasteFromClipboard 不执行任何操作。
 
         注意：调用 PasteFromClipboard 的作用与向编辑控件发送 WM_PASTE 消息的作用相同。"""
-    def SelectAll(self, *args, **kwargs) -> Any:
+    def SelectAll(self) -> None:
         """选择编辑控件中的所有文本。
 
         使用 SelectAll 选择编辑控件中的所有文本。要仅选择部分文本，请使用 SelStart 和 SelLength 属性。"""
@@ -9849,7 +11346,7 @@ class CustomEdit(WinControl):
 
         将选定的文本替换为以 null 结尾的字符串。
         使用 SetSelTextBuf 将当前选择替换为 Buffer 指向的以 null 结尾的字符串的内容。如果未选择任何文本，则将 Buffer 的内容插入到光标处。 SetSelTextBuf 的作用与设置 SelText 属性相同，只不过它采用的是指向 char 类型而不是字符串的指针。"""
-    def Undo(self, *args, **kwargs) -> Any:
+    def Undo(self) -> None:
         """撤销撤消缓冲区中的所有更改。
 
         调用 Undo 可取消自上次调用 ClearUndo 方法以来对 Text 属性所做的所有更改。如果从未调用过 ClearUndo，则“撤消”将回滚所有更改。
@@ -10020,7 +11517,7 @@ class CustomForm(WinControl):
     """MainMenu：指定窗体的主菜单。
 
         使用 Menu 获取或设置窗体的主菜单。在设计时，Menu 设置为添加到窗体中的第一个 TMainMenu 组件。"""
-    ModalResult: Any
+    ModalResult: int
     """表示用作模式对话框的表单的返回值。"""
     Monitor: Monitor
     """监视器：提供对显示表单的监视器的访问。
@@ -10072,13 +11569,13 @@ class CustomForm(WinControl):
     """WindowState：表示窗体在屏幕上的显示方式。
 
         设置 WindowState 以最小化、最大化或恢复窗体窗口。读取 WindowState 以确定窗体是最小化、最大化还是处于正常状态。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def AfterConstruction(self, *args, **kwargs) -> Any:
+    def AfterConstruction(self) -> None:
         """施工事件调度程序。
 
         AfterConstruction 是表单对象构造后立即发生的事件的调度程序。正如在 TCustomForm 中实现的那样，AfterConstruction 调用 OnCreate 事件处理程序，前提是 OldCreateOrder 属性为 false。"""
-    def BeforeDestruction(self, *args, **kwargs) -> Any:
+    def BeforeDestruction(self) -> None:
         """销毁事件调度程序。
 
         BeforeDestruction 是表单对象销毁之前立即发生的事件的调度程序。正如在 TCustomForm 中实现的那样，BeforeDestruction 调用 OnDestroy 事件处理程序，前提是 OldCreateOrder 属性为 false。"""
@@ -10113,7 +11610,7 @@ class CustomForm(WinControl):
         使用 DefocusControl 将焦点从窗体上的控件上移开。该方法由 VCL 内部使用。
         Control 是要从中移除焦点的控件。如果 Control 是窗体的活动控件，则 DefocusControl 将窗体的 ActiveControl 属性设置为空。
         删除指定是否将焦点设置到控件的父级。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """从内存中删除表单。
 
         不要调用 Destroy。而是调用 Release，这会间接调用 Free 方法，而 Free 方法又会调用 Destroy。"""
@@ -10136,11 +11633,11 @@ class CustomForm(WinControl):
         Proc 是为每个子组件执行的回调。
         Root 指定当前正在加载或保存的顶级组件（例如表单或数据模块）。
         在 TCustomForm 中，GetChildren 首先调用继承的方法，该方法为每个将表单列为其父级的控件执行 Proc。然后，如果 Root 参数标识此表单，则 GetChildren 为每个没有父级的子组件执行 Proc。"""
-    def GetFormImage(self, *args, **kwargs) -> Any:
+    def GetFormImage(self) -> Any:
         """返回表单的位图。
 
         使用 GetFormImage 方法获取表单的位图。"""
-    def Hide(self, *args, **kwargs) -> Any:
+    def Hide(self) -> None:
         """隐藏表单。
 
         隐藏将 Visible 属性设置为 false。"""
@@ -10168,7 +11665,7 @@ class CustomForm(WinControl):
         将鼠标滚轮消息定向到适当的控件。
         当窗体或窗体中包含的任何窗口控件收到来自鼠标滚轮的消息时，会自动调用 MouseWheelHandler。 Message 参数封装了消息。
         正如在 TCustomForm 中实现的那样，MouseWheelHandler 不执行任何特殊处理，而只是通过调用其 Perform 方法将消息重定向到活动控件。默认情况下，Perform 方法会生成适当的鼠标滚轮事件。"""
-    def Print(self, *args, **kwargs) -> Any:
+    def Print(self) -> None:
         """打印表格。
 
         调用 Print 来打印表格。 Print 使用 GetFormImage 方法获取表单的位图并将其绘制到打印机的 HDC。"""
@@ -10180,7 +11677,7 @@ class CustomForm(WinControl):
         """TForm.Release()
 
         释放（销毁）包装的 Form"""
-    def ScaleForCurrentDPI(self, *args, **kwargs) -> Any:
+    def ScaleForCurrentDPI(self) -> None:
         """检查 Dpi 是否发生变化，并执行必要的更改以缩放新 Dpi 的所有控件。"""
     def ScaleForPPI(self, NewPPI: int) -> None:
         """TCustomForm.ScaleForPPI(NewPPI: int) -> 无
@@ -10191,7 +11688,7 @@ class CustomForm(WinControl):
 
         取消表单上的模式。
         使用SendCancelMode 释放鼠标捕获并取消窗体上的滚动条输入和菜单处理。"""
-    def SetFocus(self, *args, **kwargs) -> Any:
+    def SetFocus(self) -> None:
         """将焦点设置到表单。
 
         使用 SetFocus 为表单提供输入焦点。 SetFocus 调用活动控件的 SetFocus 方法（如果存在）。要确定窗体是否具有焦点，请使用 Active 属性。"""
@@ -10202,7 +11699,7 @@ class CustomForm(WinControl):
         使用 SetFocusedControl 为表单输入焦点提供控件。如果 Control 参数指定的 Control 已在接收焦点，则 SetFocusedControl 返回 false，否则返回 true。
 
         注意：返回值 true 并不表示控件已成功接收输入焦点。如果 Control 无法获得焦点（例如，如果它不可见），SetFocusedControl 仍将返回 true，表明已进行尝试。"""
-    def Show(self, *args, **kwargs) -> Any:
+    def Show(self) -> None:
         """显示表单。
 
         使用 Show 将表单的 Visible 属性设置为 true，并将表单置于屏幕上其他表单的前面。"""
@@ -10277,21 +11774,21 @@ class CustomGrid(CustomControl):
     定义以表格格式表示信息的组件时，使用 TCustomGrid 作为基类。 TCustomGrid 引入了属性和方法来控制网格的外观和行为，包括对鼠标操作和用户编辑的响应。
     不要创建 TCustomGrid 的实例。相反，通过实例化 TCustomGrid 的后代将网格控件放入表单中。使用 TDrawGrid 来表示表格网格中的非文本材料。对于文本，请使用 TStringGrid 对象。如果文本表示数据集中的字段值，请使用 TDBGrid。"""
     __hash__: ClassVar[None] = ...
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     IsUpdating: bool
     """bool： 目前没有任何其他信息。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabStop: bool
     """bool：确定用户是否可以使用 Tab 键切换到控件。
@@ -10300,9 +11797,9 @@ class CustomGrid(CustomControl):
         如果 TabStop 为 True，则控件按 Tab 键顺序排列。如果 TabStop 为 False，则该控件不符合 Tab 键顺序，用户无法按 TAB 键移动到该控件。
 
         注意：TabStop 对于表单没有意义，除非该表单指定另一个表单作为其父表单。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """ 目前没有任何其他信息。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -10314,11 +11811,11 @@ class CustomGrid(CustomControl):
         创建 TCustomGrid 的实例。
         调用Create在运行时创建网格控件。在设计时放置在窗体上的网格控件是自动创建的。
         所有者是一个组件，负责释放网格并在保存到表单文件时启动流处理。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomGrid 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """ 目前没有任何其他信息。"""
     def MouseCoord(self, X: int, Y: int) -> GridCoord:
         """TCustomGrid.MouseCoord(X: int, Y: int) -> GridCoord
@@ -10392,7 +11889,7 @@ class CustomImageList(BaseImageList):
     """整数："""
     ColorDepth: ColorDepth
     """颜色深度："""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -10418,7 +11915,7 @@ class CustomImageList(BaseImageList):
     """布尔值："""
     Width: int
     """整数："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Add(self, Image: Bitmap, Mask: Bitmap) -> int:
         """TCustomImageList.Add（图像：位图，掩码：位图）-> int"""
@@ -10434,20 +11931,6 @@ class CustomImageList(BaseImageList):
         """TCustomImageList.AddImages(值：CustomImageList) -> 无"""
     def AddMasked(self, Image: Bitmap, MaskColor: int) -> int:
         """TCustomImageList.AddMasked(图像: 位图, MaskColor: int) -> int"""
-    @overload
-    def Assign(self, Source: Persistent) -> None:
-        """复制另一个类似对象的内容。
-        将指定 Source 对象的副本属性和其他属性分配给当前对象。调用Assign的标准形式是：
-
-        Destination.Assign(Source)
-
-        它告诉当前对象将 Source 对象的内容复制到自身。
-        大多数对象都会重写Assign 来处理类似对象的属性分配。重写Assign时，如果目标对象无法处理Source参数的类的属性分配，则调用继承的方法。
-        如果没有重写的Assign 方法可以处理Source 中的属性分配，则TPercient 中实现的方法将调用源对象的AssignTo 方法。这允许源对象处理分配。如果 Source 对象为空，Assign 会引发 EConvertError 异常。
-        一般来说，声明Destination = Source与Destination.Assign(Source)不一样。
-        赋值运算符使Destination 引用与Source 相同的对象，而Assign 方法将Source 引用的对象的内容复制到Destination 引用的对象中。
-
-        注意：某些属性的类型也是对象。如果这些属性编写了使用Assign 设置属性值的方法，那么在这些情况下，赋值运算符将执行与Assign 方法相同的操作。"""
     @overload
     def Assign(self, Source) -> Any:
         """复制另一个类似对象的内容。
@@ -10471,7 +11954,7 @@ class CustomImageList(BaseImageList):
         请注意，前缀参数是可选的，默认为“handle_”。"""
     def CheckIndexAndName(self, AIndex: int, AName: str) -> None:
         """TCustomImageList.CheckIndexAndName(AIndex: int, AName: str) -> None"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """用于清空图像列表中的所有图像。"""
     def Create(self, AOwner: Component) -> None:
         """TCustomImageList.Create(AOwner: Component) -> 无
@@ -10490,7 +11973,7 @@ class CustomImageList(BaseImageList):
         """TCustomImageList.CreateSize(AWidth: int, AHeight: int) -> None"""
     def Delete(self, Index: int) -> None:
         """TCustomImageList.Delete(Index: int) -> None"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置组件及其拥有的组件。
 
         不要直接调用 Destroy。请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。
@@ -10506,15 +11989,15 @@ class CustomImageList(BaseImageList):
         """TCustomImageList.FileLoad(ResType: ResType, Name: str, MaskColor: int) -> bool"""
     def GetBitmap(self, Index: int, Image: Bitmap) -> bool:
         """TCustomImageList.GetBitmap(索引：int，图像：位图) -> bool"""
-    def GetHotSpot(self, *args, **kwargs) -> Any: ...
+    def GetHotSpot(self) -> Any: ...
     def GetIcon(self, Index: int, Image: Icon) -> None:
         """TCustomImageList.GetIcon(索引：int，图像：图标) -> 无"""
-    def GetImageBitmap(self, *args, **kwargs) -> Any: ...
+    def GetImageBitmap(self, Index: int) -> Any: ...
     def GetIndexByName(self, AName: str) -> int:
         """TCustomImageList.GetIndexByName(AName: str) -> int"""
     def GetInstRes(self, Instance: int, ResType: ResType, Name: str, Width: int, LoadFlags: LoadResources, MaskColor: int) -> bool:
         """TCustomImageList.GetInstRes（实例：int，ResType：ResType，名称：str，宽度：int，LoadFlags：LoadResources，MaskColor：int）-> bool"""
-    def GetMaskBitmap(self, *args, **kwargs) -> Any: ...
+    def GetMaskBitmap(self, Index: int) -> Any: ...
     def GetNameByIndex(self, AIndex: int) -> str:
         """TCustomImageList.GetNameByIndex(AIndex: int) -> str"""
     def GetParentComponent(self) -> Any:
@@ -10523,7 +12006,7 @@ class CustomImageList(BaseImageList):
         返回组件的父组件。"""
     def GetResource(self, ResType: ResType, Name: str, Width: int, LoadFlags: LoadResources, MaskColor: int) -> bool:
         """TCustomImageList.GetResource（ResType：ResType，名称：str，宽度：int，LoadFlags：LoadResources，MaskColor：int）-> bool"""
-    def HandleAllocated(self, *args, **kwargs) -> Any: ...
+    def HandleAllocated(self) -> bool: ...
     def HasParent(self) -> Any:
         """TComponent.HasParent()
 
@@ -10534,8 +12017,8 @@ class CustomImageList(BaseImageList):
         """TCustomImageList.InsertIcon(Index: int, Image: Icon) -> None"""
     def InsertMasked(self, Index: int, Image: Bitmap, MaskColor: int) -> None:
         """TCustomImageList.InsertMasked（索引：int，图像：位图，MaskColor：int）->无"""
-    def IsImageNameAvailable(self, *args, **kwargs) -> Any: ...
-    def IsScaled(self, *args, **kwargs) -> Any: ...
+    def IsImageNameAvailable(self, const_Name: str) -> bool: ...
+    def IsScaled(self) -> bool: ...
     def Move(self, CurIndex: int, NewIndex: int) -> None:
         """TCustomImageList.Move(CurIndex: int, NewIndex: int) -> 无"""
     def Overlay(self, ImageIndex: int, Overlay: int) -> bool:
@@ -10616,7 +12099,7 @@ class CustomLinkControlToField(LinkControlToFieldDelegate):
     """bool： 目前没有任何其他信息。"""
     Binding: ExpressionsBindComponent
     """ExpressionsBindComponent： 目前没有任何其他信息。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -10644,7 +12127,7 @@ class CustomLinkControlToField(LinkControlToFieldDelegate):
     """bool： 目前没有任何其他信息。"""
     UseEvalShortcuts: bool
     """bool：确定此绑定组件委托是否使用评估快捷方式（True）或不使用（False）。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -10653,7 +12136,7 @@ class CustomLinkControlToField(LinkControlToFieldDelegate):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def ClearExpressionProperties(self, *args, **kwargs) -> Any:
+    def ClearExpressionProperties(self) -> None:
         """ 目前没有任何其他信息。"""
     def Create(self, AOwner: Component) -> None:
         """TCustomLinkControlToField.Create(AOwner: Component) -> 无
@@ -10661,7 +12144,7 @@ class CustomLinkControlToField(LinkControlToFieldDelegate):
         创建 TContainedBindComponent 类的实例。
         Data.Bind.Components.TCustomLinkControlToField.Create 继承自 Data.Bind.Components.TContainedBindComponent.Create。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Create。
         创建 TContainedBindComponent 类的实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedBindComponent 类的实例。
 
         Data.Bind.Components.TCustomLinkControlToField.Destroy 继承自 Data.Bind.Components.TContainedBindComponent.Destroy。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Destroy。
@@ -10672,7 +12155,7 @@ class CustomLinkControlToField(LinkControlToFieldDelegate):
         自动生成此委托所包装的快速绑定组件的绑定表达式。
         Data.Bind.Components.TCustomLinkControlToField.GenerateExpressions 继承自 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。此行下面的所有内容均引用 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。
         自动生成此委托所包装的快速绑定组件的绑定表达式。有关快速绑定组件的更多信息，请参阅新 LiveBinding 主题的快速绑定组件参考部分。"""
-    def GetDelegates(self, *args, **kwargs) -> Any:
+    def GetDelegates(self, ADelegates: Any) -> None:
         """获取此包装器绑定组件用于执行表达式并响应用户输入的委托（或包含的）绑定组件。
 
         Data.Bind.Components.TCustomLinkControlToField.GetDelegates 继承自 Data.Bind.Components.TBindComponentDelegate.GetDelegates。此行以下所有内容均引用 Data.Bind.Components.TBindComponentDelegate.GetDelegates。
@@ -10743,25 +12226,25 @@ class CustomLinkLabel(WinControl):
 
         使用 AutoSize 指定控件是否自动调整自身大小。当 AutoSize 为 True 时，控件会在其内容更改时自动调整大小。
         默认情况下，AutoSize 为 False。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的底层 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnLinkClick: Callable[[Object,str,SysLinkType],None]
     """Callable[[Object, str, SysLinkType], None]:"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     UseVisualStyle: bool
     """布尔："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -10842,7 +12325,7 @@ class CustomLinkListControlToField(LinkControlToFieldDelegate):
     """CustomBindGridListLink： 目前没有任何其他信息。"""
     BufferCount: int
     """int： 目前没有任何其他信息。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -10888,7 +12371,7 @@ class CustomLinkListControlToField(LinkControlToFieldDelegate):
     """返回组件所有者"""
     UseEvalShortcuts: bool
     """bool：确定此绑定组件委托是否使用评估快捷方式（True）或不使用（False）。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -10897,7 +12380,7 @@ class CustomLinkListControlToField(LinkControlToFieldDelegate):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def ClearExpressionProperties(self, *args, **kwargs) -> Any:
+    def ClearExpressionProperties(self) -> None:
         """ 目前没有任何其他信息。"""
     def Create(self, AOwner: Component) -> None:
         """TCustomLinkListControlToField.Create(AOwner: Component) -> 无
@@ -10905,12 +12388,12 @@ class CustomLinkListControlToField(LinkControlToFieldDelegate):
         创建 TContainedBindComponent 类的实例。
         Data.Bind.Components.TCustomLinkListControlToField.Create 继承自 Data.Bind.Components.TContainedBindComponent.Create。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Create。
         创建 TContainedBindComponent 类的实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedBindComponent 类的实例。
 
         Data.Bind.Components.TCustomLinkListControlToField.Destroy 继承自 Data.Bind.Components.TContainedBindComponent.Destroy。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Destroy。
         销毁 TContainedBindComponent 类的实例。"""
-    def FillList(self, *args, **kwargs) -> Any:
+    def FillList(self) -> None:
         """ 目前没有任何其他信息。"""
     def GenerateExpressions(self, Sender: Component) -> None:
         """TCustomLinkListControlToField.GenerateExpressions(Sender: Component) -> None
@@ -10918,7 +12401,7 @@ class CustomLinkListControlToField(LinkControlToFieldDelegate):
         自动生成此委托包装到的快速绑定组件的绑定表达式。
         Data.Bind.Components.TCustomLinkListControlToField.GenerateExpressions 继承自 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。此行以下所有内容均指 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。
         自动生成此委托包装到的快速绑定组件的绑定表达式。有关快速绑定组件的更多信息，请参阅新 LiveBinding 主题的快速绑定组件参考部分。"""
-    def GetDelegates(self, *args, **kwargs) -> Any:
+    def GetDelegates(self, ADelegates: Any) -> None:
         """获取此包装器绑定组件用于执行表达式并响应用户输入的委托（或包含的）绑定组件。
 
         Data.Bind.Components.TCustomLinkListControlToField.GetDelegates 继承自 Data.Bind.Components.TBindComponentDelegate.GetDelegates。此行下面的所有内容均引用 Data.Bind.Components.TBindComponentDelegate.GetDelegates。
@@ -10991,7 +12474,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
     """bool： 目前没有任何其他信息。"""
     BindLink: CustomBindLink
     """CustomBindLink： 目前没有任何其他信息。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -11005,7 +12488,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
     """str： 目前没有任何其他信息。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -11033,7 +12516,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
         创建 TContainedBindComponent 类的实例。
         Data.Bind.Components.TCustomLinkPropertyToField.Create 继承自 Data.Bind.Components.TContainedBindComponent.Create。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Create。
         创建 TContainedBindComponent 类的实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TContainedBindComponent 类的实例。
 
         Data.Bind.Components.TCustomLinkPropertyToField.Destroy 继承自 Data.Bind.Components.TContainedBindComponent.Destroy。此行下面的所有内容均引用 Data.Bind.Components.TContainedBindComponent.Destroy。
@@ -11044,7 +12527,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
         自动生成此委托所包装的快速绑定组件的绑定表达式。
         Data.Bind.Components.TCustomLinkPropertyToField.GenerateExpressions 继承自 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。此行下面的所有内容均引用 Data.Bind.Components.TBindComponentDelegate.GenerateExpressions。
         自动生成此委托所包装的快速绑定组件的绑定表达式。有关快速绑定组件的更多信息，请参阅新 LiveBinding 主题的快速绑定组件参考部分。"""
-    def GetDelegates(self, *args, **kwargs) -> Any:
+    def GetDelegates(self, ADelegates: Any) -> None:
         """获取此包装器绑定组件用于执行表达式并响应用户输入的委托（或包含的）绑定组件。
 
         Data.Bind.Components.TCustomLinkPropertyToField.GetDelegates 继承自 Data.Bind.Components.TBindComponentDelegate.GetDelegates。此行下面的所有内容均引用 Data.Bind.Components.TBindComponentDelegate.GetDelegates。
@@ -11057,7 +12540,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
         """TComponent.HasParent()
 
         指示组件是否有父组件来处理其归档。"""
-    def Loaded(self, *args, **kwargs) -> Any:
+    def Loaded(self) -> None:
         """将表单文件读入内存后初始化组件。
 
         Data.Bind.Components.TCustomLinkPropertyToField.Loaded 继承自 System.Classes.TComponent.Loaded。此行下面的所有内容均引用 System.Classes.TComponent.Loaded。
@@ -11069,7 +12552,7 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
         正如在 TComponent 中实现的那样，Loaded 会清除 ComponentState 属性中的 csLoading 标志，表明该组件不再加载。
 
         警告：Loaded 可能会在继承的表单上被多次调用。每次流入继承级别时都会调用它。在未首先检查内存是否在先前调用中尚未分配的情况下，请勿在重写的 Loaded 方法中分配内存。"""
-    def RequiresControlHandler(self, *args, **kwargs) -> Any:
+    def RequiresControlHandler(self) -> bool:
         """内部用于观察目的。
 
         Data.Bind.Components.TCustomLinkPropertyToField.RequiresControlHandler 继承自 Data.Bind.Components.TBindComponentDelegate.RequiresControlHandler。此行下面的所有内容均引用 Data.Bind.Components.TBindComponentDelegate.RequiresControlHandler。
@@ -11125,23 +12608,23 @@ class CustomLinkPropertyToField(LinkPropertyToFieldDelegate):
 class CustomListControl(WinControl):
     """TCustomListControl 的包装"""
     __hash__: ClassVar[None] = ...
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告控件的屏幕对象句柄是否存在。"""
     ItemIndex: int
     """整数：用于获取或设置控件中当前选定项的索引。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def AddItem(self, Item: str, AObject: Object) -> None:
         """TCustomListControl.AddItem(Item: str, AObject: Object) -> None"""
@@ -11149,8 +12632,8 @@ class CustomListControl(WinControl):
         """TWinControl.CanFocus()
 
         指示控件是否可以获得焦点。"""
-    def Clear(self, *args, **kwargs) -> Any: ...
-    def ClearSelection(self, *args, **kwargs) -> Any: ...
+    def Clear(self) -> None: ...
+    def ClearSelection(self) -> None: ...
     def CopySelection(self, Destination: CustomListControl) -> None:
         """TCustomListControl.CopySelection（目标：CustomListControl）->无"""
     def Create(self, AOwner: Component) -> None:
@@ -11160,11 +12643,11 @@ class CustomListControl(WinControl):
         调用 Create 来构造并初始化一个新控件，并将新构造的控件插入到其所有者中，如 AOwner 参数所指定的那样。 Create 通过调用所有者的 InsertComponent 方法将控件插入所有者中。
         大多数控件都会重写 Create 以初始化其独特的属性。重写 Create 方法的对象必须始终首先调用继承的 Create 方法，然后继续进行特定于组件的初始化。重写 Create 方法时指定重写指令。
         如果组件的 Create 方法分配资源或内存，请重写 Destroy 方法以释放这些资源。"""
-    def DeleteSelected(self, *args, **kwargs) -> Any: ...
-    def GetCount(self, *args, **kwargs) -> Any: ...
+    def DeleteSelected(self) -> None: ...
+    def GetCount(self) -> int: ...
     def MoveSelection(self, Destination: CustomListControl) -> None:
         """TCustomListControl.MoveSelection（目标：CustomListControl）->无"""
-    def SelectAll(self, *args, **kwargs) -> Any: ...
+    def SelectAll(self) -> None: ...
     def SetFocus(self) -> Any:
         """TWinControl.SetFocus()
 
@@ -11228,7 +12711,7 @@ class CustomListView(CustomMultiSelectListControl):
     """布尔：用于控制是否显示复选框。"""
     Column: ListColumn
     """列表栏：用于管理和配置列信息。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -11236,15 +12719,15 @@ class CustomListView(CustomMultiSelectListControl):
     """项目清单：是指在拖放操作中作为目标的控件的属性。通过设置 DropTarget 属性，你可以指定一个控件在拖放操作中接收拖动操作中的数据。"""
     FlatScrollBars: bool
     """布尔：用于控制滚动条样式的属性，主要用于调整滚动条的外观风格。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     FullDrag: bool
     """布尔：用于指定在拖拽操作中，是否整个控件区域都可以作为拖动的触发区域。"""
     GridLines: bool
     """布尔：用于控制是否显示网格线。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HotTrack: bool
     """布尔：用于控制鼠标悬停时是否显示高亮效果。"""
@@ -11254,7 +12737,7 @@ class CustomListView(CustomMultiSelectListControl):
     """用于获取或设置当前被焦点的列表视图中的项目索引。"""
     Items: ListItems
     """用于访问和管理列表视图中的条目集合。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     RowSelect: bool
     """布尔值：用于控制是否可以选择整行而不仅仅是单个条目。"""
@@ -11262,7 +12745,7 @@ class CustomListView(CustomMultiSelectListControl):
     """整数：用于获取当前被选中的项目数量。"""
     Selected: ListItem
     """选中的条目"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TopItem: ListItem
     """用于获取或设置当前可见区域顶部的第一个列表项。"""
@@ -11272,19 +12755,19 @@ class CustomListView(CustomMultiSelectListControl):
     """整数：可见的行数"""
     WorkAreas: WorkAreas
     """工作领域：用于与多显示器系统中的工作区域相关联。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def AddItem(self, Item: str, AObject: Object) -> None:
         """TCustomListView.AddItem(Item: str, AObject: Object) -> None"""
-    def AlphaSort(self, *args, **kwargs) -> Any: ...
+    def AlphaSort(self) -> bool: ...
     def Arrange(self, Code: ListArrangement) -> None:
         """TCustomListView.Arrange（代码：ListArrangement）->无"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
 
         指示控件是否可以获得焦点。"""
-    def Clear(self, *args, **kwargs) -> Any: ...
-    def ClearSelection(self, *args, **kwargs) -> Any: ...
+    def Clear(self) -> None: ...
+    def ClearSelection(self) -> None: ...
     def CopySelection(self, Destination: CustomListControl) -> None:
         """TCustomListView.CopySelection（目标：CustomListControl）->无"""
     def Create(self, AOwner: Component) -> None:
@@ -11296,8 +12779,8 @@ class CustomListView(CustomMultiSelectListControl):
         如果组件的 Create 方法分配资源或内存，请重写 Destroy 方法来释放这些资源。"""
     def CustomSort(self, SortProc: Callable[[int,int,int],int], lParam: int) -> bool:
         """TCustomListView.CustomSort(SortProc: Callable[[int, int, int], int], lParam: int) -> bool"""
-    def DeleteSelected(self, *args, **kwargs) -> Any: ...
-    def Destroy(self, *args, **kwargs) -> Any:
+    def DeleteSelected(self) -> None: ...
+    def Destroy(self) -> None:
         """销毁 TWinControl 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。"""
@@ -11305,8 +12788,8 @@ class CustomListView(CustomMultiSelectListControl):
         """TCustomListView.FindCaption(StartIndex: int, Value: str, Partial: bool, Inclusive: bool, Wrap: bool) -> ListItem"""
     def FindData(self, StartIndex: int, Value: Pointer, Inclusive: bool, Wrap: bool) -> ListItem:
         """TCustomListView.FindData(StartIndex: int, Value: Pointer, Inclusive: bool, Wrap: bool) -> ListItem"""
-    def GetCount(self, *args, **kwargs) -> Any: ...
-    def GetDragImages(self, *args, **kwargs) -> Any:
+    def GetCount(self) -> int: ...
+    def GetDragImages(self) -> Any:
         """返回控件的图像列表，其中包含拖动时要显示的图像。
 
         重写 GetDragImages 为控件提供自定义图像列表。正如在 TControl 中实现的那样，GetDragImages 返回空。"""
@@ -11318,11 +12801,11 @@ class CustomListView(CustomMultiSelectListControl):
         """TCustomListView.GetNearestItem(点：点，方向：SearchDirection) -> ListItem"""
     def GetNextItem(self, StartItem: ListItem, Direction: SearchDirection, States: ItemStates) -> ListItem:
         """TCustomListView.GetNextItem（StartItem：ListItem，方向：SearchDirection，状态：ItemStates）-> ListItem"""
-    def GetSearchString(self, *args, **kwargs) -> Any: ...
-    def IsEditing(self, *args, **kwargs) -> Any: ...
+    def GetSearchString(self) -> str: ...
+    def IsEditing(self) -> bool: ...
     def Scroll(self, DX: int, DY: int) -> None:
         """TCustomListView.Scroll(DX: int, DY: int) -> 无"""
-    def SelectAll(self, *args, **kwargs) -> Any: ...
+    def SelectAll(self) -> None: ...
     def SetFocus(self) -> Any:
         """TWinControl.SetFocus()
 
@@ -11390,17 +12873,17 @@ class CustomMemo(CustomEdit):
 
         使用 CaretPos 确定光标的坐标。 CaretPos 定义屏幕上的位置（以字符为单位），原点位于备忘录的左上角。 X 指定点的水平坐标，Y 指定点的垂直坐标。
         要仅根据文本字符（而不是 X/Y 位置）确定插入符号的位置，请使用 SelStart 属性。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
     EditMargins: EditMargins
     """EditMargins： 目前没有任何其他信息。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Lines: Strings
     """字符串：包含备忘录控件中的各个文本行。
@@ -11409,13 +12892,13 @@ class CustomMemo(CustomEdit):
         要同时处理所有文本，请使用 Text 属性。要操作单行文本，Lines 属性效果更好。
 
         注意：虽然 Lines 是作为 TStrings 后代实现的，但它没有实现将对象与列表中的字符串关联的支持。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -11428,7 +12911,7 @@ class CustomMemo(CustomEdit):
         调用 Create 来实例化 TCustomMemo 对象。
         AOwner 是负责释放备忘录对象的组件，通常是表单。这成为所有者财产的价值。
         重写 Create 方法的派生对象应在进行任何其他初始化之前调用继承的 Create。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomMemo 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。
@@ -11487,116 +12970,112 @@ class CustomMemo(CustomEdit):
 
 class CustomRichEdit(CustomMemo):
     """它是TRichEdit的父类。这个类封装了Windows的Rich Edit控件的功能，提供了丰富的文本编辑能力。"""
-    def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def CMBiDiModeChanged(self, *args, **kwargs) -> Any:
-        """ """
-    def CMColorChanged(self, *args, **kwargs) -> Any:
-        """ """
-    def CMFontChanged(self, *args, **kwargs) -> Any:
-        """ """
-    def CNNotify(self, *args, **kwargs) -> Any:
-        """ """
-    def GetActiveLineNo -> Any:
-        """ """
-    def GetPlainText -> bool:
-        """ """
-    def GetSelectionStreamMode -> bool:
-        """ """
-    def GetScrollPosition -> Any:
-        """ """
-    def LinkMessage(self, *args, **kwargs) -> Any:
-        """ """
-    def ProtectChange(self, *args, **kwargs) -> bool:
-        """ """
-    def SaveClipboard(self, *args, **kwargs) -> bool:
-        """ """
-    def SetHideScrollBars(self, *args, **kwargs) -> Any:
-        """ """
-    def SetHideSelection(self, *args, **kwargs) -> Any:
-        """ """
-    def SetPlainText(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSelectionStreamMode(self, *args, **kwargs) -> Any:
-        """ """
-    def SetRichEditStrings(self, *args, **kwargs) -> Any:
-        """ """
-    def SetDefAttributes(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSelAttributes(self, *args, **kwargs) -> Any:
-        """ """
-    def SetZoom(self, *args, **kwargs) -> Any:
-        """ """
-    def SetScrollPosition(self, *args, **kwargs) -> Any:
-        """ """
-    def SetEnableURLs(self, *args, **kwargs) -> Any:
-        """ """
-    def SetShowURLHint(self, *args, **kwargs) -> Any:
-        """ """
-    def WMNCDestroy(self, *args, **kwargs) -> Any:
-        """ """
-    def WMSetCursor(self, *args, **kwargs) -> Any:
-        """ """
-    def WMPaint(self, *args, **kwargs) -> Any:
-        """ """
-    def WMSetFont(self, *args, **kwargs) -> Any:
-        """ """
-    def WMRButtonUp(self, *args, **kwargs) -> Any:
-        """ """
-    def WMEraseBkgnd(self, *args, **kwargs) -> Any:
-        """ """
-    def WMInitMenuPopup(self, *args, **kwargs) -> Any:
-        """ """
-    def WMUnInitMenuPopup(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateParams(self, *args, **kwargs) -> Any:
-        """ """
-    def CreateWnd(self, *args, **kwargs) -> Any:
-        """ """
-    def DestroyWnd(self, *args, **kwargs) -> Any:
-        """ """
-    def DoUpdateEditMargins(self, *args, **kwargs) -> Any:
-        """ """
-    def UpdateEditMargins(self, *args, **kwargs) -> Any:
-        """ """
-    def RequestSize(self, *args, **kwargs) -> Any:
-        """ """
-    def SelectionChange(self, *args, **kwargs) -> Any:
-        """ """
-    def DoEnableSpellChecking(self, *args, **kwargs) -> Any:
-        """ """
-    def DoLinkClick(self, *args, **kwargs) -> Any:
-        """ """
-    def DoSetMaxLength(self, *args, **kwargs) -> Any:
-        """ """
-    def DoSetShowURLHint(self, *args, **kwargs) -> Any:
-        """ """
-    def GetCaretPos -> Any:
-        """ """
-    def SetCaretPos(self, *args, **kwargs) -> Any:
-        """ """
-    def GetSelLength -> Any:
-        """ """
-    def GetSelStart -> Any:
-        """ """
-    def GetSelText -> Any:
-        """ """
-    def SetSelLength(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSelStart(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSpellChecking(self, *args, **kwargs) -> Any:
-        """ """
-    def SetTransparent(self, *args, **kwargs) -> Any:
-        """ """
-    def DefaultScalingFlags -> Any:
-        """ """
+    def CMBiDiModeChanged(self, Message: Any) -> None:
+        """响应CM_BIDIMODECHANGED消息，在控件的双向模式(BiDiMode)发生变化时进行内部处理。"""
+    def CMColorChanged(self, Message: Any) -> None:
+        """响应CM_COLORCHANGED消息，在控件的背景颜色发生变化时进行内部处理。"""
+    def CMFontChanged(self, Message: Any) -> None:
+        """响应CM_FONTCHANGED消息，在控件的字体发生变化时进行内部处理。"""
+    def CNNotify(self, Message: Any) -> None:
+        """响应CN_NOTIFY消息，处理来自底层富文本编辑控件的通知消息。"""
+    def GetActiveLineNo(self) -> Any:
+        """获取光标当前所在行的行号。"""
+    def GetPlainText(self) -> bool:
+        """获取PlainText属性的当前值(是否以纯文本方式处理内容)。"""
+    def GetSelectionStreamMode(self) -> bool:
+        """获取SelectionStreamMode属性的当前值(选中内容是否以流方式处理)。"""
+    def GetScrollPosition(self) -> Any:
+        """获取编辑控件当前的滚动条位置。"""
+    def LinkMessage(self, Message: Any) -> None:
+        """处理与超链接相关的窗口消息。"""
+    def ProtectChange(self, StartPos: int, EndPos: int) -> bool:
+        """判断指定范围内的文本是否为受保护文本，用于在修改前进行检查。"""
+    def SaveClipboard(self) -> bool:
+        """将当前选中内容保存到剪贴板。"""
+    def SetHideScrollBars(self, Value: bool) -> None:
+        """设置HideScrollBars属性(控件失去焦点时是否隐藏滚动条)。"""
+    def SetHideSelection(self, Value: bool) -> None:
+        """设置HideSelection属性(控件失去焦点时是否隐藏选中内容的高亮显示)。"""
+    def SetPlainText(self, Value: bool) -> None:
+        """设置PlainText属性(是否以纯文本方式处理内容，不含格式信息)。"""
+    def SetSelectionStreamMode(self, Value: bool) -> None:
+        """设置SelectionStreamMode属性。"""
+    def SetRichEditStrings(self, Value: Any) -> None:
+        """设置内部使用的富文本行内容对象。"""
+    def SetDefAttributes(self, Value: Any) -> None:
+        """设置DefAttributes属性(新输入文本的默认字符格式)。"""
+    def SetSelAttributes(self, Value: Any) -> None:
+        """设置SelAttributes属性(当前选中文本的字符格式)。"""
+    def SetZoom(self, Numerator: int, Denominator: int) -> None:
+        """按指定的分子/分母比例设置显示缩放比例。"""
+    def SetScrollPosition(self, Value: Any) -> None:
+        """设置编辑控件的滚动条位置。"""
+    def SetEnableURLs(self, Value: bool) -> None:
+        """设置EnableURLs属性(是否自动识别并高亮显示文本中的网址)。"""
+    def SetShowURLHint(self, Value: bool) -> None:
+        """设置ShowURLHint属性(鼠标悬停在链接上时是否显示提示)。"""
+    def WMNCDestroy(self, Message: Any) -> None:
+        """响应WM_NCDESTROY消息，在窗口非客户区被销毁时进行内部清理。"""
+    def WMSetCursor(self, Message: Any) -> None:
+        """响应WM_SETCURSOR消息，控制鼠标指针在控件上的显示形状。"""
+    def WMPaint(self, Message: Any) -> None:
+        """响应WM_PAINT消息，处理控件的重绘。"""
+    def WMSetFont(self, Message: Any) -> None:
+        """响应WM_SETFONT消息，处理控件字体的底层设置。"""
+    def WMRButtonUp(self, Message: Any) -> None:
+        """响应WM_RBUTTONUP消息，处理鼠标右键释放事件(如弹出拼写检查菜单)。"""
+    def WMEraseBkgnd(self, Message: Any) -> None:
+        """响应WM_ERASEBKGND消息，控制控件背景的擦除行为。"""
+    def WMInitMenuPopup(self, Message: Any) -> None:
+        """响应WM_INITMENUPOPUP消息，在弹出菜单(如右键菜单)初始化时进行处理。"""
+    def WMUnInitMenuPopup(self, Message: Any) -> None:
+        """响应弹出菜单关闭后的清理消息。"""
+    def CreateParams(self, Params: Any) -> None:
+        """在创建底层窗口句柄之前，设置窗口的创建参数(如窗口样式)。"""
+    def CreateWnd(self) -> None:
+        """创建控件的底层窗口句柄。"""
+    def DestroyWnd(self) -> None:
+        """销毁控件的底层窗口句柄。"""
+    def DoUpdateEditMargins(self) -> None:
+        """触发编辑区左右边距的更新。"""
+    def UpdateEditMargins(self) -> None:
+        """根据当前设置刷新编辑区的左右边距。"""
+    def RequestSize(self, Message: Any) -> None:
+        """响应富文本控件请求调整内容区域大小的消息。"""
+    def SelectionChange(self) -> None:
+        """在选中内容发生变化时触发内部处理，并引发OnSelectionChange事件。"""
+    def DoEnableSpellChecking(self, Value: bool) -> None:
+        """启用或禁用拼写检查功能。"""
+    def DoLinkClick(self, const_URL: str) -> None:
+        """处理用户点击超链接的操作，并引发OnLinkClick事件。"""
+    def DoSetMaxLength(self, Value: int) -> None:
+        """设置控件允许输入的最大字符数。"""
+    def DoSetShowURLHint(self, Value: bool) -> None:
+        """设置是否在鼠标悬停链接时显示提示信息。"""
+    def GetCaretPos(self) -> Any:
+        """获取当前插入符(光标)在控件中的位置。"""
+    def SetCaretPos(self, Value: Any) -> None:
+        """设置当前插入符(光标)在控件中的位置。"""
+    def GetSelLength(self) -> Any:
+        """获取当前选中文本的长度。"""
+    def GetSelStart(self) -> Any:
+        """获取当前选中文本的起始位置。"""
+    def GetSelText(self) -> Any:
+        """获取当前选中的文本内容。"""
+    def SetSelLength(self, Value: int) -> None:
+        """设置当前选中文本的长度。"""
+    def SetSelStart(self, Value: int) -> None:
+        """设置当前选中文本的起始位置。"""
+    def SetSpellChecking(self, Value: bool) -> None:
+        """设置SpellChecking属性(是否启用实时拼写检查)。"""
+    def SetTransparent(self, Value: bool) -> None:
+        """设置Transparent属性(控件背景是否透明)。"""
+    def DefaultScalingFlags(self) -> Any:
+        """获取控件默认使用的缩放标志。"""
     HideSelection: bool
-    """ """
+    """控件失去焦点时是否隐藏选中内容的高亮显示。"""
     HideScrollBars: bool
-    """ """
+    """控件不需要滚动时是否自动隐藏滚动条。"""
     Lines: Strings
     """字符串：包含控件中的各个文本行。
         使用“行”在控件中逐行操作文本。 Lines 是一个 TStrings 对象，因此 TStrings 方法可用于 Lines 执行操作，例如计算文本行数、添加新行、删除行或用新文本替换行。例如：
@@ -11605,65 +13084,65 @@ class CustomRichEdit(CustomMemo):
 
         注意：虽然 Lines 是作为 TStrings 后代实现的，但它没有实现将对象与列表中的字符串关联的支持。"""
     OnLinkClick: Any
-    """ """
+    """用户点击文本中的超链接时触发的事件。"""
     OnSaveClipboard: Any
-    """ """
+    """内容被复制到剪贴板时触发的事件。"""
     OnSelectionChange: Any
-    """ """
+    """选中内容发生变化时触发的事件。"""
     OnProtectChange: Any
-    """ """
+    """尝试修改受保护文本时触发的事件。"""
     OnResizeRequest: Any
-    """ """
+    """控件请求调整自身大小时触发的事件。"""
     PlainText: bool
-    """ """
+    """是否以纯文本方式处理内容(不保存RTF格式信息)。"""
     SelectionStreamMode: bool
-    """ """
+    """选中内容在保存/加载时是否以流方式处理。"""
     def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def Clear(self, *args, **kwargs) -> Any:
-        """ """
-    def FindText(self, *args, **kwargs) -> int:
-        """ """
-    def RenderRange(self, *args, **kwargs) -> Any:
-        """ """
-    def Print(self, *args, **kwargs) -> Any:
-        """ """
-    def procedure RegisterConversionFormat(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSelText(self, *args, **kwargs) -> Any:
-        """ """
-    def SetSelTextToFriendlyURL(self, *args, **kwargs) -> Any:
-        """ """
-    def GetSelTextBuf(self, *args, **kwargs) -> Any:
-        """ """
-    def ShowSpellCheckMenu(self, *args, **kwargs) -> Any:
-        """ """
+        """创建并初始化富文本编辑控件对象。"""
+    def Destroy(self) -> None:
+        """销毁富文本编辑控件对象并释放其占用的资源。"""
+    def Clear(self) -> None:
+        """清空控件中的全部内容。"""
+    def FindText(self, SearchStr: str, StartPos: int, Length: int, Options: Any) -> int:
+        """在指定范围内查找文本，返回匹配位置(未找到返回-1)。"""
+    def RenderRange(self, HDC: int, HeaderFooter: bool, MinRange: int, MaxRange: int, Rendered: bool, Render: bool) -> int:
+        """将指定范围内的内容渲染到设备上下文，常用于打印。"""
+    def Print(self, Caption: str) -> None:
+        """将控件内容发送到打印机进行打印。"""
+    def RegisterConversionFormat(self, const_AFormat: str, const_ADesc: str, AClass: Any) -> None:
+        """注册一种自定义的文本转换/存储格式。"""
+    def SetSelText(self, Value: str) -> None:
+        """将当前选中的内容替换为指定文本。"""
+    def SetSelTextToFriendlyURL(self, Value: str) -> None:
+        """将当前选中文本替换为带有友好显示文本的超链接。"""
+    def GetSelTextBuf(self, Buffer: Any) -> int:
+        """将当前选中文本复制到指定缓冲区，并返回复制的字符数。"""
+    def ShowSpellCheckMenu(self, Pos: Any) -> None:
+        """在指定坐标位置显示拼写检查建议菜单。"""
     ActiveLineNo: Any
-    """ """
+    """光标当前所在的行号。"""
     DefaultConverter: Any
-    """ """
+    """控件默认使用的文本格式转换器。"""
     DefAttributes: Any
-    """ """
+    """新输入文本使用的默认字符格式(字体、颜色、样式等)。"""
     SelAttributes: Any
-    """ """
+    """当前选中文本的字符格式(字体、颜色、样式等)。"""
     PageRect: Any
-    """ """
+    """打印时每页内容对应的矩形区域。"""
     Paragraph: Any
-    """ """
+    """当前光标所在段落的格式设置(缩进、对齐方式等)。"""
     ScrollPosition: Any
-    """ """
+    """编辑控件当前的滚动条位置。"""
     SpellChecking: bool
-    """ """
+    """是否启用实时拼写检查功能。"""
     Transparent: bool
-    """ """
+    """控件的背景是否透明显示。"""
     EnableURLs: bool
-    """ """
+    """是否自动识别并高亮显示文本中的网址链接。"""
     ShowURLHint: bool
-    """ """
+    """鼠标悬停在链接上时是否显示提示信息。"""
     Zoom: int
-    """ """
+    """控件内容的显示缩放比例。"""
 
 class RichEdit(CustomRichEdit):
     """TRichEdit是一个功能丰富的文本编辑控件，它继承自TCustomRichEdit，提供了完整的富文本编辑功能。
@@ -11675,59 +13154,125 @@ class RichEdit(CustomRichEdit):
     OLE支持：可以嵌入OLE对象
     打印功能：内置打印支持"""
     def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
+        """创建并初始化富文本编辑控件对象。"""
+    def Destroy(self) -> None:
+        """销毁富文本编辑控件对象并释放其占用的资源。"""
     Align: Any
-    """ """
-    Alignment: Any
-    """ """
+    """对齐：确定控件在其容器（父控件）内的对齐方式。
+
+        使用“对齐”将控件与窗体或面板的顶部、底部、左侧或右侧对齐，并且即使包含该控件的窗体、面板或组件的大小发生变化，也使其保持在原处。当调整父级的大小时，对齐的控件也会调整大小，以便它继续跨越父级的顶部、底部、左侧或右侧边缘。
+        例如，要将带有各种控件的面板组件用作工具选项板，请将面板的 Align 值更改为 alLeft。面板的 Align 属性的 alLeft 值可确保工具选项板保持在窗体的左侧，并且始终等于窗体的客户端高度。
+        Align 的默认值为 alNone，这意味着控件保持其在窗体或面板上的位置。
+
+        提示：如果“对齐”设置为 alClient，则控件会填充整个客户区，因此无法通过单击来选择父窗体。在这种情况下，通过选择窗体上的控件并按 ESC 键或使用对象检查器来选择父级。
+        单个父组件中的任意数量的子组件可以具有相同的对齐值，在这种情况下，它们沿着父组件的边缘堆叠。子控件按 z 顺序堆叠。要调整控件的堆叠顺序，请将控件拖动到所需的位置。
+
+        注意：要使控件与其父级的边缘保持指定的关系，但不一定位于父级的一个边缘，请改用 Anchors 属性。"""
+    Alignment: str
+    """控件中文本的对齐方式(左对齐、右对齐或居中)。"""
     Anchors: Any
-    """ """
+    """锚点：指定控件如何锚定到其父级。
+
+        使用锚点可确保控件保持其相对于其父级边缘的当前位置，即使调整父级的大小也是如此。当调整其父级的大小时，控件将保持其相对于其锚定边缘的位置。
+        如果某个控件锚定到其父级的相对边缘，则当调整其父级的大小时，该控件会拉伸。例如，如果某个控件的 Anchors 属性设置为 [akLeft, akRight]，则该控件会在其父级的宽度更改时拉伸。
+        仅当调整父级大小时才会强制执行锚定。因此，例如，如果在设计时将控件锚定到窗体的相对边缘，并且在最大化状态下创建窗体，则该控件不会拉伸，因为在创建控件后不会调整窗体的大小。
+
+        注意：如果控件应与其父级的三个边缘保持接触（紧贴父级的一侧并拉伸该侧的长度），请改用 Align 属性。与锚点不同，对齐允许控件根据其他对齐的同级控件的大小变化以及父控件大小的变化进行调整。"""
     BevelEdges: Any
-    """ """
+    """BevelEdges：指定控件的哪些边缘是斜角的。
+
+        使用 BevelEdges 获取或设置控件的哪些边缘是斜角的。 BevelInner、BevelOuter 和 BevelKind 属性确定指定边的外观。"""
     BevelInner: Any
-    """ """
+    """BevelCut：指定内斜角的切割。
+
+        使用 BevelInner 指定内斜角是否具有凸起、降低或平坦的外观。
+        内斜角立即出现在外斜角内部。如果没有外斜角（BevelOuter 为 bvNone），则内斜角会立即出现在边框内部。"""
     BevelOuter: Any
-    """ """
-    BevelKind default bkNone: Any
-    """ """
+    """BevelCut：指定外斜角的切割。
+
+        使用 BevelOuter 指定外斜角是否具有凸起、降低或平坦的外观。
+        外部斜角立即出现在边框内部和内部斜角外部。"""
+    BevelKind: Any
+    """BevelKind：指定控件的斜角样式。
+
+        使用 BevelKind 修改斜角的外观。 BevelKind 影响斜角的突出程度。
+        BevelKind 与 BevelWidth 以及 BevelInner 或 BevelOuter 指定的斜角切割相结合，可以创建多种效果。尝试各种组合以获得您想要的外观。"""
     BevelWidth: Any
-    """ """
+    """int：指定内斜角和外斜角的宽度。
+
+        使用 BevelWidth 指定内斜角和外斜角的宽度（以像素为单位）。"""
     BiDiMode: Any
-    """ """
+    """控件的双向(从左到右/从右到左)显示模式，用于支持阿拉伯语、希伯来语等书写方向。"""
     BorderStyle: Any
-    """ """
-    BorderWidth: Any
-    """ """
-    Color: Any
-    """ """
-    Ctl3D: Any
-    """ """
-    DragCursor: Any
-    """ """
+    """控件边框的外观样式(有边框或无边框)。"""
+    BorderWidth: int
+    """int：指定控件边框的宽度。
+
+        使用 BorderWidth 获取或设置控件边框的宽度。由控件绘制的图形或文本被剪切到边框内的区域。"""
+    Color: int
+    """int：指定控件的背景颜色。
+
+        使用颜色读取或更改控件的背景颜色。
+        如果控件的 Vcl.Controls.TControl.ParentColor 属性为 True，则更改控件父控件的 Color 属性会自动更改控件的 Color 属性。当 Color 属性的值更改时，控件的 ParentColor 属性会自动设置为 False。
+        TLabel 的颜色始终是背景颜色，除非将 TLabel.Transparent 设置为 False。"""
+    Ctl3D: bool
+    """bool：确定控件具有三维 (3-D) 还是二维外观。
+
+        提供 Ctl3D 是为了向后兼容。 32 位版本的 Windows 或 NT4.0 及更高版本不使用它，但 Windows XP Home 除外，偶尔会使用它。
+        在早期平台上，Ctl3D 控制控件是否具有平面或斜角外观。"""
+    DragCursor: int
+    """int：指定当控件被拖动时用于表示鼠标指针的图像。
+
+        使用 DragCursor 属性可以更改拖动控件时显示的光标图像。
+
+        注意：要使自定义光标可用于 DragCursor 属性，请参阅 Cursor 属性。"""
     DragKind: Any
-    """ """
+    """DragKind：指定控件是正常拖动还是用于停靠。
+
+        使用 DragKind 获取或设置控件是否参与拖放操作或拖放操作。"""
     DragMode: Any
-    """ """
+    """DragMode：指定控件如何启动拖放或拖放操作。
+
+        使用 DragMode 来控制用户何时可以拖动控件。通过将 DragMode 属性值设置为 dmManual，可以在运行时禁用拖放或拖放功能。通过将 DragMode 设置为 dmAutomatic 启用自动拖动。有关 dmManual 和 dmAutomatic 的更多信息，请参阅 TDragMode。"""
     EditMargins: Any
-    """ """
-    Enabled: Any
-    """ """
-    EnableURLs: Any
-    """ """
+    """编辑区左右两侧的边距设置。"""
+    Enabled: bool
+    """bool：指定操作的启用状态。
+        Enabled 的值可以传播到链接到该操作的所有客户端控件和客户端菜单项。"""
+    EnableURLs: bool
+    """是否自动识别并高亮显示文本中的网址链接。"""
     Font: Any
-    """ """
-    HideSelection: Any
-    """ """
+    """字体：指定控件上或控件中写入的文本的属性。
+
+        要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
+
+        注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
+    HideSelection: bool
+    """控件失去焦点时是否隐藏选中内容的高亮显示。"""
     HideScrollBars: Any
-    """ """
+    """控件不需要滚动时是否自动隐藏滚动条。"""
     ImeMode: Any
-    """ """
-    ImeName: Any
-    """ """
+    """ImeMode：确定输入法编辑器 (IME) 的行为。
+
+        设置 ImeMode 以配置 IME 处理用户击键的方式。 IME 是亚洲语言字符的前端输入处理器。 IME 挂钩所有键盘输入，在转换窗口中将其转换为亚洲字符，并将转换后的字符或字符串发送到应用程序。
+        ImeMode 允许控件影响 IME 执行的转换类型，以便它适合控件期望的输入。例如，仅接受数字输入的控件可能会指定 imClose 的 ImeMode，因为数字输入不需要转换。
+
+        注意：ImeMode 的值仅在控件获得焦点时才生效。要在控件已具有输入焦点时更改 ImeMode 的值，请调用 SetIme 方法。"""
+    ImeName: str
+    """str：指定用于将键盘输入转换为亚洲语言字符的输入法编辑器 (IME)。
+
+        设置 ImeName 以指定使用哪个 IME 来转换击键。 IME 是亚洲语言字符的前端输入处理器。 IME 挂钩所有键盘输入，在转换窗口中将其转换为亚洲字符，并将转换后的字符或字符串发送到应用程序。
+        ImeName 必须指定已通过 Windows 控制面板安装的 IME 之一。属性检查器提供系统上当前安装的所有 IME 的下拉列表。在运行时，应用程序可以从全局 Screen 变量获取当前安装的 IME 列表。
+        如果 ImeName 指定不可用的 IME，则将使用应用程序启动时处于活动状态的 IME。不会产生异常。
+
+        注意：ImeName 的值仅在控件获得焦点时才生效。要在控件获得输入焦点后更改 ImeName 的值，请调用 SetIme 方法。"""
     Constraints: Any
-    """ """
+    """SizeConstraints：指定控件的大小约束。
+
+        使用约束指定控件的最小和最大宽度和高度。当约束包含最大值或最小值时，无法调整控件大小以违反这些约束。
+
+        注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
+        警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
     Lines: Strings
     """字符串：包含控件中的各个文本行。
         使用“行”在控件中逐行操作文本。 Lines 是一个 TStrings 对象，因此 TStrings 方法可用于 Lines 执行操作，例如计算文本行数、添加新行、删除行或用新文本替换行。例如：
@@ -11735,116 +13280,169 @@ class RichEdit(CustomRichEdit):
         要同时处理所有文本，请使用 Text 属性。要操作单行文本，Lines 属性效果更好。
 
         注意：虽然 Lines 是作为 TStrings 后代实现的，但它没有实现将对象与列表中的字符串关联的支持。"""
-    MaxLength: Any
-    """ """
-    ParentBiDiMode: Any
-    """ """
-    ParentColor: Any
-    """ """
-    ParentCtl3D: Any
-    """ """
-    ParentFont: Any
-    """ """
-    ParentShowHint: Any
-    """ """
+    MaxLength: int
+    """控件允许输入的最大字符数(0表示不限制)。"""
+    ParentBiDiMode: bool
+    """bool：指定控件是否使用其父控件的 BiDiMode。
+
+        使用 ParentBiDiMode 获取或设置控件是否使用其父级的 BiDiMode。当 ParentBiDiMode 为 true 时，控件的 BiDiMode 属性始终等于其父控件的 BiDiMode 属性。如果 ParentBiDiMode 为 false，则控件使用其自己的 BiDiMode 属性。
+        对于表单中的所有控件，将 ParentBiDiMode 设置为 true，以确保整个用户界面以统一的方式调整为中东语言环境。
+        当控件的 BiDiMode 属性值更改时，ParentBiDiMode 自动变为 false。"""
+    ParentColor: bool
+    """bool：指定控件在何处查找其颜色信息。
+
+        要让控件使用与其父控件相同的颜色，请将 ParentColor 设置为 True。如果 ParentColor 为 False，则控件使用其自己的 Color 属性。
+        将所有控件的 ParentColor 设置为 True，以确保窗体上的所有控件具有统一的外观。例如，如果窗体中所有控件的 ParentColor 均为 True，则将窗体的背景颜色更改为灰色会导致窗体上的所有控件也具有灰色背景。
+        当控件的 Color 属性值更改时，ParentColor 自动变为 False。"""
+    ParentCtl3D: bool
+    """bool：确定组件的外观，以确定它是否应该具有三维外观。
+
+        提供 ParentCtl3D 是为了向后兼容。它对 32 位版本的 Windows 或 NT 4.0 及更高版本没有影响。
+        ParentCtl3D 确定控件是否使用其父级的 Ctl3D 属性。"""
+    ParentFont: bool
+    """bool：指定控件在何处查找其字体信息。
+
+        要让控件使用与其父控件相同的字体，请将 ParentFont 设置为 true。如果 ParentFont 为 false，则控件使用其自己的 Font 属性。许多控件默认 ParentFont 为 true，以便窗体或其他容器中的所有控件呈现统一的外观。当控件的 Font 属性值更改时，ParentFont 自动变为 false。
+        当表单的 ParentFont 为 true 时，表单将使用默认字体。目前，默认字体是 Tahoma 8 pt。"""
+    ParentShowHint: bool
+    """bool：指定控件查找的位置以确定是否应显示其帮助提示。
+
+        使用 ParentShowHint 确保窗体上的所有控件要么统一显示其帮助提示，要么统一不显示。
+        如果 ParentShowHint 为 True，则控件使用其父控件的 ShowHint 属性值。如果 ParentShowHint 为 False，则控件使用其自己的 ShowHint 属性值。
+        要仅为窗体上的选定控件提供帮助提示，请将那些应该有帮助提示的控件的 ShowHint 属性设置为 True，ParentShowHint 将自动变为 False。
+
+        注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
     PlainText: Any
-    """ """
+    """是否以纯文本方式处理内容(不保存RTF格式信息)。"""
     SelectionStreamMode: Any
-    """ """
+    """选中内容在保存/加载时是否以流方式处理。"""
     PopupMenu: Any
-    """ """
-    ReadOnly: Any
-    """ """
-    ScrollBars: Any
-    """ """
-    ShowHint: Any
-    """ """
+    """PopupMenu：指定与控件关联的弹出菜单。
+
+        为 PopupMenu 指定一个值，以便在用户选择该控件并单击鼠标右键时显示​​弹出菜单。如果TPopupMenu的AutoPopup属性为True，弹出菜单会自动出现。如果菜单的 AutoPopup 属性为 False，则通过从控件的 OnContextPopup 事件处理程序调用其 Popup 方法来显示菜单。"""
+    ReadOnly: bool
+    """bool：确定用户是否可以更改编辑控件的文本。
+
+        要将编辑控件限制为仅显示，请将 ReadOnly 属性设置为 true。将 ReadOnly 设置为 false 以允许编辑编辑控件的内容。
+        将 ReadOnly 设置为 true 可确保文本不被更改，同时仍允许用户选择文本。然后应用程序可以操作所选文本，或将其复制到剪贴板。"""
+    ScrollBars: bool
+    """控件显示哪些滚动条(水平、垂直、两者或不显示)。"""
+    ShowHint: bool
+    """鼠标悬停在控件上时是否显示提示信息(Hint)。"""
     ShowURLHint: Any
-    """ """
+    """鼠标悬停在链接上时是否显示提示信息。"""
     SpellChecking: Any
-    """ """
-    TabOrder: Any
-    """ """
-    TabStop default True: Any
-    """ """
+    """是否启用实时拼写检查功能。"""
+    TabOrder: int
+    """int：指示控件在其父级 Tab 键顺序中的位置。
+
+        TabOrder 是当用户按 Tab 键时访问子窗口的顺序。 TabOrder 值为 0 的控件是窗体首次出现时获得焦点的控件。
+        最初，选项卡顺序始终是控件添加到窗体的顺序。添加到窗体的第一个控件的 TabOrder 值为 0，第二个为 1，第三个为 2，依此类推。通过更改 TabOrder 属性来更改此设置。
+        每个控件在其父控件中都有一个唯一的 Tab 键顺序值。如果将一个控件的 TabOrder 属性值更改为与第二个控件的值相同，则所有其他控件的 TabOrder 值都会更改。例如，假设某个控件在 Tab 键顺序中位于第六位。如果将控件的 TabOrder 属性值更改为 3（使控件按 Tab 键顺序排列为第四位），则原本按 Tab 键顺序排列为第四位的控件现在将变为第五位，而原来为第五位的控件将变为第六位。
+        为 TabOrder 指定一个大于父控件中包含的控件数的值会将控件移动到 Tab 键顺序的末尾。该控件不采用 TabOrder 的分配值，而是指定一个数字，以确保该控件是 Tab 键顺序中的最后一个。
+
+        注意：仅当 TabStop 属性为 True 并且控件具有父级时，TabOrder 才有意义。 （除非该窗体是另一个窗体的子窗体，否则不会使用该窗体的 TabOrder 属性。）TabOrder 为 -1 的控件没有父窗体，因此无法通过按 Tab 键来访问。要从 Tab 键顺序中删除父级控件，请将其 TabStop 属性设置为 False。"""
+    TabStop: bool
+    """bool：确定用户是否可以使用 Tab 键切换到控件。
+
+        使用 TabStop 允许或禁止使用 Tab 键访问控件。
+        如果 TabStop 为 True，则控件按 Tab 键顺序排列。如果 TabStop 为 False，则该控件不符合 Tab 键顺序，用户无法按 TAB 键移动到该控件。
+
+        注意：TabStop 对于表单没有意义，除非该表单指定另一个表单作为其父表单。"""
     Touch: Any
-    """ """
-    Transparent: Any
-    """ """
-    Visible: Any
-    """ """
-    WantTabs: Any
-    """ """
-    WantReturns: Any
-    """ """
-    WordWrap: Any
-    """ """
-    StyleElements: Any
-    """ """
-    StyleName: Any
-    """ """
-    Zoom: Any
-    """ """
+    """TouchManager：指定与控件关联的触摸管理器组件。
+
+        使用 Touch 属性访问与控件关联的手势选项。 Touch 指定了一个 TTouchManager 类型的类。
+        触摸用于：
+
+        关联一个 TGestureManager。
+        （TGestureManager 管理控件可以使用的所有手势。）
+        选择与控件关联的标准、交互式或自定义手势。
+        （您还可以将每个手势连接到一个操作；请参阅将操作分配给手势。）
+        指定一组用于交互式或平板电脑手势的选项。"""
+    Transparent: bool
+    """控件的背景是否透明显示。"""
+    Visible: bool
+    """bool：存储动作表示是否可见。
+
+        Visible 指定操作的可见状态（True 表示可见，False 表示不可见）。
+        如果将客户端链接到操作的操作链接的 IsVisibleLinked 方法返回 True，则此 Visible 值将传播到操作的客户端。
+        如果操作的 Visible 为 False，并且操作链接的 IsVisibleLinked 返回 True，则客户端（控件、菜单项或其他）的 Visible 也设置为 False，并且该客户端也是不可见的。通常，如果操作属于 TCustomViewAction，则操作链接的 IsVisibleLinked 返回 False。否则，当操作属于 TAction 时，操作链接的 IsVisibleLinked 返回 True。也就是说，当需要提供 Visible 设置为 True 的操作的客户端的可见表示时，使用 TCustomViewAction。"""
+    WantTabs: bool
+    """控件是否接受Tab键输入(而不是将焦点切换到下一个控件)。"""
+    WantReturns: bool
+    """控件是否接受回车键换行(而不是触发默认按钮等操作)。"""
+    WordWrap: bool
+    """布尔：用于控制文本是否自动换行"""
+    StyleElements: int
+    """StyleElements：指定控件使用的样式元素。
+
+        使用 StyleElements 自定义控件的样式。如果启用了自定义样式，您可以启用或禁用控件中的样式元素。
+        StyleElements 是一组值，指定当前样式的哪些元素要应用于此控件。默认情况下，该样式的所有元素均已启用。"""
+    StyleName: str
+    """控件当前使用的VCL样式名称。"""
+    Zoom: float
+    """控件内容的显示缩放比例。"""
     OnChange: Any
-    """ """
+    """控件内容发生改变时触发的事件。"""
     OnClick: Any
-    """ """
+    """用户单击控件时触发的事件。"""
     OnContextPopup: Any
-    """ """
+    """用户右键单击控件、准备弹出上下文菜单时触发的事件。"""
     OnDblClick: Any
-    """ """
+    """用户双击控件时触发的事件。"""
     OnDragDrop: Any
-    """ """
+    """用户将拖动的对象放置到控件上时触发的事件。"""
     OnDragOver: Any
-    """ """
+    """被拖动的对象经过控件上方时触发的事件，用于判断是否允许放置。"""
     OnEndDock: Any
-    """ """
+    """控件结束停靠操作时触发的事件。"""
     OnEndDrag: Any
-    """ """
+    """拖动操作结束时触发的事件。"""
     OnEnter: Any
-    """ """
+    """控件获得输入焦点时触发的事件。"""
     OnExit: Any
-    """ """
+    """控件失去输入焦点时触发的事件。"""
     OnGesture: Any
-    """ """
+    """控件接收到触摸手势时触发的事件。"""
     OnKeyDown: Any
-    """ """
+    """用户按下键盘按键时触发的事件。"""
     OnKeyPress: Any
-    """ """
+    """用户按下产生字符的按键时触发的事件。"""
     OnKeyUp: Any
-    """ """
+    """用户释放键盘按键时触发的事件。"""
     OnLinkClick: Any
-    """ """
+    """用户点击文本中的超链接时触发的事件。"""
     OnMouseActivate: Any
-    """ """
+    """鼠标点击一个非活动窗口中的控件、导致该窗口被激活时触发的事件。"""
     OnMouseDown: Any
-    """ """
+    """用户在控件上按下鼠标按键时触发的事件。"""
     OnMouseEnter: Any
-    """ """
+    """鼠标指针移入控件范围时触发的事件。"""
     OnMouseLeave: Any
-    """ """
+    """鼠标指针移出控件范围时触发的事件。"""
     OnMouseMove: Any
-    """ """
+    """鼠标指针在控件上移动时触发的事件。"""
     OnMouseUp: Any
-    """ """
+    """用户在控件上释放鼠标按键时触发的事件。"""
     OnMouseWheel: Any
-    """ """
+    """用户在控件上滚动鼠标滚轮时触发的事件。"""
     OnMouseWheelDown: Any
-    """ """
+    """用户向下滚动鼠标滚轮时触发的事件。"""
     OnMouseWheelUp: Any
-    """ """
+    """用户向上滚动鼠标滚轮时触发的事件。"""
     OnProtectChange: Any
-    """ """
+    """尝试修改受保护文本时触发的事件。"""
     OnResizeRequest: Any
-    """ """
+    """控件请求调整自身大小时触发的事件。"""
     OnSaveClipboard: Any
-    """ """
+    """内容被复制到剪贴板时触发的事件。"""
     OnSelectionChange: Any
-    """ """
+    """选中内容发生变化时触发的事件。"""
     OnStartDock: Any
-    """ """
+    """控件开始停靠操作时触发的事件。"""
     OnStartDrag: Any
-    """ """
+    """拖动操作开始时触发的事件。"""
 
 class CustomMemoryStream(Stream):
     """TCustomMemoryStream 是一个抽象基类，用作内存流的共同祖先。
@@ -11852,7 +13450,7 @@ class CustomMemoryStream(Stream):
     定义可以传输存储在内存中的数据的流对象时，使用 TCustomMemoryStream 作为基类。内存流对于提供对存储在难以访问的介质中的数据的类似文件的访问非常有用。创建内存流时，数据可以移动到内部内存缓冲区。在操作内存流中的数据之后，当内存流被破坏时，可以将数据写出到其实际存储介质。
     不要实例化 TCustomMemoryStream 的实例。它是一个抽象类，实现所有内存流通用的行为。要使用内存流的实例，请使用 TCustomMemoryStream 的后代之一，例如 TMemoryStream 或 TResourceStream。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     Memory: Pointer
     """指针：提供对为内存流分配的内存池的直接访问。
@@ -11863,7 +13461,7 @@ class CustomMemoryStream(Stream):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Free(self) -> Any:
         """TObject.Free()
@@ -11974,25 +13572,25 @@ class CustomMemoryStream(Stream):
 class CustomMultiSelectListControl(CustomListControl):
     """TCustomMultiSelectListControl 的包装"""
     __hash__: ClassVar[None] = ...
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     MultiSelect: bool
     """布尔：用于控制是否允许用户选择多个列表项。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     SelCount: int
     """整数：选择的条目数量。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -12063,7 +13661,7 @@ class CustomNumberBox(CustomEdit):
     __hash__: ClassVar[None] = ...
     AcceptExpressions: bool
     """bool： 目前没有任何其他信息。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -12075,11 +13673,11 @@ class CustomNumberBox(CustomEdit):
     """int： 目前没有任何其他信息。"""
     DisplayFormat: str
     """str： 目前没有任何其他信息。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     LargeStep: float
     """float： 目前没有任何其他信息。"""
@@ -12097,11 +13695,11 @@ class CustomNumberBox(CustomEdit):
     """可调用[[对象]，无]："""
     OnValidateChar: Any
     """可调用[[unicodechr(str), bool], None]:"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SmallStep: float
     """float： 目前没有任何其他信息。"""
@@ -12123,7 +13721,7 @@ class CustomNumberBox(CustomEdit):
     """int： 目前没有任何其他信息。"""
     Wrap: bool
     """bool： 目前没有任何其他信息。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -12138,7 +13736,7 @@ class CustomNumberBox(CustomEdit):
         调用 Create 来创建并初始化 TCustomEdit 的一个实例。
         AOwner 是另一个组件，通常是表单，负责释放编辑控件。它成为 Owner 属性的值。
         覆盖 Create 方法的派生对象应在执行任何其他初始化之前调用继承的 Create。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TWinControl 的一个实例。
 
         Vcl.NumberBox.TCustomNumberBox.Destroy 继承自 Vcl.Controls.TWinControl.Destroy。此行以下所有内容均引用 Vcl.Controls.TWinControl.Destroy。
@@ -12205,7 +13803,7 @@ class CustomPrototypeBindSource(BaseObjectBindSource):
     """bool： 目前没有任何其他信息。"""
     AutoPost: bool
     """bool： 目前没有任何其他信息。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -12217,7 +13815,7 @@ class CustomPrototypeBindSource(BaseObjectBindSource):
     """返回组件所有者"""
     RecordCount: int
     """int： 目前没有任何其他信息。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -12311,15 +13909,15 @@ class CustomStatusBar(WinControl):
     """Canvas：提供对状态栏绘图表面的运行时访问。
 
         只读 Canvas 属性提供对状态栏绘图表面的访问，您可以在实现 OnDrawPanel 事件的处理程序时使用该表面。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnCreatePanelClass: Callable[[CustomStatusBar,StatusPanelClass],None]
     """可调用[[CustomStatusBar，StatusPanelClass]，无]："""
@@ -12335,9 +13933,9 @@ class CustomStatusBar(WinControl):
 
         要从对象检查器打开面板编辑器，请选择面板属性，然后双击右侧的值列或单击省略号 (...) 按钮。
         要从表单设计器打开面板编辑器，请右键单击 TStatusBar 并从上下文菜单中选择面板编辑器。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SimplePanel: bool
     """bool：确定状态栏是显示单个面板还是多个面板。
@@ -12359,7 +13957,7 @@ class CustomStatusBar(WinControl):
     """bool：指定状态栏是否使用系统字体。
 
         UseSystemFont 指定状态栏是否使用系统字体。要更改字体，请使用 Font 属性。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -12371,7 +13969,7 @@ class CustomStatusBar(WinControl):
         创建并初始化 TCustomStatusBar 组件。
         Create 方法会创建状态栏及其画布和状态面板。
         AOwner 是一个组件，通常是表单，它会成为 Owner 属性的值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomStatusBar 并释放其内存。
 
         不要直接调用 Destroy。相反，请使用 Free 方法，该方法在调用 Destroy 之前检查 nil 对象。
@@ -12458,7 +14056,7 @@ class CustomStyleServices(Object):
     """bool：确定操作系统是否支持样式。
 
         使用Available 检查操作系统是否支持样式。"""
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     DesigningState: bool
     """bool： 目前没有任何其他信息。"""
@@ -12488,9 +14086,9 @@ class CustomStyleServices(Object):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def ApplyThemeChange(self, *args, **kwargs) -> Any:
+    def ApplyThemeChange(self) -> None:
         """重置应用程序主题。
 
         每当操作系统主题更改时，TApplication 对象都会自动调用ApplyThemeChange。
@@ -12507,7 +14105,7 @@ class CustomStyleServices(Object):
         如果Details不为nil，该函数返回为当前样式下的Color定义的系统颜色。例如，如果 Color 为 clBtnFace，则该函数返回为当前样式的按钮面定义的系统颜色，作为 TColorRef 值。"""
     def ContentRect(self, DC: int, Details: ThemedElementDetails, BoundingRect: Rect) -> Rect:
         """TCustomStyleServices.ContentRect(DC: int, 详细信息: ThemedElementDetails, BoundingRect: 矩形) -> 矩形"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """构造一个对象并在首次使用该对象之前初始化其数据。
 
         Vcl.Themes.TCustomStyleServices.Create继承自System.TObject.Create。该行以下的所有内容均引用System.TObject.Create。
@@ -12666,8 +14264,8 @@ class CustomStyleServices(Object):
 
         将当前样式设置保存到指定文件。
         调用 SaveToFile 将当前样式保存到指定文件名中。"""
-    def ThemesAvailable(self, *args, **kwargs) -> Any: ...
-    def ThemesEnabled(self, *args, **kwargs) -> Any: ...
+    def ThemesAvailable(self) -> bool: ...
+    def ThemesEnabled(self) -> bool: ...
     def __delattr__(self, name) -> Any:
         """用于在删除对象的属性时触发。当您使用delattr()函数或del语句删除对象的属性时，该方法将被调用。"""
     def __eq__(self, other) -> bool:
@@ -12712,19 +14310,19 @@ class CustomTabControl(WinControl):
     """画布：允许访问选项卡控件的画布。
 
         在 OnDrawTab 事件期间使用 Canvas 在选项卡控件的画布上进行绘制。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于设置或获取该选项卡控件所附加的父窗口句柄。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabStop: bool
     """bool：确定用户是否可以使用 Tab 键切换到控件。
@@ -12733,7 +14331,7 @@ class CustomTabControl(WinControl):
         如果 TabStop 为 True，则控件按 Tab 键顺序排列。如果 TabStop 为 False，则该控件不符合 Tab 键顺序，用户无法按 TAB 键移动到该控件。
 
         注意：TabStop 对于表单没有意义，除非该表单指定另一个表单作为其父表单。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -12745,7 +14343,7 @@ class CustomTabControl(WinControl):
         创建并初始化 TCustomTabControl 的实例。
         调用 Create 在运行时实例化选项卡控件。在设计时放置在窗体上的选项卡控件是自动创建的。 Create 调用继承的 Create 方法并设置选项卡控件的初始值，包括创建包含选项卡文本字符串的选项卡列表。
         AOwner 是一个组件，通常是表单，负责释放选项卡控件。它成为所有者财产的价值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomTabControl 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。 Destroy 释放保存选项卡文本字符串列表的选项卡列表，并调用继承的析构函数。"""
@@ -12760,7 +14358,7 @@ class CustomTabControl(WinControl):
 
         指示指定点处选项卡的索引。
         使用 IndexOfTabAt 定位哪个选项卡位于由 X 和 Y 指定的点处。如果 X 坐标为 X 且 Y 坐标为 Y 的点位于选项卡上方，则 IndexOfTabAt 在 Tabs 属性 (TTabControl) 中返回该选项卡的 0 偏移索引）或在 Pages 属性 (TPageControl) 中。如果 X 和 Y 定义的点不在制表符上方，则 IndexOfTabAt 返回 1。"""
-    def RowCount(self, *args, **kwargs) -> Any:
+    def RowCount(self) -> int:
         """设置 TabIndex 属性。
 
         调用 RowCount 来更改 TabIndex 属性的值。后代类应该重写 RowCount 以提供此属性的特殊实现。"""
@@ -12845,7 +14443,7 @@ class CustomToggleSwitch(CustomControl):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -12860,7 +14458,7 @@ class CustomToggleSwitch(CustomControl):
 
         创建 TCustomToggleSwitch 的实例。
         创建为所有切换开关属性设置默认值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TCustomControl 的实例。
 
         Vcl.WinXCtrls.TCustomToggleSwitch.Destroy 继承自 Vcl.Controls.TCustomControl.Destroy。该行以下的所有内容均引用Vcl.Controls.TCustomControl.Destroy。
@@ -12870,7 +14468,7 @@ class CustomToggleSwitch(CustomControl):
         当控件被销毁时，它会销毁其 Canvas 属性中的 TCanvas 对象。
         重写 Destroy 以释放在 Create 方法中分配的所有内存或资源。在后代控件类型中声明 Destroy 方法时，始终将 override 指令添加到声明中，并调用继承的 Destroy 作为重新声明方法中的最后一个语句。
         创建控件时，会自动提供围绕构造函数调用的异常处理。如果异常从构造函数中逃逸，则调用析构函数。这意味着析构函数代码必须准备好清理部分构造的实例。在处理其内容之前检查所有数据字段是否为零。"""
-    def GetControlsAlignment(self, *args, **kwargs) -> Any:
+    def GetControlsAlignment(self) -> Any:
         """指示文本在控件内的对齐方式。
 
         Vcl.WinXCtrls.TCustomToggleSwitch.GetControlsAlignment 继承自 Vcl.Controls.TControl.GetControlsAlignment。该行下面的所有内容均引用Vcl.Controls.TControl.GetControlsAlignment。
@@ -12886,7 +14484,7 @@ class CustomToggleSwitch(CustomControl):
         """TControl.Invalidate()
 
         完全重绘控制。"""
-    def IsOn(self, *args, **kwargs) -> Any:
+    def IsOn(self) -> bool:
         """指示切换开关是否处于开启状态。"""
     def Repaint(self) -> Any:
         """TControl.Repaint()
@@ -12964,19 +14562,19 @@ class CustomTreeView(WinControl):
     __hash__: ClassVar[None] = ...
     Canvas: Canvas
     """画布："""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
     DropTarget: TreeNode
     """树节点：用于指定一个控件是否可以作为拖放操作的目标控件。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     Selected: TreeNode
     """树节点：用于标识控件当前选定的项或节点。"""
@@ -12984,11 +14582,11 @@ class CustomTreeView(WinControl):
     """整数：用于确定控件中当前选中项的数量。"""
     Selections: TreeNode
     """树节点：用于控制和管理用户在界面上选择的内容。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TopItem: TreeNode
     """树节点：用于控制控件中可见项的顶部项。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def AlphaSort(self, ARecurse: bool) -> bool:
         """TCustomTreeView.AlphaSort(ARecurse: bool) -> bool"""
@@ -13009,14 +14607,14 @@ class CustomTreeView(WinControl):
         """TCustomTreeView.CustomSort(SortProc: Callable[[int, int, int], int], Data: int, ARecurse: bool) -> bool"""
     def Deselect(self, Node: TreeNode) -> None:
         """TCustomTreeView.Deselect(Node: TreeNode) -> None"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TWinControl 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free，因为Free会检查引用是否为空，然后才调用 Destroy。"""
-    def FindNextToSelect(self, *args, **kwargs) -> Any: ...
-    def FullCollapse(self, *args, **kwargs) -> Any: ...
-    def FullExpand(self, *args, **kwargs) -> Any: ...
-    def GetDragImages(self, *args, **kwargs) -> Any:
+    def FindNextToSelect(self) -> Any: ...
+    def FullCollapse(self, Node: Any = ...) -> None: ...
+    def FullExpand(self, Node: Any = ...) -> None: ...
+    def GetDragImages(self) -> Any:
         """返回控件的图像列表，其中包含拖动时要显示的图像。
 
         重写 GetDragImages 为控件提供自定义图像列表。正如在 TControl 中实现的那样，GetDragImages 返回空。"""
@@ -13026,7 +14624,7 @@ class CustomTreeView(WinControl):
         """TCustomTreeView.GetNodeAt(X: int, Y: int) -> TreeNode"""
     def GetSelections(self, AList: List) -> TreeNode:
         """TCustomTreeView.GetSelections(AList: List) -> TreeNode"""
-    def IsEditing(self, *args, **kwargs) -> Any: ...
+    def IsEditing(self) -> bool: ...
     def LoadFromFile(self, FileName: str) -> None:
         """TCustomTreeView.LoadFromFile(FileName: str) -> 无"""
     def LoadFromStream(self, Stream: Stream) -> None:
@@ -13170,7 +14768,7 @@ class DateTimePicker(WinControl):
 
         注意：约束适用于窗体的高度。但是，窗体的高度取决于 Windows 的标题栏大小。例如，Windows XP 使用的标题栏比其他窗口系统大得多。要解决此问题，请在设计窗体时注意 ClientHeight，并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：不要设置与 Align 或 Anchors 属性值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -13220,7 +14818,7 @@ class DateTimePicker(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -13259,9 +14857,9 @@ class DateTimePicker(WinControl):
         “今天的日期：2001 年 4 月 1 日”
 
         注意：在代码中以编程方式设置 Format 时，请将单引号转义。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     ImeMode: ImeMode
     """ImeMode：确定输入法编辑器 (IME) 的行为。
@@ -13356,7 +14954,7 @@ class DateTimePicker(WinControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     ParseInput: bool
     """bool：启用 OnUserInput 事件。
@@ -13380,7 +14978,7 @@ class DateTimePicker(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -13427,7 +15025,7 @@ class DateTimePicker(WinControl):
         调用 Show 方法将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子代，Show 和 ShowModal 方法将 Visible 设置为 True，并将表单置于所有打开窗口的前面。
         对于 TTabSheet 子代，Visible 不控制运行时控件的可见性。有关更多信息，请参阅 TabVisible 属性的描述。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -13492,7 +15090,7 @@ class DateTimePicker(WinControl):
 
 class DelphiDefaultContainer:
     """Delphi 的抽象容器类型"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def __contains__(self, other) -> bool:
         """返回对象本身是否包含参数 other。
@@ -13523,7 +15121,7 @@ class DelphiDefaultContainer:
 
 class DelphiDefaultIterator:
     """抽象容器的迭代器"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def __iter__(self) -> Any:
         """用于定义一个可迭代对象。"""
@@ -13532,7 +15130,7 @@ class DelphiDefaultIterator:
 
 class DelphiDefaultMapping:
     """Delphi 的抽象映射类型"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def __delattr__(self, name) -> Any:
         """用于在删除对象的属性时触发。当您使用delattr()函数或del语句删除对象的属性时，该方法将被调用。"""
@@ -13557,9 +15155,9 @@ class DelphiDefaultMapping:
 
 class DelphiMethod:
     """Delphi 方法的包装器"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def __call__(self, *args, **kwargs) -> Any:
+    def __call__(self, *args: Any, **kwargs: Any) -> Any:
         """使实例对象可以像函数一样被调用。"""
 
 class DragImageList(CustomImageList):
@@ -13567,7 +15165,7 @@ class DragImageList(CustomImageList):
     __hash__: ClassVar[None] = ...
     ColorDepth: ColorDepth
     """颜色深度："""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -13579,7 +15177,7 @@ class DragImageList(CustomImageList):
     """布尔：用于指示控件当前是否正在进行拖放操作。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BeginDrag(self, Window: int, X: int, Y: int) -> bool:
         """TDragImageList.BeginDrag(Window: int, X: int, Y: int) -> bool"""
@@ -13594,9 +15192,9 @@ class DragImageList(CustomImageList):
         """TDragImageList.DragLock(Window: int, XPos: int, YPos: int) -> bool"""
     def DragMove(self, X: int, Y: int) -> bool:
         """TDragImageList.DragMove(X: int, Y: int) -> bool"""
-    def DragUnlock(self, *args, **kwargs) -> Any: ...
-    def EndDrag(self, *args, **kwargs) -> Any: ...
-    def GetHotSpot(self, *args, **kwargs) -> Any: ...
+    def DragUnlock(self) -> None: ...
+    def EndDrag(self) -> None: ...
+    def GetHotSpot(self) -> Any: ...
     def GetParentComponent(self) -> Any:
         """TComponent.GetParentComponent()
 
@@ -13605,10 +15203,10 @@ class DragImageList(CustomImageList):
         """TComponent.HasParent()
 
         指示组件是否有父组件来处理其归档。"""
-    def HideDragImage(self, *args, **kwargs) -> Any: ...
+    def HideDragImage(self) -> None: ...
     def SetDragImage(self, Index: int, HotSpotX: int, HotSpotY: int) -> bool:
         """TDragImageList.SetDragImage(索引: int, HotSpotX: int, HotSpotY: int) -> bool"""
-    def ShowDragImage(self, *args, **kwargs) -> Any: ...
+    def ShowDragImage(self) -> None: ...
     def __contains__(self, other) -> bool:
         """返回对象本身是否包含参数 other。
 
@@ -13717,13 +15315,13 @@ class DrawGrid(CustomDrawGrid):
         将 BorderStyle 设置为 bsSingle 以在网格图像周围添加单线边框。将 BorderStyle 设置为 bsNone 以省略边框。"""
     Canvas: Any
     """指定为控件呈现绘图表面的 TCanvas 对象。"""
-    Col: Any
+    Col: int
     """指定包含所选单元格的列的索引。"""
     ColCount: int
     """int：指定网格中的列数。
 
         读取 ColCount 以确定 ColWidths 数组中的条目数。设置 ColCount 以添加或删除网格右侧的列。ColCount 的值包括网格左侧的任何固定列以及网格主体中的可滚动列。"""
-    ColWidths: Any
+    ColWidths: int
     """指定网格的列宽"""
     Color: int
     """int：指定控件的背景颜色。
@@ -13794,7 +15392,7 @@ class DrawGrid(CustomDrawGrid):
         关于 Vcl.Grids.TStringGrid 的 DrawingStyle 的注意事项：
         除非您还将 DrawingStyle 设置为 gdsClassic，否则设置 FixColor 不会产生任何效果。
         除非将 DrawingStyle 的值设置为 gdsGradient，否则设置 GradientStartColor 和 GradientEndColor 不会产生任何效果。"""
-    EditorMode: Any
+    EditorMode: bool
     """确定当前单元格是否可以编辑。"""
     Enabled: bool
     """bool：控制控件是否响应鼠标、键盘和计时器事件。
@@ -13835,7 +15433,7 @@ class DrawGrid(CustomDrawGrid):
     """int：确定起始渐变颜色。
 
         GradientStartColor 确定起始渐变颜色。当 DrawingStyle 的值为 gdsGradient 时，使用 GradientStartColor。GradientEndColor 和 GradientStartColor 定义在网格控件内绘制单个单元格时使用的颜色范围。"""
-    GridHeight: Any
+    GridHeight: int
     """指定网格的高度（以像素为单位）。"""
     GridLineWidth: int
     """int：指定分隔网格单元格的线的宽度（以像素为单位）。
@@ -13844,9 +15442,9 @@ class DrawGrid(CustomDrawGrid):
         如果 Options 属性不包含 goFixedHorzLine、goFixedVertLine、goHorzLine 或 goVertLine，则 GridLineWidth 将无效。
 
         注意：对于在 Windows 9x 或 Windows ME 上运行的应用程序，建议不要使用大于 3 像素的值，因为可能会出现失真。"""
-    GridWidth: Any
+    GridWidth: int
     """指定网格的宽度（以像素为单位）。"""
-    LeftCol: Any
+    LeftCol: int
     """指定网格中第一个可见的可滚动列的索引。"""
     OnClick: Callable[[Object],None]
     """可调用[[对象]，无]："""
@@ -13954,13 +15552,13 @@ class DrawGrid(CustomDrawGrid):
     """PopupMenu：指定与控件关联的弹出菜单。
 
         为 PopupMenu 指定一个值，以便在用户选择该控件并单击鼠标右键时显示​​弹出菜单。如果TPopupMenu的AutoPopup属性为True，弹出菜单会自动出现。如果菜单的 AutoPopup 属性为 False，则通过从控件的 OnContextPopup 事件处理程序调用其 Popup 方法来显示菜单。"""
-    Row: Any
+    Row: int
     """指定包含所选单元格的行的索引。"""
     RowCount: int
     """int：指定网格中的行数。
 
         读取 RowCount 以确定 RowHeights 数组中的条目数。设置 RowCount 以在网格底部添加或删除行。 RowCount 的值包括网格顶部的任何固定行以及网格主体中的可滚动行。"""
-    RowHeights: Any
+    RowHeights: int
     """指定网格的行高"""
     ScrollBars: ScrollStyle
     """ScrollStyle：指定网格是否包含水平和垂直滚动条。
@@ -13995,7 +15593,7 @@ class DrawGrid(CustomDrawGrid):
         为 TabOrder 指定一个大于父控件中包含的控件数的值会将控件移动到 Tab 键顺序的末尾。该控件不采用 TabOrder 的分配值，而是指定一个数字，以确保该控件是 Tab 键顺序中的最后一个。
 
         注意：仅当 TabStop 属性为 True 并且控件具有父级时，TabOrder 才有意义。 （除非该窗体是另一个窗体的子窗体，否则不会使用该窗体的 TabOrder 属性。）TabOrder 为 -1 的控件没有父窗体，因此无法通过按 Tab 键来访问。要从 Tab 键顺序中删除父级控件，请将其 TabStop 属性设置为 False。"""
-    TopRow: Any
+    TopRow: int
     """指定网格中第一个可见的可滚动行的索引。"""
     Touch: TouchManager
     """TouchManager：指定与控件关联的触摸管理器组件。
@@ -14023,7 +15621,7 @@ class DrawGrid(CustomDrawGrid):
     """int：表示网格中可见的可滚动行数。
 
         使用 VisibleRowCount 确定网格中完全可见的可滚动行数。 VisibleRowCount 不包括由FixedRows 属性计数的固定行。它不包括网格底部任何部分可见的行。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -14178,7 +15776,7 @@ class Edit(CustomEdit):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -14214,16 +15812,16 @@ class Edit(CustomEdit):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """bool：确定当焦点转移到另一个控件时是否保留所选文本的视觉指示。
@@ -14340,9 +15938,9 @@ class Edit(CustomEdit):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    PasswordChar: Any
+    PasswordChar: str
     """unicodechr(str)：指示要显示的字符（如果有），以代替在控件中键入的实际字符。
 
         使用PasswordChar 属性创建一个编辑控件，该控件显示特殊字符来代替任何输入的文本。如果将PasswordChar 设置为空字符（ANSI 字符零），则编辑控件将正常显示其文本。如果PasswordChar 是任何其他字符，则编辑控件将显示PasswordChar 来代替键入的每个字符。 PasswordChar 仅影响编辑控件的外观。 Text 属性的值反映了键入的实际字符。"""
@@ -14355,7 +15953,7 @@ class Edit(CustomEdit):
 
         要将编辑控件限制为仅显示，请将 ReadOnly 属性设置为 true。将 ReadOnly 设置为 false 以允许编辑编辑控件的内容。
         将 ReadOnly 设置为 true 可确保文本不被更改，同时仍允许用户选择文本。然后应用程序可以操作所选文本，或将其复制到剪贴板。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
     ShowHint: bool
     """bool: ShowHint 指定当鼠标指针移动到控件上时是否显示帮助提示。
@@ -14367,7 +15965,7 @@ class Edit(CustomEdit):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -14419,7 +16017,7 @@ class Edit(CustomEdit):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -14490,7 +16088,7 @@ class FileOpenDialog(Component):
     """字符串：用于设置文件打开对话框的默认文件夹路径。"""
     FavoriteLinks: FavoriteLinkItems
     """最喜欢的链接项目：用于管理和显示文件打开对话框中的收藏夹链接。"""
-    FileName: Any
+    FileName: str
     """文件名"""
     FileNameLabel: str
     """字符串：用于设置文件打开对话框中显示文件名编辑框的标签文字。"""
@@ -14518,7 +16116,7 @@ class FileOpenDialog(Component):
     """文件对话框选项：用来设置对话框的行为和外观。"""
     Title: str
     """字符串：用于设置对话框的标题栏文本。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Execute(self) -> Any:
         """TFileOpenDialog.Execute()
@@ -14577,7 +16175,7 @@ class FileStream(HandleStream):
 
     使用TFileStream访问磁盘文件中的信息。 TFileStream 将打开一个命名文件并提供读取或写入该文件的方法。如果应用程序已经拥有该文件的句柄，并以适当的模式打开，请改用 THandleStream。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     FileName: str
     """str：保留与文件流关联的文件的文件名。
@@ -14587,7 +16185,7 @@ class FileStream(HandleStream):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AFileName: str, Mode: int) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AFileName: str, Mode: int) -> None:
         """TFileStream.Create(AFileName: str, Mode: int) -> None
@@ -14629,7 +16227,7 @@ class FileStream(HandleStream):
 
         注意：在 Windows 上，Rights 参数被忽略。
         如果无法打开文件，Create 会引发异常。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TFileStream 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，调用 Free，它会检查 TFileStream 引用不为零，然后才调用 Destroy。
@@ -14957,7 +16555,7 @@ class Form(CustomForm):
     """MainMenu：指定窗体的主菜单。
 
         使用 Menu 获取或设置窗体的主菜单。在设计时，Menu 设置为添加到窗体中的第一个 TMainMenu 组件。"""
-    ModalResult: Any
+    ModalResult: int
     """表示用作模式对话框的表单的返回值。"""
     ObjectMenuItem: MenuItem
     """MenuItem：表示对 OLE 对象的选择做出反应的 OLE 对象菜单项。
@@ -15208,14 +16806,14 @@ class Form(CustomForm):
     """WindowState：表示窗体在屏幕上的显示方式。
 
         设置 WindowState 以最小化、最大化或恢复窗体窗口。读取 WindowState 以确定窗体是最小化、最大化还是处于正常状态。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
-    def ArrangeIcons(self, *args, **kwargs) -> Any:
+    def ArrangeIcons(self) -> None:
         """排列最小化 MDI 子窗体的图标。
 
         使用 ArrangeIcons 排列最小化 MDI 子窗体的图标，使它们均匀分布且不重叠。
         仅当窗体是 MDI 父窗体（即窗体的 FormStyle 属性为 fsMDIForm）时，ArrangeIcons 才起作用。"""
-    def Cascade(self, *args, **kwargs) -> Any:
+    def Cascade(self) -> None:
         """排列 MDI 子窗体以使它们重叠。
 
         使用 Cascade 排列 MDI 子窗体，使它们重叠。
@@ -15232,12 +16830,12 @@ class Form(CustomForm):
         """TForm.LoadProps()
 
         从 .pydfm 文件加载属性"""
-    def Next(self, *args, **kwargs) -> Any:
+    def Next(self) -> None:
         """激活表单序列中的下一个子表单。
 
         使用 Next 更改 MDI 父窗体的活动子窗体。例如，如果父窗体中有三个子窗体，并且 Form2 是活动窗体，则 Next 方法会使 Form3 成为活动窗体。再次调用 Next 会使 Form4 处于活动状态。下次应用程序调用 Next 时，序列会重新开始，Form2 再次成为活动表单。
         Next 方法仅适用于作为 MDI 父窗体的窗体（FormStyle 属性值为 fsMDIForm）。"""
-    def Previous(self, *args, **kwargs) -> Any:
+    def Previous(self) -> None:
         """激活表单序列中的上一个 MDI 子表单。
 
         使用 Previous 更改 MDI 父窗体的活动子窗体。例如，如果父窗体中有三个子窗体，并且 Form4 是活动窗体，则 Previous 方法会使 Form3 成为活动窗体。再次调用 Previous 会使 Form2 处于活动状态。下次应用程序调用 Previous 时，序列会重新开始，Form4 再次成为活动表单。
@@ -15250,7 +16848,7 @@ class Form(CustomForm):
         """TForm.ShowModal()
 
         将包装的表单显示为模态表单"""
-    def Tile(self, *args, **kwargs) -> Any:
+    def Tile(self) -> None:
         """排列 MDI 子窗体，使它们具有相同的大小。
 
         使用 Tile 排列 MDI 子窗体，使它们具有相同的大小。平铺表单完全填满了父表单的客户区域。表单如何自行排列取决于其 TileMode 属性的值。
@@ -15310,111 +16908,111 @@ class Form(CustomForm):
 class Screen(Component):
     """ 它提供了与屏幕和显示器相关的信息和功能。 """
     def Create(self, AOwner: Component) -> None:
-        """ """
-    def Destroy(self, *args, **kwargs) -> Any:
-        """ """
-    def DisableAlign(self, *args, **kwargs) -> Any:
-        """ """
-    def EnableAlign(self, *args, **kwargs) -> Any:
-        """ """
-    def MonitorFromPoint(self, *args, **kwargs) -> Any:
-        """ """
-    def MonitorFromRect(self, *args, **kwargs) -> Any:
-        """ """
-    def MonitorFromWindow(self, *args, **kwargs) -> Any:
-        """ """
-    def Realign(self, *args, **kwargs) -> Any:
-        """ """
-    def ResetFonts(self, *args, **kwargs) -> Any:
-        """ """
+        """创建并初始化Screen对象。"""
+    def Destroy(self) -> None:
+        """销毁Screen对象并释放其占用的资源。"""
+    def DisableAlign(self) -> None:
+        """临时禁止控件对齐的重新计算，常与EnableAlign配对使用，以提升批量调整时的性能。"""
+    def EnableAlign(self) -> None:
+        """重新启用之前由DisableAlign禁止的控件对齐重新计算。"""
+    def MonitorFromPoint(self, Point: Any, MonitorDefault: Any = ...) -> Any:
+        """获取包含指定屏幕坐标点的显示器对象；若该点不在任何显示器范围内，则按MonitorDefault指定的方式处理。"""
+    def MonitorFromRect(self, Rect: Any, MonitorDefault: Any = ...) -> Any:
+        """获取与指定矩形区域重叠程度最大的显示器对象；若不重叠，则按MonitorDefault指定的方式处理。"""
+    def MonitorFromWindow(self, Handle: int, MonitorDefault: Any = ...) -> Any:
+        """获取包含指定窗口句柄所在窗口的显示器对象；若窗口不在任何显示器范围内，则按MonitorDefault指定的方式处理。"""
+    def Realign(self) -> None:
+        """立即对所有窗体重新执行一次控件对齐操作。"""
+    def ResetFonts(self) -> None:
+        """在系统字体设置发生变化后，重置图标、菜单、消息框等系统字体信息。"""
     ActiveControl: Any
-    """ """
+    """当前活动窗体中获得输入焦点的控件。"""
     ActiveCustomForm: Any
-    """ """
+    """当前处于活动状态的自定义窗体对象。"""
     ActiveForm: Any
-    """ """
+    """当前处于活动状态的窗体。"""
     CustomFormCount: int
-    """ """
+    """当前应用程序中已创建的自定义窗体数量。"""
     CustomForms: Any
-    """ """
+    """通过索引访问当前应用程序中所有自定义窗体的数组。"""
     CursorCount: int
-    """ """
-    Cursor: Any
-    """ """
+    """应用程序中已加载的光标资源数量。"""
+    Cursor: int
+    """应用程序范围内当前显示的光标形状标识。"""
     Cursors: int
-    """ """
+    """通过索引访问已加载光标句柄的数组。"""
     CursorHeightMargin: int
-    """ """
+    """计算光标可见高度时使用的边距(像素)。"""
     DataModules: Any
-    """ """
+    """通过索引访问当前应用程序中所有数据模块的数组。"""
     DataModuleCount: int
-    """ """
+    """当前应用程序中已创建的数据模块数量。"""
     DefaultPixelsPerInch: int
-    """ """
+    """设计时使用的默认每英寸像素数(DPI)。"""
     FocusedForm: Any
-    """ """
+    """当前拥有输入焦点的窗体。"""
     SaveFocusedList: Any
-    """ """
+    """用于保存和恢复各窗体焦点状态的内部列表。"""
     MonitorCount: int
-    """ """
+    """系统中已连接显示器的数量。"""
     Monitors: Any
-    """ """
+    """通过索引访问系统中每个显示器信息的数组。"""
     DesktopRect: Any
-    """ """
+    """整个桌面区域(所有显示器合并后)的矩形范围。"""
     DesktopHeight: int
-    """ """
+    """整个桌面区域的高度(像素)。"""
     DesktopLeft: int
-    """ """
+    """整个桌面区域左上角的X坐标。"""
     DesktopTop: int
-    """ """
+    """整个桌面区域左上角的Y坐标。"""
     DesktopWidth: int
-    """ """
+    """整个桌面区域的宽度(像素)。"""
     WorkAreaRect: Any
-    """ """
+    """主显示器工作区(不含任务栏等系统保留区域)的矩形范围。"""
     WorkAreaHeight: int
-    """ """
+    """主显示器工作区的高度(像素)。"""
     WorkAreaLeft: int
-    """ """
+    """主显示器工作区左上角的X坐标。"""
     WorkAreaTop: int
-    """ """
+    """主显示器工作区左上角的Y坐标。"""
     WorkAreaWidth: int
-    """ """
+    """主显示器工作区的宽度(像素)。"""
     HintFont: Any
-    """ """
+    """显示提示信息(Hint)时使用的字体。"""
     IconFont: Any
-    """ """
+    """图标标题使用的字体。"""
     MenuFont: Any
-    """ """
+    """菜单使用的字体。"""
     MessageFont: Any
-    """ """
+    """消息框使用的字体。"""
     CaptionFont: Any
-    """ """
+    """窗口标题栏使用的字体。"""
     Fonts: Any
-    """ """
+    """系统当前已安装字体名称的列表。"""
     FormCount: int
-    """ """
+    """当前应用程序中已创建窗体的数量。"""
     Forms: Any
-    """ """
+    """通过索引访问当前应用程序中所有窗体的数组。"""
     Imes: Any
-    """ """
+    """系统中已安装输入法(IME)列表。"""
     DefaultIme: str
-    """ """
+    """系统默认输入法的名称。"""
     DefaultKbLayout: Any
-    """ """
+    """系统默认的键盘布局。"""
     Height: int
-    """ """
+    """主显示器屏幕的高度(像素)。"""
     PixelsPerInch: int
-    """ """
+    """主显示器每英寸的像素数(DPI)。"""
     PrimaryMonitor: Any
-    """ """
+    """系统的主显示器对象。"""
     Width: int
-    """ """
+    """主显示器屏幕的宽度(像素)。"""
     OnActiveControlChange: Any
-    """ """
+    """当前活动控件发生改变时触发的事件。"""
     OnActiveFormChange: Any
-    """ """
+    """当前活动窗体发生改变时触发的事件。"""
     UpdatingAllFonts: bool
-    """ """
+    """指示当前是否正在批量更新所有系统字体信息。"""
 
 class Graphic(Persistent):
     """TGraphic 是可以存储和显示可视图像的对象（例如图标、位图和图元文件）的抽象基类类型。
@@ -15423,8 +17021,8 @@ class Graphic(Persistent):
     当图形的类型已知时，将图形存储在其特定类型对象中。否则，使用可以容纳任何类型 TGraphic 的 TPicture 对象。"""
     __hash__: ClassVar[None] = ...
     Empty: Any
-    Height: Any
-    Modified: Any
+    Height: int
+    Modified: bool
     OnChange: Callable[[Object],None]
     """可调用[[对象]，无]："""
     OnProgress: Callable[[Object,ProgressStage,int,bool,Rect,str],None]
@@ -15441,9 +17039,9 @@ class Graphic(Persistent):
 
         SupportsPartialTransparency 指示图形是否支持部分透明度或 Alpha 通道。
         一些 TGraphic 后代，例如 TBitmap 和 TPngImage，可以支持部分透明度或 Alpha 通道。当使用 DrawTransparent 在画布上绘制支持部分透明的图形时，应根据 Alpha 通道的值将其与画布上的像素混合。"""
-    Transparent: Any
-    Width: Any
-    def __init__(self, *args, **kwargs) -> None:
+    Transparent: bool
+    Width: int
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     @classmethod
     def CanLoadFromStream(cls, Stream: Stream) -> bool:
@@ -15451,17 +17049,17 @@ class Graphic(Persistent):
 
         当指定的流包含特定 TGraphic 子类的流图像时，CanLoadFromStream 返回 True。
         该方法使用当前流位置，它不会更改当前流位置。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """创建 TGraphic 对象。
 
         该方法创建并初始化一个 TGraphic 对象。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPersistent 实例并释放其内存。
 
         Vcl.Graphics.TGraphic.Destroy继承自System.Classes.TPercient.Destroy。此行以下的所有内容均引用 System.Classes.TPercient.Destroy。
         销毁 TPersistent 实例并释放其内存。
         不要直接调用 Destroy。请调用Free，在调用 Destroy 之前，Free 检查对象引用是否不为 nil。"""
-    def DisableScaledDrawer(self, *args, **kwargs) -> Any:
+    def DisableScaledDrawer(self) -> None:
         """DisableScaledDrawer 禁用图形的缩放抽屉。
 
         也可以看看 ScaledDrawer EnableScaledDrawer"""
@@ -15494,7 +17092,7 @@ class Graphic(Persistent):
 
         指定图形的大小。
         使用 SetSize 方法设置图形的高度和宽度。这比单独设置高度和宽度具有更好的性能。"""
-    def UpdateScaledDrawer(self, *args, **kwargs) -> Any:
+    def UpdateScaledDrawer(self) -> None:
         """ 目前没有任何其他信息。"""
     def __delattr__(self, name) -> Any:
         """用于在删除对象的属性时触发。当您使用delattr()函数或del语句删除对象的属性时，该方法将被调用。"""
@@ -15581,7 +17179,7 @@ class GroupBox(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -15623,7 +17221,7 @@ class GroupBox(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -15631,9 +17229,9 @@ class GroupBox(CustomControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的底层 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HeaderFont: Font
     """字体："""
@@ -15729,7 +17327,7 @@ class GroupBox(CustomControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """对父级底层控件的引用。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -15747,7 +17345,7 @@ class GroupBox(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -15790,7 +17388,7 @@ class GroupBox(CustomControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -15854,7 +17452,7 @@ class HandleStream(Stream):
     使用 THandleStream 访问文件、套接字、命名管道、邮槽或其他在打开时提供句柄的通信资源。例如，FileOpen 函数提供磁盘上文件的句柄。 THandleStream 允许应用程序在使用句柄执行 I/O 时使用统一的流接口。
     为了避免管理文件句柄的开销，请使用 TFileStream 来处理磁盘文件。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     Handle: int
     """int：指定流读取和写入的通信资源的句柄。
@@ -15870,7 +17468,7 @@ class HandleStream(Stream):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AHandle: int) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Create(self, AHandle: int) -> None:
         """THandleStream.Create(AHandle: int) -> 无
@@ -16018,7 +17616,7 @@ class Header(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -16036,16 +17634,16 @@ class Header(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnContextPopup: Callable[[Object,Point,bool],None]
     """可调用[[对象，点，布尔]，无]："""
@@ -16072,7 +17670,7 @@ class Header(CustomControl):
         要仅为窗体上选定的控件提供帮助提示，请将那些应具有帮助提示的控件的 ShowHint 属性设置为 True，并且 ParentShowHint 自动变为 False。
 
         注意：使用应用程序对象的 ShowHint 属性启用或禁用整个应用程序的所有帮助提示。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -16094,7 +17692,7 @@ class Header(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -16130,7 +17728,7 @@ class Header(CustomControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -16142,7 +17740,7 @@ class Header(CustomControl):
         创建一个新的 THeader 对象。
         调用 Create 在运行时实例化标头。在设计时添加到表单的标题是自动创建的。
         AOwner 参数初始化标头的 Owner 属性。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """释放与 THeader 对象关联的内存。
 
         不要直接调用 Destroy。相反，请使用 Free 方法，该方法在调用 Destroy 之前检查 THeader 引用是否为零。"""
@@ -16206,8 +17804,8 @@ class Icon(Graphic):
 
     注意：TIcon 可用于显示多分辨率（>16 色）图标的值。但是，它不支持创建多分辨率图标，也不支持从文件或流加载图像后调整图像大小。"""
     __hash__: ClassVar[None] = ...
-    Handle: Any
-    def __init__(self, *args, **kwargs) -> None:
+    Handle: int
+    def __init__(self) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Assign(self, Source: Persistent) -> None:
         """从另一个 TIcon 对象复制图标图像。
@@ -16227,15 +17825,15 @@ class Icon(Graphic):
         Vcl.Graphics.TIcon.CanLoadFromStream 继承自 Vcl.Graphics.TGraphic.CanLoadFromStream。此行以下所有内容均引用 Vcl.Graphics.TGraphic.CanLoadFromStream。
         当指定流包含特定 TGraphic 子类的流图像时，CanLoadFromStream 返回 True。
         该方法使用当前流位置，它不会更改当前流位置。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """创建 TIcon 的实例。
 
         调用 Create 创建一个空的图标对象。一旦图像从文件或流读入图标，或者通过分配另一个图标对象，就可以在画布上绘制图标或将其添加到图像列表中。不要创建图标对象来设置表单或图片的图标属性。这些对象在它们自己的构造函数中创建一个 TIcon 对象。相反，请对可通过读取 Icon 属性获取的 TIcon 对象使用 LoadFromFile、LoadFromStream 或 LoadFromClipboardFormat 方法。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TIcon 的一个实例。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会验证 TIcon 引用是否为空，然后才调用 Destroy。"""
-    def HandleAllocated(self, *args, **kwargs) -> Any:
+    def HandleAllocated(self) -> bool:
         """指示 TIcon 对象是否已获取基础 GDI 对象的句柄。
 
         使用 HandleAllocation 确定 Handle 属性是否设置为 HICON 值。 HandleAllocation 指示基础 GDI 对象是否已创建。使用 HandleAllocation 而不是读取 Handle 属性。当应用程序读取 Handle 属性时，如果基础 GDI 对象尚不存在，它会自动创建一个图标并返回其句柄。"""
@@ -16456,7 +18054,7 @@ class Image(Control):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -16475,7 +18073,7 @@ class Image(Control):
         当重写 Create 时，始终首先调用继承的 Create 方法，然后继续进行控件的初始化。请记住在重写 Create 方法时指定 override 指令。
 
         注意：如果控件的构造函数分配资源或内存，还需重写析构函数以释放这些资源。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TControl 的一个实例。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会验证控件是否为空，然后才调用 Destroy。
@@ -16577,7 +18175,7 @@ class ImageList(DragImageList):
     """整数：用于指定一个颜色，该颜色会与图像列表中的所有图像进行混合（blending）。"""
     ColorDepth: ColorDepth
     """颜色深度：用于指定图像列表中图像的颜色深度。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -16599,7 +18197,7 @@ class ImageList(DragImageList):
     """布尔：用于指定是否共享图像列表中的图像数据。"""
     Width: int
     """整数：用于设置或获取图像列表中每个图像的宽度。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -16861,7 +18459,7 @@ class Label(Control):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """布尔：用于控制文本是否自动换行显示。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BringToFront(self) -> Any:
         """TControl.BringToFront()
@@ -17045,7 +18643,7 @@ class LabeledEdit(CustomEdit):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -17085,16 +18683,16 @@ class LabeledEdit(CustomEdit):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的基础 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """bool：确定当焦点转移到另一个控件时是否保留所选文本的视觉指示。
@@ -17216,9 +18814,9 @@ class LabeledEdit(CustomEdit):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
-    PasswordChar: Any
+    PasswordChar: str
     """unicodechr(str)：指示要显示的字符（如果有），以代替在控件中键入的实际字符。
 
         使用PasswordChar 属性创建一个编辑控件，该控件显示特殊字符来代替任何输入的文本。如果将PasswordChar 设置为空字符（ANSI 字符零），则编辑控件将正常显示其文本。如果PasswordChar 是任何其他字符，则编辑控件将显示PasswordChar 来代替键入的每个字符。 PasswordChar 仅影响编辑控件的外观。 Text 属性的值反映了键入的实际字符。"""
@@ -17241,7 +18839,7 @@ class LabeledEdit(CustomEdit):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -17293,7 +18891,7 @@ class LabeledEdit(CustomEdit):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def CanFocus(self) -> Any:
         """TWinControl.CanFocus()
@@ -17357,13 +18955,13 @@ class LinkControlDelegate(BindComponentDelegate):
     TLinkControlDelegate 类实现一个绑定组件，该组件包装另一个绑定组件并引用一个控件。
     有关委托的更多信息，请参阅新 LiveBinding 主题的快速绑定组件参考部分。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """返回拥有组件的迭代器"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def BindMethodsToEvents(self, prefix) -> Any:
         """TComponent.BindMethodsToEvents（前缀）
@@ -17442,7 +19040,7 @@ class LinkControlToField(CustomLinkControlToField):
     __hash__: ClassVar[None] = ...
     AutoActivate: bool
     """用于指定当数据源与控件绑定时是否自动激活数据源。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """用于获取容器控件中包含的所有子控件的列表。"""
@@ -17482,7 +19080,7 @@ class LinkControlToField(CustomLinkControlToField):
     """用于指定是否跟踪控件属性的更改并将其应用到数据源字段。"""
     UseEvalShortcuts: bool
     """bool：确定此绑定组件委托是否使用求值快捷方式（True）或不使用（False）。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -17555,7 +19153,7 @@ class LinkControlToFieldDelegate(LinkControlDelegate):
     TLinkControlToFieldDelegate 类实现一个绑定组件，该组件包装另一个绑定组件并引用控件、数据源和字段。
     有关委托的更多信息，请参阅新 LiveBinding 主题的快速绑定组件参考部分。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """用于获取容器控件中包含的所有子控件的列表。"""
@@ -17565,7 +19163,7 @@ class LinkControlToFieldDelegate(LinkControlDelegate):
         使用 DataSource 确定或设置连接到特定数据集的 TBaseLinkingBindSource 对象。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -17703,7 +19301,7 @@ class LinkLabel(CustomLinkLabel):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于获取容器控件中包含的所有子控件的列表。"""
@@ -17728,7 +19326,7 @@ class LinkLabel(CustomLinkLabel):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -17736,9 +19334,9 @@ class LinkLabel(CustomLinkLabel):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """用于响应控件（如按钮、菜单项等）的点击事件。"""
@@ -17794,7 +19392,7 @@ class LinkLabel(CustomLinkLabel):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -17810,7 +19408,7 @@ class LinkLabel(CustomLinkLabel):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -17848,7 +19446,7 @@ class LinkLabel(CustomLinkLabel):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -17917,7 +19515,7 @@ class LinkListControlToField(CustomLinkListControlToField):
     __hash__: ClassVar[None] = ...
     AutoActivate: bool
     """用于指定当数据源绑定到列表控件时是否自动激活数据源。"""
-    ComponentCount: Any
+    ComponentCount: int
     """用于获取TComponent对象的子组件数量。"""
     Components: Any
     """用于存储LinkListControlToField组件关联的控件列表。"""
@@ -17969,7 +19567,7 @@ class LinkListControlToField(CustomLinkListControlToField):
     """在填充列表控件的每个列表项之前触发。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -18047,7 +19645,7 @@ class LinkPropertyToField(CustomLinkPropertyToField):
     """用于指定在关联控件属性和数据字段时是否自动激活数据源。"""
     Component: Component
     """Component：指定此包装绑定组件引用的组件。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     ComponentProperty: str
     """str：指定此包装绑定组件引用的组件的属性名称。"""
@@ -18079,7 +19677,7 @@ class LinkPropertyToField(CustomLinkPropertyToField):
     """用于处理在评估绑定值时发生的错误。"""
     Owner: Any
     """用于获取拥有该组件的组件或对象的引用。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -18154,7 +19752,7 @@ class LinkPropertyToFieldDelegate(BindComponentDelegate):
     __hash__: ClassVar[None] = ...
     Component: Component
     """Component：指定此包装绑定组件引用的组件。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     ComponentProperty: str
     """str：指定此包装绑定组件引用的组件的属性名称。"""
@@ -18168,7 +19766,7 @@ class LinkPropertyToFieldDelegate(BindComponentDelegate):
     """str：指定此包装绑定组件引用的字段名称。"""
     Owner: Any
     """返回组件所有者"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -18309,7 +19907,7 @@ class ListBox(CustomMultiSelectListControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于访问容器控件（如 Panel、Form 等）中包含的子控件列表。"""
@@ -18348,7 +19946,7 @@ class ListBox(CustomMultiSelectListControl):
         注意：此属性适用于所有 TControl 后代。"""
     ExtendedSelect: bool
     """用于指定 ListBox 控件是否允许多选。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中的文本的属性。
@@ -18356,9 +19954,9 @@ class ListBox(CustomMultiSelectListControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用备用控件，其 Font 属性将更改标题或文本的颜色（如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     ImeMode: ImeMode
     """ImeMode：确定输入法编辑器 (IME) 的行为。
@@ -18379,7 +19977,7 @@ class ListBox(CustomMultiSelectListControl):
     """用于指定ListBox控件是否自动调整其高度以适应完整的项目高度。"""
     ItemHeight: int
     """于设置或获取ListBox控件中每个项的高度。"""
-    ItemIndex: Any
+    ItemIndex: int
     """用于获取或设置当前选定项的索引。"""
     Items: Strings
     """用于存储和管理ListBox控件中的项（items）。"""
@@ -18472,7 +20070,7 @@ class ListBox(CustomMultiSelectListControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -18490,7 +20088,7 @@ class ListBox(CustomMultiSelectListControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Sorted: bool
     """用于指定ListBox控件中的项是否按字母顺序进行排序。"""
@@ -18539,7 +20137,7 @@ class ListBox(CustomMultiSelectListControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -18603,31 +20201,31 @@ class ListItems(Persistent):
     """用于存储和管理TListView控件中每一项的数据及显示属性。"""
     def Create(self, AOwner: Component) -> None:
         """用于创建一个TListItems对象实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """用于销毁TListItems对象实例及其关联的列表项资源。"""
-    def Add -> Any:
+    def Add(self) -> Any:
         """用于向列表项集合中添加一个新的列表项（TListItem）。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    def AddItem(self, Item: Any, Index: int = ...) -> Any:
         """用于向列表项集合中添加一个指定的列表项（TListItem）。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """用于将一个列表项集合的内容复制到另一个列表项集合中。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """用于开始更新列表项集合，防止在更新过程中控件重绘。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """用于清除列表项集合中的所有列表项。"""
-    def Delete(self, *args, **kwargs) -> Any:
+    def Delete(self, Index: int) -> None:
         """用于删除列表项集合中指定索引的列表项。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """用于结束更新列表项集合，允许控件重新绘制。"""
-    def GetEnumerator -> Any:
+    def GetEnumerator(self) -> Any:
         """用于获取一个枚举器，用于遍历列表项集合。"""
-    def IndexOf(self, *args, **kwargs) -> int:
+    def IndexOf(self, S: str) -> int:
         """用于查找指定列表项在集合中的索引位置。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self, Index: int, S: str) -> None:
         """用于在列表项集合的指定索引位置插入一个新的列表项。"""
     Count: int
     """用于获取列表项集合中的列表项数量。"""
-    Handle: Any
+    Handle: int
     """用于获取与列表项集合关联的Windows列表视图控件的句柄。"""
     Item: Any
     """用于根据索引访问列表项集合中的特定列表项（TListItem）。"""
@@ -18641,7 +20239,7 @@ class ListItem(Persistent):
     """用于获取或设置列表视图控件（如 ListView）中列表项的文本内容。"""
     Checked: bool
     """用于表示该项目是否被勾选。"""
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     Cut: bool
     """用于是否将项目剪切到剪贴板。"""
@@ -18687,7 +20285,7 @@ class ListItem(Persistent):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: ListItems) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -18695,7 +20293,7 @@ class ListItem(Persistent):
         """TPersistent.Assign（持久）
 
         将另一个 TPersistent 对象的值分配给该对象"""
-    def CancelEdit(self, *args, **kwargs) -> Any: ...
+    def CancelEdit(self) -> None:
         """取消对列表项的编辑状态。"""
     def Create(self, AOwner: ListItems) -> None:
         """TListItem.Create(AOwner: ListItems) -> None
@@ -18705,29 +20303,29 @@ class ListItem(Persistent):
         后代对象通常定义一个构造函数，该构造函数创建特定类型的对象并初始化其数据。
 
         注意：如果构造函数中出现异常，则调用对象的析构函数来清理失败的实例。"""
-    def Delete(self, *args, **kwargs) -> Any: ...
+    def Delete(self, Index: int) -> None:
         """用于从 ListView 控件中删除该列表项。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPersistent 实例并释放其内存。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证 TPersistent 引用是否不为空，然后才会调用 Destroy。"""
     def DisplayRect(self, Code: DisplayCode) -> Rect:
         """用于获取列表项在 ListView 控件中的矩形区域的位置和大小。"""
-    def EditCaption(self, *args, **kwargs) -> Any: ...
+    def EditCaption(self) -> Any:
         """用于在 ListView 控件中编辑列表项的标题文本。"""
     def GetNamePath(self) -> Any:
         """TPersistent.GetNamePath()
 
         返回对象在对象检查器中显示的名称。"""
-    def GetPosition(self, *args, **kwargs) -> Any: ...
+    def GetPosition(self) -> Any:
         """用于获取列表项在 ListView 控件中的位置。"""
     def MakeVisible(self, PartialOK: bool) -> None:
         """用于确保列表项在 ListView 控件中可见。"""
     def SetPosition(self, Value: Point) -> None:
         """用于设置列表项在 ListView 控件中的位置。"""
-    def Update(self, *args, **kwargs) -> Any: ...
+    def Update(self) -> None:
         """用于更新列表项在 ListView 控件中的显示。"""
-    def WorkArea(self, *args, **kwargs) -> Any: ...
+    def WorkArea(self) -> Any:
         """用于获取或设置与列表项相关联的工作区索引。"""
     def __delattr__(self, name) -> Any:
         """用于在删除对象的属性时触发。当您使用delattr()函数或del语句删除对象的属性时，该方法将被调用。"""
@@ -18845,7 +20443,7 @@ class ListView(CustomListView):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于访问 ListView 控件中包含的所有子控件。"""
@@ -18884,7 +20482,7 @@ class ListView(CustomListView):
         注意：此属性适用于所有 TControl 后代。"""
     FlatScrollBars: bool
     """用于指示是否使用扁平样式的滚动条来显示 ListView 控件中的滚动条。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -18902,9 +20500,9 @@ class ListView(CustomListView):
     """用于指示是否启用 ListView 控件的分组视图功能。"""
     Groups: ListGroups
     """用于访问 ListView 控件中包含的所有组（groups）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """这个属性决定了当控件失去焦点时，其内部的文本选择（即高亮部分）是否应该被隐藏。"""
@@ -19054,7 +20652,7 @@ class ListView(CustomListView):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于获取或设置与 ListView 控件关联的窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -19078,7 +20676,7 @@ class ListView(CustomListView):
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
     ShowWorkAreas: bool
     """用于指示是否在 ListView 控件中显示工作区域。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SmallImages: CustomImageList
     """自定义图像列表："""
@@ -19129,7 +20727,7 @@ class ListView(CustomListView):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -19223,7 +20821,7 @@ class MainMenu(Menu):
     """BiDiMode：确定中东区域设置中的菜单布局。
 
         设置 BiDiMode 来控制菜单项的布局。 BiDiMode 控制菜单项是从左到右还是从右到左读取。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """用于访问 MainMenu 组件中包含的所有子组件。"""
@@ -19248,7 +20846,7 @@ class MainMenu(Menu):
     """bool：指示 BiDiMode 属性是否继承自使用菜单的控件。
 
         默认情况下，ParentBiDiMode 为 true，表示菜单项的布局遵循关联窗体或控件的 BiDiMode 设置。将 ParentBiDiMode 更改为 false 以覆盖默认 BiDiMode 设置并独立控制菜单的布局。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -19635,11 +21233,11 @@ class MediaPlayer(CustomControl):
         默认情况下，Play 和 StartRecording 的功能就像 Wait 为 false 一样。在调用 Play 或 StartRecording 之前必须将 Wait 设置为 true，以防止在播放或录制完成之前控制权返回到应用程序。默认情况下，所有其他媒体控制方法的功能就如同 Wait 为 true 一样。
 
         注意：仅当预计下一个媒体控制需要很长时间时，Wait 通常设置为 false，以便应用程序可以在媒体控制方法完成之前执行其他代码。如果 Wait 设置为 false，则应将 Notify 设置为 true，以便在媒体控制方法完成时通知应用程序。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
-    def Back(self, *args, **kwargs) -> Any:
+    def Back(self, Wait: bool = ...) -> None:
         """在当前加载的媒体中后退一定数量的帧（由 Frames 属性的值确定）。
 
         当运行时单击媒体播放器控件上的“后退”按钮时，将调用“后退”。
@@ -19653,7 +21251,7 @@ class MediaPlayer(CustomControl):
         """TControl.ClientToScreen()
 
         将给定点从客户区坐标转换为全局屏幕坐标。"""
-    def Close(self, *args, **kwargs) -> Any:
+    def Close(self, Wait: bool = ...) -> None:
         """关闭打开的多媒体设备。
 
         完成后，Close 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
@@ -19665,12 +21263,12 @@ class MediaPlayer(CustomControl):
         创建一个媒体播放器对象。
         调用 Create 在运行时实例化媒体播放器。对于在设计时创建的媒体播放器，会自动调用 Create。
         Create 为媒体播放器分配内存并调用继承的 Create。然后，它加载媒体播放器按钮的位图并初始化其属性，将 AutoEnable、AutoRewind、Colored、Enabled 和 Visible 设置为 true，将 AutoOpen 设置为 false，将 DeviceType 设置为 dtAutoSelect。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁媒体播放器的实例。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证 TMediaPlayer 引用是否不为空，然后才会调用 Destroy。
         Destroy 首先验证没有设备打开，然后销毁用于媒体播放器按钮的位图并调用继承的 Destroy。"""
-    def Eject(self, *args, **kwargs) -> Any:
+    def Eject(self, Wait: bool = ...) -> None:
         """从打开的多媒体设备中释放加载的媒体。
 
         当运行时单击媒体播放器控件上的“弹出”按钮时，将调用“弹出”。它将从打开的多媒体设备中弹出加载的媒体。
@@ -19684,31 +21282,31 @@ class MediaPlayer(CustomControl):
         """TControl.Invalidate()
 
         完全重绘控制。"""
-    def Next(self, *args, **kwargs) -> Any:
+    def Next(self, Wait: bool = ...) -> None:
         """移至当前加载媒体的下一曲目的开头。
 
         如果调用 Next 时当前位置位于最后一个曲目，Next 会将当前位置设为最后一个曲目的开头。如果多媒体设备不使用轨道，则“下一步”将转到媒体末尾。当运行时单击媒体播放器控件上的“下一步”按钮时，将调用“下一步”。
         完成后，Next 将在 Error 属性中存储数字错误代码，并在 ErrorMessage 属性中存储相应的错误消息。
         Wait 属性确定在 Next 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 Next 是否生成 OnNotify 事件。"""
-    def Open(self, *args, **kwargs) -> Any:
+    def Open(self, Wait: bool = ...) -> None:
         """打开多媒体设备。
 
         使用 Open 打开多媒体设备。在打开设备之前，必须在 DeviceType 属性中指定多媒体设备类型。
         完成后，Open 会在 Error 属性中存储数字错误代码，并在 ErrorMessage 属性中存储相应的错误消息。
         Wait 属性确定在 Open 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 Open 是否生成 OnNotify 事件。"""
-    def Pause(self, *args, **kwargs) -> Any:
+    def Pause(self) -> None:
         """打开或关闭打开的多媒体设备。
 
         如果调用 Pause 时设备已经暂停，则设备通过调用 Resume 方法恢复播放或录音。当运行时单击媒体播放器控件上的“暂停”按钮时，将调用“暂停”。
         完成后，Pause 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
         Wait 属性确定在 Pause 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 Pause 是否生成 OnNotify 事件。"""
-    def PauseOnly(self, *args, **kwargs) -> Any:
+    def PauseOnly(self, Wait: bool = ...) -> None:
         """暂停打开的多媒体设备。
 
         如果在调用 PauseOnly 时设备已暂停，则设备将保持暂停状态。
         完成后，PauseOnly 会在 Error 属性中存储数字错误代码，并在 ErrorMessage 属性中存储相应的错误消息。
         Wait 属性确定在 PauseOnly 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 PauseOnly 是否生成 OnNotify 事件。"""
-    def Play(self, *args, **kwargs) -> Any:
+    def Play(self, Wait: bool = ...) -> None:
         """播放打开的多媒体设备中加载的媒体。
 
         当在运行时单击媒体播放器控件上的“播放”按钮时，将调用“播放”。
@@ -19716,7 +21314,7 @@ class MediaPlayer(CustomControl):
         Wait 属性确定在 Play 方法完成之前是否将控制权返回给应用程序。 Notify 属性决定 Play 是否生成 OnNotify 事件。
         如果设置了 StartPos 属性，则从 StartPos 中指定的位置开始播放。否则，播放将从 Position 属性中指定的当前位置开始。同样，如果设置了 EndPos 属性，则播放会在 EndPos 中指定的位置停止。否则，播放将在媒体结束时停止。
         媒体（在 Position 属性中指定）是否在播放开始前倒带取决于 AutoRewind 属性。"""
-    def Previous(self, *args, **kwargs) -> Any:
+    def Previous(self, Wait: bool = ...) -> None:
         """如果调用 Previous 时位置位于轨道的开头，则将当前位置设置为上一轨道的开头。
 
         如果调用 Previous 时位置位于第一个轨道或轨道开头以外的位置，则 Previous 将当前位置设置为当前轨道的开头。如果设备不使用轨道，则 Previous 将当前位置设置为媒体的开头（在 Start 属性中指定）。当运行时单击媒体播放器控件上的“上一个”按钮时，将调用“上一个”。
@@ -19726,18 +21324,18 @@ class MediaPlayer(CustomControl):
         """TControl.Repaint()
 
         强制控件在屏幕上重新绘制其图像。"""
-    def Resume(self, *args, **kwargs) -> Any:
+    def Resume(self) -> int:
         """恢复播放或录制当前暂停的多媒体设备。
 
         当设备暂停时，在运行时单击媒体播放器控件上的“暂停”按钮时，将调用“恢复”。
         完成后，Resume 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
         Wait 属性确定在 Resume 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 Resume 是否生成 OnNotify 事件。"""
-    def Rewind(self, *args, **kwargs) -> Any:
+    def Rewind(self, Wait: bool = ...) -> None:
         """将当前位置设置为媒体的开头，该位置存储在 Start 属性中。
 
         完成后，Rewind 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
         Wait 属性确定在 Rewind 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 Rewind 是否生成 OnNotify 事件。"""
-    def Save(self, *args, **kwargs) -> Any:
+    def Save(self, FileName: str, Wait: bool = ...) -> None:
         """将当前加载的介质保存到 FileName 属性中指定的文件中。
 
         对于不使用文件中存储的媒体（例如视频光盘）的设备，保存将被忽略。
@@ -19759,20 +21357,20 @@ class MediaPlayer(CustomControl):
         """TControl.Show()
 
         显示包装的控件"""
-    def StartRecording(self, *args, **kwargs) -> Any:
+    def StartRecording(self, Wait: bool = ...) -> None:
         """从当前位置或 StartPos 中指定的位置开始记录。
 
         当运行时单击媒体播放器控件上的“录制”按钮时，将调用 StartRecording。
         完成后，StartRecording 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
         Wait 属性确定在 StartRecording 方法完成之前是否将控制权返回给应用程序。 Notify 属性确定 StartRecording 是否生成 OnNotify 事件。
         默认情况下，StartRecording 方法完成后，Notify 属性变为 true，Wait 属性变为 false。但是，如果这些属性在调用 StartRecording 之前已设置为特定值，则它们将保持不变。"""
-    def Step(self, *args, **kwargs) -> Any:
+    def Step(self, Wait: bool = ...) -> None:
         """在当前加载的媒体中向前移动多个帧（由 Frames 属性确定）。
 
         当运行时单击媒体播放器控件上的 Step 按钮时，将调用 Step。
         完成后，Step 将数字错误代码存储在 Error 属性中，并将相应的错误消息存储在 ErrorMessage 属性中。
         Wait 属性确定在 Step 方法完成之前是否将控制权返回给应用程序。 Notify 属性决定Step 是否生成OnNotify 事件。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止播放或录音。
 
         当运行时单击媒体播放器控件上的“停止”按钮时，将调用“停止”。
@@ -19911,7 +21509,7 @@ class Memo(CustomMemo):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -19950,7 +21548,7 @@ class Memo(CustomMemo):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -19958,9 +21556,9 @@ class Memo(CustomMemo):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """用于表示 TMemo 控件的底层窗口句柄。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """bool：确定当焦点转移到另一个控件时是否保留所选文本的视觉指示。
@@ -20084,7 +21682,7 @@ class Memo(CustomMemo):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于获取或设置与控件关联的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -20104,7 +21702,7 @@ class Memo(CustomMemo):
         ssHorizontal  该控件的底部边缘有一个滚动条。
         ssVertical  该控件的右边缘有一个滚动条。
         ssBoth  该控件的底部和右侧边缘都有一个滚动条。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
     ShowHint: bool
     """bool: ShowHint 指定当鼠标指针移动到控件上时是否显示帮助提示。
@@ -20116,7 +21714,7 @@ class Memo(CustomMemo):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -20178,7 +21776,7 @@ class Memo(CustomMemo):
         将 WordWrap 设置为 true 可使编辑控件在右边距处换行文本，使其适合工作区。包装仅具有装饰目的。该文本不包含任何未明确输入的返回字符。将 WordWrap 设置为 false 可使编辑控件仅在文本中显式输入返回字符的情况下显示单独的行。
 
         注意：大多数情况下，当 WordWrap 为 true 时，水平滚动条是不必要的。然而，也有例外的情况出现；当线不能被切成碎片时，就不能发生缠绕。在这些情况下，仍然需要滚动条。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -20244,17 +21842,17 @@ class MemoryStream(CustomMemoryStream):
     使用 TMemoryStream 将数据存储在动态内存缓冲区中，该缓冲区通过类似文件的访问功能得到增强。 TMemoryStream 提供流对象的通用 I/O 功能，同时引入方法和属性来管理动态内存缓冲区。
     内存流作为中间对象非常有用，它可以保存信息以及从另一个存储介质读取信息或将其写入到另一个存储介质。它们提供了一种有用的格式来比较流的内容，或操作存储在不易访问的介质中的数据。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     __bound__: Any
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """释放内存缓冲区，丢弃与内存流关联的所有数据。
 
         使用 Clear 清空内存流的内存缓冲区并释放所有关联的内存。除了释放与内存缓冲区关联的内存之外，清除：
@@ -20262,7 +21860,7 @@ class MemoryStream(CustomMemoryStream):
         将 Memory 属性设置为空。
         将位置属性设置为 0。
         将“大小”属性设置为 0。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TMemoryStream 的实例。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证 TMemoryStream 引用是否不为空，然后才会调用 Destroy。
@@ -20396,7 +21994,7 @@ class Menu(Component):
     """用于设置或获取菜单的双向模式（BiDiMode）。
 
         设置 BiDiMode 来控制菜单项的布局。 BiDiMode 控制菜单项是从左到右还是从右到左读取。"""
-    ComponentCount: Any
+    ComponentCount: int
     """用于获取该 Menu 组件中包含的子组件的数量。"""
     Components: Any
     """用于访问 Menu 组件中包含的所有子组件。"""
@@ -20438,7 +22036,7 @@ class Menu(Component):
 
         读取 WindowHandle 以获取当用户单击菜单中的项目时接收 WM_COMMAND 消息的控件的窗口句柄。选择菜单项后，在 OnClick 事件处理程序中使用此句柄将消息发送到使用该菜单的控件或进行影响该控件的 Windows API 调用。
         设置 WindowHandle 将菜单与控件关联起来。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -20455,9 +22053,9 @@ class Menu(Component):
         创建 TMenu 的实例。
         调用 Create 在运行时创建菜单。设计时放置在表单上的菜单是自动创建的。 Create 调用继承的 Create 方法，然后设置菜单组件的初始值，包括创建 Items 属性。
         AOwner 参数指示负责管理与菜单关联的内存的组件（通常是表单）。"""
-    def CreateMenuItem(self, *args, **kwargs) -> Any:
+    def CreateMenuItem(self) -> Any:
         """ 目前没有任何其他信息。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁菜单组件。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证 TMenu 引用是否不为空，然后才会调用 Destroy。 Destroy 释放 Items 属性，然后调用继承的 Destroy 方法。"""
@@ -20494,7 +22092,7 @@ class Menu(Component):
         """TComponent.HasParent()
 
         指示组件是否有父组件来处理其归档。"""
-    def IsRightToLeft(self, *args, **kwargs) -> Any:
+    def IsRightToLeft(self) -> bool:
         """指示菜单项是否从右向左阅读。
 
         调用 IsRightToLeft 确定主菜单项的布局。如果应用程序在具有中东语言环境的系统上运行并且 BiDiMode 属性不是 bdLeftToRight，则 IsRightToLeft 返回 true。"""
@@ -20503,7 +22101,7 @@ class Menu(Component):
 
         如果按键消息代表菜单中某个项目的快捷键，则调度该按键消息。
         在处理 KeyDown 消息时调用 IsShortCut 来识别快捷键并触发相应的菜单操作。 IsShortCut 对 Message 参数中传递的关键消息进行解码。然后，它使用键入的字符值对 Shift、Control 和 Alt 键的状态进行编码，以获得菜单项的 ShortCut 属性。如果 IsShortCut 找到与快捷键组合关联的菜单项，它将调用该项目的 Click 方法并返回 true。如果菜单中没有项目具有与该消息对应的快捷方式，则 IsShortCut 返回 false。"""
-    def ParentBiDiModeChanged(self, *args, **kwargs) -> Any:
+    def ParentBiDiModeChanged(self) -> None:
         """确保菜单的布局遵循 BiDiMode 和 ParentBiDiMode 属性的当前设置。
 
         当必须更新菜单的 BiDiMode 属性以反映其关联控件的双向模式时，将调用 ParentBiDiMode Changed。\r
@@ -20621,7 +22219,7 @@ class MenuItem(Component):
     """int：指定与菜单项关联的 Windows 命令 ID。
 
         在直接处理 WM_COMMAND 消息的应用程序中使用 Command。当用户选择菜单项时，Windows 向与该菜单关联的窗口发送 WM_COMMAND。消息的 ItemID 包含所选菜单项的 Command 属性的值。"""
-    ComponentCount: Any
+    ComponentCount: int
     """返回拥有的组件数量"""
     Components: Any
     """常用于访问菜单项（TMenuItem）相关联的组件集合。"""
@@ -20726,7 +22324,7 @@ class MenuItem(Component):
         如果 Visible 为 true，则显示菜单项。如果 Visible 为 false，则隐藏菜单项。
 
         注意：如果该属性由 TAction 对象提供，则该属性不会与菜单项一起存储。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -20746,11 +22344,11 @@ class MenuItem(Component):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """删除并释放 Items 属性中列出的所有菜单项。
 
         使用 Clear 释放 Items 属性数组中列出的所有项目。"""
-    def Click(self, *args, **kwargs) -> Any:
+    def Click(self) -> None:
         """模拟鼠标点击。
 
         Click 生成 OnClick 事件，就好像用户单击了菜单项一样。与真正的鼠标单击不同，Click 不会向与菜单关联的窗口生成 WM_COMMAND 消息。
@@ -20768,7 +22366,7 @@ class MenuItem(Component):
         调用Delete 可从菜单中删除菜单项及其所有子菜单。 Index 参数是要删除的项目的索引，其中 0 指定菜单中的第一项，1 指定第二项，依此类推。
         删除不会释放已删除项目的内存。要从菜单中删除项目并释放其内存，请在要删除的项目中调用 Free 方法。
         要暂时隐藏菜单项而不删除它，请使用 Visible 属性。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TMenuItem 的一个实例。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会验证 TMenuItem 引用是否为空，然后才调用 Destroy。"""
@@ -20788,14 +22386,14 @@ class MenuItem(Component):
         GetChildren 需要一个接收所有枚举组件的 TGetChildProc 例程。
         Root 代表将被枚举的组件的所有者。
         此方法在 TComponent 中不执行任何操作，并且预计会在后代中被重写。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TComponent 枚举器。
 
         Vcl.Menus.TMenuItem.GetEnumerator 继承自System.Classes.TComponent.GetEnumerator。此行下面的所有内容均引用 System.Classes.TComponent.GetEnumerator。
         返回 TComponent 枚举器。
         GetEnumerator 返回一个 TComponentEnumerator 引用，该引用枚举指定包含组件中包含的组件。
         要处理所有这些子组件，请在 While MoveNext do 循环中调用 TComponentEnumerator GetCurrent 方法。"""
-    def GetImageList(self, *args, **kwargs) -> Any:
+    def GetImageList(self) -> Any:
         """返回为菜单项提供图像的图像列表。
 
         使用 GetImageList 访问包含此菜单项的图像的图像列表。 ImageIndex 属性标识 GetImageList 返回的列表中的特定图像。
@@ -20809,7 +22407,7 @@ class MenuItem(Component):
         """TComponent.GetParentComponent()
 
         返回组件的父级。"""
-    def GetParentMenu(self, *args, **kwargs) -> Any:
+    def GetParentMenu(self) -> Any:
         """返回菜单项所属的主菜单。
 
         GetParentMenu 返回包含菜单项的菜单。"""
@@ -20824,7 +22422,7 @@ class MenuItem(Component):
         调用IndexOf在以该菜单项为首的子菜单中定位该菜单项。 IndexOf 对于第一个菜单项返回 0，对于第二个菜单项返回 1，依此类推。如果菜单项不在子菜单中，IndexOf 返回 -1。
 
         注意：如果菜单中包含一些不可见的项目，IndexOf 可能与用户看到的菜单中项目的位置不对应。"""
-    def InitiateAction(self, *args, **kwargs) -> Any:
+    def InitiateAction(self) -> None:
         """如果菜单项与操作链接关联，则调用操作链接的 Update 方法。
 
         InitiateAction 调用操作链接（如果菜单项有一个操作链接）来更新操作与菜单项之间的关联。"""
@@ -20849,18 +22447,18 @@ class MenuItem(Component):
         InsertNewLineBefore 返回 Items 属性数组中新插入的分隔符项的索引。
 
         提示：在运行时插入分隔条时，最好将 AutoLineReduction 设置为 true，以便可以自动删除多余的分隔符。"""
-    def IsLine(self, *args, **kwargs) -> Any:
+    def IsLine(self) -> bool:
         """指示菜单项是否表示分隔条。
 
         调用 IsLine 来确定菜单项是否为分隔条。IsLine 检查菜单项的 Caption，如果 Caption 的值为“-”，则返回 true。具有此 Caption 的菜单项显示为分隔条。"""
-    def NewBottomLine(self, *args, **kwargs) -> Any:
+    def NewBottomLine(self) -> None:
         """在 Items 属性数组的末尾插入分隔栏。
 
         使用 NewBottomLine 在 items 属性数组的末尾插入分隔栏。这在运行时动态构建子菜单时非常有用。
         NewBottomLine 返回 Items 属性数组中新插入的分隔符项的索引。
 
         提示：在运行时插入分隔条时，最好将 AutoLineReduction 设置为 true，以便可以自动删除多余的分隔符。"""
-    def NewTopLine(self, *args, **kwargs) -> Any:
+    def NewTopLine(self) -> None:
         """在 Items 属性数组的开头插入分隔栏。
 
         使用 NewTopLine 在 items 属性数组的开头插入分隔栏。这在运行时动态构建子菜单时非常有用。
@@ -20874,13 +22472,13 @@ class MenuItem(Component):
         调用 Remove 可从菜单中删除菜单项及其所有子菜单。Item 参数是要删除的项。如果 Item 不是 Items 数组中的菜单项，则 Remove 会引发异常。
         Remove 不会释放项目的内存。要从菜单中删除项目并释放其内存，请在要删除的项目中调用 Free 方法。
         要暂时隐藏菜单项而不删除它，请使用 Visible 属性。"""
-    def RethinkHotkeys(self, *args, **kwargs) -> Any:
+    def RethinkHotkeys(self) -> None:
         """调整子项目的标题，使每个项目都有一个快捷键，并且没有重复的快捷键。
 
         调用 RethinkHotkeys 来调整 Items 属性中的项目以及这些项目的任何子菜单中的快捷键。 RethinkHotkeys 检查没有快捷键或具有重复快捷键的项目。然后，它会用唯一的字符替换所有重复的快捷键，并将快捷键添加到没有快捷键的项目中。 RethinkHotkeys 优先考虑现有的快捷键映射，但如有必要，可能会更改它们以确保唯一性。
         当 AutoHotkeys 属性为 false 时，RethinkHotkeys 允许菜单调整快捷键。对于任何将 AutoHotkeys 设置为 true 的菜单或子菜单，此调整会自动发生。
         如果 RethinkHotkeys 更改了任何菜单项的 Caption 属性，则 RethinkHotkeys 返回 true，否则返回 false。"""
-    def RethinkLines(self, *args, **kwargs) -> Any:
+    def RethinkLines(self) -> None:
         """从 Items 属性数组中删除多余的分隔线。
 
         调用 RethinkLines 从 Items 属性中的项目以及这些项目的任何子菜单中删除多余的分隔符。 RethinkLines 删除出现在子菜单开头或结尾的分隔符以及紧随另一个分隔符的分隔符。
@@ -20951,11 +22549,11 @@ class Metafile(Graphic):
     __hash__: ClassVar[None] = ...
     CreatedBy: Any
     """用于获取创建Metafile对象的应用程序名称。"""
-    Description: Any
+    Description: str
     """用于获取或设置Metafile对象的描述信息。"""
     Enhanced: Any
     """用于指示Metafile对象是否是增强型的（enhanced）。"""
-    Handle: Any
+    Handle: int
     """用来在Windows操作系统中定位和操作Metafile对象。"""
     Inch: Any
     """表示每英寸包含的像素数，用于确定Metafile对象在打印或显示时的大小和清晰度。"""
@@ -20963,7 +22561,7 @@ class Metafile(Graphic):
     """用于获取Metafile对象的高度（height）以毫米（millimeters）为单位的值。"""
     MMWidth: Any
     """用于获取Metafile对象的宽度（Width）值，以毫米（millimeters）为单位表示。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -20981,18 +22579,18 @@ class Metafile(Graphic):
         """TMetaFile.Clear()
 
         用于清空Metafile对象中存储的图形图像数据，将其重置为空状态。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """实例化图元文件对象。
 
         调用 Create 在运行时实例化图元文件。
         Create 为图元文件对象分配内存，并调用继承的 Create。然后将“增强”和“透明”属性设置为 true。
         要从头开始创建图元文件图像，请在图元文件画布中绘制图像。当图元文件画布被销毁时，它将图像传输到提供给图元文件画布构造函数的图元文件对象中。在画布上绘制图像并销毁画布后，图像在图元文件对象中“可播放”。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁图元文件对象的实例。
 
         不要直接在应用程序中调用 Destroy。相反，应用程序应该调用 Free。 Free 在调用 Destroy 之前验证 TMetafile 引用不为零。
         销毁释放图像，当图元文件图像上的引用计数为零时，这会释放图像和句柄。然后Destroy调用继承的Destroy。"""
-    def HandleAllocated(self, *args, **kwargs) -> Any:
+    def HandleAllocated(self) -> bool:
         """指示 TMetafile 对象是否已获取基础 GDI 对象的句柄。
 
         使用 HandleAllocation 确定 Handle 属性是否设置为 HMETAFILE 值。 HandleAllocation 指示基础 GDI 对象是否已创建。使用 HandleAllocation 而不是读取 Handle 属性。当应用程序读取 Handle 属性时，如果基础 GDI 对象尚不存在，它会自动创建一个图元文件并返回其句柄。"""
@@ -21076,11 +22674,11 @@ class Monitor(Object):
     __hash__: ClassVar[None] = ...
     BoundsRect: Any
     """指示显示器的尺寸（以像素为单位）。"""
-    Handle: Any
+    Handle: int
     """指示监视器的 Windows 句柄。"""
-    Height: Any
+    Height: int
     """指示显示器的垂直尺寸（以像素为单位）。"""
-    Left: Any
+    Left: int
     """指示显示器左边缘的逻辑位置。"""
     MonitorNum: Any
     """指定全局屏幕对象的监视器列表中监视器的索引。"""
@@ -21088,13 +22686,13 @@ class Monitor(Object):
     """用来获取或设置当前设备或上下文的分辨率。"""
     Primary: Any
     """指示这是否是主监视器。"""
-    Top: Any
+    Top: int
     """指示显示器顶部边缘的逻辑位置。"""
-    Width: Any
+    Width: int
     """指示显示器的水平尺寸（以像素为单位）。"""
     WorkareaRect: Any
     """指示显示器上可用区域的尺寸。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -21198,7 +22796,7 @@ class Notebook(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于存储Notebook控件中包含的子控件（例如页面控件）。"""
@@ -21235,7 +22833,7 @@ class Notebook(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -21243,9 +22841,9 @@ class Notebook(CustomControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """用于响应控件（如按钮、菜单项等）的点击事件。"""
@@ -21325,7 +22923,7 @@ class Notebook(CustomControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -21341,7 +22939,7 @@ class Notebook(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -21377,7 +22975,7 @@ class Notebook(CustomControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -21391,7 +22989,7 @@ class Notebook(CustomControl):
         构造一个 TNotebook 组件。
         调用 Create 在运行时实例化笔记本。在设计时放置在表单中的笔记本组件是自动创建的。
         AOwner 参数指定负责释放笔记本的组件（通常是表单）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TNotebook 组件。
 
         不要直接在应用程序中调用 Destroy。相反，请使用 Free，它会在调用 Destroy 之前检查 TNotebook 引用是否为 nil。"""
@@ -21526,7 +23124,7 @@ class NumberBox(CustomNumberBox):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于存储NumberBox控件内部的子控件列表。"""
@@ -21566,7 +23164,7 @@ class NumberBox(CustomNumberBox):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中的文本的属性。
@@ -21574,9 +23172,9 @@ class NumberBox(CustomNumberBox):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用备用控件，其 Font 属性将更改标题或文本的颜色（如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """bool：确定当焦点转移到另一个控件时是否保留所选文本的视觉指示。
@@ -21706,7 +23304,7 @@ class NumberBox(CustomNumberBox):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -21717,7 +23315,7 @@ class NumberBox(CustomNumberBox):
 
         要将编辑控件限制为仅显示，请将 ReadOnly 属性设置为 true。将 ReadOnly 设置为 false 以允许编辑编辑控件的内容。
         将 ReadOnly 设置为 true 可确保文本不被更改，同时仍允许用户选择文本。然后应用程序可以操作所选文本，或将其复制到剪贴板。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
     ShowHint: bool
     """bool: ShowHint 指定当鼠标指针移动到控件上时是否显示帮助提示。
@@ -21729,7 +23327,7 @@ class NumberBox(CustomNumberBox):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SmallStep: float
     """用于设置或获取NumberBox控件的小步值。"""
@@ -21790,7 +23388,7 @@ class NumberBox(CustomNumberBox):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     Wrap: bool
     """用于指定当达到最大值或最小值时是否循环（wrap around）到另一端继续增减。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -21870,16 +23468,16 @@ class Object:
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
-    def AfterConstruction(self, *args, **kwargs) -> Any:
+    def AfterConstruction(self) -> None:
         """最后一个构造函数执行后响应。
 
         AfterConstruction 在对象的最后一个构造函数执行后自动调用。不要在您的应用程序中显式调用它。
         TObject 中实现的 AfterConstruction 方法不执行任何操作。当创建一个在创建对象后执行操作的类时，重写此方法。例如，TCustomForm 重写 AfterConstruction 以生成 OnCreate 事件。"""
-    def BeforeDestruction(self, *args, **kwargs) -> Any:
+    def BeforeDestruction(self) -> None:
         """在第一个析构函数执行之前响应。
 
         BeforeDestruction 在对象的第一个析构函数执行之前自动调用。不要在您的应用程序中显式调用它。
@@ -21887,13 +23485,13 @@ class Object:
 
         注意：当对象在完全构造之前被销毁时，BeforeDestruction 不会被调用。也就是说，如果对象的构造函数引发异常，则会调用析构函数来处理该对象，但不会调用 BeforeDestruction。"""
     @classmethod
-    def ClassInfo(cls, *args, **kwargs) -> Any:
+    def ClassInfo(cls) -> Any:
         """返回指向对象类型的运行时类型信息 (RTTI) 表的指针。
 
         ClassInfo 提供对给定对象类型的 RTTI 表的访问。
         有些类不提供运行时类型信息。对于这些类，ClassInfo 返回空。所有从 TPersistent 派生的类都提供运行时类型信息。"""
     @classmethod
-    def ClassName(cls, *args, **kwargs) -> Any:
+    def ClassName(cls) -> str:
         """返回一个字符串，指示对象实例的类型（而不是作为参数传递的变量的类型）。
 
         使用 ClassName 从对象实例或类引用中获取类名。这对于区分分配给具有祖先类类型的变量的对象实例很有用。"""
@@ -21904,22 +23502,22 @@ class Object:
         确定对象是否属于特定类型。
         ClassNameIs 确定对象实例或类引用是否具有与指定字符串匹配的类名。这对于跨模块或共享库查询对象很有用。"""
     @classmethod
-    def ClassParent(cls, *args, **kwargs) -> Any:
+    def ClassParent(cls) -> Any:
         """返回类的直接祖先的类型。
 
         ClassParent 返回对象实例或类引用的父类的名称。对于 TObject，ClassParent 返回空。
         避免在应用程序代码中使用 ClassParent。"""
-    def ClassType(self, *args, **kwargs) -> Any:
+    def ClassType(self) -> Any:
         """返回对象类的类引用。
 
         注意：ClassType 动态确定对象的类型并返回其类引用或元类。
         避免在应用程序代码中使用 ClassType。"""
-    def CleanupInstance(self, *args, **kwargs) -> Any:
+    def CleanupInstance(self) -> None:
         """对类中的长字符串、变体和接口变量执行终结。
 
         不要直接调用 CleanupInstance。当对象实例被销毁时，CleanupInstance 会自动调用。
         CleanupInstance 释放所有长字符串和变体。它将长字符串设置为空，并将变体设置为未分配。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self, AOwner: Component) -> None:
         """构造一个对象并在首次使用该对象之前初始化其数据。
 
         Create 构造一个对象。对象的用途、大小和行为差异很大。 TObject 定义的 Create 构造函数分配内存但不初始化数据。
@@ -21933,7 +23531,7 @@ class Object:
         当 Dispatch 找不到特定消息的方法时，将调用 DefaultHandler。 DefaultHandler 为对象没有特定处理程序的所有消息提供消息处理。处理消息的后代类根据它们处理的消息类型重写 DefaultHandler。
 
         注意：在消息处理方法中，仅当祖先没有为正在处理的特定消息指定消息方法时，调用继承才会导致调用祖先的 DefaultHandler 方法。否则，调用继承会导致调用该类型消息的特定处理程序。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """处置对象实例。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证对象引用是否不为空，然后才会调用 Destroy。。
@@ -21949,7 +23547,7 @@ class Object:
         调用 Dispatch 自动将消息传递给适当的消息处理程序。
         调度确定消息是否在为该对象声明的消息处理程序列表中。如果该对象不处理该消息，Dispatch 将检查祖先类的消息处理程序列表，并继续检查祖先，直到找到特定处理程序或用完祖先，在这种情况下，它会调用 DefaultHandler。
         Dispatch 对 Message 中的数据所做的唯一假设是前两个字节包含消息 ID，即确定 Dispatch 调用哪个消息处理程序的整数。尽管任何类型的数据都可以传递给 Dispatch，但大多数 TObject 后代都期望消息记录，例如 TMessage 或特定的数据结构类型。"""
-    def DisposeOf(self, *args, **kwargs) -> Any:
+    def DisposeOf(self) -> None:
         """DisposeOf 强制执行对象中的析构函数代码。
 
         当Mobile 编译器支持自动引用计数时，它是以前版本的产物。在当前版本的中，DisposeOf 用作调用 TObject.Free 的包装器。"""
@@ -21975,13 +23573,13 @@ class Object:
         """TObject.Free()
 
         释放包装的对象"""
-    def FreeInstance(self, *args, **kwargs) -> Any:
+    def FreeInstance(self) -> None:
         """释放先前调用 NewInstance 方法分配的内存。
 
         所有析构函数都会自动调用 FreeInstance 来释放通过重写 NewInstance 分配的内存。
         不要直接调用 FreeInstance。如果重写 NewInstance 以更改对象实例数据的分配方式，则应重写 FreeInstance。
         与 NewInstance 一样，FreeInstance 使用从 InstanceSize 返回的值来释放对象的内存。"""
-    def GetHashCode(self, *args, **kwargs) -> Any:
+    def GetHashCode(self) -> int:
         """返回包含哈希码的整数。
 
         默认情况下，对对象调用 GetHashCode 将返回一个表示存储该对象的虚拟地址的整数。
@@ -22005,7 +23603,7 @@ class Object:
 
         注意：COM 对象可以使用 GetInterfaceEntry 自动调度调用双 IDispatch 接口。"""
     @classmethod
-    def GetInterfaceTable(cls, *args, **kwargs) -> Any:
+    def GetInterfaceTable(cls) -> Any:
         """返回一个指向包含给定类实现的所有接口的结构的指针。
 
         GetInterfaceTable 返回该类的接口条目。该列表仅包含该类实现的接口，而不包含其祖先的接口。要查找祖先列表，请迭代调用 ClassParent，然后对其返回的值调用 GetInterfaceTable。要查找特定接口的条目，请改用 GetInterfaceEntry 方法。"""
@@ -22021,7 +23619,7 @@ class Object:
         您不应该直接调用 InitInstance。当创建一个对象时，InitInstance 由 NewInstance 调用。当重写 NewInstance 时，请确保调用 InitInstance 作为最后一条语句。
         InitInstance 不是虚拟的，因此您无法覆盖它。相反，在构造函数中初始化对象的任何数据。"""
     @classmethod
-    def InstanceSize(cls, *args, **kwargs) -> Any:
+    def InstanceSize(cls) -> int:
         """返回对象类型的每个实例的大小（以字节为单位）。
 
         InstanceSize 指示类的实例数据需要多少字节的内存。 InstanceSize 从分配和释放内存的方法中调用。 InstanceSize 不是虚拟方法，因此无法重写。仅当实现 NewInstance 的自定义版本时才应调用 InstanceSize。"""
@@ -22042,7 +23640,7 @@ class Object:
         在某些情况下，无需提前对方法名称进行硬编码即可调用对象方法。调用 MethodAddress 通过将方法名称指定为字符串来动态检索此类方法的地址。
         MethodName 与此过程相反 - 通过提供 Address 方法，方法的名称以字符串形式返回。"""
     @classmethod
-    def NewInstance(cls, *args, **kwargs) -> Any:
+    def NewInstance(cls) -> Any:
         """为对象类型的实例分配内存并返回指向该新实例的指针。
 
         所有构造函数都会自动调用 NewInstance。NewInstance 会调用 InstanceSize 来确定从堆中分配多少包含特定实例的内存。不要直接调用 NewInstance。
@@ -22051,7 +23649,7 @@ class Object:
 
         注意：默认情况下，NewInstance 会调用 InitInstance。"""
     @classmethod
-    def QualifiedClassName(cls, *args, **kwargs) -> Any:
+    def QualifiedClassName(cls) -> str:
         """返回类的限定名称。
 
         QualifiedClassName 返回与类名连接的类的单元范围。"""
@@ -22069,7 +23667,7 @@ class Object:
         """TStrings.ToList()
 
         如果该对象是容器（TStrings、TComponent...），则它将序列的内容作为 Python 列表对象返回。"""
-    def ToString(self, *args, **kwargs) -> Any:
+    def ToString(self) -> str:
         """返回包含类名的字符串。
 
         默认情况下，ToString 返回一个字符串，其中包含正在调用的实例的类名。
@@ -22081,12 +23679,12 @@ class Object:
 
         如果该对象是容器（TStrings、TComponent...），则它将序列的内容作为 Python 元组对象返回。"""
     @classmethod
-    def UnitName(cls, *args, **kwargs) -> Any:
+    def UnitName(cls) -> str:
         """返回定义该类的单元的名称。
 
         UnitName 可用于获取定义特定类的单元。例如，在 TButton 上调用 UnitName 将返回 Vcl.StdCtrls 字符串。"""
     @classmethod
-    def UnitScope(cls, *args, **kwargs) -> Any:
+    def UnitScope(cls) -> str:
         """返回类的单元范围。
 
         类的单元范围当前与类的单元名称等效。"""
@@ -22142,7 +23740,7 @@ class OpenDialog(Component):
     """FileEditStyle：确定文件选择对话框的样式。 （过时的。）
 
         维护 FileEditStyle 是为了与旧版本的 VCL 兼容。它没有任何作用。"""
-    FileName: Any
+    FileName: str
     """用于获取或设置用户选择的文件的完整路径和文件名。"""
     Files: Strings
     """字符串：所选文件名的列表。
@@ -22200,7 +23798,7 @@ class OpenDialog(Component):
     """str：指定对话框标题栏中的文本。
 
         使用标题指定文件选择对话框标题栏中显示的文本。如果没有为“标题”指定任何值，则对话框的标题为“打开”。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -22210,7 +23808,7 @@ class OpenDialog(Component):
         创建并初始化 TOpenDialog 实例。
         Create 生成一个 TOpenDialog 实例，但新对话框在运行时不会出现在窗体上，直到调用 Execute 方法。
         AOwner 是负责释放 TOpenDialog 实例的组件。它成为所有者财产的价值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TOpenDialog 并释放其内存。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会在调用 Destroy 之前验证 TOpenDialog 引用是否为空。"""
@@ -22281,15 +23879,15 @@ class Page(CustomControl):
         显示文本的控件使用 Caption 属性或 Text 属性来指定文本值。所使用的属性取决于控件的类型。通常，Caption 用于显示为窗口标题或标签的文本，而 Text 用于显示为控件内容的文本。
         对于某些控件（如 TButton），无法更改 Caption 的颜色。如果要更改按钮标题的颜色，应使用替代按钮类型（如 TSpeedButton 或 TBitBtn），而不是 TButton。无论是 TSpeedButton 还是 TBitBtn，您都可以使用 Font 属性更改 Caption 属性的颜色。
         对于 TLinkLabel，可以在运行时或设计时在 Caption 属性内声明一个 HTML 标记。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于存储PageControl中所有子控件（包括Page页）的引用。"""
-    Focused: Any
+    Focused: bool
     """用于指示当前页面是否具有焦点。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Height: int
     """int：指定控件的垂直尺寸（以像素为单位）。
@@ -22301,9 +23899,9 @@ class Page(CustomControl):
     """当Page控件在其父容器中对齐位置时触发。"""
     OnGesture: Callable[[Object,GestureEventInfo,bool],None]
     """用于处理与手势相关的交互，例如滑动、缩放、旋转等。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于与Windows API函数进行交互，实现一些高级的控件操作。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -22337,7 +23935,7 @@ class Page(CustomControl):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -22559,7 +24157,7 @@ class PageControl(WinControl):
     """bool：指定选项卡控件是否处理其自己的绘制。
 
         将 OwnerDraw 设置为 true 以覆盖任何默认绘制行为。"""
-    PageCount: Any
+    PageCount: int
     """指示 TPageControl 对象中的页数。"""
     Pages: Any
     """列出 TPageControl 中的所有页面。"""
@@ -22595,7 +24193,7 @@ class PageControl(WinControl):
     """bool：指定选项卡行是否拉伸以填充控件的宽度。
 
         使用 RaggedRight 获取或设置选项卡行是否拉伸以填充控件的宽度。"""
-    RowCount: Any
+    RowCount: int
     """用于获取PageControl中的标签页行数。"""
     ScrollOpposite: bool
     """bool：确定多行选项卡控件中选项卡行的滚动方式。
@@ -22677,7 +24275,7 @@ class PageControl(WinControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -22688,7 +24286,7 @@ class PageControl(WinControl):
         调用 Create 在运行时实例化页面控件。在设计时添加到表单的页面控件是自动创建的。
         AOwner 是页面控件应出现的形式。它成为所有者财产的价值。
         在运行时创建页面控件时，必须以编程方式添加页面。要在运行时将页面添加到页面控件，请为该页面创建 TTabSheet 对象并设置其 PageControl 属性。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPageControl 的实例。
 
         不要直接在应用程序中调用 Destroy。相反，请先调用Free。 Free 验证 TPageControl 引用不为空，然后才调用 Destroy。 Destroy 释放保存控件页面的 TList 对象，然后调用继承的析构函数。"""
@@ -22922,7 +24520,7 @@ class PaintBox(Control):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23109,7 +24707,7 @@ class Panel(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """用于存储Panel控件内部包含的子控件（例如按钮、标签等）。"""
@@ -23155,7 +24753,7 @@ class Panel(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -23165,9 +24763,9 @@ class Panel(CustomControl):
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
     FullRepaint: bool
     """用于指定当Panel控件重绘时是否进行完全重绘。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Locked: bool
     """用于指示Panel控件是否被锁定。"""
@@ -23270,7 +24868,7 @@ class Panel(CustomControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于与Windows API函数进行交互，实现一些高级的控件操作。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -23288,7 +24886,7 @@ class Panel(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -23338,7 +24936,7 @@ class Panel(CustomControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23400,7 +24998,7 @@ class Panel(CustomControl):
 
 class PascalInterface:
     """Pascal 记录的包装"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23421,7 +25019,7 @@ class PascalInterface:
 
 class PascalRecord:
     """Pascal 记录的包装器"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23450,13 +25048,13 @@ class Persistent(Object):
     提供将一个对象的内容分配给另一个对象的方法。
     不要创建 TPersistent 的实例。当声明不是组件但需要保存到流或将其属性分配给其他对象的对象时，请使用 TPersistent 作为基类。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """用于获取该对象的类名。"""
     __bound__: Any
     """如果包装器仍然绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23464,7 +25062,7 @@ class Persistent(Object):
         """TPersistent.Assign（持久）
 
         将另一个 TPersistent 对象的值分配给该对象"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPersistent 实例并释放其内存。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证对象引用是否不为空，然后才会调用 Destroy。"""
@@ -23519,7 +25117,7 @@ class Picture(Persistent):
     """用于表示和操作位图图像。"""
     Graphic: Any
     """用于表示和处理图形对象。"""
-    Height: Any
+    Height: int
     """用于获取或设置Picture组件中当前图像的高度。"""
     Icon: Any
     """用于获取或设置Picture组件中的图标（icon）。"""
@@ -23537,9 +25135,9 @@ class Picture(Persistent):
         PictureAdapter 仅供内部使用。"""
     WICImage: WICImage
     """用于表示Windows Imaging Component (WIC) 图像。"""
-    Width: Any
+    Width: int
     """宽度"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23548,11 +25146,11 @@ class Picture(Persistent):
         当 Source 是对 Graphic 属性有效的对象类型时，Assign 使该图形成为 Graphic 属性的值。
         Assign 执行的操作取决于 TPicture Graphic 属性和 Source 的实际类型。例如，如果 Graphic 属性和 Source 都是位图 (TBitmap)，则 Source 中包含的位图将复制到 Graphic 属性中。类似的转换是有效的，例如，对于 TIcon 或 TMetafile。
         如果 Source 参数不是 Graphic 属性的有效对象，Assign 将调用继承的方法，以便可以从与其兼容的任何对象复制图片。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """创建一个 TPicture 对象。
 
         调用 Create 在运行时创建 TPicture 的实例。 Create 为图片对象分配内存并初始化其内部格式。创建 TPicture 对象后，使用 LoadFromClipboardFormat 或 LoadFromFile 方法将图形图像分配给图片，以便应用程序可以使用它。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁图片对象的实例。
 
         不要直接在应用程序中调用 Destroy。而是调用Free。 Free 在调用 Destroy 之前验证 TPicture 引用不为零。
@@ -23597,7 +25195,7 @@ class Picture(Persistent):
 
         分配全局句柄并以其本机剪贴板格式写入图片（位图为 CF_BITMAP，图元文件为 CF_METAFILE，等等）。
         使用 SaveToClipboardFormat 将图片复制为剪贴板格式。然后可以使用剪贴板的 SetAsHandle 方法将结果值复制到 Windows 剪贴板。
-        图片的调色板在 APalette 参数中返回，格式在 AFormat 参数中返回，数据句柄在 AData 参数中返回。在保存图片之前，应用程序必须使用 RegisterClipboardFormat 方法注册格式。'''
+        图片的调色板在 APalette 参数中返回，格式在 AFormat 参数中返回，数据句柄在 AData 参数中返回。在保存图片之前，应用程序必须使用 RegisterClipboardFormat 方法注册格式。"""
     def SaveToFile(self) -> Any:
         """TPicture.SaveToFile()
 
@@ -23664,7 +25262,7 @@ class Point:
     """提供对点的 X 坐标的访问"""
     Y: Any
     """提供对点的 Y 坐标的访问"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, X: int = ..., Y: int = ...) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23740,7 +25338,7 @@ class PopupMenu(Menu):
     """BiDiMode：确定中东区域设置中的菜单布局。
 
         设置 BiDiMode 来控制菜单项的布局。 BiDiMode 控制菜单项是从左到右还是从右到左读取。"""
-    ComponentCount: Any
+    ComponentCount: int
     """用于在运行时动态管理PopupMenu组件关联的子组件。"""
     Components: Any
     """用于存储PopupMenu菜单项的子组件。"""
@@ -23793,7 +25391,7 @@ class PopupMenu(Menu):
     """TrackButton：指定与工具栏按钮关联时哪个鼠标按钮激活弹出菜单。
 
         使用 TrackButton 指定当鼠标按钮与工具栏按钮关联时激活弹出菜单。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -23804,7 +25402,7 @@ class PopupMenu(Menu):
         示例： def handle_button1_OnClick(Sender): pass
         该函数返回一个元组列表。每个元组包含组件的名称、事件的名称以及分配给事件的方法对象。
         请注意，前缀参数是可选的，默认为“handle_”。"""
-    def CloseMenu(self, *args, **kwargs) -> Any:
+    def CloseMenu(self) -> None:
         """关闭屏幕上的弹出菜单。
 
         调用 CloseMenu 关闭弹出菜单。"""
@@ -23813,7 +25411,7 @@ class PopupMenu(Menu):
 
         创建 TPopupMenu 的实例。
         调用Create创建运行时创建弹出菜单。在设计时放置在表单或数据模块中的弹出菜单是自动创建的。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPopupMenu 实例。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会验证 TPopupMenu 引用不为空，然后才调用 Destroy。"""
@@ -23889,7 +25487,7 @@ class PrototypeBindSource(CustomPrototypeBindSource):
     """用于指定在数据源处于编辑模式时是否自动保存修改。"""
     AutoPost: bool
     """用于指定在数据源的数据发生变化后是否自动提交（post）这些变化。"""
-    ComponentCount: Any
+    ComponentCount: int
     """用于获取PrototypeBindSource组件关联的其他组件的数量。"""
     Components: Any
     """用于存储PrototypeBindSource组件关联的其他组件。"""
@@ -23905,7 +25503,7 @@ class PrototypeBindSource(CustomPrototypeBindSource):
     """用于定义数据源的结构和字段映射。
 
         ScopeMappings 属性指定一个拥有的集合，其元素是范围映射。 ScopeMappings 用于添加可由引用此源组件的表达式引用的名称/值对。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24039,7 +25637,7 @@ class RadioButton(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -24076,7 +25674,7 @@ class RadioButton(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -24084,9 +25682,9 @@ class RadioButton(WinControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """用于与Windows API函数进行交互，实现一些高级的控件操作。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """用于响应控件（如按钮、菜单项等）的点击事件。"""
@@ -24163,7 +25761,7 @@ class RadioButton(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于指定RadioButton控件的父窗口句柄（handle）。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -24179,7 +25777,7 @@ class RadioButton(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -24213,7 +25811,7 @@ class RadioButton(WinControl):
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """用于指定当RadioButton控件的文本内容过长时是否自动换行显示。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24227,7 +25825,7 @@ class RadioButton(WinControl):
         创建 TRadioButton 的实例。
         调用 Create 在运行时实例化单选按钮。在设计时添加到表单的单选按钮是自动创建的。
         AOwner 是一个组件，通常是一个表单，它成为 Owner 属性的值。所有者负责释放单选按钮对象。"""
-    def GetControlsAlignment(self, *args, **kwargs) -> Any:
+    def GetControlsAlignment(self) -> Any:
         """返回控件中任何文本的对齐方式。
 
         使用 GetControlsAlignment 确定没有 Alignment 属性的控件中文本的方向。
@@ -24342,7 +25940,7 @@ class RadioGroup(CustomControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """用于获取RadioGroup控件中包含的子控件的数量。"""
     Controls: Any
     """用于访问RadioGroup控件中的所有子控件。"""
@@ -24381,7 +25979,7 @@ class RadioGroup(CustomControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中的文本的属性。
@@ -24389,9 +25987,9 @@ class RadioGroup(CustomControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用备用控件，其 Font 属性将更改标题或文本的颜色（如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """用来在Windows操作系统中定位和操作控件。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HeaderFont: Font
     """用于设置或获取 RadioGroup 控件中标题文本的字体属性。"""
@@ -24462,7 +26060,7 @@ class RadioGroup(CustomControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于指定 RadioGroup 控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -24482,7 +26080,7 @@ class RadioGroup(CustomControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -24527,7 +26125,7 @@ class RadioGroup(CustomControl):
         对于 TTabSheet 子控件，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
     WordWrap: bool
     """用于指定是否启用单选按钮文本的自动换行功能。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24594,15 +26192,15 @@ class Rect:
     """提供对矩形底部坐标的访问"""
     BottomRight: Any
     """提供对矩形的 BottomRight 坐标的访问"""
-    Left: Any
+    Left: int
     """提供对矩形左坐标的访问"""
     Right: Any
     """提供对矩形右坐标的访问"""
-    Top: Any
+    Top: int
     """提供对矩形顶部坐标的访问"""
     TopLeft: Any
     """提供对矩形左上角坐标的访问"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, Left: int = ..., Top: int = ..., Right: int = ..., Bottom: int = ...) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24646,13 +26244,13 @@ class ResourceStream(CustomMemoryStream):
     使用 TResourceStream 读取应用程序的资源。 TResourceStream 的实例将单个资源的值保存在内存缓冲区中，应用程序可以访问该资源。
     全局ReadComponentRes函数使用TResourceStream来访问应用程序使用的编译资源。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """用于获取 ResourceStream 对象的类名。"""
     __bound__: Any
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, Instance: int, ResName: str, ResType: PWideChar) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24683,7 +26281,7 @@ class ResourceStream(CustomMemoryStream):
         RT_VERSION   版本资源ResType。"""
     def CreateFromID(self, Instance: int, ResID: int, ResType: PWideChar) -> None:
         """用于创建一个 ResourceStream 对象并从资源文件中加载指定资源的数据流。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TResourceStream 的实例。
 
         不要在应用程序中直接调用 Destroy 来销毁 TResourceStream 实例。而是调用Free。 Free 验证 TResourceStream 引用不为空，然后才调用 Destroy。
@@ -24773,9 +26371,9 @@ class SaveDialog(OpenDialog):
 
     TSaveDialog 显示一个模式 Windows 对话框，用于选择文件名和保存文件。该对话框不会在运行时出现，直到通过调用 Execute 方法激活该对话框。当用户单击“保存”时，对话框将关闭，所选文件名将存储在 FileName 属性中。"""
     __hash__: ClassVar[None] = ...
-    FileName: Any
+    FileName: str
     """用于获取或设置用户选择的文件名。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -24865,7 +26463,7 @@ class ScrollBar(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """用于获取 ScrollBar 控件的子控件数量。"""
     Controls: Any
     """用于访问 ScrollBar 控件的子控件列表。"""
@@ -24902,11 +26500,11 @@ class ScrollBar(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Kind: ScrollBarKind
     """用于指定滚动条的类型。"""
@@ -24973,7 +26571,7 @@ class ScrollBar(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -24991,7 +26589,7 @@ class ScrollBar(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SmallChange: int
     """用于设置或获取当用户按下滚动条上的箭头按钮时，滚动条位置发生的小变化量。"""
@@ -25025,7 +26623,7 @@ class ScrollBar(WinControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -25216,7 +26814,7 @@ class Shape(Control):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -25237,7 +26835,7 @@ class Shape(Control):
         当重写 Create 时，始终首先调用继承的 Create 方法，然后继续进行控件的初始化。请记住在重写 Create 方法时指定 override 指令。
 
         注意：如果控件的构造函数分配资源或内存，还需重写析构函数以释放这些资源。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TControl 的实例。
 
         不要直接在应用程序中调用 Destroy。而是调用Free。 Free 验证控件不为空，然后才调用 Destroy。
@@ -25337,7 +26935,7 @@ class Size:
     """提供对尺寸宽度的访问"""
     cy: Any
     """提供对尺寸高度的访问"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -25545,7 +27143,7 @@ class SpeedButton(Control):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子窗体，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 子控件，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -25668,7 +27266,7 @@ class SpinButton(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """用于获取 SpinButton 控件所包含的子控件数量。"""
     Controls: Any
     """用于访问 SpinButton 控件所包含的子控件列表。"""
@@ -25716,11 +27314,11 @@ class SpinButton(WinControl):
     """WinControl：指定与 TSpinButton 关联的窗口控件。
 
         使用 FocusControl 将焦点设置到控件。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告控件的屏幕对象句柄是否存在。"""
     OnDownClick: Callable[[Object],None]
     """当用户单击 SpinButton 控件的“减少”按钮时触发该事件。"""
@@ -25755,7 +27353,7 @@ class SpinButton(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于指定 SpinButton 控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -25771,7 +27369,7 @@ class SpinButton(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -25817,7 +27415,7 @@ class SpinButton(WinControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -25941,7 +27539,7 @@ class SpinEdit(CustomEdit):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -25971,7 +27569,7 @@ class SpinEdit(CustomEdit):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -25979,9 +27577,9 @@ class SpinEdit(CustomEdit):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Increment: int
     """int：指定增量值。
@@ -26059,7 +27657,7 @@ class SpinEdit(CustomEdit):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -26070,7 +27668,7 @@ class SpinEdit(CustomEdit):
 
         要将编辑控件限制为仅显示，请将 ReadOnly 属性设置为 true。将 ReadOnly 设置为 false 以允许编辑编辑控件的内容。
         将 ReadOnly 设置为 true 可确保文本不被更改，同时仍允许用户选择文本。然后应用程序可以操作所选文本，或将其复制到剪贴板。"""
-    SelStart: Any
+    SelStart: int
     """返回/设置光标的位置。"""
     ShowHint: bool
     """bool: ShowHint 指定当鼠标指针移动到控件上时是否显示帮助提示。
@@ -26082,7 +27680,7 @@ class SpinEdit(CustomEdit):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -26118,7 +27716,7 @@ class SpinEdit(CustomEdit):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -26131,7 +27729,7 @@ class SpinEdit(CustomEdit):
 
         创建并初始化 TSpinEdit 实例。
         Create 方法创建并初始化 TSpinEdit 实例。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TSpinEdit 实例。
 
         Destroy 方法销毁 TSpinEdit 实例。 Destroy 调用 Destroy 继承的方法。"""
@@ -26266,7 +27864,7 @@ class Splitter(Control):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -26287,7 +27885,7 @@ class Splitter(Control):
         当重写 Create 时，始终首先调用继承的 Create 方法，然后继续进行控件的初始化。请记住在重写 Create 方法时指定 override 指令。
 
         注意：如果控件的构造函数分配资源或内存，还需重写析构函数以释放这些资源。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TControl 的一个实例。
 
         不要在应用程序中直接调用 Destroy。而是调用 Free。Free 会验证控件是否为空，然后才调用 Destroy。
@@ -26458,7 +28056,7 @@ class StaticText(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -26492,7 +28090,7 @@ class StaticText(WinControl):
         注意：此属性适用于所有 TControl 后代。"""
     FocusControl: WinControl
     """用于指定StaticText控件的焦点控件，即当用户按下Tab键时，焦点会自动跳转到FocusControl属性所指定的WinControl控件上。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -26500,9 +28098,9 @@ class StaticText(WinControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """用于响应控件（如按钮、菜单项等）的点击事件。"""
@@ -26513,7 +28111,7 @@ class StaticText(WinControl):
     OnDragDrop: Callable[[Object,Object,int,int],None]
     """用于处理拖放操作中的放置（drop）事件。"""
     OnDragOver: Callable[[Object,Object,int,int,DragState,bool],None]
-     """用于响应拖放操作中的"拖过"事件。"""
+    """用于响应拖放操作中的"拖过"事件。"""
     OnEndDock: Callable[[Object,Object,int,int],None]
     """在组件（例如 TDockPanel 或 TDockSite）完成停靠操作后触发的事件。"""
     OnEndDrag: Callable[[Object,Object,int,int],None]
@@ -26566,7 +28164,7 @@ class StaticText(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于指定StaticText控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -26584,7 +28182,7 @@ class StaticText(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     StyleElements: StyleElements
     """StyleElements：指定控件使用的样式元素。
@@ -26629,7 +28227,7 @@ class StaticText(WinControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -26744,7 +28342,7 @@ class StatusBar(CustomStatusBar):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -26777,7 +28375,7 @@ class StatusBar(CustomStatusBar):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -26785,9 +28383,9 @@ class StatusBar(CustomStatusBar):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     OnClick: Callable[[Object],None]
     """用于响应控件（如按钮、菜单项等）的点击事件。"""
@@ -26798,7 +28396,7 @@ class StatusBar(CustomStatusBar):
     OnDblClick: Callable[[Object],None]
     """用于响应鼠标双击事件。"""
     OnDragDrop: Callable[[Object,Object,int,int],None]
-     """用于处理拖放操作中的放置（drop）事件。"""
+    """用于处理拖放操作中的放置（drop）事件。"""
     OnDragOver: Callable[[Object,Object,int,int,DragState,bool],None]
     """用于响应拖放操作中的"拖过"事件。"""
     OnDrawPanel: Callable[[StatusBar,StatusPanel,Rect],None]
@@ -26867,7 +28465,7 @@ class StatusBar(CustomStatusBar):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -26883,7 +28481,7 @@ class StatusBar(CustomStatusBar):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True，并且其父级的 ShowHint 属性必须为 True。
         例如，想象一个组框内的复选框。如果组框的 ShowHint 属性为 True，复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍会显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SimplePanel: bool
     """bool：确定状态栏是显示单个面板还是多个面板。
@@ -26931,7 +28529,7 @@ class StatusBar(CustomStatusBar):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 后代，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 后代，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -27007,7 +28605,7 @@ class Stream(Object):
     TWinSocketStream——用于通过套接字连接读取和写入。
     TOleStream——用于使用 COM 接口进行读写。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """用于获取Stream对象的类名。"""
     Position: int
     """int：表示当前读取和写入流中的偏移量。
@@ -27027,7 +28625,7 @@ class Stream(Object):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -27116,7 +28714,7 @@ class Stream(Object):
         """将内容读取为浮动。"""
     def ReadInt(self) -> Any:
         """将内容读取为整数。"""
-    def ReadResHeader(self, *args, **kwargs) -> Any:
+    def ReadResHeader(self) -> None:
         """从流中读取资源文件头。
 
         不要直接调用 ReadResHeader。在从资源文件读取组件之前，它由 ReadComponentRes 自动调用。
@@ -27288,33 +28886,33 @@ class StringGrid(DrawGrid):
     """用于获取StringGrid控件的绘图画布，以便在StringGrid上进行自定义绘图操作，实现更加灵活和个性化的界面效果。"""
     Cells: str
     """用于获取或设置StringGrid控件中特定单元格的文本内容。"""
-    Col: Any
+    Col: int
     """指定包含所选单元格的列的索引。"""
-    ColWidths: Any
+    ColWidths: int
     """指定网格的列宽"""
     Cols: Strings
     """用于获取和操作StringGrid控件中每一列的数据。"""
-    EditorMode: Any
+    EditorMode: bool
     """确定当前单元格是否可以编辑。"""
-    GridHeight: Any
+    GridHeight: int
     """指定网格的高度（以像素为单位）。"""
-    GridWidth: Any
+    GridWidth: int
     """指定网格的宽度（以像素为单位）。"""
-    LeftCol: Any
+    LeftCol: int
     """指定网格中第一个可见的可滚动列的索引。"""
     Objects: Object
     """将StringGrid中每个单元格与一个对象关联起来。"""
-    Row: Any
+    Row: int
     """指定包含所选单元格的行的索引。"""
-    RowHeights: Any
+    RowHeights: int
     """指定网格的行高"""
     Rows: Strings
     """用来获取和操作StringGrid控件中每一行的数据。"""
     Selection: Any
     """指示当前选择的边界。"""
-    TopRow: Any
+    TopRow: int
     """指定网格中第一个可见的可滚动行的索引。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -27324,7 +28922,7 @@ class StringGrid(DrawGrid):
         创建 TStringGrid 的实例。
         调用 Create 在运行时创建 TStringGrid 的实例。对于设计时放置在表单上的字符串网格，会自动调用 Create。
         AOwner 是另一个组件，通常是一个表单，它成为网格的所有者。所有者负责释放网格。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TStringGrid 的实例。
 
         不要直接在应用程序中调用 Destroy。而是调用 Free。 Free 验证字符串 grid 不为空，然后才调用 Destroy。
@@ -27390,7 +28988,7 @@ class StringStream(BytesStream):
 
     使用 TStringStream 将数据存储为通过 I/O 功能增强的长字符串。 TStringStream 作为中间对象非常有用，它可以保存文本以及从另一个存储介质读取文本或将其写入到另一个存储介质。 TStringStream 提供了一种处理从不易访问的介质获取的文本的机制。"""
     __hash__: ClassVar[None] = ...
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     DataString: str
     """str：提供对存储 TStringStream 对象表示的文本的字符串的直接访问。
@@ -27407,15 +29005,15 @@ class StringStream(BytesStream):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, S: str) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self, S: str = ...) -> None:
         """创建 TStringStream 的实例。
 
         调用Create实例化一个TStringStream对象。 Create 将 DataString 属性初始化为 AString 参数。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TMemoryStream 的实例。
 
         System.Classes.TStringStream.Destroy 继承自System.Classes.TMemoryStream.Destroy。该行以下的所有内容均引用System.Classes.TMemoryStream.Destroy。
@@ -27640,7 +29238,7 @@ class Strings(Persistent):
         StringsAdapter 在 OLE 应用程序中使用时指定附加的 TStringsAdapter。
 
         注意：要创建 StringsAdapter，您可以使用 GetOleStrings 和 SetOleStrings，而不是创建 TStringsAdapter 的实例。 StringsAdapter 在 OLE 应用程序内部使用。"""
-    Text: Any
+    Text: str
     """将 TStrings 对象中的字符串列为单个字符串，各个字符串由回车符和换行符分隔。"""
     TrailingLineBreak: bool
     """bool：确定是否在 Text 属性的最后一行后添加换行符。
@@ -27661,7 +29259,7 @@ class Strings(Persistent):
     """bool：将导致 SaveToStream 和 SaveToFile 写入 BOM。
 
         将 WriteBOM 设置为 True 可使 SaveToStream 将 BOM（字节顺序标记）写入流，并使 SaveToFile 将 BOM 写入文件。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -27716,7 +29314,7 @@ class Strings(Persistent):
         """TStrings.Clear()
 
         清除 TStrings 中的所有字符串（以及相关对象）"""
-    def Create(self, *args, **kwargs) -> Any:
+    def Create(self) -> None:
         """创建 TStrings 对象的实例。
 
         不要直接调用 TStrings 的 Create 方法。 TStrings 是一个抽象类，其构造函数只能作为派生类构造函数的继承方法进行调用。"""
@@ -27724,7 +29322,7 @@ class Strings(Persistent):
         """TStrings.Delete(i)
 
         删除索引 i 处的字符串（以及关联的对象"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TStrings 实例并释放其内存。
 
         不要直接调用 Destroy。而是调用 Free。在调用 Destroy 之前，Free 检查对象引用是否不为 nil。"""
@@ -27751,7 +29349,7 @@ class Strings(Persistent):
         返回给定索引的字符串。
         Get 是 Strings 属性的受保护读取实现。
         在 TStrings 中，Get 是抽象的，或者用 C++ 术语来说，是纯虚拟的，这意味着它没有实现。后代类必须重写此方法以返回具有指定索引的字符串。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TStrings 枚举器。
 
         GetEnumerator 返回 TStringsEnumerator 引用，该引用枚举 TStrings 对象中的字符串。
@@ -27763,7 +29361,7 @@ class Strings(Persistent):
         GetObject 是 Objects 属性的受保护读取实现。
         Index 是与对象关联的字符串的索引。
         在 TStrings 中，GetObject 始终返回空。这为不支持将对象与列表中的字符串关联的后代提供了默认实现。支持此功能的后代重写 GetObject 以返回指定的对象。"""
-    def GetText(self, *args, **kwargs) -> Any:
+    def GetText(self) -> str:
         """分配文本缓冲区并用 Text 属性的值填充它。
 
         调用 GetText 获取动态分配的字符缓冲区，其中包含列表中的所有字符串。在 OS X 操作系统上，各个字符串由回车符 (#13) 分隔；在 Windows 操作系统上，各个字符串由回车符和换行符 (#13#10) 分隔。调用者负责使用 StrDispose 过程释放返回值。"""
@@ -27855,7 +29453,7 @@ class Strings(Persistent):
 
         设置文本属性。
         调用 SetText 将列表替换为 Text 参数指定的字符串。 SetText 一次将一个字符串添加到列表中，使用 Text 中的回车符或换行符作为分隔符，指示何时添加新字符串。"""
-    def ToObjectArray(self, *args, **kwargs) -> Any:
+    def ToObjectArray(self) -> list:
         """返回与字符串关联的 TObject 数组。
 
 
@@ -27863,7 +29461,7 @@ class Strings(Persistent):
 
         注意：TStrings是一个抽象类，该方法没有任何作用。后代类可以将对象与字符串关联起来。
         注意：TStrings 对象不拥有 Objects 数组中的对象。即使 TStrings 对象被销毁，添加到 Objects 数组中的对象仍然存在。它们必须由应用程序显式销毁。"""
-    def ToStringArray(self, *args, **kwargs) -> Any:
+    def ToStringArray(self) -> list:
         """用于将其他数据类型转换为字符串数组。。
 
 
@@ -27919,17 +29517,17 @@ class Strings(Persistent):
 class StyleInfo:
     """TStyleInfo 类型的包装器"""
     __hash__: ClassVar[None] = ...
-    Author: Any
+    Author: str
     """提供对样式信息作者的访问"""
     AuthorEMail: Any
     """提供对样式信息的作者电子邮件的访问"""
-    AuthorUrl: Any
+    AuthorUrl: str
     """提供对样式信息的作者 URL 的访问"""
-    Name: Any
+    Name: str
     """提供对样式信息名称的访问"""
-    Version: Any
+    Version: str
     """提供对样式信息版本的访问"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -27988,7 +29586,7 @@ class StyleManager(Object):
     """用于获取与指定样式类相关的描述符。"""
     StyleNames: Any
     """用于获取当前应用程序中可用的所有样式（Styles）的名称。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -28013,7 +29611,7 @@ class StyleManager(Object):
         Message 传递给引擎的消息。
         DefWndProc 为消息调用的默认窗口过程。"""
     @classmethod
-    def Initialize(cls, *args, **kwargs) -> Any:
+    def Initialize(cls) -> None:
         """初始化有关样式和样式引擎的数据。
 
         注意：此功能仅供内部使用。不要直接调用它。"""
@@ -28084,7 +29682,7 @@ class StyleManager(Object):
 
         用于移除指定的设计时样式（Designing Style）或者清除控件的设计时样式。"""
     @classmethod
-    def ResetDesigningStyles(cls, *args, **kwargs) -> Any:
+    def ResetDesigningStyles(cls) -> None:
         """ 用于重置控件的设计时样式（Designing Style）。"""
     @classmethod
     def SetDesigningStyle(cls, Name: str) -> None:
@@ -28126,7 +29724,7 @@ class StyleManager(Object):
         Name 一个字符串，指定要设置为活动的样式的名称。
         ShowErrorDialog 指定如果无法将样式设置为活动样式，是否显示错误对话框。"""
     @classmethod
-    def UnInitialize(cls, *args, **kwargs) -> Any:
+    def UnInitialize(cls) -> None:
         """取消初始化有关样式和样式引擎的数据。
 
 
@@ -28220,7 +29818,7 @@ class TabControl(CustomTabControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """用于访问TabControl控件中包含的子控件。"""
@@ -28261,7 +29859,7 @@ class TabControl(CustomTabControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -28269,9 +29867,9 @@ class TabControl(CustomTabControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的底层 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HotTrack: bool
     """bool：决定鼠标所在选项卡上的标签是否自动突出显示。
@@ -28369,7 +29967,7 @@ class TabControl(CustomTabControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于获取或设置TabSheet控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -28396,7 +29994,7 @@ class TabControl(CustomTabControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     Style: TabStyle
     """TabStyle：指定选项卡控件的样式。
@@ -28466,7 +30064,7 @@ class TabControl(CustomTabControl):
         调用 Show 方法将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子代，Show 和 ShowModal 方法将 Visible 设置为 True，并将表单置于所有打开窗口的前面。
         对于 TTabSheet 子代，Visible 不控制运行时控件的可见性。有关更多信息，请参阅 TabVisible 属性的描述。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -28553,7 +30151,7 @@ class TabSheet(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回所包含控件的数量"""
     Controls: Any
     """用于存储TabSheet控件中包含的子控件。"""
@@ -28575,7 +30173,7 @@ class TabSheet(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 子控件。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中的文本的属性。
@@ -28583,9 +30181,9 @@ class TabSheet(WinControl):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用备用控件，其 Font 属性将更改标题或文本的颜色（如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """提供对控件的底层 Windows 屏幕对象的访问。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     Height: int
     """int：指定控件的垂直尺寸（以像素为单位）。
@@ -28667,7 +30265,7 @@ class TabSheet(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """用于获取或设置TabSheet控件的父窗口句柄。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -28683,7 +30281,7 @@ class TabSheet(WinControl):
         控件自己的 ShowHint 属性必须为 True，或者控件的 ParentShowHint 属性必须为 True 并且其父级的 ShowHint 属性必须为 True。
         例如，假设组框中有一个复选框。如果组框的 ShowHint 属性为 True，并且复选框的 ParentShowHint 属性为 True，但复选框的 ShowHint 属性为 False，则复选框仍显示其帮助提示。
         更改 ShowHint 值会自动将 ParentShowHint 属性设置为 False。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabIndex: Any
     """指示标签页在 TPageControl 对象中可见选项卡集合中的位置。"""
@@ -28719,7 +30317,7 @@ class TabSheet(WinControl):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -28734,7 +30332,7 @@ class TabSheet(WinControl):
         调用 Create 在运行时实例化选项卡表。在设计时添加到页面控件的选项卡表是自动创建的。
         Create 调用继承的 Create 方法，然后设置选项卡表组件的初始值。
         在运行时创建选项卡时，请使用 PageControl 属性将它们插入到页面控制对象中。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TTabSheet 的实例。
 
         不要在运行时直接调用 Destroy。而是调用 Free。 Free 验证选项卡不为空，然后才调用 Destroy。 Destroy 从页面控件中删除选项卡表，然后调用继承的 Destroy 方法。"""
@@ -28798,7 +30396,7 @@ class Timer(Component):
 
     警告：系统范围内计时器总数的限制取决于系统。"""
     __hash__: ClassVar[None] = ...
-    ComponentCount: Any
+    ComponentCount: int
     """用于获取容器组件中子组件的数量。"""
     Components: Any
     """返回拥有组件的迭代器"""
@@ -28817,7 +30415,7 @@ class Timer(Component):
     """当Timer组件计时器到达设定的时间间隔时触发。"""
     Owner: Any
     """用于获取或设置拥有（拥有者）Timer组件的组件或控件。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -28834,7 +30432,7 @@ class Timer(Component):
         实例化一个计时器对象。
         调用 Create 在运行时实例化计时器。在设计时添加到表单或数据模块的计时器是自动创建的。
         AOwner 指定负责释放计时器的组件，通常是表单或数据模块。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """用于释放Timer对象所占用的内存空间和资源。
 
         不要直接在应用程序中调用 Destroy。相反，应用程序应该调用 Free。 Free 在调用 Destroy 之前验证计时器不为零。
@@ -29178,7 +30776,7 @@ class ToggleSwitch(CustomToggleSwitch):
         使用 Width 属性读取或更改控件的宽度。
 
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -29653,7 +31251,7 @@ class ToolBar(WinControl):
     """bool：为工具栏中的组件启用自动换行。
 
         如果 Wrapable 为 true，则当组件在工具栏中无法水平放置时，它们会自动换行并形成新行。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -29667,7 +31265,7 @@ class ToolBar(WinControl):
         创建并初始化 TToolBar 实例。
         调用 Create 在运行时创建工具栏。在设计时添加到表单的工具栏会自动创建。
         AOwner 是负责释放工具栏实例的组件（通常是表单）。它成为 Owner 属性的值。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TToolBar 实例并释放其内存。
 
         不要直接在应用程序中调用 Destroy。而是调用 Free。 Free 验证 TToolBar 引用不为空，然后才调用 Destroy。"""
@@ -29683,7 +31281,7 @@ class ToolBar(WinControl):
         GetChildren 是在 TComponent 中引入的，用于加载和保存 VCL 组件的流系统。它为工具栏中的所有按钮以及以工具栏为父级且以 Root 指定为所有者的组件的任何其他控件执行 Proc 指定的回调。
         Proc 是流系统用于在表单上加载或保存持久对象的回调。
         根是当前正在加载或保存的顶级组件（例如表单或数据模块）。"""
-    def GetEnumerator(self, *args, **kwargs) -> Any:
+    def GetEnumerator(self) -> Any:
         """返回 TComponent 枚举器。
 
         Vcl.ComCtrls.TToolBar.GetEnumerator 继承自System.Classes.TComponent.GetEnumerator。此行下面的所有内容均引用 System.Classes.TComponent.GetEnumerator。
@@ -29887,7 +31485,7 @@ class ToolButton(Control):
         注意：对于选项卡表控件，在运行时更改此属性没有任何效果。"""
     Wrap: bool
     """布尔："""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -29895,9 +31493,9 @@ class ToolButton(Control):
         """TControl.BringToFront()
 
         将控件置于其父控件中所有其他控件的前面。"""
-    def CheckMenuDropdown(self, *args, **kwargs) -> Any: ...
+    def CheckMenuDropdown(self, X: int, Y: int) -> None:
         """用于检查菜单项是否可以下拉显示子菜单。"""
-    def Click(self, *args, **kwargs) -> Any:
+    def Click(self) -> None:
         """响应用户点击。
 
         当用户左键单击该控件时，将自动调用 Click。组件或应用程序代码可以调用 Click 来模拟用户鼠标单击。这通常在菜单操作和热键处理程序中完成。
@@ -30031,7 +31629,7 @@ class TrackBar(WinControl):
 
         注意：约束适用于表格的高度。但是，窗体的高度取决于 Windows 使标题栏有多大。例如，Windows XP 使用比其他窗口系统大得多的标题栏。要解决此问题，请在设计表单时记下 ClientHeight 并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：请勿设置与 Align 或 Anchors 属性的值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -30069,7 +31667,7 @@ class TrackBar(WinControl):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 后代。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Frequency: int
     """int：指定轨迹栏上刻度线之间的增量。
@@ -30077,9 +31675,9 @@ class TrackBar(WinControl):
         使用“频率”来指定刻度线的间距，并使用“位置”属性使用的逻辑单位。例如，频率为 5，每隔五个可能的增量设置一个刻度线。要提供有关跟踪栏使用的单位的视觉反馈，请将频率设置为 LineSize 或 PageSize。
 
         注意：如果 TickStyle 属性的值未设置为 tsAuto，则Frequency 的值将被忽略。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     LineSize: int
     """int：表示当用户按下方向键时Position的值改变的量。
@@ -30152,7 +31750,7 @@ class TrackBar(WinControl):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -30197,7 +31795,7 @@ class TrackBar(WinControl):
     """bool：指定轨迹栏是否显示选择范围。
 
         如果设置为 True，则显示轨迹栏上的选择范围。如果设置为 False，则不显示选择范围。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SliderVisible: bool
     """bool：指定轨迹栏的滑块是否可见。
@@ -30267,7 +31865,7 @@ class TrackBar(WinControl):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子窗体，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 子控件，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -30350,57 +31948,55 @@ class TreeNodes(Persistent):
     """用于存储和管理TTreeView控件中的节点数据及层次结构。"""
     def Create(self, AOwner: Component) -> None:
         """用于创建一个TTreeNodes对象实例，初始化树节点集合。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """用于销毁TTreeNodes对象实例，释放其占用的资源。"""
-    def AddChildFirst(self, *args, **kwargs) -> Any:
+    def AddChildFirst(self, Parent: Any, S: str) -> Any:
         """用于在指定节点的子节点列表的最前面添加一个新的子节点。"""
-    def AddChild(self, *args, **kwargs) -> Any:
+    def AddChild(self, Parent: Any, S: str) -> Any:
         """用于在指定节点下添加一个新的子节点。"""
-    def AddChildObjectFirst(self, *args, **kwargs) -> Any:
+    def AddChildObjectFirst(self, Parent: Any, S: str, Ptr: Any) -> Any:
         """用于在指定节点的子节点列表最前面添加一个新的子节点，并关联一个对象。"""
-    def AddChildObject(self, *args, **kwargs) -> Any:
+    def AddChildObject(self, Parent: Any, S: str, Ptr: Any) -> Any:
         """用于在指定节点的子节点列表最后面添加一个新的子节点，并关联一个对象。"""
-    def AddObjectFirst(self, *args, **kwargs) -> Any:
+    def AddObjectFirst(self, Sibling: Any, S: str, Ptr: Any) -> Any:
         """用于在树节点集合的最前面添加一个新的节点，并关联一个对象。"""
-    def AddObject(self, *args, **kwargs) -> Any:
+    def AddObject(self, S: str, AObject: Any) -> int:
         """用于在树节点集合的最后面添加一个新的节点，并关联一个对象。"""
-    def AddNode(self, *args, **kwargs) -> Any:
+    def AddNode(self, Node: Any, Relation: Any) -> Any:
         """用于在指定位置添加一个新的树节点，可指定父节点和插入位置。"""
-    def AddFirst(self, *args, **kwargs) -> Any:
+    def AddFirst(self, Sibling: Any, S: str) -> Any:
         """用于在树节点集合的最前面添加一个新的节点。"""
-    def Add(self, *args, **kwargs) -> Any:
+    def Add(self, S: str) -> int:
         """用于在树节点集合的最后面添加一个新的节点。"""
-    def AlphaSort(self, *args, **kwargs) -> bool:
+    def AlphaSort(self) -> bool:
         """用于对树节点集合中的节点进行排序。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """用于将一个树节点集合的内容复制到另一个树节点集合中。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """用于开始更新树节点集合，防止在更新过程中控件重绘，以提高性能。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """用于清除树节点集合中的所有节点。"""
-    def Delete(self, *args, **kwargs) -> Any:
+    def Delete(self, Index: int) -> None:
         """用于删除树节点集合中指定索引的节点。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """用于结束更新树节点集合，允许控件重新绘制，以显示最新的节点状态。"""
-    def GetFirstNode -> Any:
+    def GetFirstNode(self) -> Any:
         """用于获取树节点集合中的第一个节点。"""
-    def GetEnumerator -> Any:
+    def GetEnumerator(self) -> Any:
         """用于获取一个枚举器，以便遍历树节点集合中的所有节点。"""
-    def GetNode(self, *args, **kwargs) -> Any:
+    def GetNode(self, ItemId: Any) -> Any:
         """用于根据索引获取树节点集合中的特定节点。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self, Index: int, S: str) -> None:
         """用于在树节点集合的指定索引位置插入一个新的节点。"""
-    def InsertObject(self, *args, **kwargs) -> Any:
+    def InsertObject(self, Index: int, S: str, AObject: Any) -> None:
         """用于在指定索引位置插入一个新的节点，并关联一个对象。"""
-    def InsertNode(self, *args, **kwargs) -> Any:
+    def InsertNode(self, Sibling: Any, Index: int) -> Any:
         """用于在指定位置插入一个新的树节点，可指定父节点和插入位置。"""
-    def CustomSort(self, *args, **kwargs) -> bool:
-        """用于对树节点集合中的节点进行自定义排序。"""
-    def CustomSort(self, *args, **kwargs) -> bool:
+    def CustomSort(self, Compare: Any) -> None:
         """用于根据用户定义的比较函数对树节点进行排序。"""
     Count: int
     """用于获取树节点集合中的节点总数。"""
-    Handle: Any
+    Handle: int
     """用于获取与树节点集合关联的树形控件的窗口句柄。"""
     Item: Any
     """用于根据索引访问树节点集合中的特定节点。"""
@@ -30416,7 +32012,7 @@ class TreeNode(Persistent):
     """用于表示节点的选中状态。"""
     Checked: bool
     """用于表示该节点是否被选中（或者说“被检查”）。"""
-    ClassName: Any
+    ClassName: str
     """返回 TObject.ClassName"""
     Count: int
     """使用Count来确定拥有树节点对象的树视图中树节点的数量。在迭代Item属性数组中的项时，Count提供了一个上界。"""
@@ -30474,7 +32070,7 @@ class TreeNode(Persistent):
     """如果包装器仍绑定到实例，则返回 True。"""
     __owned__: Any
     """如果包装器拥有实例，则返回 True。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: TreeNodes) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -30498,57 +32094,57 @@ class TreeNode(Persistent):
         注意：如果构造函数中出现异常，则调用对象的析构函数来清理失败的实例。"""
     def CustomSort(self, SortProc: Callable[[int,int,int],int], Data: int, ARecurse: bool) -> bool:
         """对 TTreeView 控件中的节点进行自定义排序"""
-    def Delete(self, *args, **kwargs) -> Any: ...
+    def Delete(self, Index: int) -> None:
         """删除一个 TTreeNode（TreeNode 的实例）。"""
-    def DeleteChildren(self, *args, **kwargs) -> Any: ...
+    def DeleteChildren(self) -> None:
         """删除指定节点下的所有子节点。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TPersistent 实例并释放其内存。
 
         不要直接调用 Destroy。而是调用 Free。在调用 Destroy 之前，Free 检查对象引用是否不为 nil。"""
     def DisplayRect(self, TextOnly: bool) -> Rect:
         """用来获取一个控件（可能是 TCustomEdit 或类似的文本输入控件）的显示矩形，这个矩形可能根据是否只包含文本（TextOnly 参数）而有所不同。"""
-    def EditText(self, *args, **kwargs) -> Any: ...
+    def EditText(self) -> None:
         """用于接收用户的文本输入。"""
     def EndEdit(self, Cancel: bool) -> None:
         """用于指示是否应取消编辑。"""
     def Expand(self, Recurse: bool) -> None:
         """树节点展开"""
-    def GetHandle(self, *args, **kwargs) -> Any: ...
+    def GetHandle(self) -> int:
         """获取句柄。"""
-    def GetLastChild(self, *args, **kwargs) -> Any: ...
+    def GetLastChild(self) -> Any:
         """获取给定节点（TreeNode）的最后一个子节点。"""
     def GetNamePath(self) -> Any:
         """TPersistent.GetNamePath()
 
         返回该对象在“对象察看器”中所显示的名称。"""
-    def GetNext(self, *args, **kwargs) -> Any: ...
+    def GetNext(self) -> Any:
         """获取给定节点（TreeNode）的后一个节点。"""
     def GetNextChild(self, Value: TreeNode) -> TreeNode:
         """用于获取特定节点（TreeNode）的下一个子节点的方法。"""
-    def GetNextVisible(self, *args, **kwargs) -> Any: ...
+    def GetNextVisible(self) -> Any:
         """返回能看得到的下一个项"""
-    def GetPrev(self, *args, **kwargs) -> Any: ...
+    def GetPrev(self) -> Any:
         """获取给定节点（TreeNode）的前一个节点。"""
     def GetPrevChild(self, Value: TreeNode) -> TreeNode:
         """获取给定节点（TreeNode）的前一个子节点。"""
-    def GetPrevVisible(self, *args, **kwargs) -> Any: ...
+    def GetPrevVisible(self) -> Any:
         """返回能看得到的上一个项"""
     def HasAsParent(self, Value: TreeNode) -> bool:
         """用于检查一个给定的 TreeNode（树节点）是否是另一个 TreeNode（通常是 self）的父节点或更高层级的节点。"""
     def IndexOf(self, Value: TreeNode) -> int:
         """用于获取一个特定的 TreeNode 在 TTreeNodes 对象中的索引。"""
-    def IsFirstNode(self, *args, **kwargs) -> Any: ...
+    def IsFirstNode(self) -> bool:
         """用来判断一个节点是否是第一个节点。"""
-    def MakeVisible(self, *args, **kwargs) -> Any: ...
+    def MakeVisible(self) -> None:
         """用于确保某个元素是可见的。"""
     def MoveTo(self, Destination: TreeNode, Mode: NodeAttachMode) -> None:
         """将一个节点移动到另一个位置。"""
-    def getFirstChild(self, *args, **kwargs) -> Any: ...
+    def getFirstChild(self) -> Any:
         """"用于获取同级节点的第一个节点。"""
-    def getNextSibling(self, *args, **kwargs) -> Any: ...
+    def getNextSibling(self) -> Any:
         """"用于获取同级节点的后一个节点。"""
-    def getPrevSibling(self, *args, **kwargs) -> Any: ...
+    def getPrevSibling(self) -> Any:
         """"用于获取同级节点的前一个节点。"""
     def __delattr__(self, name) -> Any:
         """用于在删除对象的属性时触发。当您使用delattr()函数或del语句删除对象的属性时，该方法将被调用。"""
@@ -30661,7 +32257,7 @@ class TreeView(CustomTreeView):
 
         注意：约束适用于窗体的高度。但是，窗体的高度取决于 Windows 的标题栏大小。例如，Windows XP 使用的标题栏比其他窗口系统大得多。要解决此问题，请在设计窗体时注意 ClientHeight，并在 FormCreate 事件中设置约束。在以下示例中，ClientHeight 由 x 表示：Constraints.MinHeight?:= x + Height - ClientHeight。
         警告：不要设置与 Align 或 Anchors 属性值冲突的约束。当这些属性发生冲突时，控件对调整大小尝试的响应没有明确定义。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -30698,7 +32294,7 @@ class TreeView(CustomTreeView):
         要重新启用控件，请将 Enabled 设置为 True。
 
         注意：此属性适用于所有 TControl 派生类。"""
-    Focused: Any
+    Focused: bool
     """确定控件是否具有输入焦点。"""
     Font: Font
     """字体：指定控件上或控件中写入的文本的属性。
@@ -30706,9 +32302,9 @@ class TreeView(CustomTreeView):
         要更改为新字体，请指定新的 TFont 对象。要修改字体，请更改 TFont 对象的字符集、颜色、高度、名称、间距、大小或样式的值。
 
         注意：某些控件（例如 TButton）不支持更改标题的字体颜色。在大多数情况下，您可以使用另一个控件，其 Font 属性将更改标题或文本的颜色（例如 TBitBtn 或 TSpeedButton）。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
-    HandleAllocated: Any
+    HandleAllocated: bool
     """报告该控件是否存在屏幕对象句柄。"""
     HideSelection: bool
     """这个属性决定了当控件失去焦点时，其内部的文本选择（即高亮部分）是否应该被隐藏。"""
@@ -30845,7 +32441,7 @@ class TreeView(CustomTreeView):
         如果想在表单上只为选定的控件提供帮助提示，可以将那些需要显示帮助提示的控件的ShowHint属性设置为True，此时ParentShowHint会自动变为False。
 
         注意：要启用或禁用整个应用程序的所有帮助提示，请使用应用程序对象的ShowHint属性。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PopupMenu: PopupMenu
     """PopupMenu：指定与控件关联的弹出菜单。
@@ -30873,7 +32469,7 @@ class TreeView(CustomTreeView):
     """用于控制某些可视化组件（如 TStringGrid、TDrawGrid 或自定义的绘图控件等）是否显示网格线。"""
     ShowRoot: bool
     """用于控制是否显示某个结构的根节点或元素。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     SortType: SortType
     """排序类型："""
@@ -30920,7 +32516,7 @@ class TreeView(CustomTreeView):
         调用 Show 方法会将控件的 Visible 属性设置为 True。调用 Hide 方法将其设置为 False。
         对于 TCustomForm 子体，Show 和 ShowModal 方法将 Visible 设置为 True，并将窗体置于所有打开的窗口的前面。
         对于 TTabSheet 子控件，Visible 不控制运行时控件的可见性。有关详细信息，请参阅 TabVisible 属性的说明。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -30985,7 +32581,7 @@ class VarParameter:
     __hash__: ClassVar[None] = ...
     Value: Any
     """提供对与 Var 参数关联的值的访问"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -31043,7 +32639,7 @@ class WinControl(Control):
     """画笔：确定用于绘制控件背景的颜色和图案。
 
         Brush 属性访问 TBrush 对象，该对象确定控件背景的图案和颜色。 Brush 是只读属性，但应用程序可以通过设置其属性或使用其分配方法来操作 TBrush 对象。"""
-    ControlCount: Any
+    ControlCount: int
     """返回包含的控件的数量"""
     Controls: Any
     """返回包含控件的迭代器"""
@@ -31071,7 +32667,7 @@ class WinControl(Control):
         当窗口控件是停靠站点并且具有关联的停靠管理器时，它必须是双缓冲的。
 
         注意：某些控件（例如 TRichEdit）无法将自身绘制到位图中。对于此类控件，DoubleBuffered 必须设置为 false。"""
-    Handle: Any
+    Handle: int
     """为控件提供访问底层Windows屏幕对象的功能。"""
     IsDrawingLocked: bool
     """bool：当此控件的重绘被锁定时，IsDrawingLocked 属性返回 True。当对该控件的 LockDrawing 调用次数少于 UnlockDrawing 调用次数时，它为 True。"""
@@ -31087,7 +32683,7 @@ class WinControl(Control):
     """ParentDoubleBuffered 这个属性决定了此组件的DoubleBuffered属性是否遵循其父组件的DoubleBuffered属性的值。
 
         ParentDoubleBuffered是一个布尔值，当它为真（True）时，表示此组件的DoubleBuffered属性被其父组件的DoubleBuffered属性的值所覆盖。"""
-    ParentWindow: Any
+    ParentWindow: int
     """引用父级的底层控制。"""
     PixelsPerInch: int
     """用来获取或设置当前设备或上下文的分辨率。"""
@@ -31095,7 +32691,7 @@ class WinControl(Control):
     """bool：当此控件的重绘被锁定时，RedrawDisabled 属性返回 True。它与 IsDrawingLocked 类似，但使用 Win32 API 来确定何时禁用 Win32 窗口重绘。
 
         例如，当使用 LockDrawing 锁定父控件重绘时，IsDrawingLocked 对于父控件返回 True，对于子控件返回 False。 RedrawDisabled 对父控件和子控件都返回 True。"""
-    Showing: Any
+    Showing: bool
     """指示控件是否显示在屏幕上。"""
     TabOrder: int
     """int：指示控件在其父级 Tab 键顺序中的位置。
@@ -31122,7 +32718,7 @@ class WinControl(Control):
     """int：指定停靠在窗口控件上的可见控件的数量。
 
         使用 VisibleDockClientCount 确定 DockClients 列表中 Visible 属性值为 true 的控件的数量。该值小于或等于 DockClientCount 的值。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化对象本身。
 
         用于初始化新创建的对象的状态。请参阅 help(type(self)) 以获取准确的签名。"""
@@ -31176,11 +32772,11 @@ class WinControl(Control):
 
         注意：在消息处理方法中调用继承会导致调用基类的 DefaultHandler 方法，除非基类为消息指定了显式处理程序。
         TWinControl 重写 TControl DefaultHandler 方法来处理其所有派生类型的消息。 DefaultHandler 使用 CallWindowProc API 函数将任何未处理的消息传递给控件的窗口过程。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁 TWinControl 的实例。
 
         不要直接在应用程序中调用 Destroy。而应该调用 Free。Free 会先验证 TWinControl 引用是否不为空，然后才会调用 Destroy。"""
-    def DisableAlign(self, *args, **kwargs) -> Any:
+    def DisableAlign(self) -> None:
         """禁用子控件的重新对齐。
 
         调用DisableAlign暂时阻止子控件重新对齐。例如，在执行控件的多个操作（例如从表单文件读取或缩放）时，如果在所有操作完成之前不重新对齐子控件，则性能会提高。 EnableAlign 方法恢复正常的子重新对齐。
@@ -31193,7 +32789,7 @@ class WinControl(Control):
         当控件停靠到窗口控件时，会自动调用 DockDrop。它指示正在放下的控件为停靠操作做好准备，然后生成 OnDockDrop 事件。
         尽管您可以重写 DockDrop 来执行除生成的 OnDockDrop 事件之外的操作，但通常后代类会重写 DoAddDockClient 方法。这是因为 DoAddDockClient 是由客户端在执行完自己的准备工作之后、OnDockDrop 事件之前调用的。
         仅当 DockSite 为 True 时才调用 DockDrop。"""
-    def EnableAlign(self, *args, **kwargs) -> Any:
+    def EnableAlign(self) -> None:
         """减少由DisableAlign 方法增加的引用计数，最终重新对齐子控件。
 
         调用 EnableAlign 以允许控件中的子控件在通过调用 DisableAlign 阻止子控件重新对齐后再次重新对齐。
@@ -31215,7 +32811,7 @@ class WinControl(Control):
         当应用程序在中东语言环境中运行时，FlipChildren 可用于反转应用程序的布局，其中用户从右到左而不是从左到右阅读：调用 UseRightToLeftAlignment 来确定 BiDiMode 属性是否指示基于系统语言环境的反转对齐。
 
         注意：FlipChildren 与 IDE 中控件的上下文菜单上的“Flip Children”命令执行相同的操作。"""
-    def Focused(self, *args, **kwargs) -> Any:
+    def Focused(self) -> bool:
         """确定控件是否具有输入焦点。
 
         使用 Focused 方法查看该控件是否是活动控件。当 Focused 返回 true 时，控件具有输入焦点。如果 Focused 返回 false，则用户无法与控件交互。"""
@@ -31239,12 +32835,12 @@ class WinControl(Control):
         调用 GetTabOrderList 以按 Tab 键顺序构造子控件列表。
         GetTabOrderList 循环访问控件的内部 Tab 键顺序列表，将每个子控件添加到 List，包括这些控件中包含的任何控件。结果是所有控件及其拥有的控件的列表，按 Tab 键顺序排列。
         FindNextControl 方法调用 GetTabOrderList 来构建 FindNextControl 用于定位 Tab 键顺序中的下一个控件的控件的完整列表。"""
-    def HandleAllocated(self, *args, **kwargs) -> Any:
+    def HandleAllocated(self) -> bool:
         """报告该控件是否存在屏幕对象句柄。
 
         查询 HandleAllocation 以查明控件的基础屏幕对象是否已生成。
         如果屏幕对象存在，HandleAllocation 返回 true。如果屏幕对象不存在，HandleAlulated 返回 false。测试控件的 Handle 属性会直接导致创建窗口（如果该窗口尚不存在）。调用 HandleAllocation 方法来确定窗口是否存在，而不会产生创建窗口的副作用。"""
-    def HandleNeeded(self, *args, **kwargs) -> Any:
+    def HandleNeeded(self) -> None:
         """如果控件尚不存在，则为该控件创建一个屏幕对象。
 
         调用 HandleNeeded 为控件创建屏幕对象。
@@ -31255,12 +32851,12 @@ class WinControl(Control):
         将控件插入 Controls 数组属性中。
         应用程序不需要直接调用 InsertControl。在设计时添加或删除子控件时，会自动插入和删除。在运行时，使用子控件的 Parent 属性将其插入 Controls 数组中。如果子控件已经是另一个控件的子控件，则设置 Parent 属性可确保将该子控件从原始父控件的控件中删除。
         InsertControl 使插入的控件成为子控件，使包含控件成为父控件。 AControl 参数是插入到 Controls 数组中的子控件。"""
-    def Invalidate(self, *args, **kwargs) -> Any:
+    def Invalidate(self) -> None:
         """安排控件重绘。
 
         Invalidate 通知控件其整个表面需要重新绘制。调用Invalidate可以防止一系列部分重画引起的闪烁。在实际重新绘制控件之前多次调用 Invalidate 不会造成性能损失。
         在更新控件之前，不会发生实际的重绘。要强制立即重新绘制，请改为调用 Repaint。"""
-    def LockDrawing(self, *args, **kwargs) -> Any:
+    def LockDrawing(self) -> None:
         """调用 LockDrawing 方法以防止重绘该控件中的更改。要恢复重绘，请调用 UnlockDrawing 方法。如果在 LockDrawing 调用后重新创建窗口句柄，则控件将保持锁定状态，直到相应的 UnlockDrawing 调用为止。
 
         LockDrawing / UnlockDrawing 调用可以嵌套。"""
@@ -31279,7 +32875,7 @@ class WinControl(Control):
         作为 TWinControl 类的成员，PreProcessMessage 始终返回 False，无论 Msg 的值是什么。
 
         注意：在子类中重写 PreProcessMessage 时，我们建议实现如下：如果 Msg 是预处理消息，则返回 True，否则返回 False。"""
-    def Realign(self, *args, **kwargs) -> Any:
+    def Realign(self) -> None:
         """强制控件重新排列子项。
 
         当引用计数达到零时，EnableAlign 方法调用 Realign。它根据子控件的对齐属性调整其大小和位置。
@@ -31290,7 +32886,7 @@ class WinControl(Control):
         从 Controls 数组中删除指定的控件。
         RemoveControl 从 Controls 属性中删除子控件。调用RemoveControl后，该控件不再是AControl参数指定的子控件的父控件。
         应用程序不应直接调用RemoveControl。在设计时添加或删除子控件时，会自动插入和删除。在运行时，使用子控件的 Parent 属性将其从 Controls 数组中删除。"""
-    def Repaint(self, *args, **kwargs) -> Any:
+    def Repaint(self) -> None:
         """重新绘制整个控件。
 
         调用 Repaint 来重新绘制控件。
@@ -31329,16 +32925,16 @@ class WinControl(Control):
         """TWinControl.SetFocus()
 
         用于将键盘的输入焦点设置到特定的控件上。"""
-    def UnlockDrawing(self, *args, **kwargs) -> Any:
+    def UnlockDrawing(self) -> None:
         """调用 UnlockDrawing 方法以允许重绘该控件中的更改。
 
         LockDrawing / UnlockDrawing 调用可以嵌套。"""
-    def Update(self, *args, **kwargs) -> Any:
+    def Update(self) -> None:
         """强制更新控件。
 
         更新会重新绘制过时的控制表面的任何部分。通常，更新会自动发生，但在可能会干扰自动更新的冗长处理之前可能需要进行 Update 调用。不必要地调用 Update 会增加开销并导致屏幕闪烁。
         更新仅重新绘制已确定为过时的控件区域。要强制立即重新绘制整个控件，请调用 Repaint 方法。要通知控件它已过期（不强制立即重新绘制），请调用 Invalidate 方法。"""
-    def UpdateControlState(self, *args, **kwargs) -> Any:
+    def UpdateControlState(self) -> None:
         """响应状态变化。
 
         当发生任何可能影响控件内部状态的显示更改时，会自动调用 UpdateControlState。
@@ -31420,17 +33016,17 @@ class CustomActionBar(ToolWindow):
     CustomActionBar提供了丰富的属性和方法，用于定制操作栏的外观和行为。它允许开发人员创建灵活且功能强大的用户界面组件。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomActionBar类的实例并初始化其状态。该方法会设置操作栏的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomActionBar类的实例。该方法会释放实例占用的资源和内存，确保操作栏被正确地销毁。"""
-    def CreateControl(self, *args, **kwargs) -> Any:
+    def CreateControl(self) -> None:
         """CreateControl函数用于创建操作栏的控件。该方法可以用于动态生成操作栏中的控件，满足自定义界面的需求。"""
-    def DesignWndProc(self, *args, **kwargs) -> Any:
+    def DesignWndProc(self, Message: Any) -> None:
         """DesignWndProc函数用于处理设计时窗口消息。该方法在设计模式下拦截并处理特定的窗口消息，以支持设计时的操作和交互。"""
-    def DoDropCategory(self, *args, **kwargs) -> Any:
+    def DoDropCategory(self, Category: Any, Position: Any) -> None:
         """DoDropCategory函数用于处理类别拖放操作。该方法在类别被拖放到操作栏上时执行相应的处理逻辑。"""
-    def FindAccelItem(self, *args, **kwargs) -> Any:
+    def FindAccelItem(self, Accel: int) -> Any:
         """FindAccelItem函数用于查找加速键对应的项。该方法根据提供的参数查找并返回匹配的操作栏项。"""
-    def DragDrop(self, *args, **kwargs) -> Any:
+    def DragDrop(self, Source: Any, X: int, Y: int) -> None:
         """DragDrop函数用于处理拖放操作。该方法在拖放操作发生时执行相应的处理逻辑，以实现拖放功能。"""
     def FindFirst(self) -> Any:
         """FindFirst函数用于查找第一个项。该方法返回操作栏中的第一个项。"""
@@ -31438,9 +33034,9 @@ class CustomActionBar(ToolWindow):
         """FindFirstVisibleItem函数用于查找第一个可见项。该方法返回操作栏中第一个可见的项。"""
     def FindLastVisibleItem(self) -> Any:
         """FindLastVisibleItem函数用于查找最后一个可见项。该方法返回操作栏中最后一个可见的项。"""
-    def RecreateControls(self, *args, **kwargs) -> Any:
+    def RecreateControls(self) -> None:
         """RecreateControls函数用于重新创建控件。该方法重新生成操作栏中的所有控件，以适应新的布局或配置。"""
-    def SetBounds(self, *args, **kwargs) -> Any:
+    def SetBounds(self, ALeft: int, ATop: int, AWidth: int, AHeight: int) -> None:
         """SetBounds函数用于设置控件的边界。该方法根据提供的参数调整操作栏控件的大小和位置。"""
     def IsCustomStyleActive(self) -> Any:
         """IsCustomStyleActive函数用于检查自定义样式是否激活。该方法返回一个布尔值，指示当前是否启用了自定义样式。"""
@@ -31456,11 +33052,11 @@ class CustomActionBar(ToolWindow):
     """AllowHiding指定是否允许隐藏操作栏。使用AllowHiding属性可以控制操作栏是否可以被隐藏。如果设置为True，则用户可以隐藏操作栏；如果设置为False，则操作栏始终可见。"""
     AutoSizing: bool
     """AutoSizing指定是否自动调整操作栏的大小。使用AutoSizing属性可以控制操作栏是否根据其内容自动调整大小。如果设置为True，则操作栏会自动调整大小以适应其内容；如果设置为False，则操作栏大小保持不变。"""
-    Caption: Any
+    Caption: str
     """Caption表示操作栏的标题。使用Caption属性可以获取和设置操作栏的标题文本。该属性用于显示在操作栏上的标题信息。"""
     Canvas: Any
     """Canvas用于绘制操作栏的画布对象。使用Canvas属性可以访问操作栏的绘图画布。该属性允许开发人员在操作栏上自定义绘图和渲染操作。"""
-    Color: Any
+    Color: int
     """Color表示操作栏的背景颜色。使用Color属性可以获取和设置操作栏的背景颜色。该属性用于改变操作栏的外观和风格。"""
     ColorMap: Any
     """ColorMap表示操作栏的颜色映射。使用ColorMap属性可以访问和设置操作栏的颜色映射对象。该属性用于定义操作栏中各个元素的颜色。"""
@@ -31505,7 +33101,7 @@ class CustomActionDockBar(CustomActionBar):
         """Create函数用于创建CustomActionDockBar类的实例并初始化其状态。该方法会设置操作栏的基本属性和结构，为后续的使用做准备。"""
     def CalcDockedWidth(self) -> Any:
         """CalcDockedWidth函数用于计算操作栏在停靠状态下的宽度。该方法返回一个值，表示操作栏在停靠状态下的宽度。"""
-    def Dock(self, *args, **kwargs) -> Any:
+    def Dock(self, NewDockSite: Any, ARect: Any) -> None:
         """Dock函数用于将操作栏停靠到指定位置。该方法根据提供的参数，将操作栏停靠到指定的父容器中。"""
 
 class CustomActionToolBar(CustomActionDockBar):
@@ -31514,17 +33110,17 @@ class CustomActionToolBar(CustomActionDockBar):
     CustomActionToolBar提供了额外的方法和属性，以支持工具栏的创建、销毁、布局和拖放操作。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomActionToolBar类的实例并初始化其状态。该方法会设置工具栏的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomActionToolBar类的实例。该方法会释放实例占用的资源和内存，确保工具栏被正确地销毁。"""
     def CalcDockedWidth(self) -> Any:
         """CalcDockedWidth函数用于计算工具栏在停靠状态下的宽度。该方法返回一个值，表示工具栏在停靠状态下的宽度。"""
-    def CreateControl(self, *args, **kwargs) -> Any:
+    def CreateControl(self) -> None:
         """CreateControl函数用于创建工具栏的控件。该方法可以用于动态生成工具栏中的控件，满足自定义界面的需求。"""
-    def DoDropCategory(self, *args, **kwargs) -> Any:
+    def DoDropCategory(self, Category: Any, Position: Any) -> None:
         """DoDropCategory函数用于处理类别拖放操作。该方法在类别被拖放到工具栏上时执行相应的处理逻辑。"""
-    def DragDrop(self, *args, **kwargs) -> Any:
+    def DragDrop(self, Source: Any, X: int, Y: int) -> None:
         """DragDrop函数用于处理拖放操作。该方法在拖放操作发生时执行相应的处理逻辑，以实现拖放功能。"""
-    def SetBounds(self, *args, **kwargs) -> Any:
+    def SetBounds(self, ALeft: int, ATop: int, AWidth: int, AHeight: int) -> None:
         """SetBounds函数用于设置工具栏控件的边界。该方法根据提供的参数调整工具栏控件的大小和位置。"""
     HiddenCount: int
     """HiddenCount属性用于获取或设置工具栏中隐藏控件的数量。该属性表示当前工具栏中被隐藏的控件数量。"""
@@ -31546,17 +33142,17 @@ class ActionToolBar(CustomActionToolBar):
     BiDiMode: Any
     """BiDiMode属性用于指定工具栏的双向模式。
         该属性控制工具栏文本的阅读顺序、垂直滚动条的位置等。"""
-    Caption: Any
+    Caption: str
     """Caption属性用于指定工具栏的标题。该属性用于显示在工具栏上的标题文本。"""
-    Color: Any
+    Color: int
     """Color属性用于设置工具栏的背景颜色。通过设置Color属性，可以改变工具栏的外观和风格。"""
     ColorMap: Any
     """ColorMap属性用于指定工具栏的颜色映射。该属性定义了工具栏中各个元素的颜色。"""
     Constraints: Any
     """Constraints属性用于指定工具栏的大小约束。通过设置最小和最大宽度和高度，确保工具栏在调整大小时不会超出这些约束。"""
-    Cursor: Any
+    Cursor: int
     """Cursor属性用于指定当鼠标指针位于工具栏上方时显示的光标。通过设置Cursor属性，可以改变工具栏上的鼠标指针样式。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于指定当工具栏被拖动时显示的鼠标指针。通过设置DragCursor属性，可以自定义拖动工具栏时显示的光标图像。"""
     DragKind: Any
     """DragKind属性用于指定工具栏是正常拖动还是用于停靠。通过设置DragKind属性，可以控制工具栏的拖动行为。"""
@@ -31574,7 +33170,7 @@ class ActionToolBar(CustomActionToolBar):
     """EdgeInner属性用于控制工具栏内部边框的显示。该属性通常与EdgeBorders一起使用，以更好地控制工具栏的视觉效果。"""
     EdgeOuter: Any
     """EdgeOuter属性用于控制工具栏外部边框的显示。该属性允许开发人员设置工具栏的外部边框样式，以增强用户界面的整体效果。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于控制工具栏是否响应用户交互。如果设置为True，工具栏可以响应用户的输入；如果设置为False，工具栏将被禁用。"""
     Font: Any
     """Font属性用于指定工具栏中文本的字体。通过设置Font属性，可以改变工具栏上文本的样式和外观。"""
@@ -31584,31 +33180,31 @@ class ActionToolBar(CustomActionToolBar):
     """HorzSeparator属性用于控制工具栏是否显示水平分隔符。如果设置为True，工具栏将显示水平分隔符；如果设置为False，则不显示水平分隔符。"""
     Orientation: Any
     """Orientation属性用于指定工具栏的方向。通过设置Orientation属性，可以控制工具栏是水平显示还是垂直显示。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于指定工具栏是否继承其父容器的双向模式。如果设置为True，工具栏将使用其父容器的BiDiMode属性值。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于指定工具栏是否使用其父容器的背景。如果设置为True，工具栏将使用父容器的背景颜色或图像。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于指定工具栏是否继承其父容器的颜色设置。如果设置为True，工具栏将使用其父容器的颜色属性值。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于指定工具栏是否继承其父容器的字体设置。 如果设置为True，工具栏将使用其父容器的字体属性值。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于指定工具栏是否继承其父容器的提示设置。如果设置为True，工具栏将使用其父容器的ShowHint属性值。"""
     PersistentHotKeys: Any
     """PersistentHotKeys属性用于指定工具栏是否保持热键。如果设置为True，工具栏将在某些情况下保持热键。"""
     PopupMenu: Any
     """PopupMenu属性用于指定工具栏关联的弹出菜单。通过设置PopupMenu属性，可以为工具栏提供右键菜单功能。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于指定当鼠标悬停在工具栏上时是否显示提示信息。通过设置ShowHint属性，可以启用或禁用工具栏的提示信息显示。"""
-    Spacing: Any
+    Spacing: int
     """Spacing属性用于指定工具栏控件之间的间距。通过设置Spacing属性，可以调整工具栏中各个控件之间的空隙。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于指定工具栏的样式名称。通过设置StyleName属性，可以应用特定的样式来改变工具栏的外观。"""
     Touch: Any
     """Touch属性用于指定工具栏的触摸管理器。通过设置Touch属性，可以为工具栏启用触摸和手势功能。"""
     VertMargin: Any
     """VertMargin属性用于指定工具栏的垂直边距。通过设置VertMargin属性，可以调整工具栏内容与边框之间的垂直间距。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于指定工具栏是否显示在屏幕上。通过设置Visible属性，可以控制工具栏的可见性。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在工具栏控件对齐之前触发。通过设置该事件处理程序，可以在控件对齐之前执行自定义操作。"""
@@ -31679,13 +33275,13 @@ class Animate(WinControl):
     """FrameWidth属性用于获取动画帧的宽度。通过FrameWidth属性，可以知道每帧动画的宽度，以像素为单位。"""
     Open: bool
     """Open属性用于指示动画文件是否已打开。通过Open属性，可以检查动画文件的打开状态。"""
-    def Play(self, *args, **kwargs) -> Any:
+    def Play(self, FromFrame: int, ToFrame: int, Loop: bool) -> None:
         """Play函数用于播放动画。 该方法开始播放动画文件中的帧序列。"""
-    def Reset(self, *args, **kwargs) -> Any:
+    def Reset(self) -> None:
         """Reset函数用于重置动画。该方法将动画重置到其初始状态。"""
-    def Seek(self, *args, **kwargs) -> Any:
+    def Seek(self, Offset: int, Origin: int) -> int:
         """Seek函数用于跳转到指定的动画帧。该方法根据提供的帧索引，跳转到动画的特定帧。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """Stop函数用于停止动画播放。该方法停止当前正在播放的动画。"""
     ResHandle: Any
     """ResHandle属性用于获取动画资源的句柄。通过ResHandle属性，可以访问动画资源的句柄信息。"""
@@ -31699,31 +33295,31 @@ class Animate(WinControl):
     """Active属性用于控制动画是否处于活动状态。如果设置为True，动画将自动播放；如果设置为False，动画将停止播放。"""
     Anchors: Any
     """Anchors属性用于指定动画控件如何锚定到其父容器。使用Anchors属性可以确保动画控件在父容器调整大小时保持其相对位置。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于指定动画控件是否自动调整大小以适应其内容。如果设置为True，控件将根据内容自动调整大小。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于指定动画控件的边框宽度。通过设置BorderWidth属性，可以调整控件的边框厚度。"""
     Center: bool
     """Center属性用于指定动画控件是否居中显示。如果设置为True，动画将居中显示；如果设置为False，动画将根据对齐方式显示。"""
-    Color: Any
+    Color: int
     """Color属性用于设置动画控件的背景颜色。通过设置Color属性，可以改变动画控件的背景颜色。"""
     CommonAVI: Any
     """CommonAVI属性用于指定动画控件显示的常用AVI文件。通过设置CommonAVI属性，可以选择预定义的AVI动画。"""
     Constraints: Any
     """Constraints属性用于指定动画控件的大小约束。通过设置最小和最大宽度和高度，确保动画控件在调整大小时不会超出这些约束。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于指定动画控件是否使用双缓冲。如果设置为True，可以减少动画的闪烁。"""
     FileName: str
     """FileName属性用于指定动画控件加载的动画文件名。通过设置FileName属性，可以指定要播放的动画文件。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于指定动画控件是否继承其父容器的颜色设置。如果设置为True，动画控件将使用其父容器的颜色属性值。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于指定动画控件是否继承其父容器的双缓冲设置。如果设置为True，动画控件将使用其父容器的双缓冲属性值。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于指定动画控件是否继承其父容器的提示设置。如果设置为True，动画控件将使用其父容器的ShowHint属性值。"""
     Repetitions: int
     """Repetitions属性用于指定动画控件的重复次数。通过设置Repetitions属性，可以控制动画播放的次数。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于指定当鼠标悬停在动画控件上时是否显示提示信息。通过设置ShowHint属性，可以启用或禁用动画控件的提示信息显示。"""
     StartFrame: Any
     """StartFrame属性用于指定动画控件开始播放的帧索引。通过设置StartFrame属性，可以指定动画从哪一帧开始播放。"""
@@ -31735,7 +33331,7 @@ class Animate(WinControl):
     """Touch属性用于指定动画控件的触摸管理器。通过设置Touch属性，可以为动画控件启用触摸和手势功能。"""
     Transparent: bool
     """Transparent属性用于指定动画控件是否透明。如果设置为True，动画控件的背景将透明显示。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于指定动画控件是否显示在屏幕上。通过设置Visible属性，可以控制动画控件的可见性。"""
     OnOpen: Any
     """OnOpen事件在动画文件打开时触发。通过设置该事件处理程序，可以在动画文件打开时执行自定义操作。"""
@@ -31752,19 +33348,19 @@ class CustomHint(Component):
     """CustomHint类用于在应用程序中显示自定义提示，继承自Component类。"""
     def Create(self, AOwner: Component) -> None:
         """Create方法用于创建CustomHint类的实例并初始化其状态。该方法会设置提示的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy方法用于销毁CustomHint类的实例。该方法会释放实例占用的资源和内存，确保提示被正确地销毁。"""
     CurrentPPI: int
     """CurrentPPI属性用于获取或设置当前提示的每英寸像素数（PPI）。该属性可以根据设备的显示特性调整提示的清晰度和大小。"""
-    def ShowHint(self, *args, **kwargs) -> Any:
+    def ShowHint(self, Rect: Any, HintStr: str) -> None:
         """ShowHint方法用于显示提示。该方法会根据提供的参数在指定位置显示提示。"""
-    def HideHint(self, *args, **kwargs) -> Any:
+    def HideHint(self) -> None:
         """HideHint方法用于隐藏提示。该方法会将当前显示的提示隐藏起来。"""
-    def PaintHint(self, *args, **kwargs) -> Any:
+    def PaintHint(self, Canvas: Any) -> None:
         """PaintHint方法用于绘制提示。该方法会在提示显示时调用，用于自定义提示的绘制内容。"""
-    def NCPaintHint(self, *args, **kwargs) -> Any:
+    def NCPaintHint(self, DC: int) -> None:
         """NCPaintHint方法用于绘制提示的非客户端区域。 该方法通常用于绘制提示的边框和其他装饰元素。"""
-    def SetHintSize(self, *args, **kwargs) -> Any:
+    def SetHintSize(self) -> None:
         """SetHintSize方法用于设置提示的大小。该方法会根据提供的参数调整提示的宽度和高度。"""
     ShowingHint: bool
     """ShowingHint属性用于指示当前提示是否正在显示。如果设置为True，表示提示正在显示；如果设置为False，表示提示未显示。"""
@@ -31772,29 +33368,29 @@ class CustomHint(Component):
     """Title属性用于设置提示的标题文本。该属性用于在提示中显示标题信息。"""
     Description: str
     """Description属性用于设置提示的描述文本。该属性用于在提示中显示详细的描述信息。"""
-    ImageIndex: Any
+    ImageIndex: int
     """ImageIndex属性用于设置提示中显示的图像索引。该属性用于指定在提示中显示的图像。"""
     Images: Any
     """Images属性用于设置提示中使用的图像列表。该属性用于存储和管理提示中使用的所有图像。"""
-    Style: Any
+    Style: int
     """Style属性用于设置提示的样式。该属性用于定义提示的外观和行为。"""
-    Delay: Any
+    Delay: int
     """Delay属性用于设置提示显示的延迟时间。该属性用于指定在触发提示显示之前的等待时间。"""
     HideAfter: int
     """HideAfter属性用于设置提示自动隐藏的时间。该属性用于指定提示显示后自动隐藏的时间间隔，以毫秒为单位。"""
 
 class BalloonHint(CustomHint):
     """BalloonHint类继承自CustomHint，用于在应用程序中显示气球样式的提示。"""
-    def PaintHint(self, *args, **kwargs) -> Any:
+    def PaintHint(self, Canvas: Any) -> None:
         """PaintHint方法用于绘制气球提示。该方法会在气球提示显示时调用，用于自定义气球提示的绘制内容。"""
-    def SetHintSize(self, *args, **kwargs) -> Any:
+    def SetHintSize(self) -> None:
         """SetHintSize方法用于设置气球提示的大小。该方法会根据提供的参数调整气球提示的宽度和高度。"""
 
 class EditButton(Persistent):
     """EditButton类用于创建带有按钮的编辑控件，继承自Persistent类。"""
     def Create(self, AOwner: Component) -> None:
         """Create方法用于创建EditButton类的实例并初始化其状态。该方法会设置编辑按钮的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy方法用于销毁EditButton类的实例。该方法会释放实例占用的资源和内存，确保编辑按钮被正确地销毁。"""
     CustomHint: Any
     """CustomHint属性用于设置编辑按钮的自定义提示。该属性允许开发人员指定在编辑按钮上显示的提示信息。"""
@@ -31812,9 +33408,9 @@ class EditButton(Persistent):
     """HotImageIndex属性用于设置编辑按钮在热状态下显示的图像索引。 该属性用于指定编辑按钮在热状态下显示的图像。"""
     HotImageName: Any
     """HotImageName属性用于设置编辑按钮在热状态下显示的图像名称。该属性用于指定编辑按钮在热状态下显示的图像名称。"""
-    ImageIndex: Any
+    ImageIndex: int
     """ImageIndex属性用于设置编辑按钮的图像索引。该属性用于指定编辑按钮显示的图像。"""
-    ImageName: Any
+    ImageName: str
     """ImageName属性用于设置编辑按钮的图像名称。该属性用于指定编辑按钮显示的图像名称。"""
     PressedImageIndex: Any
     """PressedImageIndex属性用于设置编辑按钮在按下状态下显示的图像索引。该属性用于指定编辑按钮在按下状态下显示的图像。"""
@@ -31827,9 +33423,9 @@ class CustomButtonedEdit(CustomEdit):
     """CustomButtonedEdit类用于创建带有按钮的自定义编辑控件，继承自CustomEdit类。"""
     def Create(self, AOwner: Component) -> None:
         """Create方法用于创建CustomButtonedEdit类的实例并初始化其状态。该方法会设置自定义按钮编辑控件的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy方法用于销毁CustomButtonedEdit类的实例。该方法会释放实例占用的资源和内存，确保自定义按钮编辑控件被正确地销毁。"""
-    def DefaultHandler(self, *args, **kwargs) -> Any:
+    def DefaultHandler(self, Message: Any) -> None:
         """DefaultHandler方法用于处理默认事件。该方法会根据提供的参数处理自定义按钮编辑控件的默认事件。"""
     Images: Any
     """Images属性用于设置自定义按钮编辑控件使用的图像列表。该属性用于存储和管理编辑控件中使用的所有图像。"""
@@ -31846,13 +33442,13 @@ class ButtonedEdit(CustomButtonedEdit):
     """ButtonedEdit类继承自CustomButtonedEdit，用于创建带有按钮的编辑控件，提供了更多的属性和事件处理功能。"""
     Align: Any
     """Align属性用于设置编辑控件的对齐方式。该属性允许开发人员指定控件在父容器中的对齐方式，例如顶部对齐、底部对齐等。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于设置编辑控件中文本的对齐方式。该属性允许开发人员指定文本在控件中的对齐方式，例如左对齐、右对齐或居中对齐。"""
     Anchors: Any
     """Anchors属性用于设置编辑控件的锚点。该属性允许开发人员指定控件在父容器中随容器大小变化的固定位置。"""
-    AutoSelect: Any
+    AutoSelect: bool
     """AutoSelect属性用于设置编辑控件是否在获得焦点时自动选择所有文本。如果设置为True，则控件在获得焦点时自动选择所有文本；如果设置为False，则不自动选择文本。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置编辑控件是否根据内容自动调整大小。如果设置为True，则控件根据内容自动调整大小；如果设置为False，则控件大小保持不变。"""
     BevelEdges: Any
     """BevelEdges属性用于设置编辑控件的边缘样式。该属性允许开发人员指定控件的边缘样式，例如显示哪几条边。"""
@@ -31868,79 +33464,79 @@ class ButtonedEdit(CustomButtonedEdit):
     """BiDiMode属性用于设置编辑控件的双向文本模式。该属性允许开发人员指定控件的文本显示方向，例如从左到右或从右到左。"""
     BorderStyle: Any
     """BorderStyle属性用于设置编辑控件的边框样式。该属性允许开发人员指定控件的边框样式，例如无边框、单线边框等。"""
-    CharCase: Any
+    CharCase: bool
     """CharCase属性用于设置编辑控件中的字符大小写转换。该属性允许开发人员指定控件中的字符是否自动转换为大写或小写。"""
-    Color: Any
+    Color: int
     """Color属性用于设置编辑控件的背景颜色。该属性允许开发人员指定控件的背景颜色，以调整控件的外观。"""
     Constraints: Any
     """Constraints属性用于设置编辑控件的约束条件。该属性允许开发人员指定控件的最小和最大大小，以控制控件的大小变化范围。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置编辑控件是否启用3D边框。如果设置为True，则控件显示3D边框；如果设置为False，则控件显示平面边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置编辑控件是否使用双缓冲机制。如果设置为True，则控件使用双缓冲机制，以减少重绘时的闪烁现象。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置编辑控件在拖动操作时显示的光标。该属性允许开发人员指定控件在拖动操作时显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置编辑控件的拖动类型。该属性允许开发人员指定控件的拖动类型，例如拖动控件本身或拖动控件内容。"""
     DragMode: Any
     """DragMode属性用于设置编辑控件的拖动模式。该属性允许开发人员指定控件的拖动模式，例如手动拖动或自动拖动。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置编辑控件的启用状态。如果设置为True，则控件启用；如果设置为False，则控件禁用。"""
     Font: Any
     """Font属性用于设置编辑控件的字体。该属性允许开发人员指定控件显示文本的字体样式。"""
-    HideSelection: Any
+    HideSelection: bool
     """HideSelection属性用于设置编辑控件在失去焦点时是否隐藏文本选择。如果设置为True，则控件在失去焦点时隐藏文本选择；如果设置为False，则控件在失去焦点时保留文本选择。"""
     Images: Any
     """Images属性用于设置编辑控件使用的图像列表。该属性允许开发人员指定控件中使用的图像列表，以显示在控件的按钮上。"""
     ImeMode: Any
     """ImeMode属性用于设置编辑控件的输入法模式。该属性允许开发人员指定控件使用的输入法模式，以支持多语言输入。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置编辑控件的输入法名称。该属性允许开发人员指定控件使用的输入法名称，以支持多语言输入。"""
     LeftButton: Any
     """LeftButton属性用于设置编辑控件的左侧按钮。该属性允许开发人员定义和管理控件左侧按钮的行为和外观。"""
-    MaxLength: Any
+    MaxLength: int
     """MaxLength属性用于设置编辑控件中允许输入的最大字符数。该属性允许开发人员限制控件中输入的字符数，以控制输入内容的长度。"""
-    OEMConvert: Any
+    OEMConvert: bool
     """OEMConvert属性用于设置编辑控件是否进行OEM字符集转换。如果设置为True，则控件进行OEM字符集转换；如果设置为False，则控件不进行OEM字符集转换。"""
-    NumbersOnly: Any
+    NumbersOnly: bool
     """NumbersOnly属性用于设置编辑控件是否只允许输入数字。如果设置为True，则控件只允许输入数字；如果设置为False，则控件允许输入任何字符。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置编辑控件是否继承父容器的双向文本模式。如果设置为True，则控件继承父容器的双向文本模式；如果设置为False，则控件使用自己的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置编辑控件是否继承父容器的背景颜色。如果设置为True，则控件继承父容器的背景颜色；如果设置为False，则控件使用自己的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置编辑控件是否继承父容器的3D边框设置。如果设置为True，则控件继承父容器的3D边框设置；如果设置为False，则控件使用自己的3D边框设置。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置编辑控件是否继承父容器的双缓冲机制。如果设置为True，则控件继承父容器的双缓冲机制；如果设置为False，则控件使用自己的双缓冲机制。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置编辑控件是否继承父容器的字体设置。如果设置为True，则控件继承父容器的字体设置；如果设置为False，则控件使用自己的字体设置。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置编辑控件是否继承父容器的提示设置。如果设置为True，则控件继承父容器的提示设置；如果设置为False，则控件使用自己的提示设置。"""
-    PasswordChar: Any
+    PasswordChar: str
     """PasswordChar属性用于设置编辑控件中密码字符的显示。该属性允许开发人员指定控件中显示的密码字符，以隐藏实际输入的内容。"""
     PopupMenu: Any
     """PopupMenu属性用于设置编辑控件的弹出菜单。该属性允许开发人员指定控件中显示的弹出菜单，以提供更多的操作选项。"""
-    ReadOnly: Any
+    ReadOnly: bool
     """ReadOnly属性用于设置编辑控件是否为只读模式。如果设置为True，则控件为只读模式，用户不能修改控件中的内容；如果设置为False，则控件允许用户修改内容。"""
     RightButton: Any
     """RightButton属性用于设置编辑控件的右侧按钮。该属性允许开发人员定义和管理控件右侧按钮的行为和外观。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置编辑控件是否显示提示信息。如果设置为True，则控件显示提示信息；如果设置为False，则控件不显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置编辑控件在Tab键顺序中的位置。该属性允许开发人员指定控件在Tab键切换顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否可以通过Tab键获得焦点。如果设置为True，控件可以通过Tab键获得焦点；如果设置为False，控件不能通过Tab键获得焦点。"""
-    Text: Any
+    Text: str
     """Text属性用于设置或获取编辑控件中的文本内容。该属性允许开发人员获取或设置控件中显示的文本。"""
-    TextHint: Any
+    TextHint: str
     """TextHint属性用于设置编辑控件的提示文本。当控件为空时显示的提示文本。"""
     Touch: Any
     """Touch属性用于设置控件的触摸功能。该属性允许开发人员为控件启用或配置触摸相关功能。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件的可见性。如果设置为True，控件可见；如果设置为False，控件不可见。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件应用的样式元素。该属性允许开发人员指定控件使用的样式元素，例如字体、颜色、边框等。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件应用的样式名称。该属性允许开发人员指定控件使用的样式主题。"""
     OnChange: Any
     """OnChange事件在控件内容更改时触发。该事件允许开发人员在控件内容发生变化时执行自定义操作。"""
@@ -31995,29 +33591,29 @@ class ButtonGroup(CustomControl):
     """ButtonGroup类继承自CustomControl，用于创建一组按钮控件，提供了丰富的属性和事件处理功能。"""
     def Create(self, AOwner: Component) -> None:
         """Create方法用于创建ButtonGroup类的实例并初始化其状态。该方法会设置按钮组的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy方法用于销毁ButtonGroup类的实例。该方法会释放实例占用的资源和内存，确保按钮组被正确地销毁。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """Assign方法用于将一个ButtonGroup实例的属性值复制到另一个实例。该方法通常用于创建按钮组的副本或模板。"""
     DragIndex: int
     """DragIndex属性表示当前被拖动的按钮索引。用于在拖动过程中跟踪被拖动的按钮。"""
     DragImageList: Any
     """DragImageList属性表示拖动操作期间使用的图像列表。该属性用于在拖动过程中显示拖动的图像。"""
-    def DragDrop(self, *args, **kwargs) -> Any:
+    def DragDrop(self, Source: Any, X: int, Y: int) -> None:
         """DragDrop方法用于处理拖放操作。该方法在拖放操作发生时执行相应的处理逻辑，以实现拖放功能。"""
-    def GetButtonRect(self, *args, **kwargs) -> Any:
+    def GetButtonRect(self, Index: int) -> Any:
         """GetButtonRect方法用于获取指定按钮的矩形区域。该方法返回一个矩形对象，表示按钮在控件中的位置和大小。"""
     def GetDragImages(self) -> Any:
         """GetDragImages方法用于获取拖动操作使用的图像列表。该方法返回一个图像列表对象，用于显示拖动的图像。"""
-    def IndexOfButtonAt(self, *args, **kwargs) -> int:
+    def IndexOfButtonAt(self, X: int, Y: int) -> int:
         """IndexOfButtonAt方法用于获取指定位置的按钮索引。该方法返回一个整数值，表示按钮在按钮组中的位置。"""
-    def RemoveInsertionPoints(self, *args, **kwargs) -> Any:
+    def RemoveInsertionPoints(self) -> None:
         """RemoveInsertionPoints方法用于移除插入点。该方法在按钮组中移除所有插入点标记。"""
-    def ScrollIntoView(self, *args, **kwargs) -> Any:
+    def ScrollIntoView(self, Index: int) -> None:
         """ScrollIntoView方法用于滚动视图以确保指定按钮可见。该方法调整按钮组的滚动位置，使指定按钮出现在可视区域内。"""
-    def SetInsertionPoints(self, *args, **kwargs) -> Any:
+    def SetInsertionPoints(self, X: int, Y: int) -> None:
         """SetInsertionPoints方法用于设置插入点。该方法在按钮组中添加插入点标记，用于指示拖放操作的目标位置。"""
-    def TargetIndexAt(self, *args, **kwargs) -> int:
+    def TargetIndexAt(self, X: int, Y: int) -> int:
         """TargetIndexAt方法用于获取指定位置的目标索引。该方法返回一个整数值，表示拖放操作的目标位置。"""
     Canvas: Any
     """Canvas属性用于获取按钮组的画布对象。该属性允许开发人员在按钮组上自定义绘图和渲染操作。"""
@@ -32035,7 +33631,7 @@ class ButtonGroup(CustomControl):
     """BevelKind属性用于设置按钮组的边框类型。该属性允许开发人员选择不同的边框类型来改变按钮组的外观。"""
     BevelWidth: Any
     """BevelWidth属性用于设置按钮组边框的宽度。该属性用于定义按钮组的边框厚度。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置按钮组的边框宽度。该属性用于定义按钮组的边框线条的厚度。"""
     BorderStyle: Any
     """BorderStyle属性用于设置按钮组的边框样式。该属性用于定义按钮组的边框线条的风格。"""
@@ -32045,21 +33641,21 @@ class ButtonGroup(CustomControl):
     """ButtonWidth属性用于设置按钮组中按钮的宽度。该属性用于定义每个按钮的宽度，以统一按钮的尺寸。"""
     ButtonOptions: Any
     """ButtonOptions属性用于设置按钮组的选项。该属性允许开发人员自定义按钮组的行为和外观。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置按钮组是否作为停靠站点。该属性用于定义按钮组是否可以作为其他控件的停靠目标。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置按钮组是否启用双缓冲。该属性用于减少绘制过程中的闪烁现象。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置按钮组的拖动光标。该属性用于定义按钮组在拖动操作期间显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置按钮组的拖动类型。该属性用于定义按钮组的拖动操作的类型和行为。"""
     DragMode: Any
     """DragMode属性用于设置按钮组的拖动模式。该属性用于定义按钮组的拖动操作的触发方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置按钮组是否启用。该属性用于控制按钮组及其子控件是否可交互。"""
     Font: Any
     """Font属性用于设置按钮组的字体。该属性用于定义按钮组及其子控件中显示文本的字体样式。"""
-    Height: Any
+    Height: int
     """Height属性用于设置按钮组的高度。该属性用于定义按钮组在父容器中的高度。"""
     Images: Any
     """Images属性用于设置按钮组中使用的图像列表。该属性用于定义按钮组中的按钮使用的图像资源。"""
@@ -32067,25 +33663,25 @@ class ButtonGroup(CustomControl):
     """Items属性用于设置按钮组中的按钮项。该属性用于定义按钮组包含的按钮集合。"""
     ItemIndex: int
     """ItemIndex属性用于设置或获取按钮组中选定按钮的索引。该属性用于控制和获取当前选中的按钮项。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置按钮组是否继承父容器的双缓冲设置。该属性用于定义按钮组是否使用父容器的双缓冲配置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置按钮组的弹出菜单。该属性用于定义按钮组在右键点击时显示的弹出菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置按钮组是否显示提示信息。该属性用于定义按钮组及其子控件是否显示提示文本。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置按钮组的标签顺序。该属性用于定义按钮组在表单中的标签导航顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置按钮组是否作为标签停靠点。该属性用于定义按钮组是否在标签导航中作为一个停靠点。"""
     Touch: Any
     """Touch属性用于设置按钮组的触摸操作支持。该属性用于定义按钮组是否支持触摸操作。"""
-    Width: Any
+    Width: int
     """Width属性用于设置按钮组的宽度。该属性用于定义按钮组在父容器中的宽度。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置按钮组是否可见。该属性用于控制按钮组及其子控件是否显示在界面上。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置按钮组的样式元素。该属性用于定义按钮组使用的样式元素，如字体、颜色等。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置按钮组的样式名称。该属性用于定义按钮组使用的样式名称，以便应用特定的样式配置。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在对齐插入之前触发。该事件用于自定义按钮组在对齐操作前的行为。"""
@@ -32164,15 +33760,15 @@ class Calendar(CustomGrid):
     """CalendarDate属性用于获取和设置当前日历显示的日期。该属性用于控制和显示日历控件的日期信息。"""
     CellText: Any
     """CellText属性用于获取和设置日历控件中单元格的文本。该属性用于自定义日历单元格的显示内容。"""
-    def NextMonth(self, *args, **kwargs) -> Any:
+    def NextMonth(self) -> None:
         """NextMonth方法用于切换到下一个月的日历显示。 该方法更新日历控件的显示日期为下一个月。"""
-    def NextYear(self, *args, **kwargs) -> Any:
+    def NextYear(self) -> None:
         """NextYear方法用于切换到下一年的日历显示。该方法更新日历控件的显示日期为下一年。"""
-    def PrevMonth(self, *args, **kwargs) -> Any:
+    def PrevMonth(self) -> None:
         """PrevMonth方法用于切换到上一个月的日历显示。该方法更新日历控件的显示日期为上一个月。"""
-    def PrevYear(self, *args, **kwargs) -> Any:
+    def PrevYear(self) -> None:
         """PrevYear方法用于切换到上一年的日历显示。该方法更新日历控件的显示日期为上一年。"""
-    def UpdateCalendar(self, *args, **kwargs) -> Any:
+    def UpdateCalendar(self) -> None:
         """UpdateCalendar方法用于更新日历控件的显示。该方法根据当前日期和设置重新绘制日历控件。"""
     Align: Any
     """Align属性用于设置日历控件在父容器中的对齐方式。该属性允许开发人员定义日历控件在父容器中的布局行为。"""
@@ -32180,53 +33776,53 @@ class Calendar(CustomGrid):
     """Anchors属性用于设置日历控件的锚点。该属性用于控制日历控件在父容器调整大小时的定位方式。"""
     BorderStyle: Any
     """BorderStyle属性用于设置日历控件的边框样式。该属性用于定义日历控件的边框线条的风格。"""
-    Color: Any
+    Color: int
     """Color属性用于设置日历控件的背景颜色。该属性用于定义日历控件的外观和风格。"""
     Constraints: Any
     """Constraints属性用于设置日历控件的大小约束。该属性用于定义日历控件的最小和最大尺寸。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置日历控件是否启用3D边框。该属性用于定义日历控件的视觉效果。"""
     Day: Any
     """Day属性用于获取和设置日历控件显示的天。该属性用于控制日历控件当前显示的具体日期。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置日历控件的拖动光标。该属性用于定义日历控件在拖动操作期间显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置日历控件的拖动类型。该属性用于定义日历控件的拖动操作的类型和行为。"""
     DragMode: Any
     """DragMode属性用于设置日历控件的拖动模式。该属性用于定义日历控件的拖动操作的触发方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置日历控件是否启用。该属性用于控制日历控件及其子控件是否可交互。"""
     Font: Any
     """Font属性用于设置日历控件的字体。该属性用于定义日历控件中显示文本的字体样式。"""
-    GridLineWidth: Any
+    GridLineWidth: int
     """GridLineWidth属性用于设置日历控件的网格线宽度。该属性用于定义日历控件网格线的厚度。"""
     Month: Any
     """Month属性用于获取和设置日历控件显示的月份。该属性用于控制日历控件当前显示的月份。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置日历控件是否继承父容器的背景颜色。该属性用于定义日历控件是否使用父容器的背景颜色配置。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置日历控件是否继承父容器的字体。该属性用于定义日历控件是否使用父容器的字体配置。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置日历控件是否继承父容器的提示信息。该属性用于定义日历控件是否显示父容器的提示文本。"""
     PopupMenu: Any
     """PopupMenu属性用于设置日历控件的弹出菜单。该属性用于定义日历控件在右键点击时显示的弹出菜单。"""
     ReadOnly: bool
     """ReadOnly属性用于设置日历控件是否为只读模式。该属性用于控制日历控件是否允许用户修改日期。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置日历控件是否显示提示信息。该属性用于定义日历控件及其子控件是否显示提示文本。"""
     StartOfWeek: Any
     """StartOfWeek属性用于设置日历控件显示的周起始日。该属性用于定义日历控件中一周的开始日期。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置日历控件的标签顺序。该属性用于定义日历控件在表单中的标签导航顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置日历控件是否作为标签停靠点。该属性用于定义日历控件是否在标签导航中作为一个停靠点。"""
     UseCurrentDate: bool
     """UseCurrentDate属性用于设置日历控件是否使用当前日期。该属性用于控制日历控件是否显示当前系统日期。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置日历控件是否可见。该属性用于控制日历控件及其子控件是否显示在界面上。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置日历控件的样式元素。该属性用于定义日历控件使用的样式元素，如字体、颜色等。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置日历控件的样式名称。该属性用于定义日历控件使用的样式名称，以便应用特定的样式配置。"""
     Year: Any
     """Year属性用于获取和设置日历控件显示的年份。该属性用于控制日历控件当前显示的年份。"""
@@ -32276,39 +33872,39 @@ class CalendarPicker(CustomCalendarPicker):
     """Anchors属性用于设置控件的锚点。该属性决定控件在其父容器中随着大小变化而调整的位置和尺寸，可以设置为顶、底、左、右等多个方向的组合。"""
     BiDiMode: Any
     """BiDiMode属性用于设置控件的文本方向。该属性定义了控件中文本的显示方向，可以是从左到右或从右到左。"""
-    BorderColor: Any
+    BorderColor: int
     """BorderColor属性用于设置控件的边框颜色。该属性定义了控件边框的颜色值。"""
     CalendarHeaderInfo: Any
     """CalendarHeaderInfo属性用于设置日历头部信息。该属性定义了日历控件头部显示的标题或其他信息。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的背景颜色值。"""
-    Cursor: Any
+    Cursor: int
     """Cursor属性用于设置控件的光标样式。该属性定义了鼠标指针悬停在控件上时显示的光标样式。"""
     Date: Any
     """Date属性用于设置或获取当前选择的日期。该属性定义了日期选择器控件当前选中的日期值。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置控件在禁用状态下的颜色。该属性定义了控件在禁用状态下的显示颜色。"""
     DisplayMode: Any
     """DisplayMode属性用于设置日历的显示模式。该属性定义了日历控件的显示模式，如月视图、年视图等。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件的启用状态。该属性定义了控件是否可以与用户交互，设置为False时控件处于禁用状态。"""
     FirstDayOfWeek: Any
     """FirstDayOfWeek属性用于设置日历的第一天是星期几。该属性定义了日历控件显示的每周第一天。"""
-    FirstYear: Any
+    FirstYear: int
     """FirstYear属性用于设置日历控件显示的第一年。该属性定义了日历控件可以显示的最早年份。"""
     Font: Any
     """Font属性用于设置控件中文本的字体。该属性定义了控件中文本的字体样式，包括字体类型、大小、颜色等。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置日期高亮显示的颜色。该属性定义了在日期选择器控件中高亮显示日期的颜色。"""
-    HighlightToday: Any
+    HighlightToday: bool
     """HighlightToday属性用于设置是否高亮显示今天的日期。该属性定义了日期选择器控件中是否高亮显示当前日期。"""
     IsEmpty: Any
     """IsEmpty属性用于判断日期选择器是否为空。该属性返回一个布尔值，表示日期选择器是否为空。"""
-    LastYear: Any
+    LastYear: int
     """LastYear属性用于设置日历控件显示的最后一年。该属性定义了日历控件可以显示的最晚年份。"""
-    MaxYear: Any
+    MaxYear: int
     """MaxYear属性用于设置日期选择器控件的最大年份。该属性定义了用户可以选择的最大年份。"""
-    MinYear: Any
+    MinYear: int
     """MinYear属性用于设置日期选择器控件的最小年份。该属性定义了用户可以选择的最小年份。"""
     OnCalendarChangeView: Any
     """OnCalendarChangeView事件在日历视图改变时触发。该事件处理程序允许开发人员在日历控件视图改变时执行自定义操作。"""
@@ -32322,54 +33918,54 @@ class CalendarPicker(CustomCalendarPicker):
     """OnChange事件在日期选择器的值改变时触发。该事件处理程序允许开发人员在用户更改日期选择器的值时执行自定义操作。"""
     OnCloseUp: Any
     """OnCloseUp事件在日期选择器关闭时触发。该事件处理程序允许开发人员在日期选择器关闭时执行自定义操作。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的文本方向。该属性定义了控件是否继承父控件的文本方向设置。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否继承父控件的字体设置。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示显示属性。该属性定义了控件是否继承父控件的提示显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的弹出菜单。该属性定义了当用户右键点击控件时显示的上下文菜单。"""
-    SelectionColor: Any
+    SelectionColor: int
     """SelectionColor属性用于设置日期选择器选中项的颜色。该属性定义了日期选择器控件中选中日期的显示颜色。"""
-    ShowDayOfWeek: Any
+    ShowDayOfWeek: bool
     """ShowDayOfWeek属性用于设置是否显示星期几。该属性定义了日期选择器控件中是否显示每周的星期几。"""
-    ShowFirstOfGroupLabel: Any
+    ShowFirstOfGroupLabel: bool
     """ShowFirstOfGroupLabel属性用于设置是否显示组标签的第一个日期。该属性定义了日期选择器控件中是否显示组标签的第一个日期。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示。该属性定义了当鼠标悬停在控件上时是否显示提示信息。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用的样式元素，如字体、颜色等。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称，用于应用不同的样式方案。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的Tab键顺序。该属性定义了控件在Tab键循环中的顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否可以接收Tab键焦点。该属性定义了控件是否在用户按下Tab键时接收焦点。"""
-    TextHint: Any
+    TextHint: str
     """TextHint属性用于设置日期选择器的文本提示。该属性定义了在日期选择器控件中显示的提示文本。"""
-    TodayColor: Any
+    TodayColor: int
     """TodayColor属性用于设置今天日期的高亮颜色。该属性定义了日期选择器控件中显示今天日期的高亮颜色。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件的可见性。该属性定义了控件是否在界面上可见。"""
-    Width: Any
+    Width: int
     """Width属性用于设置控件的宽度。该属性定义了控件在界面中的宽度值。"""
 
 class CustomCalendarView(CustomControl):
     """CustomCalendarView类继承自CustomControl，用于创建自定义的日历视图控件。该类提供了丰富的属性和方法，用于管理和显示日历视图。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomCalendarView类的实例并初始化其状态。该方法会设置日历视图控件的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomCalendarView类的实例。该方法会释放实例占用的资源和内存，确保日历视图控件被正确地销毁。"""
-    def AddToSelectedDates(self, *args, **kwargs) -> Any:
+    def AddToSelectedDates(self, ADate: Any) -> None:
         """AddToSelectedDates函数用于将日期添加到选中的日期集合中。该方法接收一个或多个日期，并将它们添加到控件的选中日期列表中。"""
-    def AnimationFinished(self, *args, **kwargs) -> Any:
+    def AnimationFinished(self, Sender: Any) -> None:
         """AnimationFinished函数用于处理动画结束时的操作。该方法在日历视图的动画效果结束时触发，执行相应的处理逻辑。"""
     def NeedCurrentViewInfo(self) -> Any:
         """NeedCurrentViewInfo函数用于获取当前视图的信息。该方法返回当前日历视图的详细信息，用于显示或其他操作。"""
-    def RemoveFromSelectedDates(self, *args, **kwargs) -> bool:
+    def RemoveFromSelectedDates(self, ADate: Any) -> bool:
         """RemoveFromSelectedDates函数用于从选中的日期集合中移除指定日期。该方法接收一个日期，并将其从控件的选中日期列表中移除。返回值指示操作是否成功。"""
-    def SetDisplayDate(self, *args, **kwargs) -> Any:
+    def SetDisplayDate(self, ADate: Any) -> None:
         """SetDisplayDate函数用于设置日历视图显示的日期。该方法接收一个日期，并将其设置为日历视图控件当前显示的日期。"""
     BorderSize: int
     """BorderSize属性用于设置控件的边框大小。该属性定义了控件边框的宽度值。"""
@@ -32377,7 +33973,7 @@ class CustomCalendarView(CustomControl):
     """BorderStyle属性用于设置控件的边框样式。该属性定义了控件边框的样式，如实线、虚线等。"""
     FirstDayOfWeek: Any
     """FirstDayOfWeek属性用于设置日历视图每周的第一天。该属性定义了日历视图控件显示的每周的起始天。"""
-    NumberOfWeeksInView: Any
+    NumberOfWeeksInView: int
     """NumberOfWeeksInView属性用于设置日历视图中显示的周数。该属性定义了在日历视图控件中一次性显示的周数。"""
     SelectedDates: List
     """SelectedDates属性用于获取或设置选中的日期集合。该属性定义了一个日期列表，包含当前选中的所有日期。"""
@@ -32392,25 +33988,25 @@ class CalendarView(CustomCalendarView):
     """Anchors属性用于设置控件的锚点。该属性决定控件在其父容器中随着大小变化而调整的位置和尺寸，可以设置为顶、底、左、右等多个方向的组合。"""
     BiDiMode: Any
     """BiDiMode属性用于设置控件的文本方向。该属性定义了控件中文本的显示方向，可以是从左到右或从右到左。"""
-    BorderColor: Any
+    BorderColor: int
     """BorderColor属性用于设置控件的边框颜色。该属性定义了控件边框的颜色值。"""
     BorderStyle: Any
     """BorderStyle属性用于设置控件的边框样式。该属性定义了控件边框的样式，如实线、虚线等。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的背景颜色值。"""
-    Cursor: Any
+    Cursor: int
     """Cursor属性用于设置控件的光标样式。该属性定义了鼠标指针悬停在控件上时显示的光标样式。"""
     Date: Any
     """Date属性用于设置或获取当前选择的日期。该属性定义了日期选择器控件当前选中的日期值。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置控件在禁用状态下的颜色。该属性定义了控件在禁用状态下的显示颜色。"""
     DisplayMode: Any
     """DisplayMode属性用于设置日历的显示模式。该属性定义了日历控件的显示模式，如月视图、年视图等。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件的启用状态。该属性定义了控件是否可以与用户交互，设置为False时控件处于禁用状态。"""
     FirstDayOfWeek: Any
     """FirstDayOfWeek属性用于设置日历的第一天是星期几。该属性定义了日历控件显示的每周第一天。"""
-    FirstYear: Any
+    FirstYear: int
     """FirstYear属性用于设置日历控件显示的第一年。该属性定义了日历控件可以显示的最早年份。"""
     FocusedColor: Any
     """FocusedColor属性用于设置控件获取焦点时的颜色。该属性定义了控件在获取焦点时的显示颜色。"""
@@ -32418,19 +34014,19 @@ class CalendarView(CustomCalendarView):
     """Font属性用于设置控件中文本的字体。该属性定义了控件中文本的字体样式，包括字体类型、大小、颜色等。"""
     HeaderInfo: Any
     """HeaderInfo属性用于设置日历头部信息。该属性定义了日历控件头部显示的标题或其他信息。"""
-    Height: Any
+    Height: int
     """Height属性用于设置控件的高度。该属性定义了控件在界面中的高度值。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置日期高亮显示的颜色。该属性定义了在日期选择器控件中高亮显示日期的颜色。"""
-    HighlightToday: Any
+    HighlightToday: bool
     """HighlightToday属性用于设置是否高亮显示今天的日期。该属性定义了日期选择器控件中是否高亮显示当前日期。"""
-    LastYear: Any
+    LastYear: int
     """LastYear属性用于设置日历控件显示的最后一年。该属性定义了日历控件可以显示的最晚年份。"""
-    MaxYear: Any
+    MaxYear: int
     """MaxYear属性用于设置日期选择器控件的最大年份。该属性定义了用户可以选择的最大年份。"""
-    MinYear: Any
+    MinYear: int
     """MinYear属性用于设置日期选择器控件的最小年份。该属性定义了用户可以选择的最小年份。"""
-    NumberOfWeeksInView: Any
+    NumberOfWeeksInView: int
     """NumberOfWeeksInView属性用于设置日历视图中显示的周数。该属性定义了在日历视图控件中一次性显示的周数。"""
     OnChange: Any
     """OnChange事件在日期选择器的值改变时触发。该事件处理程序允许开发人员在用户更改日期选择器的值时执行自定义操作。"""
@@ -32446,58 +34042,58 @@ class CalendarView(CustomCalendarView):
     """OnDrawMonthItem事件在绘制月份项时触发。该事件处理程序允许开发人员在日历控件绘制月份项时执行自定义绘图操作。"""
     OnDrawYearItem: Any
     """OnDrawYearItem事件在绘制年份项时触发。该事件处理程序允许开发人员在日历控件绘制年份项时执行自定义绘图操作。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的文本方向。该属性定义了控件是否继承父控件的文本方向设置。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否继承父控件的字体设置。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示显示属性。该属性定义了控件是否继承父控件的提示显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的弹出菜单。该属性定义了当用户右键点击控件时显示的上下文菜单。"""
-    SelectionColor: Any
+    SelectionColor: int
     """SelectionColor属性用于设置日期选择器选中项的颜色。该属性定义了日期选择器控件中选中日期的显示颜色。"""
     SelectionMode: Any
     """SelectionMode属性用于设置日期选择器的选择模式。该属性定义了日期选择器控件的选择模式，如单选、多选等。"""
-    ShowDayOfWeek: Any
+    ShowDayOfWeek: bool
     """ShowDayOfWeek属性用于设置是否显示星期几。该属性定义了日期选择器控件中是否显示每周的星期几。"""
-    ShowFirstOfGroupLabel: Any
+    ShowFirstOfGroupLabel: bool
     """ShowFirstOfGroupLabel属性用于设置是否显示组标签的第一个日期。该属性定义了日期选择器控件中是否显示组标签的第一个日期。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示。该属性定义了当鼠标悬停在控件上时是否显示提示信息。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用的样式元素，如字体、颜色等。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称，用于应用不同的样式方案。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的Tab键顺序。该属性定义了控件在Tab键循环中的顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否可以接收Tab键焦点。该属性定义了控件是否在用户按下Tab键时接收焦点。"""
-    TodayColor: Any
+    TodayColor: int
     """TodayColor属性用于设置今天日期的高亮颜色。该属性定义了日期选择器控件中显示今天日期的高亮颜色。"""
     Touch: Any
     """Touch属性用于设置控件的触摸操作配置。该属性定义了控件在触摸屏上的交互行为和响应。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件的可见性。该属性定义了控件是否在界面上可见。"""
-    Width: Any
+    Width: int
     """Width属性用于设置控件的宽度。该属性定义了控件在界面中的宽度值。"""
 
 class CustomCardPanel(CustomPanel):
     """CustomCardPanel类继承自CustomPanel，用于创建自定义卡片面板控件。该类提供了丰富的属性和方法，用于管理和显示卡片面板。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomCardPanel类的实例并初始化其状态。该方法会设置卡片面板控件的基本属性和结构，为后续的使用做准备。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomCardPanel类的实例。该方法会释放实例占用的资源和内存，确保卡片面板控件被正确地销毁。"""
     def CreateNewCard(self) -> Any:
         """CreateNewCard函数用于创建一个新的卡片。该方法返回新创建的卡片对象。"""
-    def DeleteCard(self, *args, **kwargs) -> Any:
+    def DeleteCard(self, Index: int) -> None:
         """DeleteCard函数用于删除指定的卡片。该方法接收一个卡片对象或索引，并将其从面板中移除。"""
-    def FindNextCard(self, *args, **kwargs) -> int:
+    def FindNextCard(self, GoForward: bool) -> int:
         """FindNextCard函数用于查找下一个卡片的索引。该方法返回下一个卡片的索引值。"""
-    def GetChildren(self, *args, **kwargs) -> Any:
+    def GetChildren(self, Proc: Any, Root: Any) -> None:
         """GetChildren函数用于获取卡片面板的所有子控件。该方法返回一个子控件列表。"""
-    def NextCard(self, *args, **kwargs) -> Any:
+    def NextCard(self) -> None:
         """NextCard函数用于切换到下一个卡片。该方法实现卡片面板中卡片的切换操作。"""
-    def PreviousCard(self, *args, **kwargs) -> Any:
+    def PreviousCard(self) -> None:
         """PreviousCard函数用于切换到上一个卡片。该方法实现卡片面板中卡片的切换操作。"""
     ActiveCardIndex: int
     """ActiveCardIndex属性用于获取或设置当前激活的卡片索引。该属性定义了当前在面板中显示的卡片索引值。"""
@@ -32516,13 +34112,13 @@ class CardPanel(CustomCardPanel):
     """CardPanel类继承自CustomCardPanel，提供了更多属性用于详细配置卡片面板控件。"""
     Align: Any
     """Align属性用于设置控件的对齐方式。该属性定义了控件在其父控件中的对齐方式。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于设置控件内容的对齐方式。该属性定义了控件内部内容的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置控件的锚点。该属性定义了控件如何随其父控件的大小变化而调整位置和大小。"""
     ActiveCard: Any
     """ActiveCard属性用于获取当前激活的卡片对象。该属性返回当前在面板中显示的卡片对象。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置控件是否自动调整大小。该属性定义了控件内容改变时是否自动调整控件大小。"""
     BevelEdges: Any
     """BevelEdges属性用于设置控件边缘的斜角。该属性定义了控件哪些边缘具有斜角效果。"""
@@ -32536,73 +34132,73 @@ class CardPanel(CustomCardPanel):
     """BevelWidth属性用于设置斜角的宽度。该属性定义了控件斜角的宽度。"""
     BiDiMode: Any
     """BiDiMode属性用于设置控件的双向文本模式。该属性定义了控件的文本显示方向，如从左到右或从右到左。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置控件的边框宽度。该属性定义了控件的边框线宽度。"""
     BorderStyle: Any
     """BorderStyle属性用于设置控件的边框样式。该属性定义了控件的边框线样式，如实线或虚线。"""
-    Caption: Any
+    Caption: str
     """Caption属性用于设置控件的标题。该属性定义了控件显示的文本标题。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的颜色。该属性定义了控件的背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置控件的约束条件。该属性定义了控件的最小和最大尺寸限制。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件的3D样式。该属性定义了控件是否显示为三维效果。"""
-    UseDockManager: Any
+    UseDockManager: bool
     """UseDockManager属性用于设置是否使用停靠管理器。该属性定义了控件是否使用停靠管理器来管理子控件的停靠行为。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置控件是否作为停靠站点。该属性定义了控件是否允许其他控件停靠在其上。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了控件被拖动时显示的鼠标光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动类型。该属性定义了控件的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
-    FullRepaint: Any
+    FullRepaint: bool
     """FullRepaint属性用于设置控件是否完全重绘。该属性定义了控件内容变化时是否重绘整个控件。"""
     Font: Any
     """Font属性用于设置控件的字体。该属性定义了控件显示文本的字体样式。"""
-    Locked: Any
+    Locked: bool
     """Locked属性用于设置控件是否锁定。该属性定义了控件是否可以被用户移动或调整大小。"""
     Padding: Any
     """Padding属性用于设置控件的内边距。该属性定义了控件内容与控件边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的双向文本模式。该属性定义了控件是否使用与父控件相同的文本显示方向。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置控件是否继承父控件的背景。该属性定义了控件是否显示父控件的背景图案或颜色。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置控件是否继承父控件的颜色。该属性定义了控件是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的3D样式。该属性定义了控件是否显示为与父控件相同的三维效果。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体样式。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息。该属性定义了控件是否显示与父控件相同的提示信息。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
-    ShowCaption: Any
+    ShowCaption: bool
     """ShowCaption属性用于设置控件是否显示标题。该属性定义了控件是否显示其标题文本。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
     VerticalAlignment: Any
     """VerticalAlignment属性用于设置控件的垂直对齐方式。该属性定义了控件在其父控件中的垂直对齐方式。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在控件对齐之前触发。该事件处理程序允许开发人员在控件对齐前执行自定义操作。"""
@@ -32665,37 +34261,37 @@ class CategoryButtons(CustomControl):
     """CategoryButtons类继承自CustomControl，用于创建带分类按钮的控件。该类提供了丰富的属性和方法，用于管理和显示分类按钮。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CategoryButtons类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CategoryButtons类的实例（）。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """Assign函数用于将一个CategoryButtons实例的属性分配给另一个实例（）。"""
-    def DragDrop(self, *args, **kwargs) -> Any:
+    def DragDrop(self, Source: Any, X: int, Y: int) -> None:
         """DragDrop函数用于处理拖放操作（）。"""   
-    def GenerateDragImage(self, *args, **kwargs) -> Any:
+    def GenerateDragImage(self, Item: Any) -> Any:
         """GenerateDragImage函数用于生成拖动图像（）。"""  
-    def GetButtonAt(self, *args, **kwargs) -> Any:
+    def GetButtonAt(self, X: int, Y: int) -> Any:
         """GetButtonAt函数用于获取指定位置的按钮（）。""" 
-    def GetButtonRect(self, *args, **kwargs) -> Any:
+    def GetButtonRect(self, Item: Any) -> Any:
         """GetButtonRect函数用于获取指定按钮的矩形区域（）。"""
-    def GetCategoryAt(self, *args, **kwargs) -> Any:
+    def GetCategoryAt(self, X: int, Y: int) -> Any:
         """GetCategoryAt函数用于获取指定位置的分类（）。"""
-    def GetCategoryRect(self, *args, **kwargs) -> Any:
+    def GetCategoryRect(self, Category: Any) -> Any:
         """GetCategoryRect函数用于获取指定分类的矩形区域（）。"""
     def GetDragImages(self) -> Any:
         """GetDragImages函数用于获取拖动图像列表（self指向实例本身）。"""
-    def GetTargetAt(self, *args, **kwargs) -> Any:
+    def GetTargetAt(self, X: int, Y: int, AKind: Any) -> Any:
         """GetTargetAt函数用于获取指定位置的目标（）。"""
     def IsEditing(self) -> bool:
         """IsEditing函数用于检查控件是否处于编辑状态（self指向实例本身，返回布尔值）。"""
-    def RemoveInsertionPoints(self, *args, **kwargs) -> Any:
+    def RemoveInsertionPoints(self) -> None:
         """RemoveInsertionPoints函数用于移除插入点（）。"""
-    def ScrollIntoView(self, *args, **kwargs) -> Any:
+    def ScrollIntoView(self, Item: Any) -> None:
         """ScrollIntoView函数用于滚动到视图中的指定项（）。"""
-    def SetInsertionButton(self, *args, **kwargs) -> Any:
+    def SetInsertionButton(self, Category: Any, Item: Any) -> None:
         """SetInsertionButton函数用于设置插入按钮（）。"""
-    def UpdateAllButtons(self, *args, **kwargs) -> Any:
+    def UpdateAllButtons(self) -> None:
         """UpdateAllButtons函数用于更新所有按钮（）。"""
-    def UpdateButton(self, *args, **kwargs) -> Any:
+    def UpdateButton(self, Item: Any) -> None:
         """UpdateButton函数用于更新指定按钮（）。"""
     CurrentCategory: Any
     """CurrentCategory属性用于获取或设置当前选择的分类。该属性返回当前活动的分类对象，或用于设置新的活动分类。"""
@@ -32727,7 +34323,7 @@ class CategoryButtons(CustomControl):
     """BevelKind属性用于设置控件斜角的类型。该属性定义了控件的斜角效果类型，如凸起或凹陷。"""
     BevelWidth: Any
     """BevelWidth属性用于设置控件斜角的宽度。该属性定义了控件斜角的宽度。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置控件的边框宽度。该属性定义了控件的边框线宽度。"""
     BorderStyle: Any
     """BorderStyle属性用于设置控件的边框样式。该属性定义了控件的边框线样式，如实线或虚线。"""
@@ -32741,33 +34337,33 @@ class CategoryButtons(CustomControl):
     """ButtonOptions属性用于设置按钮的选项。该属性定义了按钮的各种配置选项，如是否可拖动、是否显示文本等。"""
     Categories: Any
     """Categories属性用于获取或设置控件的分类集合。该属性定义了控件中包含的所有分类对象。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的整体背景颜色。"""
-    Cursor: Any
+    Cursor: int
     """Cursor属性用于设置控件的光标样式。该属性定义了当鼠标悬停在控件上时显示的光标样式。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置控件是否作为停靠站点。该属性定义了控件是否允许其他控件停靠在其上。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了控件的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置控件的字体。该属性定义了控件显示文本的字体样式。"""
     GradientDirection: Any
     """GradientDirection属性用于设置控件的渐变方向。该属性定义了控件背景颜色的渐变方向，如水平渐变或垂直渐变。"""
-    Height: Any
+    Height: int
     """Height属性用于设置控件的高度。该属性定义了控件的固定高度值。"""
     HotButtonColor: Any
     """HotButtonColor属性用于设置按钮的热点颜色。该属性定义了按钮在鼠标悬停时显示的颜色。"""
     Images: Any
     """Images属性用于设置控件的图像列表。该属性定义了按钮和分类使用的图像集合。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
@@ -32775,21 +34371,21 @@ class CategoryButtons(CustomControl):
     """RegularButtonColor属性用于设置按钮的常规颜色。该属性定义了按钮在正常状态下显示的颜色。"""
     SelectedButtonColor: Any
     """SelectedButtonColor属性用于设置按钮的选中颜色。该属性定义了按钮在选中状态下显示的颜色。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
-    Width: Any
+    Width: int
     """Width属性用于设置控件的宽度。该属性定义了控件的固定宽度值。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在控件对齐之前触发。该事件处理程序允许开发人员在控件对齐前执行自定义操作。"""
@@ -32886,13 +34482,13 @@ class ScrollingWinControl(WinControl):
     """ScrollingWinControl类继承自WinControl，用于创建带滚动功能的窗口控件。该类提供了滚动条和自动滚动功能。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建ScrollingWinControl类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁ScrollingWinControl类的实例（）。"""
-    def DisableAutoRange(self, *args, **kwargs) -> Any:
+    def DisableAutoRange(self) -> None:
         """DisableAutoRange函数用于禁用自动范围调整（）。"""
-    def EnableAutoRange(self, *args, **kwargs) -> Any:
+    def EnableAutoRange(self) -> None:
         """EnableAutoRange函数用于启用自动范围调整（）。"""
-    def ScrollInView(self, *args, **kwargs) -> Any:
+    def ScrollInView(self, AControl: Any) -> None:
         """ScrollInView函数用于将指定的子控件滚动到可视区域（）。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在控件对齐之前触发。该事件处理程序允许开发人员在控件对齐前执行自定义操作。"""
@@ -32907,25 +34503,25 @@ class CustomCategoryPanelGroup(ScrollingWinControl):
     """CustomCategoryPanelGroup类继承自ScrollingWinControl，用于创建带分类面板组的控件。该类提供了折叠和展开面板的功能，并支持自定义面板的外观和行为。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomCategoryPanelGroup类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomCategoryPanelGroup类的实例（）。"""
-    def CollapseAll(self, *args, **kwargs) -> Any:
+    def CollapseAll(self) -> None:
         """CollapseAll函数用于折叠所有面板（）。"""
-    def CreatePanel(self, *args, **kwargs) -> Any:
+    def CreatePanel(self) -> Any:
         """CreatePanel函数用于创建一个新的面板（返回新创建的面板对象）。"""
-    def ExpandAll(self, *args, **kwargs) -> Any:
+    def ExpandAll(self) -> None:
         """ExpandAll函数用于展开所有面板（）。"""
     ChevronAlignment: Any
     """ChevronAlignment属性用于设置或获取面板组中折叠/展开图标的对齐方式。该属性定义了图标在面板标题中的位置。"""
-    ChevronColor: Any
+    ChevronColor: int
     """ChevronColor属性用于设置或获取面板组中折叠/展开图标的颜色。该属性定义了图标在默认状态下的显示颜色。"""
-    ChevronHotColor: Any
+    ChevronHotColor: int
     """ChevronHotColor属性用于设置或获取面板组中折叠/展开图标在鼠标悬停时的颜色。该属性定义了图标在鼠标悬停状态下的显示颜色。"""
-    Color: Any
+    Color: int
     """Color属性用于设置或获取面板组的背景颜色。该属性定义了面板组的整体背景颜色。"""
-    GradientBaseColor: Any
+    GradientBaseColor: int
     """GradientBaseColor属性用于设置或获取面板组背景渐变的基础颜色。该属性定义了背景渐变的起始颜色。"""
-    GradientColor: Any
+    GradientColor: int
     """GradientColor属性用于设置或获取面板组背景渐变的终止颜色。该属性定义了背景渐变的结束颜色。"""
     GradientDirection: Any
     """GradientDirection属性用于设置或获取面板组背景渐变的方向。该属性定义了背景颜色的渐变方向，如水平渐变或垂直渐变。"""
@@ -32964,33 +34560,33 @@ class CategoryPanelGroup(CustomCategoryPanelGroup):
     """BiDiMode属性用于设置控件的双向模式。该属性定义了控件的文本阅读顺序，如从左到右或从右到左。"""
     ChevronAlignment: Any
     """ChevronAlignment属性用于设置或获取面板组中折叠/展开图标的对齐方式。该属性定义了图标在面板标题中的位置。"""
-    ChevronColor: Any
+    ChevronColor: int
     """ChevronColor属性用于设置或获取面板组中折叠/展开图标的颜色。该属性定义了图标在默认状态下的显示颜色。"""
-    ChevronHotColor: Any
+    ChevronHotColor: int
     """ChevronHotColor属性用于设置或获取面板组中折叠/展开图标在鼠标悬停时的颜色。该属性定义了图标在鼠标悬停状态下的显示颜色。"""
     Constraints: Any
     """Constraints属性用于设置控件的大小约束。该属性定义了控件的最小和最大大小。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置控件是否作为停靠站点。该属性定义了控件是否允许其他控件停靠在其上。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了控件的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
-    Color: Any
+    Color: int
     """Color属性用于设置或获取面板组的背景颜色。该属性定义了面板组的整体背景颜色。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件是否具有三维边框效果。该属性定义了控件是否显示三维边框。"""
     Font: Any
     """Font属性用于设置或获取控件的字体。该属性定义了控件显示文本的字体样式。"""
-    GradientBaseColor: Any
+    GradientBaseColor: int
     """GradientBaseColor属性用于设置或获取面板组背景渐变的基础颜色。该属性定义了背景渐变的起始颜色。"""
-    GradientColor: Any
+    GradientColor: int
     """GradientColor属性用于设置或获取面板组背景渐变的终止颜色。该属性定义了背景渐变的结束颜色。"""
     GradientDirection: Any
     """GradientDirection属性用于设置或获取面板组背景渐变的方向。该属性定义了背景颜色的渐变方向，如水平渐变或垂直渐变。"""
@@ -33004,43 +34600,43 @@ class CategoryPanelGroup(CustomCategoryPanelGroup):
     """HeaderImage属性用于设置或获取面板标题的图像。该属性定义了面板标题中显示的图像对象。"""
     HeaderStyle: Any
     """HeaderStyle属性用于设置或获取面板标题的样式。该属性定义了面板标题的外观样式，如是否显示背景、是否有边框等。"""
-    Height: Any
+    Height: int
     """Height属性用于设置或获取控件的高度。该属性定义了控件的固定高度值。"""
     Images: Any
     """Images属性用于设置或获取面板组的图像列表。该属性定义了面板组中使用的图像集合。"""
     Padding: Any
     """Padding属性用于设置控件的内边距。该属性定义了控件内容与控件边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的双向模式。该属性定义了控件是否使用与父控件相同的双向文本模式。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置控件是否继承父控件的背景。该属性定义了控件是否使用与父控件相同的背景。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置控件是否继承父控件的颜色。该属性定义了控件是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的三维边框效果。该属性定义了控件是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息显示设置。该属性定义了控件是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
-    Width: Any
+    Width: int
     """Width属性用于设置或获取控件的宽度。该属性定义了控件的固定宽度值。"""
     OnCanResize: Any
     """OnCanResize事件在控件大小调整之前触发。该事件处理程序允许开发人员在控件大小调整之前执行自定义操作。"""
@@ -33103,25 +34699,25 @@ class CustomListBox(CustomMultiSelectListControl):
     """CustomListBox类继承自CustomMultiSelectListControl，用于创建带有多选功能的自定义列表框控件。该类提供了丰富的方法和属性，用于管理和显示列表项。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomListBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomListBox类的实例（）。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    def AddItem(self, Item: str, AObject: Any) -> None:
         """AddItem函数用于向列表框中添加一个新项（）。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """Clear函数用于清空列表框中的所有项（）。"""
-    def ClearSelection(self, *args, **kwargs) -> Any:
+    def ClearSelection(self) -> None:
         """ClearSelection函数用于清除列表框中所有选中的项（）。"""
-    def CopySelection(self, *args, **kwargs) -> Any:
+    def CopySelection(self, Destination: Any) -> bool:
         """CopySelection函数用于复制列表框中所有选中的项（）。"""
-    def DeleteSelected(self, *args, **kwargs) -> Any:
+    def DeleteSelected(self) -> None:
         """DeleteSelected函数用于删除列表框中所有选中的项（）。"""
     def GetCount(self) -> Any:
         """GetCount函数用于获取列表框中的项数（self指向实例本身，返回项的总数）。"""
-    def ItemAtPos(self, *args, **kwargs) -> int:
+    def ItemAtPos(self, Pos: Any, Existing: bool) -> int:
         """ItemAtPos函数用于根据给定的位置获取对应的列表项索引（返回项的索引）。"""
-    def ItemRect(self, *args, **kwargs) -> Any:
+    def ItemRect(self, Index: int) -> Any:
         """ItemRect函数用于获取指定项的矩形区域（）。"""
-    def SelectAll(self, *args, **kwargs) -> Any:
+    def SelectAll(self) -> None:
         """SelectAll函数用于选中列表框中的所有项（）。"""
     AutoCompleteDelay: Any
     """AutoCompleteDelay属性用于设置自动完成的延迟时间。该属性定义了输入字符后延迟多少毫秒开始自动完成。"""
@@ -33139,16 +34735,16 @@ class CustomListBox(CustomMultiSelectListControl):
     """ScrollWidth属性用于设置或获取列表框的滚动宽度。该属性定义了列表框的水平滚动范围。"""
     TopIndex: int
     """TopIndex属性用于设置或获取列表框中显示的第一个项的索引。该属性定义了列表框滚动到的项的索引。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
 
 class CustomCheckListBox(CustomListBox):
     """CustomCheckListBox类继承自CustomListBox，用于创建带复选框功能的自定义列表框控件。该类提供了丰富的方法和属性，用于管理和显示带复选框的列表项。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomCheckListBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomCheckListBox类的实例（）。"""
-    def CheckAll(self, *args, **kwargs) -> Any:
+    def CheckAll(self, AState: Any, AAllowGrayed: bool = ..., AAllowDisabled: bool = ...) -> None:
         """CheckAll函数用于选中所有列表项（）。"""
     AllowGrayed: bool
     """AllowGrayed属性用于设置是否允许复选框的灰色状态。该属性定义了复选框是否可以有部分选中的状态。"""
@@ -33164,9 +34760,9 @@ class CustomCheckListBox(CustomListBox):
     """State属性用于获取或设置复选框的状态。该属性定义了复选框的当前状态，如选中、未选中或灰色状态。"""
     Header: int
     """Header属性用于获取或设置列表框中是否显示标题。该属性定义了标题的显示状态和索引。"""
-    HeaderColor: Any
+    HeaderColor: int
     """HeaderColor属性用于设置标题的文本颜色。该属性定义了标题文本显示的颜色。"""
-    HeaderBackgroundColor: Any
+    HeaderBackgroundColor: int
     """HeaderBackgroundColor属性用于设置标题的背景颜色。该属性定义了标题背景显示的颜色。"""
     OnClickCheck: Any
     """OnClickCheck事件在复选框被点击时触发。该事件处理程序允许开发人员在复选框被点击时执行自定义操作。"""
@@ -33175,11 +34771,11 @@ class CheckListBox(CustomCheckListBox):
     """CheckListBox类继承自CustomCheckListBox，用于创建带复选框功能的列表框控件。该类提供了丰富的属性，支持自定义列表框的外观和行为。"""
     Align: Any
     """Align属性用于设置控件的对齐方式。该属性定义了控件在其父控件中的对齐方式，如顶部对齐、底部对齐等。"""
-    AllowGrayed: Any
+    AllowGrayed: bool
     """AllowGrayed属性用于设置是否允许复选框的灰色状态。该属性定义了复选框是否可以有部分选中的状态。"""
     Anchors: Any
     """Anchors属性用于设置控件的锚点。该属性定义了控件如何随其父控件的大小变化而调整位置和大小。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置是否启用自动完成功能。该属性定义了在输入字符时是否自动匹配列表项。"""
     BevelEdges: Any
     """BevelEdges属性用于设置控件边缘的斜角。该属性定义了控件哪些边缘具有斜角效果。"""
@@ -33195,79 +34791,79 @@ class CheckListBox(CustomCheckListBox):
     """BiDiMode属性用于设置控件的双向模式。该属性定义了控件的文本阅读顺序，如从左到右或从右到左。"""
     BorderStyle: Any
     """BorderStyle属性用于设置控件的边框样式。该属性定义了控件的边框线样式，如实线或虚线。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的整体背景颜色。"""
-    Columns: Any
+    Columns: int
     """Columns属性用于设置列表框的列数。该属性定义了列表框中的列数。"""
     Constraints: Any
     """Constraints属性用于设置控件的大小约束。该属性定义了控件的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件是否具有三维边框效果。该属性定义了控件是否显示三维边框。"""
     CheckBoxPadding: Any
     """CheckBoxPadding属性用于设置复选框与列表项文本之间的间距。该属性定义了复选框和文本之间的距离。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了控件的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
-    Flat: Any
+    Flat: bool
     """Flat属性用于设置复选框是否为扁平样式。该属性定义了复选框的外观是否为扁平风格。"""
     Font: Any
     """Font属性用于设置控件的字体。该属性定义了控件显示文本的字体样式。"""
-    HeaderColor: Any
+    HeaderColor: int
     """HeaderColor属性用于设置标题的文本颜色。该属性定义了标题文本显示的颜色。"""
-    HeaderBackgroundColor: Any
+    HeaderBackgroundColor: int
     """HeaderBackgroundColor属性用于设置标题的背景颜色。该属性定义了标题背景显示的颜色。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了控件在接收键盘输入时的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了控件使用的输入法名称。"""
-    IntegralHeight: Any
+    IntegralHeight: bool
     """IntegralHeight属性用于设置控件是否为整行高度。该属性定义了控件的高度是否为整行高度，以避免部分行显示。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置列表项的高度。该属性定义了每个列表项的固定高度值。"""
     Items: Any
     """Items属性用于获取或设置列表框中的项集合。该属性定义了列表框中包含的所有项。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的双向模式。该属性定义了控件是否使用与父控件相同的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置控件是否继承父控件的颜色。该属性定义了控件是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的三维边框效果。该属性定义了控件是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息显示设置。该属性定义了控件是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
     ScrollWidth: Any
     """ScrollWidth属性用于设置列表框的滚动宽度。该属性定义了列表框的水平滚动范围。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    Sorted: Any
+    Sorted: bool
     """Sorted属性用于设置列表项是否按字母顺序排序。该属性定义了列表项是否自动排序。"""
-    Style: Any
+    Style: int
     """Style属性用于设置控件的样式。该属性定义了控件的显示和交互样式。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     TabWidth: Any
     """TabWidth属性用于设置列表项的标签宽度。该属性定义了列表项的标签宽度。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
     OnClick: Any
     """OnClick事件在控件被单击时触发。该事件处理程序允许开发人员在控件被单击时执行自定义操作。"""
@@ -33328,11 +34924,11 @@ class ColorGrid(CustomControl):
     """ColorGrid类继承自CustomControl，用于创建带颜色网格功能的控件。该类提供了丰富的方法和属性，用于管理和显示颜色网格。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建ColorGrid类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def ColorToIndex(self, *args, **kwargs) -> int:
+    def ColorToIndex(self, AColor: int) -> int:
         """ColorToIndex函数用于将颜色转换为索引（返回颜色的索引值）。"""
     ForegroundColor: Any
     """ForegroundColor属性用于设置或获取前景色。该属性定义了网格的前景颜色。"""
-    BackgroundColor: Any
+    BackgroundColor: int
     """BackgroundColor属性用于设置或获取背景色。该属性定义了网格的背景颜色。"""
     Anchors: Any
     """Anchors属性用于设置控件的锚点。该属性定义了控件如何随其父控件的大小变化而调整位置和大小。"""
@@ -33340,15 +34936,15 @@ class ColorGrid(CustomControl):
     """ClickEnablesColor属性用于设置是否在点击时启用颜色选择。该属性定义了用户点击网格时是否启用颜色选择功能。"""
     Constraints: Any
     """Constraints属性用于设置控件的大小约束。该属性定义了控件的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件是否具有三维边框效果。该属性定义了控件是否显示三维边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
     GridOrdering: Any
     """GridOrdering属性用于设置网格的排列顺序。该属性定义了网格中颜色的排列方式。"""
@@ -33362,27 +34958,27 @@ class ColorGrid(CustomControl):
     """BackgroundEnabled属性用于设置背景色是否启用。该属性定义了背景颜色选择功能是否启用。"""
     Font: Any
     """Font属性用于设置或获取控件的字体。该属性定义了控件显示文本的字体样式。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的三维边框效果。该属性定义了控件是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息显示设置。该属性定义了控件是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
     Selection: int
     """Selection属性用于设置或获取当前选中的颜色索引。该属性定义了当前选中的颜色在网格中的索引值。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
     OnChange: Any
     """OnChange事件在控件的颜色选择变化时触发。该事件处理程序允许开发人员在颜色选择变化时执行自定义操作。"""
@@ -33421,7 +35017,7 @@ class CustomColorListBox(CustomListBox):
     """CustomColorListBox类继承自CustomListBox，用于创建带颜色列表功能的自定义列表框控件。该类提供了丰富的方法和属性，用于管理和显示颜色列表。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomColorListBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    Style: Any
+    Style: int
     """Style属性用于设置或获取颜色列表框的样式。该属性定义了颜色列表框的显示和交互样式。"""
     Colors: Any
     """Colors属性用于获取或设置颜色列表框中的颜色集合。该属性定义了颜色列表框中包含的所有颜色。"""
@@ -33429,9 +35025,9 @@ class CustomColorListBox(CustomListBox):
     """ColorNames属性用于获取或设置颜色列表框中的颜色名称集合。该属性定义了颜色列表框中包含的所有颜色名称。"""
     Selected: Any
     """Selected属性用于获取或设置颜色列表框中选中的颜色。该属性定义了当前选中的颜色。"""
-    DefaultColorColor: Any
+    DefaultColorColor: int
     """DefaultColorColor属性用于设置或获取默认颜色的颜色值。该属性定义了颜色列表框中默认颜色的显示颜色。"""
-    NoneColorColor: Any
+    NoneColorColor: int
     """NoneColorColor属性用于设置或获取无颜色的颜色值。该属性定义了颜色列表框中无颜色的显示颜色。"""
     OnGetColors: Any
     """OnGetColors事件在需要获取颜色集合时触发。该事件处理程序允许开发人员在需要获取颜色集合时执行自定义操作。"""
@@ -33440,15 +35036,15 @@ class ColorListBox(CustomColorListBox):
     """ColorListBox类继承自CustomColorListBox，用于创建带颜色列表功能的列表框控件。该类提供了丰富的属性，支持自定义颜色列表框的外观和行为。"""
     Align: Any
     """Align属性用于设置控件的对齐方式。该属性定义了控件在其父控件中的对齐方式，如顶部对齐、底部对齐等。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置是否启用自动完成功能。该属性定义了在输入字符时是否自动匹配列表项。"""
-    DefaultColorColor: Any
+    DefaultColorColor: int
     """DefaultColorColor属性用于设置或获取默认颜色的颜色值。该属性定义了颜色列表框中默认颜色的显示颜色。"""
-    NoneColorColor: Any
+    NoneColorColor: int
     """NoneColorColor属性用于设置或获取无颜色的颜色值。该属性定义了颜色列表框中无颜色的显示颜色。"""
     Selected: Any
     """Selected属性用于获取或设置颜色列表框中选中的颜色。该属性定义了当前选中的颜色。"""
-    Style: Any
+    Style: int
     """Style属性用于设置或获取颜色列表框的样式。该属性定义了颜色列表框的显示和交互样式。"""
     Anchors: Any
     """Anchors属性用于设置控件的锚点。该属性定义了控件如何随其父控件的大小变化而调整位置和大小。"""
@@ -33462,47 +35058,47 @@ class ColorListBox(CustomColorListBox):
     """BevelOuter属性用于设置控件外部的斜角。该属性定义了控件外部的斜角效果。"""
     BiDiMode: Any
     """BiDiMode属性用于设置控件的双向模式。该属性定义了控件的文本阅读顺序，如从左到右或从右到左。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置控件的大小约束。该属性定义了控件的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件是否具有三维边框效果。该属性定义了控件是否显示三维边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置控件的字体。该属性定义了控件显示文本的字体样式。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置列表项的高度。该属性定义了每个列表项的固定高度值。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的双向模式。该属性定义了控件是否使用与父控件相同的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置控件是否继承父控件的颜色。该属性定义了控件是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的三维边框效果。该属性定义了控件是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息显示设置。该属性定义了控件是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
     OnClick: Any
     """OnClick事件在控件被单击时触发。该事件处理程序允许开发人员在控件被单击时执行自定义操作。"""
@@ -33553,23 +35149,23 @@ class CustomCombo(CustomListControl):
     """CustomCombo类继承自CustomListControl，用于创建带下拉列表功能的自定义组合框控件。该类提供了丰富的方法和属性，用于管理和显示下拉列表。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomCombo类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomCombo类的实例（）。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    def AddItem(self, Item: str, AObject: Any) -> None:
         """AddItem函数用于向组合框中添加一个新项（）。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """Clear函数用于清空组合框中的所有项（）。"""
-    def ClearSelection(self, *args, **kwargs) -> Any:
+    def ClearSelection(self) -> None:
         """ClearSelection函数用于清除组合框中所有选中的项（）。"""
-    def CopySelection(self, *args, **kwargs) -> Any:
+    def CopySelection(self, Destination: Any) -> bool:
         """CopySelection函数用于复制组合框中所有选中的项（）。"""
-    def DeleteSelected(self, *args, **kwargs) -> Any:
+    def DeleteSelected(self) -> None:
         """DeleteSelected函数用于删除组合框中所有选中的项（）。"""
     def Focused(self) -> Any:
         """Focused函数用于获取组合框是否获得焦点（self指向实例本身，返回组合框是否获得焦点的状态）。"""
     def GetCount(self) -> Any:
         """GetCount函数用于获取组合框中的项数（self指向实例本身，返回项的总数）。"""
-    def SelectAll(self, *args, **kwargs) -> Any:
+    def SelectAll(self) -> None:
         """SelectAll函数用于选中组合框中的所有项（）。"""
     Canvas: Any
     """Canvas属性用于获取组合框的画布对象。该属性定义了组合框的绘制表面。"""
@@ -33581,18 +35177,18 @@ class CustomCombo(CustomListControl):
     """SelLength属性用于获取或设置组合框中选中文本的长度。该属性定义了选中文本的长度。"""
     SelStart: int
     """SelStart属性用于获取或设置组合框中选中文本的起始位置。该属性定义了选中文本的起始位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
 
 class CustomComboBoxEx(CustomCombo):
     """CustomComboBoxEx类继承自CustomCombo，用于创建扩展的带下拉列表功能的自定义组合框控件。该类提供了丰富的方法和属性，用于管理和显示扩展下拉列表。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomComboBoxEx类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomComboBoxEx类的实例（）。"""
     def Focused(self) -> Any:
         """Focused函数用于获取组合框是否获得焦点（self指向实例本身，返回组合框是否获得焦点的状态）。"""
-    def KeyPress(self, *args, **kwargs) -> Any:
+    def KeyPress(self, Key: str) -> None:
         """KeyPress函数用于处理键盘按键事件（）。"""
     AutoCompleteOptions: Any
     """AutoCompleteOptions属性用于设置自动完成功能的选项。该属性定义了组合框自动完成的相关选项。"""
@@ -33604,7 +35200,7 @@ class CustomComboBoxEx(CustomCombo):
     """ItemsEx属性用于设置或获取扩展项集合。该属性定义了组合框中包含的扩展项。"""
     SelText: str
     """SelText属性用于获取或设置组合框中选中的文本。该属性定义了当前选中的文本。"""
-    Style: Any
+    Style: int
     """Style属性用于设置或获取组合框的样式。该属性定义了组合框的显示和交互样式。"""
     StyleEx: Any
     """StyleEx属性用于设置或获取组合框的扩展样式。该属性定义了组合框的扩展显示和交互样式。"""
@@ -33621,7 +35217,7 @@ class ComboBoxEx(CustomComboBoxEx):
     """AutoCompleteOptions属性用于设置自动完成功能的选项。该属性定义了组合框自动完成的相关选项。"""
     ItemsEx: Any
     """ItemsEx属性用于设置或获取扩展项集合。该属性定义了组合框中包含的扩展项。"""
-    Style: Any
+    Style: int
     """Style属性用于设置或获取组合框的样式。该属性定义了组合框的显示和交互样式。"""
     StyleEx: Any
     """StyleEx属性用于设置或获取组合框的扩展样式。该属性定义了组合框的扩展显示和交互样式。"""
@@ -33631,61 +35227,61 @@ class ComboBoxEx(CustomComboBoxEx):
     """Anchors属性用于设置控件的锚点。该属性定义了控件如何随其父控件的大小变化而调整位置和大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置控件的双向模式。该属性定义了控件的文本阅读顺序，如从左到右或从右到左。"""
-    Color: Any
+    Color: int
     """Color属性用于设置控件的背景颜色。该属性定义了控件的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置控件的大小约束。该属性定义了控件的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置控件是否具有三维边框效果。该属性定义了控件是否显示三维边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置控件是否使用双缓冲。该属性定义了控件是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了控件的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了控件是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置控件的字体。该属性定义了控件显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了控件在接收键盘输入时的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了控件使用的输入法名称。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置列表项的高度。该属性定义了每个列表项的固定高度值。"""
-    MaxLength: Any
+    MaxLength: int
     """MaxLength属性用于设置组合框中可输入的最大字符数。该属性定义了用户可以输入的最大字符数。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置控件是否继承父控件的双向模式。该属性定义了控件是否使用与父控件相同的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置控件是否继承父控件的颜色。该属性定义了控件是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置控件是否继承父控件的三维边框效果。该属性定义了控件是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置控件是否继承父控件的双缓冲。该属性定义了控件是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置控件是否继承父控件的字体。该属性定义了控件是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置控件是否继承父控件的提示信息显示设置。该属性定义了控件是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置控件的右键菜单。该属性定义了控件右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置控件是否显示提示信息。该属性定义了控件是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置控件的标签顺序。该属性定义了控件在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置控件是否为标签停靠点。该属性定义了控件是否可以通过Tab键获得焦点。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置组合框中的文本。该属性定义了组合框中显示的文本内容。"""
     Touch: Any
     """Touch属性用于设置控件的触摸相关属性。该属性定义了控件如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置控件的样式元素。该属性定义了控件使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置控件的样式名称。该属性定义了控件使用的样式名称。"""
     OnBeginEdit: Any
     """OnBeginEdit事件在组合框开始编辑时触发。该事件处理程序允许开发人员在组合框开始编辑时执行自定义操作。"""
@@ -33731,18 +35327,18 @@ class ComboBoxEx(CustomComboBoxEx):
     """OnStartDrag事件在控件开始拖动时触发。该事件处理程序允许开发人员在控件开始拖动时执行自定义操作。"""
     Images: Any
     """Images属性用于设置或获取组合框中的图像列表。该属性定义了组合框中使用的图像集合。"""
-    DropDownCount: Any
+    DropDownCount: int
     """DropDownCount属性用于设置下拉列表中可见项的数量。该属性定义了组合框下拉列表中可见项的最大数量。"""
 
 class CoolBands(Collection):
     """CoolBands类继承自Collection，用于创建带有CoolBar的集合。该类提供了管理和操作CoolBar集合的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CoolBands类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CoolBands类的实例（）。"""
     def Add(self) -> Any:
         """Add函数用于向CoolBands集合中添加一个新项（self指向实例本身，返回新添加项的引用）。"""
-    def FindBand(self, *args, **kwargs) -> Any:
+    def FindBand(self, Control: Any) -> Any:
         """FindBand函数用于在CoolBands集合中查找指定的Band（返回找到的Band对象）。"""
     CoolBar: Any
     """CoolBar属性用于获取或设置关联的CoolBar对象。该属性定义了CoolBands集合中的CoolBar。"""
@@ -33753,17 +35349,17 @@ class CoolBar(ToolWindow):
     """CoolBar类继承自ToolWindow，用于创建带有工具栏的控件。该类提供了管理和操作工具栏的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CoolBar类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CoolBar类的实例（）。"""
-    def FlipChildren(self, *args, **kwargs) -> Any:
+    def FlipChildren(self, AllLevels: bool) -> None:
         """FlipChildren函数用于翻转CoolBar中的子控件（）。"""
-    def ScaleForPPI(self, *args, **kwargs) -> Any:
+    def ScaleForPPI(self, NewPPI: int) -> None:
         """ScaleForPPI函数用于根据PPI（每英寸像素数）缩放CoolBar（）。"""
     Align: Any
     """Align属性用于设置CoolBar的对齐方式。该属性定义了CoolBar在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置CoolBar的锚点。该属性定义了CoolBar如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置CoolBar是否自动调整大小。该属性定义了CoolBar是否根据内容自动调整大小。"""
     BandBorderStyle: Any
     """BandBorderStyle属性用于设置CoolBar中Band的边框样式。该属性定义了Band的边框样式。"""
@@ -33771,19 +35367,19 @@ class CoolBar(ToolWindow):
     """BandMaximize属性用于设置CoolBar中Band是否最大化。该属性定义了Band是否最大化显示。"""
     Bands: Any
     """Bands属性用于获取或设置CoolBar中的Band集合。该属性定义了CoolBar中包含的所有Band对象。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置CoolBar的边框宽度。该属性定义了CoolBar的边框宽度。"""
-    Color: Any
+    Color: int
     """Color属性用于设置CoolBar的背景颜色。该属性定义了CoolBar的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置CoolBar的大小约束。该属性定义了CoolBar的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置CoolBar是否具有三维边框效果。该属性定义了CoolBar是否显示三维边框。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置CoolBar是否为停靠站点。该属性定义了CoolBar是否可以作为其他控件的停靠站点。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置CoolBar是否使用双缓冲。该属性定义了CoolBar是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了CoolBar的拖动行为类型，如拖动控件或拖动其内容。"""
@@ -33795,7 +35391,7 @@ class CoolBar(ToolWindow):
     """EdgeInner属性用于设置CoolBar的内边缘样式。该属性定义了CoolBar的内边缘样式。"""
     EdgeOuter: Any
     """EdgeOuter属性用于设置CoolBar的外边缘样式。该属性定义了CoolBar的外边缘样式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置CoolBar是否可用。该属性定义了CoolBar是否可以响应用户交互。"""
     FixedSize: bool
     """FixedSize属性用于设置CoolBar的大小是否固定。该属性定义了CoolBar的大小是否固定不变。"""
@@ -33805,13 +35401,13 @@ class CoolBar(ToolWindow):
     """Font属性用于设置CoolBar的字体。该属性定义了CoolBar显示文本的字体样式。"""
     Images: Any
     """Images属性用于设置CoolBar中的图像列表。该属性定义了CoolBar中使用的图像集合。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置CoolBar是否继承父控件的颜色。该属性定义了CoolBar是否使用与父控件相同的背景颜色。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置CoolBar是否继承父控件的双缓冲。该属性定义了CoolBar是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置CoolBar是否继承父控件的字体。该属性定义了CoolBar是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置CoolBar是否继承父控件的提示信息显示设置。该属性定义了CoolBar是否使用与父控件相同的提示信息显示设置。"""
     Bitmap: Any
     """Bitmap属性用于设置CoolBar的位图图像。该属性定义了CoolBar的背景图像。"""
@@ -33819,7 +35415,7 @@ class CoolBar(ToolWindow):
     """PopupMenu属性用于设置CoolBar的右键菜单。该属性定义了CoolBar右键点击时显示的上下文菜单。"""
     ShowChevron: bool
     """ShowChevron属性用于设置CoolBar是否显示省略号按钮。该属性定义了CoolBar中是否显示省略号按钮用于访问更多内容。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置CoolBar是否显示提示信息。该属性定义了CoolBar是否在鼠标悬停时显示提示信息。"""
     ShowText: bool
     """ShowText属性用于设置CoolBar是否显示文本。该属性定义了CoolBar中的Band是否显示文本。"""
@@ -33827,11 +35423,11 @@ class CoolBar(ToolWindow):
     """Touch属性用于设置CoolBar的触摸相关属性。该属性定义了CoolBar如何响应触摸输入。"""
     Vertical: bool
     """Vertical属性用于设置CoolBar是否垂直排列。该属性定义了CoolBar中的Band是否垂直排列。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置CoolBar是否可见。该属性定义了CoolBar是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置CoolBar的样式元素。该属性定义了CoolBar使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置CoolBar的样式名称。该属性定义了CoolBar使用的样式名称。"""
     OnChange: Any
     """OnChange事件在CoolBar的状态变化时触发。该事件处理程序允许开发人员在CoolBar的状态变化时执行自定义操作。"""
@@ -33882,27 +35478,27 @@ class BasePickerControl(CustomControl):
     """BasePickerControl类继承自CustomControl，用于创建带下拉选择功能的控件。该类提供了管理和操作选择控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建BasePickerControl类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁BasePickerControl类的实例（）。"""
     def CanModify(self) -> Any:
         """CanModify函数用于检查选择控件是否可以修改（self指向实例本身，返回一个布尔值，指示选择控件是否可以修改）。"""
-    def CloseUp(self, *args, **kwargs) -> Any:
+    def CloseUp(self) -> None:
         """CloseUp函数用于关闭选择控件的下拉列表（）。"""
-    def DropDown(self, *args, **kwargs) -> Any:
+    def DropDown(self) -> None:
         """DropDown函数用于打开选择控件的下拉列表（）。"""
-    BorderColor: Any
+    BorderColor: int
     """BorderColor属性用于设置选择控件的边框颜色。该属性定义了选择控件的边框颜色。"""
     BorderStyle: Any
     """BorderStyle属性用于设置选择控件的边框样式。该属性定义了选择控件的边框样式。"""
     DropDownCount: int
     """DropDownCount属性用于设置选择控件的下拉列表中可见项的数量。该属性定义了选择控件下拉列表中可见项的最大数量。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置选择控件的高亮颜色。该属性定义了选择控件中的高亮颜色。"""
-    HotColor: Any
+    HotColor: int
     """HotColor属性用于设置选择控件的热点颜色。该属性定义了选择控件中的热点颜色。"""
-    PopupColor: Any
+    PopupColor: int
     """PopupColor属性用于设置选择控件的弹出颜色。该属性定义了选择控件下拉列表的背景颜色。"""
-    SelectionColor: Any
+    SelectionColor: int
     """SelectionColor属性用于设置选择控件的选择颜色。该属性定义了选择控件中选中的颜色。"""
     SelectionFontColor: Any
     """SelectionFontColor属性用于设置选择控件的选中文字颜色。该属性定义了选择控件中选中文字的颜色。"""
@@ -33940,7 +35536,7 @@ class CustomTimePicker(BasePickerControl):
     """CustomTimePicker类继承自BasePickerControl，用于创建带时间选择功能的控件。该类提供了管理和操作时间选择的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomTimePicker类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    MinuteIncrement: Any
+    MinuteIncrement: int
     """MinuteIncrement属性用于设置时间选择控件中分钟的增量。该属性定义了时间选择控件中分钟的增量。"""
     Time: Any
     """Time属性用于获取或设置时间选择控件中的时间。该属性定义了时间选择控件中显示的时间。"""
@@ -33955,47 +35551,47 @@ class DatePicker(CustomDatePicker):
     """Anchors属性用于设置DatePicker的锚点。该属性定义了DatePicker如何随其父控件的大小变化而调整位置和大小。"""
     BorderStyle: Any
     """BorderStyle属性用于设置DatePicker的边框样式。该属性定义了DatePicker的边框样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置DatePicker的背景颜色。该属性定义了DatePicker的整体背景颜色。"""
     Date: Any
     """Date属性用于获取或设置DatePicker中的日期。该属性定义了DatePicker中显示的日期。"""
     DateFormat: Any
     """DateFormat属性用于设置DatePicker中日期的格式。该属性定义了DatePicker中日期的显示格式。"""
-    DropDownCount: Any
+    DropDownCount: int
     """DropDownCount属性用于设置DatePicker的下拉列表中可见项的数量。该属性定义了DatePicker下拉列表中可见项的最大数量。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置DatePicker是否可用。该属性定义了DatePicker是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置DatePicker的字体。该属性定义了DatePicker显示文本的字体样式。"""
-    Height: Any
+    Height: int
     """Height属性用于设置DatePicker的高度。该属性定义了DatePicker的高度值。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置DatePicker的高亮颜色。该属性定义了DatePicker中的高亮颜色。"""
-    MaxYear: Any
+    MaxYear: int
     """MaxYear属性用于设置DatePicker中可选的最大年份。该属性定义了DatePicker中可选的最大年份。"""
-    MinYear: Any
+    MinYear: int
     """MinYear属性用于设置DatePicker中可选的最小年份。该属性定义了DatePicker中可选的最小年份。"""
-    PopupColor: Any
+    PopupColor: int
     """PopupColor属性用于设置DatePicker的弹出颜色。该属性定义了DatePicker下拉列表的背景颜色。"""
     PopupMenu: Any
     """PopupMenu属性用于设置DatePicker的右键菜单。该属性定义了DatePicker右键点击时显示的上下文菜单。"""
-    SelectionColor: Any
+    SelectionColor: int
     """SelectionColor属性用于设置DatePicker的选择颜色。该属性定义了DatePicker中选中的颜色。"""
     SelectionFontColor: Any
     """SelectionFontColor属性用于设置DatePicker的选中文字颜色。该属性定义了DatePicker中选中文字的颜色。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置DatePicker是否显示提示信息。该属性定义了DatePicker是否在鼠标悬停时显示提示信息。"""
-    ShowOkCancel: Any
+    ShowOkCancel: bool
     """ShowOkCancel属性用于设置DatePicker是否显示确定和取消按钮。该属性定义了DatePicker中是否显示确定和取消按钮。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置DatePicker的样式元素。该属性定义了DatePicker使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置DatePicker的样式名称。该属性定义了DatePicker使用的样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置DatePicker的标签顺序。该属性定义了DatePicker在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置DatePicker是否为标签停靠点。该属性定义了DatePicker是否可以通过Tab键获得焦点。"""
-    Width: Any
+    Width: int
     """Width属性用于设置DatePicker的宽度。该属性定义了DatePicker的宽度值。"""
     OnChange: Any
     """OnChange事件在DatePicker的状态变化时触发。该事件处理程序允许开发人员在DatePicker的状态变化时执行自定义操作。"""
@@ -34018,45 +35614,45 @@ class TimePicker(CustomTimePicker):
     """Anchors属性用于设置TimePicker的锚点。该属性定义了TimePicker如何随其父控件的大小变化而调整位置和大小。"""
     BorderStyle: Any
     """BorderStyle属性用于设置TimePicker的边框样式。该属性定义了TimePicker的边框样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置TimePicker的背景颜色。该属性定义了TimePicker的整体背景颜色。"""
-    DropDownCount: Any
+    DropDownCount: int
     """DropDownCount属性用于设置TimePicker的下拉列表中可见项的数量。该属性定义了TimePicker下拉列表中可见项的最大数量。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置TimePicker是否可用。该属性定义了TimePicker是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置TimePicker的字体。该属性定义了TimePicker显示文本的字体样式。"""
-    Height: Any
+    Height: int
     """Height属性用于设置TimePicker的高度。该属性定义了TimePicker的高度值。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置TimePicker的高亮颜色。该属性定义了TimePicker中的高亮颜色。"""
-    MinuteIncrement: Any
+    MinuteIncrement: int
     """MinuteIncrement属性用于设置时间选择控件中分钟的增量。该属性定义了时间选择控件中分钟的增量。"""
-    PopupColor: Any
+    PopupColor: int
     """PopupColor属性用于设置TimePicker的弹出颜色。该属性定义了TimePicker下拉列表的背景颜色。"""
     PopupMenu: Any
     """PopupMenu属性用于设置TimePicker的右键菜单。该属性定义了TimePicker右键点击时显示的上下文菜单。"""
-    SelectionColor: Any
+    SelectionColor: int
     """SelectionColor属性用于设置TimePicker的选择颜色。该属性定义了TimePicker中选中的颜色。"""
     SelectionFontColor: Any
     """SelectionFontColor属性用于设置TimePicker的选中文字颜色。该属性定义了TimePicker中选中文字的颜色。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置TimePicker是否显示提示信息。该属性定义了TimePicker是否在鼠标悬停时显示提示信息。"""
-    ShowOkCancel: Any
+    ShowOkCancel: bool
     """ShowOkCancel属性用于设置TimePicker是否显示确定和取消按钮。该属性定义了TimePicker中是否显示确定和取消按钮。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置TimePicker的样式元素。该属性定义了TimePicker使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置TimePicker的样式名称。该属性定义了TimePicker使用的样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置TimePicker的标签顺序。该属性定义了TimePicker在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置TimePicker是否为标签停靠点。该属性定义了TimePicker是否可以通过Tab键获得焦点。"""
     Time: Any
     """Time属性用于获取或设置TimePicker中的时间。该属性定义了TimePicker中显示的时间。"""
     TimeFormat: Any
     """TimeFormat属性用于设置TimePicker中时间的格式。该属性定义了TimePicker中时间的显示格式。"""
-    Width: Any
+    Width: int
     """Width属性用于设置TimePicker的宽度。该属性定义了TimePicker的宽度值。"""
     OnChange: Any
     """OnChange事件在TimePicker的状态变化时触发。该事件处理程序允许开发人员在TimePicker的状态变化时执行自定义操作。"""
@@ -34075,11 +35671,11 @@ class DirectoryOutline(CustomOutline):
     """DirectoryOutline类继承自CustomOutline，用于创建带目录大纲功能的控件。该类提供了管理和操作目录大纲的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建DirectoryOutline类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def ForceCase(self, *args, **kwargs) -> str:
+    def ForceCase(self, const_S: str) -> str:
         """ForceCase函数用于强制设置目录大纲中的字符大小写（返回处理后的字符串）。"""
-    Drive: Any
+    Drive: str
     """Drive属性用于设置或获取目录大纲的驱动器。该属性定义了目录大纲中显示的驱动器。"""
-    Directory: Any
+    Directory: str
     """Directory属性用于设置或获取目录大纲的目录。该属性定义了目录大纲中显示的目录路径。"""
     Lines: Any
     """Lines属性用于获取或设置目录大纲中的行。该属性定义了目录大纲中的所有行。"""
@@ -34089,33 +35685,33 @@ class DirectoryOutline(CustomOutline):
     """Anchors属性用于设置DirectoryOutline的锚点。该属性定义了DirectoryOutline如何随其父控件的大小变化而调整位置和大小。"""
     BorderStyle: Any
     """BorderStyle属性用于设置DirectoryOutline的边框样式。该属性定义了DirectoryOutline的边框样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置DirectoryOutline的背景颜色。该属性定义了DirectoryOutline的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置DirectoryOutline的大小约束。该属性定义了DirectoryOutline的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置DirectoryOutline是否具有三维边框效果。该属性定义了DirectoryOutline是否显示三维边框。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了DirectoryOutline的拖动行为类型，如拖动控件或拖动其内容。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了DirectoryOutline是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置DirectoryOutline是否可用。该属性定义了DirectoryOutline是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置DirectoryOutline的字体。该属性定义了DirectoryOutline显示文本的字体样式。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置目录大纲项的高度。该属性定义了每个目录大纲项的固定高度值。"""
     Options: Any
     """Options属性用于设置目录大纲的选项。该属性定义了目录大纲的各种显示和交互选项。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置DirectoryOutline是否继承父控件的颜色。该属性定义了DirectoryOutline是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置DirectoryOutline是否继承父控件的三维边框效果。该属性定义了DirectoryOutline是否使用与父控件相同的三维边框。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置DirectoryOutline是否继承父控件的字体。该属性定义了DirectoryOutline是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置DirectoryOutline是否继承父控件的提示信息显示设置。该属性定义了DirectoryOutline是否使用与父控件相同的提示信息显示设置。"""
     PictureClosed: Any
     """PictureClosed属性用于设置目录大纲中关闭状态的图标。该属性定义了目录大纲中显示的关闭状态图标。"""
@@ -34125,19 +35721,19 @@ class DirectoryOutline(CustomOutline):
     """PictureOpen属性用于设置目录大纲中打开状态的图标。该属性定义了目录大纲中显示的打开状态图标。"""
     PopupMenu: Any
     """PopupMenu属性用于设置DirectoryOutline的右键菜单。该属性定义了DirectoryOutline右键点击时显示的上下文菜单。"""
-    ScrollBars: Any
+    ScrollBars: bool
     """ScrollBars属性用于设置DirectoryOutline的滚动条。该属性定义了DirectoryOutline是否显示滚动条以及滚动条的样式。"""
-    Style: Any
+    Style: int
     """Style属性用于设置DirectoryOutline的样式。该属性定义了DirectoryOutline的显示和交互样式。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置DirectoryOutline是否显示提示信息。该属性定义了DirectoryOutline是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置DirectoryOutline的标签顺序。该属性定义了DirectoryOutline在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置DirectoryOutline是否为标签停靠点。该属性定义了DirectoryOutline是否可以通过Tab键获得焦点。"""
     TextCase: Any
     """TextCase属性用于设置目录大纲中文本的大小写。该属性定义了目录大纲中文本的大小写显示。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置DirectoryOutline是否可见。该属性定义了DirectoryOutline是否在界面上显示。"""
     OnChange: Any
     """OnChange事件在DirectoryOutline的状态变化时触发。该事件处理程序允许开发人员在DirectoryOutline的状态变化时执行自定义操作。"""
@@ -34184,13 +35780,13 @@ class FileListBox(CustomListBox):
     """FileListBox类继承自CustomListBox，用于创建带文件列表功能的控件。该类提供了管理和操作文件列表的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建FileListBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁FileListBox类的实例（）。"""
-    def Update(self, *args, **kwargs) -> Any:
+    def Update(self) -> None:
         """Update函数用于更新文件列表框的内容（）。"""
-    def ApplyFilePath(self, *args, **kwargs) -> Any:
+    def ApplyFilePath(self, const_Path: str) -> None:
         """ApplyFilePath函数用于将文件路径应用到文件列表框中（）。"""
-    Drive: Any
+    Drive: str
     """Drive属性用于设置或获取文件列表框的驱动器。该属性定义了文件列表框中显示的驱动器。"""
     Directory: str
     """Directory属性用于设置或获取文件列表框的目录。该属性定义了文件列表框中显示的目录路径。"""
@@ -34200,7 +35796,7 @@ class FileListBox(CustomListBox):
     """Align属性用于设置FileListBox的对齐方式。该属性定义了FileListBox在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置FileListBox的锚点。该属性定义了FileListBox如何随其父控件的大小变化而调整位置和大小。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置文件列表框是否启用自动完成功能。该属性定义了文件列表框的自动完成行为。"""
     BevelEdges: Any
     """BevelEdges属性用于设置文件列表框的斜角边缘。该属性定义了文件列表框的斜角边缘样式。"""
@@ -34210,21 +35806,21 @@ class FileListBox(CustomListBox):
     """BevelKind属性用于设置文件列表框的斜角类型。该属性定义了文件列表框的斜角样式类型。"""
     BevelOuter: Any
     """BevelOuter属性用于设置文件列表框的外斜角。该属性定义了文件列表框的外斜角样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置文件列表框的背景颜色。该属性定义了文件列表框的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置文件列表框的大小约束。该属性定义了文件列表框的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置文件列表框是否具有三维边框效果。该属性定义了文件列表框是否显示三维边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置文件列表框是否使用双缓冲。该属性定义了文件列表框是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了文件列表框是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置文件列表框是否可用。该属性定义了文件列表框是否可以响应用户交互。"""
-    ExtendedSelect: Any
+    ExtendedSelect: bool
     """ExtendedSelect属性用于设置文件列表框是否启用扩展选择功能。该属性定义了文件列表框是否可以进行扩展选择。"""
     FileEdit: Any
     """FileEdit属性用于设置文件列表框的文件编辑控件。该属性定义了文件列表框中的文件编辑控件。"""
@@ -34234,43 +35830,43 @@ class FileListBox(CustomListBox):
     """Font属性用于设置文件列表框的字体。该属性定义了文件列表框显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了文件列表框在接收键盘输入时的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了文件列表框使用的输入法名称。"""
-    IntegralHeight: Any
+    IntegralHeight: bool
     """IntegralHeight属性用于设置文件列表框是否启用整行显示。该属性定义了文件列表框中是否显示完整行。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置文件列表框的项高度。该属性定义了每个文件列表项的固定高度值。"""
     Mask: str
     """Mask属性用于设置文件列表框中的文件掩码。该属性定义了文件列表框中显示的文件掩码。"""
-    MultiSelect: Any
+    MultiSelect: bool
     """MultiSelect属性用于设置文件列表框是否启用多选功能。该属性定义了文件列表框是否允许多选。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置文件列表框是否继承父控件的颜色。该属性定义了文件列表框是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置文件列表框是否继承父控件的三维边框效果。该属性定义了文件列表框是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置文件列表框是否继承父控件的双缓冲。该属性定义了文件列表框是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置文件列表框是否继承父控件的字体。该属性定义了文件列表框是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置文件列表框是否继承父控件的提示信息显示设置。该属性定义了文件列表框是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置文件列表框的右键菜单。该属性定义了文件列表框右键点击时显示的上下文菜单。"""
     ShowGlyphs: bool
     """ShowGlyphs属性用于设置文件列表框是否显示图标。该属性定义了文件列表框中是否显示文件图标。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置文件列表框是否显示提示信息。该属性定义了文件列表框是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置文件列表框的标签顺序。该属性定义了文件列表框在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置文件列表框是否为标签停靠点。该属性定义了文件列表框是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置文件列表框的触摸相关属性。该属性定义了文件列表框如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置文件列表框是否可见。该属性定义了文件列表框是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置文件列表框的样式元素。该属性定义了文件列表框使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置文件列表框的样式名称。该属性定义了文件列表框使用的样式名称。"""
     OnChange: Any
     """OnChange事件在文件列表框的状态变化时触发。该事件处理程序允许开发人员在文件列表框的状态变化时执行自定义操作。"""
@@ -34317,19 +35913,19 @@ class DirectoryListBox(CustomListBox):
     """DirectoryListBox类继承自CustomListBox，用于创建带目录列表功能的控件。该类提供了管理和操作目录列表的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建DirectoryListBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁DirectoryListBox类的实例（）。"""
-    def DisplayCase(self, *args, **kwargs) -> str:
+    def DisplayCase(self, const_S: str) -> str:
         """DisplayCase函数用于设置目录列表框中的字符显示大小写（返回处理后的字符串）。"""
-    def FileCompareText(self, *args, **kwargs) -> int:
+    def FileCompareText(self, const_S1: str, const_S2: str) -> int:
         """FileCompareText函数用于比较文件文本（返回比较结果）。"""
-    def GetItemPath(self, *args, **kwargs) -> str:
+    def GetItemPath(self, Index: int) -> str:
         """GetItemPath函数用于获取目录列表框中项的路径（返回项的路径）。"""
-    def OpenCurrent(self, *args, **kwargs) -> Any:
+    def OpenCurrent(self) -> None:
         """OpenCurrent函数用于打开目录列表框中当前选中的项（）。"""
-    def Update(self, *args, **kwargs) -> Any:
+    def Update(self) -> None:
         """Update函数用于更新目录列表框的内容（）。"""
-    Drive: Any
+    Drive: str
     """Drive属性用于设置或获取目录列表框的驱动器。该属性定义了目录列表框中显示的驱动器。"""
     Directory: str
     """Directory属性用于设置或获取目录列表框的目录。该属性定义了目录列表框中显示的目录路径。"""
@@ -34341,7 +35937,7 @@ class DirectoryListBox(CustomListBox):
     """Align属性用于设置DirectoryListBox的对齐方式。该属性定义了DirectoryListBox在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置DirectoryListBox的锚点。该属性定义了DirectoryListBox如何随其父控件的大小变化而调整位置和大小。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置目录列表框是否启用自动完成功能。该属性定义了目录列表框的自动完成行为。"""
     BevelEdges: Any
     """BevelEdges属性用于设置目录列表框的斜角边缘。该属性定义了目录列表框的斜角边缘样式。"""
@@ -34351,23 +35947,23 @@ class DirectoryListBox(CustomListBox):
     """BevelKind属性用于设置目录列表框的斜角类型。该属性定义了目录列表框的斜角样式类型。"""
     BevelOuter: Any
     """BevelOuter属性用于设置目录列表框的外斜角。该属性定义了目录列表框的外斜角样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置目录列表框的背景颜色。该属性定义了目录列表框的整体背景颜色。"""
-    Columns: Any
+    Columns: int
     """Columns属性用于设置目录列表框的列数。该属性定义了目录列表框中显示的列数。"""
     Constraints: Any
     """Constraints属性用于设置目录列表框的大小约束。该属性定义了目录列表框的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置目录列表框是否具有三维边框效果。该属性定义了目录列表框是否显示三维边框。"""
     DirLabel: Any
     """DirLabel属性用于设置目录列表框的目录标签。该属性定义了目录列表框中显示的目录标签。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置目录列表框是否使用双缓冲。该属性定义了目录列表框是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了目录列表框是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置目录列表框是否可用。该属性定义了目录列表框是否可以响应用户交互。"""
     FileList: Any
     """FileList属性用于设置目录列表框的文件列表。该属性定义了目录列表框中显示的文件列表。"""
@@ -34375,37 +35971,37 @@ class DirectoryListBox(CustomListBox):
     """Font属性用于设置目录列表框的字体。该属性定义了目录列表框显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了目录列表框在接收键盘输入时的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了目录列表框使用的输入法名称。"""
-    IntegralHeight: Any
+    IntegralHeight: bool
     """IntegralHeight属性用于设置目录列表框是否启用整行显示。该属性定义了目录列表框中是否显示完整行。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于设置目录列表框的项高度。该属性定义了每个目录列表项的固定高度值。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置目录列表框是否继承父控件的颜色。该属性定义了目录列表框是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置目录列表框是否继承父控件的三维边框效果。该属性定义了目录列表框是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置目录列表框是否继承父控件的双缓冲。该属性定义了目录列表框是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置目录列表框是否继承父控件的字体。该属性定义了目录列表框是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置目录列表框是否继承父控件的提示信息显示设置。该属性定义了目录列表框是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置目录列表框的右键菜单。该属性定义了目录列表框右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置目录列表框是否显示提示信息。该属性定义了目录列表框是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置目录列表框的标签顺序。该属性定义了目录列表框在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置目录列表框是否为标签停靠点。该属性定义了目录列表框是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置目录列表框的触摸相关属性。该属性定义了目录列表框如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置目录列表框是否可见。该属性定义了目录列表框是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置目录列表框的样式元素。该属性定义了目录列表框使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置目录列表框的样式名称。该属性定义了目录列表框使用的样式名称。"""
     OnChange: Any
     """OnChange事件在目录列表框的状态变化时触发。该事件处理程序允许开发人员在目录列表框的状态变化时执行自定义操作。"""
@@ -34452,19 +36048,19 @@ class DriveComboBox(CustomComboBox):
     """DriveComboBox类继承自CustomComboBox，用于创建带驱动器选择功能的组合控件。该类提供了管理和操作驱动器选择的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建DriveComboBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁DriveComboBox类的实例（）。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置DriveComboBox的文本内容。该属性定义了DriveComboBox中显示的文本。"""
-    Drive: Any
+    Drive: str
     """Drive属性用于获取或设置DriveComboBox的驱动器。该属性定义了DriveComboBox中选择的驱动器。"""
     Align: Any
     """Align属性用于设置DriveComboBox的对齐方式。该属性定义了DriveComboBox在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置DriveComboBox的锚点。该属性定义了DriveComboBox如何随其父控件的大小变化而调整位置和大小。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置DriveComboBox是否启用自动完成功能。该属性定义了DriveComboBox的自动完成行为。"""
-    AutoDropDown: Any
+    AutoDropDown: bool
     """AutoDropDown属性用于设置DriveComboBox是否在输入时自动显示下拉列表。该属性定义了DriveComboBox的自动下拉行为。"""
     BevelEdges: Any
     """BevelEdges属性用于设置DriveComboBox的斜角边缘。该属性定义了DriveComboBox的斜角边缘样式。"""
@@ -34474,55 +36070,55 @@ class DriveComboBox(CustomComboBox):
     """BevelKind属性用于设置DriveComboBox的斜角类型。该属性定义了DriveComboBox的斜角样式类型。"""
     BevelOuter: Any
     """BevelOuter属性用于设置DriveComboBox的外斜角。该属性定义了DriveComboBox的外斜角样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置DriveComboBox的背景颜色。该属性定义了DriveComboBox的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置DriveComboBox的大小约束。该属性定义了DriveComboBox的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置DriveComboBox是否具有三维边框效果。该属性定义了DriveComboBox是否显示三维边框。"""
     DirList: Any
     """DirList属性用于获取或设置DriveComboBox关联的目录列表框。该属性定义了DriveComboBox关联的目录列表框对象。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置DriveComboBox是否使用双缓冲。该属性定义了DriveComboBox是否使用双缓冲技术来减少闪烁。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了DriveComboBox是否可以被拖动以及拖动的方式。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置DriveComboBox是否可用。该属性定义了DriveComboBox是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置DriveComboBox的字体。该属性定义了DriveComboBox显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了DriveComboBox在接收键盘输入时的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了DriveComboBox使用的输入法名称。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置DriveComboBox是否继承父控件的颜色。该属性定义了DriveComboBox是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置DriveComboBox是否继承父控件的三维边框效果。该属性定义了DriveComboBox是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置DriveComboBox是否继承父控件的双缓冲。该属性定义了DriveComboBox是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置DriveComboBox是否继承父控件的字体。该属性定义了DriveComboBox是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置DriveComboBox是否继承父控件的提示信息显示设置。该属性定义了DriveComboBox是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置DriveComboBox的右键菜单。该属性定义了DriveComboBox右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置DriveComboBox是否显示提示信息。该属性定义了DriveComboBox是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置DriveComboBox的标签顺序。该属性定义了DriveComboBox在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置DriveComboBox是否为标签停靠点。该属性定义了DriveComboBox是否可以通过Tab键获得焦点。"""
     TextCase: Any
     """TextCase属性用于设置DriveComboBox中文本的大小写。该属性定义了DriveComboBox中文本的大小写显示。"""
     Touch: Any
     """Touch属性用于设置DriveComboBox的触摸相关属性。该属性定义了DriveComboBox如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置DriveComboBox是否可见。该属性定义了DriveComboBox是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置DriveComboBox的样式元素。该属性定义了DriveComboBox使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置DriveComboBox的样式名称。该属性定义了DriveComboBox使用的样式名称。"""
     OnChange: Any
     """OnChange事件在DriveComboBox的状态变化时触发。该事件处理程序允许开发人员在DriveComboBox的状态变化时执行自定义操作。"""
@@ -34563,19 +36159,19 @@ class FilterComboBox(CustomComboBox):
     """FilterComboBox类继承自CustomComboBox，用于创建带过滤功能的组合控件。该类提供了管理和操作过滤功能的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建FilterComboBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁FilterComboBox类的实例（）。"""
     Mask: str
     """Mask属性用于获取或设置FilterComboBox的文件掩码。该属性定义了FilterComboBox中显示的文件掩码。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置FilterComboBox的文本内容。该属性定义了FilterComboBox中显示的文本。"""
     Align: Any
     """Align属性用于设置FilterComboBox的对齐方式。该属性定义了FilterComboBox在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置FilterComboBox的锚点。该属性定义了FilterComboBox如何随其父控件的大小变化而调整位置和大小。"""
-    AutoComplete: Any
+    AutoComplete: bool
     """AutoComplete属性用于设置FilterComboBox是否启用自动完成功能。该属性定义了FilterComboBox的自动完成行为。"""
-    AutoDropDown: Any
+    AutoDropDown: bool
     """AutoDropDown属性用于设置FilterComboBox是否在输入时自动显示下拉列表。该属性定义了FilterComboBox的自动下拉行为。"""
     BevelEdges: Any
     """BevelEdges属性用于设置FilterComboBox的斜角边缘。该属性定义了FilterComboBox的斜角边缘样式。"""
@@ -34585,19 +36181,19 @@ class FilterComboBox(CustomComboBox):
     """BevelKind属性用于设置FilterComboBox的斜角类型。该属性定义了FilterComboBox的斜角样式类型。"""
     BevelOuter: Any
     """BevelOuter属性用于设置FilterComboBox的外斜角。该属性定义了FilterComboBox的外斜角样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置FilterComboBox的背景颜色。该属性定义了FilterComboBox的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置FilterComboBox的大小约束。该属性定义了FilterComboBox的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置FilterComboBox是否具有三维边框效果。该属性定义了FilterComboBox是否显示三维边框。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置FilterComboBox是否使用双缓冲。该属性定义了FilterComboBox是否使用双缓冲技术来减少闪烁。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了FilterComboBox是否可以被拖动以及拖动的方式。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置FilterComboBox是否可用。该属性定义了FilterComboBox是否可以响应用户交互。"""
     FileList: Any
     """FileList属性用于设置FilterComboBox的文件列表。该属性定义了FilterComboBox中显示的文件列表。"""
@@ -34605,35 +36201,35 @@ class FilterComboBox(CustomComboBox):
     """Filter属性用于设置FilterComboBox的过滤器。该属性定义了FilterComboBox中使用的文件过滤器。"""
     Font: Any
     """Font属性用于设置FilterComboBox的字体。该属性定义了FilterComboBox显示文本的字体样式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置输入法的名称。该属性定义了FilterComboBox使用的输入法名称。"""
     ImeMode: Any
     """ImeMode属性用于设置输入法模式。该属性定义了FilterComboBox在接收键盘输入时的输入法模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置FilterComboBox是否继承父控件的颜色。该属性定义了FilterComboBox是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置FilterComboBox是否继承父控件的三维边框效果。该属性定义了FilterComboBox是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置FilterComboBox是否继承父控件的双缓冲。该属性定义了FilterComboBox是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置FilterComboBox是否继承父控件的字体。该属性定义了FilterComboBox是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置FilterComboBox是否继承父控件的提示信息显示设置。该属性定义了FilterComboBox是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置FilterComboBox的右键菜单。该属性定义了FilterComboBox右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置FilterComboBox是否显示提示信息。该属性定义了FilterComboBox是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置FilterComboBox的标签顺序。该属性定义了FilterComboBox在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置FilterComboBox是否为标签停靠点。该属性定义了FilterComboBox是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置FilterComboBox的触摸相关属性。该属性定义了FilterComboBox如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置FilterComboBox是否可见。该属性定义了FilterComboBox是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置FilterComboBox的样式元素。该属性定义了FilterComboBox使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置FilterComboBox的样式名称。该属性定义了FilterComboBox使用的样式名称。"""
     OnChange: Any
     """OnChange事件在FilterComboBox的状态变化时触发。该事件处理程序允许开发人员在FilterComboBox的状态变化时执行自定义操作。"""
@@ -34680,7 +36276,7 @@ class FileSaveDialog(Component):
     """DefaultFolder属性用于获取或设置文件保存对话框的默认文件夹。该属性定义了文件保存对话框的默认文件夹路径。"""
     FavoriteLinks: Any
     """FavoriteLinks属性用于获取或设置文件保存对话框的收藏夹链接。该属性定义了文件保存对话框中的收藏夹链接。"""
-    FileName: Any
+    FileName: str
     """FileName属性用于获取或设置文件保存对话框的文件名。该属性定义了文件保存对话框中显示的文件名。"""
     FileNameLabel: Any
     """FileNameLabel属性用于获取或设置文件保存对话框的文件名标签。该属性定义了文件保存对话框中的文件名标签。"""
@@ -34692,7 +36288,7 @@ class FileSaveDialog(Component):
     """OkButtonLabel属性用于获取或设置文件保存对话框的确定按钮标签。该属性定义了文件保存对话框中确定按钮的显示文本。"""
     Options: Any
     """Options属性用于获取或设置文件保存对话框的选项。该属性定义了文件保存对话框的各种选项。"""
-    Title: Any
+    Title: str
     """Title属性用于获取或设置文件保存对话框的标题。该属性定义了文件保存对话框的标题文本。"""
     OnExecute: Any
     """OnExecute事件在文件保存对话框执行时触发。该事件处理程序允许开发人员在文件保存对话框执行时执行自定义操作。"""
@@ -34710,7 +36306,7 @@ class FileSaveDialog(Component):
     """OnShareViolation事件在文件保存对话框检测到文件共享冲突时触发。该事件处理程序允许开发人员在文件保存对话框检测到文件共享冲突时执行自定义操作。"""
     OnTypeChange: Any
     """OnTypeChange事件在文件保存对话框的文件类型发生变化时触发。该事件处理程序允许开发人员在文件保存对话框的文件类型发生变化时执行自定义操作。"""
-    def __init__(self, *args, **kwargs) -> None:
+    def __init__(self, AOwner: Component) -> None:
         """初始化自身。请参阅 help(type(self)) 以获取准确的签名。"""
     def Execute(self) -> Any:
         """TFileSaveDialog.Execute()
@@ -34768,7 +36364,7 @@ class CustomTaskDialog(Component):
     """CustomTaskDialog类继承自Component，用于创建自定义任务对话框控件。该类提供了管理和操作任务对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomTaskDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomTaskDialog类的实例（）。"""
     def Execute(self) -> Any:
         """Execute函数用于执行任务对话框并返回结果（self指向实例本身，返回任务对话框的执行结果）。"""
@@ -34798,13 +36394,13 @@ class CustomTaskDialog(Component):
     """FooterIcon属性用于获取或设置任务对话框的页脚图标。该属性定义了任务对话框中的页脚图标对象。"""
     FooterText: str
     """FooterText属性用于获取或设置任务对话框的页脚文本。该属性定义了任务对话框中的页脚显示文本。"""
-    Handle: Any
+    Handle: int
     """Handle属性用于获取任务对话框的句柄。该属性定义了任务对话框的窗口句柄。"""
     HelpContext: int
     """HelpContext属性用于获取或设置任务对话框的帮助上下文。该属性定义了任务对话框的帮助上下文ID。"""
     MainIcon: Any
     """MainIcon属性用于获取或设置任务对话框的主图标。该属性定义了任务对话框中的主图标对象。"""
-    ModalResult: Any
+    ModalResult: int
     """ModalResult属性用于获取或设置任务对话框的模态结果。该属性定义了任务对话框的模态结果值。"""
     ProgressBar: Any
     """ProgressBar属性用于获取或设置任务对话框中的进度条。该属性定义了任务对话框中的进度条对象。"""
@@ -34845,7 +36441,7 @@ class TaskDialog(CustomTaskDialog):
     """TaskDialog类继承自CustomTaskDialog，用于创建标准任务对话框控件。该类提供了管理和操作标准任务对话框的方法和属性。"""
     Buttons: Any
     """Buttons属性用于获取或设置任务对话框中的按钮集合。该属性定义了任务对话框中的所有按钮对象。"""
-    Caption: Any
+    Caption: str
     """Caption属性用于获取或设置任务对话框的标题。该属性定义了任务对话框的标题文本。"""
     CommonButtons: Any
     """CommonButtons属性用于获取或设置任务对话框中的常用按钮。该属性定义了任务对话框中显示的常用按钮。"""
@@ -34865,7 +36461,7 @@ class TaskDialog(CustomTaskDialog):
     """FooterIcon属性用于获取或设置任务对话框的页脚图标。该属性定义了任务对话框中的页脚图标对象。"""
     FooterText: Any
     """FooterText属性用于获取或设置任务对话框的页脚文本。该属性定义了任务对话框中的页脚显示文本。"""
-    HelpContext: Any
+    HelpContext: int
     """HelpContext属性用于获取或设置任务对话框的帮助上下文。该属性定义了任务对话框的帮助上下文ID。"""
     MainIcon: Any
     """MainIcon属性用于获取或设置任务对话框的主图标。该属性定义了任务对话框中的主图标对象。"""
@@ -34873,9 +36469,9 @@ class TaskDialog(CustomTaskDialog):
     """ProgressBar属性用于获取或设置任务对话框中的进度条。该属性定义了任务对话框中的进度条对象。"""
     RadioButtons: Any
     """RadioButtons属性用于获取或设置任务对话框中的单选按钮集合。该属性定义了任务对话框中的所有单选按钮对象。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置任务对话框的文本内容。该属性定义了任务对话框中显示的文本。"""
-    Title: Any
+    Title: str
     """Title属性用于获取或设置任务对话框的标题文本。该属性定义了任务对话框的标题显示文本。"""
     VerificationText: Any
     """VerificationText属性用于获取或设置任务对话框的验证文本。该属性定义了任务对话框中的验证显示文本。"""
@@ -34906,22 +36502,22 @@ class CustomPanel(CustomControl):
         """Create函数用于创建CustomPanel类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
     def GetControlsAlignment(self) -> Any:
         """GetControlsAlignment函数用于获取面板中控件的对齐方式（self指向实例本身，返回控件的对齐方式）。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置面板是否继承父控件的背景。该属性定义了面板是否使用与父控件相同的背景。"""
 
 class CustomFlowPanel(CustomPanel):
     """CustomFlowPanel类继承自CustomPanel，用于创建带流布局功能的面板控件。该类提供了管理和操作流布局面板的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomFlowPanel类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomFlowPanel类的实例（）。"""
-    def GetChildren(self, *args, **kwargs) -> Any:
+    def GetChildren(self, Proc: Any, Root: Any) -> None:
         """GetChildren函数用于获取流布局面板的所有子控件（返回子控件列表）。"""
-    def GetControlIndex(self, *args, **kwargs) -> int:
+    def GetControlIndex(self, AControl: Any) -> int:
         """GetControlIndex函数用于获取指定控件在流布局面板中的索引（返回控件的索引值）。"""
-    def SetControlIndex(self, *args, **kwargs) -> Any:
+    def SetControlIndex(self, AControl: Any, Index: int) -> None:
         """SetControlIndex函数用于设置控件在流布局面板中的索引（）。"""
-    def FlipChildren(self, *args, **kwargs) -> Any:
+    def FlipChildren(self, AllLevels: bool) -> None:
         """FlipChildren函数用于翻转流布局面板中的子控件（）。"""
     AutoWrap: bool
     """AutoWrap属性用于设置流布局面板是否自动换行。该属性定义了流布局面板中的控件是否在超出边界时自动换行。"""
@@ -34932,11 +36528,11 @@ class FlowPanel(CustomFlowPanel):
     """FlowPanel类继承自CustomFlowPanel，用于创建带流布局功能的面板控件。该类提供了管理和操作流布局面板的方法和属性。"""
     Align: Any
     """Align属性用于设置FlowPanel的对齐方式。该属性定义了FlowPanel在其父控件中的对齐方式。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于设置FlowPanel的内容对齐方式。该属性定义了FlowPanel中子控件的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置FlowPanel的锚点。该属性定义了FlowPanel如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置FlowPanel是否自动调整大小。该属性定义了FlowPanel是否根据其内容自动调整大小。"""
     AutoWrap: Any
     """AutoWrap属性用于设置FlowPanel是否自动换行。该属性定义了FlowPanel中的控件是否在超出边界时自动换行。"""
@@ -34952,75 +36548,75 @@ class FlowPanel(CustomFlowPanel):
     """BevelWidth属性用于设置FlowPanel的斜角宽度。该属性定义了FlowPanel的斜角宽度大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置FlowPanel的双向文本模式。该属性定义了FlowPanel中显示的文本方向。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置FlowPanel的边框宽度。该属性定义了FlowPanel的边框宽度大小。"""
     BorderStyle: Any
     """BorderStyle属性用于设置FlowPanel的边框样式。该属性定义了FlowPanel的边框样式。"""
-    Caption: Any
+    Caption: str
     """Caption属性用于设置FlowPanel的标题。该属性定义了FlowPanel中显示的标题文本。"""
-    Color: Any
+    Color: int
     """Color属性用于设置FlowPanel的背景颜色。该属性定义了FlowPanel的整体背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置FlowPanel的大小约束。该属性定义了FlowPanel的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置FlowPanel是否具有三维边框效果。该属性定义了FlowPanel是否显示三维边框。"""
-    UseDockManager: Any
+    UseDockManager: bool
     """UseDockManager属性用于设置FlowPanel是否使用停靠管理器。该属性定义了FlowPanel是否启用停靠管理功能。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置FlowPanel是否作为停靠站点。该属性定义了FlowPanel是否允许其他控件停靠。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置FlowPanel是否使用双缓冲。该属性定义了FlowPanel是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了FlowPanel的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了FlowPanel是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置FlowPanel是否可用。该属性定义了FlowPanel是否可以响应用户交互。"""
     FlowStyle: Any
     """FlowStyle属性用于设置FlowPanel的布局样式。该属性定义了FlowPanel中子控件的排列方式。"""
-    FullRepaint: Any
+    FullRepaint: bool
     """FullRepaint属性用于设置FlowPanel是否进行完整重绘。该属性定义了FlowPanel是否在重绘时重新绘制整个控件。"""
     Font: Any
     """Font属性用于设置FlowPanel的字体。该属性定义了FlowPanel显示文本的字体样式。"""
-    Locked: Any
+    Locked: bool
     """Locked属性用于设置FlowPanel是否锁定。该属性定义了FlowPanel是否可以被移动或调整大小。"""
     Padding: Any
     """Padding属性用于设置FlowPanel的内边距。该属性定义了FlowPanel内容与边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置FlowPanel是否继承父控件的双向文本模式。该属性定义了FlowPanel是否使用与父控件相同的双向文本模式。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置FlowPanel是否继承父控件的背景。该属性定义了FlowPanel是否使用与父控件相同的背景。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置FlowPanel是否继承父控件的颜色。该属性定义了FlowPanel是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置FlowPanel是否继承父控件的三维边框效果。该属性定义了FlowPanel是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置FlowPanel是否继承父控件的双缓冲。该属性定义了FlowPanel是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置FlowPanel是否继承父控件的字体。该属性定义了FlowPanel是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置FlowPanel是否继承父控件的提示信息显示设置。该属性定义了FlowPanel是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置FlowPanel的右键菜单。该属性定义了FlowPanel右键点击时显示的上下文菜单。"""
-    ShowCaption: Any
+    ShowCaption: bool
     """ShowCaption属性用于设置FlowPanel是否显示标题。该属性定义了FlowPanel是否显示标题文本。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置FlowPanel是否显示提示信息。该属性定义了FlowPanel是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置FlowPanel的标签顺序。该属性定义了FlowPanel在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置FlowPanel是否为标签停靠点。该属性定义了FlowPanel是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置FlowPanel的触摸相关属性。该属性定义了FlowPanel如何响应触摸输入。"""
     VerticalAlignment: Any
     """VerticalAlignment属性用于设置FlowPanel的垂直对齐方式。该属性定义了FlowPanel中内容的垂直对齐方式。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置FlowPanel是否可见。该属性定义了FlowPanel是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置FlowPanel的样式元素。该属性定义了FlowPanel使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置FlowPanel的样式名称。该属性定义了FlowPanel使用的样式名称。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在FlowPanel插入对齐之前触发。该事件处理程序允许开发人员在FlowPanel插入对齐之前执行自定义操作。"""
@@ -35081,17 +36677,17 @@ class CommonDialog(Component):
     """CommonDialog类继承自Component，用于创建通用对话框控件。该类提供了管理和操作通用对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CommonDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CommonDialog类的实例（）。"""
     def Execute(self) -> Any:
         """Execute函数用于执行通用对话框并返回结果（self指向实例本身，返回通用对话框的执行结果）。"""
-    def DefaultHandler(self, *args, **kwargs) -> Any:
+    def DefaultHandler(self, Message: Any) -> None:
         """DefaultHandler函数用于处理通用对话框的默认事件（）。"""
-    Handle: Any
+    Handle: int
     """Handle属性用于获取通用对话框的句柄。该属性定义了通用对话框的窗口句柄。"""
     Ctl3D: bool
     """Ctl3D属性用于设置通用对话框是否具有三维边框效果。该属性定义了通用对话框是否显示三维边框。"""
-    HelpContext: Any
+    HelpContext: int
     """HelpContext属性用于获取或设置通用对话框的帮助上下文。该属性定义了通用对话框的帮助上下文ID。"""
     OnClose: Any
     """OnClose事件在通用对话框关闭时触发。该事件处理程序允许开发人员在通用对话框关闭时执行自定义操作。"""
@@ -35102,9 +36698,9 @@ class FontDialog(CommonDialog):
     """FontDialog类继承自CommonDialog，用于创建字体选择对话框控件。该类提供了管理和操作字体选择对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建FontDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁FontDialog类的实例（）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行字体选择对话框并返回结果（返回字体选择对话框的执行结果）。"""
     Font: Any
     """Font属性用于获取或设置字体选择对话框中的字体。该属性定义了字体选择对话框中显示的字体对象。"""
@@ -35123,13 +36719,13 @@ class ColorDialog(CommonDialog):
     """ColorDialog类继承自CommonDialog，用于创建颜色选择对话框控件。该类提供了管理和操作颜色选择对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建ColorDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁ColorDialog类的实例（）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行颜色选择对话框并返回结果（返回颜色选择对话框的执行结果）。"""
-    Color: Any
+    Color: int
     """Color属性用于获取或设置颜色选择对话框中的颜色。该属性定义了颜色选择对话框中显示的颜色对象。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置颜色选择对话框是否具有三维边框效果。该属性定义了颜色选择对话框是否显示三维边框。"""
     CustomColors: Any
     """CustomColors属性用于获取或设置颜色选择对话框中的自定义颜色。该属性定义了颜色选择对话框中显示的自定义颜色集合。"""
@@ -35138,7 +36734,7 @@ class ColorDialog(CommonDialog):
 
 class PrintDialog(CommonDialog):
     """PrintDialog类继承自CommonDialog，用于创建打印对话框控件。该类提供了管理和操作打印对话框的方法和属性。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行打印对话框并返回结果（返回打印对话框的执行结果）。"""
     Collate: bool
     """Collate属性用于设置打印对话框中的打印顺序。该属性定义了打印对话框是否进行顺序打印。"""
@@ -35161,22 +36757,22 @@ class PrintDialog(CommonDialog):
 
 class PrinterSetupDialog(CommonDialog):
     """PrinterSetupDialog类继承自CommonDialog，用于创建打印机设置对话框控件。该类提供了管理和操作打印机设置对话框的方法和属性。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行打印机设置对话框并返回结果（返回打印机设置对话框的执行结果）。"""
 
 class FindDialog(CommonDialog):
     """FindDialog类继承自CommonDialog，用于创建查找对话框控件。该类提供了管理和操作查找对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建FindDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁FindDialog类的实例（）。"""
-    def CloseDialog(self, *args, **kwargs) -> Any:
+    def CloseDialog(self) -> None:
         """CloseDialog函数用于关闭查找对话框（）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行查找对话框并返回结果（返回查找对话框的执行结果）。"""
     Left: int
     """Left属性用于设置查找对话框的左边距。该属性定义了查找对话框距离屏幕左边的距离。"""
-    Position: Any
+    Position: int
     """Position属性用于设置查找对话框的显示位置。该属性定义了查找对话框在屏幕上的显示位置。"""
     Top: int
     """Top属性用于设置查找对话框的上边距。该属性定义了查找对话框距离屏幕顶部的距离。"""
@@ -35200,7 +36796,7 @@ class PageSetupDialog(CommonDialog):
     """PageSetupDialog类继承自CommonDialog，用于创建页面设置对话框控件。该类提供了管理和操作页面设置对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建PageSetupDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行页面设置对话框并返回结果（返回页面设置对话框的执行结果）。"""
     def GetDefaults(self) -> bool:
         """GetDefaults函数用于获取页面设置对话框的默认设置（self指向实例本身，返回页面设置对话框的默认设置）。"""
@@ -35249,14 +36845,14 @@ class GraphicControl(Control):
     """GraphicControl类继承自Control，用于创建图形控件。该类提供了管理和操作图形控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建GraphicControl类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁GraphicControl类的实例（）。"""
 
 class Gauge(GraphicControl):
     """Gauge类继承自GraphicControl，用于创建进度条控件。该类提供了管理和操作进度条的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建Gauge类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def AddProgress(self, *args, **kwargs) -> Any:
+    def AddProgress(self, AValue: int) -> None:
         """AddProgress函数用于增加进度条的进度（）。"""
     PercentDone: Any
     """PercentDone属性用于获取或设置进度条的完成百分比。该属性定义了进度条当前完成的百分比。"""
@@ -35264,15 +36860,15 @@ class Gauge(GraphicControl):
     """Align属性用于设置Gauge的对齐方式。该属性定义了Gauge在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置Gauge的锚点。该属性定义了Gauge如何随其父控件的大小变化而调整位置和大小。"""
-    BackColor: Any
+    BackColor: int
     """BackColor属性用于设置Gauge的背景颜色。该属性定义了Gauge的背景颜色。"""
     BorderStyle: Any
     """BorderStyle属性用于设置Gauge的边框样式。该属性定义了Gauge的边框样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置Gauge的颜色。该属性定义了Gauge的前景颜色。"""
     Constraints: Any
     """Constraints属性用于设置Gauge的大小约束。该属性定义了Gauge的最小和最大大小。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置Gauge是否可用。该属性定义了Gauge是否可以响应用户交互。"""
     ForeColor: Any
     """ForeColor属性用于设置Gauge的前景颜色。该属性定义了Gauge的前景颜色。"""
@@ -35284,46 +36880,46 @@ class Gauge(GraphicControl):
     """MinValue属性用于设置Gauge的最小值。该属性定义了Gauge的最小进度值。"""
     MaxValue: Any
     """MaxValue属性用于设置Gauge的最大值。该属性定义了Gauge的最大进度值。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置Gauge是否继承父控件的颜色。该属性定义了Gauge是否使用与父控件相同的前景颜色。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置Gauge是否继承父控件的字体。该属性定义了Gauge是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置Gauge是否继承父控件的提示信息显示设置。该属性定义了Gauge是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置Gauge的右键菜单。该属性定义了Gauge右键点击时显示的上下文菜单。"""
-    Progress: Any
+    Progress: int
     """Progress属性用于获取或设置Gauge的当前进度。该属性定义了Gauge当前的进度值。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置Gauge是否显示提示信息。该属性定义了Gauge是否在鼠标悬停时显示提示信息。"""
     ShowText: bool
     """ShowText属性用于设置Gauge是否显示文本。该属性定义了Gauge上是否显示进度文本。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置Gauge是否可见。该属性定义了Gauge是否在界面上显示。"""
 
 class CustomGridPanel(CustomPanel):
     """CustomGridPanel类继承自CustomPanel，用于创建自定义网格面板控件。该类提供了管理和操作网格面板的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomGridPanel类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomGridPanel类的实例（）。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """BeginUpdate函数用于开始更新网格面板（）。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """EndUpdate函数用于结束更新网格面板（）。"""
-    def ScaleForPPI(self, *args, **kwargs) -> Any:
+    def ScaleForPPI(self, NewPPI: int) -> None:
         """ScaleForPPI函数用于根据PPI缩放网格面板（）。"""
-    def GetChildren(self, *args, **kwargs) -> Any:
+    def GetChildren(self, Proc: Any, Root: Any) -> None:
         """GetChildren函数用于获取网格面板的所有子控件（返回子控件列表）。"""
-    def IsColumnEmpty(self, *args, **kwargs) -> bool:
+    def IsColumnEmpty(self, ACol: int) -> bool:
         """IsColumnEmpty函数用于检查指定列是否为空（返回布尔值）。"""
-    def IsRowEmpty(self, *args, **kwargs) -> bool:
+    def IsRowEmpty(self, ARow: int) -> bool:
         """IsRowEmpty函数用于检查指定行是否为空（返回布尔值）。"""
-    def UpdateControlsColumn(self, *args, **kwargs) -> Any:
+    def UpdateControlsColumn(self) -> None:
         """UpdateControlsColumn函数用于更新指定列的控件（）。"""
-    def UpdateControlsRow(self, *args, **kwargs) -> Any:
+    def UpdateControlsRow(self) -> None:
         """UpdateControlsRow函数用于更新指定行的控件（）。"""
-    def FlipChildren(self, *args, **kwargs) -> Any:
+    def FlipChildren(self, AllLevels: bool) -> None:
         """FlipChildren函数用于翻转网格面板中的子控件（）。"""
     ColumnSpanIndex: int
     """ColumnSpanIndex属性用于获取或设置网格面板中的列跨越索引。该属性定义了网格面板中控件跨越的列索引。"""
@@ -35354,7 +36950,7 @@ class GridPanel(CustomGridPanel):
     """DockManager属性用于获取或设置网格面板的停靠管理器。该属性定义了网格面板是否使用停靠管理功能。"""
     Align: Any
     """Align属性用于设置GridPanel的对齐方式。该属性定义了GridPanel在其父控件中的对齐方式。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于设置GridPanel的内容对齐方式。该属性定义了GridPanel中子控件的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置GridPanel的锚点。该属性定义了GridPanel如何随其父控件的大小变化而调整位置和大小。"""
@@ -35370,13 +36966,13 @@ class GridPanel(CustomGridPanel):
     """BevelWidth属性用于设置GridPanel的斜角宽度。该属性定义了GridPanel的斜角宽度大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置GridPanel的双向文本模式。该属性定义了GridPanel中显示的文本方向。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置GridPanel的边框宽度。该属性定义了GridPanel的边框宽度大小。"""
     BorderStyle: Any
     """BorderStyle属性用于设置GridPanel的边框样式。该属性定义了GridPanel的边框样式。"""
-    Caption: Any
+    Caption: str
     """Caption属性用于设置GridPanel的标题。该属性定义了GridPanel中显示的标题文本。"""
-    Color: Any
+    Color: int
     """Color属性用于设置GridPanel的背景颜色。该属性定义了GridPanel的整体背景颜色。"""
     ColumnCollection: Any
     """ColumnCollection属性用于获取或设置网格面板中的列集合。该属性定义了网格面板中包含的所有列对象。"""
@@ -35384,67 +36980,67 @@ class GridPanel(CustomGridPanel):
     """Constraints属性用于设置GridPanel的大小约束。该属性定义了GridPanel的最小和最大大小。"""
     ControlCollection: Any
     """ControlCollection属性用于获取或设置网格面板中的控件集合。该属性定义了网格面板中包含的所有控件对象。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置GridPanel是否具有三维边框效果。该属性定义了GridPanel是否显示三维边框。"""
-    UseDockManager: Any
+    UseDockManager: bool
     """UseDockManager属性用于设置GridPanel是否使用停靠管理器。该属性定义了GridPanel是否启用停靠管理功能。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置GridPanel是否作为停靠站点。该属性定义了GridPanel是否允许其他控件停靠。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置GridPanel是否使用双缓冲。该属性定义了GridPanel是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了GridPanel的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了GridPanel是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置GridPanel是否可用。该属性定义了GridPanel是否可以响应用户交互。"""
     ExpandStyle: Any
     """ExpandStyle属性用于获取或设置网格面板的展开样式。该属性定义了网格面板中控件的展开方式。"""
-    FullRepaint: Any
+    FullRepaint: bool
     """FullRepaint属性用于设置GridPanel是否进行完整重绘。该属性定义了GridPanel是否在重绘时重新绘制整个控件。"""
     Font: Any
     """Font属性用于设置GridPanel的字体。该属性定义了GridPanel显示文本的字体样式。"""
-    Locked: Any
+    Locked: bool
     """Locked属性用于设置GridPanel是否锁定。该属性定义了GridPanel是否可以被移动或调整大小。"""
     Padding: Any
     """Padding属性用于设置GridPanel的内边距。该属性定义了GridPanel内容与边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置GridPanel是否继承父控件的双向文本模式。该属性定义了GridPanel是否使用与父控件相同的双向文本模式。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置GridPanel是否继承父控件的背景。该属性定义了GridPanel是否使用与父控件相同的背景。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置GridPanel是否继承父控件的颜色。该属性定义了GridPanel是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置GridPanel是否继承父控件的三维边框效果。该属性定义了GridPanel是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置GridPanel是否继承父控件的双缓冲。该属性定义了GridPanel是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置GridPanel是否继承父控件的字体。该属性定义了GridPanel是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置GridPanel是否继承父控件的提示信息显示设置。该属性定义了GridPanel是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置GridPanel的右键菜单。该属性定义了GridPanel右键点击时显示的上下文菜单。"""
     RowCollection: Any
     """RowCollection属性用于获取或设置网格面板中的行集合。该属性定义了网格面板中包含的所有行对象。"""
-    ShowCaption: Any
+    ShowCaption: bool
     """ShowCaption属性用于设置GridPanel是否显示标题。该属性定义了GridPanel是否显示标题文本。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置GridPanel是否显示提示信息。该属性定义了GridPanel是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置GridPanel的标签顺序。该属性定义了GridPanel在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置GridPanel是否为标签停靠点。该属性定义了GridPanel是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置GridPanel的触摸相关属性。该属性定义了GridPanel如何响应触摸输入。"""
     VerticalAlignment: Any
     """VerticalAlignment属性用于设置GridPanel的垂直对齐方式。该属性定义了GridPanel中内容的垂直对齐方式。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置GridPanel是否可见。该属性定义了GridPanel是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置GridPanel的样式元素。该属性定义了GridPanel使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置GridPanel的样式名称。该属性定义了GridPanel使用的样式名称。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在GridPanel插入对齐之前触发。该事件处理程序允许开发人员在GridPanel插入对齐之前执行自定义操作。"""
@@ -35505,9 +37101,9 @@ class HeaderSection(CollectionItem):
     """HeaderSection类继承自CollectionItem，用于创建表头部分控件。该类提供了管理和操作表头部分的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建HeaderSection类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """Assign函数用于分配HeaderSection类的实例（）。"""
-    def ParentBiDiModeChanged(self, *args, **kwargs) -> Any:
+    def ParentBiDiModeChanged(self) -> None:
         """ParentBiDiModeChanged函数用于处理父双向文本模式更改（）。"""
     def UseRightToLeftAlignment(self) -> bool:
         """UseRightToLeftAlignment函数用于检查是否使用从右到左的对齐方式（self指向实例本身，返回布尔值）。"""
@@ -35517,7 +37113,7 @@ class HeaderSection(CollectionItem):
     """Left属性用于获取或设置表头部分的左边距。该属性定义了表头部分的左边距值。"""
     Right: int
     """Right属性用于获取或设置表头部分的右边距。该属性定义了表头部分的右边距值。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于获取或设置表头部分的对齐方式。该属性定义了表头部分中内容的对齐方式。"""
     AllowClick: bool
     """AllowClick属性用于设置是否允许点击表头部分。该属性定义了表头部分是否响应点击事件。"""
@@ -35531,9 +37127,9 @@ class HeaderSection(CollectionItem):
     """Checked属性用于获取或设置表头部分的复选框状态。该属性定义了表头部分的复选框是否被选中。"""
     FixedWidth: bool
     """FixedWidth属性用于设置表头部分的宽度是否固定。该属性定义了表头部分的宽度是否可以调整。"""
-    ImageIndex: Any
+    ImageIndex: int
     """ImageIndex属性用于获取或设置表头部分的图像索引。该属性定义了表头部分中显示的图像索引。"""
-    ImageName: Any
+    ImageName: str
     """ImageName属性用于获取或设置表头部分的图像名称。该属性定义了表头部分中显示的图像名称。"""
     MaxWidth: int
     """MaxWidth属性用于获取或设置表头部分的最大宽度。该属性定义了表头部分的最大宽度值。"""
@@ -35541,7 +37137,7 @@ class HeaderSection(CollectionItem):
     """MinWidth属性用于获取或设置表头部分的最小宽度。该属性定义了表头部分的最小宽度值。"""
     ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置表头部分是否继承父控件的双向文本模式。该属性定义了表头部分是否使用与父控件相同的双向文本模式。"""
-    Style: Any
+    Style: int
     """Style属性用于获取或设置表头部分的样式。该属性定义了表头部分的显示样式。"""
     Text: str
     """Text属性用于获取或设置表头部分的文本。该属性定义了表头部分中显示的文本内容。"""
@@ -35554,9 +37150,9 @@ class HeaderSections(Collection):
         """Create函数用于创建HeaderSections类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
     def Add(self) -> Any:
         """Add函数用于向表头部分集合中添加新项（self指向实例本身，返回新添加的项）。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    def AddItem(self, Text: str, Width: int = ...) -> Any:
         """AddItem函数用于向表头部分集合中添加指定项（）。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self, Index: int, S: str) -> None:
         """Insert函数用于在表头部分集合中插入新项（）。"""
     Items: Any
     """Items属性用于获取或设置表头部分集合中的所有项。该属性定义了表头部分集合中包含的所有项对象。"""
@@ -35567,11 +37163,11 @@ class CustomHeaderControl(WinControl):
     """CustomHeaderControl类继承自WinControl，用于创建自定义表头控件。该类提供了管理和操作表头控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomHeaderControl类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomHeaderControl类的实例（）。"""
     Canvas: Any
     """Canvas属性用于获取或设置表头控件的画布对象。该属性定义了表头控件的绘制区域。"""
-    def FlipChildren(self, *args, **kwargs) -> Any:
+    def FlipChildren(self, AllLevels: bool) -> None:
         """FlipChildren函数用于翻转表头控件中的子控件（）。"""
     Align: Any
     """Align属性用于设置表头控件的对齐方式。该属性定义了表头控件在其父控件中的对齐方式。"""
@@ -35579,9 +37175,9 @@ class CustomHeaderControl(WinControl):
     """Anchors属性用于设置表头控件的锚点。该属性定义了表头控件如何随其父控件的大小变化而调整位置和大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置表头控件的双向文本模式。该属性定义了表头控件中显示的文本方向。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置表头控件的边框宽度。该属性定义了表头控件的边框宽度大小。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了表头控件的拖动类型。"""
@@ -35593,7 +37189,7 @@ class CustomHeaderControl(WinControl):
     """FullDrag属性用于设置是否启用完整拖动。该属性定义了表头控件在拖动过程中是否显示实时拖动效果。"""
     HotTrack: bool
     """HotTrack属性用于设置是否启用热点跟踪。该属性定义了表头控件在鼠标悬停时是否显示热点效果。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置表头控件是否可用。该属性定义了表头控件是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置表头控件的字体。该属性定义了表头控件显示文本的字体样式。"""
@@ -35603,7 +37199,7 @@ class CustomHeaderControl(WinControl):
     """Constraints属性用于设置表头控件的大小约束。该属性定义了表头控件的最小和最大大小。"""
     Sections: Any
     """Sections属性用于获取或设置表头控件的部分集合。该属性定义了表头控件中包含的所有部分对象。"""
-    Style: Any
+    Style: int
     """Style属性用于设置表头控件的样式。该属性定义了表头控件的显示样式。"""
     OnCreateSectionClass: Any
     """OnCreateSectionClass事件在创建表头部分类时触发。该事件处理程序允许开发人员在创建表头部分类时执行自定义操作。"""
@@ -35636,11 +37232,11 @@ class HeaderControl(CustomHeaderControl):
     """Anchors属性用于设置HeaderControl的锚点。该属性定义了HeaderControl如何随其父控件的大小变化而调整位置和大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置HeaderControl的双向文本模式。该属性定义了HeaderControl中显示的文本方向。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置HeaderControl的边框宽度。该属性定义了HeaderControl的边框宽度大小。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置HeaderControl是否使用双缓冲。该属性定义了HeaderControl是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了HeaderControl的拖动类型。"""
@@ -35648,13 +37244,13 @@ class HeaderControl(CustomHeaderControl):
     """DragMode属性用于设置拖动的模式。该属性定义了HeaderControl是否可以被拖动以及拖动的方式。"""
     DragReorder: Any
     """DragReorder属性用于设置是否允许拖动重新排序。该属性定义了HeaderControl是否支持通过拖动重新排序。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置HeaderControl是否可用。该属性定义了HeaderControl是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置HeaderControl的字体。该属性定义了HeaderControl显示文本的字体样式。"""
-    FullDrag: Any
+    FullDrag: bool
     """FullDrag属性用于设置是否启用完整拖动。该属性定义了HeaderControl在拖动过程中是否显示实时拖动效果。"""
-    HotTrack: Any
+    HotTrack: bool
     """HotTrack属性用于设置是否启用热点跟踪。该属性定义了HeaderControl在鼠标悬停时是否显示热点效果。"""
     Images: Any
     """Images属性用于获取或设置HeaderControl的图像列表。该属性定义了HeaderControl中使用的图像列表。"""
@@ -35662,27 +37258,27 @@ class HeaderControl(CustomHeaderControl):
     """Constraints属性用于设置HeaderControl的大小约束。该属性定义了HeaderControl的最小和最大大小。"""
     Sections: Any
     """Sections属性用于获取或设置HeaderControl的部分集合。该属性定义了HeaderControl中包含的所有部分对象。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置HeaderControl是否显示提示信息。该属性定义了HeaderControl是否在鼠标悬停时显示提示信息。"""
-    Style: Any
+    Style: int
     """Style属性用于设置HeaderControl的样式。该属性定义了HeaderControl的显示样式。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置HeaderControl是否继承父控件的双向文本模式。该属性定义了HeaderControl是否使用与父控件相同的双向文本模式。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置HeaderControl是否继承父控件的双缓冲。该属性定义了HeaderControl是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置HeaderControl是否继承父控件的字体。该属性定义了HeaderControl是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置HeaderControl是否继承父控件的提示信息显示设置。该属性定义了HeaderControl是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置HeaderControl的右键菜单。该属性定义了HeaderControl右键点击时显示的上下文菜单。"""
     Touch: Any
     """Touch属性用于设置HeaderControl的触摸相关属性。该属性定义了HeaderControl如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置HeaderControl是否可见。该属性定义了HeaderControl是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置HeaderControl的样式元素。该属性定义了HeaderControl使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置HeaderControl的样式名称。该属性定义了HeaderControl使用的样式名称。"""
     OnContextPopup: Any
     """OnContextPopup事件在弹出右键菜单时触发。该事件处理程序允许开发人员在HeaderControl弹出右键菜单时执行自定义操作。"""
@@ -35738,15 +37334,15 @@ class HotKey(CustomHotKey):
     """HotKey类继承自CustomHotKey，用于创建热键控件。该类提供了管理和操作热键控件的方法和属性。"""
     Anchors: Any
     """Anchors属性用于设置HotKey的锚点。该属性定义了HotKey如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置HotKey是否自动调整大小。该属性定义了HotKey是否根据内容自动调整大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置HotKey的双向文本模式。该属性定义了HotKey中显示的文本方向。"""
     Constraints: Any
     """Constraints属性用于设置HotKey的大小约束。该属性定义了HotKey的最小和最大大小。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置HotKey是否可用。该属性定义了HotKey是否可以响应用户交互。"""
-    Hint: Any
+    Hint: str
     """Hint属性用于设置HotKey的提示信息。该属性定义了HotKey在鼠标悬停时显示的提示信息。"""
     HotKey: Any
     """HotKey属性用于获取或设置热键。该属性定义了HotKey控件的热键值。"""
@@ -35754,25 +37350,25 @@ class HotKey(CustomHotKey):
     """InvalidKeys属性用于设置无效的热键组合。该属性定义了HotKey控件中不允许使用的热键组合。"""
     Modifiers: Any
     """Modifiers属性用于设置热键的修饰符。该属性定义了HotKey控件的热键修饰符，如Ctrl、Alt等。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置HotKey是否继承父控件的双向文本模式。该属性定义了HotKey是否使用与父控件相同的双向文本模式。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置HotKey是否继承父控件的提示信息显示设置。该属性定义了HotKey是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置HotKey的右键菜单。该属性定义了HotKey右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置HotKey是否显示提示信息。该属性定义了HotKey是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置HotKey的标签顺序。该属性定义了HotKey在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置HotKey是否为标签停靠点。该属性定义了HotKey是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置HotKey的触摸相关属性。该属性定义了HotKey如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置HotKey是否可见。该属性定义了HotKey是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置HotKey的样式元素。该属性定义了HotKey使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置HotKey的样式名称。该属性定义了HotKey使用的样式名称。"""
     OnChange: Any
     """OnChange事件在HotKey的值发生变化时触发。该事件处理程序允许开发人员在HotKey的值发生变化时执行自定义操作。"""
@@ -35801,29 +37397,29 @@ class CustomJumpList(Component):
     """CustomJumpList类继承自Component，用于创建自定义跳转列表控件。该类提供了管理和操作跳转列表控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomJumpList类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomJumpList类的实例（）。"""
-    def AddToRecent(self, *args, **kwargs) -> Any:
+    def AddToRecent(self, const_FileName: str) -> None:
         """AddToRecent过程用于将项目添加到最近列表（）。"""
-    def RemoveFromRecent(self, *args, **kwargs) -> Any:
+    def RemoveFromRecent(self, const_FileName: str) -> None:
         """RemoveFromRecent函数用于从最近列表中移除项目（）。"""
-    def RemoveAllFromRecent(self, *args, **kwargs) -> bool:
+    def RemoveAllFromRecent(self) -> bool:
         """RemoveAllFromRecent函数用于从最近列表中移除所有项目（返回布尔值）。"""
-    def GetRecentList(self, *args, **kwargs) -> Any:
+    def GetRecentList(self) -> Any:
         """GetRecentList函数用于获取最近列表（返回最近列表对象）。"""
-    def GetFrequentList(self, *args, **kwargs) -> Any:
+    def GetFrequentList(self) -> Any:
         """GetFrequentList函数用于获取常用列表（返回常用列表对象）。"""
-    def AddCategory(self, *args, **kwargs) -> int:
+    def AddCategory(self, const_Name: str) -> int:
         """AddCategory函数用于向跳转列表中添加类别（返回类别索引）。"""
-    def AddTask(self, *args, **kwargs) -> Any:
+    def AddTask(self, const_Title: str, const_Path: str, const_Arguments: str = ..., const_IconPath: str = ..., IconIndex: int = ..., CategoryIndex: int = ...) -> None:
         """AddTask函数用于向跳转列表中添加任务（返回任务对象）。"""
-    def AddTaskSeparator(self, *args, **kwargs) -> Any:
+    def AddTaskSeparator(self, CategoryIndex: int = ...) -> None:
         """AddTaskSeparator函数用于向跳转列表中添加任务分隔符（返回任务分隔符对象）。"""
-    def AddItemToCategory(self, *args, **kwargs) -> Any:
+    def AddItemToCategory(self, CategoryIndex: int, const_FileName: str) -> None:
         """AddItemToCategory函数用于向类别中添加项目（返回项目对象）。"""
-    def UpdateList(self, *args, **kwargs) -> bool:
+    def UpdateList(self) -> bool:
         """UpdateList函数用于更新跳转列表（返回布尔值）。"""
-    def DeleteList(self, *args, **kwargs) -> bool:
+    def DeleteList(self) -> bool:
         """DeleteList函数用于删除跳转列表（返回布尔值）。"""
     AutoRefresh: bool
     """AutoRefresh属性用于设置跳转列表是否自动刷新。该属性定义了跳转列表是否在更改后自动刷新。"""
@@ -35848,9 +37444,9 @@ class CustomJumpList(Component):
 
 class JumpList(CustomJumpList):
     """JumpList类继承自CustomJumpList，用于创建跳转列表控件。该类提供了管理和操作跳转列表控件的方法和属性。"""
-    AutoRefresh: Any
+    AutoRefresh: bool
     """AutoRefresh属性用于设置跳转列表是否自动刷新。该属性定义了跳转列表是否在更改后自动刷新。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置跳转列表是否启用。该属性定义了跳转列表是否可以响应用户交互。"""
     ApplicationID: Any
     """ApplicationID属性用于设置跳转列表的应用程序ID。该属性定义了跳转列表所属的应用程序ID。"""
@@ -35873,9 +37469,9 @@ class CustomMaskEdit(CustomEdit):
     """CustomMaskEdit类继承自CustomEdit，用于创建自定义掩码编辑控件。该类提供了管理和操作掩码编辑控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomMaskEdit类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def ValidateEdit(self, *args, **kwargs) -> Any:
+    def ValidateEdit(self) -> None:
         """ValidateEdit函数用于验证编辑内容（）。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """Clear函数用于清除编辑内容（）。"""
     def GetTextLen(self) -> int:
         """GetTextLen函数用于获取文本长度（self指向实例本身，返回文本长度）。"""
@@ -35883,20 +37479,20 @@ class CustomMaskEdit(CustomEdit):
     """IsMasked属性用于获取或设置掩码编辑控件是否启用掩码。该属性定义了掩码编辑控件是否使用掩码。"""
     EditText: str
     """EditText属性用于获取或设置编辑控件的文本。该属性定义了编辑控件中显示的文本内容。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置掩码编辑控件的文本。该属性定义了掩码编辑控件中显示的文本内容。"""
 
 class MaskEdit(CustomMaskEdit):
     """MaskEdit类继承自CustomMaskEdit，用于创建掩码编辑控件。该类提供了管理和操作掩码编辑控件的方法和属性。"""
     Align: Any
     """Align属性用于设置MaskEdit的对齐方式。该属性定义了MaskEdit在其父控件中的对齐方式。"""
-    Alignment: Any
+    Alignment: str
     """Alignment属性用于设置MaskEdit的对齐方式。该属性定义了MaskEdit中内容的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置MaskEdit的锚点。该属性定义了MaskEdit如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSelect: Any
+    AutoSelect: bool
     """AutoSelect属性用于设置MaskEdit是否自动选择文本。该属性定义了MaskEdit在获得焦点时是否自动选择全部文本。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置MaskEdit是否自动调整大小。该属性定义了MaskEdit是否根据内容自动调整大小。"""
     BevelEdges: Any
     """BevelEdges属性用于设置MaskEdit的边框边缘。该属性定义了MaskEdit的边框边缘样式。"""
@@ -35912,23 +37508,23 @@ class MaskEdit(CustomMaskEdit):
     """BiDiMode属性用于设置MaskEdit的双向文本模式。该属性定义了MaskEdit中显示的文本方向。"""
     BorderStyle: Any
     """BorderStyle属性用于设置MaskEdit的边框样式。该属性定义了MaskEdit的边框样式。"""
-    CharCase: Any
+    CharCase: bool
     """CharCase属性用于设置MaskEdit的字符大小写。该属性定义了MaskEdit中显示的字符是否自动转换为大写或小写。"""
-    Color: Any
+    Color: int
     """Color属性用于设置MaskEdit的背景颜色。该属性定义了MaskEdit的背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置MaskEdit的大小约束。该属性定义了MaskEdit的最小和最大大小。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置MaskEdit的三维效果。该属性定义了MaskEdit是否显示三维边框效果。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置MaskEdit是否使用双缓冲。该属性定义了MaskEdit是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了MaskEdit的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了MaskEdit是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置MaskEdit是否可用。该属性定义了MaskEdit是否可以响应用户交互。"""
     EditMask: Any
     """EditMask属性用于获取或设置MaskEdit的编辑掩码。该属性定义了MaskEdit使用的掩码模式。"""
@@ -35936,45 +37532,45 @@ class MaskEdit(CustomMaskEdit):
     """Font属性用于设置MaskEdit的字体。该属性定义了MaskEdit显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置MaskEdit的输入法模式。该属性定义了MaskEdit的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置MaskEdit的输入法名称。该属性定义了MaskEdit使用的输入法名称。"""
-    MaxLength: Any
+    MaxLength: int
     """MaxLength属性用于设置MaskEdit的最大文本长度。该属性定义了MaskEdit中可输入的最大字符数。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置MaskEdit是否继承父控件的双向文本模式。该属性定义了MaskEdit是否使用与父控件相同的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置MaskEdit是否继承父控件的颜色。该属性定义了MaskEdit是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置MaskEdit是否继承父控件的三维边框效果。该属性定义了MaskEdit是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置MaskEdit是否继承父控件的双缓冲。该属性定义了MaskEdit是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置MaskEdit是否继承父控件的字体。该属性定义了MaskEdit是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置MaskEdit是否继承父控件的提示信息显示设置。该属性定义了MaskEdit是否使用与父控件相同的提示信息显示设置。"""
-    PasswordChar: Any
+    PasswordChar: str
     """PasswordChar属性用于设置MaskEdit的密码字符。该属性定义了MaskEdit中显示的密码字符。"""
     PopupMenu: Any
     """PopupMenu属性用于设置MaskEdit的右键菜单。该属性定义了MaskEdit右键点击时显示的上下文菜单。"""
-    ReadOnly: Any
+    ReadOnly: bool
     """ReadOnly属性用于设置MaskEdit是否只读。该属性定义了MaskEdit是否只能读取而不能编辑。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置MaskEdit是否显示提示信息。该属性定义了MaskEdit是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置MaskEdit的标签顺序。该属性定义了MaskEdit在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置MaskEdit是否为标签停靠点。该属性定义了MaskEdit是否可以通过Tab键获得焦点。"""
-    Text: Any
+    Text: str
     """Text属性用于获取或设置MaskEdit的文本。该属性定义了MaskEdit中显示的文本内容。"""
-    TextHint: Any
+    TextHint: str
     """TextHint属性用于设置MaskEdit的文本提示。该属性定义了MaskEdit在没有文本时显示的提示信息。"""
     Touch: Any
     """Touch属性用于设置MaskEdit的触摸相关属性。该属性定义了MaskEdit如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置MaskEdit是否可见。该属性定义了MaskEdit是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置MaskEdit的样式元素。该属性定义了MaskEdit使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置MaskEdit的样式名称。该属性定义了MaskEdit使用的样式名称。"""
     OnChange: Any
     """OnChange事件在MaskEdit的值发生变化时触发。该事件处理程序允许开发人员在MaskEdit的值发生变化时执行自定义操作。"""
@@ -36023,9 +37619,9 @@ class CommonCalendar(WinControl):
     """CommonCalendar类继承自WinControl，用于创建通用日历控件。该类提供了管理和操作日历控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CommonCalendar类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CommonCalendar类的实例（）。"""
-    def BoldDays(self, *args, **kwargs) -> Any:
+    def BoldDays(self, StartDate: Any, ADates: Any) -> None:
         """BoldDays函数用于设置某些日期加粗显示（）。"""
 
 class MonthCalendar(CommonCalendar):
@@ -36036,9 +37632,9 @@ class MonthCalendar(CommonCalendar):
     """Align属性用于设置MonthCalendar的对齐方式。该属性定义了MonthCalendar在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置MonthCalendar的锚点。该属性定义了MonthCalendar如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置MonthCalendar是否自动调整大小。该属性定义了MonthCalendar是否根据内容自动调整大小。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置MonthCalendar的边框宽度。该属性定义了MonthCalendar的边框宽度大小。"""
     BiDiMode: Any
     """BiDiMode属性用于设置MonthCalendar的双向文本模式。该属性定义了MonthCalendar中显示的文本方向。"""
@@ -36046,19 +37642,19 @@ class MonthCalendar(CommonCalendar):
     """CalColors属性用于获取或设置MonthCalendar的日历颜色。该属性定义了MonthCalendar中显示的各个部分的颜色。"""
     Constraints: Any
     """Constraints属性用于设置MonthCalendar的大小约束。该属性定义了MonthCalendar的最小和最大大小。"""
-    MultiSelect: Any
+    MultiSelect: bool
     """MultiSelect属性用于设置MonthCalendar是否允许多选。该属性定义了MonthCalendar是否支持多选日期。"""
     Date: Any
     """Date属性用于获取或设置MonthCalendar的当前日期。该属性定义了MonthCalendar中显示的当前日期。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置MonthCalendar是否使用双缓冲。该属性定义了MonthCalendar是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了MonthCalendar的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了MonthCalendar是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置MonthCalendar是否可用。该属性定义了MonthCalendar是否可以响应用户交互。"""
     EndDate: Any
     """EndDate属性用于获取或设置MonthCalendar的结束日期。该属性定义了MonthCalendar中显示的结束日期。"""
@@ -36068,7 +37664,7 @@ class MonthCalendar(CommonCalendar):
     """Font属性用于设置MonthCalendar的字体。该属性定义了MonthCalendar显示文本的字体样式。"""
     ImeMode: Any
     """ImeMode属性用于设置MonthCalendar的输入法模式。该属性定义了MonthCalendar的输入法模式。"""
-    ImeName: Any
+    ImeName: str
     """ImeName属性用于设置MonthCalendar的输入法名称。该属性定义了MonthCalendar使用的输入法名称。"""
     MaxDate: Any
     """MaxDate属性用于获取或设置MonthCalendar的最大日期。该属性定义了MonthCalendar中显示的最大日期。"""
@@ -36076,29 +37672,29 @@ class MonthCalendar(CommonCalendar):
     """MaxSelectRange属性用于设置MonthCalendar的最大选择范围。该属性定义了MonthCalendar中可选择的最大日期范围。"""
     MinDate: Any
     """MinDate属性用于获取或设置MonthCalendar的最小日期。该属性定义了MonthCalendar中显示的最小日期。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置MonthCalendar是否继承父控件的双向文本模式。该属性定义了MonthCalendar是否使用与父控件相同的双向文本模式。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置MonthCalendar是否继承父控件的双缓冲。该属性定义了MonthCalendar是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置MonthCalendar是否继承父控件的字体。该属性定义了MonthCalendar是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置MonthCalendar是否继承父控件的提示信息显示设置。该属性定义了MonthCalendar是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置MonthCalendar的右键菜单。该属性定义了MonthCalendar右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置MonthCalendar是否显示提示信息。该属性定义了MonthCalendar是否在鼠标悬停时显示提示信息。"""
     ShowToday: Any
     """ShowToday属性用于设置MonthCalendar是否显示今天的日期。该属性定义了MonthCalendar是否在日历中显示今天的日期。"""
     ShowTodayCircle: Any
     """ShowTodayCircle属性用于设置MonthCalendar是否在今天的日期周围绘制一个圆圈。该属性定义了MonthCalendar是否在今天的日期周围绘制一个圆圈。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置MonthCalendar的标签顺序。该属性定义了MonthCalendar在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置MonthCalendar是否为标签停靠点。该属性定义了MonthCalendar是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置MonthCalendar的触摸相关属性。该属性定义了MonthCalendar如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置MonthCalendar是否可见。该属性定义了MonthCalendar是否在界面上显示。"""
     WeekNumbers: Any
     """WeekNumbers属性用于设置MonthCalendar是否显示周数。该属性定义了MonthCalendar是否在日历中显示每周的周数。"""
@@ -36145,243 +37741,27 @@ class MonthCalendar(CommonCalendar):
     OnStartDrag: Any
     """OnStartDrag事件在MonthCalendar开始拖动时触发。该事件处理程序允许开发人员在MonthCalendar开始拖动时执行自定义操作。"""
 
-class CustomNumberBox(CustomEdit):
-    """CustomNumberBox类继承自CustomEdit，用于创建自定义数字输入控件。该类提供了管理和操作数字输入控件的方法和属性。"""
-    def Create(self, AOwner: Component) -> None:
-        """Create函数用于创建CustomNumberBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
-        """Destroy函数用于销毁CustomNumberBox类的实例（）。"""
-    Mode: Any
-    """Mode属性用于设置CustomNumberBox的模式。该属性定义了CustomNumberBox的工作模式。"""
-    Value: Any
-    """Value属性用于获取或设置CustomNumberBox的值。该属性定义了CustomNumberBox中显示的值。"""
-    ValueInt: int
-    """ValueInt属性用于获取或设置CustomNumberBox的整数值。该属性定义了CustomNumberBox中显示的整数值。"""
-    ValueFloat: Any
-    """ValueFloat属性用于获取或设置CustomNumberBox的浮点值。该属性定义了CustomNumberBox中显示的浮点值。"""
-    ValueCurrency: Any
-    """ValueCurrency属性用于获取或设置CustomNumberBox的货币值。该属性定义了CustomNumberBox中显示的货币值。"""
-    CurrencyString: str
-    """CurrencyString属性用于获取或设置CustomNumberBox的货币字符串。该属性定义了CustomNumberBox中显示的货币字符串。"""
-    CurrencyFormat: Any
-    """CurrencyFormat属性用于获取或设置CustomNumberBox的货币格式。该属性定义了CustomNumberBox中显示的货币格式。"""
-    DisplayFormat: str
-    """DisplayFormat属性用于获取或设置CustomNumberBox的显示格式。该属性定义了CustomNumberBox中显示的格式。"""
-    MinValue: Any
-    """MinValue属性用于获取或设置CustomNumberBox的最小值。该属性定义了CustomNumberBox中可以输入的最小值。"""
-    MaxValue: Any
-    """MaxValue属性用于获取或设置CustomNumberBox的最大值。该属性定义了CustomNumberBox中可以输入的最大值。"""
-    Decimal: Any
-    """Decimal属性用于获取或设置CustomNumberBox的小数位数。该属性定义了CustomNumberBox中显示的小数位数。"""
-    SmallStep: Any
-    """SmallStep属性用于获取或设置CustomNumberBox的小步长。该属性定义了CustomNumberBox中值变化的小步长。"""
-    LargeStep: Any
-    """LargeStep属性用于获取或设置CustomNumberBox的大步长。该属性定义了CustomNumberBox中值变化的大步长。"""
-    AcceptExpressions: bool
-    """AcceptExpressions属性用于设置CustomNumberBox是否接受表达式。该属性定义了CustomNumberBox是否可以输入表达式。"""
-    SpinButtonOptions: Any
-    """SpinButtonOptions属性用于获取或设置CustomNumberBox的旋转按钮选项。该属性定义了CustomNumberBox中旋转按钮的行为。"""
-    UseNaNValue: bool
-    """UseNaNValue属性用于设置CustomNumberBox是否使用NaN值。该属性定义了CustomNumberBox是否可以显示NaN值。"""
-    UseMouseWheel: bool
-    """UseMouseWheel属性用于设置CustomNumberBox是否使用鼠标滚轮。该属性定义了CustomNumberBox是否可以通过鼠标滚轮改变值。"""
-    UseUpDownKeys: bool
-    """UseUpDownKeys属性用于设置CustomNumberBox是否使用上下箭头键。该属性定义了CustomNumberBox是否可以通过上下箭头键改变值。"""
-    Wrap: bool
-    """Wrap属性用于设置CustomNumberBox是否环绕。该属性定义了CustomNumberBox在达到最大值或最小值时是否环绕到另一个极限值。"""
-    NegativeValueColor: Any
-    """NegativeValueColor属性用于获取或设置CustomNumberBox的负值颜色。该属性定义了CustomNumberBox中显示负值时的颜色。"""
-    OnChangeValue: Any
-    """OnChangeValue事件在CustomNumberBox的值发生变化时触发。该事件处理程序允许开发人员在CustomNumberBox的值发生变化时执行自定义操作。"""
-    OnEvaluateExpression: Any
-    """OnEvaluateExpression事件在CustomNumberBox评估表达式时触发。该事件处理程序允许开发人员在CustomNumberBox评估表达式时执行自定义操作。"""
-    OnValidateChar: Any
-    """OnValidateChar事件在CustomNumberBox验证字符时触发。该事件处理程序允许开发人员在CustomNumberBox验证字符时执行自定义操作。"""
-
-class NumberBox(CustomNumberBox):
-    """NumberBox类继承自CustomNumberBox，用于创建数字输入控件。该类提供了管理和操作数字输入控件的方法和属性。"""
-    AcceptExpressions: Any
-    """AcceptExpressions属性用于设置NumberBox是否接受表达式。该属性定义了NumberBox是否可以输入表达式。"""
-    Align: Any
-    """Align属性用于设置NumberBox的对齐方式。该属性定义了NumberBox在其父控件中的对齐方式。"""
-    Alignment: Any
-    """Alignment属性用于设置NumberBox的对齐方式。该属性定义了NumberBox中内容的对齐方式。"""
-    Anchors: Any
-    """Anchors属性用于设置NumberBox的锚点。该属性定义了NumberBox如何随其父控件的大小变化而调整位置和大小。"""
-    AutoSelect: Any
-    """AutoSelect属性用于设置NumberBox是否自动选择文本。该属性定义了NumberBox在获得焦点时是否自动选择全部文本。"""
-    AutoSize: Any
-    """AutoSize属性用于设置NumberBox是否自动调整大小。该属性定义了NumberBox是否根据内容自动调整大小。"""
-    BiDiMode: Any
-    """BiDiMode属性用于设置NumberBox的双向文本模式。该属性定义了NumberBox中显示的文本方向。"""
-    BorderStyle: Any
-    """BorderStyle属性用于设置NumberBox的边框样式。该属性定义了NumberBox的边框样式。"""
-    CharCase: Any
-    """CharCase属性用于设置NumberBox的字符大小写。该属性定义了NumberBox中显示的字符是否自动转换为大写或小写。"""
-    Color: Any
-    """Color属性用于设置NumberBox的背景颜色。该属性定义了NumberBox的背景颜色。"""
-    Constraints: Any
-    """Constraints属性用于设置NumberBox的大小约束。该属性定义了NumberBox的最小和最大大小。"""
-    CurrencyString: Any
-    """CurrencyString属性用于获取或设置NumberBox的货币字符串。该属性定义了NumberBox中显示的货币字符串。"""
-    CurrencyFormat: Any
-    """CurrencyFormat属性用于获取或设置NumberBox的货币格式。该属性定义了NumberBox中显示的货币格式。"""
-    Decimal: Any
-    """Decimal属性用于获取或设置NumberBox的小数位数。该属性定义了NumberBox中显示的小数位数。"""
-    DisplayFormat: Any
-    """DisplayFormat属性用于获取或设置NumberBox的显示格式。该属性定义了NumberBox中显示的格式。"""
-    DragCursor: Any
-    """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
-    DragKind: Any
-    """DragKind属性用于设置拖动的类型。该属性定义了NumberBox的拖动类型。"""
-    DragMode: Any
-    """DragMode属性用于设置拖动的模式。该属性定义了NumberBox是否可以被拖动以及拖动的方式。"""
-    DoubleBuffered: Any
-    """DoubleBuffered属性用于设置NumberBox是否使用双缓冲。该属性定义了NumberBox是否使用双缓冲技术来减少闪烁。"""
-    Enabled: Any
-    """Enabled属性用于设置NumberBox是否可用。该属性定义了NumberBox是否可以响应用户交互。"""
-    Font: Any
-    """Font属性用于设置NumberBox的字体。该属性定义了NumberBox显示文本的字体样式。"""
-    HideSelection: Any
-    """HideSelection属性用于设置NumberBox是否隐藏选定文本。该属性定义了NumberBox在失去焦点时是否隐藏选定文本。"""
-    ImeMode: Any
-    """ImeMode属性用于设置NumberBox的输入法模式。该属性定义了NumberBox的输入法模式。"""
-    ImeName: Any
-    """ImeName属性用于设置NumberBox的输入法名称。该属性定义了NumberBox使用的输入法名称。"""
-    LargeStep: Any
-    """LargeStep属性用于获取或设置NumberBox的大步长。该属性定义了NumberBox中值变化的大步长。"""
-    Mode: Any
-    """Mode属性用于设置NumberBox的模式。该属性定义了NumberBox的工作模式。"""
-    MinValue: Any
-    """MinValue属性用于获取或设置NumberBox的最小值。该属性定义了NumberBox中可以输入的最小值。"""
-    MaxValue: Any
-    """MaxValue属性用于获取或设置NumberBox的最大值。该属性定义了NumberBox中可以输入的最大值。"""
-    MaxLength: Any
-    """MaxLength属性用于设置NumberBox的最大文本长度。该属性定义了NumberBox中可输入的最大字符数。"""
-    OEMConvert: Any
-    """OEMConvert属性用于设置NumberBox是否进行OEM字符转换。该属性定义了NumberBox是否将字符转换为OEM字符集。"""
-    ParentBiDiMode: Any
-    """ParentBiDiMode属性用于设置NumberBox是否继承父控件的双向文本模式。该属性定义了NumberBox是否使用与父控件相同的双向文本模式。"""
-    ParentColor: Any
-    """ParentColor属性用于设置NumberBox是否继承父控件的颜色。该属性定义了NumberBox是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
-    """ParentCtl3D属性用于设置NumberBox是否继承父控件的三维边框效果。该属性定义了NumberBox是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
-    """ParentDoubleBuffered属性用于设置NumberBox是否继承父控件的双缓冲。该属性定义了NumberBox是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
-    """ParentFont属性用于设置NumberBox是否继承父控件的字体。该属性定义了NumberBox是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
-    """ParentShowHint属性用于设置NumberBox是否继承父控件的提示信息显示设置。该属性定义了NumberBox是否使用与父控件相同的提示信息显示设置。"""
-    PopupMenu: Any
-    """PopupMenu属性用于设置NumberBox的右键菜单。该属性定义了NumberBox右键点击时显示的上下文菜单。"""
-    ReadOnly: Any
-    """ReadOnly属性用于设置NumberBox是否只读。该属性定义了NumberBox是否只能读取而不能编辑。"""
-    SmallStep: Any
-    """SmallStep属性用于获取或设置NumberBox的小步长。该属性定义了NumberBox中值变化的小步长。"""
-    ShowHint: Any
-    """ShowHint属性用于设置NumberBox是否显示提示信息。该属性定义了NumberBox是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
-    """TabOrder属性用于设置NumberBox的标签顺序。该属性定义了NumberBox在Tab键循环中的位置。"""
-    TabStop: Any
-    """TabStop属性用于设置NumberBox是否为标签停靠点。该属性定义了NumberBox是否可以通过Tab键获得焦点。"""
-    TextHint: Any
-    """TextHint属性用于设置NumberBox的文本提示。该属性定义了NumberBox在没有文本时显示的提示信息。"""
-    Touch: Any
-    """Touch属性用于设置NumberBox的触摸相关属性。该属性定义了NumberBox如何响应触摸输入。"""
-    Value: Any
-    """Value属性用于获取或设置NumberBox的值。该属性定义了NumberBox中显示的值。"""
-    Visible: Any
-    """Visible属性用于设置NumberBox是否可见。该属性定义了NumberBox是否在界面上显示。"""
-    SpinButtonOptions: Any
-    """SpinButtonOptions属性用于获取或设置NumberBox的旋转按钮选项。该属性定义了NumberBox中旋转按钮的行为。"""
-    StyleElements: Any
-    """StyleElements属性用于设置NumberBox的样式元素。该属性定义了NumberBox使用哪些样式元素进行绘制。"""
-    StyleName: Any
-    """StyleName属性用于设置NumberBox的样式名称。该属性定义了NumberBox使用的样式名称。"""
-    UseNaNValue: Any
-    """UseNaNValue属性用于设置NumberBox是否使用NaN值。该属性定义了NumberBox是否可以显示NaN值。"""
-    UseMouseWheel: Any
-    """UseMouseWheel属性用于设置NumberBox是否使用鼠标滚轮。该属性定义了NumberBox是否可以通过鼠标滚轮改变值。"""
-    UseUpDownKeys: Any
-    """UseUpDownKeys属性用于设置NumberBox是否使用上下箭头键。该属性定义了NumberBox是否可以通过上下箭头键改变值。"""
-    Wrap: Any
-    """Wrap属性用于设置NumberBox是否环绕。该属性定义了NumberBox在达到最大值或最小值时是否环绕到另一个极限值。"""
-    NegativeValueColor: Any
-    """NegativeValueColor属性用于获取或设置NumberBox的负值颜色。该属性定义了NumberBox中显示负值时的颜色。"""
-    OnChange: Any
-    """OnChange事件在NumberBox的值发生变化时触发。该事件处理程序允许开发人员在NumberBox的值发生变化时执行自定义操作。"""
-    OnChangeValue: Any
-    """OnChangeValue事件在NumberBox的值发生变化时触发。该事件处理程序允许开发人员在NumberBox的值发生变化时执行自定义操作。"""
-    OnClick: Any
-    """OnClick事件在NumberBox被点击时触发。该事件处理程序允许开发人员在NumberBox被点击时执行自定义操作。"""
-    OnContextPopup: Any
-    """OnContextPopup事件在弹出右键菜单时触发。该事件处理程序允许开发人员在NumberBox弹出右键菜单时执行自定义操作。"""
-    OnDblClick: Any
-    """OnDblClick事件在NumberBox被双击时触发。该事件处理程序允许开发人员在NumberBox被双击时执行自定义操作。"""
-    OnDragDrop: Any
-    """OnDragDrop事件在NumberBox进行拖放操作时触发。该事件处理程序允许开发人员在NumberBox进行拖放操作时执行自定义操作。"""
-    OnDragOver: Any
-    """OnDragOver事件在NumberBox进行拖动悬停时触发。该事件处理程序允许开发人员在NumberBox进行拖动悬停时执行自定义操作。"""
-    OnEvaluateExpression: Any
-    """OnEvaluateExpression事件在NumberBox评估表达式时触发。该事件处理程序允许开发人员在NumberBox评估表达式时执行自定义操作。"""
-    OnEndDock: Any
-    """OnEndDock事件在NumberBox结束停靠时触发。该事件处理程序允许开发人员在NumberBox结束停靠时执行自定义操作。"""
-    OnEndDrag: Any
-    """OnEndDrag事件在NumberBox结束拖动操作时触发。该事件处理程序允许开发人员在NumberBox结束拖动操作时执行自定义操作。"""
-    OnEnter: Any
-    """OnEnter事件在NumberBox获得焦点时触发。该事件处理程序允许开发人员在NumberBox获得焦点时执行自定义操作。"""
-    OnExit: Any
-    """OnExit事件在NumberBox失去焦点时触发。该事件处理程序允许开发人员在NumberBox失去焦点时执行自定义操作。"""
-    OnGesture: Any
-    """OnGesture事件在NumberBox检测到手势时触发。该事件处理程序允许开发人员在NumberBox检测到手势时执行自定义操作。"""
-    OnValidateChar: Any
-    """OnValidateChar事件在NumberBox验证字符时触发。该事件处理程序允许开发人员在NumberBox验证字符时执行自定义操作。"""
-    OnKeyDown: Any
-    """OnKeyDown事件在NumberBox检测到按键按下时触发。该事件处理程序允许开发人员在NumberBox检测到按键按下时执行自定义操作。"""
-    OnKeyPress: Any
-    """OnKeyPress事件在NumberBox检测到按键按下并释放时触发。该事件处理程序允许开发人员在NumberBox检测到按键按下并释放时执行自定义操作。"""
-    OnKeyUp: Any
-    """OnKeyUp事件在NumberBox检测到按键释放时触发。该事件处理程序允许开发人员在NumberBox检测到按键释放时执行自定义操作。"""
-    OnMouseActivate: Any
-    """OnMouseActivate事件在NumberBox检测到鼠标激活时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标激活时执行自定义操作。"""
-    OnMouseDown: Any
-    """OnMouseDown事件在NumberBox检测到鼠标按下时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标按下时执行自定义操作。"""
-    OnMouseEnter: Any
-    """OnMouseEnter事件在NumberBox检测到鼠标进入时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标进入时执行自定义操作。"""
-    OnMouseLeave: Any
-    """OnMouseLeave事件在NumberBox检测到鼠标离开时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标离开时执行自定义操作。"""
-    OnMouseMove: Any
-    """OnMouseMove事件在NumberBox检测到鼠标移动时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标移动时执行自定义操作。"""
-    OnMouseUp: Any
-    """OnMouseUp事件在NumberBox检测到鼠标抬起时触发。该事件处理程序允许开发人员在NumberBox检测到鼠标抬起时执行自定义操作。"""
-    OnStartDock: Any
-    """OnStartDock事件在NumberBox开始停靠时触发。该事件处理程序允许开发人员在NumberBox开始停靠时执行自定义操作。"""
-    OnStartDrag: Any
-    """OnStartDrag事件在NumberBox开始拖动时触发。该事件处理程序允许开发人员在NumberBox开始拖动时执行自定义操作。"""
-
 class OpenPictureDialog(OpenDialog):
     """OpenPictureDialog类继承自OpenDialog，用于创建打开图片对话框。该类提供了管理和操作打开图片对话框的方法和属性。"""
-    Filter: Any
+    Filter: str
     """Filter属性用于设置OpenPictureDialog的文件过滤器。该属性定义了OpenPictureDialog中显示的文件类型过滤器。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建OpenPictureDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行OpenPictureDialog的打开操作（）。"""
 
 class SavePictureDialog(OpenPictureDialog):
     """SavePictureDialog类继承自OpenPictureDialog，用于创建保存图片对话框。该类提供了管理和操作保存图片对话框的方法和属性。"""
-    def Execute(self) -> Any:
-        """Execute函数用于执行SavePictureDialog的保存操作（self指向实例本身，返回操作结果）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行SavePictureDialog的保存操作（）。"""
 
 class OpenTextFileDialog(OpenDialog):
     """OpenTextFileDialog类继承自OpenDialog，用于创建打开文本文件对话框。该类提供了管理和操作打开文本文件对话框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建OpenTextFileDialog类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁OpenTextFileDialog类的实例（）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行OpenTextFileDialog的打开操作（）。"""
     Encodings: Any
     """Encodings属性用于获取或设置OpenTextFileDialog的编码列表。该属性定义了OpenTextFileDialog中显示的编码列表。"""
@@ -36392,60 +37772,58 @@ class OpenTextFileDialog(OpenDialog):
 
 class SaveTextFileDialog(OpenTextFileDialog):
     """SaveTextFileDialog类继承自OpenTextFileDialog，用于创建保存文本文件对话框。该类提供了管理和操作保存文本文件对话框的方法和属性。"""
-    def Execute(self) -> Any:
-        """Execute函数用于执行SaveTextFileDialog的保存操作（self指向实例本身，返回操作结果）。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """Execute函数用于执行SaveTextFileDialog的保存操作（）。"""
 
 class CustomOutline(CustomGrid):
     """CustomOutline类继承自CustomGrid，用于创建自定义大纲控件。该类提供了管理和操作大纲控件的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomOutline类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomOutline类的实例（）。"""
-    def Add(self, *args, **kwargs) -> Any:
+    def Add(self, S: str) -> int:
         """Add函数用于向CustomOutline添加项目（）。"""
-    def AddChild(self, *args, **kwargs) -> Any:
+    def AddChild(self, Parent: Any, S: str) -> Any:
         """AddChild函数用于向CustomOutline添加子项目（）。"""
-    def AddChildObject(self, *args, **kwargs) -> Any:
+    def AddChildObject(self, Parent: Any, S: str, Ptr: Any) -> Any:
         """AddChildObject函数用于向CustomOutline添加带对象的子项目（）。"""
-    def AddObject(self, *args, **kwargs) -> Any:
+    def AddObject(self, S: str, AObject: Any) -> int:
         """AddObject函数用于向CustomOutline添加带对象的项目（）。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self, Index: int, S: str) -> None:
         """Insert函数用于在CustomOutline中插入项目（）。"""
-    def InsertObject(self, *args, **kwargs) -> Any:
+    def InsertObject(self, Index: int, S: str, AObject: Any) -> None:
         """InsertObject函数用于在CustomOutline中插入带对象的项目（）。"""
-    def Delete(self, *args, **kwargs) -> Any:
+    def Delete(self, Index: int) -> None:
         """Delete函数用于从CustomOutline中删除项目（）。"""
-    def GetDataItem(self, *args, **kwargs) -> Any:
+    def GetDataItem(self, Index: int) -> Any:
         """GetDataItem函数用于获取CustomOutline中的数据项（）。"""
-    def GetItem(self, *args, **kwargs) -> Any:
+    def GetItem(self, Index: int) -> Any:
         """GetItem函数用于获取CustomOutline中的项目（）。"""
-    def GetNodeDisplayWidth(self, *args, **kwargs) -> int:
+    def GetNodeDisplayWidth(self, Node: Any) -> int:
         """GetNodeDisplayWidth函数用于获取CustomOutline中节点的显示宽度（返回节点的显示宽度）。"""
-    def GetTextItem(self, *args, **kwargs) -> Any:
+    def GetTextItem(self, Index: int) -> str:
         """GetTextItem函数用于获取CustomOutline中的文本项（）。"""
-    def GetVisibleNode(self, *args, **kwargs) -> Any:
+    def GetVisibleNode(self, Index: int) -> Any:
         """GetVisibleNode函数用于获取CustomOutline中的可见节点（）。"""
-    def FullExpand(self, *args, **kwargs) -> Any:
+    def FullExpand(self) -> None:
         """FullExpand函数用于展开CustomOutline中的所有节点（）。"""
-    def FullCollapse(self, *args, **kwargs) -> Any:
+    def FullCollapse(self) -> None:
         """FullCollapse函数用于折叠CustomOutline中的所有节点（）。"""
-    def LoadFromFile(self, *args, **kwargs) -> Any:
+    def LoadFromFile(self, FileName: str) -> None:
         """LoadFromFile函数用于从文件加载CustomOutline的内容（）。"""
-    def LoadFromStream(self, *args, **kwargs) -> Any:
+    def LoadFromStream(self, Stream: Any) -> None:
         """LoadFromStream函数用于从流加载CustomOutline的内容（）。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    def SaveToFile(self, FileName: str) -> None:
         """SaveToFile函数用于将CustomOutline的内容保存到文件（）。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
+    def SaveToStream(self, Stream: Any) -> None:
         """SaveToStream函数用于将CustomOutline的内容保存到流（）。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """BeginUpdate函数用于开始更新CustomOutline（）。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """EndUpdate函数用于结束更新CustomOutline（）。"""
-    def SetUpdateState(self, *args, **kwargs) -> Any:
+    def SetUpdateState(self, Updating: bool) -> None:
         """SetUpdateState函数用于设置CustomOutline的更新状态（）。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """Clear函数用于清除CustomOutline中的所有项目（）。"""
     ItemCount: Any
     """ItemCount属性用于获取CustomOutline中的项目数量。该属性定义了CustomOutline中包含的项目数量。"""
@@ -36453,7 +37831,7 @@ class CustomOutline(CustomGrid):
     """Items属性用于获取或设置CustomOutline中的项目集合。该属性定义了CustomOutline中包含的项目对象集合。"""
     SelectedItem: Any
     """SelectedItem属性用于获取或设置CustomOutline中选定的项目。该属性定义了CustomOutline中当前选定的项目。"""
-    Row: Any
+    Row: int
     """Row属性用于获取或设置CustomOutline中的行。该属性定义了CustomOutline中当前操作的行。"""
     Canvas: Any
     """Canvas属性用于获取CustomOutline的画布对象。该属性定义了CustomOutline的绘图画布。"""
@@ -36470,45 +37848,45 @@ class Outline(CustomOutline):
     """OnCollapse事件在Outline中的节点被折叠时触发。该事件处理程序允许开发人员在Outline节点被折叠时执行自定义操作。"""
     Options: Any
     """Options属性用于获取或设置Outline的选项。该属性定义了Outline的各种选项设置。"""
-    Style: Any
+    Style: int
     """Style属性用于获取或设置Outline的样式。该属性定义了Outline的显示样式。"""
-    ItemHeight: Any
+    ItemHeight: int
     """ItemHeight属性用于获取或设置Outline中项目的高度。该属性定义了Outline中每个项目的显示高度。"""
     OnDrawItem: Any
     """OnDrawItem事件在Outline中的项目被绘制时触发。该事件处理程序允许开发人员在Outline项目被绘制时执行自定义操作。"""
     Align: Any
     """Align属性用于设置Outline的对齐方式。该属性定义了Outline在其父控件中的对齐方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置Outline是否可用。该属性定义了Outline是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置Outline的字体。该属性定义了Outline显示文本的字体样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置Outline的背景颜色。该属性定义了Outline的背景颜色。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置Outline是否继承父控件的颜色。该属性定义了Outline是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置Outline是否继承父控件的三维边框效果。该属性定义了Outline是否使用与父控件相同的三维边框。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置Outline的三维边框效果。该属性定义了Outline的三维边框样式。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置Outline的标签顺序。该属性定义了Outline在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置Outline是否为标签停靠点。该属性定义了Outline是否可以通过Tab键获得焦点。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置Outline是否可见。该属性定义了Outline是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置Outline的样式元素。该属性定义了Outline使用哪些样式元素进行绘制。"""
     OnClick: Any
     """OnClick事件在Outline被点击时触发。该事件处理程序允许开发人员在Outline被点击时执行自定义操作。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置Outline是否使用双缓冲。该属性定义了Outline是否使用双缓冲技术来减少闪烁。"""
     DragMode: Any
     """DragMode属性用于设置拖动的模式。该属性定义了Outline是否可以被拖动以及拖动的方式。"""
     DragKind: Any
     """DragKind属性用于设置拖动的类型。该属性定义了Outline的拖动类型。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置Outline是否继承父控件的双缓冲。该属性定义了Outline是否使用与父控件相同的双缓冲技术。"""
     Touch: Any
     """Touch属性用于设置Outline的触摸相关属性。该属性定义了Outline如何响应触摸输入。"""
@@ -36564,15 +37942,15 @@ class Outline(CustomOutline):
     """PictureClosed属性用于设置Outline中关闭图标的图片。该属性定义了Outline中用于表示关闭状态的图标。"""
     PictureLeaf: Any
     """PictureLeaf属性用于设置Outline中叶节点图标的图片。该属性定义了Outline中用于表示叶节点的图标。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置Outline是否继承父控件的字体。该属性定义了Outline是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置Outline是否继承父控件的提示信息显示设置。该属性定义了Outline是否使用与父控件相同的提示信息显示设置。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置Outline是否显示提示信息。该属性定义了Outline是否在鼠标悬停时显示提示信息。"""
     PopupMenu: Any
     """PopupMenu属性用于设置Outline的右键菜单。该属性定义了Outline右键点击时显示的上下文菜单。"""
-    ScrollBars: Any
+    ScrollBars: bool
     """ScrollBars属性用于设置Outline的滚动条。该属性定义了Outline是否显示滚动条以及滚动条的样式。"""
     OnContextPopup: Any
     """OnContextPopup事件在Outline弹出右键菜单时触发。该事件处理程序允许开发人员在Outline弹出右键菜单时执行自定义操作。"""
@@ -36581,7 +37959,7 @@ class PageScroller(WinControl):
     """PageScroller类继承自WinControl，用于创建页面滚动器。该类提供了管理和操作页面滚动器的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建PageScroller类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def GetButtonState(self, *args, **kwargs) -> Any:
+    def GetButtonState(self, Which: Any) -> Any:
         """GetButtonState函数用于获取PageScroller按钮的状态（返回按钮的状态）。"""
     Align: Any
     """Align属性用于设置PageScroller的对齐方式。该属性定义了PageScroller在其父控件中的对齐方式。"""
@@ -36589,21 +37967,21 @@ class PageScroller(WinControl):
     """Anchors属性用于设置PageScroller的锚点。该属性定义了PageScroller在其父控件中的位置保持方式。"""
     AutoScroll: bool
     """AutoScroll属性用于设置PageScroller是否自动滚动。该属性定义了PageScroller是否在内容超出范围时自动滚动。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置PageScroller的边框宽度。该属性定义了PageScroller的边框宽度。"""
     ButtonSize: int
     """ButtonSize属性用于设置PageScroller按钮的大小。该属性定义了PageScroller中按钮的大小。"""
-    Color: Any
+    Color: int
     """Color属性用于设置PageScroller的背景颜色。该属性定义了PageScroller的背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置PageScroller的约束。该属性定义了PageScroller的最小和最大尺寸。"""
     Control: Any
     """Control属性用于获取或设置PageScroller的控件。该属性定义了PageScroller中包含的控件。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置PageScroller是否作为停靠站点。该属性定义了PageScroller是否可以停靠其他控件。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置PageScroller是否使用双缓冲。该属性定义了PageScroller是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置PageScroller拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置PageScroller的拖动类型。该属性定义了PageScroller的拖动类型。"""
@@ -36611,7 +37989,7 @@ class PageScroller(WinControl):
     """DragMode属性用于设置PageScroller的拖动模式。该属性定义了PageScroller是否可以被拖动以及拖动的方式。"""
     DragScroll: bool
     """DragScroll属性用于设置PageScroller是否在拖动时滚动。该属性定义了PageScroller在拖动操作时是否自动滚动。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置PageScroller是否可用。该属性定义了PageScroller是否可以响应用户交互。"""
     Font: Any
     """Font属性用于设置PageScroller的字体。该属性定义了PageScroller显示文本的字体样式。"""
@@ -36619,31 +37997,31 @@ class PageScroller(WinControl):
     """Margin属性用于设置PageScroller的边距。该属性定义了PageScroller的边距大小。"""
     Orientation: Any
     """Orientation属性用于设置PageScroller的方向。该属性定义了PageScroller的滚动方向（水平或垂直）。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置PageScroller是否继承父控件的背景。该属性定义了PageScroller是否使用与父控件相同的背景。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置PageScroller是否继承父控件的颜色。该属性定义了PageScroller是否使用与父控件相同的背景颜色。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置PageScroller是否继承父控件的双缓冲。该属性定义了PageScroller是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置PageScroller是否继承父控件的字体。该属性定义了PageScroller是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置PageScroller是否继承父控件的提示信息显示设置。该属性定义了PageScroller是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置PageScroller的右键菜单。该属性定义了PageScroller右键点击时显示的上下文菜单。"""
     Position: int
     """Position属性用于设置PageScroller的位置。该属性定义了PageScroller当前的位置。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置PageScroller是否显示提示信息。该属性定义了PageScroller是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置PageScroller的标签顺序。该属性定义了PageScroller在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置PageScroller是否为标签停靠点。该属性定义了PageScroller是否可以通过Tab键获得焦点。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置PageScroller是否可见。该属性定义了PageScroller是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置PageScroller的样式元素。该属性定义了PageScroller使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置PageScroller的样式名称。该属性定义了PageScroller使用的样式名称。"""
     OnClick: Any
     """OnClick事件在PageScroller被点击时触发。该事件处理程序允许开发人员在PageScroller被点击时执行自定义操作。"""
@@ -36684,13 +38062,13 @@ class PopupActionBar(PopupMenu):
     """PopupActionBar类继承自PopupMenu，用于创建弹出动作栏。该类提供了管理和操作弹出动作栏的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建PopupActionBar类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Popup(self, *args, **kwargs) -> Any:
+    def Popup(self, X: int, Y: int) -> None:
         """Popup函数用于显示PopupActionBar的弹出菜单（返回弹出结果）。"""
     MenuActive: bool
     """MenuActive属性用于获取或设置PopupActionBar菜单的激活状态。该属性定义了PopupActionBar是否处于激活状态。"""
     PopupMenu: Any
     """PopupMenu属性用于设置PopupActionBar的右键菜单。该属性定义了PopupActionBar右键点击时显示的上下文菜单。"""
-    Style: Any
+    Style: int
     """Style属性用于获取或设置PopupActionBar的样式。该属性定义了PopupActionBar的显示样式。"""
     OnGetControlClass: Any
     """OnGetControlClass事件在PopupActionBar获取控件类时触发。该事件处理程序允许开发人员在PopupActionBar获取控件类时执行自定义操作。"""
@@ -36699,27 +38077,27 @@ class ProgressBar(WinControl):
     """ProgressBar类继承自WinControl，用于创建进度条控件。该类提供了管理和操作进度条的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建ProgressBar类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def StepIt(self, *args, **kwargs) -> Any:
+    def StepIt(self) -> None:
         """StepIt函数用于使ProgressBar前进一步（返回操作结果）。"""
-    def StepBy(self, *args, **kwargs) -> Any:
+    def StepBy(self, Delta: int) -> None:
         """StepBy函数用于使ProgressBar前进指定的步数（返回操作结果）。"""
     Align: Any
     """Align属性用于设置ProgressBar的对齐方式。该属性定义了ProgressBar在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置ProgressBar的锚点。该属性定义了ProgressBar在其父控件中的位置保持方式。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置ProgressBar的边框宽度。该属性定义了ProgressBar的边框宽度。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置ProgressBar是否使用双缓冲。该属性定义了ProgressBar是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置ProgressBar拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置ProgressBar的拖动类型。该属性定义了ProgressBar的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置ProgressBar的拖动模式。该属性定义了ProgressBar是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置ProgressBar是否可用。该属性定义了ProgressBar是否可以响应用户交互。"""
-    Hint: Any
+    Hint: str
     """Hint属性用于设置ProgressBar的提示信息。该属性定义了当鼠标悬停在ProgressBar上时显示的提示信息。"""
     Constraints: Any
     """Constraints属性用于设置ProgressBar的约束。该属性定义了ProgressBar的最小和最大尺寸。"""
@@ -36729,9 +38107,9 @@ class ProgressBar(WinControl):
     """Max属性用于设置ProgressBar的最大值。该属性定义了ProgressBar的最大进度值。"""
     Orientation: Any
     """Orientation属性用于设置ProgressBar的方向。该属性定义了ProgressBar的进度条方向（水平或垂直）。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置ProgressBar是否继承父控件的双缓冲。该属性定义了ProgressBar是否使用与父控件相同的双缓冲技术。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置ProgressBar是否继承父控件的提示信息显示设置。该属性定义了ProgressBar是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置ProgressBar的右键菜单。该属性定义了ProgressBar右键点击时显示的上下文菜单。"""
@@ -36739,13 +38117,13 @@ class ProgressBar(WinControl):
     """Position属性用于设置ProgressBar的当前位置。该属性定义了ProgressBar的当前进度值。"""
     Smooth: bool
     """Smooth属性用于设置ProgressBar是否使用平滑模式。该属性定义了ProgressBar是否以平滑方式显示进度。"""
-    Style: Any
+    Style: int
     """Style属性用于获取或设置ProgressBar的样式。该属性定义了ProgressBar的显示样式。"""
     MarqueeInterval: int
     """MarqueeInterval属性用于设置ProgressBar的跑马灯间隔时间。该属性定义了ProgressBar的跑马灯模式的刷新间隔时间。"""
     BarColor: Any
     """BarColor属性用于设置ProgressBar的进度条颜色。该属性定义了ProgressBar的进度条显示颜色。"""
-    BackgroundColor: Any
+    BackgroundColor: int
     """BackgroundColor属性用于设置ProgressBar的背景颜色。该属性定义了ProgressBar的背景显示颜色。"""
     SmoothReverse: bool
     """SmoothReverse属性用于设置ProgressBar是否使用平滑反向模式。该属性定义了ProgressBar是否以平滑方式反向显示进度。"""
@@ -36753,19 +38131,19 @@ class ProgressBar(WinControl):
     """Step属性用于设置ProgressBar的步长。该属性定义了ProgressBar每次前进的步长值。"""
     State: Any
     """State属性用于设置ProgressBar的状态。该属性定义了ProgressBar的当前状态。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置ProgressBar是否显示提示信息。该属性定义了ProgressBar是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置ProgressBar的标签顺序。该属性定义了ProgressBar在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置ProgressBar是否为标签停靠点。该属性定义了ProgressBar是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置ProgressBar的触摸相关属性。该属性定义了ProgressBar如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置ProgressBar是否可见。该属性定义了ProgressBar是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置ProgressBar的样式元素。该属性定义了ProgressBar使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置ProgressBar的样式名称。该属性定义了ProgressBar使用的样式名称。"""
     OnChange: Any
     """OnChange事件在ProgressBar的进度发生变化时触发。该事件处理程序允许开发人员在ProgressBar的进度发生变化时执行自定义操作。"""
@@ -36810,9 +38188,9 @@ class ScrollBox(ScrollingWinControl):
     """Align属性用于设置ScrollBox的对齐方式。该属性定义了ScrollBox在其父控件中的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置ScrollBox的锚点。该属性定义了ScrollBox在其父控件中的位置保持方式。"""
-    AutoScroll: Any
+    AutoScroll: bool
     """AutoScroll属性用于设置ScrollBox是否自动滚动。该属性定义了ScrollBox在内容超出范围时是否自动滚动。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置ScrollBox是否自动调整大小。该属性定义了ScrollBox是否根据内容自动调整自身大小。"""
     BevelEdges: Any
     """BevelEdges属性用于设置ScrollBox的斜边样式。该属性定义了ScrollBox的斜边样式。"""
@@ -36830,55 +38208,55 @@ class ScrollBox(ScrollingWinControl):
     """BorderStyle属性用于设置ScrollBox的边框样式。该属性定义了ScrollBox的边框样式。"""
     Constraints: Any
     """Constraints属性用于设置ScrollBox的约束。该属性定义了ScrollBox的最小和最大尺寸。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置ScrollBox是否作为停靠站点。该属性定义了ScrollBox是否可以停靠其他控件。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置ScrollBox是否使用双缓冲。该属性定义了ScrollBox是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置ScrollBox拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置ScrollBox的拖动类型。该属性定义了ScrollBox的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置ScrollBox的拖动模式。该属性定义了ScrollBox是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置ScrollBox是否可用。该属性定义了ScrollBox是否可以响应用户交互。"""
-    Color: Any
+    Color: int
     """Color属性用于设置ScrollBox的背景颜色。该属性定义了ScrollBox的背景颜色。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置ScrollBox的三维边框效果。该属性定义了ScrollBox的三维边框样式。"""
     Font: Any
     """Font属性用于设置ScrollBox的字体。该属性定义了ScrollBox显示文本的字体样式。"""
     Padding: Any
     """Padding属性用于设置ScrollBox的内边距。该属性定义了ScrollBox内容与边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置ScrollBox是否继承父控件的文本方向。该属性定义了ScrollBox是否使用与父控件相同的文本方向。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置ScrollBox是否继承父控件的背景。该属性定义了ScrollBox是否使用与父控件相同的背景。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置ScrollBox是否继承父控件的颜色。该属性定义了ScrollBox是否使用与父控件相同的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置ScrollBox是否继承父控件的三维边框效果。该属性定义了ScrollBox是否使用与父控件相同的三维边框。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置ScrollBox是否继承父控件的双缓冲。该属性定义了ScrollBox是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置ScrollBox是否继承父控件的字体。该属性定义了ScrollBox是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置ScrollBox是否继承父控件的提示信息显示设置。该属性定义了ScrollBox是否使用与父控件相同的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置ScrollBox的右键菜单。该属性定义了ScrollBox右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置ScrollBox是否显示提示信息。该属性定义了ScrollBox是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置ScrollBox的标签顺序。该属性定义了ScrollBox在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置ScrollBox是否为标签停靠点。该属性定义了ScrollBox是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置ScrollBox的触摸相关属性。该属性定义了ScrollBox如何响应触摸输入。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置ScrollBox是否可见。该属性定义了ScrollBox是否在界面上显示。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置ScrollBox的样式元素。该属性定义了ScrollBox使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置ScrollBox的样式名称。该属性定义了ScrollBox使用的样式名称。"""
     OnCanResize: Any
     """OnCanResize事件在ScrollBox大小可以调整时触发。该事件处理程序允许开发人员在ScrollBox大小可以调整时执行自定义操作。"""
@@ -36941,7 +38319,7 @@ class SearchBox(Edit):
     """SearchBox类继承自Edit，用于创建搜索框控件。该类提供了管理和操作搜索框的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建SearchBox类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁SearchBox类的实例并释放相关资源，包括可变数量的位置和关键字参数。"""
     ButtonWidth: int
     """ButtonWidth属性用于获取或设置SearchBox的按钮宽度。该属性定义了按钮的宽度。"""
@@ -36957,9 +38335,9 @@ class CustomSplitView(CustomPanel):
     """一个继承自 CustomPanel 的自定义拆分视图面板。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomSplitView类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Open(self, *args, **kwargs) -> Any:
+    def Open(self) -> None:
         """Open函数用于打开CustomSplitView实例。"""
-    def Close(self, *args, **kwargs) -> Any:
+    def Close(self) -> None:
         """Close函数用于关闭CustomSplitView实例。"""
     DockManager: Any
     """DockManager属性用于获取或设置CustomSplitView的停靠管理器。"""
@@ -36982,13 +38360,13 @@ class SplitView(CustomSplitView):
     """BevelWidth属性用于设置拆分视图斜边的宽度。该属性定义了斜边的厚度，以像素为单位。"""
     BiDiMode: Any
     """BiDiMode属性用于设置拆分视图的双向文本模式。该属性定义了文本的显示方向，例如从左到右或从右到左。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置拆分视图的边框宽度。该属性定义了边框的厚度，以像素为单位。"""
     BorderStyle: Any
     """BorderStyle属性用于设置拆分视图的边框样式。该属性定义了边框的外观，例如实线或虚线。"""
     CloseStyle: Any
     """CloseStyle属性用于设置拆分视图的关闭样式。该属性定义了拆分视图关闭时的动画和效果。"""
-    Color: Any
+    Color: int
     """Color属性用于设置拆分视图的背景颜色。该属性定义了拆分视图的填充颜色。"""
     CompactWidth: Any
     """CompactWidth属性用于设置拆分视图的紧凑宽度。该属性定义了拆分视图在紧凑模式下的宽度，以像素为单位。"""
@@ -36996,25 +38374,25 @@ class SplitView(CustomSplitView):
     """Constraints属性用于设置拆分视图的约束条件。该属性定义了拆分视图的最小和最大尺寸。"""
     DisplayMode: Any
     """DisplayMode属性用于设置拆分视图的显示模式。该属性定义了拆分视图是始终显示、自动隐藏还是根据需要显示。"""
-    UseDockManager: Any
+    UseDockManager: bool
     """UseDockManager属性用于设置是否使用停靠管理器。该属性定义了拆分视图是否允许其他控件停靠。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置拆分视图是否作为停靠站点。该属性定义了拆分视图是否可以停靠其他控件。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置拆分视图是否使用双缓冲。该属性定义了拆分视图是否使用双缓冲技术来减少闪烁。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置拆分视图拖动时的光标。该属性定义了在拖动操作中显示的光标样式。"""
     DragKind: Any
     """DragKind属性用于设置拆分视图的拖动类型。该属性定义了拆分视图的拖动类型，例如拖动窗口或拖动控件。"""
     DragMode: Any
     """DragMode属性用于设置拆分视图的拖动模式。该属性定义了拆分视图是否可以被拖动以及拖动的方式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置拆分视图是否可用。该属性定义了拆分视图是否可以响应用户交互。"""
-    FullRepaint: Any
+    FullRepaint: bool
     """FullRepaint属性用于设置拆分视图是否完全重绘。该属性定义了在尺寸变化时是否重绘整个视图。"""
     Font: Any
     """Font属性用于设置拆分视图的字体。该属性定义了拆分视图显示文本的字体样式。"""
-    Locked: Any
+    Locked: bool
     """Locked属性用于设置拆分视图是否锁定。该属性定义了拆分视图是否可以被移动或调整大小。"""
     Opened: Any
     """Opened属性用于获取拆分视图的打开状态。该属性定义了拆分视图当前是否处于打开状态。"""
@@ -37022,39 +38400,39 @@ class SplitView(CustomSplitView):
     """OpenedWidth属性用于设置拆分视图在打开状态下的宽度。该属性定义了拆分视图在打开时的宽度，以像素为单位。"""
     Padding: Any
     """Padding属性用于设置拆分视图的内边距。该属性定义了内容与拆分视图边框之间的距离。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置拆分视图是否继承父控件的双向文本模式。该属性定义了拆分视图是否使用与父控件相同的文本方向。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置拆分视图是否继承父控件的背景。该属性定义了拆分视图是否使用与父控件相同的背景颜色。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置拆分视图是否继承父控件的颜色。该属性定义了拆分视图是否使用与父控件相同的背景颜色。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置拆分视图是否继承父控件的双缓冲。该属性定义了拆分视图是否使用与父控件相同的双缓冲技术。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置拆分视图是否继承父控件的字体。该属性定义了拆分视图是否使用与父控件相同的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置拆分视图是否继承父控件的提示信息显示设置。该属性定义了拆分视图是否使用与父控件相同的提示信息显示设置。"""
     Placement: Any
     """Placement属性用于设置拆分视图的位置。该属性定义了拆分视图在父控件中的位置和对齐方式。"""
     PopupMenu: Any
     """PopupMenu属性用于设置拆分视图的右键菜单。该属性定义了拆分视图右键点击时显示的上下文菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置拆分视图是否显示提示信息。该属性定义了拆分视图是否在鼠标悬停时显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置拆分视图的标签顺序。该属性定义了拆分视图在Tab键循环中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置拆分视图是否为标签停靠点。该属性定义了拆分视图是否可以通过Tab键获得焦点。"""
     Touch: Any
     """Touch属性用于设置拆分视图的触摸操作。该属性定义了拆分视图是否支持触摸输入。"""
     UseAnimation: Any
     """UseAnimation属性用于设置拆分视图是否使用动画效果。该属性定义了拆分视图在打开和关闭时是否显示动画。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置拆分视图是否可见。该属性定义了拆分视图是否在界面上显示。"""
-    Width: Any
+    Width: int
     """Width属性用于设置拆分视图的宽度。该属性定义了拆分视图的当前宽度，以像素为单位。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置拆分视图的样式元素。该属性定义了拆分视图使用哪些样式元素进行绘制。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置拆分视图的样式名称。该属性定义了拆分视图使用的样式名称。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在拆分视图对齐前触发。该事件处理程序允许开发人员在拆分视图对齐前执行自定义操作。"""
@@ -37123,9 +38501,9 @@ class CustomStackPanel(CustomPanel):
     """CustomStackPanel类继承自CustomPanel，用于创建自定义堆栈面板。该类提供了管理和操作自定义堆栈面板的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomStackPanel类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomStackPanel类的实例并释放其资源（返回销毁操作的结果）。"""
-    def GetChildren(self, *args, **kwargs) -> Any:
+    def GetChildren(self, Proc: Any, Root: Any) -> None:
         """GetChildren函数用于获取CustomStackPanel的子控件（返回子控件）。"""
     ControlCollection: Any
     """ControlCollection属性用于管理CustomStackPanel的控件集合。"""
@@ -37150,7 +38528,7 @@ class StackPanel(CustomStackPanel):
     """Align属性用于设置StackPanel的对齐方式。"""
     Anchors: Any
     """Anchors属性用于设置StackPanel的锚点。"""
-    AutoSize: Any
+    AutoSize: bool
     """AutoSize属性用于设置StackPanel是否自动调整大小。"""
     BevelEdges: Any
     """BevelEdges属性用于设置StackPanel的斜边。"""
@@ -37166,79 +38544,79 @@ class StackPanel(CustomStackPanel):
     """BiDiMode属性用于设置StackPanel的双向文本模式。"""
     BorderStyle: Any
     """BorderStyle属性用于设置StackPanel的边框样式。"""
-    BorderWidth: Any
+    BorderWidth: int
     """BorderWidth属性用于设置StackPanel的边框宽度。"""
-    Color: Any
+    Color: int
     """Color属性用于设置StackPanel的背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置StackPanel的约束条件。"""
     ControlCollection: Any
     """ControlCollection属性用于管理StackPanel的控件集合。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置StackPanel的3D效果。"""
-    DockSite: Any
+    DockSite: bool
     """DockSite属性用于设置StackPanel是否作为停靠站点。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置StackPanel是否使用双缓冲。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置StackPanel拖动时的光标。"""
     DragKind: Any
     """DragKind属性用于设置StackPanel的拖动类型。"""
     DragMode: Any
     """DragMode属性用于设置StackPanel的拖动模式。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置StackPanel是否可用。"""
     Font: Any
     """Font属性用于设置StackPanel的字体。"""
-    FullRepaint: Any
+    FullRepaint: bool
     """FullRepaint属性用于设置StackPanel是否完全重绘。"""
-    Height: Any
+    Height: int
     """Height属性用于设置StackPanel的高度。"""
     HorizontalPositioning: Any
     """HorizontalPositioning属性用于设置StackPanel的水平定位方式。"""
-    Locked: Any
+    Locked: bool
     """Locked属性用于设置StackPanel是否锁定。"""
     Orientation: Any
     """Orientation属性用于设置StackPanel的方向。"""
     Padding: Any
     """Padding属性用于设置StackPanel的内边距。"""
-    ParentBackground: Any
+    ParentBackground: bool
     """ParentBackground属性用于设置StackPanel是否继承父控件的背景。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置StackPanel是否继承父控件的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置StackPanel是否继承父控件的颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置StackPanel是否继承父控件的3D效果。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置StackPanel是否继承父控件的双缓冲。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置StackPanel是否继承父控件的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置StackPanel是否继承父控件的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置StackPanel的右键菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置StackPanel是否显示提示信息。"""
-    Spacing: Any
+    Spacing: int
     """Spacing属性用于设置StackPanel的间距。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置StackPanel的样式元素。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置StackPanel的样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置StackPanel的标签顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置StackPanel是否为标签停靠点。"""
     Touch: Any
     """Touch属性用于设置StackPanel的触摸操作。"""
-    UseDockManager: Any
+    UseDockManager: bool
     """UseDockManager属性用于设置是否使用停靠管理器。"""
     VerticalPositioning: Any
     """VerticalPositioning属性用于设置StackPanel的垂直定位方式。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置StackPanel是否可见。"""
-    Width: Any
+    Width: int
     """Width属性用于设置StackPanel的宽度。"""
     OnAlignInsertBefore: Any
     """OnAlignInsertBefore事件在对齐前触发。该事件处理程序允许开发人员在控件对齐前执行自定义操作。"""
@@ -37297,19 +38675,19 @@ class StackPanel(CustomStackPanel):
 
 class TabbedNotebook(CustomTabControl):
     """TabbedNotebook类继承自CustomTabControl，用于创建带标签的笔记本控件。该类提供了管理和操作带标签笔记本的方法和属性。"""
-    def CMTabFontChanged(self, *args, **kwargs) -> Any:
+    def CMTabFontChanged(self, Message: Any) -> None:
         """CMTabFontChanged函数在标签字体改变时触发（返回操作结果）。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建TabbedNotebook类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁TabbedNotebook类的实例并释放其资源（返回销毁操作的结果）。"""
-    def GetChildren(self, *args, **kwargs) -> Any:
+    def GetChildren(self, Proc: Any, Root: Any) -> None:
         """GetChildren函数用于获取TabbedNotebook的子控件（返回子控件）。"""
-    def GetIndexForPage(self, *args, **kwargs) -> int:
+    def GetIndexForPage(self, Page: Any) -> int:
         """GetIndexForPage函数用于获取指定页面的索引（返回页面索引）。"""
     TopFont: Any
     """TopFont属性用于设置TabbedNotebook顶部的字体样式。"""
-    def TabFontChanged(self, *args, **kwargs) -> Any:
+    def TabFontChanged(self) -> None:
         """TabFontChanged函数在标签字体改变时触发（返回操作结果）。"""
     ActivePage: str
     """ActivePage属性用于获取或设置TabbedNotebook的当前活动页面。"""
@@ -37319,9 +38697,9 @@ class TabbedNotebook(CustomTabControl):
     """Anchors属性用于设置TabbedNotebook的锚点。"""
     Constraints: Any
     """Constraints属性用于设置TabbedNotebook的约束条件。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置TabbedNotebook是否使用双缓冲。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置TabbedNotebook是否可用。"""
     PageIndex: int
     """PageIndex属性用于获取或设置TabbedNotebook的当前页面索引。"""
@@ -37335,23 +38713,23 @@ class TabbedNotebook(CustomTabControl):
     """TabFont属性用于设置TabbedNotebook标签的字体。"""
     Touch: Any
     """Touch属性用于设置TabbedNotebook的触摸操作。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置TabbedNotebook是否继承父控件的双缓冲。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置TabbedNotebook是否继承父控件的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置TabbedNotebook的右键菜单。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置TabbedNotebook是否显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置TabbedNotebook的标签顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置TabbedNotebook是否为标签停靠点。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置TabbedNotebook是否可见。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置TabbedNotebook的样式元素。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置TabbedNotebook的样式名称。"""
     OnClick: Any
     """OnClick事件在TabbedNotebook被点击时触发。该事件处理程序允许开发人员在TabbedNotebook被点击时执行自定义操作。"""
@@ -37370,19 +38748,19 @@ class CustomTaskbar(TaskbarBase):
     """CustomTaskbar类继承自TaskbarBase，用于创建自定义任务栏。该类提供了管理和操作自定义任务栏的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomTaskbar类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomTaskbar类的实例并释放其资源（返回销毁操作的结果）。"""
-    def Initialize(self, *args, **kwargs) -> Any:
+    def Initialize(self) -> None:
         """Initialize函数用于初始化CustomTaskbar类的实例（返回初始化操作的结果）。"""
-    def DoThumbButtonNotify(self, *args, **kwargs) -> Any:
+    def DoThumbButtonNotify(self, var_Message: Any) -> None:
         """DoThumbButtonNotify函数在任务栏缩略按钮通知时触发（返回通知操作的结果）。"""
-    def DoThumbPreviewRequest(self, *args, **kwargs) -> Any:
+    def DoThumbPreviewRequest(self, var_Message: Any) -> None:
         """DoThumbPreviewRequest函数在任务栏缩略图预览请求时触发（返回请求操作的结果）。"""
-    def DoWindowPreviewRequest(self, *args, **kwargs) -> Any:
+    def DoWindowPreviewRequest(self, var_Message: Any) -> None:
         """DoWindowPreviewRequest函数在窗口预览请求时触发（返回请求操作的结果）。"""
-    def UnregisterTab(self, *args, **kwargs) -> Any:
+    def UnregisterTab(self, ATab: Any) -> None:
         """UnregisterTab函数用于取消注册任务栏标签（返回取消注册操作的结果）。"""
-    def ApplyButtonsChanges(self, *args, **kwargs) -> Any:
+    def ApplyButtonsChanges(self) -> None:
         """ApplyButtonsChanges函数用于应用任务栏按钮的更改（返回更改操作的结果）。"""
     def GetMainWindowHwnd(self) -> Any:
         """GetMainWindowHwnd函数用于获取主窗口句柄（self指向实例本身，返回主窗口句柄）。"""
@@ -37432,13 +38810,13 @@ class CustomTrayIcon(Component):
     """CustomTrayIcon类继承自Component，用于创建自定义托盘图标。该类提供了管理和操作自定义托盘图标的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomTrayIcon类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomTrayIcon类的实例并释放其资源（返回销毁操作的结果）。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """Refresh函数用于刷新CustomTrayIcon（返回刷新操作的结果）。"""
-    def SetDefaultIcon(self, *args, **kwargs) -> Any:
+    def SetDefaultIcon(self) -> None:
         """SetDefaultIcon函数用于设置默认图标（返回设置操作的结果）。"""
-    def ShowBalloonHint(self, *args, **kwargs) -> Any:
+    def ShowBalloonHint(self) -> None:
         """ShowBalloonHint函数用于显示气球提示（返回显示操作的结果）。"""
     Animate: bool
     """Animate属性用于设置托盘图标是否动画。"""
@@ -37485,7 +38863,7 @@ class TrayIcon(CustomTrayIcon):
     """Animate属性用于设置托盘图标是否动画。"""
     AnimateInterval: Any
     """AnimateInterval属性用于设置托盘图标动画的时间间隔。"""
-    Hint: Any
+    Hint: str
     """Hint属性用于设置托盘图标的提示信息。"""
     BalloonHint: Any
     """BalloonHint属性用于设置托盘图标的气球提示信息。"""
@@ -37503,7 +38881,7 @@ class TrayIcon(CustomTrayIcon):
     """IconIndex属性用于设置托盘图标的索引。"""
     PopupMenu: Any
     """PopupMenu属性用于设置托盘图标的右键菜单。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置托盘图标是否可见。"""
     OnBalloonClick: Any
     """OnBalloonClick事件在托盘图标气球提示被点击时触发。该事件处理程序允许开发人员在托盘图标气球提示被点击时执行自定义操作。"""
@@ -37535,45 +38913,45 @@ class UpDown(CustomUpDown):
     """Associate属性用于设置上下控件关联的控件。"""
     ArrowKeys: Any
     """ArrowKeys属性用于设置上下控件是否响应箭头键。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置上下控件是否使用双缓冲。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置上下控件是否可用。"""
-    Hint: Any
+    Hint: str
     """Hint属性用于设置上下控件的提示信息。"""
-    Min: Any
+    Min: int
     """Min属性用于设置上下控件的最小值。"""
-    Max: Any
+    Max: int
     """Max属性用于设置上下控件的最大值。"""
-    Increment: Any
+    Increment: int
     """Increment属性用于设置上下控件的增量值。"""
     Constraints: Any
     """Constraints属性用于设置上下控件的约束条件。"""
     Orientation: Any
     """Orientation属性用于设置上下控件的方向。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置上下控件是否继承父控件的双缓冲。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置上下控件是否继承父控件的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置上下控件的右键菜单。"""
-    Position: Any
+    Position: int
     """Position属性用于设置上下控件的位置。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置上下控件是否显示提示信息。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置上下控件的标签顺序。"""
-    TabStop: Any
+    TabStop: bool
     """TabStop属性用于设置上下控件是否为标签停靠点。"""
     Thousands: Any
     """Thousands属性用于设置上下控件是否显示千位分隔符。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置上下控件是否可见。"""
-    Wrap: Any
+    Wrap: bool
     """Wrap属性用于设置上下控件是否循环。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置上下控件的样式元素。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置上下控件的样式名称。"""
     OnChanging: Any
     """OnChanging事件在上下控件的值改变前触发。该事件处理程序允许开发人员在上下控件的值改变前执行自定义操作。"""
@@ -37604,21 +38982,21 @@ class ValueListEditor(CustomDrawGrid):
     """ValueListEditor类继承自CustomDrawGrid，用于创建值列表编辑器。该类提供了管理和操作值列表编辑器的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建ValueListEditor类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁ValueListEditor类的实例并释放其资源（返回销毁操作的结果）。"""
-    def DeleteRow(self, *args, **kwargs) -> Any:
+    def DeleteRow(self, ARow: int) -> None:
         """DeleteRow函数用于删除值列表编辑器中的一行（返回删除操作的结果）。"""
-    def FindRow(self, *args, **kwargs) -> bool:
+    def FindRow(self, const_KeyName: str, Index: Any) -> bool:
         """FindRow函数用于查找值列表编辑器中的一行（返回查找结果）。"""
-    def InsertRow(self, *args, **kwargs) -> int:
+    def InsertRow(self, ARow: int) -> None:
         """InsertRow函数用于在值列表编辑器中插入一行（返回插入操作的结果）。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """Refresh函数用于刷新值列表编辑器（返回刷新操作的结果）。"""
     def RestoreCurrentRow(self) -> bool:
         """RestoreCurrentRow函数用于恢复当前行（self指向实例本身，返回恢复操作的结果）。"""
     Cells: Any
     """Cells属性用于获取或设置值列表编辑器中的单元格。"""
-    ColCount: Any
+    ColCount: int
     """ColCount属性用于获取或设置值列表编辑器的列数。"""
     ItemProps: Any
     """ItemProps属性用于管理值列表编辑器的项属性。"""
@@ -37628,9 +39006,9 @@ class ValueListEditor(CustomDrawGrid):
     """RowCount属性用于获取或设置值列表编辑器的行数。"""
     Values: str
     """Values属性用于获取或设置值列表编辑器中的值。"""
-    VisibleColCount: Any
+    VisibleColCount: int
     """VisibleColCount属性用于获取值列表编辑器中可见列的数量。"""
-    VisibleRowCount: Any
+    VisibleRowCount: int
     """VisibleRowCount属性用于获取值列表编辑器中可见行的数量。"""
     Align: Any
     """Align属性用于设置值列表编辑器的对齐方式。"""
@@ -37640,23 +39018,23 @@ class ValueListEditor(CustomDrawGrid):
     """BiDiMode属性用于设置值列表编辑器的双向文本模式。"""
     BorderStyle: Any
     """BorderStyle属性用于设置值列表编辑器的边框样式。"""
-    Color: Any
+    Color: int
     """Color属性用于设置值列表编辑器的背景颜色。"""
     Constraints: Any
     """Constraints属性用于设置值列表编辑器的约束条件。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """Ctl3D属性用于设置值列表编辑器的3D效果。"""
-    DefaultColWidth: Any
+    DefaultColWidth: int
     """DefaultColWidth属性用于设置值列表编辑器的默认列宽。"""
     DefaultDrawing: Any
     """DefaultDrawing属性用于设置值列表编辑器是否使用默认绘图。"""
-    DefaultRowHeight: Any
+    DefaultRowHeight: int
     """DefaultRowHeight属性用于设置值列表编辑器的默认行高。"""
     DisplayOptions: Any
     """DisplayOptions属性用于设置值列表编辑器的显示选项。"""
-    DoubleBuffered: Any
+    DoubleBuffered: bool
     """DoubleBuffered属性用于设置值列表编辑器是否使用双缓冲。"""
-    DragCursor: Any
+    DragCursor: int
     """DragCursor属性用于设置值列表编辑器拖动时的光标。"""
     DragKind: Any
     """DragKind属性用于设置值列表编辑器的拖动类型。"""
@@ -37666,11 +39044,11 @@ class ValueListEditor(CustomDrawGrid):
     """DrawingStyle属性用于设置值列表编辑器的绘图样式。"""
     DropDownRows: int
     """DropDownRows属性用于设置值列表编辑器下拉列表的行数。"""
-    Enabled: Any
+    Enabled: bool
     """Enabled属性用于设置值列表编辑器是否可用。"""
     FixedColor: Any
     """FixedColor属性用于设置值列表编辑器固定单元格的颜色。"""
-    FixedCols: Any
+    FixedCols: int
     """FixedCols属性用于设置值列表编辑器固定列的数量。"""
     Font: Any
     """Font属性用于设置值列表编辑器的字体。"""
@@ -37678,43 +39056,43 @@ class ValueListEditor(CustomDrawGrid):
     """GradientEndColor属性用于设置值列表编辑器渐变结束颜色。"""
     GradientStartColor: Any
     """GradientStartColor属性用于设置值列表编辑器渐变开始颜色。"""
-    GridLineWidth: Any
+    GridLineWidth: int
     """GridLineWidth属性用于设置值列表编辑器的网格线宽度。"""
     KeyOptions: Any
     """KeyOptions属性用于设置值列表编辑器的键选项。"""
     Options: Any
     """Options属性用于设置值列表编辑器的选项。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """ParentBiDiMode属性用于设置值列表编辑器是否继承父控件的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """ParentColor属性用于设置值列表编辑器是否继承父控件的颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """ParentCtl3D属性用于设置值列表编辑器是否继承父控件的3D效果。"""
-    ParentDoubleBuffered: Any
+    ParentDoubleBuffered: bool
     """ParentDoubleBuffered属性用于设置值列表编辑器是否继承父控件的双缓冲。"""
-    ParentFont: Any
+    ParentFont: bool
     """ParentFont属性用于设置值列表编辑器是否继承父控件的字体。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """ParentShowHint属性用于设置值列表编辑器是否继承父控件的提示信息显示设置。"""
     PopupMenu: Any
     """PopupMenu属性用于设置值列表编辑器的右键菜单。"""
-    ScrollBars: Any
+    ScrollBars: bool
     """ScrollBars属性用于设置值列表编辑器的滚动条。"""
-    ShowHint: Any
+    ShowHint: bool
     """ShowHint属性用于设置值列表编辑器是否显示提示信息。"""
     Strings: Any
     """Strings属性用于管理值列表编辑器中的字符串。"""
-    TabOrder: Any
+    TabOrder: int
     """TabOrder属性用于设置值列表编辑器的标签顺序。"""
     TitleCaptions: Any
     """TitleCaptions属性用于设置值列表编辑器的标题。"""
     Touch: Any
     """Touch属性用于设置值列表编辑器的触摸操作。"""
-    Visible: Any
+    Visible: bool
     """Visible属性用于设置值列表编辑器是否可见。"""
-    StyleElements: Any
+    StyleElements: int
     """StyleElements属性用于设置值列表编辑器的样式元素。"""
-    StyleName: Any
+    StyleName: str
     """StyleName属性用于设置值列表编辑器的样式名称。"""
     OnClick: Any
     """OnClick事件在值列表编辑器被点击时触发。该事件处理程序允许开发人员在值列表编辑器被点击时执行自定义操作。"""
@@ -37791,29 +39169,29 @@ class CustomActionBarColorMap(Component):
     """CustomActionBarColorMap类继承自Component，用于创建自定义动作栏颜色映射。该类提供了管理和操作自定义动作栏颜色映射的方法和属性。"""
     def Create(self, AOwner: Component) -> None:
         """Create函数用于创建CustomActionBarColorMap类的实例并初始化其状态（self指向实例本身，AOwner为组件的所有者）。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """Destroy函数用于销毁CustomActionBarColorMap类的实例并释放其资源（返回销毁操作的结果）。"""
-    def Assign(self, *args, **kwargs) -> Any:
+    def Assign(self, Source: Any) -> None:
         """Assign函数用于分配颜色映射（返回分配操作的结果）。"""
-    def UpdateColors(self, *args, **kwargs) -> Any:
+    def UpdateColors(self) -> None:
         """UpdateColors函数用于更新颜色映射（返回更新操作的结果）。"""
-    BtnFrameColor: Any
+    BtnFrameColor: int
     """BtnFrameColor属性用于设置按钮框架颜色。"""
-    BtnSelectedColor: Any
+    BtnSelectedColor: int
     """BtnSelectedColor属性用于设置按钮选中颜色。"""
     BtnSelectedFont: Any
     """BtnSelectedFont属性用于设置按钮选中文字的字体颜色。"""
-    Color: Any
+    Color: int
     """Color属性用于设置动作栏的颜色。"""
     DesignFocus: Any
     """DesignFocus属性用于设置设计模式下的焦点颜色。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置禁用状态下的颜色。"""
-    DisabledFontColor: Any
+    DisabledFontColor: int
     """DisabledFontColor属性用于设置禁用状态下的字体颜色。"""
-    DisabledFontShadow: Any
+    DisabledFontShadow: int
     """DisabledFontShadow属性用于设置禁用状态下的字体阴影颜色。"""
-    FontColor: Any
+    FontColor: int
     """FontColor属性用于设置动作栏的字体颜色。"""
     FrameTopLeftInner: Any
     """FrameTopLeftInner属性用于设置框架左上角的内侧颜色。"""
@@ -37823,48 +39201,48 @@ class CustomActionBarColorMap(Component):
     """FrameBottomRightInner属性用于设置框架右下角的内侧颜色。"""
     FrameBottomRightOuter: Any
     """FrameBottomRightOuter属性用于设置框架右下角的外侧颜色。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置高亮颜色。"""
-    HotColor: Any
+    HotColor: int
     """HotColor属性用于设置热点颜色。"""
-    HotFontColor: Any
+    HotFontColor: int
     """HotFontColor属性用于设置热点字体颜色。"""
-    MenuColor: Any
+    MenuColor: int
     """MenuColor属性用于设置菜单颜色。"""
-    SelectedColor: Any
+    SelectedColor: int
     """SelectedColor属性用于设置选中颜色。"""
-    SelectedFontColor: Any
+    SelectedFontColor: int
     """SelectedFontColor属性用于设置选中文字的字体颜色。"""
-    ShadowColor: Any
+    ShadowColor: int
     """ShadowColor属性用于设置阴影颜色。"""
-    UnusedColor: Any
+    UnusedColor: int
     """UnusedColor属性用于设置未使用的颜色。"""
     OnColorChange: Any
     """OnColorChange事件在颜色更改时触发。该事件处理程序允许开发人员在颜色更改时执行自定义操作。"""
 
 class XPColorMap(CustomActionBarColorMap):
     """XPColorMap类继承自CustomActionBarColorMap，用于创建XP风格的颜色映射。该类提供了管理和操作XP风格颜色映射的方法和属性。"""
-    def UpdateColors(self, *args, **kwargs) -> Any:
+    def UpdateColors(self) -> None:
         """UpdateColors函数用于更新XP风格的颜色映射（返回更新操作的结果）。"""
-    ShadowColor: Any
+    ShadowColor: int
     """ShadowColor属性用于设置XP风格的阴影颜色。"""
-    Color: Any
+    Color: int
     """Color属性用于设置XP风格的颜色。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置XP风格的禁用颜色。"""
-    DisabledFontColor: Any
+    DisabledFontColor: int
     """DisabledFontColor属性用于设置XP风格的禁用字体颜色。"""
-    DisabledFontShadow: Any
+    DisabledFontShadow: int
     """DisabledFontShadow属性用于设置XP风格的禁用字体阴影颜色。"""
-    FontColor: Any
+    FontColor: int
     """FontColor属性用于设置XP风格的字体颜色。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置XP风格的高亮颜色。"""
-    HotColor: Any
+    HotColor: int
     """HotColor属性用于设置XP风格的热点颜色。"""
-    HotFontColor: Any
+    HotFontColor: int
     """HotFontColor属性用于设置XP风格的热点字体颜色。"""
-    MenuColor: Any
+    MenuColor: int
     """MenuColor属性用于设置XP风格的菜单颜色。"""
     FrameTopLeftInner: Any
     """FrameTopLeftInner属性用于设置XP风格框架左上角的内侧颜色。"""
@@ -37874,48 +39252,48 @@ class XPColorMap(CustomActionBarColorMap):
     """FrameBottomRightInner属性用于设置XP风格框架右下角的内侧颜色。"""
     FrameBottomRightOuter: Any
     """FrameBottomRightOuter属性用于设置XP风格框架右下角的外侧颜色。"""
-    BtnFrameColor: Any
+    BtnFrameColor: int
     """BtnFrameColor属性用于设置XP风格的按钮框架颜色。"""
-    BtnSelectedColor: Any
+    BtnSelectedColor: int
     """BtnSelectedColor属性用于设置XP风格的按钮选中颜色。"""
     BtnSelectedFont: Any
     """BtnSelectedFont属性用于设置XP风格的按钮选中文字的字体颜色。"""
-    SelectedColor: Any
+    SelectedColor: int
     """SelectedColor属性用于设置XP风格的选中颜色。"""
-    SelectedFontColor: Any
+    SelectedFontColor: int
     """SelectedFontColor属性用于设置XP风格的选中文字的字体颜色。"""
-    UnusedColor: Any
+    UnusedColor: int
     """UnusedColor属性用于设置XP风格的未使用颜色。"""
     OnColorChange: Any
     """OnColorChange事件在XP风格颜色更改时触发。该事件处理程序允许开发人员在XP风格颜色更改时执行自定义操作。"""
 
 class StandardColorMap(CustomActionBarColorMap):
     """StandardColorMap类继承自CustomActionBarColorMap，用于创建标准颜色映射。该类提供了管理和操作标准颜色映射的方法和属性。"""
-    def UpdateColors(self, *args, **kwargs) -> Any:
+    def UpdateColors(self) -> None:
         """UpdateColors函数用于更新标准颜色映射（返回更新操作的结果）。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置标准颜色映射的高亮颜色。"""
-    UnusedColor: Any
+    UnusedColor: int
     """UnusedColor属性用于设置标准颜色映射的未使用颜色。"""
-    BtnFrameColor: Any
+    BtnFrameColor: int
     """BtnFrameColor属性用于设置标准颜色映射的按钮框架颜色。"""
-    BtnSelectedColor: Any
+    BtnSelectedColor: int
     """BtnSelectedColor属性用于设置标准颜色映射的按钮选中颜色。"""
     BtnSelectedFont: Any
     """BtnSelectedFont属性用于设置标准颜色映射的按钮选中文字的字体颜色。"""
-    Color: Any
+    Color: int
     """Color属性用于设置标准颜色映射的颜色。"""
-    DisabledFontColor: Any
+    DisabledFontColor: int
     """DisabledFontColor属性用于设置标准颜色映射的禁用字体颜色。"""
-    DisabledFontShadow: Any
+    DisabledFontShadow: int
     """DisabledFontShadow属性用于设置标准颜色映射的禁用字体阴影颜色。"""
-    FontColor: Any
+    FontColor: int
     """FontColor属性用于设置标准颜色映射的字体颜色。"""
-    HotColor: Any
+    HotColor: int
     """HotColor属性用于设置标准颜色映射的热点颜色。"""
-    HotFontColor: Any
+    HotFontColor: int
     """HotFontColor属性用于设置标准颜色映射的热点字体颜色。"""
-    MenuColor: Any
+    MenuColor: int
     """MenuColor属性用于设置标准颜色映射的菜单颜色。"""
     FrameTopLeftInner: Any
     """FrameTopLeftInner属性用于设置标准颜色映射框架左上角的内侧颜色。"""
@@ -37925,34 +39303,34 @@ class StandardColorMap(CustomActionBarColorMap):
     """FrameBottomRightInner属性用于设置标准颜色映射框架右下角的内侧颜色。"""
     FrameBottomRightOuter: Any
     """FrameBottomRightOuter属性用于设置标准颜色映射框架右下角的外侧颜色。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置标准颜色映射的禁用颜色。"""
-    SelectedColor: Any
+    SelectedColor: int
     """SelectedColor属性用于设置标准颜色映射的选中颜色。"""
-    SelectedFontColor: Any
+    SelectedFontColor: int
     """SelectedFontColor属性用于设置标准颜色映射的选中文字的字体颜色。"""
-    ShadowColor: Any
+    ShadowColor: int
     """ShadowColor属性用于设置标准颜色映射的阴影颜色。"""
     OnColorChange: Any
     """OnColorChange事件在标准颜色映射颜色更改时触发。该事件处理程序允许开发人员在标准颜色映射颜色更改时执行自定义操作。"""
 
 class TwilightColorMap(CustomActionBarColorMap):
     """TwilightColorMap类继承自CustomActionBarColorMap，用于创建黄昏风格的颜色映射。该类提供了管理和操作黄昏风格颜色映射的方法和属性。"""
-    def UpdateColors(self, *args, **kwargs) -> Any:
+    def UpdateColors(self) -> None:
         """UpdateColors函数用于更新黄昏风格的颜色映射（返回更新操作的结果）。"""
-    Color: Any
+    Color: int
     """Color属性用于设置黄昏风格的颜色。"""
-    DisabledFontColor: Any
+    DisabledFontColor: int
     """DisabledFontColor属性用于设置黄昏风格的禁用字体颜色。"""
-    DisabledFontShadow: Any
+    DisabledFontShadow: int
     """DisabledFontShadow属性用于设置黄昏风格的禁用字体阴影颜色。"""
-    FontColor: Any
+    FontColor: int
     """FontColor属性用于设置黄昏风格的字体颜色。"""
-    HighlightColor: Any
+    HighlightColor: int
     """HighlightColor属性用于设置黄昏风格的高亮颜色。"""
-    HotColor: Any
+    HotColor: int
     """HotColor属性用于设置黄昏风格的热点颜色。"""
-    HotFontColor: Any
+    HotFontColor: int
     """HotFontColor属性用于设置黄昏风格的热点字体颜色。"""
     FrameTopLeftInner: Any
     """FrameTopLeftInner属性用于设置黄昏风格框架左上角的内侧颜色。"""
@@ -37962,23 +39340,23 @@ class TwilightColorMap(CustomActionBarColorMap):
     """FrameBottomRightInner属性用于设置黄昏风格框架右下角的内侧颜色。"""
     FrameBottomRightOuter: Any
     """FrameBottomRightOuter属性用于设置黄昏风格框架右下角的外侧颜色。"""
-    BtnFrameColor: Any
+    BtnFrameColor: int
     """BtnFrameColor属性用于设置黄昏风格的按钮框架颜色。"""
-    BtnSelectedColor: Any
+    BtnSelectedColor: int
     """BtnSelectedColor属性用于设置黄昏风格的按钮选中颜色。"""
     BtnSelectedFont: Any
     """BtnSelectedFont属性用于设置黄昏风格的按钮选中文字的字体颜色。"""
-    MenuColor: Any
+    MenuColor: int
     """MenuColor属性用于设置黄昏风格的菜单颜色。"""
-    DisabledColor: Any
+    DisabledColor: int
     """DisabledColor属性用于设置黄昏风格的禁用颜色。"""
-    SelectedColor: Any
+    SelectedColor: int
     """SelectedColor属性用于设置黄昏风格的选中颜色。"""
-    SelectedFontColor: Any
+    SelectedFontColor: int
     """SelectedFontColor属性用于设置黄昏风格的选中文字的字体颜色。"""
-    ShadowColor: Any
+    ShadowColor: int
     """ShadowColor属性用于设置黄昏风格的阴影颜色。"""
-    UnusedColor: Any
+    UnusedColor: int
     """UnusedColor属性用于设置黄昏风格的未使用颜色。"""
     OnColorChange: Any
     """OnColorChange事件在黄昏风格颜色更改时触发。该事件处理程序允许开发人员在黄昏风格颜色更改时执行自定义操作。"""
@@ -37992,7 +39370,7 @@ def CreateComponent(ComponentClass, Owner) -> Any:
     """创建组件（组件类，所有者）
 
     创建一个由 Owner 拥有的 ComponentClass 类型的组件"""
-def FreeConsole(*args, **kwargs) -> Any:
+def FreeConsole() -> bool:
     """FreeConsole_Wrapper()
 
     用于释放与该进程关联的 MS-DOS 控制台。在某些情况下，应用程序可能希望在运行时释放与控制台的关联，以便能够更灵活地控制其用户界面。这时，可以使用FreeConsole函数。"""
@@ -38000,7 +39378,7 @@ def GetProcessDpiAwareness() -> Any:
     """GetProcessDpiAwareness()
 
     用于获取指定进程的DPI（每英寸点数）感知级别。DPI感知级别越高，应用程序对高分辨率显示器的支持就越好，显示效果也会更加清晰和细腻。"""
-def IsDpiAware(*args, **kwargs) -> Any:
+def IsDpiAware() -> bool:
     """IsDPIAware()
 
     IsDpiAware用于检测应用程序是否意识到系统的高DPI设置。
@@ -38013,23 +39391,801 @@ def SetProcessDpiAwareness() -> Any:
     """SetProcessDpiAwareness()
 
     SetProcessDpiAwareness 函数是用于设置进程默认的 DPI（每英寸点数）感知级别。DPI 感知是应用程序对其运行环境的 DPI 设置进行识别的能力，它允许应用程序在高分辨率屏幕上正确缩放和呈现其内容。"""
-def ShowMessage(*args, **kwargs) -> Any:
+def ShowMessage(const_Msg: str) -> None:
     """ShowMessage_Wrapper()
 
     ShowMessage 函数通常将自定义消息显示为一个简单的消息框，通知用户某些信息或状态。
     ShowMessage 只提供基本的消息显示功能，不支持自定义消息框的标题、按钮类型、图标等。如果需要更高级的消息框定制功能，可以使用 Application.MessageBox 函数。"""
-def StyleServices(*args, **kwargs) -> Any:
+def StyleServices(AControl: Any = ...) -> Any:
     """StyleServices_Wrapper()
 
     StyleServices提供了一套服务和功能，允许开发者自定义和修改应用程序中控件的外观和感觉。"""
 
+class AiEmbeddingsCore(Component):
+    """AI嵌入向量核心基类，提供向量数据、模型和用量属性，以及余弦相似度、点积、向量加减、最近邻查找等向量运算。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建嵌入向量组件，aOwner参数指定组件的所有者。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
+        """根据输入文本生成嵌入向量，可指定用户标识、向量维度、模型和编码格式。"""
+    @overload
+    def ToJsonArray(self) -> Any:
+        """把嵌入向量数据转换为JSON数组。"""
+    @overload
+    @classmethod
+    def ToJsonArray(cls, Val: Any) -> Any:
+        """把嵌入向量数据转换为JSON数组。"""
+    @classmethod
+    def ToEmbeddingData(cls, Value: Any) -> Any:
+        """把JSON数组转换为嵌入向量数据。"""
+    @classmethod
+    def Magnitude(cls, const_V: Any) -> float:
+        """计算向量的模长。"""
+    @classmethod
+    def DotProduct(cls, const_A: Any, const_B: Any) -> float:
+        """计算两个向量的点积。"""
+    @classmethod
+    def CosineSimilarity(cls, const_A: Any, const_B: Any) -> float:
+        """计算两个向量的余弦相似度。"""
+    @classmethod
+    def EuclideanDistance(cls, const_A: Any, const_B: Any) -> float:
+        """计算两个向量的欧氏距离。"""
+    @classmethod
+    def Normalize(cls, var_V: Any) -> None:
+        """把向量归一化为单位长度，直接修改传入的向量。"""
+    @classmethod
+    def FindNearest(cls, const_Query: Any, const_Candidates: Any) -> Any:
+        """在候选向量列表中查找与查询向量最相近的一个。"""
+    @classmethod
+    def FindTopK(cls, const_Query: Any, const_Candidates: Any, K: int) -> Any:
+        """在候选向量列表中查找与查询向量最相近的前K个。"""
+    @classmethod
+    def VectorAdd(cls, const_A: Any, const_B: Any) -> Any:
+        """计算两个向量之和。"""
+    @classmethod
+    def VectorSubtract(cls, const_A: Any, const_B: Any) -> Any:
+        """计算两个向量之差。"""
+    @classmethod
+    def AverageEmbedding(cls, const_Vectors: Any) -> Any:
+        """计算多个向量的平均向量。"""
+    Data: Any
+    """获取或设置嵌入向量数据。"""
+    Model: str
+    """获取或设置生成嵌入向量所用的模型。"""
+    Dimensions: int
+    """获取或设置嵌入向量的维度。"""
+    prompt_tokens: int
+    """获取本次请求提示词消耗的令牌数。"""
+    total_tokens: int
+    """获取本次请求消耗的总令牌数。"""
+    OnGetEmbedding: Any
+    """OnGetEmbedding事件，在相关操作发生时触发。"""
+
+class AiCustomTool(Component):
+    """AI自定义工具基类，各类语音、视觉、图像、文档等工具组件均由它派生。"""
+    def Destroy(self) -> None:
+        """销毁工具组件并释放其占用的所有资源。"""
+    def SetContext(self, AContext: Any) -> None:
+        """设置工具运行时使用的上下文对象。"""
+
+class RMComponent(Component):
+    """ReportMachine组件基类，提供事件属性变量等公共功能。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    EventPropVars: Any
+    """获取事件属性变量集合。"""
+
+class RMCustomExportFilter(Component):
+    """ReportMachine自定义导出过滤器基类，各种导出过滤器由它派生。"""
+
+class RMCustomPreview(Panel):
+    """ReportMachine自定义预览基类，是预览组件的面板基础，提供预览选项和报表显示接口。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建预览面板组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowReport(self, aReport: RMCustomReport) -> None:
+        """在预览中显示指定报表。"""
+    def Connect(self, aReport: RMCustomReport) -> None:
+        """把预览组件连接到指定报表。"""
+    def Print(self) -> None:
+        """打印预览中的报表。"""
+    Options: Any
+    """获取或设置预览选项。"""
+
+class PJFileFilter(Component):
+    """文件过滤器抽象基类，用于按各种条件过滤拖放的文件名，配合文件拖放组件使用。"""
+    def Accept(self, const_FilePath: str, const_IsFolder: bool) -> bool:
+        """检查指定文件或文件夹（由IsFolder指明）是否通过过滤器，通过返回True，否则返回False。"""
+
+class AiEmbeddings(AiEmbeddingsCore):
+    """AI嵌入向量组件基类，封装了生成文本嵌入向量的通用功能，各厂商嵌入组件由它派生。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def ParseEmbedding(self, JObj: Any) -> None:
+        """解析服务端返回的嵌入向量JSON数据（OpenAI接口格式）。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
+        """根据输入文本生成嵌入向量，可指定用户标识、向量维度、模型和编码格式。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取嵌入驱动的名称，用于驱动注册和工厂创建。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建该嵌入驱动的新实例，aOwner参数指定所有者。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """向参数列表注册该驱动的默认参数。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+
+class AiSpeechToolBase(AiCustomTool):
+    """语音工具基类，为语音转文字、文字转语音等语音工具提供公共基础。"""
+
+class AiVisionToolBase(AiCustomTool):
+    """视觉工具基类，为图像理解、OCR等视觉工具提供公共基础。"""
+
+class AiImageToolBase(AiCustomTool):
+    """图像工具基类，为图像生成等图像工具提供公共基础。"""
+
+class AiVideoToolBase(AiCustomTool):
+    """视频工具基类，为视频生成等视频工具提供公共基础。"""
+
+class AiDocumentToolBase(AiCustomTool):
+    """文档工具基类，为文档处理类工具提供公共基础。"""
+
+class AiCodeInterpreterToolBase(AiCustomTool):
+    """代码解释器工具基类，为代码执行类工具提供公共基础。"""
+
+class AiWebSearchToolBase(AiCustomTool):
+    """联网搜索工具基类，为网络搜索类工具提供公共基础。"""
+
+class AiPdfToolBase(AiCustomTool):
+    """PDF工具基类，为PDF处理类工具提供公共基础。"""
+
+class AiReportToolBase(AiCustomTool):
+    """报表工具基类，为报表生成类工具提供公共基础。"""
+
+class AiMCPServer(Component):
+    """MCP服务端组件基类，提供工具与资源的注册、服务启停和参数配置等公共功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化MCP服务端组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Start(self) -> None:
+        """启动MCP服务。"""
+    def Stop(self) -> None:
+        """停止MCP服务。"""
+    def RegisterTool(self, const_Name: str, Factory: Any) -> None:
+        """按名称注册一个MCP工具，由工厂函数负责创建工具实例。"""
+    def RegisterResource(self, const_URI: str, Factory: Any) -> None:
+        """按URI注册一个MCP资源，由工厂函数负责创建资源实例。"""
+    def LoadSettingsDefaults(self) -> None:
+        """加载服务的默认设置。"""
+    def CreateDefaultSettingsFile(self) -> None:
+        """创建包含默认设置的配置文件。"""
+    def LoadSettingsFromFile(self) -> None:
+        """从配置文件加载服务设置。"""
+    Port: int
+    """获取或设置端口。"""
+    Endpoint: str
+    """获取端点。"""
+    CorsEnabled: bool
+    """指定是否CORS启用。"""
+    CorsAllowedOrigins: str
+    """获取或设置CORS允许来源。"""
+    LogicServer: Any
+    """获取逻辑Server。"""
+    IsActive: bool
+    """指示是否活动。"""
+    User: str
+    """获取或设置用户。"""
+    SettingsFile: str
+    """获取或设置设置文件。"""
+    ServerName: str
+    """获取或设置Server名称。"""
+    ServerVersion: str
+    """获取或设置Server版本。"""
+    AiFunctions: AiFunctions
+    """获取或设置AI函数。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    OnValidateRequest: Any
+    """OnValidateRequest事件，在相关操作发生时触发。"""
+    OnClientConnect: Any
+    """OnClientConnect事件，在相关操作发生时触发。"""
+    OnUnauthorizedRequest: Any
+    """OnUnauthorizedRequest事件，在相关操作发生时触发。"""
+
+class AiEmbeddingNode:
+    """嵌入向量节点，保存一段文本及其嵌入向量，并提供相似度计算和JSON转换功能。"""
+    def Create(self, aDim: int) -> None:
+        """创建嵌入向量节点，aDim参数指定向量维度。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def CosineSimilarity(cls, const_A: AiEmbeddingNode, const_B: AiEmbeddingNode) -> float:
+        """计算两个嵌入向量节点之间的余弦相似度。"""
+    @classmethod
+    def DotProduct(cls, const_A: AiEmbeddingNode, const_B: AiEmbeddingNode) -> float:
+        """计算两个嵌入向量节点的点积。"""
+    @classmethod
+    def Magnitude(cls, const_A: AiEmbeddingNode) -> float:
+        """计算嵌入向量节点的模长。"""
+    def ToJSON(self) -> Any:
+        """把节点转换为JSON对象。"""
+    @classmethod
+    def FromJSON(cls, AJSONObject: Any) -> AiEmbeddingNode:
+        """从JSON对象创建并返回嵌入向量节点。"""
+    @overload
+    def ToJsonArray(self) -> Any:
+        """把嵌入向量数据转换为JSON数组。"""
+    @overload
+    @classmethod
+    def ToJsonArray(cls, Val: AiEmbeddingNode) -> Any:
+        """把嵌入向量数据转换为JSON数组。"""
+    def SetDataLength(self, aDim: int) -> None:
+        """设置向量数据的长度（维度）。"""
+    Data: Any
+    """获取或设置数据。"""
+    Text: str
+    """获取或设置文本。"""
+    Idx: float
+    """获取或设置节点的序号。"""
+    Model: str
+    """获取或设置模型。"""
+    MetaData: Any
+    """获取或设置节点的元数据。"""
+    Tag: str
+    """获取或设置标签。"""
+    TagObject: Object
+    """获取或设置标签对象。"""
+    Orden: int
+    """获取或设置节点的排序序号。"""
+    Dim: int
+    """获取向量的维度。"""
+    MagnitudeValue: float
+    """获取向量的模长。"""
+
+class AiMediaFile:
+    """AI媒体文件对象，封装图片、音频、视频、文档等媒体内容，支持从文件、网址、Base64和流加载。"""
+    def Create(self) -> None:
+        """创建媒体文件对象。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def LoadFromfile(self, aFileName: str) -> None:
+        """从本地文件加载媒体内容。"""
+    def LoadFromUrl(self, aUrl: str) -> None:
+        """从网址加载媒体内容。"""
+    def LoadFromBase64(self, aFileName: str, aBase64: str) -> None:
+        """从Base64字符串加载媒体内容，aFileName参数指定文件名。"""
+    def LoadFromStream(self, aFileName: str, Stream: MemoryStream) -> None:
+        """从内存流加载媒体内容，aFileName参数指定文件名。"""
+    def SaveToFile(self, aFileName: str) -> None:
+        """把媒体内容保存到指定文件。"""
+    def ToString(self) -> str:
+        """把媒体文件转换为字符串表示。"""
+    def Clear(self) -> None:
+        """清除媒体文件中的全部内容。"""
+    def ToJsonObject(self) -> Any:
+        """把媒体文件转换为JSON对象。"""
+    def LoadFromJsonObject(self, AObject: Any) -> None:
+        """从JSON对象加载媒体文件信息。"""
+    def Assign(self, Source: AiMediaFile) -> None:
+        """复制另一个媒体文件对象的内容。"""
+    filename: str
+    """获取或设置文件名。"""
+    bytes: int
+    """获取媒体内容的字节数。"""
+    Content: MemoryStream
+    """获取或设置媒体内容的内存流。"""
+    FileCategory: Any
+    """获取或设置文件类别（图片、音频、视频、文档等）。"""
+    UrlMedia: str
+    """获取或设置媒体的网址。"""
+    CloudState: str
+    """获取或设置云端状态。"""
+    CloudName: str
+    """获取或设置云端名称。"""
+    CacheName: str
+    """获取或设置缓存名称。"""
+    IdFile: str
+    """获取或设置ID文件。"""
+    IdAudio: str
+    """获取或设置ID音频。"""
+    Base64: str
+    """获取或设置基础64。"""
+    FullFileName: str
+    """获取或设置完整文件名称。"""
+    MimeType: str
+    """获取MIME类型。"""
+    Detail: str
+    """获取或设置详细。"""
+    Transcription: str
+    """获取或设置语音转写。"""
+    Procesado: bool
+    """获取或设置该媒体文件是否已被处理。"""
+    MediaFiles: Any
+    """获取关联的媒体文件集合。"""
+    CacheControl: bool
+    """指定是否缓存控件。"""
+    Title: str
+    """获取或设置标题。"""
+    Context: str
+    """获取或设置上下文。"""
+    EnableCitations: bool
+    """指定是否启用引用标注功能。"""
+
+class AiRealtimeBase(Component):
+    """实时语音组件基类，提供连接、音频块发送、语音活动检测和转写事件等公共功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建实时语音组件，AOwner参数指定组件的所有者。"""
+    def Connect(self) -> None:
+        """连接到实时语音服务。"""
+    def Disconnect(self) -> None:
+        """断开与实时语音服务的连接。"""
+    def SendAudioChunk(self, const_PCM16Data: Any) -> None:
+        """发送一段PCM16格式的音频数据。"""
+    def CommitAudio(self) -> None:
+        """提交已发送的音频缓冲区，触发识别处理。"""
+    def ClearAudio(self) -> None:
+        """清空已发送但尚未提交的音频缓冲区。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取实时驱动的名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取实时驱动的默认模型名称。"""
+    IsConnected: bool
+    """指示是否Connected。"""
+    TargetSampleRate: int
+    """获取或设置服务端要求的目标采样率。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Model: str
+    """获取或设置模型。"""
+    Language: str
+    """获取或设置语言。"""
+    InputSampleRate: int
+    """获取或设置输入音频的采样率。"""
+    VADMode: Any
+    """获取或设置语音活动检测（VAD）的模式。"""
+    VADThreshold: float
+    """获取或设置语音活动检测的灵敏度阈值。"""
+    SilenceDurationMs: int
+    """获取或设置判定说话结束所需的静音时长（毫秒）。"""
+    PrefixPaddingMs: int
+    """获取或设置语音开始前保留的音频时长（毫秒）。"""
+    NoiseReduction: Any
+    """获取或设置降噪模式。"""
+    OnConnected: Callable[[Object],None]
+    """OnConnected事件，在相关操作发生时触发。"""
+    OnDisconnected: Callable[[Object],None]
+    """OnDisconnected事件，在相关操作发生时触发。"""
+    OnSessionReady: Callable[[Object],None]
+    """OnSessionReady事件，在相关操作发生时触发。"""
+    OnSpeechStarted: Any
+    """OnSpeechStarted事件，在相关操作发生时触发。"""
+    OnSpeechStopped: Any
+    """OnSpeechStopped事件，在相关操作发生时触发。"""
+    OnTranscriptDelta: Any
+    """OnTranscriptDelta事件，在相关操作发生时触发。"""
+    OnTranscriptCompleted: Any
+    """OnTranscriptCompleted事件，在相关操作发生时触发。"""
+    OnError: Any
+    """OnError事件，在相关操作发生时触发。"""
+
+class AiRealtimeVoiceBase(AiRealtimeBase):
+    """实时语音对话组件基类，在实时基类基础上增加助手文本和音频输出事件。"""
+    OnAssistantText: Any
+    """OnAssistantText事件，在相关操作发生时触发。"""
+    OnAssistantTextDelta: Any
+    """OnAssistantTextDelta事件，在相关操作发生时触发。"""
+    OnAudioChunk: Any
+    """OnAudioChunk事件，在相关操作发生时触发。"""
+    OnAudioDone: Callable[[Object],None]
+    """OnAudioDone事件，在相关操作发生时触发。"""
+
+class AiVectorStoreDriverBase(Component):
+    """向量存储驱动基类，定义向量库驱动的添加、搜索、删除和清空等接口。"""
+    def Add(self, const_aNode: AiEmbeddingNode, const_AEntidad: str) -> None:
+        """向指定实体添加一个嵌入向量节点。"""
+    def Search(self, const_ATarget: AiEmbeddingNode, const_AEntidad: str, aLimit: int, aPrecision: float, aFilter: Any, Options: Any) -> AiRAGVector:
+        """在指定实体中搜索与目标向量相似的节点，可设置数量上限、精度、过滤条件和搜索选项。"""
+    def Delete(self, const_aID: str, const_AEntidad: str) -> None:
+        """按ID从指定实体中删除节点。"""
+    def Clear(self, const_AEntidad: str) -> None:
+        """清空指定实体中的全部数据。"""
+    def EmbeddingToString(self, const_AData: Any) -> str:
+        """把嵌入向量数据转换为字符串。"""
+    def VariantToJSONValue(self, const_V: Any) -> Any:
+        """把变体值转换为JSON值。"""
+
+class AiPersistentMemoryBase(Component):
+    """持久记忆组件基类，为AI长期记忆的存取提供公共基础。"""
+
+class RMCustomReport(RMComponent):
+    """ReportMachine报表基类，提供终止状态和空值转换等基础属性。"""
+    Terminated: bool
+    """指定是否已终止。"""
+    ConvertNulls: bool
+    """指定是否转换空值。"""
+
+class RMDataset(RMComponent):
+    """ReportMachine数据集基类，提供打开、关闭、遍历记录以及读取字段值的统一接口。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建数据集组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Open(self) -> None:
+        """打开数据集。"""
+    def Close(self) -> None:
+        """关闭数据集。"""
+    def Init(self) -> None:
+        """初始化数据集，准备开始遍历记录。"""
+    def Exit(self) -> None:
+        """结束数据集的遍历。"""
+    def First(self) -> None:
+        """移动到第一条记录。"""
+    def Last(self) -> None:
+        """移动到最后一条记录。"""
+    def Next(self) -> None:
+        """移动到下一条记录。"""
+    def Prior(self) -> None:
+        """移动到上一条记录。"""
+    def Eof(self) -> bool:
+        """判断是否已到达数据集末尾。"""
+    def Active(self) -> bool:
+        """判断数据集是否处于打开状态。"""
+    def FindField(self, AFieldName: str) -> str:
+        """按字段名查找字段，返回找到的字段名。"""
+    def GetRealFieldName(self, aFieldName: str) -> str:
+        """获取字段的真实名称（去除别名）。"""
+    def GetFieldValue(self, aFieldName: str) -> Any:
+        """获取指定字段的当前值。"""
+    def GetFieldDisplayText(self, aFieldName: str) -> str:
+        """获取指定字段的显示文本。"""
+    def GetFieldDisplayLabel(self, aFieldName: str) -> str:
+        """获取指定字段的显示标签。"""
+    def FieldIsNull(self, aFieldName: str) -> bool:
+        """判断指定字段的值是否为空。"""
+    def FieldWidth(self, aFieldName: str) -> int:
+        """获取指定字段的显示宽度。"""
+    def GetFieldsList(self, aFieldList: Any) -> None:
+        """把全部字段名填入指定的字符串列表。"""
+    def IsBlobField(self, aFieldName: str) -> bool:
+        """判断指定字段是否为二进制大对象字段。"""
+    def AssignBlobFieldTo(self, aFieldName: str, aDest: Object) -> None:
+        """把指定二进制字段的内容赋给目标对象。"""
+    def GetPropValue(self, aObject: Object, aPropName: str, var_aValue: Any, Args: Any) -> bool:
+        """读取对象的指定属性值，成功返回True。"""
+    def SetPropValue(self, aObject: Object, aPropName: str, aValue: Any) -> bool:
+        """设置对象的指定属性值，成功返回True。"""
+    ConvertNulls: bool
+    """指定是否转换空值。"""
+    RecordNo: int
+    """获取当前记录的序号。"""
+    OnCheckEOF: Any
+    """OnCheckEOF事件，在相关操作发生时触发。"""
+    OnInit: Callable[[Object],None]
+    """OnInit事件，在相关操作发生时触发。"""
+    OnFirst: Callable[[Object],None]
+    """OnFirst事件，在相关操作发生时触发。"""
+    OnNext: Callable[[Object],None]
+    """OnNext事件，在相关操作发生时触发。"""
+    OnPrior: Callable[[Object],None]
+    """OnPrior事件，在相关操作发生时触发。"""
+    OnGetIsBlobField: Any
+    """OnGetIsBlobField事件，在相关操作发生时触发。"""
+    OnGetFieldIsNull: Any
+    """OnGetFieldIsNull事件，在相关操作发生时触发。"""
+    FieldValue: Any
+    """获取指定字段的值。"""
+    FieldDisplayText: str
+    """获取字段显示文本。"""
+    FieldDisplayLabel: str
+    """获取字段显示标签。"""
+    DictionaryKey: str
+    """获取或设置数据字典键。"""
+    RangeBegin: Any
+    """获取或设置遍历范围的起点类型。"""
+    RangeEnd: Any
+    """获取或设置遍历范围的终点类型。"""
+    RangeEndCount: int
+    """获取或设置遍历范围终点的记录数。"""
+    Visible: bool
+    """Visible属性用于设置控件是否可见。该属性定义了控件是否在界面上显示。"""
+    AliasName: str
+    """获取或设置数据集的别名。"""
+    FieldAlias: Any
+    """获取或设置字段别名列表。"""
+
+class RMExportFilter(RMCustomExportFilter):
+    """ReportMachine导出过滤器基类，各种格式的报表导出组件由它派生。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建导出过滤器组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowModal(self) -> int:
+        """以模态方式显示导出选项对话框，返回模态结果。"""
+    def SetProgress(self, aMaxValue: int, const_aStr: str) -> None:
+        """设置导出进度的最大值和提示文字。"""
+    def AddProgress(self) -> None:
+        """导出进度前进一步。"""
+    IsXLSExport: bool
+    """指示是否XLS导出。"""
+    ParentReport: RMReport
+    """获取父报表。"""
+    Pagecount: int
+    """获取或设置Pagecount。"""
+    ExportPageList: Any
+    """获取导出页列表。"""
+    ShowDialog: bool
+    """指定是否显示对话框。"""
+    OnBeforeExport: Any
+    """OnBeforeExport事件，在相关操作发生时触发。"""
+    OnAfterExport: Any
+    """OnAfterExport事件，在相关操作发生时触发。"""
+
+class RMGraphicExport(RMExportFilter):
+    """ReportMachine图形导出基类，用于把报表页导出为图片类文件并提供缩放比例。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建图形导出组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    ScaleX: float
+    """获取或设置缩放X。"""
+    ScaleY: float
+    """获取或设置缩放Y。"""
+
+class RMMainExportFilter(RMExportFilter):
+    """ReportMachine主导出过滤器基类，提供图片、边框和JPEG质量等导出选项。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建主导出过滤器组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    ScaleX: float
+    """获取或设置缩放X。"""
+    ScaleY: float
+    """获取或设置缩放Y。"""
+    ExportImages: bool
+    """指定是否导出图片。"""
+    ExportFrames: bool
+    """指定是否导出边框。"""
+    ExportImageFormat: Any
+    """获取或设置导出图像格式。"""
+    JPEGQuality: Any
+    """获取或设置JPEG质量。"""
+
+class RMVirtualPreview(RMCustomPreview):
+    """ReportMachine虚拟预览组件基类，提供报表预览、翻页、缩放、查找、打印和导出功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建预览组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def CanModify(self) -> bool:
+        """判断当前预览的报表页是否允许修改。"""
+    def ShowReport(self, aReport: RMCustomReport) -> None:
+        """在预览中显示指定报表。"""
+    def Connect(self, aReport: RMCustomReport) -> None:
+        """把预览组件连接到指定报表。"""
+    def RedrawAll(self, aResetPage: bool) -> None:
+        """重绘全部页面，aResetPage指定是否重置当前页。"""
+    def OnePage(self) -> None:
+        """切换为单页显示。"""
+    def TwoPages(self) -> None:
+        """切换为双页显示。"""
+    def PageWidth(self) -> None:
+        """按页宽缩放显示。"""
+    def PrinterZoom(self) -> None:
+        """按打印机实际尺寸缩放显示。"""
+    def First(self) -> None:
+        """跳转到第一页。"""
+    def Next(self) -> None:
+        """跳转到下一页。"""
+    def Prev(self) -> None:
+        """跳转到上一页。"""
+    def Last(self) -> None:
+        """跳转到最后一页。"""
+    def LoadFromFile(self, aFileName: str) -> None:
+        """从文件加载已保存的报表预览。"""
+    def LoadFromFiles(self, aFileNames: Strings) -> None:
+        """从多个文件加载并合并报表预览。"""
+    def SaveToFile(self, aFileName: str, aIndex: int) -> None:
+        """把预览报表保存到文件，aIndex指定报表序号。"""
+    def ExportToFile(self, aExport: Component, aFileName: str) -> None:
+        """使用指定的导出组件把报表导出到文件。"""
+    def ExportToXlsFile(self) -> None:
+        """把报表导出为XLS文件。"""
+    def Print(self) -> None:
+        """打印预览中的报表。"""
+    def PrintCurrentPage(self) -> None:
+        """仅打印当前页。"""
+    def DlgPageSetup(self) -> None:
+        """显示页面设置对话框。"""
+    def InsertPageBefore(self) -> None:
+        """在当前页之前插入一页。"""
+    def InsertPageAfter(self) -> None:
+        """在当前页之后插入一页。"""
+    def AddPage(self) -> None:
+        """在末尾添加一页。"""
+    def DeletePage(self, PageNo: int) -> None:
+        """删除指定页。"""
+    def EditPage(self, PageNo: int) -> bool:
+        """编辑指定页，成功返回True。"""
+    def DesignReport(self) -> None:
+        """打开报表设计器设计报表。"""
+    def Find(self) -> None:
+        """显示查找对话框。"""
+    def FindNext(self) -> None:
+        """查找下一处匹配内容。"""
+    def ShowOutline(self, aVisible: bool) -> None:
+        """显示或隐藏大纲面板。"""
+    def RefreshReport(self, aReport: RMCustomReport) -> None:
+        """重新生成并刷新指定报表。"""
+    def DisableUpdate(self) -> None:
+        """暂停预览界面的更新。"""
+    def EnableUpdate(self) -> None:
+        """恢复预览界面的更新。"""
+    HaveDrillDown: bool
+    """指示是否具有钻取按下。"""
+    ParentForm: Form
+    """获取或设置父Form。"""
+    KWheel: int
+    """获取或设置鼠标滚轮滚动一格对应的行数。"""
+    Report: RMCustomReport
+    """获取报表。"""
+    TotalPages: int
+    """获取总页数。"""
+    Zoom: float
+    """获取或设置缩放比例。"""
+    ZoomMode: Any
+    """获取或设置缩放模式。"""
+    LastScale: float
+    """获取或设置最后缩放。"""
+    ScrollBox: Any
+    """获取滚动Box。"""
+    HScrollBar: Any
+    """获取H滚动栏。"""
+    VScrollBar: Any
+    """获取V滚动栏。"""
+    CurPage: int
+    """获取或设置当前页码。"""
+    OutlineTreeView: TreeView
+    """获取大纲树视图。"""
+    FindStr: str
+    """获取或设置查找字符串。"""
+    CaseSensitive: bool
+    """指定查找时是否区分大小写。"""
+    Wholewords: bool
+    """指定查找时是否只匹配完整单词。"""
+    LastFoundPage: int
+    """获取或设置最后找到页。"""
+    LastFoundObject: int
+    """获取或设置最后找到对象。"""
+    StrFound: bool
+    """指定是否字符串找到。"""
+    StrBounds: Rect
+    """获取或设置字符串边界。"""
+    PrepareReportFlag: bool
+    """指示是否准备报表标志。"""
+    InitialDir: str
+    """获取或设置初始目录。"""
+    OnPageChanged: Callable[[Object],None]
+    """OnPageChanged事件，在相关操作发生时触发。"""
+    OnStatusChange: Callable[[Object],None]
+    """OnStatusChange事件，在相关操作发生时触发。"""
+    OnBeforeShowReport: Any
+    """OnBeforeShowReport事件，在相关操作发生时触发。"""
+
+class RMCustomDesigner(Component):
+    """ReportMachine报表设计器基类。"""
+
+class RMCustomFormReport(Component):
+    """ReportMachine窗体报表基类，提供页面布局、页眉页脚和字体等窗体报表通用设置。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建窗体报表组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Notification(self, AComponent: Component, Operation: Any) -> None:
+        """在关联组件被添加或移除时接收通知。"""
+    def AssignFont(self, aView: Any, aFont: Any) -> None:
+        """把指定字体赋给备注视图。"""
+    def PrintReport(self) -> None:
+        """打印报表。"""
+    def ShowReport(self) -> None:
+        """预览报表。"""
+    def DesignReport(self) -> None:
+        """打开报表设计器设计报表。"""
+    def BuildReport(self) -> None:
+        """根据当前设置生成报表。"""
+    def PageSetup(self) -> bool:
+        """显示页面设置对话框，确认返回True。"""
+    def ChangePageLayout(self, aPageSetting: Any) -> None:
+        """按指定的页面设置更改页面布局。"""
+    Report: RMReport
+    """获取报表。"""
+    DataSet: DataSet
+    """获取或设置数据设置。"""
+    ReportOptions: Any
+    """获取或设置报表选项。"""
+    PageLayout: Any
+    """获取或设置页布局。"""
+    PageHeader: Any
+    """获取或设置页页眉。"""
+    PageFooter: Any
+    """获取或设置页页脚。"""
+    ColumnFooter: Any
+    """获取或设置列页脚。"""
+    ScaleMode: Any
+    """获取或设置缩放模式。"""
+    MasterDataBandOptions: Any
+    """获取或设置主数据带区选项。"""
+    GridNumOptions: Any
+    """获取或设置网格序号选项。"""
+    GridFontOptions: Any
+    """获取或设置网格字体选项。"""
+    ReportSettings: Any
+    """获取或设置报表设置。"""
+    AutoBooleanString: str
+    """获取或设置自动布尔字符串。"""
+    MainDataSet: RMDBDataSet
+    """获取或设置主数据设置。"""
+
+class RMCustomGridReport(Component):
+    """ReportMachine网格报表基类，提供页面布局、页眉页脚和网格选项等通用设置。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建网格报表组件，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def PrintReport(self) -> None:
+        """打印报表。"""
+    def ShowReport(self) -> None:
+        """预览报表。"""
+    def DesignReport(self) -> None:
+        """打开报表设计器设计报表。"""
+    def BuildReport(self) -> None:
+        """根据当前设置生成报表。"""
+    def PageSetup(self) -> bool:
+        """显示页面设置对话框，确认返回True。"""
+    def PageHeaderFooterSetup(self) -> bool:
+        """显示页眉页脚设置对话框，确认返回True。"""
+    def ChangePageLayout(self, aPageSetting: Any) -> None:
+        """按指定的页面设置更改页面布局。"""
+    Report: RMGridReport
+    """获取报表。"""
+    ReportOptions: Any
+    """获取或设置报表选项。"""
+    PageLayout: Any
+    """获取或设置页布局。"""
+    PageHeaderMsg: Any
+    """获取或设置页页眉消息。"""
+    PageFooterMsg: Any
+    """获取或设置页页脚消息。"""
+    PageCaptionMsg: Any
+    """获取或设置页标题消息。"""
+    MasterDataBandOptions: Any
+    """获取或设置主数据带区选项。"""
+    GridNumOptions: Any
+    """获取或设置网格序号选项。"""
+    GridFontOptions: Any
+    """获取或设置网格字体选项。"""
+    ReportSettings: Any
+    """获取或设置报表设置。"""
+    AutoBooleanString: str
+    """获取或设置自动布尔字符串。"""
+    GridFixedCols: int
+    """获取或设置网格固定列。"""
+    OnAfterCreateGridObjectEvent: Any
+    """OnAfterCreateGridObjectEvent事件，在相关操作发生时触发。"""
+
 class PJDropFiles(CustomControl):
     """文件拖放组件，允许用户通过拖放操作将文件从文件系统拖入应用程序中。"""
-    def Create(self, AOwner) -> None:
+    def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Paint(self, *args, **kwargs) -> Any:
+    def Paint(self) -> None:
         """绘制组件的内容，在需要自定义绘制时重写此方法。"""
     Count: int
     """获取集合中项目的数量。"""
@@ -38039,17 +40195,17 @@ class PJDropFiles(CustomControl):
     """获取或设置文件名。"""
     IsFolder: bool
     """指示当前项是否为文件夹目录。"""
-    DropPoint: Any
+    DropPoint: Point
     """获取拖放操作发生时鼠标在屏幕上的位置坐标。"""
-    DropControl: Any
+    DropControl: Control
     """获取拖放操作发生时鼠标下方的目标控件。"""
     Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    Constraints: Any
+    Constraints: SizeConstraints
     """指定组件的最小和最大尺寸限制。"""
     ParentShowHint: bool
     """指定组件是否继承父容器的提示信息显示设置。"""
@@ -38065,7 +40221,7 @@ class PJDropFiles(CustomControl):
     """指定组件的宽度（以像素为单位）。"""
     Height: int
     """指定组件的高度（以像素为单位）。"""
-    Filter: Any
+    Filter: PJFileFilter
     """指定文件过滤规则，支持通配符格式。"""
     ForegroundOnDrop: bool
     """指定拖放文件后是否自动将窗口置为前台。"""
@@ -38073,9 +40229,9 @@ class PJDropFiles(CustomControl):
     """指定组件的详细选项配置集合。"""
     PassThrough: bool
     """指定拖放事件是否透传给父控件处理。"""
-    OnBeforeDrop: Any
+    OnBeforeDrop: Callable[[Object],None]
     """OnBeforeDrop事件，在相关操作发生时触发。"""
-    OnDropFiles: Any
+    OnDropFiles: Callable[[Object],None]
     """OnDropFiles事件，在相关操作发生时触发。"""
     OnFileFilter: Any
     """OnFileFilter事件，在相关操作发生时触发。"""
@@ -38084,7 +40240,7 @@ class PJSubClassedDropFiles(Component):
     """文件拖放组件的子类化版本，通过子类化窗口控件来接收文件拖放消息。"""
     def Create(self, AOwner) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
     Count: int
     """获取集合中项目的数量。"""
@@ -38100,7 +40256,7 @@ class PJSubClassedDropFiles(Component):
     """指示当前项是否为文件夹目录。"""
     Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    Filter: Any
+    Filter: str
     """指定文件过滤规则，支持通配符格式。"""
     ForegroundOnDrop: bool
     """指定拖放文件后是否自动将窗口置为前台。"""
@@ -38115,42 +40271,42 @@ class PJSubClassedDropFiles(Component):
 
 class PJFormDropFiles(PJSubClassedDropFiles):
     """专为窗体设计的文件拖放组件，自动绑定到所在窗体的文件拖放事件。"""
-    def Create(self, AOwner) -> None:
+    def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
 
 class PJCtrlDropFiles(PJSubClassedDropFiles):
     """专为特定控件设计的文件拖放组件，可绑定到任意窗口控件实现文件拖放功能。"""
-    def Create(self, AOwner) -> None:
+    def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    ManagedControl: Any
+    ManagedControl: WinControl
     """获取或设置被当前组件管理的目标控件。"""
     PassThrough: bool
     """指定拖放事件是否透传给父控件处理。"""
 
-class PJExtFileFilter(Component):
+class PJExtFileFilter(PJFileFilter):
     """文件扩展名过滤器组件，用于根据文件扩展名对拖放的文件进行过滤。"""
-    def Create(self, AOwner) -> None:
+    def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Accept(self, *args, **kwargs) -> bool:
+    def Accept(self, const_FilePath: str, const_IsFolder: bool) -> bool:
         """检查文件是否满足过滤条件。"""
     Extensions: str
     """指定允许的文件扩展名列表。"""
     Style: Any
     """指定组件的显示样式。"""
 
-class PJWildCardFileFilter(Component):
+class PJWildCardFileFilter(PJFileFilter):
     """通配符文件过滤器组件，用于根据通配符模式对拖放的文件进行过滤。"""
-    def Create(self, AOwner) -> None:
+    def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Accept(self, *args, **kwargs) -> bool:
+    def Accept(self, const_FilePath: str, const_IsFolder: bool) -> bool:
         """检查文件是否满足过滤条件。"""
     WildCard: str
     """获取或设置通配符过滤模式。"""
@@ -38159,33 +40315,33 @@ class OleControl(WinControl):
     """OLE容器控件，用于在应用程序中嵌入和管理OLE对象。"""
     def Create(self, AOwner) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def BrowseProperties(self, *args, **kwargs) -> Any:
+    def BrowseProperties(self) -> None:
         """浏览OLE对象的属性列表。"""
-    def DefaultHandler(self, *args, **kwargs) -> Any:
+    def DefaultHandler(self, Message: Any) -> None:
         """处理未由其他消息处理函数处理的消息。"""
-    def DoObjectVerb(self, *args, **kwargs) -> Any:
+    def DoObjectVerb(self, Verb: int) -> None:
         """执行OLE对象的指定动词操作。"""
-    def GetEnumPropDesc(self, *args, **kwargs) -> Any:
+    def GetEnumPropDesc(self, DispID: int) -> Any:
         """获取枚举类型属性的描述信息。"""
-    def GetHelpContext(self, *args, **kwargs) -> int:
+    def GetHelpContext(self) -> int:
         """获取与组件关联的帮助上下文ID。"""
-    def GetObjectVerbs(self, *args, **kwargs) -> Any:
+    def GetObjectVerbs(self) -> Any:
         """获取OLE对象支持的所有动词列表。"""
-    def GetPropDisplayString(self, *args, **kwargs) -> str:
+    def GetPropDisplayString(self, DispID: int) -> str:
         """获取属性的当前显示字符串。"""
-    def GetPropDisplayStrings(self, *args, **kwargs) -> Any:
+    def GetPropDisplayStrings(self, DispID: int, Strings: Any) -> None:
         """获取属性的所有可选显示字符串。"""
-    def IsCustomProperty(self, *args, **kwargs) -> bool:
+    def IsCustomProperty(self, DispID: int) -> bool:
         """检查属性是否为自定义扩展属性属性。"""
-    def IsPropPageProperty(self, *args, **kwargs) -> bool:
+    def IsPropPageProperty(self, DispID: int) -> bool:
         """检查属性是否为属性页中的属性。"""
-    def SetBounds(self, *args, **kwargs) -> Any:
+    def SetBounds(self, ALeft: int, ATop: int, AWidth: int, AHeight: int) -> None:
         """一次性设置组件的Left、Top、Width和Height属性。"""
-    def SetPropDisplayString(self, *args, **kwargs) -> Any:
+    def SetPropDisplayString(self, DispID: int, const_Value: str) -> None:
         """设置属性的显示字符串。"""
-    def ShowAboutBox(self, *args, **kwargs) -> Any:
+    def ShowAboutBox(self) -> None:
         """显示组件的关于对话框。"""
     OleObject: Any
     """获取底层的OLE对象引用。"""
@@ -38204,65 +40360,39 @@ class WebBrowser(OleControl):
     """Web浏览器控件，封装了Internet Explorer的WebBrowser控件，提供网页导航和浏览功能。"""
     def Create(self, AOwner) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def SetFocus(self, *args, **kwargs) -> Any:
+    def SetFocus(self) -> None:
         """将输入焦点设置到该组件上。"""
-    def GoBack(self, *args, **kwargs) -> Any:
+    def GoBack(self) -> None:
         """导航到历史记录中的上一个页面。"""
-    def GoForward(self, *args, **kwargs) -> Any:
+    def GoForward(self) -> None:
         """导航到历史记录中的下一个页面。"""
-    def GoHome(self, *args, **kwargs) -> Any:
+    def GoHome(self) -> None:
         """导航到浏览器设置的主页。"""
-    def GoSearch(self, *args, **kwargs) -> Any:
+    def GoSearch(self) -> None:
         """在默认搜索引擎中执行搜索。"""
-    def Navigate(self, *args, **kwargs) -> Any:
+    def Navigate(self, URL: str, Flags: Any = ..., TargetFrameName: Any = ..., PostData: Any = ..., Headers: Any = ...) -> None:
         """导航到指定的URL地址。"""
-    def Navigate(self, *args, **kwargs) -> Any:
-        """导航到指定的URL地址。"""
-    def Navigate(self, *args, **kwargs) -> Any:
-        """导航到指定的URL地址。"""
-    def Navigate(self, *args, **kwargs) -> Any:
-        """导航到指定的URL地址。"""
-    def Navigate(self, *args, **kwargs) -> Any:
-        """导航到指定的URL地址。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """刷新组件的内容或状态。"""
-    def Refresh2(self, *args, **kwargs) -> Any:
+    def Refresh2(self, Level: Any = ...) -> None:
         """刷新当前页面，支持指定刷新级别。"""
-    def Refresh2(self, *args, **kwargs) -> Any:
-        """刷新当前页面，支持指定刷新级别。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
-    def Quit(self, *args, **kwargs) -> Any:
+    def Quit(self) -> None:
         """退出浏览器控件并释放资源。"""
-    def ClientToWindow(self, *args, **kwargs) -> Any:
+    def ClientToWindow(self, X: int, Y: int) -> None:
         """将客户端坐标转换为窗口坐标。"""
-    def PutProperty(self, *args, **kwargs) -> Any:
+    def PutProperty(self, Property_: str, Value: Any) -> None:
         """设置浏览器控件的属性值。"""
-    def GetProperty(self, *args, **kwargs) -> Any:
+    def GetProperty(self, Property_: str) -> Any:
         """获取浏览器控件的属性值。"""
-    def Navigate2(self, *args, **kwargs) -> Any:
+    def Navigate2(self, URL: Any, Flags: Any = ..., TargetFrameName: Any = ..., PostData: Any = ..., Headers: Any = ...) -> None:
         """导航到指定的URL，支持更高级的参数选项。"""
-    def Navigate2(self, *args, **kwargs) -> Any:
-        """导航到指定的URL，支持更高级的参数选项。"""
-    def Navigate2(self, *args, **kwargs) -> Any:
-        """导航到指定的URL，支持更高级的参数选项。"""
-    def Navigate2(self, *args, **kwargs) -> Any:
-        """导航到指定的URL，支持更高级的参数选项。"""
-    def Navigate2(self, *args, **kwargs) -> Any:
-        """导航到指定的URL，支持更高级的参数选项。"""
-    def QueryStatusWB(self, *args, **kwargs) -> Any:
+    def QueryStatusWB(self, Cmd: int) -> int:
         """查询浏览器命令当前的可用状态。"""
-    def ExecWB(self, *args, **kwargs) -> Any:
+    def ExecWB(self, cmdID: int, cmdexecopt: int, pvaIn: Any = ..., pvaOut: Any = ...) -> None:
         """执行指定的浏览器命令。"""
-    def ExecWB(self, *args, **kwargs) -> Any:
-        """执行指定的浏览器命令。"""
-    def ExecWB(self, *args, **kwargs) -> Any:
-        """执行指定的浏览器命令。"""
-    def ShowBrowserBar(self, *args, **kwargs) -> Any:
-        """显示或隐藏浏览器的指定工具栏。"""
-    def ShowBrowserBar(self, *args, **kwargs) -> Any:
-        """显示或隐藏浏览器的指定工具栏。"""
-    def ShowBrowserBar(self, *args, **kwargs) -> Any:
+    def ShowBrowserBar(self, pguidBar: Any, Show: bool = ..., Size: Any = ...) -> None:
         """显示或隐藏浏览器的指定工具栏。"""
     ActiveEngine: Any
     """获取或设置当前活动的浏览器引擎。"""
@@ -38284,11 +40414,11 @@ class WebBrowser(OleControl):
     """获取对象的类型信息。"""
     LocationName: Any
     """获取当前网页的标题文本。"""
-    LocationURL: Any
+    LocationURL: str
     """获取当前网页的完整URL地址。"""
-    Busy: Any
+    Busy: bool
     """指示组件当前是否正在执行操作。"""
-    Name: Any
+    Name: str
     """指定组件的名称，用于在代码中引用。"""
     HWND: Any
     """获取浏览器控件的窗口句柄。"""
@@ -38308,7 +40438,7 @@ class WebBrowser(OleControl):
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     Align: Any
     """指定组件在其父容器中的对齐方式。"""
-    DragCursor: Any
+    DragCursor: int
     """指定拖动组件时鼠标指针的样式。"""
     DragMode: Any
     """指定组件是否可被拖动及拖动方式。"""
@@ -38320,7 +40450,7 @@ class WebBrowser(OleControl):
     """指定当鼠标悬停在组件上时是否显示帮助提示。"""
     TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    StyleElements: Any
+    StyleElements: int
     """指定组件启用或禁用的样式元素。"""
     OnDragDrop: Any
     """OnDragDrop事件，在相关操作发生时触发。"""
@@ -38340,7 +40470,7 @@ class WebBrowser(OleControl):
     """指定组件是否可见。"""
     StatusBar: Any
     """指定是否显示浏览器状态栏。"""
-    StatusText: Any
+    StatusText: str
     """获取浏览器状态栏的文本信息。"""
     ToolBar: int
     """指定浏览器工具栏的可见性。"""
@@ -38451,119 +40581,115 @@ class DataSet(Component):
     """TDataSet是数据库编程的核心抽象基类，它为各种数据访问提供了统一的接口和功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def ActiveBuffer(self, *args, **kwargs) -> Any:
+    def ActiveBuffer(self) -> Any:
         """获取当前活动的数据缓冲区指针。"""
-    def Append(self, *args, **kwargs) -> Any:
+    def Append(self) -> None:
         """在数据集末尾添加一条新的空记录。"""
-    def AppendRecord(self, *args, **kwargs) -> Any:
+    def AppendRecord(self, *Values: Any) -> None:
         """添加一条新记录并设置其字段值。"""
-    def BookmarkValid(self, *args, **kwargs) -> Any:
+    def BookmarkValid(self, Bookmark: Any) -> bool:
         """检查指定的书签是否仍然有效。"""
-    def Cancel(self, *args, **kwargs) -> Any:
+    def Cancel(self) -> None:
         """取消对当前记录的编辑修改。"""
-    def CheckBrowseMode(self, *args, **kwargs) -> Any:
+    def CheckBrowseMode(self) -> None:
         """检查并确保数据集处于浏览模式。"""
-    def ClearFields(self, *args, **kwargs) -> Any:
+    def ClearFields(self) -> None:
         """清除当前记录的所有字段值。"""
-    def Close(self, *args, **kwargs) -> Any:
+    def Close(self) -> None:
         """关闭组件、对话框或连接。"""
-    def  ControlsDisabled(self, *args, **kwargs) -> Any:
+    def ControlsDisabled(self) -> bool:
         """检查是否已禁用数据感知控件的更新。"""
-    def CompareBookmarks(self, *args, **kwargs) -> Any:
+    def CompareBookmarks(self, Bookmark1: Any, Bookmark2: Any) -> int:
         """比较两个书签的位置关系。"""
-    def CreateBlobStream(self, *args, **kwargs) -> Any:
+    def CreateBlobStream(self, Field: Any, Mode: int) -> Any:
         """创建用于读写BLOB字段的流对象。"""
-    def CursorPosChanged(self, *args, **kwargs) -> Any:
+    def CursorPosChanged(self) -> None:
         """响应数据集游标位置已发生变化。"""
-    def Delete(self, *args, **kwargs) -> Any:
+    def Delete(self) -> None:
         """从集合中删除指定的项目。"""
-    def DisableControls(self, *args, **kwargs) -> Any:
+    def DisableControls(self) -> None:
         """禁用所有关联的数据感知控件以提高批量操作性能。"""
-    def Edit(self, *args, **kwargs) -> Any:
+    def Edit(self) -> None:
         """进入编辑模式，允许修改当前记录数据。"""
-    def EnableControls(self, *args, **kwargs) -> Any:
+    def EnableControls(self) -> None:
         """重新启用所有之前被禁用的数据感知控件。"""
-    def FieldByName(self, *args, **kwargs) -> Any:
+    def FieldByName(self, FieldName: str) -> Any:
         """根据字段名称查找字段对象。"""
-    def FindField(self, *args, **kwargs) -> Any:
+    def FindField(self, FieldName: str) -> Any:
         """根据字段名称查找字段，未找到返回nil。"""
-    def FindFirst(self, *args, **kwargs) -> bool:
+    def FindFirst(self) -> bool:
         """查找并定位到满足过滤条件的第一条记录。"""
-    def FindLast(self, *args, **kwargs) -> bool:
+    def FindLast(self) -> bool:
         """查找并定位到满足过滤条件的最后一条记录。"""
-    def FindNext(self, *args, **kwargs) -> bool:
+    def FindNext(self) -> bool:
         """查找并定位到满足过滤条件的下一条记录。"""
-    def FindPrior(self, *args, **kwargs) -> bool:
+    def FindPrior(self) -> bool:
         """查找并定位到满足过滤条件的上一条记录。"""
-    def First(self, *args, **kwargs) -> Any:
+    def First(self) -> None:
         """移动到第一条记录。"""
-    def FreeBookmark(self, *args, **kwargs) -> Any:
+    def FreeBookmark(self, Bookmark: Any) -> None:
         """释放之前获取的书签资源。"""
-    def GetBookmark(self, *args, **kwargs) -> Any:
+    def GetBookmark(self) -> Any:
         """获取当前记录位置的书签指针。"""
-    def GetClonedDataSet(self, *args, **kwargs) -> Any:
+    def GetClonedDataSet(self) -> Any:
         """获取该数据集的克隆版本。"""
-    def GetCurrentRecord(self, *args, **kwargs) -> Any:
+    def GetCurrentRecord(self, Buffer: Any) -> bool:
         """获取当前记录的数据缓冲区内容。"""
-    def GetDetailDataSets(self, *args, **kwargs) -> Any:
+    def GetDetailDataSets(self, List: Any) -> None:
         """获取当前数据集的所有从属数据集。"""
-    def GetDetailLinkFields(self, *args, **kwargs) -> Any:
+    def GetDetailLinkFields(self, MasterFields: Any, DetailFields: Any) -> None:
         """获取主从表之间的关联字段信息。"""
-    def GetBlobFieldData(self, *args, **kwargs) -> Any:
+    def GetBlobFieldData(self, FieldNo: int, Buffer: Any) -> int:
         """获取BLOB字段的原始数据。"""
-    def GetFieldData(self, *args, **kwargs) -> Any:
+    def GetFieldData(self, Field: Any, Buffer: Any) -> bool:
         """获取指定字段的数据值。"""
-    def GetFieldData(self, *args, **kwargs) -> Any:
-        """获取指定字段的数据值。"""
-    def GetFieldData(self, *args, **kwargs) -> Any:
-        """获取指定字段的数据值。"""
-    def GetFieldList(self, *args, **kwargs) -> Any:
+    def GetFieldList(self, List: Any, FieldNames: str) -> None:
         """获取字段对象列表。"""
-    def GetFieldNames(self, *args, **kwargs) -> Any:
+    def GetFieldNames(self, List: Any) -> None:
         """获取所有字段的名称列表。"""
-    def GotoBookmark(self, *args, **kwargs) -> Any:
+    def GotoBookmark(self, Bookmark: Any) -> None:
         """跳转到之前保存的书签位置。"""
-    def Insert(self, *args, **kwargs) -> Any:
+    def Insert(self) -> None:
         """在指定位置插入一个新项目。"""
-    def InsertRecord(self, *args, **kwargs) -> Any:
+    def InsertRecord(self, *Values: Any) -> None:
         """插入一条新记录并设置字段值。"""
-    def IsEmpty(self, *args, **kwargs) -> Any:
+    def IsEmpty(self) -> bool:
         """检查数据集是否为空（没有记录）。"""
-    def IsLinkedTo(self, *args, **kwargs) -> bool:
+    def IsLinkedTo(self, DataSource: Any) -> bool:
         """检查是否已连接到指定对象。"""
-    def IsSequenced(self, *args, **kwargs) -> Any:
+    def IsSequenced(self) -> bool:
         """检查数据集是否支持有序的记录序列访问。"""
-    def Last(self, *args, **kwargs) -> Any:
+    def Last(self) -> None:
         """移动到最后一条记录。"""
-    def Locate(self, *args, **kwargs) -> Any:
+    def Locate(self, KeyFields: str, KeyValues: Any, Options: Any) -> bool:
         """查找并定位到指定条件的记录。"""
-    def Lookup(self, *args, **kwargs) -> Any:
+    def Lookup(self, KeyFields: str, KeyValues: Any, ResultFields: str) -> Any:
         """查找指定条件的记录并返回字段值。"""
-    def MoveBy(self, *args, **kwargs) -> Any:
+    def MoveBy(self, Distance: int) -> int:
         """将当前记录指针移动指定的偏移量。"""
-    def Next(self, *args, **kwargs) -> Any:
+    def Next(self) -> None:
         """移动到下一条记录。"""
-    def Open(self, *args, **kwargs) -> Any:
+    def Open(self) -> None:
         """打开组件、对话框或建立连接。"""
-    def Post(self, *args, **kwargs) -> Any:
+    def Post(self) -> None:
         """将当前编辑的记录提交到数据集。"""
-    def Prior(self, *args, **kwargs) -> Any:
+    def Prior(self) -> None:
         """移动到上一条记录。"""
-    def Refresh(self, *args, **kwargs) -> Any:
+    def Refresh(self) -> None:
         """刷新组件的内容或状态。"""
-    def Resync(self, *args, **kwargs) -> Any:
+    def Resync(self, Mode: Any) -> None:
         """重新同步数据集与底层数据源。"""
-    def SetFields(self, *args, **kwargs) -> Any:
+    def SetFields(self, *Values: Any) -> None:
         """设置当前记录的多个字段值。"""
-    def CopyFields(self, *args, **kwargs) -> int:
+    def CopyFields(self, Source: Any) -> int:
         """复制指定来源的字段值到当前记录。"""
-    def UpdateCursorPos(self, *args, **kwargs) -> Any:
+    def UpdateCursorPos(self) -> None:
         """更新数据集内部游标位置信息。"""
-    def UpdateRecord(self, *args, **kwargs) -> Any:
+    def UpdateRecord(self) -> None:
         """更新当前记录的底层数据。"""
-    def UpdateStatus(self, *args, **kwargs) -> Any:
+    def UpdateStatus(self) -> Any:
         """获取当前记录的更新状态。"""
     AggFields: Any
     """获取数据集的聚合字段列表。"""
@@ -38579,7 +40705,7 @@ class DataSet(Component):
     """获取或设置嵌套数据集对应的字段。"""
     DataSource: Any
     """获取或设置与组件关联的数据源。"""
-    def DefaultFields(self, *args, **kwargs) -> Any:
+    def DefaultFields(self) -> bool:
         """检查数据集是否使用默认字段定义。"""
     Designer: Any
     """获取表单设计器接口引用。"""
@@ -38682,11 +40808,11 @@ class CustomClientDataSet(DataSet):
     """TCustomClientDataSet是ClientDataSet组件的基类，它是一个功能强大的内存数据集组件，提供了不依赖于物理数据库的本地数据存储和处理能力。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
     PersistDataPacket: Any
     """获取或设置客户端数据集是否持久化数据包。"""
-    Active: Any
+    Active: bool
     """指定组件是否处于活动状态。"""
     DataSetField: Any
     """获取或设置嵌套数据集对应的字段。"""
@@ -38704,127 +40830,125 @@ class CustomClientDataSet(DataSet):
     """获取或设置每次获取的记录包大小。"""
     RemoteServer: Any
     """获取或设置远程应用服务器连接。"""
-    def AddIndex(self, *args, **kwargs) -> Any:
+    def AddIndex(self, IndexName: str, Fields: str, Options: Any = ..., DescFields: str = ..., CaseInsFields: str = ..., GroupingLevel: int = ...) -> None:
         """向数据集添加一个新的索引。"""
-    def AppendData(self, *args, **kwargs) -> Any:
+    def AppendData(self, Buffer: Any, DoOnAppendRecord: bool = ...) -> None:
         """向客户端数据集追加数据包。"""
-    def ApplyRange(self, *args, **kwargs) -> Any:
+    def ApplyRange(self) -> None:
         """应用已设置的数据范围限制。"""
-    def ApplyUpdates(self, *args, **kwargs) -> Any:
+    def ApplyUpdates(self, MaxErrors: int) -> int:
         """将客户端数据集的更改提交到数据库服务器。"""
-    def BookmarkValid(self, *args, **kwargs) -> Any:
+    def BookmarkValid(self, Bookmark: Any) -> bool:
         """检查指定的书签是否仍然有效。"""
-    def Cancel(self, *args, **kwargs) -> Any:
+    def Cancel(self) -> None:
         """取消对当前记录的编辑修改。"""
-    def CancelRange(self, *args, **kwargs) -> Any:
+    def CancelRange(self) -> None:
         """取消当前的数据范围限制。"""
-    def CancelUpdates(self, *args, **kwargs) -> Any:
+    def CancelUpdates(self) -> None:
         """取消所有未提交的更改。"""
-    def CreateBlobStream(self, *args, **kwargs) -> Any:
+    def CreateBlobStream(self, Field: Any, Mode: int) -> Any:
         """创建用于读写BLOB字段的流对象。"""
-    def CreateDataSet(self, *args, **kwargs) -> Any:
+    def CreateDataSet(self) -> None:
         """根据字段定义在内存中创建数据集结构。"""
-    def CloneCursor(self, *args, **kwargs) -> Any:
+    def CloneCursor(self, Source: Any, Reset: bool = ..., KeepSettings: bool = ...) -> None:
         """创建数据集游标的克隆。"""
-    def GetClonedDataSet(self, *args, **kwargs) -> Any:
+    def GetClonedDataSet(self) -> Any:
         """获取该数据集的克隆版本。"""
-    def CompareBookmarks(self, *args, **kwargs) -> Any:
+    def CompareBookmarks(self, Bookmark1: Any, Bookmark2: Any) -> int:
         """比较两个书签的位置关系。"""
-    def ConstraintsDisabled(self, *args, **kwargs) -> bool:
+    def ConstraintsDisabled(self) -> bool:
         """检查数据约束是否已被禁用。"""
-    def DataRequest(self, *args, **kwargs) -> Any:
+    def DataRequest(self, Data: Any) -> Any:
         """向应用服务器发送数据请求。"""
-    def DeleteIndex(self, *args, **kwargs) -> Any:
+    def DeleteIndex(self, IndexName: str) -> None:
         """删除指定的索引。"""
-    def DisableConstraints(self, *args, **kwargs) -> Any:
+    def DisableConstraints(self) -> None:
         """临时禁用数据约束检查。"""
-    def EnableConstraints(self, *args, **kwargs) -> Any:
+    def EnableConstraints(self) -> None:
         """重新启用数据约束检查。"""
-    def EditKey(self, *args, **kwargs) -> Any:
+    def EditKey(self) -> None:
         """进入键值编辑模式以进行基于键的查找。"""
-    def EditRangeEnd(self, *args, **kwargs) -> Any:
+    def EditRangeEnd(self) -> None:
         """编辑范围结束值。"""
-    def EditRangeStart(self, *args, **kwargs) -> Any:
+    def EditRangeStart(self) -> None:
         """编辑范围起始值。"""
-    def EmptyDataSet(self, *args, **kwargs) -> Any:
+    def EmptyDataSet(self) -> None:
         """清空数据集中的所有数据。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> None:
         """执行操作或显示对话框。"""
-    def FetchBlobs(self, *args, **kwargs) -> Any:
+    def FetchBlobs(self) -> None:
         """获取所有BLOB字段的数据。"""
-    def FetchDetails(self, *args, **kwargs) -> Any:
+    def FetchDetails(self) -> None:
         """获取当前记录的详细信息。"""
-    def RefreshRecord(self, *args, **kwargs) -> Any:
+    def RefreshRecord(self) -> None:
         """刷新当前记录的数据。"""
-    def FetchParams(self, *args, **kwargs) -> Any:
+    def FetchParams(self) -> None:
         """从服务器获取参数信息。"""
-    def FindKey(self, *args, **kwargs) -> Any:
+    def FindKey(self, KeyValues: Any) -> bool:
         """根据键值查找记录。"""
-    def FindNearest(self, *args, **kwargs) -> Any:
+    def FindNearest(self, KeyValues: Any) -> None:
         """查找最接近指定键值的记录。"""
-    def GetCurrentRecord(self, *args, **kwargs) -> Any:
+    def GetCurrentRecord(self, Buffer: Any) -> bool:
         """获取当前记录的数据缓冲区内容。"""
-    def GetDetailLinkFields(self, *args, **kwargs) -> Any:
+    def GetDetailLinkFields(self, MasterFields: Any, DetailFields: Any) -> None:
         """获取主从表之间的关联字段信息。"""
-    def GetFieldData(self, *args, **kwargs) -> Any:
+    def GetFieldData(self, Field: Any, Buffer: Any) -> bool:
         """获取指定字段的数据值。"""
-    def GetFieldData(self, *args, **kwargs) -> Any:
-        """获取指定字段的数据值。"""
-    def GetGroupState(self, *args, **kwargs) -> Any:
+    def GetGroupState(self, GroupLevel: int) -> Any:
         """获取指定分组的状态信息。"""
-    def GetIndexInfo(self, *args, **kwargs) -> Any:
+    def GetIndexInfo(self) -> Any:
         """获取索引的详细信息。"""
-    def GetIndexNames(self, *args, **kwargs) -> Any:
+    def GetIndexNames(self, List: Any) -> None:
         """获取所有可用索引的名称列表。"""
-    def GetNextPacket(self, *args, **kwargs) -> Any:
+    def GetNextPacket(self) -> int:
         """从服务器获取下一批数据记录包。"""
-    def GetOptionalParam(self, *args, **kwargs) -> Any:
+    def GetOptionalParam(self, ParamName: str) -> Any:
         """获取可选的参数值。"""
-    def GotoCurrent(self, *args, **kwargs) -> Any:
+    def GotoCurrent(self, DataSet: Any) -> None:
         """跳转到另一个数据集中的相同记录位置。"""
-    def GotoKey(self, *args, **kwargs) -> bool:
+    def GotoKey(self) -> bool:
         """跳转到之前通过SetKey和FindKey找到的记录。"""
-    def GotoNearest(self, *args, **kwargs) -> Any:
+    def GotoNearest(self, KeyValues: Any) -> None:
         """跳转到最接近指定键值的记录。"""
     HasAppServer: bool
     """指示数据集是否已连接应用服务器。"""
-    def Locate(self, *args, **kwargs) -> Any:
+    def Locate(self, KeyFields: str, KeyValues: Any, Options: Any) -> bool:
         """查找并定位到指定条件的记录。"""
-    def Lookup(self, *args, **kwargs) -> Any:
+    def Lookup(self, KeyFields: str, KeyValues: Any, ResultFields: str) -> Any:
         """查找指定条件的记录并返回字段值。"""
-    def LoadFromFile(self, *args, **kwargs) -> Any:
+    def LoadFromFile(self, FileName: str = ...) -> None:
         """从指定文件加载数据。"""
-    def LoadFromStream(self, *args, **kwargs) -> Any:
+    def LoadFromStream(self, Stream: Any, Format: Any = ...) -> None:
         """从流中加载数据。"""
-    def MergeChangeLog(self, *args, **kwargs) -> Any:
+    def MergeChangeLog(self) -> None:
         """合并更改日志到主数据集。"""
-    def ParamByName(self, *args, **kwargs) -> Any:
+    def ParamByName(self, Value: str) -> Any:
         """根据参数名称查找参数对象。"""
-    def Post(self, *args, **kwargs) -> Any:
+    def Post(self) -> None:
         """将当前编辑的记录提交到数据集。"""
-    def Reconcile(self, *args, **kwargs) -> bool:
+    def Reconcile(self, Action: Any) -> bool:
         """协调解决数据更新冲突。"""
-    def RevertRecord(self, *args, **kwargs) -> Any:
+    def RevertRecord(self) -> None:
         """撤销对当前记录的更改。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    def SaveToFile(self, FileName: str = ..., Format: Any = ...) -> None:
         """将数据保存到指定文件。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
+    def SaveToStream(self, Stream: Any, Format: Any = ...) -> None:
         """将数据保存到流中。"""
-    def SetKey(self, *args, **kwargs) -> Any:
+    def SetKey(self) -> None:
         """进入基于键值查找的设置模式。"""
-    def SetOptionalParam(self, *args, **kwargs) -> Any:
+    def SetOptionalParam(self, ParamName: str, Value: Any) -> None:
         """设置可选的参数值。"""
-    def SetProvider(self, *args, **kwargs) -> Any:
+    def SetProvider(self, Provider: Any) -> None:
         """设置数据提供者。"""
-    def SetRange(self, *args, **kwargs) -> Any:
+    def SetRange(self, StartValues: Any, EndValues: Any) -> None:
         """设置数据筛选范围。"""
-    def SetRangeEnd(self, *args, **kwargs) -> Any:
+    def SetRangeEnd(self) -> None:
         """设置范围结束值。"""
-    def SetRangeStart(self, *args, **kwargs) -> Any:
+    def SetRangeStart(self) -> None:
         """设置范围起始值。"""
-    def UndoLastChange(self, *args, **kwargs) -> bool:
+    def UndoLastChange(self, FollowChange: bool = ...) -> bool:
         """撤消最近一次的数据更改操作。"""
-    def UpdateStatus(self, *args, **kwargs) -> Any:
+    def UpdateStatus(self) -> Any:
         """获取当前记录的更新状态。"""
     ActiveAggs: Any
     """获取当前活跃的聚合函数列表。"""
@@ -38869,13 +40993,13 @@ class ClientDataSet(CustomClientDataSet):
     """TClientDataSet是一个非常重要的内存数据集组件，它提供了强大的客户端数据处理能力。"""
     PersistDataPacket: Any
     """获取或设置客户端数据集是否持久化数据包。"""
-    Active: Any
+    Active: bool
     """指定组件是否处于活动状态。"""
     Aggregates: Any
     """获取或设置聚合函数定义集合。"""
-    AggregatesActive: Any
+    AggregatesActive: bool
     """指定是否激活聚合计算。"""
-    AutoCalcFields: Any
+    AutoCalcFields: bool
     """指定是否自动触发OnCalcFields事件事件。"""
     CommandText: Any
     """获取或设置要执行的SQL命令文本。"""
@@ -38889,9 +41013,9 @@ class ClientDataSet(CustomClientDataSet):
     """指定是否禁用字符串自动修剪。"""
     FieldOptions: Any
     """获取字段选项配置。"""
-    FileName: Any
+    FileName: str
     """获取或设置文件名。"""
-    Filter: Any
+    Filter: str
     """指定文件过滤规则，支持通配符格式。"""
     Filtered: Any
     """指定是否启用数据集的过滤功能。"""
@@ -38903,29 +41027,29 @@ class ClientDataSet(CustomClientDataSet):
     """指定增量包中是否包含BLOB字段。"""
     IndexDefs: Any
     """获取索引定义集合。"""
-    IndexFieldNames: Any
+    IndexFieldNames: str
     """获取或设置索引字段名称列表。"""
-    IndexName: Any
+    IndexName: str
     """获取或设置当前使用的索引名称。"""
     FetchOnDemand: Any
     """指定是否按需获取数据包。"""
-    MasterFields: Any
+    MasterFields: str
     """获取或设置主从表关联的主表字段名。"""
     MasterSource: Any
     """获取或设置主表数据源。"""
-    ObjectView: Any
+    ObjectView: bool
     """指定数据集是否以对象视图方式显示嵌套数据集。"""
-    PacketRecords: Any
+    PacketRecords: bool
     """获取或设置每次获取的记录包大小。"""
     Params: Any
     """获取或设置参数集合。"""
     ProviderName: Any
     """获取或设置提供程序的名称。"""
-    ReadOnly: Any
+    ReadOnly: bool
     """指定组件是否处于只读模式。"""
     RemoteServer: Any
     """获取或设置远程应用服务器连接。"""
-    StoreDefs: Any
+    StoreDefs: bool
     """指定是否在DFM文件中存储字段和索引定义。"""
     BeforeOpen: Any
     """在数据集打开之前触发的事件。"""
@@ -39002,11 +41126,11 @@ class DataSource(Component):
     """TDataSource是数据库应用程序中的关键组件，它充当数据桥梁的角色，连接数据集组件(TDataSet及其派生类)和数据感知控件(如TDBGrid、TDBEdit等)。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Edit(self, *args, **kwargs) -> Any:
+    def Edit(self) -> None:
         """进入编辑模式，允许修改当前记录数据。"""
-    def IsLinkedTo(self, *args, **kwargs) -> bool:
+    def IsLinkedTo(self, ADataSet: Any) -> bool:
         """检查是否已连接到指定对象。"""
     State: Any
     """获取数据集的当前操作状态。"""
@@ -39027,23 +41151,19 @@ class CustomProvider(Component):
     """TCustomProvider是数据访问架构中的一个抽象基类，它为数据提供者(Provider)组件定义了基本行为和接口，主要用于多层数据库应用中的数据交换。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def ApplyUpdates(self, *args, **kwargs) -> Any:
+    def ApplyUpdates(self, Delta: Any, MaxErrors: int, ErrorCount: Any) -> None:
         """将客户端数据集的更改提交到数据库服务器。"""
-    def ApplyUpdates(self, *args, **kwargs) -> Any:
-        """将客户端数据集的更改提交到数据库服务器。"""
-    def GetRecords(self, *args, **kwargs) -> Any:
+    def GetRecords(self, Count: int, RecsOut: Any, Options: Any, CommandText: str, Params: Any) -> Any:
         """获取数据记录。"""
-    def GetRecords(self, *args, **kwargs) -> Any:
-        """获取数据记录。"""
-    def RowRequest(self, *args, **kwargs) -> Any:
+    def RowRequest(self, Row: Any, RequestType: int) -> Any:
         """请求获取指定行的数据。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> bool:
         """执行操作或显示对话框。"""
-    def GetParams(self, *args, **kwargs) -> Any:
+    def GetParams(self) -> Any:
         """获取参数信息。"""
-    def DataRequest(self, *args, **kwargs) -> Any:
+    def DataRequest(self, Data: Any) -> Any:
         """向应用服务器发送数据请求。"""
     Data: Any
     """获取或设置客户端数据集的二进制数据包。"""
@@ -39054,7 +41174,7 @@ class BaseProvider(CustomProvider):
     """TBaseProvider是数据库架构中的一个重要基类，它为数据提供者(Provider)组件提供了核心功能，主要用于多层数据库应用中的数据交换和远程数据访问。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
     Resolver: Any
     """获取或设置更新冲突解析器。"""
@@ -39081,7 +41201,7 @@ class DataSetProvider(BaseProvider):
     """TDataSetProvider是多层数据库架构中的核心组件，主要负责在客户端和服务器之间协调数据交换，是实现分布式应用的关键组件之一。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
     ActiveUpdateException: Any
     """获取当前活跃的更新异常信息。"""
@@ -39146,23 +41266,23 @@ class CustomDBGrid(CustomGrid):
     """TCustomDBGrid是DBGrid组件的基类，它是一个抽象类，为数据感知网格控件提供了基础框架和核心功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def DefaultDrawDataCell(self, *args, **kwargs) -> Any:
+    def DefaultDrawDataCell(self, const_Rect: Any, Field: Any, State: Any) -> None:
         """默认绘制数据单元格的内容。"""
-    def DefaultDrawColumnCell(self, *args, **kwargs) -> Any:
+    def DefaultDrawColumnCell(self, const_Rect: Any, DataCol: int, Column: Any, State: Any) -> None:
         """默认绘制列单元格的内容。"""
-    def DefaultHandler(self, *args, **kwargs) -> Any:
+    def DefaultHandler(self, Message: Any) -> None:
         """处理未由其他消息处理函数处理的消息。"""
-    def ExecuteAction(self, *args, **kwargs) -> Any:
+    def ExecuteAction(self, Action: Any) -> bool:
         """执行指定的操作。"""
-    def ShowPopupEditor(self, *args, **kwargs) -> Any:
+    def ShowPopupEditor(self, Field: Any) -> None:
         """显示弹出式编辑器。"""
-    def UpdateAction(self, *args, **kwargs) -> Any:
+    def UpdateAction(self, Action: Any) -> bool:
         """更新操作的状态。"""
-    def ValidFieldIndex(self, *args, **kwargs) -> bool:
+    def ValidFieldIndex(self, Index: int) -> bool:
         """检查指定的字段索引是否有效。"""
-    EditorMode: Any
+    EditorMode: bool
     """指定网格是否处于单元格编辑模式。"""
     FieldCount: int
     """获取数据集中的字段数量。"""
@@ -39189,19 +41309,19 @@ class DBGrid(CustomDBGrid):
     """获取或设置双向文本显示模式。"""
     BorderStyle: Any
     """指定组件的边框样式。"""
-    Color: Any
+    Color: int
     """指定组件的背景颜色。"""
-    Columns: Any
+    Columns: int
     """获取或设置网格的列集合。"""
     Constraints: Any
     """指定组件的最小和最大尺寸限制。"""
-    Ctl3D: Any
+    Ctl3D: bool
     """指定组件是否显示三维立体边框效果。"""
     DataSource: Any
     """获取或设置与组件关联的数据源。"""
     DefaultDrawing: Any
     """指定是否使用默认绘制方式。"""
-    DragCursor: Any
+    DragCursor: int
     """指定拖动组件时鼠标指针的样式。"""
     DragKind: Any
     """指定拖动操作的类。"""
@@ -39209,7 +41329,7 @@ class DBGrid(CustomDBGrid):
     """指定组件是否可被拖动及拖动方式。"""
     DrawingStyle: Any
     """获取或设置网格的绘制样式。"""
-    Enabled: Any
+    Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
     FixedColor: Any
     """获取或设置固定行列的背景颜色。"""
@@ -39221,39 +41341,39 @@ class DBGrid(CustomDBGrid):
     """指定组件中文本的字体样式。"""
     ImeMode: Any
     """获取或设置输入法编辑器模式。"""
-    ImeName: Any
+    ImeName: str
     """获取或设置输入法编辑器名称。"""
     Options: Any
     """指定组件的详细选项配置集合。"""
-    ParentBiDiMode: Any
+    ParentBiDiMode: bool
     """指定组件是否继承父容器的双向文本模式。"""
-    ParentColor: Any
+    ParentColor: bool
     """指定组件是否继承父容器的背景颜色。"""
-    ParentCtl3D: Any
+    ParentCtl3D: bool
     """指定组件是否继承父容器的三维边框效果。"""
-    ParentFont: Any
+    ParentFont: bool
     """指定组件是否继承父容器的字体设置。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """指定组件是否继承父容器的提示信息显示设置。"""
     PopupMenu: Any
     """指定与组件关联的右键弹出菜单。"""
-    ReadOnly: Any
+    ReadOnly: bool
     """指定组件是否处于只读模式。"""
-    ShowHint: Any
+    ShowHint: bool
     """指定当鼠标悬停在组件上时是否显示帮助提示。"""
-    TabOrder: Any
+    TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
     TitleFont: Any
     """获取或设置标题栏的字体样式。"""
     Touch: Any
     """指定与组件关联的触摸手势管理器。"""
-    Visible: Any
+    Visible: bool
     """指定组件是否可见。"""
-    StyleElements: Any
+    StyleElements: int
     """指定组件启用或禁用的样式元素。"""
-    StyleName: Any
+    StyleName: str
     """指定组件应用的VCL样式名称。"""
     OnCellClick: Any
     """OnCellClick事件，在相关操作发生时触发。"""
@@ -39320,34 +41440,36 @@ class NiceChart(CustomPanel):
     """功能丰富的图表控件，支持多种图表类型，可用于数据可视化展示。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """开始批量更新操作，暂停屏幕重绘以提高性能。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
-    def AddSeries(self, *args, **kwargs) -> Any:
+    def AddSeries(self, AKind: Any) -> Any:
         """向图表中添加一个数据系列。"""
-    def ClientToChart(self, *args, **kwargs) -> Any:
+    @overload
+    def ClientToChart(self, const_X: int, const_Y: int) -> str:
         """将客户端坐标转换为图表坐标系中的值。"""
-    def ClientToChart(self, *args, **kwargs) -> Any:
+    @overload
+    def ClientToChart(self, const_X: int, const_Y: int, var_AX: float, var_AY: float) -> bool:
         """将客户端坐标转换为图表坐标系中的值。"""
-    def RemoveSeries(self, *args, **kwargs) -> Any:
+    def RemoveSeries(self, ASeries: Any) -> None:
         """从图表中移除指定的数据系列。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
+    def CreateMetafile(self) -> Metafile:
+        """创建图表的Windows图元文件图像。"""
+    def CopyToClipboard(self) -> None:
+        """将数据复制到剪贴板。"""
+    def CreateBitmap(self, AWidth: int, AHeight: int) -> Bitmap:
+        """创建图表的位图图像。"""
+    def CopyToClipboardAsBitmap(self) -> None:
+        """将图表以位图格式复制到剪贴板。"""
     Series: Any
     """获取图表中的数据系列集合。"""
     SeriesCount: int
     """获取图表中的数据系列数量。"""
-    def CreateMetafile(self, *args, **kwargs) -> Any:
-        """创建图表的Windows图元文件图像。"""
-    def CopyToClipboard(self, *args, **kwargs) -> Any:
-        """将数据复制到剪贴板。"""
-    def CreateBitmap(self, *args, **kwargs) -> Any:
-        """创建图表的位图图像。"""
-    def CopyToClipboardAsBitmap(self, *args, **kwargs) -> Any:
-        """将图表以位图格式复制到剪贴板。"""
     AxisLineWidth: int
     """获取或设置轴线宽度。"""
     ShowLegend: bool
@@ -39358,7 +41480,7 @@ class NiceChart(CustomPanel):
     """指定是否显示X轴网格线。"""
     ShowYGrid: bool
     """指定是否显示Y轴网格线。"""
-    ShowXAxisLine: Any
+    ShowXAxisLine: bool
     """指定是否显示X轴线。"""
     ShowYAxisLine: bool
     """指定是否显示Y轴线。"""
@@ -39372,11 +41494,11 @@ class NiceChart(CustomPanel):
     """获取或设置Y轴标题。"""
     AxisXOnePerValue: bool
     """指定是否每个数据值显示一个X轴刻度。"""
-    AxisXScale: Any
+    AxisXScale: float
     """获取或设置X轴刻度范围。"""
-    AxisYScale: Any
+    AxisYScale: float
     """获取或设置Y轴刻度范围。"""
-    GridColor: Any
+    GridColor: int
     """获取或设置网格线颜色。"""
     Monochrome: bool
     """指定是否使用单色显示。"""
@@ -39384,33 +41506,33 @@ class NiceChart(CustomPanel):
     """指定是否使用柔和颜色。"""
     TickLength: int
     """获取或设置刻度线长度。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    BevelInner: Any
+    BevelInner: BevelCut
     """指定组件内斜角的样式。"""
-    BevelOuter: Any
+    BevelOuter: BevelCut
     """指定组件外斜角的样式。"""
-    BorderStyle: Any
+    BorderStyle: BorderStyle
     """指定组件的边框样式。"""
-    BevelKind: Any
+    BevelKind: BevelKind
     """指定组件斜线边缘的样式类型。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
-    PopupMenu: Any
+    PopupMenu: PopupMenu
     """指定与组件关联的右键弹出菜单。"""
 
 class LedgerGrid(StringGrid):
     """LED风格的数字显示网格控件，常用于模拟LED显示屏效果。"""
-    Canvas: Any
-    """获取组件的绘图画布对象。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    Canvas: Any
+    """获取组件的绘图画布对象。"""
     DigitalNumber: int
     """获取或设置LED数码管显示的数字。"""
     AutoSize: bool
@@ -39422,63 +41544,63 @@ class EduStringGrid(StringGrid):
     """增强型的字符串网格控件，提供了单元格合并、排序和打印等高级功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def InAllMerge(self, *args, **kwargs) -> int:
+    def InAllMerge(self, const_ACol: int, const_ARow: int) -> int:
         """检查指定单元格是否处于合并区域内。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self, const_FixedClear: bool) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    def InsertRow(self, *args, **kwargs) -> Any:
+    def InsertRow(self, ARow: int) -> None:
         """在指定位置插入一行。"""
-    def InsertColumn(self, *args, **kwargs) -> Any:
+    def InsertColumn(self, ACol: int) -> None:
         """在指定位置插入一列。"""
-    def DeleteRow(self, *args, **kwargs) -> Any:
+    def DeleteRow(self, ARow: int) -> None:
         """删除指定行。"""
-    def DeleteColumn(self, *args, **kwargs) -> Any:
+    def DeleteColumn(self, ACol: int) -> None:
         """删除指定列。"""
-    def MoveTo(self, *args, **kwargs) -> Any:
+    def MoveTo(self, ACol: int, ARow: int) -> None:
         """移动记录指针到指定位置。"""
-    def MoveRow(self, *args, **kwargs) -> Any:
+    def MoveRow(self, FromIndex: int, ToIndex: int) -> None:
         """将指定行移动到新位置。"""
-    def MoveColumn(self, *args, **kwargs) -> Any:
+    def MoveColumn(self, FromIndex: int, ToIndex: int) -> None:
         """将指定列移动到新位置。"""
-    def SwapRows(self, *args, **kwargs) -> Any:
+    def SwapRows(self, ARow1: int, ARow2: int) -> None:
         """交换两行的位置。"""
-    def SwapColumns(self, *args, **kwargs) -> Any:
+    def SwapColumns(self, ACol1: int, ACol2: int) -> None:
         """交换两列的位置。"""
-    def InitializeFormatOptions(self, *args, **kwargs) -> Any:
+    def InitializeFormatOptions(self, var_FmtOpts: Any, ACol: int, ARow: int) -> None:
         """初始化格式选项设置。"""
-    def AutoSizeCol(self, *args, **kwargs) -> Any:
+    def AutoSizeCol(self, const_ACol: int, const_Padding: int) -> None:
         """根据内容自动调整列宽。"""
-    def AutoSizeColumns(self, *args, **kwargs) -> Any:
+    def AutoSizeColumns(self, const_DoFixedCols: bool, const_Padding: int) -> None:
         """根据内容自动调整所有列的宽度。"""
-    def SortByColumn(self, *args, **kwargs) -> Any:
+    def SortByColumn(self, const_ACol: int, SortOptions: Any) -> None:
         """根据指定列的内容进行排序。"""
-    def DoSort(self, *args, **kwargs) -> Any:
+    def DoSort(self, id: int, b: bool) -> None:
         """执行排序操作。"""
-    def IsCell(self, *args, **kwargs) -> bool:
+    def IsCell(self, const_Value: str, var_ACol: int, var_ARow: int) -> bool:
         """检查指定位置是否是有效的单元格。"""
-    def LoadFromFile(self, *args, **kwargs) -> Any:
+    def LoadFromFile(self, const_FileName: str, const_Delimiter: str) -> None:
         """从指定文件加载数据。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    def SaveToFile(self, const_FileName: str, const_Delimiter: str) -> None:
         """将数据保存到指定文件。"""
-    def GetCellDrawState(self, *args, **kwargs) -> Any:
+    def GetCellDrawState(self, const_ACol: int, const_ARow: int) -> Any:
         """获取单元格的绘制状态信息。"""
-    def SetViewCol(self, *args, **kwargs) -> Any:
+    def SetViewCol(self) -> None:
         """设置当前视图的列位置。"""
-    def DoGoto(self, *args, **kwargs) -> Any:
+    def DoGoto(self) -> None:
         """跳转到指定的行或单元格。"""
-    def MergeCells(self, *args, **kwargs) -> Any:
+    def MergeCells(self, const_Col1: int, const_Row1: int, const_Col2: int, const_Row2: int, const_bType: bool) -> None:
         """合并指定的单元格区域。"""
-    def MergeClear(self, *args, **kwargs) -> Any:
+    def MergeClear(self) -> None:
         """清除所有单元格合并设置。"""
-    def PrintSetup(self, *args, **kwargs) -> Any:
+    def PrintSetup(self, b: bool) -> None:
         """打开打印设置对话框。"""
-    def Preview(self, *args, **kwargs) -> Any:
+    def Preview(self, b: bool) -> None:
         """预览打印效果。"""
-    def Print(self, *args, **kwargs) -> Any:
+    def Print(self, b: bool) -> None:
         """打印内容。"""
-    BevelStyle : Any
+    BevelStyle: Any
     """获取或设置斜角边框样式。"""
     BlockName: str
     """获取或设置区块名称。"""
@@ -39496,7 +41618,7 @@ class EduStringGrid(StringGrid):
     """指定滚动条是否按比例显示。"""
     ExtendedKeys: bool
     """指定是否启用扩展键盘功能。"""
-    MultiLines : bool
+    MultiLines: bool
     """指定是否支持多行文本。"""
     OnGetCellFormat: Any
     """OnGetCellFormat事件，在相关操作发生时触发。"""
@@ -39510,9 +41632,9 @@ class EduStringGrid(StringGrid):
     """OnColumnInsert事件，在相关操作发生时触发。"""
     OnColumnDelete: Any
     """OnColumnDelete事件，在相关操作发生时触发。"""
-    OnColumnWidthsChanged: Any
+    OnColumnWidthsChanged: Callable[[Object],None]
     """OnColumnWidthsChanged事件，在相关操作发生时触发。"""
-    OnRowHeightsChanged: Any
+    OnRowHeightsChanged: Callable[[Object],None]
     """OnRowHeightsChanged事件，在相关操作发生时触发。"""
     OnSizeChanged: Any
     """OnSizeChanged事件，在相关操作发生时触发。"""
@@ -39520,59 +41642,121 @@ class EduStringGrid(StringGrid):
     """OnBeginSort事件，在相关操作发生时触发。"""
     OnEndSort: Any
     """OnEndSort事件，在相关操作发生时触发。"""
+    iLeftM: float
+    """获取或设置左侧。"""
+    iTopM: float
+    """获取或设置顶部。"""
+    iRightM: float
+    """获取或设置右侧。"""
+    iBottomM: float
+    """获取或设置底部。"""
+    sTtl: str
+    """获取或设置TTL。"""
+    sSbTtl: str
+    """获取或设置状态栏TTL。"""
+    sHd: str
+    """获取或设置页眉。"""
+    sFt: str
+    """获取或设置页脚。"""
+    bTtl: bool
+    """指定是否TTL。"""
+    bSbTtl: bool
+    """指定是否状态栏TTL。"""
+    bHd: bool
+    """指定是否页眉。"""
+    bFt: bool
+    """指定是否页脚。"""
+    bPgN: bool
+    """指定是否PostgreSQL。"""
+    TtlFont: Any
+    """获取或设置TTL字体。"""
+    SbTtlFont: Any
+    """获取或设置状态栏TTL字体。"""
+    HdFont: Any
+    """获取或设置页眉字体。"""
+    TpFont: Any
+    """获取或设置Tp字体。"""
+    BdyFont: Any
+    """获取或设置正文字体。"""
+    alTtl: Any
+    """获取或设置对齐TTL。"""
+    alSbTtl: Any
+    """获取或设置对齐状态栏TTL。"""
+    alHd: Any
+    """获取或设置对齐页眉。"""
+    alFt: Any
+    """获取或设置对齐页脚。"""
+    alPgN: Any
+    """获取或设置对齐PostgreSQL。"""
+    PrintRealPage: bool
+    """指定是否打印实际页。"""
+    PrintOrien: str
+    """获取或设置打印方向。"""
+    AList: Any
+    """获取或设置列表。"""
+    iDataType: Any
+    """获取或设置数据类型。"""
+    iColPrint: Any
+    """获取或设置列打印。"""
+    iColSort: Any
+    """获取或设置列排序。"""
+    TheCol: int
+    """获取或设置列。"""
+    TheRow: int
+    """获取或设置行。"""
 
 class NiceGrid(CustomPanel):
     """高级网格控件，提供了丰富的单元格编辑、格式化和自定义绘制功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """开始批量更新操作，暂停屏幕重绘以提高性能。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    Cells: Any
+    def EnsureVisible(self, X: int, Y: int) -> None:
+        """确保指定行或列可见，必要时滚动视图。"""
+    def CutToClipboard(self) -> None:
+        """将数据剪切到剪贴板。"""
+    def CopyToClipboard(self) -> None:
+        """将数据复制到剪贴板。"""
+    def PasteFromClipboard(self) -> None:
+        """从剪贴板粘贴数据。"""
+    def GetHitTestInfo(self, X: int, Y: int) -> Any:
+        """获取指定位置的点击测试信息。"""
+    def HeaderCellsCount(self) -> int:
+        """获取表头单元格的个数。"""
+    def HeaderCells(self, I: int) -> Any:
+        """获取表头单元格集合。"""
+    def DeleteRow(self, ARow: int) -> None:
+        """删除指定行。"""
+    def InsertRow(self, ARow: int) -> None:
+        """在指定位置插入一行。"""
+    def AddRow(self) -> int:
+        """在表格末尾添加一个新行。"""
+    def MergeCells(self, const_X1: int, const_Y1: int, const_X2: int, const_Y2: int, ACaption: str) -> Any:
+        """合并指定的单元格区域。"""
+    def ClearMergeCells(self) -> None:
+        """清除所有已合并的单元格。"""
+    Cells: str
     """获取或设置指定单元格的文本内容。"""
-    Objects: int
+    Objects: Object
     """获取或设置与单元格关联的对象。"""
     ColWidths: int
     """获取或设置各列的宽度。"""
-    def EnsureVisible(self, *args, **kwargs) -> Any:
-        """确保指定行或列可见，必要时滚动视图。"""
-    def CutToClipboard(self, *args, **kwargs) -> Any:
-        """将数据剪切到剪贴板。"""
-    def CopyToClipboard(self, *args, **kwargs) -> Any:
-        """将数据复制到剪贴板。"""
-    def PasteFromClipboard(self, *args, **kwargs) -> Any:
-        """从剪贴板粘贴数据。"""
-    def GetHitTestInfo(self, *args, **kwargs) -> Any:
-        """获取指定位置的点击测试信息。"""
-    def HeaderCellsCount(self, *args, **kwargs) -> int:
-        """获取表头单元格的个数。"""
-    def HeaderCells(self, *args, **kwargs) -> Any:
-        """获取表头单元格集合。"""
     Col: int
     """获取或设置当前列位置。"""
     Row: int
     """获取或设置当前行位置。"""
-    SelectArea: Any
+    SelectArea: Rect
     """获取当前选中的区域范围。"""
-    def DeleteRow(self, *args, **kwargs) -> Any:
-        """删除指定行。"""
-    def InsertRow(self, *args, **kwargs) -> Any:
-        """在指定位置插入一行。"""
-    def AddRow(self, *args, **kwargs) -> int:
-        """在表格末尾添加一个新行。"""
     HorzOffset: int
     """获取或设置水平滚动偏移量。"""
     VertOffset: int
     """获取或设置垂直滚动偏移量。"""
-    def MergeCells(self, *args, **kwargs) -> Any:
-        """合并指定的单元格区域。"""
-    def ClearMergeCells(self, *args, **kwargs) -> Any:
-        """清除所有已合并的单元格。"""
     Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
     ColCount: int
@@ -39591,27 +41775,27 @@ class NiceGrid(CustomPanel):
     """获取或设置默认列宽。"""
     Flat: bool
     """指定控件是否为扁平外观。"""
-    Color: Any
+    Color: int
     """指定组件的背景颜色。"""
-    AlternateColor: Any
+    AlternateColor: int
     """获取或设置交替行颜色。"""
-    GridColor: Any
+    GridColor: int
     """获取或设置网格线颜色。"""
     ShowGrid: bool
     """指定是否显示网格线。"""
     HeaderLine: int
     """获取或设置表头行数。"""
-    HeaderColor: Any
+    HeaderColor: int
     """获取或设置表头背景色。"""
-    HeaderLightColor: Any
+    HeaderLightColor: int
     """获取或设置表头高亮颜色。"""
-    HeaderDarkColor: Any
+    HeaderDarkColor: int
     """获取或设置表头阴影颜色。"""
     HeaderFont: Any
     """获取或设置表头字体样式。"""
     FooterFont: Any
     """获取或设置页脚字体样式。"""
-    SelectionColor: Any
+    SelectionColor: int
     """获取或设置选中项的颜色。"""
     FitToWidth: bool
     """指定是否自动适应宽度。"""
@@ -39627,7 +41811,7 @@ class NiceGrid(CustomPanel):
     """获取或设置行号区域宽度。"""
     GutterFont: Any
     """获取或设置行号字体。"""
-    GutterStrings: Any
+    GutterStrings: Strings
     """获取或设置行号文本列表。"""
     ShowFooter: bool
     """指定是否显示页脚。"""
@@ -39657,71 +41841,71 @@ class NiceGrid(CustomPanel):
     """OnDeleteRow事件，在相关操作发生时触发。"""
     OnCellAssignment: Any
     """OnCellAssignment事件，在相关操作发生时触发。"""
-    Font: Any
+    Font: Font
     """指定组件中文本的字体样式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    BevelKind: Any
+    BevelKind: BevelKind
     """指定组件斜线边缘的样式类型。"""
-    BorderStyle: Any
+    BorderStyle: BorderStyle
     """指定组件的边框样式。"""
-    BevelOuter: Any
+    BevelOuter: BevelCut
     """指定组件外斜角的样式。"""
-    BevelInner: Any
+    BevelInner: BevelCut
     """指定组件内斜角的样式。"""
-    TabOrder: Any
+    TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
-    Tag: Any
+    Tag: int
     """存储与组件关联的任意整数值。"""
-    OnClick: Any
+    OnClick: Callable[[Object],None]
     """OnClick事件，在相关操作发生时触发。"""
-    OnDblClick: Any
+    OnDblClick: Callable[[Object],None]
     """OnDblClick事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
     OnKeyPress: Any
     """OnKeyPress事件，在相关操作发生时触发。"""
-    OnKeyDown: Any
+    OnKeyDown: Callable[[Object,int,ShiftState],None]
     """OnKeyDown事件，在相关操作发生时触发。"""
-    OnKeyUp: Any
+    OnKeyUp: Callable[[Object,int,ShiftState],None]
     """OnKeyUp事件，在相关操作发生时触发。"""
-    PopupMenu: Any
+    PopupMenu: PopupMenu
     """指定与组件关联的右键弹出菜单。"""
 
 class NiceGridSync(NiceGrid):
     """网格同步控件，用于同步多个NiceGrid控件的滚动和选择状态。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    Grid: Any
+    Grid: NiceGrid
     """获取或设置关联的同步网格。"""
 
 class Upgrader(Component):
     """应用程序自动升级组件，用于检查更新、下载和安装新版本。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Check(self, *args, **kwargs) -> bool:
+    def Check(self, ADownInfo: Any = ...) -> bool:
         """检查更新是否可用。"""
-    def Start(self, *args, **kwargs) -> Any:
+    def Start(self, ADownInfo: Any = ...) -> None:
         """开始执行操作或启动服务。"""
-    def Pause(self, *args, **kwargs) -> Any:
+    def Pause(self) -> None:
         """暂停当前正在执行的操作。"""
-    def Resume(self, *args, **kwargs) -> Any:
+    def Resume(self) -> None:
         """恢复暂停的操作。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
     UpdateInfoURL: str
     """获取或设置更新信息检查URL。"""
     VersionPattern: Any
     """获取或设置版本号匹配模式。"""
-    VersionAsDateTime: Any
+    VersionAsDateTime: float
     """将版本号作为日期时间表示。"""
     VersionAsNumber: int
     """将版本号作为数值表示。"""
@@ -39731,14 +41915,14 @@ class Upgrader(Component):
     """OnFileBegin事件，在相关操作发生时触发。"""
     OnFileEnd: Any
     """OnFileEnd事件，在相关操作发生时触发。"""
-    Name: Any
+    Name: str
     """指定组件的名称，用于在代码中引用。"""
 
 class NoBorderForm(Component):
     """无边框窗体辅助组件，用于创建无边框窗口并支持阴影效果。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
     EnabledShadow: bool
     """指定是否启用窗口阴影效果。"""
@@ -39747,500 +41931,506 @@ class NoBorderForm(Component):
 
 class YSizer(GraphicControl):
     """大小调整控件，提供可视化的拖拽调整大小功能。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
-        """销毁组件实例并释放其占用的所有资源。"""
-    def Paint(self, *args, **kwargs) -> Any:
-        """绘制YSizer控件的调整手柄图形。"""
-    def UpdateXORFrame(self, *args, **kwargs) -> Any:
-        """更新拖拽时的异或框选框架。"""
-    def MouseDown(self, *args, **kwargs) -> Any:
-        """处理鼠标按下事件以开始拖拽调整大小。"""
-    def MouseMove(self, *args, **kwargs) -> Any:
-        """处理鼠标移动事件以实时更新调整大小位置。"""
-    def MouseUp(self, *args, **kwargs) -> Any:
-        """处理鼠标释放事件以完成大小调整操作。"""
-    Color: Any
+    Color: int
     """指定组件的背景颜色。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    Width: Any
+    Width: int
     """指定组件的宽度（以像素为单位）。"""
-    Height: Any
+    Height: int
     """指定组件的高度（以像素为单位）。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
 
 class CustomPicShow(CustomControl):
     """图片展示控件的基类，提供了图片加载、显示和切换的基本框架。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self) -> None:
         """执行操作或显示对话框。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    def GetStyleNames(self, *args, **kwargs) -> int:
+    def GetStyleNames(self, Names: Strings) -> int:
         """获取所有可用的过渡效果样式名称。"""
     Busy: bool
     """指示组件当前是否正在执行操作。"""
     Empty: bool
     """指示是否为空状态。"""
-    Progress: Any
+    Progress: int
     """获取或设置当前进度。"""
     About: Any
     """显示关于信息。"""
 
 class PicShow(CustomPicShow):
     """高级图片展示控件，支持多种图片格式、过渡效果和幻灯片播放功能。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    AutoSize: Any
+    AutoSize: bool
     """指定组件是否根据其内容自动调整大小。"""
-    BevelEdges: Any
+    BevelEdges: BevelEdges
     """指定组件哪些边缘具有斜角效果。"""
-    BevelInner: Any
+    BevelInner: BevelCut
     """指定组件内斜角的样式。"""
-    BevelOuter: Any
+    BevelOuter: BevelCut
     """指定组件外斜角的样式。"""
-    BevelKind: Any
+    BevelKind: BevelKind
     """指定组件斜线边缘的样式类型。"""
-    BevelWidth: Any
+    BevelWidth: int
     """指定组件斜角的宽度。"""
     BgMode: Any
     """获取或设置背景模式。"""
-    BgPicture: Any
+    BgPicture: Picture
     """获取或设置背景图片。"""
-    BorderWidth: Any
+    BorderWidth: int
     """指定组件边框的宽度。"""
-    Center: Any
+    Center: bool
     """指定图像是否居中显示。"""
-    Color: Any
+    Color: int
     """指定组件的背景颜色。"""
-    Constraints: Any
+    Constraints: SizeConstraints
     """指定组件的最小和最大尺寸限制。"""
-    Delay: Any
+    Delay: int
     """获取或设置延迟时间（毫秒）。"""
-    DockSite: Any
+    DockSite: bool
     """指定组件是否可以作为其他控件的停靠目标。"""
-    DragCursor: Any
+    DragCursor: int
     """指定拖动组件时鼠标指针的样式。"""
-    DragKind: Any
+    DragKind: DragKind
     """指定拖动操作的类。"""
-    DragMode: Any
+    DragMode: DragMode
     """指定组件是否可被拖动及拖动方式。"""
-    Enabled: Any
+    Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    ExactTiming: Any
+    ExactTiming: bool
     """指定是否使用精确计时。"""
-    FrameColor: Any
+    FrameColor: int
     """获取或设置边框颜色。"""
-    FrameWidth: Any
+    FrameWidth: int
     """获取或设置边框宽度。"""
-    Height: Any
+    Height: int
     """指定组件的高度（以像素为单位）。"""
-    Manual: Any
+    Manual: bool
     """指定是否为手动模式。"""
-    OverDraw: Any
+    OverDraw: bool
     """指定是否允许重叠绘制。"""
-    ParentColor: Any
+    ParentColor: bool
     """指定组件是否继承父容器的背景颜色。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """指定组件是否继承父容器的提示信息显示设置。"""
-    Picture: Any
+    Picture: Picture
     """获取或设置显示的图片。"""
-    PopupMenu: Any
+    PopupMenu: PopupMenu
     """指定与组件关联的右键弹出菜单。"""
-    Proportional: Any
+    Proportional: bool
     """指定图像是否等比缩放。"""
-    ShowHint: Any
+    ShowHint: bool
     """指定当鼠标悬停在组件上时是否显示帮助提示。"""
-    Reverse: Any
+    Reverse: bool
     """指定是否反向播放。"""
-    Stretch: Any
+    Stretch: bool
     """指定图像是否拉伸适应。"""
-    Step: Any
+    Step: int
     """获取或设置步进值。"""
-    Style: Any
+    Style: int
     """指定组件的显示样式。"""
-    StyleName: Any
+    StyleName: str
     """指定组件应用的VCL样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
-    Threaded: Any
+    Threaded: bool
     """指定是否使用多线程。"""
-    Visible: Any
+    Visible: bool
     """指定组件是否可见。"""
-    Width: Any
+    Width: int
     """指定组件的宽度（以像素为单位）。"""
     OnAfterNewFrame: Any
     """OnAfterNewFrame事件，在相关操作发生时触发。"""
     OnBeforeNewFrame: Any
     """OnBeforeNewFrame事件，在相关操作发生时触发。"""
-    OnCanResize: Any
+    OnCanResize: Callable[[Object,int,int,bool],None]
     """OnCanResize事件，在相关操作发生时触发。"""
-    OnClick: Any
+    OnClick: Callable[[Object],None]
     """OnClick事件，在相关操作发生时触发。"""
-    OnChange: Any
+    OnChange: Callable[[Object],None]
     """OnChange事件，在相关操作发生时触发。"""
-    OnComplete: Any
+    OnComplete: Callable[[Object],None]
     """OnComplete事件，在相关操作发生时触发。"""
-    OnConstrainedResize: Any
+    OnConstrainedResize: Callable[[Object,int,int,int,int],None]
     """OnConstrainedResize事件，在相关操作发生时触发。"""
-    OnCustomDraw: Any
+    OnCustomDraw: Callable[[CustomListView,Rect,bool],None]
     """OnCustomDraw事件，在相关操作发生时触发。"""
-    OnDblClick: Any
+    OnDblClick: Callable[[Object],None]
     """OnDblClick事件，在相关操作发生时触发。"""
-    OnDockDrop: Any
+    OnDockDrop: Callable[[Object,DragDockObject,int,int],None]
     """OnDockDrop事件，在相关操作发生时触发。"""
-    OnDockOver: Any
+    OnDockOver: Callable[[Object,DragDockObject,int,int,DragState,bool],None]
     """OnDockOver事件，在相关操作发生时触发。"""
-    OnDragDrop: Any
+    OnDragDrop: Callable[[Object,Object,int,int],None]
     """OnDragDrop事件，在相关操作发生时触发。"""
-    OnDragOver: Any
+    OnDragOver: Callable[[Object,Object,int,int,DragState,bool],None]
     """OnDragOver事件，在相关操作发生时触发。"""
-    OnEndDock: Any
+    OnEndDock: Callable[[Object,Object,int,int],None]
     """OnEndDock事件，在相关操作发生时触发。"""
-    OnEndDrag: Any
+    OnEndDrag: Callable[[Object,Object,int,int],None]
     """OnEndDrag事件，在相关操作发生时触发。"""
-    OnEnter: Any
+    OnEnter: Callable[[Object],None]
     """OnEnter事件，在相关操作发生时触发。"""
-    OnExit: Any
+    OnExit: Callable[[Object],None]
     """OnExit事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseEnter: Any
+    OnMouseEnter: Callable[[Object],None]
     """OnMouseEnter事件，在相关操作发生时触发。"""
-    OnMouseLeave: Any
+    OnMouseLeave: Callable[[Object],None]
     """OnMouseLeave事件，在相关操作发生时触发。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
-    OnKeyDown: Any
+    OnKeyDown: Callable[[Object,int,ShiftState],None]
     """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
     """OnKeyPress事件，在相关操作发生时触发。"""
-    OnKeyUp: Any
+    OnKeyUp: Callable[[Object,int,ShiftState],None]
     """OnKeyUp事件，在相关操作发生时触发。"""
-    OnProgress: Any
+    OnProgress: Callable[[Object],None]
     """OnProgress事件，在相关操作发生时触发。"""
-    OnResize: Any
+    OnResize: Callable[[Object],None]
     """OnResize事件，在相关操作发生时触发。"""
     OnStart: Any
     """OnStart事件，在相关操作发生时触发。"""
-    OnStartDock: Any
+    OnStartDock: Callable[[Object,DragDockObject],None]
     """OnStartDock事件，在相关操作发生时触发。"""
-    OnStartDrag: Any
+    OnStartDrag: Callable[[Object,DragObject],None]
     """OnStartDrag事件，在相关操作发生时触发。"""
-    OnStop: Any
+    OnStop: Callable[[Object],None]
     """OnStop事件，在相关操作发生时触发。"""
-    OnUnDock: Any
+    OnUnDock: Callable[[Object,Control,WinControl,bool],None]
     """OnUnDock事件，在相关操作发生时触发。"""
 
 class DBPicShow(CustomPicShow):
     """数据感知的图片展示控件，可绑定到数据集的图片字段。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def LoadPicture(self, *args, **kwargs) -> Any:
+    def LoadPicture(self) -> None:
         """从数据源字段加载图片内容。"""
     Field: Any
     """获取或设置绑定的数据字段。"""
-    Picture: Any
+    Picture: Picture
     """获取或设置显示的图片。"""
     AutoDisplay: bool
     """指定是否自动显示图片内容。"""
     DataField: str
     """获取或设置数据字段名。"""
-    DataSource: Any
+    DataSource: DataSource
     """获取或设置与组件关联的数据源。"""
     ReadOnly: bool
     """指定组件是否处于只读模式。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    AutoSize: Any
+    AutoSize: bool
     """指定组件是否根据其内容自动调整大小。"""
-    BevelEdges: Any
+    BevelEdges: BevelEdges
     """指定组件哪些边缘具有斜角效果。"""
-    BevelInner: Any
+    BevelInner: BevelCut
     """指定组件内斜角的样式。"""
-    BevelOuter: Any
+    BevelOuter: BevelCut
     """指定组件外斜角的样式。"""
-    BevelKind: Any
+    BevelKind: BevelKind
     """指定组件斜线边缘的样式类型。"""
-    BevelWidth: Any
+    BevelWidth: int
     """指定组件斜角的宽度。"""
     BgMode: Any
     """获取或设置背景模式。"""
-    BgPicture: Any
+    BgPicture: Picture
     """获取或设置背景图片。"""
-    BorderWidth: Any
+    BorderWidth: int
     """指定组件边框的宽度。"""
-    Center: Any
+    Center: bool
     """指定图像是否居中显示。"""
-    Color: Any
+    Color: int
     """指定组件的背景颜色。"""
-    Constraints: Any
+    Constraints: SizeConstraints
     """指定组件的最小和最大尺寸限制。"""
-    Delay: Any
+    Delay: int
     """获取或设置延迟时间（毫秒）。"""
-    DockSite: Any
+    DockSite: bool
     """指定组件是否可以作为其他控件的停靠目标。"""
-    DragKind: Any
+    DragKind: DragKind
     """指定拖动操作的类。"""
-    DragCursor: Any
+    DragCursor: int
     """指定拖动组件时鼠标指针的样式。"""
-    DragMode: Any
+    DragMode: DragMode
     """指定组件是否可被拖动及拖动方式。"""
-    Enabled: Any
+    Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    ExactTiming: Any
+    ExactTiming: bool
     """指定是否使用精确计时。"""
-    FrameColor: Any
+    FrameColor: int
     """获取或设置边框颜色。"""
-    FrameWidth: Any
+    FrameWidth: int
     """获取或设置边框宽度。"""
-    Height: Any
+    Height: int
     """指定组件的高度（以像素为单位）。"""
-    Manual: Any
+    Manual: bool
     """指定是否为手动模式。"""
-    OverDraw: Any
+    OverDraw: bool
     """指定是否允许重叠绘制。"""
-    ParentColor: Any
+    ParentColor: bool
     """指定组件是否继承父容器的背景颜色。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """指定组件是否继承父容器的提示信息显示设置。"""
-    PopupMenu: Any
+    PopupMenu: PopupMenu
     """指定与组件关联的右键弹出菜单。"""
-    Proportional: Any
+    Proportional: bool
     """指定图像是否等比缩放。"""
-    ShowHint: Any
+    ShowHint: bool
     """指定当鼠标悬停在组件上时是否显示帮助提示。"""
-    Reverse: Any
+    Reverse: bool
     """指定是否反向播放。"""
-    Stretch: Any
+    Stretch: bool
     """指定图像是否拉伸适应。"""
-    Step: Any
+    Step: int
     """获取或设置步进值。"""
-    Style: Any
+    Style: int
     """指定组件的显示样式。"""
-    StyleName: Any
+    StyleName: str
     """指定组件应用的VCL样式名称。"""
-    TabOrder: Any
+    TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
-    Threaded: Any
+    Threaded: bool
     """指定是否使用多线程。"""
-    Visible: Any
+    Visible: bool
     """指定组件是否可见。"""
-    Width: Any
+    Width: int
     """指定组件的宽度（以像素为单位）。"""
-    OnAfterLoadPicture: Any
+    OnAfterLoadPicture: Callable[[Object],None]
     """OnAfterLoadPicture事件，在相关操作发生时触发。"""
     OnAfterNewFrame: Any
     """OnAfterNewFrame事件，在相关操作发生时触发。"""
     OnBeforeNewFrame: Any
     """OnBeforeNewFrame事件，在相关操作发生时触发。"""
-    OnBeforeLoadPicture: Any
+    OnBeforeLoadPicture: Callable[[Object],None]
     """OnBeforeLoadPicture事件，在相关操作发生时触发。"""
-    OnCanResize: Any
+    OnCanResize: Callable[[Object,int,int,bool],None]
     """OnCanResize事件，在相关操作发生时触发。"""
-    OnClick: Any
+    OnClick: Callable[[Object],None]
     """OnClick事件，在相关操作发生时触发。"""
-    OnConstrainedResize: Any
+    OnConstrainedResize: Callable[[Object,int,int,int,int],None]
     """OnConstrainedResize事件，在相关操作发生时触发。"""
-    OnComplete: Any
+    OnComplete: Callable[[Object],None]
     """OnComplete事件，在相关操作发生时触发。"""
-    OnCustomDraw: Any
+    OnCustomDraw: Callable[[CustomListView,Rect,bool],None]
     """OnCustomDraw事件，在相关操作发生时触发。"""
-    OnDblClick: Any
+    OnDblClick: Callable[[Object],None]
     """OnDblClick事件，在相关操作发生时触发。"""
-    OnDockDrop: Any
+    OnDockDrop: Callable[[Object,DragDockObject,int,int],None]
     """OnDockDrop事件，在相关操作发生时触发。"""
-    OnDockOver: Any
+    OnDockOver: Callable[[Object,DragDockObject,int,int,DragState,bool],None]
     """OnDockOver事件，在相关操作发生时触发。"""
-    OnDragDrop: Any
+    OnDragDrop: Callable[[Object,Object,int,int],None]
     """OnDragDrop事件，在相关操作发生时触发。"""
-    OnDragOver: Any
+    OnDragOver: Callable[[Object,Object,int,int,DragState,bool],None]
     """OnDragOver事件，在相关操作发生时触发。"""
-    OnEndDock: Any
+    OnEndDock: Callable[[Object,Object,int,int],None]
     """OnEndDock事件，在相关操作发生时触发。"""
-    OnEndDrag: Any
+    OnEndDrag: Callable[[Object,Object,int,int],None]
     """OnEndDrag事件，在相关操作发生时触发。"""
-    OnEnter: Any
+    OnEnter: Callable[[Object],None]
     """OnEnter事件，在相关操作发生时触发。"""
-    OnExit: Any
+    OnExit: Callable[[Object],None]
     """OnExit事件，在相关操作发生时触发。"""
     OnGetGraphicClass: Any
     """OnGetGraphicClass事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseEnter: Any
+    OnMouseEnter: Callable[[Object],None]
     """OnMouseEnter事件，在相关操作发生时触发。"""
-    OnMouseLeave: Any
+    OnMouseLeave: Callable[[Object],None]
     """OnMouseLeave事件，在相关操作发生时触发。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
-    OnKeyDown: Any
+    OnKeyDown: Callable[[Object,int,ShiftState],None]
     """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
     """OnKeyPress事件，在相关操作发生时触发。"""
-    OnKeyUp: Any
+    OnKeyUp: Callable[[Object,int,ShiftState],None]
     """OnKeyUp事件，在相关操作发生时触发。"""
-    OnProgress: Any
+    OnProgress: Callable[[Object],None]
     """OnProgress事件，在相关操作发生时触发。"""
-    OnResize: Any
+    OnResize: Callable[[Object],None]
     """OnResize事件，在相关操作发生时触发。"""
     OnStart: Any
     """OnStart事件，在相关操作发生时触发。"""
-    OnStartDock: Any
+    OnStartDock: Callable[[Object,DragDockObject],None]
     """OnStartDock事件，在相关操作发生时触发。"""
-    OnStartDrag: Any
+    OnStartDrag: Callable[[Object,DragObject],None]
     """OnStartDrag事件，在相关操作发生时触发。"""
-    OnStop: Any
+    OnStop: Callable[[Object],None]
     """OnStop事件，在相关操作发生时触发。"""
-    OnUnDock: Any
+    OnUnDock: Callable[[Object,Control,WinControl,bool],None]
     """OnUnDock事件，在相关操作发生时触发。"""
 
 class AiChat(Component):
     """AI聊天组件，封装了与各种AI模型的交互功能，支持消息管理和流式响应。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def AddMessageAndRun(self, *args, **kwargs) -> Any:
+    def AddMessageAndRun(self, aPrompt: str, aRole: str, aMediaFiles: Any) -> str:
         """添加消息后立即执行AI对话请求。"""
-    def AddMessageAndRunMsg(self, *args, **kwargs) -> Any:
+    def AddMessageAndRunMsg(self, aPrompt: str, aRole: str, aMediaFiles: Any) -> Any:
         """添加消息后立即执行AI对话并返回消息结果。"""
-    def AddMessage(self, *args, **kwargs) -> Any:
+    def AddMessage(self, aPrompt: str, aRole: str) -> Any:
         """向对话历史中添加一条消息。"""
-    def NewMessage(self, *args, **kwargs) -> Any:
+    def NewMessage(self, aPrompt: str, aRole: str) -> Any:
         """创建一条新的对话消息对象。"""
-    def Run(self, *args, **kwargs) -> Any:
+    def Run(self, AskMsg: Any, ResMsg: Any = ...) -> str:
         """运行或执行主要功能。"""
-    def GetLastMessage(self, *args, **kwargs) -> Any:
+    def GetLastMessage(self) -> Any:
         """获取对话历史中最后一条消息的内容。"""
-    def RemoveMesage(self, *args, **kwargs) -> Any:
+    @overload
+    def RemoveMesage(self, Msg: Any) -> bool:
         """从对话中移除指定消息。"""
-    def RemoveMesage(self, *args, **kwargs) -> Any:
+    @overload
+    def RemoveMesage(self, IdMsg: int) -> bool:
         """从对话中移除指定消息。"""
-    def AddToMemory(self, *args, **kwargs) -> Any:
+    def AddToMemory(self, Key: str, Value: str) -> None:
         """将信息添加到AI的记忆中。"""
-    def RemoveFromMemory(self, *args, **kwargs) -> Any:
+    def RemoveFromMemory(self, Key: str) -> None:
         """从AI的记忆中移除指定信息。"""
-    def NewChat(self, *args, **kwargs) -> Any:
+    def NewChat(self) -> None:
         """开始一个新的对话，清空当前消息历史。"""
-    def Abort(self, *args, **kwargs) -> Any:
+    def Abort(self) -> None:
         """中止当前正在执行的操作。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    @overload
+    @classmethod
+    def GetModels(cls, aApiKey: str, aUrl: str = ...) -> Any:
         """获取可用的AI模型列表。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    @overload
+    def GetModels(self) -> Any:
         """获取可用的AI模型列表。"""
-    def GetMessages(self, *args, **kwargs) -> Any:
+    def GetMessages(self) -> Any:
         """获取当前对话的所有消息列表。"""
-    def PublicChatToSend(self, *args, **kwargs) -> str:
+    def PublicChatToSend(self) -> str:
         """获取将要发送到AI的公开对话内容。"""
-    def FileCategoriesToString(self, *args, **kwargs) -> str:
+    def FileCategoriesToString(self, const_ACategories: Any) -> str:
         """将文件分类信息列表转换为字符串格式。"""
-    def StringToFileCategories(self, *args, **kwargs) -> Any:
+    def StringToFileCategories(self, const_AValue: str) -> Any:
         """将字符串解析为文件分类信息列表。"""
-    def UploadFile(self, *args, **kwargs) -> Any:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def DownLoadFile(self, *args, **kwargs) -> Any:
+    def DownLoadFile(self, aMediaFile: AiMediaFile) -> str:
         """从服务器下载已处理的文件。"""
-    def CheckFileState(self, *args, **kwargs) -> Any:
+    def CheckFileState(self, aMediaFile: AiMediaFile) -> str:
         """检查已上传文件的处理状态。"""
-    def DeleteFile(self, *args, **kwargs) -> Any:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def RetrieveFile(self, *args, **kwargs) -> Any:
+    def RetrieveFile(self, aFileId: str) -> AiMediaFile:
         """检索已上传文件的信息。"""
-    def RetrieveFileList(self, *args, **kwargs) -> Any:
+    def RetrieveFileList(self) -> Any:
         """获取所有已上传到服务器的文件列表。"""
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
     Messages: Any
     """获取或设置AI对话的消息列表。"""
     LastError: str
     """获取最近一次操作的错误信息。"""
-    ApiKey: str
-    """获取或设置API密钥用于服务认证。"""
-    Model: str
-    """获取或设置使用的AI模型名称。"""
-    Frequency_penalty: Any
-    """获取或设置频率惩罚系数，控制生成内容的重复度。"""
+    Tool_Active: bool
+    """指定是否启用工具调用功能。"""
+    ModelCaps: Any
+    """获取或设置模型能力。"""
+    SessionCaps: Any
+    """获取或设置会话能力。"""
+    Busy: bool
+    """指示组件当前是否正在执行操作。"""
+    LastPrompt: str
+    """获取最后一次发送的提示内容。"""
+    LastContent: str
+    """获取最后一次响应的内容。"""
     Logit_bias: str
     """获取或设置logit偏置参数，影响特定token的出现概率。"""
     Logprobs: bool
     """指定是否返回每个token的对数概率。"""
-    Top_logprobs: str
-    """获取或设置返回最高概率token的数量。"""
-    Max_tokens: int
-    """获取或设置AI生成的最大token数量。"""
     N: int
     """获取或设置每次请求生成的回复数量。"""
-    Presence_penalty: Any
+    Presence_penalty: float
     """获取或设置存在惩罚系数，鼓励讨论新主题。"""
-    Response_format: Any
-    """获取或设置AI响应的格式类型。"""
+    Prompt_tokens: int
+    """获取请求消耗的token数量。"""
     Seed: int
     """获取或设置随机种子。"""
     Stop: str
     """获取或设置停止生成的标记序列。"""
-    Asynchronous: bool
-    """指定是否以异步模式执行请求。"""
-    Temperature: Any
-    """获取或设置AI生成的随机性参数。"""
-    Top_p: Any
+    Cached_tokens: int
+    """获取或设置已缓存令牌数。"""
+    Cache_write_tokens: int
+    """获取或设置缓存写入令牌数。"""
+    CacheContext: bool
+    """指定是否缓存上下文。"""
+    Top_p: float
     """获取或设置核采样参数。"""
-    K: int
-    """获取或设置Top-K采样参数。"""
-    Tool_choice: str
-    """获取或设置工具调用模式。"""
-    Tool_Active: bool
-    """指定是否启用工具调用功能。"""
-    User: str
-    """获取或设置用户标识。"""
-    SystemPrompt: Any
-    """获取或设置AI系统的提示词。"""
-    Prompt_tokens: int
-    """获取请求消耗的token数量。"""
-    Completion_tokens: int
-    """获取响应生成的token数量。"""
     Total_tokens: int
     """获取总消耗的token数量。"""
     Thinking_tokens: int
     """获取思考过程中消耗的token数量。"""
-    LastContent: Any
-    """获取最后一次响应的内容。"""
-    LastPrompt: Any
-    """获取最后一次发送的提示内容。"""
-    Busy: Any
-    """指示组件当前是否正在执行操作。"""
+    PendingToolRun: bool
+    """指示是否待处理工具运行。"""
+    ApiKey: str
+    """获取或设置API密钥用于服务认证。"""
+    Model: str
+    """获取或设置使用的AI模型名称。"""
+    Frequency_penalty: float
+    """获取或设置频率惩罚系数，控制生成内容的重复度。"""
+    Top_logprobs: str
+    """获取或设置返回最高概率token的数量。"""
+    Max_tokens: int
+    """获取或设置AI生成的最大token数量。"""
+    Response_format: Any
+    """获取或设置AI响应的格式类型。"""
+    Asynchronous: bool
+    """指定是否以异步模式执行请求。"""
+    K: int
+    """获取或设置Top-K采样参数。"""
+    Tool_choice: str
+    """获取或设置工具调用模式。"""
+    User: str
+    """获取或设置用户标识。"""
+    SystemPrompt: Strings
+    """获取或设置AI系统的提示词。"""
+    Completion_tokens: int
+    """获取响应生成的token数量。"""
+    LastExecutedToolsJSON: str
+    """获取最后已执行工具JSON。"""
     OnReceiveThinking: Any
     """OnReceiveThinking事件，在相关操作发生时触发。"""
     OnReceiveData: Any
@@ -40249,8 +42439,6 @@ class AiChat(Component):
     """OnReceiveDataEnd事件，在相关操作发生时触发。"""
     OnAddMessage: Any
     """OnAddMessage事件，在相关操作发生时触发。"""
-    def OnCallToolFunction(self, *args, **kwargs) -> Any:
-        """在AI调用工具函数时触发的事件。"""
     OnCallToolFunction: Any
     """OnCallToolFunction事件，在相关操作发生时触发。"""
     OnBeforeSendMessage: Any
@@ -40261,116 +42449,134 @@ class AiChat(Component):
     """OnProcessResponse事件，在相关操作发生时触发。"""
     OnProgressEvent: Any
     """OnProgressEvent事件，在相关操作发生时触发。"""
+    OnProcessMediaFile: Any
+    """OnProcessMediaFile事件，在相关操作发生时触发。"""
     Url: str
     """获取或设置API服务的基础URL地址。"""
     ResponseTimeOut: int
     """获取或设置API请求的超时时间（毫秒）。"""
-    Memory: Any
+    Memory: Strings
     """获取或设置AI记忆模块，用于长期记忆功能。"""
-    def AiFunctions(self, *args, **kwargs) -> Any:
-        """获取或设置AI可调用的函数集合。"""
-    AiFunctions: Any
+    AiFunctions: AiFunctions
     """获取或设置AI可调用的函数集合。"""
-    OnProcessMediaFile: Any
-    """OnProcessMediaFile事件，在相关操作发生时触发。"""
-    JsonSchema: Any
+    ChatTools: Any
+    """获取聊天工具。"""
+    JsonSchema: Strings
     """获取或设置JSON Schema格式约束。"""
     Stream_Usage: bool
     """指定流式响应时是否返回token用量信息。"""
-    NativeInputFiles: Any
-    """获取或设置本地输入文件列表。"""
-    NativeOutputFiles: Any
-    """获取或设置本地输出文件列表。"""
-    ChatMediaSupports: Any
-    """获取当前聊天支持的多媒体类型。"""
-    Voice: str
-    """获取或设置语音合成的声音类型。"""
-    voice_format: str
-    """获取或设置语音输出格式。"""
+    ChatMode: Any
+    """获取或设置聊天模式。"""
     OnError: Any
     """OnError事件，在相关操作发生时触发。"""
-    Language: str
-    """获取或设置语言设置。"""
-    Transcription_ResponseFormat: str
-    """获取或设置语音转录的响应格式。"""
-    Transcription_TimestampGranularities: str
-    """获取或设置语音转录的时间戳粒度。"""
-    ReasoningFormat: str
-    """获取或设置推理过程的输出格式。"""
-    ThinkingLevel: Any
-    """获取或设置AI的思考级别。"""
-    MediaResolution: Any
-    """获取或设置媒体处理的分辨率。"""
-    VideoParams: Any
-    """获取或设置视频生成参数。"""
+    TtsParams: Any
+    """获取TTS参数。"""
+    TranscriptionParams: Any
+    """获取语音转写参数。"""
     ImageParams: Any
     """获取或设置图像生成参数。"""
+    VideoParams: Any
+    """获取或设置视频生成参数。"""
     WebSearchParams: Any
     """获取或设置网络搜索参数。"""
+    ModelConfig: Any
+    """获取模型配置。"""
     OnStateChange: Any
     """OnStateChange事件，在相关操作发生时触发。"""
-    ShellTool: Any
-    """获取或设置Shell命令执行工具。"""
-    TextEditorTool: Any
-    """获取或设置文本编辑器工具。"""
+    OnHttpRequestDone: Callable[[Object],None]
+    """OnHttpRequestDone事件，在相关操作发生时触发。"""
+    SanitizerActive: bool
+    """指定是否清理器活动。"""
+    OnSanitize: Any
+    """OnSanitize事件，在相关操作发生时触发。"""
+    PersistentMemory: AiPersistentMemoryBase
+    """获取或设置持久记忆。"""
+    MemoryTokenBudget: int
+    """获取或设置记忆令牌预算。"""
+    AutoStoreMemories: bool
+    """指定是否自动存储记忆。"""
+    Temperature: float
+    """获取或设置AI生成的随机性参数。"""
 
 class AiChatConnection(Component):
     """AI聊天连接管理组件，用于管理多个AI聊天驱动的连接。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def UpdateParamsFromRegistry(self, *args, **kwargs) -> Any:
+    def UpdateParamsFromRegistry(self) -> None:
         """从系统注册表更新AI驱动的参数配置。"""
-    def AddMessageAndRun(self, *args, **kwargs) -> Any:
+    def AddMessageAndRun(self, aPrompt: str, aRole: str, aMediaFiles: Any) -> str:
         """添加消息后立即执行AI对话请求。"""
-    def AddMessage(self, *args, **kwargs) -> Any:
+    def AddMessage(self, aPrompt: str, aRole: str) -> Any:
         """向对话历史中添加一条消息。"""
-    def NewMessage(self, *args, **kwargs) -> Any:
+    def NewMessage(self, aPrompt: str, aRole: str) -> Any:
         """创建一条新的对话消息对象。"""
-    def Run(self, *args, **kwargs) -> Any:
+    def Run(self, aMsg: Any = ...) -> str:
         """运行或执行主要功能。"""
-    def GetLastMessage(self, *args, **kwargs) -> Any:
+    def GetLastMessage(self) -> Any:
         """获取对话历史中最后一条消息的内容。"""
-    def RemoveMesage(self, *args, **kwargs) -> Any:
+    @overload
+    def RemoveMesage(self, Msg: Any) -> bool:
         """从对话中移除指定消息。"""
-    def RemoveMesage(self, *args, **kwargs) -> Any:
+    @overload
+    def RemoveMesage(self, IdMsg: int) -> bool:
         """从对话中移除指定消息。"""
-    def AddToMemory(self, *args, **kwargs) -> Any:
+    def AddToMemory(self, Key: str, Value: str) -> None:
         """将信息添加到AI的记忆中。"""
-    def RemoveFromMemory(self, *args, **kwargs) -> Any:
+    def RemoveFromMemory(self, Key: str) -> None:
         """从AI的记忆中移除指定信息。"""
-    def NewChat(self, *args, **kwargs) -> Any:
+    def NewChat(self) -> None:
         """开始一个新的对话，清空当前消息历史。"""
-    def Abort(self, *args, **kwargs) -> Any:
+    def Abort(self) -> None:
         """中止当前正在执行的操作。"""
-    def GetMessages(self, *args, **kwargs) -> Any:
+    def EnableDebugLog(self, const_APath: str = ...) -> None:
+        """启用调试日志。"""
+    def DisableDebugLog(self) -> None:
+        """禁用调试日志。"""
+    def IsDebugLogEnabled(self) -> bool:
+        """判断调试日志启用的状态，返回布尔值。"""
+    def GetMessages(self) -> Any:
         """获取当前对话的所有消息列表。"""
-    def GetDriversNames(self, *args, **kwargs) -> Any:
+    def GetDriversNames(self) -> Any:
         """获取所有已注册的AI驱动名称列表。"""
-    def GetAvailableDrivers(self, *args, **kwargs) -> Any:
+    def GetAvailableDrivers(self) -> Any:
         """获取当前可用的所有AI驱动列表。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    def GetModels(self) -> Any:
         """获取可用的AI模型列表。"""
-    def IsDriverAvailable(self, *args, **kwargs) -> bool:
+    @classmethod
+    def AvailableDrivers(cls) -> Any:
+        """可用驱动，返回相应结果。"""
+    @classmethod
+    def DriverNames(cls) -> Any:
+        """驱动名称列表，返回相应结果。"""
+    def IsDriverAvailable(self, const_DriverName: str) -> bool:
         """检查指定的AI驱动在当前环境是否可用。"""
-    def ResetParamsToDefaults(self, *args, **kwargs) -> Any:
+    def ResetParamsToDefaults(self) -> None:
         """将所有参数重置为默认配置。"""
-    def RegisterUserParam(self, *args, **kwargs) -> Any:
+    @overload
+    def RegisterUserParam(self, const_DriverName: str, const_ModelName: str, const_ParamName: str, const_ParamValue: str) -> None:
         """注册用户自定义参数。"""
-    def RegisterUserParam(self, *args, **kwargs) -> Any:
+    @overload
+    def RegisterUserParam(self, const_DriverName: str, const_ParamName: str, const_ParamValue: str) -> None:
         """注册用户自定义参数。"""
-    def ClearRegisterParams(self, *args, **kwargs) -> Any:
+    def ClearRegisterParams(self, const_DriverName: str, ModelName: str = ...) -> None:
         """清除所有用户注册的自定义参数。"""
-    def CreateChatForDriver(self, *args, **kwargs) -> Any:
+    def RegisterCustomModel(self, const_DriverName: str, const_CustomModelName: str, const_ModelBaseName: str) -> None:
+        """注册自定义模型。"""
+    def ClearCustomModels(self, const_DriverName: str) -> None:
+        """清除自定义模型。"""
+    def GetBaseModel(self, const_DriverName: str, const_CustomModel: str) -> str:
+        """获取基础模型。"""
+    def CreateChatForDriver(self, const_aDriverName: str, const_aModel: str) -> AiChatConnection:
         """为指定的AI驱动创建聊天实例。"""
-    def UploadFile(self, *args, **kwargs) -> str:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def CheckFileState(self, *args, **kwargs) -> str:
+    def CheckFileState(self, aMediaFile: AiMediaFile) -> str:
         """检查已上传文件的处理状态。"""
-    def DeleteFile(self, *args, **kwargs) -> str:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def UploadFileToCache(self, *args, **kwargs) -> str:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
     Messages: Any
     """获取或设置AI对话的消息列表。"""
@@ -40378,27 +42584,31 @@ class AiChatConnection(Component):
     """获取最近一次操作的错误信息。"""
     Busy: bool
     """指示组件当前是否正在执行操作。"""
-    AiChat: Any
+    AiChat: AiChat
     """获取或设置关联的AI聊天组件。"""
+    ModelCaps: Any
+    """获取或设置模型能力。"""
+    SessionCaps: Any
+    """获取或设置会话能力。"""
+    Tool_Active: bool
+    """指定是否工具活动。"""
     DriverName: str
     """获取或设置AI驱动的名称。"""
     Model: str
     """获取或设置使用的AI模型名称。"""
-    Params: Any
+    Params: Strings
     """获取或设置参数集合。"""
-    SystemPrompt : Any
+    SystemPrompt: Strings
     """获取或设置AI系统的提示词。"""
-    Memory: Any
+    Memory: Strings
     """获取或设置AI记忆模块，用于长期记忆功能。"""
-    def AiFunctions(self, *args, **kwargs) -> Any:
-        """获取或设置AI可调用的函数集合。"""
-    AiFunctions: Any
+    AiFunctions: AiFunctions
     """获取或设置AI可调用的函数集合。"""
-    Prompt_tokens: Any
+    Prompt_tokens: int
     """获取请求消耗的token数量。"""
-    Completion_tokens: Any
+    Completion_tokens: int
     """获取响应生成的token数量。"""
-    Total_tokens: Any
+    Total_tokens: int
     """获取总消耗的token数量。"""
     OnReceiveThinking: Any
     """OnReceiveThinking事件，在相关操作发生时触发。"""
@@ -40408,8 +42618,6 @@ class AiChatConnection(Component):
     """OnReceiveDataEnd事件，在相关操作发生时触发。"""
     OnAddMessage: Any
     """OnAddMessage事件，在相关操作发生时触发。"""
-    def OnCallToolFunction(self, *args, **kwargs) -> Any:
-        """在AI调用工具函数时触发的事件。"""
     OnCallToolFunction: Any
     """OnCallToolFunction事件，在相关操作发生时触发。"""
     OnBeforeSendMessage: Any
@@ -40424,51 +42632,85 @@ class AiChatConnection(Component):
     """OnChatModelChange事件，在相关操作发生时触发。"""
     OnProcessResponse: Any
     """OnProcessResponse事件，在相关操作发生时触发。"""
-    Version: Any
+    Version: str
     """获取或设置组件的版本信息。"""
-    ShellTool: Any
-    """获取或设置Shell命令执行工具。"""
-    TextEditorTool : Any
-    """获取或设置文本编辑器工具。"""
+    ChatMode: Any
+    """获取或设置聊天模式。"""
+    OnStateChange: Any
+    """OnStateChange事件，在相关操作发生时触发。"""
+    SanitizerActive: bool
+    """指定是否清理器活动。"""
+    OnSanitize: Any
+    """OnSanitize事件，在相关操作发生时触发。"""
+    PersistentMemory: AiPersistentMemoryBase
+    """获取或设置持久记忆。"""
+    MemoryTokenBudget: int
+    """获取或设置记忆令牌预算。"""
+    AutoStoreMemories: bool
+    """指定是否自动存储记忆。"""
+    TtsParams: Any
+    """获取或设置TTS参数。"""
+    TranscriptionParams: Any
+    """获取或设置语音转写参数。"""
+    ImageParams: Any
+    """获取或设置图像参数。"""
+    VideoParams: Any
+    """获取或设置视频参数。"""
+    WebSearchParams: Any
+    """获取或设置网络搜索参数。"""
+    ModelConfig: Any
+    """获取或设置模型配置。"""
+    Response_format: Any
+    """获取或设置响应格式。"""
+    JsonSchema: Strings
+    """获取或设置JSON模式定义。"""
+    ChatTools: Any
+    """获取聊天工具。"""
 
 class AiClaudeChat(AiChat):
     """专为Anthropic Claude模型设计的AI聊天组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetModels(cls, aApiKey: str, aUrl: str = ...) -> Any:
         """获取可用的AI模型列表。"""
-    def GetMessages(self, *args, **kwargs) -> Any:
+    def GetMessages(self) -> Any:
         """获取当前对话的所有消息列表。"""
-    def UploadFile(self, *args, **kwargs) -> Any:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def DownLoadFile(self, *args, **kwargs) -> Any:
+    def DownLoadFile(self, aMediaFile: AiMediaFile) -> str:
         """从服务器下载已处理的文件。"""
-    def CheckFileState(self, *args, **kwargs) -> Any:
+    def CheckFileState(self, aMediaFile: AiMediaFile) -> str:
         """检查已上传文件的处理状态。"""
-    def DeleteFile(self, *args, **kwargs) -> Any:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def RetrieveFile(self, *args, **kwargs) -> Any:
+    def RetrieveFile(self, aFileId: str) -> AiMediaFile:
         """检索已上传文件的信息。"""
-    def RetrieveFileList(self, *args, **kwargs) -> Any:
+    def RetrieveFileList(self) -> Any:
         """获取所有已上传到服务器的文件列表。"""
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
-    def CreateMessageBatch(self, *args, **kwargs) -> str:
+    def CreateMessageBatch(self, InputFileId: str) -> str:
         """创建批量消息处理任务用于大规模处理。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
-    def ConfigureAutoContextClearing(self, *args, **kwargs) -> Any:
+    def ConfigureAutoContextClearing(self, TriggerTokens: int, KeepLast: int = ...) -> None:
         """配置在上下文超限时自动清理的策略。"""
     ContextConfig: Any
     """获取或设置上下文管理配置。"""
     CacheSystemPrompt: bool
     """指定是否缓存系统提示词以优化性能。"""
+    CacheTTL: str
+    """获取或设置缓存TTL。"""
     EnableMemory: bool
     """指定是否启用AI长期记忆功能。"""
     EnableThinking: bool
@@ -40477,44 +42719,63 @@ class AiClaudeChat(AiChat):
     """获取或设置思考过程的预算额度。"""
     ServiceTier: str
     """获取或设置服务等级。"""
+    FastMode: bool
+    """指定是否快速模式。"""
+    EnableCompaction: bool
+    """指定是否启用压缩整理。"""
+    RefusalFallbackModel: str
+    """获取或设置拒绝回退模型。"""
 
 class AiDeepSeekChat(AiChat):
     """专为DeepSeek模型设计的AI聊天组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def GetMessages(self) -> Any:
+        """获取消息。"""
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
 
 class AiGrokChat(AiChat):
     """AiGrokChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
+    VideoDurationSeconds: int
+    """获取或设置视频时长秒数。"""
 
 class AiGroqChat(AiChat):
     """AiGroqChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
 
 class AiGroqEmbeddings(AiEmbeddings):
@@ -40522,27 +42783,36 @@ class AiGroqEmbeddings(AiEmbeddings):
 
 class AiMistralChat(AiChat):
     """AiMistralChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
-    def UploadFile(self, *args, **kwargs) -> Any:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def DeleteFile(self, *args, **kwargs) -> Any:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def RetrieveFile(self, *args, **kwargs) -> Any:
+    def RetrieveFile(self, aFileId: str) -> AiMediaFile:
         """检索已上传文件的信息。"""
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
     OcrIncludeImages: bool
     """指定OCR识别时是否包含图像信息。"""
-    DocumentImageLimit: Any
+    OcrIncludeBlocks: bool
+    """指定是否OCR包含块。"""
+    TtsVoice: str
+    """获取或设置TTS语音。"""
+    TtsFormat: str
+    """获取或设置TTS格式。"""
+    DocumentImageLimit: int
     """获取或设置文档处理的图像数量限制。"""
-    DocumentPageLimit: Any
+    DocumentPageLimit: int
     """获取或设置文档处理的页数限制。"""
     OcrDocumentAnnotationSchema: Any
     """获取或设置OCR文档标注模式。"""
@@ -40555,74 +42825,99 @@ class AiMistralChat(AiChat):
 
 class AiMistralEmbeddings(AiEmbeddings):
     """AiMistralEmbeddings组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
         """创建文本的向量嵌入表示。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
 
 class AiOllamaChat(AiChat):
     """AiOllamaChat组件。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetModels(cls, aApiKey: str, aUrl: str = ...) -> Any:
         """获取可用的AI模型列表。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetMessages(self, *args, **kwargs) -> Any:
+    def GetMessages(self) -> Any:
         """获取当前对话的所有消息列表。"""
-    def PullModel(self, *args, **kwargs) -> Any:
+    def PullModel(self, const_aModelName: str) -> None:
         """从远程仓库拉取AI模型。"""
-    def CreateModel(self, *args, **kwargs) -> Any:
+    def CreateModel(self, const_aNewModelName: str, const_aModelfileContent: str) -> None:
         """创建一个新的AI模型实例。"""
-    def ShowModelInfo(self, *args, **kwargs) -> Any:
+    def ShowModelInfo(self, const_aModelName: str) -> Any:
         """显示AI模型的详细信息。"""
-    def CopyModel(self, *args, **kwargs) -> Any:
+    def CopyModel(self, const_aSourceModel: str, const_aDestinationModel: str) -> None:
         """复制AI模型。"""
-    def DeleteModel(self, *args, **kwargs) -> Any:
+    def DeleteModel(self, const_aModelName: str) -> None:
         """删除指定的AI模型。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
     keep_alive: str
     """获取或设置Ollama模型的保持活动时间。"""
 
 class AiOllamaEmbeddings(AiEmbeddings):
     """AiOllamaEmbeddings组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
         """创建文本的向量嵌入表示。"""
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
+    def ParseEmbedding(self, JObj: Any) -> None:
         """解析向量嵌入数据。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
 
 class AiOpenChat(AiChat):
     """通用的OpenAI兼容API聊天组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
-    def DeleteFile(self, *args, **kwargs) -> Any:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def DownLoadFile(self, *args, **kwargs) -> Any:
+    def DownLoadFile(self, aMediaFile: AiMediaFile) -> str:
         """从服务器下载已处理的文件。"""
-    def DeleteAllUploadedFiles(self, *args, **kwargs) -> int:
+    def DeleteAllUploadedFiles(self) -> int:
         """删除所有已上传到服务器的文件。"""
-    def NewChat(self, *args, **kwargs) -> Any:
+    def NewChat(self) -> None:
         """开始一个新的对话，清空当前消息历史。"""
-    def InternalRunImageVideoGeneration(self, *args, **kwargs) -> Any:
+    def InternalRunImageVideoGeneration(self, ResMsg: Any, AskMsg: Any) -> str:
         """内部方法：执行图像或视频生成请求。"""
     Store: bool
     """指定是否存储对话历史。"""
@@ -40645,43 +42940,69 @@ class AiOpenAiEmbeddings(AiEmbeddings):
     """使用OpenAI模型进行文本嵌入的组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
         """创建文本的向量嵌入表示。"""
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
+    def ParseEmbedding(self, jObj: Any) -> None:
         """解析向量嵌入数据。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
 
 class AiPrompts(Component):
     """提示词管理组件，用于管理AI对话中的提示模板。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def IndexOf(self, *args, **kwargs) -> int:
-        """返回指定项目在集合中的索引位置。"""
-    def GetString(self, *args, **kwargs) -> str:
-        """根据索引获取提示词模板字符串。"""
-    def AddString(self, *args, **kwargs) -> Any:
-        """向提示词集合中添加新的模板字符串。"""
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """获取指定名称的提示词模板内容。"""
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """获取指定名称的提示词模板内容。"""
-    def GetTemplate(self, *args, **kwargs) -> Any:
-        """获取指定名称的提示词模板内容。"""
-    Items: Any
-    """获取或设置集合中的项目数组。"""
-
-class AIWhisper(Component):
-    """语音处理组件，实现语音识别和文本转语音功能。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Speech(self, *args, **kwargs) -> Any:
+    def IndexOf(self, Nombre: str) -> int:
+        """返回指定项目在集合中的索引位置。"""
+    def GetNombre(self, Index: int) -> str:
+        """获取名称。"""
+    def GetString(self, Nombre: str) -> str:
+        """根据索引获取提示词模板字符串。"""
+    def GetStringByIndex(self, Index: int) -> str:
+        """按索引获取字符串。"""
+    def AddString(self, Nombre: str, Data: str) -> Any:
+        """向提示词集合中添加新的模板字符串。"""
+    @overload
+    def GetTemplate(self, Nombre: str, Params: Any) -> str:
+        """获取指定名称的提示词模板内容。"""
+    @overload
+    def GetTemplate(self, Nombre: str, Params: Any) -> str:
+        """获取指定名称的提示词模板内容。"""
+    @overload
+    def GetTemplate(self, Nombre: str, Params: Any) -> str:
+        """获取指定名称的提示词模板内容。"""
+    def SearchPPM(self, const_AQuery: str, const_AType: str = ..., APage: int = ..., APerPage: int = ...) -> Any:
+        """搜索PPM。"""
+    def LoadFromPPM(self, const_AName: str, const_AVersion: str = ...) -> Any:
+        """从PPM加载。"""
+    def LoadSkillFromPPM(self, const_AName: str, const_AVersion: str = ...) -> Any:
+        """从PPM加载技能。"""
+    Items: Collection
+    """获取或设置集合中的项目数组。"""
+    PPMRegistryUrl: str
+    """获取或设置PPM注册表URL。"""
+
+class AIWhisper(AiSpeechToolBase):
+    """语音处理组件，实现语音识别和文本转语音功能。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Speech(self, aText: str, aVoice: str = ...) -> MemoryStream:
         """将文本合成为语音。"""
-    def Transcription(self, *args, **kwargs) -> str:
+    def Transcription(self, aStream: MemoryStream, aFileName: str, aPrompt: str) -> str:
         """执行语音识别，将音频转换为文字。"""
-    def Translation(self, *args, **kwargs) -> str:
+    def Translation(self, aStream: MemoryStream, aFileName: str, aPrompt: str) -> str:
         """执行语音翻译。"""
     ApiKey: str
     """获取或设置API密钥用于服务认证。"""
@@ -40695,9 +43016,9 @@ class AIWhisper(Component):
     """获取或设置音频格式。"""
     Languaje: str
     """获取或设置语言选项。"""
-    Speed: Any
+    Speed: float
     """获取或设置播放速度。"""
-    Temperature: Any
+    Temperature: float
     """获取或设置AI生成的随机性参数。"""
     ResponseFormat: str
     """获取或设置响应的数据格式。"""
@@ -40710,51 +43031,80 @@ class AiMCPHttpServer(AiMCPServer):
     """AiMCPHttpServer组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Start(self, *args, **kwargs) -> Any:
+    def Start(self) -> None:
         """开始执行操作或启动服务。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
+    Port: int
+    """获取或设置端口。"""
+    Endpoint: str
+    """获取或设置端点。"""
+    CorsEnabled: bool
+    """指定是否CORS启用。"""
+    CorsAllowedOrigins: str
+    """获取或设置CORS允许来源。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    OnValidateRequest: Any
+    """OnValidateRequest事件，在相关操作发生时触发。"""
+    OnClientConnect: Any
+    """OnClientConnect事件，在相关操作发生时触发。"""
+    OnUnauthorizedRequest: Any
+    """OnUnauthorizedRequest事件，在相关操作发生时触发。"""
 
 class AiMCPStdioServer(AiMCPServer):
     """AiMCPStdioServer组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Start(self, *args, **kwargs) -> Any:
+    def Start(self) -> None:
         """开始执行操作或启动服务。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
 
 class AiMCPDirectConnection(AiMCPServer):
     """AiMCPDirectConnection组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Start(self, *args, **kwargs) -> Any:
+    def Start(self) -> None:
         """开始执行操作或启动服务。"""
-    def Stop(self, *args, **kwargs) -> Any:
+    def Stop(self) -> None:
         """停止当前正在执行的操作。"""
-    def ListTools(self, *args, **kwargs) -> Any:
+    def ListTools(self) -> Any:
         """列出此MCP服务器提供的所有工具。"""
-    def ListResources(self, *args, **kwargs) -> Any:
+    def ListResources(self) -> Any:
         """列出此MCP服务器提供的所有资源。"""
-    def ReadResource(self, *args, **kwargs) -> Any:
+    def ReadResource(self, const_AURI: str) -> Any:
         """读取指定资源的内容。"""
-    def CallTool(self, *args, **kwargs) -> Any:
+    @overload
+    def CallTool(self, const_AToolName: str, AArguments: Any) -> Any:
         """调用指定的工具函数。"""
-    def CallTool(self, *args, **kwargs) -> Any:
+    @overload
+    def CallTool(self, const_AToolName: str, AArguments: Strings) -> Any:
         """调用指定的工具函数。"""
 
 class AIVoiceMonitor(Component):
     """语音活动检测组件，用于监控麦克风输入并检测语音活动。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def GetWaveInDevices(cls) -> Any:
+        """获取波形在设备。"""
+    def ConfirmWakeWord(self, AIsValid: bool) -> None:
+        """确认唤醒词。"""
+    @classmethod
+    def LevenshteinDistance(cls, const_s: str, const_t: str) -> int:
+        """Levenshtein距离，返回相应结果。"""
+    @classmethod
+    def RemoveAccents(cls, const_Text: str) -> str:
+        """移除重音。"""
     Active: bool
     """指定组件是否处于活动状态。"""
     IsSpeaking: bool
@@ -40765,23 +43115,27 @@ class AIVoiceMonitor(Component):
     """获取或设置停止检测的灵敏度阈值。"""
     State: Any
     """获取数据集的当前操作状态。"""
-    SoundLevel: Any
+    SoundLevel: int
     """获取当前检测到的音量水平。"""
     NoiseLevel: int
     """获取当前环境的噪音水平。"""
     SilenceDuration: int
     """获取或设置静音持续判定时间。"""
-    SensitivityMultiplier: Any
+    SensitivityMultiplier: float
     """获取或设置灵敏度倍率。"""
-    StopSensitivityMultiplier: Any
+    StopSensitivityMultiplier: float
     """获取或设置停止灵敏度倍率。"""
+    MinSensitivity: int
+    """获取或设置最小灵敏度。"""
+    MinStopSensitivity: int
+    """获取或设置最小停止灵敏度。"""
     WakeWordDurationMs: int
     """获取或设置唤醒词的检测时长(毫秒)。"""
     TranscriptionIntervalMs: int
     """获取或设置转录的采样间隔(毫秒)。"""
     TranscriptionMaxWaitMs: int
     """获取或设置转录的最大等待时间(毫秒)。"""
-    FragmentSplitRatio: Any
+    FragmentSplitRatio: float
     """获取或设置语音片段分割比例。"""
     OnChangeState: Any
     """OnChangeState事件，在相关操作发生时触发。"""
@@ -40807,40 +43161,48 @@ class AIVoiceMonitor(Component):
     """获取或设置唤醒词文本。"""
     WakeWordActive: bool
     """指定唤醒词检测是否激活。"""
+    PreBufferDurationMs: int
+    """获取或设置预缓冲区时长毫秒。"""
+    DeviceID: int
+    """获取或设置设备ID。"""
+    CurrentDeviceName: str
+    """获取当前设备名称。"""
+    RealtimeSTT: AiRealtimeBase
+    """获取或设置实时STT。"""
 
 class AiRagGraphBuilder(Component):
     """知识图谱构建组件，用于从文本数据中自动构建知识图谱。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Process(self, *args, **kwargs) -> Any:
+    def Process(self, AJsonTripletArray: str, AMergeStrategy: Any = ...) -> int:
         """执行数据处理操作。"""
-    def FindExistingNode(self, *args, **kwargs) -> Any:
+    def FindExistingNode(self, AName: str, ALabel: str) -> AiRagGraphNode:
         """查找图谱中已存在的节点。"""
-    Graph: Any
+    Graph: AiRagGraph
     """获取或设置关联的知识图谱组件。"""
-    Embeddings: Any
-    """获取或设置关联的文本嵌入组件。"""
+    OnImportProgress: Any
+    """OnImportProgress事件，在相关操作发生时触发。"""
 
 class AiRagGraphDriverBase(Component):
     """AiRagGraphDriverBase组件。"""
-    def EmbeddingToString(self, *args, **kwargs) -> str:
+    def EmbeddingToString(self, Embedding: Any) -> str:
         """将嵌入向量数据转换为字符串表示。"""
-    def PropertiesToJSONString(self, *args, **kwargs) -> str:
+    def PropertiesToJSONString(self, Properties: Any) -> str:
         """将属性集合转换为JSON字符串。"""
-    def AssignToGraph(self, *args, **kwargs) -> Any:
+    def AssignToGraph(self, Graph: Any) -> None:
         """将数据分配到图谱结构中。"""
 
 class AiRagGraphNode(AiEmbeddingNode):
     """知识图谱中的节点类，代表图中的一个实体。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def PropertiesToJSON(self, *args, **kwargs) -> Any:
+    def PropertiesToJSON(self) -> Any:
         """将节点或边的属性转换为JSON格式。"""
-    def EnsureEdgesAreLoaded(self, *args, **kwargs) -> Any:
+    def EnsureEdgesAreLoaded(self) -> None:
         """确保所有关联的边数据已加载到内存。"""
     ID: str
     """获取或设置节点的唯一标识符。"""
@@ -40861,9 +43223,9 @@ class AiRagGraphEdge(AiEmbeddingNode):
     """知识图谱中的边类，代表图中节点之间的关系。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def PropertiesToJSON(self, *args, **kwargs) -> Any:
+    def PropertiesToJSON(self) -> Any:
         """将节点或边的属性转换为JSON格式。"""
     ID: str
     """获取或设置节点的唯一标识符。"""
@@ -40875,7 +43237,7 @@ class AiRagGraphEdge(AiEmbeddingNode):
     """获取边的起始节点。"""
     ToNode: Any
     """获取边的目标节点。"""
-    Weight: Any
+    Weight: float
     """获取或设置边的权重值。"""
     Properties: Any
     """获取或设置属性集合。"""
@@ -40886,161 +43248,219 @@ class AiRagGraph(Component):
     """知识图谱组件，支持节点和边的管理和图搜索功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def InternalHydrateNode(self, *args, **kwargs) -> Any:
+    def RebuildIndexes(self) -> None:
+        """重建索引。"""
+    def InternalHydrateNode(self, const_ANodeData: Any) -> AiRagGraphNode:
         """内部方法：从持久化数据恢复节点信息。"""
-    def InternalHydrateEdge(self, *args, **kwargs) -> Any:
+    def InternalHydrateEdge(self, const_AEdgeData: Any) -> AiRagGraphEdge:
         """内部方法：从持久化数据恢复边信息。"""
-    def AddNode(self, *args, **kwargs) -> Any:
+    def NewNode(self, const_AID: str, const_ALabel: str, const_AName: str) -> AiRagGraphNode:
+        """新建节点，返回相应结果。"""
+    @overload
+    def AddNode(self, AID: str, ALabel: str, AName: str) -> AiRagGraphNode:
         """在图中添加一个节点。"""
-    def AddNode(self, *args, **kwargs) -> Any:
+    @overload
+    def AddNode(self, ANode: AiRagGraphNode) -> AiRagGraphNode:
         """在图中添加一个节点。"""
-    def AddEdge(self, *args, **kwargs) -> Any:
+    def NewEdge(self, AFromNode: AiRagGraphNode, AToNode: AiRagGraphNode, const_AID: str, const_ALabel: str, const_AName: str, AWeight: float = ...) -> AiRagGraphEdge:
+        """新建边，返回相应结果。"""
+    @overload
+    def AddEdge(self, AFromNode: AiRagGraphNode, AToNode: AiRagGraphNode, AID: str, ALabel: str, AName: str) -> AiRagGraphEdge:
         """在图中添加一条边。"""
-    def AddEdge(self, *args, **kwargs) -> Any:
+    @overload
+    def AddEdge(self, AFromNode: AiRagGraphNode, AToNode: AiRagGraphNode, AID: str, ALabel: str, AName: str, AWeight: float) -> AiRagGraphEdge:
         """在图中添加一条边。"""
-    def AddEdge(self, *args, **kwargs) -> Any:
+    @overload
+    def AddEdge(self, AEdge: AiRagGraphEdge) -> AiRagGraphEdge:
         """在图中添加一条边。"""
-    def DeleteNode(self, *args, **kwargs) -> Any:
+    @overload
+    def DeleteNode(self, ANode: AiRagGraphNode) -> None:
         """从图中删除指定节点。"""
-    def DeleteNode(self, *args, **kwargs) -> Any:
+    @overload
+    def DeleteNode(self, AID: str) -> None:
         """从图中删除指定节点。"""
-    def DeleteEdge(self, *args, **kwargs) -> Any:
+    @overload
+    def DeleteEdge(self, AEdge: AiRagGraphEdge) -> None:
         """从图中删除指定边。"""
-    def DeleteEdge(self, *args, **kwargs) -> Any:
+    @overload
+    def DeleteEdge(self, AID: str) -> None:
         """从图中删除指定边。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    def FindNodeByID(self, *args, **kwargs) -> Any:
+    def FindNodeByID(self, AID: str) -> AiRagGraphNode:
         """根据节点ID查找节点。"""
-    def FindEdgeByID(self, *args, **kwargs) -> Any:
+    def FindEdgeByID(self, AID: str) -> AiRagGraphEdge:
         """根据边ID查找边。"""
-    def FindNodesByLabel(self, *args, **kwargs) -> Any:
+    def FindNodesByLabel(self, ALabel: str) -> Any:
         """根据标签查找所有匹配的节点。"""
-    def FindEdge(self, *args, **kwargs) -> Any:
+    def FindEdge(self, AFromNode: AiRagGraphNode, AToNode: AiRagGraphNode, AEdgeLabel: str) -> AiRagGraphEdge:
         """根据条件查找边。"""
-    def FindNodeByName(self, *args, **kwargs) -> Any:
+    def FindNodeByName(self, AName: str, ANodeLabel: str) -> AiRagGraphNode:
         """根据节点名称查找节点。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
+    @overload
+    def SaveToStream(self, AStream: Stream) -> None:
         """将数据保存到流中。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
+    @overload
+    def SaveToStream(self, AStream: Stream, aFull: bool) -> None:
         """将数据保存到流中。"""
-    def SaveToDot(self, *args, **kwargs) -> Any:
+    def SaveToDot(self, const_AFileName: str) -> None:
         """以DOT格式保存图形数据。"""
-    def SaveToMakerAi(self, *args, **kwargs) -> Any:
+    def SaveToMakerAi(self, const_AFileName: str, const_aFull: bool = ...) -> None:
         """以Google Maker AI格式保存图形数据。"""
-    def SaveToGraphML(self, *args, **kwargs) -> Any:
+    def SaveToGraphML(self, const_AFileName: str) -> None:
         """以GraphML格式保存图形数据。"""
-    def LoadFromStream(self, *args, **kwargs) -> Any:
+    def LoadFromStream(self, AStream: Stream) -> None:
         """从流中加载数据。"""
-    def BeginUpdate(self, *args, **kwargs) -> Any:
+    def BeginUpdate(self) -> None:
         """开始批量更新操作，暂停屏幕重绘以提高性能。"""
-    def EndUpdate(self, *args, **kwargs) -> Any:
+    def EndUpdate(self) -> None:
         """结束批量更新操作，恢复屏幕重绘并刷新显示。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    @overload
+    def SaveToFile(self, const_AFileName: str, AFormat: Any, aFull: bool = ...) -> None:
         """将数据保存到指定文件。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    @overload
+    def SaveToFile(self, const_AFileName: str, aFull: bool) -> None:
         """将数据保存到指定文件。"""
-    def GetShortestPath(self, *args, **kwargs) -> Any:
+    def GetShortestPath(self, AStartNode: AiRagGraphNode, AEndNode: AiRagGraphNode) -> Any:
         """计算两个节点之间的最短路径。"""
-    def GetNodesByDegree(self, *args, **kwargs) -> Any:
+    def GetNodesByDegree(self, ATop: int = ..., ADegreeType: Any = ...) -> Any:
         """按节点度数排序获取节点列表。"""
-    def GetClosenessCentrality(self, *args, **kwargs) -> Any:
+    def GetClosenessCentrality(self, ANode: AiRagGraphNode) -> float:
         """计算指定节点的接近中心性。"""
-    def Search(self, *args, **kwargs) -> Any:
+    def DetectCommunities(self, AIterations: int = ...) -> Any:
+        """检测社区，返回相应结果。"""
+    def UpdateCommunityLabels(self) -> None:
+        """更新社区标签。"""
+    def Search(self, const_APrompt: str, const_ADepth: int = ..., ALimit: int = ..., const_APrecision: float = ..., const_AFilter: Any = ...) -> Any:
         """在图中执行搜索操作。"""
-    def SearchText(self, *args, **kwargs) -> str:
+    def SearchText(self, const_APrompt: str, ADepth: int = ..., ShowProperties: bool = ..., const_ALimit: int = ..., const_APrecision: float = ..., const_AFilter: Any = ...) -> str:
         """在图中搜索文本内容。"""
-    def Query(self, *args, **kwargs) -> Any:
+    def Query(self, const_APlan: Any, ADepth: int = ..., const_ALimit: int = ..., const_APrecision: float = ...) -> Any:
         """执行图查询操作。"""
-    def GetAllShortestPaths(self, *args, **kwargs) -> Any:
+    @overload
+    def ExecuteMakerGQL(self, const_ACode: str, out_AResultObjects: Any, ADepth: int = ...) -> str:
+        """执行Maker GQL。"""
+    @overload
+    def ExecuteMakerGQL(self, const_ACode: str) -> str:
+        """执行Maker GQL。"""
+    def GetAllShortestPaths(self, AStartNode: AiRagGraphNode, AEndNode: AiRagGraphNode) -> Any:
         """获取两个节点之间的所有最短路径。"""
-    def Match(self, *args, **kwargs) -> Any:
+    def Match(self, AQuery: Any, ADepth: int = ...) -> Any:
         """执行图模式匹配操作。"""
-    def GetUniqueNodeLabels(self, *args, **kwargs) -> Any:
+    def GetUniqueNodeLabels(self) -> Any:
         """获取图中所有唯一的节点标签列表。"""
-    def GetUniqueEdgeLabels(self, *args, **kwargs) -> Any:
+    def GetUniqueEdgeLabels(self) -> Any:
         """获取图中所有唯一的边标签列表。"""
-    def FindNodesByProperty(self, *args, **kwargs) -> Any:
+    def FindNodesByProperty(self, const_AKey: str, const_AValue: Any) -> Any:
         """根据属性条件查找匹配的节点。"""
-    FindNodesByProperty: Any
-    """根据属性条件查找匹配的节点。"""
-    def GetNeighbors(self, *args, **kwargs) -> Any:
+    def GetNeighbors(self, ANode: AiRagGraphNode, ADirection: Any = ...) -> Any:
         """获取指定节点的所有邻居节点。"""
-    def CountNodesByLabel(self, *args, **kwargs) -> int:
+    def CountNodesByLabel(self, const_ALabel: str) -> int:
         """统计指定类型标签的节点数量。"""
-    def CountEdgesByLabel(self, *args, **kwargs) -> int:
+    def CountEdgesByLabel(self, const_ALabel: str) -> int:
         """统计指定类型标签的边数量。"""
-    def ExtractSubgraph(self, *args, **kwargs) -> Any:
+    def ExtractSubgraph(self, ANodes: Any) -> AiRagGraph:
         """从图中提取子图。"""
-    def MergeNodes(self, *args, **kwargs) -> Any:
+    def MergeNodes(self, ASurvivingNode: AiRagGraphNode, ASubsumedNode: AiRagGraphNode, APropertyMergeStrategy: Any = ...) -> None:
         """合并两个节点为一个节点。"""
-    def FindNodeNamesByLabel(self, *args, **kwargs) -> Any:
+    def FindNodeNamesByLabel(self, const_ANodeLabel: str, const_ASearchText: str, ALimit: int = ...) -> Any:
         """根据标签查找所有匹配的节点名称。"""
-    def EdgeExistsInMemory(self, *args, **kwargs) -> bool:
+    def EdgeExistsInMemory(self, const_AEdgeID: str) -> bool:
         """检查指定边是否已加载到内存中。"""
+    def GraphToContextText(self, const_ANodes: Any) -> str:
+        """图到上下文文本，返回相应结果。"""
     NodeCount: int
     """获取图中的节点总数。"""
     EdgeCount: int
     """获取图中的边总数。"""
-    Nodes: Any
+    Nodes: AiRAGVector
     """获取图中的所有节点列表。"""
-    Edges: Any
+    Edges: AiRAGVector
     """获取图中的所有边列表。"""
-    Embeddings: Any
+    Embeddings: AiEmbeddingsCore
     """获取或设置关联的文本嵌入组件。"""
-    InMemoryIndexType: Any
-    """获取或设置内存索引的类型。"""
-    Driver: Any
+    Driver: AiRagGraphDriverBase
     """获取或设置图数据库的驱动。"""
+    SearchOptions: Any
+    """获取或设置搜索选项。"""
 
 class AiRAGVector(Component):
     """向量数据库组件，用于存储和检索文本的向量嵌入。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    @overload
+    def Create(self, aOwner: Component, AOwnsObjects: bool) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    @overload
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
+    def SaveToStream(self, Stream: MemoryStream) -> None:
         """将数据保存到流中。"""
-    def LoadFromStream(self, *args, **kwargs) -> Any:
+    def LoadFromStream(self, Stream: Stream) -> int:
         """从流中加载数据。"""
-    def SaveToFile(self, *args, **kwargs) -> Any:
+    def SaveToFile(self, FileName: str) -> None:
         """将数据保存到指定文件。"""
-    def LoadFromFile(self, *args, **kwargs) -> Any:
+    def LoadFromFile(self, FileName: str) -> int:
         """从指定文件加载数据。"""
-    def Connect(self, *args, **kwargs) -> bool:
+    def Connect(self, aHost: str, aPort: str, aLogin: str, aPassword: str) -> bool:
         """建立与服务器或资源的连接。"""
-    def Search(self, *args, **kwargs) -> Any:
+    @overload
+    def Search(self, Target: AiEmbeddingNode, aLimit: int, aPrecision: float, aFilter: Any) -> AiRAGVector:
         """在图中执行搜索操作。"""
-    def Search(self, *args, **kwargs) -> Any:
+    @overload
+    def Search(self, Prompt: str, aLimit: int, aPrecision: float, aFilter: Any) -> AiRAGVector:
         """在图中执行搜索操作。"""
-    def SearchText(self, *args, **kwargs) -> Any:
+    @overload
+    def SearchText(self, aPrompt: str, aLimit: int = ..., aPrecision: float = ..., aFilter: Any = ..., IncludeMetadata: bool = ..., IncludeScore: bool = ...) -> str:
         """在图中搜索文本内容。"""
-    def SearchText(self, *args, **kwargs) -> Any:
+    @overload
+    def SearchText(self, aPrompt: AiEmbeddingNode, aLimit: int = ..., aPresicion: float = ..., aFilter: Any = ..., IncludeMetadata: bool = ..., IncludeScore: bool = ...) -> str:
         """在图中搜索文本内容。"""
-    def SearchText(self, *args, **kwargs) -> Any:
-        """在图中搜索文本内容。"""
-    def BuildIndex(self, *args, **kwargs) -> Any:
+    @overload
+    def ExecuteVQL(self, const_AVqlQuery: str) -> str:
+        """执行VQL。"""
+    @overload
+    def ExecuteVQL(self, const_AVqlQuery: str, out_AResultVector: AiRAGVector) -> str:
+        """执行VQL。"""
+    def ExecuteRequest(self, ARequest: Any, out_AResultVector: AiRAGVector) -> str:
+        """执行请求。"""
+    def VectorToContextText(self, DataVec: AiRAGVector, IncludeMetadata: bool, IncludeScore: bool) -> str:
+        """向量到上下文文本，返回相应结果。"""
+    def BuildIndex(self) -> None:
         """构建向量索引。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    def BuildLexicalIndex(self) -> None:
+        """构建词法索引。"""
+    @overload
+    def AddItem(self, aItem: AiEmbeddingNode) -> str:
         """向集合中添加一个项目。"""
-    def AddItem(self, *args, **kwargs) -> Any:
+    @overload
+    def AddItem(self, aItem: AiEmbeddingNode, MetaData: Any) -> int:
         """向集合中添加一个项目。"""
-    def AddItemsFromJSonArray(self, *args, **kwargs) -> Any:
+    @overload
+    def AddItem(self, aText: str, MetaData: Any = ...) -> AiEmbeddingNode:
+        """向集合中添加一个项目。"""
+    def AddItemsFromJSonArray(self, aJSonArray: Any, MetaData: Any = ...) -> int:
         """从JSON数组批量添加项目。"""
-    def AddItemsFromPlainText(self, *args, **kwargs) -> Any:
+    def AddItemsFromPlainText(self, aText: str, MetaData: Any, aLenChunk: int, aOverlapPct: int) -> int:
         """从纯文本批量添加项目。"""
-    def CreateEmbeddingNode(self, *args, **kwargs) -> Any:
+    def CreateEmbeddingNode(self, aText: str, aEmbeddings: AiEmbeddingsCore = ...) -> AiEmbeddingNode:
         """创建嵌入向量节点。"""
-    def Count(self, *args, **kwargs) -> int:
+    def Count(self) -> int:
         """获取集合中的项目数量。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    def Rerank(self, *args, **kwargs) -> Any:
+    def RegenerateAll(self, const_aNewModel: str = ...) -> None:
+        """重新生成全部。"""
+    @overload
+    def Rerank(self, Target: AiEmbeddingNode, aAutoRegenerate: bool = ...) -> None:
         """对搜索结果进行重新排序。"""
-    def Rerank(self, *args, **kwargs) -> Any:
+    @overload
+    def Rerank(self, NewPrompt: str, aAutoRegenerate: bool = ...) -> None:
         """对搜索结果进行重新排序。"""
+    def FilterByMetaData(self, const_aCriteria: Any) -> AiRAGVector:
+        """按元数据数据过滤。"""
     RagIndex: Any
     """获取或设置RAG索引对象。"""
     Active: bool
@@ -41053,7 +43473,11 @@ class AiRAGVector(Component):
     """OnDataVecSearch事件，在相关操作发生时触发。"""
     OnGetEmbedding: Any
     """OnGetEmbedding事件，在相关操作发生时触发。"""
-    Embeddings: Any
+    OnFilterItem: Any
+    """OnFilterItem事件，在相关操作发生时触发。"""
+    OnImportProgress: Any
+    """OnImportProgress事件，在相关操作发生时触发。"""
+    Embeddings: AiEmbeddingsCore
     """获取或设置关联的文本嵌入组件。"""
     Model: str
     """获取或设置使用的AI模型名称。"""
@@ -41065,35 +43489,45 @@ class AiRAGVector(Component):
     """获取或设置描述文本。"""
     InMemoryIndexType: Any
     """获取或设置内存索引的类型。"""
+    LexicalLanguage: Any
+    """获取或设置词法语言。"""
+    Driver: AiVectorStoreDriverBase
+    """获取或设置驱动。"""
+    Entidad: str
+    """获取或设置实体。"""
+    OwnsObjects: bool
+    """指定是否拥有对象。"""
+    SearchOptions: Any
+    """获取或设置搜索选项。"""
 
 class AIBlackboard(Object):
     """黑板数据结构组件，用于在AI代理之间共享数据和状态。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Clear(self, *args, **kwargs) -> Any:
+    def Clear(self) -> None:
         """清除所有数据或内容，将组件重置为初始状态。"""
-    def SetValue(self, *args, **kwargs) -> Any:
+    def SetValue(self, Key: str, Value: Any) -> None:
         """在黑板上设置指定键的值。"""
-    def TryGetValue(self, *args, **kwargs) -> bool:
+    def TryGetValue(self, Key: str, Value: Any) -> bool:
         """尝试获取指定键的值，成功返回True。"""
-    def SetString(self, *args, **kwargs) -> Any:
+    def SetString(self, Key: str, Value: str) -> None:
         """设置字符串类型的值。"""
-    def GetString(self, *args, **kwargs) -> str:
+    def GetString(self, Key: str) -> str:
         """根据索引获取提示词模板字符串。"""
-    def SetInteger(self, *args, **kwargs) -> Any:
+    def SetInteger(self, Key: str, Value: int) -> None:
         """设置整数类型的值。"""
-    def GetInteger(self, *args, **kwargs) -> int:
+    def GetInteger(self, Key: str) -> int:
         """获取整数类型的值。"""
-    def SetBoolean(self, *args, **kwargs) -> Any:
+    def SetBoolean(self, Key: str, Value: bool) -> None:
         """设置布尔类型的值。"""
-    def GetBoolean(self, *args, **kwargs) -> bool:
+    def GetBoolean(self, Key: str) -> bool:
         """获取布尔类型的值。"""
 
 class AiToolBase(Component):
     """AiToolBase组件。"""
-    def Run(self, *args, **kwargs) -> Any:
+    def Run(self) -> None:
         """运行或执行主要功能。"""
     Description: str
     """获取或设置描述文本。"""
@@ -41112,27 +43546,29 @@ class AIAgentsBase(Component):
 
 class AIAgentsLink(AIAgentsBase):
     """AI代理流程图中的连接线组件，定义节点之间的执行流程。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Print(self, *args, **kwargs) -> Any:
+    def Print(self, Value: str) -> None:
         """打印内容。"""
-    def DoExecute(self, *args, **kwargs) -> Any:
+    def DoExecute(self, Sender: AIAgentsNode) -> None:
         """执行连接逻辑的处理。"""
-    def AddConditionalTarget(self, *args, **kwargs) -> Any:
+    def AddConditionalTarget(self, const_AKey: str, ANode: AIAgentsNode) -> None:
         """添加条件跳转的目标节点。"""
-    NextA: Any
+    NoCycles: int
+    """获取或设置无循环。"""
+    NextA: AIAgentsNode
     """获取或设置条件A的下一目标。"""
-    NextB: Any
+    NextB: AIAgentsNode
     """获取或设置条件B的下一目标。"""
-    NextC: Any
+    NextC: AIAgentsNode
     """获取或设置条件C的下一目标。"""
-    NextD: Any
+    NextD: AIAgentsNode
     """获取或设置条件D的下一目标。"""
-    NextNo: Any
+    NextNo: AIAgentsNode
     """获取或设置默认无条件的下一目标。"""
-    Graph: Any
+    Graph: AIAgentManager
     """获取或设置关联的知识图谱组件。"""
     OnExecute: Any
     """OnExecute事件，在相关操作发生时触发。"""
@@ -41155,29 +43591,37 @@ class AIAgentsLink(AIAgentsBase):
 
 class AIAgentsNode(AIAgentsBase):
     """AI代理流程图中的节点组件，代表一个执行步骤。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Print(self, *args, **kwargs) -> Any:
+    def Print(self, Value: str) -> None:
         """打印内容。"""
-    def ForceFinalExecute(self, *args, **kwargs) -> Any:
+    def ForceFinalExecute(self) -> None:
         """强制执行最终处理步骤。"""
-    def RequestConfirmation(self, *args, **kwargs) -> Any:
+    def RequestConfirmation(self, const_AQuestion: str, Buttons: Any, var_AResponse: str) -> Any:
         """请求用户确认操作。"""
-    def RequestInput(self, *args, **kwargs) -> bool:
+    def RequestInput(self, const_ACaption: str, const_APrompt: str, var_AValue: str) -> bool:
         """请求用户输入信息。"""
+    def Suspend(self, const_AReason: str, const_AContext: str = ...) -> None:
+        """挂起。"""
     Error: bool
     """指示是否发生错误。"""
     MsgError: str
     """获取错误消息文本。"""
+    Suspended: bool
+    """指示是否已挂起。"""
+    SuspendReason: str
+    """获取挂起原因。"""
+    SuspendContext: str
+    """获取挂起上下文。"""
     Input: str
     """获取或设置输入内容。"""
     Output: str
     """获取或设置输出内容。"""
-    Next: Any
+    Next: AIAgentsLink
     """获取或设置下一个节点的引用。"""
-    Graph: Any
+    Graph: AIAgentManager
     """获取或设置关联的知识图谱组件。"""
     OnExecute: Any
     """OnExecute事件，在相关操作发生时触发。"""
@@ -41185,149 +43629,100 @@ class AIAgentsNode(AIAgentsBase):
     """获取或设置提示词模板的名称。"""
     JoinMode: Any
     """获取或设置节点合并模式。"""
-    Tool: Any
+    Tool: AiToolBase
     """获取或设置关联的工具。"""
 
-class AIAgents(Component):
+class AIAgents(AIAgentManager):
     """AI代理工作流引擎组件，通过图形化的节点和连接定义执行流程。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
-        """销毁组件实例并释放其占用的所有资源。"""
-    def Abort(self, *args, **kwargs) -> Any:
-        """中止当前正在执行的操作。"""
-    def Run(self, *args, **kwargs) -> Any:
-        """运行或执行主要功能。"""
-    def FindNode(self, *args, **kwargs) -> Any:
-        """在流程图中查找指定节点。"""
-    def DoError(self, *args, **kwargs) -> Any:
-        """处理和记录错误信息。"""
-    def DoConfirm(self, *args, **kwargs) -> Any:
-        """执行确认操作。"""
-    def SetOnPrintEvent(self, *args, **kwargs) -> Any:
-        """设置打印事件的处理回调函数。"""
-    def ClearGraph(self, *args, **kwargs) -> Any:
-        """清除流程图中的所有节点和连线。"""
-    def AddNode(self, *args, **kwargs) -> Any:
-        """在图中添加一个节点。"""
-    def AddEdge(self, *args, **kwargs) -> Any:
-        """在图中添加一条边。"""
-    def AddConditionalEdge(self, *args, **kwargs) -> Any:
-        """添加条件判断的连接线。"""
-    def SetEntryPoint(self, *args, **kwargs) -> Any:
-        """设置流程图的入口点。"""
-    def SetFinishPoint(self, *args, **kwargs) -> Any:
-        """设置流程图的结束点。"""
-    def Compile(self, *args, **kwargs) -> Any:
-        """编译流程图定义。"""
-    def SaveToStream(self, *args, **kwargs) -> Any:
-        """将数据保存到流中。"""
-    def LoadFromStream(self, *args, **kwargs) -> Any:
-        """从流中加载数据。"""
-    def SaveStateToStream(self, *args, **kwargs) -> Any:
-        """将当前状态保存到流中。"""
-    def LoadStateFromStream(self, *args, **kwargs) -> Any:
-        """从流中恢复之前保存的状态。"""
-    Busy: bool
-    """指示组件当前是否正在执行操作。"""
-    Blackboard: Any
-    """获取或设置黑板数据存储。"""
-    StartNode: Any
-    """获取或设置流程图的起始节点。"""
-    EndNode: Any
-    """获取或设置流程图的结束节点。"""
-    OnPrint: Any
-    """OnPrint事件，在相关操作发生时触发。"""
-    OnEnd: Any
-    """OnEnd事件，在相关操作发生时触发。"""
-    OnError: Any
-    """OnError事件，在相关操作发生时触发。"""
-    OnConfirm: Any
-    """OnConfirm事件，在相关操作发生时触发。"""
-    OnEnterNode: Any
-    """OnEnterNode事件，在相关操作发生时触发。"""
-    OnExitNode: Any
-    """OnExitNode事件，在相关操作发生时触发。"""
-    MaxConcurrentTasks: int
-    """获取或设置最大并发任务数。"""
-    OnStart: Any
-    """OnStart事件，在相关操作发生时触发。"""
-    OnFinish: Any
-    """OnFinish事件，在相关操作发生时触发。"""
-    TimeoutMs: Any
-    """获取或设置超时时间（毫秒）。"""
-    Description: str
-    """获取或设置描述文本。"""
 
 class AiKimiChat(AiChat):
     """AiKimiChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
 
 class AiLMStudioChat(AiChat):
     """AiLMStudioChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
 
 class AiLMStudioEmbeddings(AiEmbeddings):
     """AiLMStudioEmbeddings组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
 
 class AiMediaFileGemini(AiMediaFile):
     """AiMediaFileGemini组件。"""
 
 class AiGeminiChat(AiChat):
     """专为Google Gemini模型设计的AI聊天组件，支持文件上传和缓存功能。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetMessages(self, *args, **kwargs) -> Any:
+    def GetMessages(self) -> Any:
         """获取当前对话的所有消息列表。"""
-    def GetModels(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetModels(cls, aApiKey: str, aUrl: str = ...) -> Any:
         """获取可用的AI模型列表。"""
-    def UploadFile(self, *args, **kwargs) -> Any:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def DownLoadFile(self, *args, **kwargs) -> Any:
+    def DownLoadFile(self, aMediaFile: AiMediaFile) -> str:
         """从服务器下载已处理的文件。"""
-    def DeleteFile(self, *args, **kwargs) -> Any:
+    def DeleteFile(self, aMediaFile: AiMediaFile) -> str:
         """删除已上传到服务器的文件。"""
-    def CheckFileState(self, *args, **kwargs) -> Any:
+    def CheckFileState(self, aMediaFile: AiMediaFile) -> str:
         """检查已上传文件的处理状态。"""
-    def UploadFileToCache(self, *args, **kwargs) -> Any:
+    def UploadFileToCache(self, aMediaFile: AiMediaFile, aTTL_Seconds: int = ...) -> str:
         """将文件上传到服务器缓存中。"""
-    def RetrieveCache(self, *args, **kwargs) -> Any:
+    def RetrieveCache(self, const_CacheName: str) -> Any:
         """检索缓存中的内容。"""
-    def ListCaches(self, *args, **kwargs) -> Any:
+    def ListCaches(self) -> Any:
         """列出所有缓存的内容。"""
-    def DeleteCache(self, *args, **kwargs) -> bool:
+    def DeleteCache(self, const_CacheName: str) -> bool:
         """删除指定缓存内容。"""
-    def CreateBatchJob(self, *args, **kwargs) -> str:
+    def CreateBatchJob(self, const_SourceFileUri: str, const_OutputUri: str = ...) -> str:
         """创建批量处理任务。"""
-    def GetBatchJob(self, *args, **kwargs) -> str:
+    def GetBatchJob(self, const_JobName: str) -> str:
         """获取批量处理任务的执行状态和结果。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
     ThinkingBudget: int
     """获取或设置思考过程的预算额度。"""
@@ -41338,32 +43733,41 @@ class AiGeminiChat(AiChat):
 
 class AiGeminiEmbeddings(AiEmbeddings):
     """使用Google Gemini模型进行文本嵌入的组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def CreateEmbedding(self, *args, **kwargs) -> Any:
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
         """创建文本的向量嵌入表示。"""
-    def ParseEmbedding(self, *args, **kwargs) -> Any:
+    def ParseEmbedding(self, jObj: Any) -> None:
         """解析向量嵌入数据。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
 
 class AiVeoGenerator(Component):
     """Google Veo视频生成组件，支持从文本和图片生成视频。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def GenerateFromText(self, *args, **kwargs) -> Any:
+    def GenerateFromText(self, const_APrompt: str) -> Any:
         """从文本描述生成视频。"""
-    def GenerateFromImage(self, *args, **kwargs) -> Any:
+    def GenerateFromImage(self, const_APrompt: str, AImage: AiMediaFile) -> Any:
         """从参考图片生成视频。"""
-    def GenerateFromFrames(self, *args, **kwargs) -> Any:
+    def GenerateFromFrames(self, const_APrompt: str, AFirstFrame: AiMediaFile, ALastFrame: AiMediaFile) -> Any:
         """从视频帧序列生成视频。"""
-    def GenerateWithReferences(self, *args, **kwargs) -> Any:
+    def GenerateWithReferences(self, const_APrompt: str, AReferenceImages: Any) -> Any:
         """使用参考素材生成视频。"""
-    def ExtendVideo(self, *args, **kwargs) -> Any:
+    def ExtendVideo(self, const_APrompt: str, AVideoToExtend: AiMediaFile) -> Any:
         """延长已有视频的时长。"""
-    def UploadFile(self, *args, **kwargs) -> str:
+    def UploadFile(self, aMediaFile: AiMediaFile) -> str:
         """将文件上传到服务器供处理。"""
-    def UploadFileSync(self, *args, **kwargs) -> Any:
+    def UploadFileSync(self, aMediaFile: AiMediaFile) -> None:
         """以同步方式上传文件。"""
     ApiKey: str
     """获取或设置API密钥用于服务认证。"""
@@ -41381,7 +43785,7 @@ class AiVeoGenerator(Component):
     """获取或设置人物生成模式。"""
     NegativePrompt: str
     """获取或设置反向提示词。"""
-    Seed: Any
+    Seed: int
     """获取或设置随机种子。"""
     OnProgress: Any
     """OnProgress事件，在相关操作发生时触发。"""
@@ -41394,15 +43798,15 @@ class AiSoraGenerator(Component):
     """OpenAI Sora视频生成组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def GenerateFromText(self, *args, **kwargs) -> Any:
+    def GenerateFromText(self, const_Prompt: str) -> Any:
         """从文本描述生成视频。"""
-    def GenerateFromImage(self, *args, **kwargs) -> Any:
+    def GenerateFromImage(self, const_ImagePath: str, const_Prompt: str = ...) -> Any:
         """从参考图片生成视频。"""
-    def RemixVideo(self, *args, **kwargs) -> Any:
+    def RemixVideo(self, const_VideoID: str, const_Prompt: str) -> Any:
         """对已有视频进行重新混剪。"""
     ApiKey: str
     """获取或设置API密钥用于服务认证。"""
-    Model: Any
+    Model: str
     """获取或设置使用的AI模型名称。"""
     CustomModelName: str
     """获取或设置自定义模型名称。"""
@@ -41423,19 +43827,31 @@ class AiOpenAiAudio(Component):
     """OpenAI音频处理组件，支持文本转语音和语音转文本功能。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Speech(self, *args, **kwargs) -> Any:
+    @overload
+    def Speech(self, const_AInput: str) -> MemoryStream:
         """将文本合成为语音。"""
-    def Speech(self, *args, **kwargs) -> Any:
+    @overload
+    def Speech(self, const_AInput: str, const_AOutputStream: Stream) -> None:
         """将文本合成为语音。"""
-    def SpeechStreamed(self, *args, **kwargs) -> Any:
+    def SpeechStreamed(self, const_AInput: str) -> None:
         """以流式方式将文本逐步合成为语音。"""
-    def Transcribe(self, *args, **kwargs) -> Any:
+    def Transcribe(self, const_AAudioFile: AiMediaFile, const_APrompt: str = ...) -> Any:
         """将音频转录为文本。"""
-    def TranscribeStreamed(self, *args, **kwargs) -> Any:
+    def TranscribeStreamed(self, const_AAudioFile: AiMediaFile) -> None:
         """以流式方式将音频逐步转录为文字。"""
-    def TranslateToEnglish(self, *args, **kwargs) -> Any:
+    @overload
+    def AddKnownSpeaker(self, const_aName: str, aAudio: Stream, const_aMimeType: str = ...) -> None:
+        """添加已知说话人。"""
+    @overload
+    def AddKnownSpeaker(self, const_aName: str, const_aFileName: str) -> None:
+        """添加已知说话人。"""
+    def ClearKnownSpeakers(self) -> None:
+        """清除已知说话人。"""
+    def KnownSpeakerCount(self) -> int:
+        """已知说话人数量，返回相应结果。"""
+    def TranslateToEnglish(self, const_AAudioFile: AiMediaFile, const_APrompt: str = ...) -> Any:
         """将音频内容翻译为英文文本。"""
     ApiKey: str
     """获取或设置API密钥用于服务认证。"""
@@ -41447,7 +43863,7 @@ class AiOpenAiAudio(Component):
     """获取或设置TTS语音音色。"""
     TTSResponseFormat: Any
     """获取或设置TTS响应格式。"""
-    TTSSpeed: Any
+    TTSSpeed: float
     """获取或设置TTS语速。"""
     TTSInstructions: str
     """获取或设置TTS语音的指令参数。"""
@@ -41457,10 +43873,16 @@ class AiOpenAiAudio(Component):
     """获取或设置语音转录响应格式。"""
     TranscriptionLanguage: str
     """获取或设置语音识别的目标语言。"""
-    TranscriptionTemperature: Any
+    TranscriptionTemperature: float
     """获取或设置语音识别的温度参数。"""
     TranscriptionTimestampGranularities: Any
     """获取或设置语音识别的时间戳粒度。"""
+    TranscriptionLogprobs: bool
+    """指定是否语音转写对数概率。"""
+    TranscriptionKeywords: Strings
+    """获取或设置语音转写关键词。"""
+    TranscriptionLanguages: Strings
+    """获取或设置语音转写语言。"""
     OnAudioChunkReceived: Any
     """OnAudioChunkReceived事件，在相关操作发生时触发。"""
     OnSpeechCompleted: Any
@@ -41476,28 +43898,44 @@ class AiFunctions(Component):
     """AI函数调用管理组件，用于管理AI可调用的函数和工具。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Loaded(self, *args, **kwargs) -> Any:
+    def Loaded(self) -> None:
         """在组件从流中加载完成后执行初始化。"""
-    def GetTools(self, *args, **kwargs) -> Any:
+    def GetTools(self, aToolFormat: Any) -> str:
         """获取所有已注册的AI工具函数列表。"""
-    def DoCallFunction(self, *args, **kwargs) -> Any:
+    def DoCallFunction(self, ToolCall: Any) -> bool:
         """执行指定的AI工具函数调用。"""
-    def SetFunctionEnable(self, *args, **kwargs) -> bool:
+    def InitAutoMCP(self) -> None:
+        """初始化自动MCP。"""
+    def SetFunctionEnable(self, FunctionName: str, Enabled: bool) -> bool:
         """启用或禁用指定函数。"""
-    def SetMCPClientEnable(self, *args, **kwargs) -> bool:
+    def SetMCPClientEnable(self, Name: str, Enabled: bool) -> bool:
         """启用或禁用指定MCP客户端。"""
-    def ExtractFunctionNames(self, *args, **kwargs) -> Any:
+    def ExtractFunctionNames(self) -> Any:
         """提取所有已注册函数的名称列表。"""
-    def AddMCPClient(self, *args, **kwargs) -> Any:
+    def AddMCPClient(self, aMCPClient: Any) -> None:
         """添加MCP客户端连接。"""
-    def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
+    def AddBorrowedMCPClient(self, aMCPClient: Any) -> None:
+        """添加借用MCP客户端。"""
+    @overload
+    def ImportClaudeMCPConfiguration(self, AConfig: Any) -> int:
         """导入Claude MCP配置文件。"""
-    def ImportClaudeMCPConfiguration(self, *args, **kwargs) -> Any:
+    @overload
+    def ImportClaudeMCPConfiguration(self, const_AJsonFilePath: str = ...) -> int:
         """导入Claude MCP配置文件。"""
-    def Functions(self, *args, **kwargs) -> Any:
-        """获取或设置已注册的函数集合。"""
+    def SaveMCPConfiguration(self, const_AFilePath: str = ...) -> bool:
+        """保存MCP配置。"""
+    def SearchPPMMCP(self, const_AQuery: str, APage: int = ..., APerPage: int = ..., const_ARegistryUrl: str = ...) -> Any:
+        """搜索PPMMCP。"""
+    def ImportMCPFromPPM(self, const_AName: str, const_AVersion: str = ..., const_ARegistryUrl: str = ...) -> Any:
+        """从PPM导入MCP。"""
+    def InstallMCPFromPPM(self, const_AName: str, const_AVersion: str = ..., const_AInstallDir: str = ..., const_ARegistryUrl: str = ...) -> Any:
+        """从PPM安装MCP。"""
+    def GetMCPSchema(self, const_AName: str, const_AVersion: str = ..., const_ARegistryUrl: str = ...) -> Any:
+        """获取MCP模式定义。"""
+    def GetAutoMCPSystemPrompt(self) -> str:
+        """获取自动MCP系统提示词。"""
     Functions: Any
     """获取或设置已注册的函数集合。"""
     MCPClients: Any
@@ -41508,50 +43946,73 @@ class AiFunctions(Component):
     """OnStatusUpdate事件，在相关操作发生时触发。"""
     OnMCPStreamMessage: Any
     """OnMCPStreamMessage事件，在相关操作发生时触发。"""
+    AutoMCPConfig: Any
+    """获取或设置自动MCP配置。"""
+    OnAutoMCPRequest: Any
+    """OnAutoMCPRequest事件，在相关操作发生时触发。"""
+    Guardrails: AiGuardrails
+    """获取或设置护栏。"""
 
 class AiShell(Component):
     """AI命令行执行组件，允许AI模型执行系统命令。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    @overload
+    def Execute(self, const_CallId: str, const_JsonArguments: str) -> str:
         """执行操作或显示对话框。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    @overload
+    def Execute(self, const_CallId: str, JArgs: Any) -> str:
         """执行操作或显示对话框。"""
-    def ExecuteManual(self, *args, **kwargs) -> str:
+    def ExecuteManual(self, const_Command: str) -> str:
         """手动执行命令，等待用户确认。"""
-    def Restart(self, *args, **kwargs) -> Any:
+    def Restart(self) -> None:
         """重新启动组件或服务。"""
+    def RegisterInFunctions(self, AFunctions: AiFunctions, const_AFunctionName: str = ...) -> None:
+        """注册在函数。"""
     Active: bool
     """指定组件是否处于活动状态。"""
-    TimeOut: Any
+    TimeOut: int
     """获取或设置操作超时时间。"""
     ShellPath: str
     """获取或设置Shell执行路径。"""
     MaxOutputSize: int
     """获取或设置最大输出大小限制。"""
+    Environment: Any
+    """获取或设置环境。"""
+    SecurityMode: Any
+    """获取或设置安全模式。"""
+    SecurityList: Any
+    """获取或设置安全列表。"""
     OnCommand: Any
     """OnCommand事件，在相关操作发生时触发。"""
     OnConsoleLog: Any
     """OnConsoleLog事件，在相关操作发生时触发。"""
+    OnSecurityViolation: Any
+    """OnSecurityViolation事件，在相关操作发生时触发。"""
 
 class AiGenericChat(AiChat):
     """AiGenericChat组件。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def GetDriverName(self, *args, **kwargs) -> Any:
+    @classmethod
+    def GetDriverName(cls) -> str:
         """获取当前使用的AI驱动名称。"""
-    def RegisterDefaultParams(self, *args, **kwargs) -> Any:
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
         """注册默认的API请求参数。"""
-    def CreateInstance(self, *args, **kwargs) -> Any:
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
         """创建AI聊天驱动的新实例。"""
+    CustomDriverName: str
+    """获取或设置自定义驱动名称。"""
 
 class AiTextEditorTool(Component):
     """AiTextEditorTool组件。"""
-    def Execute(self, *args, **kwargs) -> Any:
+    def Execute(self, const_JsonArguments: str) -> str:
         """执行操作或显示对话框。"""
     OnLoadFile: Any
     """OnLoadFile事件，在相关操作发生时触发。"""
@@ -41568,7 +44029,7 @@ class AiRagGraphPostgresDriver(AiRagGraphDriverBase):
     """AiRagGraphPostgresDriver组件。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def CreateSchema(self, *args, **kwargs) -> Any:
+    def CreateSchema(self, const_ABaseTableName: str, AVectorDim: int) -> None:
         """创建数据库模式结构。"""
     Connection: Any
     """获取或设置数据库连接对象。"""
@@ -41576,84 +44037,86 @@ class AiRagGraphPostgresDriver(AiRagGraphDriverBase):
     """获取或设置当前实体。"""
     TableName: str
     """获取或设置数据库表名。"""
+    Language: Any
+    """获取或设置语言。"""
 
 class PraButtonStyle(GraphicControl):
     """自定义按钮样式控件，支持多种视觉状态的样式定制。"""
+    def SetFocus(self) -> None:
+        """将输入焦点设置到该组件上。"""
+    def Click(self) -> None:
+        """模拟鼠标单击操作，触发OnClick事件。"""
+    def Assign(self, Source: Persistent) -> None:
+        """将另一个对象的属性值复制到当前对象。"""
+    def SetBounds(self, ALeft: int, ATop: int, AWidth: int, AHeight: int) -> None:
+        """一次性设置组件的Left、Top、Width和Height属性。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
     Focused: bool
     """指示组件当前是否具有输入焦点。"""
     CanFocus: bool
     """指示控件是否可以接收焦点。"""
-    def SetFocus(self, *args, **kwargs) -> Any:
-        """将输入焦点设置到该组件上。"""
-    def Click(self, *args, **kwargs) -> Any:
-        """模拟鼠标单击操作，触发OnClick事件。"""
-    def Assign(self, *args, **kwargs) -> Any:
-        """将另一个对象的属性值复制到当前对象。"""
-    def SetBounds(self, *args, **kwargs) -> Any:
-        """一次性设置组件的Left、Top、Width和Height属性。"""
-    def Create(self, AOwner: Component) -> None:
-        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
-        """销毁组件实例并释放其占用的所有资源。"""
-    Action: Any
+    Action: BasicAction
     """获取或设置关联的操作对象。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    Cursor: Any
+    Cursor: int
     """指定当鼠标指针悬停在组件上时显示的光标形状。"""
-    DragCursor: Any
+    DragCursor: int
     """指定拖动组件时鼠标指针的样式。"""
-    DragKind: Any
+    DragKind: DragKind
     """指定拖动操作的类。"""
-    DragMode: Any
+    DragMode: DragMode
     """指定组件是否可被拖动及拖动方式。"""
-    Enabled: Any
+    Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    Constraints: Any
+    Constraints: SizeConstraints
     """指定组件的最小和最大尺寸限制。"""
-    ParentShowHint: Any
+    ParentShowHint: bool
     """指定组件是否继承父容器的提示信息显示设置。"""
-    ShowHint: Any
+    ShowHint: bool
     """指定当鼠标悬停在组件上时是否显示帮助提示。"""
-    Touch: Any
+    Touch: TouchManager
     """指定与组件关联的触摸手势管理器。"""
-    Visible: Any
+    Visible: bool
     """指定组件是否可见。"""
-    OnContextPopup: Any
+    OnContextPopup: Callable[[Object,Point,bool],None]
     """OnContextPopup事件，在相关操作发生时触发。"""
-    OnDragDrop: Any
+    OnDragDrop: Callable[[Object,Object,int,int],None]
     """OnDragDrop事件，在相关操作发生时触发。"""
-    OnDragOver: Any
+    OnDragOver: Callable[[Object,Object,int,int,DragState,bool],None]
     """OnDragOver事件，在相关操作发生时触发。"""
-    OnEndDock: Any
+    OnEndDock: Callable[[Object,Object,int,int],None]
     """OnEndDock事件，在相关操作发生时触发。"""
-    OnEndDrag: Any
+    OnEndDrag: Callable[[Object,Object,int,int],None]
     """OnEndDrag事件，在相关操作发生时触发。"""
-    OnMouseActivate: Any
+    OnMouseActivate: Callable[[Object,MouseButton,ShiftState,int,int,int,MouseActivate],None]
     """OnMouseActivate事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseEnter: Any
+    OnMouseEnter: Callable[[Object],None]
     """OnMouseEnter事件，在相关操作发生时触发。"""
-    OnMouseLeave: Any
+    OnMouseLeave: Callable[[Object],None]
     """OnMouseLeave事件，在相关操作发生时触发。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
-    OnGesture: Any
+    OnGesture: Callable[[Object,GestureEventInfo,bool],None]
     """OnGesture事件，在相关操作发生时触发。"""
-    OnStartDock: Any
+    OnStartDock: Callable[[Object,DragDockObject],None]
     """OnStartDock事件，在相关操作发生时触发。"""
-    OnStartDrag: Any
+    OnStartDrag: Callable[[Object,DragObject],None]
     """OnStartDrag事件，在相关操作发生时触发。"""
-    OnClick: Any
+    OnClick: Callable[[Object],None]
     """OnClick事件，在相关操作发生时触发。"""
-    Font: Any
+    Font: Font
     """指定组件中文本的字体样式。"""
-    ParentFont: Any
+    ParentFont: bool
     """指定组件是否继承父容器的字体设置。"""
     Pen: Any
     """获取或设置画笔对象，用于绘制线条和边框。"""
@@ -41671,11 +44134,11 @@ class PraButtonStyle(GraphicControl):
     """获取或设置按钮聚焦状态的画刷。"""
     BrushDisabled: Any
     """获取或设置按钮禁用状态的画刷。"""
-    Picture: Any
+    Picture: Picture
     """获取或设置显示的图片。"""
-    PictureFocused: Any
+    PictureFocused: Picture
     """获取或设置按钮聚焦状态的图片。"""
-    PictureDisabled: Any
+    PictureDisabled: Picture
     """获取或设置按钮禁用状态的图片。"""
     FontDown: Any
     """获取或设置按钮按下状态的字体。"""
@@ -41683,17 +44146,17 @@ class PraButtonStyle(GraphicControl):
     """获取或设置按钮聚焦状态的字体。"""
     FontDisabled: Any
     """获取或设置按钮禁用状态的字体。"""
-    Caption: Any
+    Caption: str
     """指定组件上显示的标题文本。"""
     TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
     TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
-    Radius: Any
+    Radius: int
     """获取或设置圆角半径。"""
     Shape: Any
     """获取或设置形状类型。"""
-    Spacing: Any
+    Spacing: int
     """获取或设置间距大小。"""
     ShowCaption: bool
     """指定是否显示标题文本。"""
@@ -41703,7 +44166,7 @@ class PraButtonStyle(GraphicControl):
     """获取或设置内容对齐方式。"""
     PictureCenter: bool
     """指定图片是否居中显示。"""
-    PictureMarginLeft: Any
+    PictureMarginLeft: int
     """获取或设置图片左间距。"""
     Style: Any
     """指定组件的显示样式。"""
@@ -41713,7 +44176,7 @@ class PraButtonStyle(GraphicControl):
     """获取或设置模板样式。"""
     PictureLayout: Any
     """获取或设置图片布局方式。"""
-    ImageList: Any
+    ImageList: ImageList
     """获取或设置关联的图像列表。"""
     ImageIndexPicture: int
     """获取或设置按钮图片在图像列表中的索引。"""
@@ -41726,79 +44189,79 @@ class StockChart(CustomControl):
     """股票K线图控件，用于显示股票数据的K线图和技术指标。"""
     def Create(self, AOwner: Component) -> None:
         """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
-    def Destroy(self, *args, **kwargs) -> Any:
+    def Destroy(self) -> None:
         """销毁组件实例并释放其占用的所有资源。"""
-    def LoadStock(self, *args, **kwargs) -> Any:
+    def LoadStock(self, const_AStockName: str) -> None:
         """加载股票数据，从指定数据源读取股票历史行情。"""
-    def ScrollLeft(self, *args, **kwargs) -> Any:
+    def ScrollLeft(self, Steps: int = ...) -> None:
         """将K线图向左滚动，显示更早的股票数据。"""
-    def ScrollRight(self, *args, **kwargs) -> Any:
+    def ScrollRight(self, Steps: int = ...) -> None:
         """将K线图向右滚动，显示更新的股票数据。"""
-    def ScrollToFirst(self, *args, **kwargs) -> Any:
+    def ScrollToFirst(self) -> None:
         """滚动到K线图的起始位置，显示最早的数据。"""
-    def ScrollToLast(self, *args, **kwargs) -> Any:
+    def ScrollToLast(self) -> None:
         """滚动到K线图的最新位置，显示最新的数据。"""
-    def ZoomIn(self, *args, **kwargs) -> Any:
+    def ZoomIn(self) -> None:
         """放大K线图，显示更少的K线以查看更多细节。"""
-    def ZoomOut(self, *args, **kwargs) -> Any:
+    def ZoomOut(self) -> None:
         """缩小K线图，显示更多的K线以查看更长时间范围。"""
-    def GetCurrentData(self, *args, **kwargs) -> Any:
+    def GetCurrentData(self) -> Any:
         """获取当前鼠标位置对应的股票数据详情。"""
-    def GetDataCount(self, *args, **kwargs) -> int:
+    def GetDataCount(self) -> int:
         """获取已加载的股票数据总条数。"""
-    def GetMACycle(self, *args, **kwargs) -> int:
+    def GetMACycle(self, Index: int) -> int:
         """获取移动平均线(MA)的计算周期。"""
-    def SetMACycle(self, *args, **kwargs) -> Any:
+    def SetMACycle(self, Index: int, Value: int) -> None:
         """设置移动平均线(MA)的计算周期。"""
-    def GetVMACycle(self, *args, **kwargs) -> int:
+    def GetVMACycle(self, Index: int) -> int:
         """获取成交量移动平均线的计算周期。"""
-    def SetVMACycle(self, *args, **kwargs) -> Any:
+    def SetVMACycle(self, Index: int, Value: int) -> None:
         """设置成交量移动平均线的计算周期。"""
-    def GetRSICycle(self, *args, **kwargs) -> int:
+    def GetRSICycle(self, Index: int) -> int:
         """获取相对强弱指标(RSI)的计算周期。"""
-    def SetRSICycle(self, *args, **kwargs) -> Any:
+    def SetRSICycle(self, Index: int, Value: int) -> None:
         """设置相对强弱指标(RSI)的计算周期。"""
-    def GetMAColor(self, *args, **kwargs) -> Any:
+    def GetMAColor(self, Index: int) -> int:
         """获取移动平均线的显示颜色。"""
-    def SetMAColor(self, *args, **kwargs) -> Any:
+    def SetMAColor(self, Index: int, AColor: int) -> None:
         """设置移动平均线的显示颜色。"""
     DataFile: Any
     """获取或设置数据文件路径。"""
     DataPerPage: int
     """获取或设置每页显示的数据条数。"""
-    Align: Any
+    Align: Align
     """指定组件在其父容器中的对齐方式。"""
-    Anchors: Any
+    Anchors: Anchors
     """指定组件相对于父容器边缘的锚定方式。"""
-    Enabled: Any
+    Enabled: bool
     """指定组件是否可交互，False时禁用组件。"""
-    Font: Any
+    Font: Font
     """指定组件中文本的字体样式。"""
-    ParentFont: Any
+    ParentFont: bool
     """指定组件是否继承父容器的字体设置。"""
-    TabOrder: Any
+    TabOrder: int
     """指定组件在父容器Tab键顺序中的位置。"""
-    TabStop: Any
+    TabStop: bool
     """指定用户是否可以通过Tab键将焦点切换到该组件。"""
-    Visible: Any
+    Visible: bool
     """指定组件是否可见。"""
-    OnClick: Any
+    OnClick: Callable[[Object],None]
     """OnClick事件，在相关操作发生时触发。"""
-    OnDblClick: Any
+    OnDblClick: Callable[[Object],None]
     """OnDblClick事件，在相关操作发生时触发。"""
-    OnMouseDown: Any
+    OnMouseDown: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseDown事件，在相关操作发生时触发。"""
-    OnMouseMove: Any
+    OnMouseMove: Callable[[Object,ShiftState,int,int],None]
     """OnMouseMove事件，在相关操作发生时触发。"""
-    OnMouseUp: Any
+    OnMouseUp: Callable[[Object,MouseButton,ShiftState,int,int],None]
     """OnMouseUp事件，在相关操作发生时触发。"""
-    OnKeyDown: Any
+    OnKeyDown: Callable[[Object,int,ShiftState],None]
     """OnKeyDown事件，在相关操作发生时触发。"""
     OnKeyPress: Any
     """OnKeyPress事件，在相关操作发生时触发。"""
-    OnKeyUp: Any
+    OnKeyUp: Callable[[Object,int,ShiftState],None]
     """OnKeyUp事件，在相关操作发生时触发。"""
-    OnResize: Any
+    OnResize: Callable[[Object],None]
     """OnResize事件，在相关操作发生时触发。"""
     StockName: str
     """获取或设置股票名称代码。"""
@@ -41822,17 +44285,17 @@ class StockChart(CustomControl):
     """指定是否显示最高最低价标签。"""
     ShowRSI: bool
     """指定是否显示相对强弱指标。"""
-    BackColor: Any
+    BackColor: int
     """获取或设置背景颜色。"""
-    UpColor: Any
+    UpColor: int
     """获取或设置阳线(K线上涨)的颜色。"""
-    DownColor: Any
+    DownColor: int
     """获取或设置阴线(K线下跌)的颜色。"""
-    EvenColor: Any
+    EvenColor: int
     """获取或设置平盘线的颜色。"""
-    KLineRatio: Any
+    KLineRatio: float
     """获取或设置K线图区域的比例。"""
-    VolumeRatio: Any
+    VolumeRatio: float
     """获取或设置成交量图区域的比例。"""
     HeaderHeight: int
     """获取或设置顶部标题栏高度。"""
@@ -41842,3 +44305,2426 @@ class StockChart(CustomControl):
     """OnStockLoaded事件，在相关操作发生时触发。"""
     OnStockNotFound: Any
     """OnStockNotFound事件，在相关操作发生时触发。"""
+
+
+class AiA2AServer(Component):
+    """A2A（Agent2Agent）协议服务端组件，将智能体管理器以A2A标准接口对外发布，支持任务、流式和推送通知。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Start(self) -> None:
+        """启动。"""
+    def Stop(self) -> None:
+        """停止。"""
+    Active: bool
+    """bool： 目前没有任何其他信息。"""
+    Port: int
+    """获取或设置端口。"""
+    AgentManager: AIAgentManager
+    """获取或设置智能体管理器。"""
+    AgentName: str
+    """获取或设置智能体名称。"""
+    AgentDescription: str
+    """获取或设置智能体描述。"""
+    AgentVersion: str
+    """获取或设置智能体版本。"""
+    WaitTimeoutMs: int
+    """获取或设置等待超时时间毫秒。"""
+    RunTimeoutMs: int
+    """获取或设置运行超时时间毫秒。"""
+    MaxConcurrentTasks: int
+    """获取或设置最大并发任务。"""
+    TaskTtlSeconds: int
+    """获取或设置任务TTL秒数。"""
+    MaxTasks: int
+    """获取或设置最大任务。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    PublicUrl: str
+    """获取或设置公开URL。"""
+    StateNaming: Any
+    """获取或设置状态命名。"""
+    WireEra: Any
+    """获取或设置传输版本。"""
+    PublishExtendedCard: bool
+    """指定是否发布扩展名片。"""
+    Skills: Any
+    """获取或设置技能。"""
+    PublishNodesAsSkills: bool
+    """指定是否发布节点为技能。"""
+    CardCacheSeconds: int
+    """获取或设置名片缓存秒数。"""
+    AcquireTimeoutMs: int
+    """获取或设置获取超时时间毫秒。"""
+    EnableStreaming: bool
+    """指定是否启用流式。"""
+    EnablePushNotifications: bool
+    """指定是否启用推送通知。"""
+    OnAcquireManager: Any
+    """OnAcquireManager事件，在相关操作发生时触发。"""
+    OnCustomizeCard: Any
+    """OnCustomizeCard事件，在相关操作发生时触发。"""
+    OnAuthorize: Any
+    """OnAuthorize事件，在相关操作发生时触发。"""
+
+class AiA2AClient(Component):
+    """A2A（Agent2Agent）协议客户端组件，用于获取远程智能体名片、发送消息并管理任务。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def FetchAgentCard(self) -> Any:
+        """获取智能体名片。"""
+    def SendText(self, const_AText: str, out_AOutputText: str) -> Any:
+        """发送文本。"""
+    def SendTextEx(self, const_AText: str, const_ATaskId: str, const_AContextId: str, out_AOutputText: str, ABlocking: bool = ...) -> Any:
+        """发送文本扩展。"""
+    def GetTask(self, const_ATaskId: str) -> Any:
+        """获取任务。"""
+    def CancelTask(self, const_ATaskId: str) -> Any:
+        """取消任务。"""
+    @classmethod
+    def ArtifactsText(cls, ATask: Any) -> str:
+        """产物文本，返回相应结果。"""
+    @classmethod
+    def UnwrapSendMessageResult(cls, ARawResult: Any) -> Any:
+        """解包发送消息结果，返回相应结果。"""
+    LastTaskId: str
+    """获取最后任务ID。"""
+    LastContextId: str
+    """获取最后上下文ID。"""
+    LastState: str
+    """获取最后状态。"""
+    LastTaskState: Any
+    """获取最后任务状态。"""
+    LastStatusMessage: str
+    """获取最后状态消息。"""
+    Endpoint: str
+    """获取端点。"""
+    Url: str
+    """获取或设置URL。"""
+    Timeout: int
+    """获取或设置超时时间。"""
+    RetryCount: int
+    """获取或设置重试数量。"""
+    ApiKey: str
+    """获取或设置API键。"""
+
+class AiA2AAgentTool(Component):
+    """A2A智能体工具组件，把远程A2A智能体注册为AI函数调用工具，供大模型调用。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def RegisterTool(self) -> None:
+        """注册工具。"""
+    def DiscoverFromCard(self) -> None:
+        """从名片发现。"""
+    Functions: AiFunctions
+    """获取或设置函数。"""
+    AgentUrl: str
+    """获取或设置智能体URL。"""
+    ToolName: str
+    """获取或设置工具名称。"""
+    Description: str
+    """获取或设置描述。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    TimeoutMs: int
+    """获取或设置超时时间毫秒。"""
+
+class AiEvalRunner(Component):
+    """AI评测运行组件，用于定义测试用例并批量运行评测，生成评测报告。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def AddCase(self, const_AName: str) -> Any:
+        """添加区分大小写。"""
+    def Clear(self) -> None:
+        """清除。"""
+    def Run(self, ATarget: Any) -> Any:
+        """运行。"""
+    Cases: Any
+    """获取用例。"""
+    Judge: AiChat
+    """获取或设置评判。"""
+
+class AiRagDocumentManager(Component):
+    """RAG文档管理组件，负责文档的入库、分块、实体与关系抽取、检索和图查询。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def AddDocument(self, const_AName: str, const_AText: str, const_ADocLabel: str = ..., AProperties: Any = ...) -> AiRagGraphNode:
+        """添加文档。"""
+    @overload
+    def AddDocumentFromJSON(self, const_AJSON: str) -> AiRagGraphNode:
+        """从JSON添加文档。"""
+    @overload
+    def AddDocumentFromJSON(self, AJSONObj: Any) -> AiRagGraphNode:
+        """从JSON添加文档。"""
+    @overload
+    def AddDocumentsFromJSONArray(self, const_AJSON: str) -> int:
+        """从JSON数组添加文档。"""
+    @overload
+    def AddDocumentsFromJSONArray(self, AArr: Any) -> int:
+        """从JSON数组添加文档。"""
+    def ExtractRelationships(self, ADocNode: AiRagGraphNode) -> int:
+        """提取关系。"""
+    def ExtractEntitiesOnly(self, ADocNode: AiRagGraphNode) -> int:
+        """提取实体仅。"""
+    def ExtractRelationshipsWithContext(self, ADocNode: AiRagGraphNode) -> int:
+        """提取关系带上下文。"""
+    def AddEdge(self, AFromNode: AiRagGraphNode, AToNode: AiRagGraphNode, const_AEdgeLabel: str, const_AEdgeName: str = ...) -> AiRagGraphEdge:
+        """添加边。"""
+    def GetDocumentEntities(self, ADocNode: AiRagGraphNode) -> Any:
+        """获取文档实体。"""
+    @overload
+    def GetDocumentContext(self, ADocNode: AiRagGraphNode) -> Any:
+        """获取文档上下文。"""
+    @overload
+    def GetDocumentContext(self, const_ADocumentID: str) -> Any:
+        """获取文档上下文。"""
+    def GetDocumentText(self, ADocNode: AiRagGraphNode) -> str:
+        """获取文档文本。"""
+    def GetDocumentParts(self, ADocNode: AiRagGraphNode) -> Any:
+        """获取文档部分。"""
+    def SearchDocuments(self, const_APrompt: str, ALimit: int = ..., APrecision: float = ...) -> Any:
+        """搜索文档。"""
+    def SearchDocumentsText(self, const_APrompt: str, ALimit: int = ..., APrecision: float = ...) -> str:
+        """搜索文档文本。"""
+    @overload
+    def ExecuteVQL(self, const_AVgqlQuery: str) -> str:
+        """执行VQL。"""
+    @overload
+    def ExecuteVQL(self, const_AVgqlQuery: str, out_AResultVector: AiRAGVector) -> str:
+        """执行VQL。"""
+    @overload
+    def ExecuteDocumentVQL(self, const_AVgqlQuery: str, ADocNode: AiRagGraphNode) -> str:
+        """执行文档VQL。"""
+    @overload
+    def ExecuteDocumentVQL(self, const_AVgqlQuery: str, ADocNode: AiRagGraphNode, out_AResultVector: AiRAGVector) -> str:
+        """执行文档VQL。"""
+    def SearchDocumentsByVQL(self, const_AVgqlQuery: str, ALimit: int = ...) -> Any:
+        """按VQL搜索文档。"""
+    @overload
+    def ExecuteGQL(self, const_AGqlQuery: str) -> str:
+        """执行GQL。"""
+    @overload
+    def ExecuteGQL(self, const_AGqlQuery: str, out_AResultObjects: Any, ADepth: int = ...) -> str:
+        """执行GQL。"""
+    def GetAllDocuments(self) -> Any:
+        """获取全部文档。"""
+    def DeleteDocument(self, ADocNode: AiRagGraphNode) -> None:
+        """删除文档。"""
+    Graph: AiRagGraph
+    """获取或设置图。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    ChunkSize: int
+    """获取或设置数据块大小。"""
+    ChunkOverlapPct: int
+    """获取或设置数据块重叠百分比。"""
+    ExtractionPrompt: Strings
+    """获取或设置提取提示词。"""
+    DefaultDocumentLabel: str
+    """获取或设置默认文档标签。"""
+    OnProgress: Any
+    """OnProgress事件，在相关操作发生时触发。"""
+
+class AIAgentManager(Component):
+    """智能体图管理组件，负责编排节点与连线、编译并运行智能体工作流。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Abort(self) -> None:
+        """中止。"""
+    def FindNode(self, const_AName: str) -> AIAgentsNode:
+        """查找节点。"""
+    def DoError(self, Node: AIAgentsNode, Link: AIAgentsLink, E: Any) -> None:
+        """执行错误。"""
+    def DoConfirm(self, Node: AIAgentsNode, const_AQuestion: str, Buttons: Any, var_AResponse: str) -> Any:
+        """执行确认。"""
+    def SetOnPrintEvent(self, const_APrintProc: Any) -> None:
+        """设置打印事件。"""
+    def ClearGraph(self) -> None:
+        """清除图。"""
+    def AddNode(self, const_AName: str, AExecuteProc: Any) -> AIAgentManager:
+        """添加节点。"""
+    def AddEdge(self, const_AStartNodeName: str, const_AEndNodeName: str) -> AIAgentManager:
+        """添加边。"""
+    def AddConditionalEdge(self, const_AStartNodeName: str, const_AConditionalLinkName: str, AConditionalTargets: Any) -> AIAgentManager:
+        """添加条件边。"""
+    def SetEntryPoint(self, const_ANodeName: str) -> AIAgentManager:
+        """设置条目点。"""
+    def SetFinishPoint(self, const_ANodeName: str) -> AIAgentManager:
+        """设置完成点。"""
+    def Compile(self) -> None:
+        """编译。"""
+    def ResetExecutionState(self) -> None:
+        """重置执行状态。"""
+    def SaveToStream(self, AStream: Stream) -> None:
+        """保存到流。"""
+    def LoadFromStream(self, AStream: Stream) -> None:
+        """从流加载。"""
+    def SaveStateToStream(self, AStream: Stream) -> None:
+        """保存状态到流。"""
+    def LoadStateFromStream(self, AStream: Stream) -> None:
+        """从流加载状态。"""
+    @overload
+    def Run(self, APrompt: str) -> str:
+        """运行。"""
+    @overload
+    def Run(self, const_APrompt: str, ASeed: Any) -> str:
+        """运行。"""
+    def AddMessageAndRun(self, APrompt: str, aRole: str, aMediaFiles: Any) -> str:
+        """添加消息与运行。"""
+    def AddMessageAndRunMsg(self, APrompt: str, aRole: str, aMediaFiles: Any) -> Any:
+        """添加消息与运行消息。"""
+    def NewMessage(self, APrompt: str, aRole: str, aMediaFiles: Any) -> Any:
+        """新建消息，返回相应结果。"""
+    def ResumeThread(self, const_AThreadID: str, const_ANodeName: str, const_AInput: str) -> bool:
+        """恢复线程。"""
+    def GetActiveThreads(self) -> Any:
+        """获取活动线程。"""
+    def GetSuspendedNodeNames(self) -> Any:
+        """获取已挂起节点名称列表。"""
+    def GetNodes(self) -> Any:
+        """获取节点。"""
+    Busy: bool
+    """指示是否忙碌。"""
+    Blackboard: AIBlackboard
+    """获取黑板。"""
+    CurrentThreadID: str
+    """获取当前线程ID。"""
+    Checkpointer: Any
+    """获取或设置检查点。"""
+    StartNode: AIAgentsNode
+    """获取或设置启动节点。"""
+    EndNode: AIAgentsNode
+    """获取或设置结束节点。"""
+    OnPrint: Any
+    """OnPrint事件，在相关操作发生时触发。"""
+    OnEnd: Any
+    """OnEnd事件，在相关操作发生时触发。"""
+    OnError: Any
+    """OnError事件，在相关操作发生时触发。"""
+    OnConfirm: Any
+    """OnConfirm事件，在相关操作发生时触发。"""
+    OnEnterNode: Any
+    """OnEnterNode事件，在相关操作发生时触发。"""
+    OnExitNode: Any
+    """OnExitNode事件，在相关操作发生时触发。"""
+    MaxConcurrentTasks: int
+    """获取或设置最大并发任务。"""
+    OnStart: Any
+    """OnStart事件，在相关操作发生时触发。"""
+    OnFinish: Any
+    """OnFinish事件，在相关操作发生时触发。"""
+    TimeoutMs: int
+    """获取或设置超时时间毫秒。"""
+    Description: str
+    """获取或设置描述。"""
+    Asynchronous: bool
+    """指定是否异步。"""
+    AllowPartialSerialization: bool
+    """指定是否允许部分序列化。"""
+    OnSuspend: Any
+    """OnSuspend事件，在相关操作发生时触发。"""
+
+class LLMNode(AIAgentsNode):
+    """大语言模型节点，智能体工作流中调用AI聊天模型完成处理的节点。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Registry: Any
+    """获取或设置注册表。"""
+    Skill: Any
+    """获取或设置技能。"""
+    DriverName: str
+    """获取或设置驱动名称。"""
+    Model: str
+    """获取或设置模型。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    ServiceURL: str
+    """获取或设置服务URL。"""
+    SystemPrompt: str
+    """获取或设置系统提示词。"""
+    MaxTokens: int
+    """获取或设置最大令牌数。"""
+    UseAllTools: bool
+    """指定是否使用全部工具。"""
+
+class AiAudioCapture(Component):
+    """音频采集组件，用于从麦克风等输入设备录制音频数据。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def GetAudioDevices(cls, aSource: Any) -> Any:
+        """获取音频设备。"""
+    SoundLevel: int
+    """获取声音级别。"""
+    NativeSampleRate: int
+    """获取原生采样速率。"""
+    NativeChannels: int
+    """获取原生声道数。"""
+    EffectiveSampleRate: int
+    """获取有效采样速率。"""
+    EffectiveChannels: int
+    """获取有效声道数。"""
+    Active: bool
+    """bool： 目前没有任何其他信息。"""
+    Source: Any
+    """获取或设置源。"""
+    DeviceId: str
+    """获取或设置设备ID。"""
+    OutputSampleRate: int
+    """获取或设置输出采样速率。"""
+    OutputChannels: int
+    """获取或设置输出声道数。"""
+    ChunkDurationMs: int
+    """获取或设置数据块时长毫秒。"""
+    InjectSilence: bool
+    """指定是否注入静音。"""
+    Muted: bool
+    """指定是否静音。"""
+    RealtimeSTT: AiRealtimeBase
+    """获取或设置实时STT。"""
+    OnData: Any
+    """OnData事件，在相关操作发生时触发。"""
+    OnUpdate: Any
+    """OnUpdate事件，在相关操作发生时触发。"""
+    OnError: Any
+    """OnError事件，在相关操作发生时触发。"""
+    OnFormat: Any
+    """OnFormat事件，在相关操作发生时触发。"""
+
+class AiAudioPlayer(Component):
+    """音频播放组件，用于播放PCM等音频数据。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def PlayPCM16(self, const_aData: Any, aSampleRate: int, aChannels: int) -> None:
+        """播放PCM 16。"""
+    def ClearQueue(self) -> None:
+        """清除队列。"""
+    @classmethod
+    def GetPlaybackDevices(cls) -> Any:
+        """获取播放设备。"""
+    IsPlaying: bool
+    """指示是否正在播放。"""
+    Active: bool
+    """bool： 目前没有任何其他信息。"""
+    DeviceId: str
+    """获取或设置设备ID。"""
+    OnStateChange: Any
+    """OnStateChange事件，在相关操作发生时触发。"""
+    OnError: Any
+    """OnError事件，在相关操作发生时触发。"""
+
+class AiMCPSSEHttpServer(AiMCPServer):
+    """基于SSE（服务器发送事件）的HTTP MCP服务端组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Start(self) -> None:
+        """启动。"""
+    def Stop(self) -> None:
+        """停止。"""
+    def PushNotification(self, const_ASessionID: str, const_ANotificationJson: str) -> None:
+        """推送通知。"""
+    SseEndpoint: str
+    """获取或设置SSE端点。"""
+    MessagesEndpoint: str
+    """获取或设置消息端点。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    OnValidateRequest: Any
+    """OnValidateRequest事件，在相关操作发生时触发。"""
+    OnUnhandledRequest: Any
+    """OnUnhandledRequest事件，在相关操作发生时触发。"""
+
+class AiChatSpeechBridge(AiSpeechToolBase):
+    """聊天语音桥接组件，把语音工具接入AI聊天组件以处理语音输入输出。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    PromptTranscription: str
+    """获取或设置提示词语音转写。"""
+
+class AiChatVisionBridge(AiVisionToolBase):
+    """聊天视觉桥接组件，把视觉识别工具接入AI聊天组件以处理图像理解。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    PromptVision: str
+    """获取或设置提示词视觉。"""
+
+class AiChatImageBridge(AiImageToolBase):
+    """聊天图像桥接组件，把图像生成工具接入AI聊天组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    PromptImage: str
+    """获取或设置提示词图像。"""
+
+class AiChatVideoBridge(AiVideoToolBase):
+    """聊天视频桥接组件，把视频生成工具接入AI聊天组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    PromptVideo: str
+    """获取或设置提示词视频。"""
+
+class AiChatDocumentBridge(AiDocumentToolBase):
+    """聊天文档桥接组件，把文档处理工具接入AI聊天组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+    PromptDocument: str
+    """获取或设置提示词文档。"""
+
+class AiChatCodeInterpreterBridge(AiCodeInterpreterToolBase):
+    """聊天代码解释器桥接组件，把代码解释器工具接入AI聊天组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+
+class AiChatWebSearchBridge(AiWebSearchToolBase):
+    """聊天联网搜索桥接组件，把网络搜索工具接入AI聊天组件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Chat: AiChat
+    """获取或设置聊天。"""
+
+class AiGLMChat(AiChat):
+    """智谱GLM聊天组件，封装了与智谱GLM系列模型的交互功能。"""
+    def GetMessages(self) -> Any:
+        """获取消息。"""
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
+        """创建实例。"""
+
+class CohereChat(AiChat):
+    """Cohere聊天组件，封装了与Cohere系列模型的交互功能。"""
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Rerank(self, const_AQuery: str, ADocuments: Strings, ATopN: int = ...) -> Any:
+        """重排序，返回相应结果。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
+        """创建实例。"""
+    @overload
+    @classmethod
+    def GetModels(cls, aApiKey: str, aUrl: str = ...) -> Any:
+        """获取模型。"""
+    @overload
+    def GetModels(self) -> Any:
+        """获取模型。"""
+    Temperature: float
+    """获取或设置温度。"""
+    Top_p: float
+    """获取或设置顶部。"""
+    Stop_sequences: Strings
+    """获取或设置停止序列。"""
+    Documents: Any
+    """获取或设置文档。"""
+    RerankModel: str
+    """获取或设置重排序模型。"""
+
+class AiMakerAiChat(AiChat):
+    """MakerAI聊天组件，封装了与MakerAI服务的交互功能。"""
+    def Create(self, Sender: Component) -> None:
+        """创建并初始化组件的实例，Sender参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def NewChat(self) -> None:
+        """新建聊天。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
+    @classmethod
+    def CreateInstance(cls, Sender: Component) -> AiChat:
+        """创建实例。"""
+    OnProgress: Any
+    """OnProgress事件，在相关操作发生时触发。"""
+    FileReaderSlug: str
+    """获取或设置文件读取器短标识。"""
+    FileReaderId: int
+    """获取或设置文件读取器ID。"""
+
+class AiEmbeddingConnection(Component):
+    """AI嵌入向量连接管理组件，用于在多个嵌入驱动之间切换并生成文本向量。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
+        """创建嵌入向量。"""
+    def GetAvailableDrivers(self) -> Any:
+        """获取可用驱动。"""
+    def IsDriverAvailable(self, const_aDriverName: str) -> bool:
+        """判断驱动可用的状态，返回布尔值。"""
+    def ResetParamsToDefaults(self) -> None:
+        """重置参数到默认值。"""
+    AiEmbeddings: AiEmbeddings
+    """获取AI嵌入向量。"""
+    prompt_tokens: int
+    """获取提示词令牌数。"""
+    total_tokens: int
+    """获取总计令牌数。"""
+    Data: Any
+    """获取数据。"""
+    DriverName: str
+    """获取或设置驱动名称。"""
+    Model: str
+    """获取或设置模型。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+    Dimensions: int
+    """获取或设置维度。"""
+    Params: Strings
+    """获取或设置参数。"""
+    OnGetEmbedding: Any
+    """OnGetEmbedding事件，在相关操作发生时触发。"""
+    Version: str
+    """获取版本。"""
+
+class AiCohereEmbeddings(AiEmbeddings):
+    """Cohere嵌入向量组件，用于调用Cohere模型生成文本向量。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
+        """创建嵌入向量。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
+    InputType: Any
+    """获取或设置输入类型。"""
+
+class AiGenericEmbeddings(AiEmbeddings):
+    """通用嵌入向量组件，用于调用兼容接口的模型生成文本向量。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def CreateEmbedding(self, aInput: str, aUser: str, aDimensions: int = ..., aModel: str = ..., aEncodingFormat: str = ...) -> Any:
+        """创建嵌入向量。"""
+    def ParseEmbedding(self, jObj: Any) -> None:
+        """解析嵌入向量。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def CreateInstance(cls, aOwner: Component) -> AiEmbeddings:
+        """创建实例。"""
+    @classmethod
+    def RegisterDefaultParams(cls, Params: Strings) -> None:
+        """注册默认参数。"""
+    CustomDriverName: str
+    """获取或设置自定义驱动名称。"""
+
+class AiGeminiVideoTool(AiVideoToolBase):
+    """Gemini视频工具组件，调用Gemini模型完成视频生成。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Model: str
+    """获取或设置模型。"""
+    Url: str
+    """获取或设置URL。"""
+    AspectRatio: Any
+    """获取或设置宽高比比例。"""
+    Resolution: Any
+    """获取或设置分辨率。"""
+    DurationSeconds: int
+    """获取或设置时长秒数。"""
+    PersonGeneration: Any
+    """获取或设置人物生成。"""
+    NegativePrompt: str
+    """获取或设置负提示词。"""
+    Seed: int
+    """获取或设置随机种子。"""
+
+class AiDalle(Component):
+    """DALL·E图像生成组件，用于调用OpenAI图像模型生成、编辑和变换图片。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Generate(self, const_aPrompt: str, const_aNegativePrompt: str, ASize: Any, N: int = ..., aImage: MemoryStream = ...) -> Any:
+        """生成。"""
+    def Edit(self, aMediaFiles: Any, aMaskFile: AiMediaFile, const_aPrompt: str, ASize: Any, N: int = ...) -> Any:
+        """编辑。"""
+    def Variation(self, aImageFile: AiMediaFile, ASize: Any, N: int = ...) -> Any:
+        """变体，返回相应结果。"""
+    def Upscale(self, aImage: AiMediaFile, AScale: int = ..., AFaceEnhance: bool = ...) -> AiMediaFile:
+        """放大，返回相应结果。"""
+    Url: str
+    """获取或设置URL。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Prompt: str
+    """获取提示词。"""
+    User: str
+    """获取或设置用户。"""
+    Model: Any
+    """获取或设置模型。"""
+    Quality: Any
+    """获取或设置质量。"""
+    Style: Any
+    """获取或设置样式。"""
+    ResponseFormat: Any
+    """获取或设置响应格式。"""
+    Stream: bool
+    """指定是否流。"""
+    Background: Any
+    """获取或设置背景。"""
+    OutputFormat: Any
+    """获取或设置输出格式。"""
+    OutputCompression: int
+    """获取或设置输出压缩。"""
+    Moderation: Any
+    """获取或设置内容审核。"""
+    PartialImages: int
+    """获取或设置部分图片。"""
+    InputFidelity: Any
+    """获取或设置输入保真度。"""
+    NegativePrompt: Strings
+    """获取或设置负提示词。"""
+    Steps: int
+    """获取或设置步骤。"""
+    GuidanceScale: float
+    """获取或设置引导缩放。"""
+    Seed: int
+    """获取或设置随机种子。"""
+    UseRefiner: bool
+    """指定是否使用精炼器。"""
+    AutoUpscale: bool
+    """指定是否自动放大。"""
+    EnhanceFace: bool
+    """指定是否增强字体名。"""
+    Strength: float
+    """获取或设置强度。"""
+    LoraPath: str
+    """获取或设置LoRA路径。"""
+    OnPartialImageReceived: Any
+    """OnPartialImageReceived事件，在相关操作发生时触发。"""
+    OnStreamCompleted: Any
+    """OnStreamCompleted事件，在相关操作发生时触发。"""
+    OnStreamError: Any
+    """OnStreamError事件，在相关操作发生时触发。"""
+
+class AiDalleImageTool(AiImageToolBase):
+    """DALL·E图像工具组件，把DALL·E图像生成能力封装为聊天可用的图像工具。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    Dalle: AiDalle
+    """获取或设置DALL·E。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+    Model: Any
+    """获取或设置模型。"""
+    Quality: Any
+    """获取或设置质量。"""
+    Style: Any
+    """获取或设置样式。"""
+    OutputFormat: Any
+    """获取或设置输出格式。"""
+    Background: Any
+    """获取或设置背景。"""
+    OutputCompression: int
+    """获取或设置输出压缩。"""
+    Moderation: Any
+    """获取或设置内容审核。"""
+    InputFidelity: Any
+    """获取或设置输入保真度。"""
+    NegativePrompt: Strings
+    """获取或设置负提示词。"""
+    ImageSize: Any
+    """获取或设置图像大小。"""
+
+class AiGeminiWebSearchTool(AiWebSearchToolBase):
+    """Gemini联网搜索工具组件，利用Gemini的搜索能力获取网络信息。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    @classmethod
+    def Search(cls, const_AApiKey: str, const_AQuery: str, const_AModel: str = ..., const_ADynamicThreshold: float = ...) -> Any:
+        """搜索。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Model: str
+    """获取或设置模型。"""
+    Url: str
+    """获取或设置URL。"""
+    DynamicThreshold: float
+    """获取或设置动态阈值。"""
+
+class AiOllamaOcrTool(AiVisionToolBase):
+    """Ollama文字识别工具组件，使用Ollama模型对图像进行OCR识别。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    @classmethod
+    def ExtractText(cls, AMediaFile: AiMediaFile, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """提取文本。"""
+    @classmethod
+    def ExtractTextFromFile(cls, const_AFilePath: str, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """从文件提取文本。"""
+    @classmethod
+    def ExtractTextFromStream(cls, AStream: Stream, const_AFileName: str, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """从流提取文本。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+    Model: str
+    """获取或设置模型。"""
+    KeepAlive: str
+    """获取或设置保持存活。"""
+    Stream: bool
+    """指定是否流。"""
+    Prompt: str
+    """获取或设置提示词。"""
+    Timeout: int
+    """获取或设置超时时间。"""
+
+class AiGeminiSpeechTool(AiSpeechToolBase):
+    """Gemini语音工具组件，调用Gemini模型完成语音转文字与文字转语音。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def GenerateSpeech(cls, const_AApiKey: str, const_AText: str, const_AVice: str, AAudioProfile: Strings, AScene: Strings, ADirectorsNotes: Strings) -> AiMediaFile:
+        """生成语音。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Model: str
+    """获取或设置模型。"""
+    Url: str
+    """获取或设置URL。"""
+    Voice: str
+    """获取或设置语音。"""
+    AudioProfile: Strings
+    """获取或设置音频配置文件。"""
+    Scene: Strings
+    """获取或设置场景。"""
+    DirectorsNotes: Strings
+    """获取或设置导演备注。"""
+    Prompt_tokens: int
+    """获取或设置提示词令牌数。"""
+    Completion_tokens: int
+    """获取或设置补全令牌数。"""
+    Total_tokens: int
+    """获取或设置总计令牌数。"""
+    TranscriptionModel: str
+    """获取或设置语音转写模型。"""
+    TranscriptionPrompt: str
+    """获取或设置语音转写提示词。"""
+
+class AiElevenLabsSpeechTool(AiSpeechToolBase):
+    """ElevenLabs语音工具组件，调用ElevenLabs服务完成语音合成与转写。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    @classmethod
+    def GenerateSpeech(cls, const_AApiKey: str, const_AVoiceId: str, const_AModelId: str, const_AText: str) -> AiMediaFile:
+        """生成语音。"""
+    def Transcribe(self, aMediaFile: AiMediaFile) -> str:
+        """转写。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    VoiceId: str
+    """获取或设置语音ID。"""
+    ModelId: str
+    """获取或设置模型ID。"""
+    Stability: float
+    """获取或设置稳定性。"""
+    SimilarityBoost: float
+    """获取或设置相似度增强。"""
+    Style: float
+    """获取或设置样式。"""
+    UseSpeakerBoost: bool
+    """指定是否使用说话人增强。"""
+    OutputFormat: Any
+    """获取或设置输出格式。"""
+    SpeechToTextModel: str
+    """获取或设置语音到文本模型。"""
+    Prompt_tokens: int
+    """获取或设置提示词令牌数。"""
+    Completion_tokens: int
+    """获取或设置补全令牌数。"""
+    Total_tokens: int
+    """获取或设置总计令牌数。"""
+
+class AiOpenAiRealtimeSTT(AiRealtimeBase):
+    """OpenAI实时语音转文字组件，通过实时接口进行流式语音识别。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取默认模型。"""
+    TranscriptionModel: Any
+    """获取或设置语音转写模型。"""
+    TranscriptionPrompt: str
+    """获取或设置语音转写提示词。"""
+    TranscriptionKeywords: Strings
+    """获取或设置语音转写关键词。"""
+    Languages: Strings
+    """获取或设置语言。"""
+    LowDelay: bool
+    """指定是否低延迟。"""
+
+class AiOpenAiRealtimeTranslate(AiRealtimeVoiceBase):
+    """OpenAI实时语音翻译组件，通过实时接口进行流式语音翻译。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取默认模型。"""
+    TargetLanguage: str
+    """获取或设置目标语言。"""
+    SourceTranscription: bool
+    """指定是否源语音转写。"""
+
+class AiGeminiRealtimeSTT(AiRealtimeBase):
+    """Gemini实时语音转文字组件，通过实时接口进行流式语音识别。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取默认模型。"""
+
+class AiGuardrails(Component):
+    """AI护栏组件，用于对输入输出内容进行安全检查与过滤。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def CheckToolCall(self, const_AToolName: str, const_AArguments: str, out_AReason: str) -> bool:
+        """检查工具调用。"""
+    BlockedCount: int
+    """获取阻塞数量。"""
+    Enabled: bool
+    """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
+    AllowedTools: Strings
+    """获取或设置允许工具。"""
+    BlockedTools: Strings
+    """获取或设置阻塞工具。"""
+    BlockedArgPatterns: Strings
+    """获取或设置阻塞参数模式。"""
+    OnCheckToolCall: Any
+    """OnCheckToolCall事件，在相关操作发生时触发。"""
+    OnBlocked: Any
+    """OnBlocked事件，在相关操作发生时触发。"""
+
+class AiComputerUseTool(Component):
+    """计算机操作工具组件，允许AI模型通过截图和鼠标键盘动作操作计算机。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ProcessToolCall(self, ToolCall: Any, out_ResponseMedia: AiMediaFile) -> str:
+        """处理工具调用。"""
+    def GetRealPoint(self, GeminiX: int, GeminiY: int) -> Point:
+        """获取实际点。"""
+    def GetRealRect(self, GemX1: int, GemY1: int, GemX2: int, GemY2: int) -> Rect:
+        """获取实际矩形。"""
+    def GetFunctionDefinitions(self) -> str:
+        """获取函数定义。"""
+    def TranslateClaudeToolCall(self, ToolCall: Any) -> None:
+        """翻译Claude工具调用。"""
+    def TranslateOpenAIToolCall(self, ToolCall: Any) -> None:
+        """翻译打开AI工具调用。"""
+    CurrentAction: Any
+    """获取当前动作。"""
+    ScreenWidth: int
+    """获取或设置屏幕宽度。"""
+    ScreenHeight: int
+    """获取或设置屏幕高度。"""
+    CurrentUrl: str
+    """获取或设置当前URL。"""
+    OnExecuteAction: Any
+    """OnExecuteAction事件，在相关操作发生时触发。"""
+    OnRequestScreenshot: Any
+    """OnRequestScreenshot事件，在相关操作发生时触发。"""
+    OnSafetyConfirmation: Any
+    """OnSafetyConfirmation事件，在相关操作发生时触发。"""
+    AreaLeft: int
+    """获取或设置区域左侧。"""
+    AreaTop: int
+    """获取或设置区域顶部。"""
+    AreaWidth: int
+    """获取或设置区域宽度。"""
+    AreaHeight: int
+    """获取或设置区域高度。"""
+    EnableZoom: bool
+    """指定是否启用缩放。"""
+
+class AiTelemetry(Component):
+    """AI遥测组件，用于记录调用链路、耗时和用量等追踪信息。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    @classmethod
+    def Active(cls) -> AiTelemetry:
+        """活动，返回相应结果。"""
+    def StartSpan(self, const_AName: str, AKind: Any = ..., const_ATraceParent: str = ...) -> Any:
+        """启动跨度。"""
+    def EndSpan(self, ASpan: Any, const_AErrorMsg: str = ...) -> None:
+        """结束跨度。"""
+    def Flush(self) -> None:
+        """刷新缓冲。"""
+    DroppedSpans: int
+    """获取已拖放跨度。"""
+    Enabled: bool
+    """Enabled属性用于设置控件是否可用。该属性定义了控件是否可以响应用户交互。"""
+    Endpoint: str
+    """获取或设置端点。"""
+    ServiceName: str
+    """获取或设置服务名称。"""
+    Headers: Strings
+    """获取或设置请求头。"""
+    FlushIntervalMs: int
+    """获取或设置刷新缓冲间隔毫秒。"""
+    MaxBatchSize: int
+    """获取或设置最大批量大小。"""
+    OnLog: Any
+    """OnLog事件，在相关操作发生时触发。"""
+
+class AiGrokRealtimeChat(AiRealtimeVoiceBase):
+    """Grok实时语音聊天组件，通过实时接口与Grok模型进行语音对话。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def SendAudioChunk(self, const_PCM16Data: Any) -> None:
+        """发送音频数据块。"""
+    def CreateResponse(self) -> None:
+        """创建响应。"""
+    def ForceMessage(self, const_AText: str, AInterruptible: bool = ...) -> None:
+        """强制消息。"""
+    @classmethod
+    def MintEphemeralToken(cls, const_AApiKey: str, AExpiresSeconds: int = ...) -> str:
+        """临时令牌，返回相应结果。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取默认模型。"""
+    ConversationId: str
+    """获取或设置对话ID。"""
+    Voice: str
+    """获取或设置语音。"""
+    Instructions: str
+    """获取或设置指令。"""
+    ReasoningEffort: Any
+    """获取或设置推理力度。"""
+    IdleTimeoutMs: int
+    """获取或设置空闲超时时间毫秒。"""
+    OutputSpeed: float
+    """获取或设置输出速度。"""
+    AiFunctions: AiFunctions
+    """获取或设置AI函数。"""
+    OnCallToolFunction: Any
+    """OnCallToolFunction事件，在相关操作发生时触发。"""
+    EnableWebSearch: bool
+    """指定是否启用网络搜索。"""
+    EnableXSearch: bool
+    """指定是否启用X搜索。"""
+    Keyterms: Strings
+    """获取或设置关键术语。"""
+    PronunciationReplace: Strings
+    """获取或设置发音替换。"""
+    EnableResumption: bool
+    """指定是否启用恢复。"""
+    BinaryAudio: bool
+    """指定是否二进制音频。"""
+    EphemeralToken: str
+    """获取或设置临时令牌。"""
+    FileSearchCollections: Strings
+    """获取或设置文件搜索集合。"""
+    FileSearchMaxResults: int
+    """获取或设置文件搜索最大结果。"""
+    CustomToolsJson: Strings
+    """获取或设置自定义工具JSON。"""
+
+class AiMakerAiRealtimeChat(AiRealtimeVoiceBase):
+    """MakerAI实时语音聊天组件，通过实时接口进行语音对话。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def SendAudioChunk(self, const_PCM16Data: Any) -> None:
+        """发送音频数据块。"""
+    def Say(self, const_AText: str) -> None:
+        """朗读。"""
+    @classmethod
+    def GetDriverName(cls) -> str:
+        """获取驱动名称。"""
+    @classmethod
+    def GetDefaultModel(cls) -> str:
+        """获取默认模型。"""
+    Endpoint: str
+    """获取或设置端点。"""
+    Voice: str
+    """获取或设置语音。"""
+    SttModel: str
+    """获取或设置STT模型。"""
+    SttPrompt: str
+    """获取或设置STT提示词。"""
+    CallerUri: str
+    """获取或设置调用者URI。"""
+    TtsModel: str
+    """获取或设置TTS模型。"""
+    Instructions: str
+    """获取或设置指令。"""
+    RagId: str
+    """获取或设置RAG ID。"""
+    Stateless: bool
+    """指定是否无状态。"""
+    VadMode: str
+    """获取或设置语音活动检测模式。"""
+    OnSpeechStart: Callable[[Object],None]
+    """OnSpeechStart事件，在相关操作发生时触发。"""
+    OnSpeechEnd: Callable[[Object],None]
+    """OnSpeechEnd事件，在相关操作发生时触发。"""
+
+class AiRAGVectorPostgresDriver(AiVectorStoreDriverBase):
+    """PostgreSQL向量存储驱动，为RAG向量库提供基于PostgreSQL的存储。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Add(self, const_ANode: AiEmbeddingNode, const_AEntidad: str = ...) -> None:
+        """添加。"""
+    def Search(self, const_ATarget: AiEmbeddingNode, const_AEntidad: str, ALimit: int, APrecision: float, AFilter: Any, Options: Any) -> AiRAGVector:
+        """搜索。"""
+    def Delete(self, const_AID: str, const_AEntidad: str) -> None:
+        """删除。"""
+    def Clear(self, const_AEntidad: str) -> None:
+        """清除。"""
+    def CreateSchema(self, const_ABaseTableName: str, ADim: int) -> None:
+        """创建模式定义。"""
+    def EmbeddingToString(self, const_AData: Any) -> str:
+        """嵌入向量到字符串，返回相应结果。"""
+    def StringToEmbedding(self, const_AStr: str) -> Any:
+        """字符串到嵌入向量，返回相应结果。"""
+    LastSQL: str
+    """获取最后SQL。"""
+    Connection: Any
+    """获取或设置连接。"""
+    TableName: str
+    """获取或设置表名称。"""
+    CurrentEntidad: str
+    """获取或设置当前实体。"""
+    Language: Any
+    """获取或设置语言。"""
+
+class AiRAGVectorSQLiteDriver(AiVectorStoreDriverBase):
+    """SQLite向量存储驱动，为RAG向量库提供基于SQLite的存储。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Add(self, const_ANode: AiEmbeddingNode, const_AEntidad: str = ...) -> None:
+        """添加。"""
+    def Search(self, const_ATarget: AiEmbeddingNode, const_AEntidad: str, ALimit: int, APrecision: float, AFilter: Any, Options: Any) -> AiRAGVector:
+        """搜索。"""
+    def Delete(self, const_AID: str, const_AEntidad: str) -> None:
+        """删除。"""
+    def Clear(self, const_AEntidad: str) -> None:
+        """清除。"""
+    def CreateSchema(self, const_ABaseTableName: str) -> None:
+        """创建模式定义。"""
+    def DropSchema(self, const_ABaseTableName: str) -> None:
+        """拖放模式定义。"""
+    def EmbeddingToStr(self, const_AData: Any) -> str:
+        """嵌入向量到字符串，返回相应结果。"""
+    def StrToEmbedding(self, const_AStr: str) -> Any:
+        """字符串到嵌入向量，返回相应结果。"""
+    LastSQL: str
+    """获取最后SQL。"""
+    VecExtLoaded: bool
+    """指示是否向量扩展名已加载。"""
+    Connection: Any
+    """获取或设置连接。"""
+    TableName: str
+    """获取或设置表名称。"""
+    CurrentEntidad: str
+    """获取或设置当前实体。"""
+    Language: Any
+    """获取或设置语言。"""
+    VecExtensionPath: str
+    """获取或设置向量扩展路径。"""
+
+class AiMkVecDriver(AiVectorStoreDriverBase):
+    """MkVec向量存储驱动，为RAG向量库提供基于MkVec的存储。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Add(self, const_ANode: AiEmbeddingNode, const_AEntidad: str = ...) -> None:
+        """添加。"""
+    def Search(self, const_ATarget: AiEmbeddingNode, const_AEntidad: str, ALimit: int, APrecision: float, AFilter: Any, Options: Any) -> AiRAGVector:
+        """搜索。"""
+    def Delete(self, const_AID: str, const_AEntidad: str) -> None:
+        """删除。"""
+    def Clear(self, const_AEntidad: str) -> None:
+        """清除。"""
+    def Open(self) -> None:
+        """打开。"""
+    def Close(self) -> None:
+        """关闭。"""
+    def Compact(self) -> None:
+        """紧凑。"""
+    def NodeCount(self, const_AEntidad: str = ...) -> int:
+        """节点数量，返回相应结果。"""
+    def EntidadList(self) -> Any:
+        """实体列表，返回相应结果。"""
+    IsOpen: bool
+    """指示是否打开。"""
+    FilePath: str
+    """获取或设置文件路径。"""
+    Dim: int
+    """获取或设置维度。"""
+    Language: Any
+    """获取或设置语言。"""
+    AutoOpen: bool
+    """指定是否自动打开。"""
+
+class AiRAGVectorMSSQLDriver(AiVectorStoreDriverBase):
+    """SQL Server向量存储驱动，为RAG向量库提供基于MSSQL的存储。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Add(self, const_ANode: AiEmbeddingNode, const_AEntidad: str = ...) -> None:
+        """添加。"""
+    def Search(self, const_ATarget: AiEmbeddingNode, const_AEntidad: str, ALimit: int, APrecision: float, AFilter: Any, Options: Any) -> AiRAGVector:
+        """搜索。"""
+    def Delete(self, const_AID: str, const_AEntidad: str) -> None:
+        """删除。"""
+    def Clear(self, const_AEntidad: str) -> None:
+        """清除。"""
+    def CreateSchema(self, const_ABaseTableName: str, ADim: int) -> None:
+        """创建模式定义。"""
+    def DropSchema(self, const_ABaseTableName: str) -> None:
+        """拖放模式定义。"""
+    def StringToEmbedding(self, const_AStr: str) -> Any:
+        """字符串到嵌入向量，返回相应结果。"""
+    LastSQL: str
+    """获取最后SQL。"""
+    FullTextAvailable: bool
+    """指示是否完整文本可用。"""
+    Connection: Any
+    """获取或设置连接。"""
+    TableName: str
+    """获取或设置表名称。"""
+    CurrentEntidad: str
+    """获取或设置当前实体。"""
+    Language: Any
+    """获取或设置语言。"""
+
+class AiOpenAiWebSearchTool(AiWebSearchToolBase):
+    """OpenAI联网搜索工具组件，利用OpenAI的搜索能力获取网络信息。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    @classmethod
+    def Search(cls, const_AApiKey: str, const_AQuery: str, const_AModel: str = ...) -> Any:
+        """搜索。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Model: str
+    """获取或设置模型。"""
+    Url: str
+    """获取或设置URL。"""
+
+class AiOpenAiSpeechTool(AiSpeechToolBase):
+    """OpenAI语音工具组件，调用OpenAI模型完成语音转文字与文字转语音。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Audio: AiOpenAiAudio
+    """获取音频。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+    TTSModel: Any
+    """获取或设置TTS模型。"""
+    TTSVoice: Any
+    """获取或设置TTS语音。"""
+    TTSResponseFormat: Any
+    """获取或设置TTS响应格式。"""
+    TTSSpeed: float
+    """获取或设置TTS速度。"""
+    TTSInstructions: str
+    """获取或设置TTS指令。"""
+    TranscriptionModel: Any
+    """获取或设置语音转写模型。"""
+    TranscriptionLanguage: str
+    """获取或设置语音转写语言。"""
+    TranscriptionTemperature: float
+    """获取或设置语音转写温度。"""
+    TranscriptionTimestampGranularities: Any
+    """获取或设置语音转写时间戳粒度。"""
+    TranscriptionLogprobs: bool
+    """指定是否语音转写对数概率。"""
+
+class AiOllamaVisionTool(AiVisionToolBase):
+    """Ollama视觉工具组件，使用Ollama多模态模型理解图像内容。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    @classmethod
+    def Describe(cls, AMediaFile: AiMediaFile, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """描述。"""
+    @classmethod
+    def DescribeFromFile(cls, const_AFilePath: str, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """从文件描述。"""
+    @classmethod
+    def DescribeFromStream(cls, AStream: Stream, const_AFileName: str, const_APrompt: str = ..., const_AUrl: str = ...) -> str:
+        """从流描述。"""
+    ApiKey: str
+    """获取或设置API键。"""
+    Url: str
+    """获取或设置URL。"""
+    Model: str
+    """获取或设置模型。"""
+    KeepAlive: str
+    """获取或设置保持存活。"""
+    Prompt: str
+    """获取或设置提示词。"""
+    Temperature: float
+    """获取或设置温度。"""
+    MaxTokens: int
+    """获取或设置最大令牌数。"""
+    Timeout: int
+    """获取或设置超时时间。"""
+
+class AiMemory(AiPersistentMemoryBase):
+    """AI持久记忆组件，用于保存、检索和管理AI的长期记忆。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Store(self, const_AContent: str, AType: Any = ..., AImportance: int = ..., const_ATags: str = ..., AMetadata: Any = ..., ATtlDays: int = ...) -> int:
+        """存储，返回相应结果。"""
+    def Search(self, const_AQuery: str, ALimit: int = ..., AMode: Any = ...) -> Any:
+        """搜索。"""
+    def Recall(self, AMinImportance: int = ..., ALimit: int = ...) -> Any:
+        """召回，返回相应结果。"""
+    def Delete(self, AId: int) -> None:
+        """删除。"""
+    def Stats(self) -> Any:
+        """统计，返回相应结果。"""
+    def Context(self, const_APrompt: str, ATokenBudget: int = ..., AMinImportance: int = ...) -> Any:
+        """上下文，返回相应结果。"""
+    def Get(self, AId: int) -> Any:
+        """获取。"""
+    def Update(self, AId: int, const_AContent: str = ..., AImportance: int = ...) -> None:
+        """更新。"""
+    def Prune(self, AMinImportance: int = ..., AMaxAgeDays: int = ...) -> None:
+        """裁剪。"""
+    def CleanupExpired(self) -> None:
+        """清理已过期。"""
+    def BackfillEmbeddings(self) -> None:
+        """回填嵌入向量。"""
+    def ExportToJSON(self) -> Any:
+        """导出到JSON。"""
+    def ImportFromJSON(self, AData: Any) -> None:
+        """从JSON导入。"""
+    def Link(self, AFromId: int, AToId: int, const_ARelation: str = ...) -> None:
+        """连线。"""
+    def Unlink(self, AFromId: int, AToId: int) -> None:
+        """解除关联。"""
+    def Links(self, AId: int) -> Any:
+        """连线，返回相应结果。"""
+    def RefreshDecay(self) -> None:
+        """刷新衰减。"""
+    def BuildContext(self, const_APrompt: str, ATokenBudget: int) -> str:
+        """构建上下文。"""
+    def AutoStore(self, const_AContent: str, AImportance: int) -> None:
+        """自动存储。"""
+    def NotifyExchange(self, const_AUserPrompt: str, const_AAssistantResponse: str) -> None:
+        """通知交换。"""
+    def AnalyzeNow(self) -> int:
+        """分析当前，返回相应结果。"""
+    Analyzer: AiChatConnection
+    """获取或设置分析器。"""
+    AnalysisInterval: int
+    """获取或设置分析间隔。"""
+    Namespace: str
+    """获取或设置命名空间。"""
+    DbPath: str
+    """获取或设置数据库路径。"""
+    Embedder: AiEmbeddingsCore
+    """获取或设置嵌入器。"""
+    AutoDecay: bool
+    """指定是否自动衰减。"""
+    OnStore: Any
+    """OnStore事件，在相关操作发生时触发。"""
+    OnSearch: Any
+    """OnSearch事件，在相关操作发生时触发。"""
+
+class SimpleGrid(StringGrid):
+    """简单表格控件，基于字符串网格提供基础的数据展示功能。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def SelectOneCell(self, ACol: int, ARow: int) -> None:
+        """选择单单元格。"""
+    def ClearAllCellProps(self) -> None:
+        """清除全部单元格属性。"""
+    CellAsBoolean: bool
+    """指定是否单元格为布尔。"""
+    OnMsg: Any
+    """获取或设置消息。"""
+
+class P4DParamGrid(SimpleGrid):
+    """参数表格控件，以表格形式展示和编辑参数名称与参数值。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def AddParam(self, const_AIdent: str, const_AName: str, const_AMemo: str, const_AKind: str, const_ADefaultValue: str) -> int:
+        """添加参数。"""
+    def ParamExists(self, const_AIdent: str) -> bool:
+        """参数存在，返回相应结果。"""
+    def DeleteParam(self, const_AIdent: str) -> None:
+        """删除参数。"""
+    def SetParamAsCombo(self, const_AIdent: str) -> None:
+        """设置参数为组合框。"""
+    def AddParamComboItem(self, const_AIdent: str, const_AItemText: str) -> None:
+        """添加参数组合框项目。"""
+    def SetParamAlignment(self, const_AIdent: str, const_AAlign: str) -> None:
+        """设置参数对齐方式。"""
+    def SetParamTextColor(self, const_AIdent: str, AColor: int) -> None:
+        """设置参数文本颜色。"""
+    def HideParam(self, const_AIdent: str, AHide: bool) -> None:
+        """隐藏参数。"""
+    def ClearParams(self) -> None:
+        """清除参数。"""
+    def LoadParamGrid(self) -> None:
+        """加载参数网格。"""
+    def SaveParamGrid(self) -> None:
+        """保存参数网格。"""
+    def GetParamString(self, const_AIdent: str) -> str:
+        """获取参数字符串。"""
+    def SetParamString(self, const_AIdent: str, const_AValue: str) -> None:
+        """设置参数字符串。"""
+    def GetParamInt(self, const_AIdent: str) -> int:
+        """获取参数整数。"""
+    def SetParamInt(self, const_AIdent: str, AValue: int) -> None:
+        """设置参数整数。"""
+    def GetParamBool(self, const_AIdent: str) -> bool:
+        """获取参数布尔值。"""
+    def SetParamBool(self, const_AIdent: str, AValue: bool) -> None:
+        """设置参数布尔值。"""
+    def GetParamDate(self, const_AIdent: str) -> str:
+        """获取参数日期。"""
+    def SetParamDate(self, const_AIdent: str, const_AValue: str) -> None:
+        """设置参数日期。"""
+    def GetParamTime(self, const_AIdent: str) -> str:
+        """获取参数时间。"""
+    def SetParamTime(self, const_AIdent: str, const_AValue: str) -> None:
+        """设置参数时间。"""
+    def GetParamDateTime(self, const_AIdent: str) -> str:
+        """获取参数日期时间。"""
+    def SetParamDateTime(self, const_AIdent: str, const_AValue: str) -> None:
+        """设置参数日期时间。"""
+    def SetParamCellTextColor(self, const_AIdent: str, AColor: int) -> None:
+        """设置参数单元格文本颜色。"""
+    def InvalidateParamCell(self, const_AIdent: str) -> None:
+        """使失效参数单元格。"""
+    IniFileName: str
+    """获取或设置INI文件名称。"""
+    Ident: str
+    """获取或设置标识。"""
+
+class P4DListGrid(SimpleGrid):
+    """列表表格控件，以表格形式展示和编辑列表数据。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def AddColumn(self, const_AIdent: str, const_ACaption: str, const_AKind: str, AWidth: int) -> int:
+        """添加列。"""
+    def SetColumnAsCombo(self, const_AIdent: str) -> None:
+        """设置列为组合框。"""
+    def AddColumnComboItem(self, const_AIdent: str, const_AItemText: str) -> None:
+        """添加列组合框项目。"""
+    def HideColumn(self, const_AIdent: str, AHide: bool) -> None:
+        """隐藏列。"""
+    def ClearColumns(self) -> None:
+        """清除列。"""
+    def LoadListGrid(self) -> None:
+        """加载列表网格。"""
+    def SaveListGrid(self) -> None:
+        """保存列表网格。"""
+    def AddRow(self) -> int:
+        """添加行。"""
+    def DeleteRow(self, ARow: int) -> None:
+        """删除行。"""
+    def ClearRows(self) -> None:
+        """清除行。"""
+    def GetRowCount(self) -> int:
+        """获取行数量。"""
+    def GetCellString(self, const_AIdent: str, ARow: int) -> str:
+        """获取单元格字符串。"""
+    def SetCellString(self, const_AIdent: str, ARow: int, AValue: str) -> None:
+        """设置单元格字符串。"""
+    def GetCellInt(self, const_AIdent: str, ARow: int) -> int:
+        """获取单元格整数。"""
+    def SetCellInt(self, const_AIdent: str, ARow: int, AValue: int) -> None:
+        """设置单元格整数。"""
+    def GetCellBool(self, const_AIdent: str, ARow: int) -> bool:
+        """获取单元格布尔值。"""
+    def SetCellBool(self, const_AIdent: str, ARow: int, AValue: bool) -> None:
+        """设置单元格布尔值。"""
+    def SetCellTextColor(self, const_AIdent: str, ARow: int, AColor: int) -> None:
+        """设置单元格文本颜色。"""
+    def SetCellAlignment(self, const_AIdent: str, ARow: int, AAlign: str) -> None:
+        """设置单元格对齐方式。"""
+    def InvalidateDataCell(self, const_AIdent: str, ARow: int) -> None:
+        """使失效数据单元格。"""
+    IniFileName: str
+    """获取或设置INI文件名称。"""
+    Ident: str
+    """获取或设置标识。"""
+
+class RMReport(RMCustomReport):
+    """ReportMachine报表组件，用于加载、设计、准备、预览、打印和导出报表。"""
+    @classmethod
+    def DefaultPageClassName(cls) -> str:
+        """默认页类名称，返回相应结果。"""
+    @classmethod
+    def ReportCommon(cls) -> str:
+        """报表通用，返回相应结果。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Clear(self) -> None:
+        """清除。"""
+    def FindObject(self, aObjectName: str) -> Any:
+        """查找对象。"""
+    def FindGlobalObject(self, aObjName: str) -> Object:
+        """查找全局对象。"""
+    def ReportClassType(self) -> int:
+        """报表类类型，返回相应结果。"""
+    def ReportFileExtend(self) -> str:
+        """报表文件扩展，返回相应结果。"""
+    def ReportFileFilter(self) -> str:
+        """报表文件过滤，返回相应结果。"""
+    def ChangePrinter(self, OldIndex: int, NewIndex: int) -> bool:
+        """更改打印机，返回相应结果。"""
+    def PrepareReport(self) -> bool:
+        """准备报表。"""
+    def DesignReport(self) -> bool:
+        """设计报表，返回相应结果。"""
+    def ShowReport(self) -> None:
+        """显示报表。"""
+    def PrintReport(self) -> None:
+        """打印报表。"""
+    def NewReport(self) -> None:
+        """新建报表。"""
+    def ExportTo(self, aFilter: RMExportFilter, aFileName: str) -> None:
+        """导出到。"""
+    def ShowPreparedReport(self) -> None:
+        """显示已准备报表。"""
+    def PrintPreparedReportDlg(self) -> None:
+        """打印已准备报表对话框。"""
+    def PrintPreparedReport(self, aPageNumbers: str, aCopies: int, aCollate: bool, aPrintPages: Any) -> None:
+        """打印已准备报表。"""
+    def SavePreparedReportToBlobField(self, aBlobField: Any) -> None:
+        """保存已准备报表到二进制大对象字段。"""
+    def LoadPreparedReportFromBlobField(self, aBlobField: Any) -> None:
+        """从二进制大对象字段加载已准备报表。"""
+    def LoadPreparedReportFromStream(self, aStream: Stream) -> None:
+        """从流加载已准备报表。"""
+    def LoadPreparedReport(self, aFileName: str) -> None:
+        """加载已准备报表。"""
+    def SavePreparedReport(self, aFileName: str) -> None:
+        """保存已准备报表。"""
+    def AddPreparedReport(self, aFileName: str) -> None:
+        """添加已准备报表。"""
+    def EditPreparedReport(self, PageIndex: int) -> bool:
+        """编辑已准备报表。"""
+    def DesignPreviewedReport(self) -> bool:
+        """设计已预览报表，返回相应结果。"""
+    def AppendReport(self, aStream: Stream) -> None:
+        """追加报表。"""
+    def AppendFromFile(self, aFileName: str) -> None:
+        """从文件追加。"""
+    def LoadFromStream(self, aStream: Stream) -> None:
+        """从流加载。"""
+    def SaveToStream(self, aStream: Stream) -> None:
+        """保存到流。"""
+    def LoadFromFile(self, aFileName: str) -> bool:
+        """从文件加载。"""
+    def SaveToFile(self, aFileName: str) -> None:
+        """保存到文件。"""
+    def SaveToBlobField(self, aBlobField: Any) -> None:
+        """保存到二进制大对象字段。"""
+    def LoadFromBlobField(self, aBlobField: Any) -> None:
+        """从二进制大对象字段加载。"""
+    def SaveToMemoField(self, aField: Any) -> None:
+        """保存到备注字段。"""
+    def LoadFromMemoField(self, aField: Any) -> None:
+        """从备注字段加载。"""
+    def LoadFromAnsiString(self, const_aStr: str) -> None:
+        """从ANSI字符串加载。"""
+    def SaveToAnsiString(self, var_aStr: str) -> None:
+        """保存到ANSI字符串。"""
+    def LoadFromResourceName(self, aInstance: int, const_aResName: str) -> None:
+        """从资源名称加载。"""
+    def LoadFromResourceID(self, aInstance: int, aResID: int) -> None:
+        """从资源ID加载。"""
+    def LoadTemplate(self, aFileName: str, aCommon: Strings, aBitmap: Bitmap) -> None:
+        """加载模板。"""
+    def SaveTemplate(self, aFileName: str, const_aCommon: Any, const_aBitmap: Bitmap) -> None:
+        """保存模板。"""
+    def AddFunction(self, const_aFuncName: str, const_aCategory: str, const_aDescription: str, const_aParams: str) -> None:
+        """添加函数。"""
+    def CreateAutoSearchField(self, const_aTableName: str, const_aFieldName: str, const_aFieldAlias: str, aDataType: Any, aOperator: Any, const_aExpression: str, aMandatory: bool) -> Any:
+        """创建自动搜索字段。"""
+    def CreateAutoSearchCriteria(self, const_aDataPipelineName: str, const_aFieldName: str, aOperator: Any, const_aExpression: str, aMandatory: bool) -> Any:
+        """创建自动搜索条件。"""
+    AllObjects: Any
+    """获取全部对象。"""
+    DataPage: Any
+    """获取数据页。"""
+    Items: Any
+    """获取项目。"""
+    DrawCanvas: Any
+    """获取绘制画布。"""
+    Parser: Any
+    """获取解析器。"""
+    DocMode: Any
+    """获取或设置文档模式。"""
+    Pages: Any
+    """获取页。"""
+    EndPages: Any
+    """获取或设置结束页。"""
+    CanRebuild: bool
+    """指定是否重建。"""
+    DoublePass: bool
+    """指定是否双透传。"""
+    FinalPass: bool
+    """指示是否最终透传。"""
+    FileName: str
+    """获取或设置文件名称。"""
+    PrintbackgroundPicture: bool
+    """指定是否Printbackground图片。"""
+    ColorPrint: bool
+    """指定是否颜色打印。"""
+    PrintOffsetLeft: int
+    """获取或设置打印偏移左侧。"""
+    PrintOffsetTop: int
+    """获取或设置打印偏移顶部。"""
+    spPrintOffsetLeft: int
+    """获取或设置打印偏移左侧。"""
+    spPrintOffsetTop: int
+    """获取或设置打印偏移顶部。"""
+    Modified: bool
+    """指定是否已修改。"""
+    ComponentModified: bool
+    """指定是否组件已修改。"""
+    PageCompositeMode: Any
+    """获取或设置页组合模式。"""
+    PrinterName: str
+    """获取或设置打印机名称。"""
+    PrinterIndex: int
+    """获取或设置打印机索引。"""
+    ReportPrinter: Any
+    """获取报表打印机。"""
+    Flag_TableEmpty: bool
+    """指示是否标志表空。"""
+    Dictionary: Any
+    """获取或设置字典。"""
+    PageNo: int
+    """获取页无。"""
+    CurrentPage: Any
+    """获取或设置当前页。"""
+    CurrentBand: Any
+    """获取当前带区。"""
+    CurrentView: Any
+    """获取或设置当前视图。"""
+    Script: Any
+    """获取或设置脚本。"""
+    Status: Any
+    """获取状态。"""
+    ShowErrorMsg: bool
+    """指定是否显示错误消息。"""
+    OnReadOneEndPage: Any
+    """OnReadOneEndPage事件，在相关操作发生时触发。"""
+    AutoSetPageLength: bool
+    """指定是否自动设置页长度。"""
+    UseTempFile: bool
+    """指定是否使用临时文件。"""
+    TextStyles: Any
+    """获取或设置文本样式。"""
+    Busy: bool
+    """指示是否忙碌。"""
+    MasterReport: RMReport
+    """获取主报表。"""
+    TotalPages: int
+    """获取总计页。"""
+    PrintAtFirstTime: bool
+    """指定是否打印在第一个时间。"""
+    IncPageLength: int
+    """获取或设置页长度。"""
+    CanExport: bool
+    """指定是否导出。"""
+    ScriptEngine: Any
+    """获取或设置脚本引擎。"""
+    ReportEventVars: Any
+    """获取报表事件变量。"""
+    DrillDownList: Any
+    """获取钻取按下列表。"""
+    ThreadPrepareReport: bool
+    """指定是否线程准备报表。"""
+    DataDictionary: RMDataDictionary
+    """获取或设置数据字典。"""
+    ModifyPrepared: bool
+    """指定是否修改已准备。"""
+    InitialZoom: Any
+    """获取或设置初始缩放。"""
+    PreviewButtons: Any
+    """获取或设置预览按钮。"""
+    ModalPreview: bool
+    """指定是否模态预览。"""
+    MDIPreview: bool
+    """指定是否MDI预览。"""
+    ShowProgress: bool
+    """指定是否显示进度。"""
+    PreviewInitialDir: str
+    """获取或设置预览初始目录。"""
+    DefaultCopies: int
+    """获取或设置默认副本。"""
+    DefaultCollate: bool
+    """指定是否默认逐份打印。"""
+    ShowPrintDialog: bool
+    """指定是否显示打印对话框。"""
+    SaveReportOptions: Any
+    """获取或设置保存报表选项。"""
+    Preview: RMCustomPreview
+    """获取或设置预览。"""
+    PreviewOptions: Any
+    """获取或设置预览选项。"""
+    Dataset: RMDataset
+    """获取或设置数据集。"""
+    StoreInDFM: bool
+    """指定是否存储在DFM。"""
+    ReportType: Any
+    """获取或设置报表类型。"""
+    CompressLevel: Any
+    """获取或设置压缩级别。"""
+    CompressThread: bool
+    """指定是否压缩线程。"""
+    LaterBuildEvents: bool
+    """指定是否稍后构建事件。"""
+    OnlyOwnerDataSet: bool
+    """指定是否仅Owner数据设置。"""
+    OnPreviewSaveReportEvent: Any
+    """OnPreviewSaveReportEvent事件，在相关操作发生时触发。"""
+    OnBeginPage: Any
+    """OnBeginPage事件，在相关操作发生时触发。"""
+    OnEndPage: Any
+    """OnEndPage事件，在相关操作发生时触发。"""
+    OnBeginDoc: Callable[[Object],None]
+    """OnBeginDoc事件，在相关操作发生时触发。"""
+    OnEndDoc: Callable[[Object],None]
+    """OnEndDoc事件，在相关操作发生时触发。"""
+    OnProgress: Any
+    """OnProgress事件，在相关操作发生时触发。"""
+    OnUserFunction: Any
+    """OnUserFunction事件，在相关操作发生时触发。"""
+    OnGetValue: Any
+    """OnGetValue事件，在相关操作发生时触发。"""
+    OnLoadReportSetting: Any
+    """OnLoadReportSetting事件，在相关操作发生时触发。"""
+    OnSaveReportSetting: Any
+    """OnSaveReportSetting事件，在相关操作发生时触发。"""
+    OnPrintReportEvent: Callable[[Object],None]
+    """OnPrintReportEvent事件，在相关操作发生时触发。"""
+    OnEndPrintPage: Any
+    """OnEndPrintPage事件，在相关操作发生时触发。"""
+    OnBeginPrintPage: Any
+    """OnBeginPrintPage事件，在相关操作发生时触发。"""
+    OnBeforePrint: Any
+    """OnBeforePrint事件，在相关操作发生时触发。"""
+    OnAfterPrint: Any
+    """OnAfterPrint事件，在相关操作发生时触发。"""
+    OnBeginBand: Any
+    """OnBeginBand事件，在相关操作发生时触发。"""
+    OnEndBand: Any
+    """OnEndBand事件，在相关操作发生时触发。"""
+    OnManualBuild: Any
+    """OnManualBuild事件，在相关操作发生时触发。"""
+    OnBeginColumn: Any
+    """OnBeginColumn事件，在相关操作发生时触发。"""
+    OnPrintColumn: Any
+    """OnPrintColumn事件，在相关操作发生时触发。"""
+    OnBeforePrintBand: Any
+    """OnBeforePrintBand事件，在相关操作发生时触发。"""
+    OnScriptBeginReport: Callable[[Object],None]
+    """OnScriptBeginReport事件，在相关操作发生时触发。"""
+    OnScriptEndReport: Callable[[Object],None]
+    """OnScriptEndReport事件，在相关操作发生时触发。"""
+    OnScriptGetValue: Any
+    """OnScriptGetValue事件，在相关操作发生时触发。"""
+    OnScriptSetValue: Any
+    """OnScriptSetValue事件，在相关操作发生时触发。"""
+    OnObjectClick: Any
+    """OnObjectClick事件，在相关操作发生时触发。"""
+    ReportInfo: Any
+    """获取或设置报表信息。"""
+
+class RMGridReport(RMReport):
+    """ReportMachine表格报表组件，用于制作电子表格风格的报表。"""
+    @classmethod
+    def DefaultPageClassName(cls) -> str:
+        """默认页类名称，返回相应结果。"""
+    @classmethod
+    def ReportCommon(cls) -> str:
+        """报表通用，返回相应结果。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ReportClassType(self) -> int:
+        """报表类类型，返回相应结果。"""
+    def CreatePage(self, const_aClassName: str) -> Any:
+        """创建页。"""
+    def AddGridReportPage(self) -> Any:
+        """添加网格报表页。"""
+    def AddReportPage(self) -> Any:
+        """添加报表页。"""
+
+class RMCompositeReport(RMReport):
+    """ReportMachine组合报表组件，用于把多个报表合并为一个整体输出。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    Reports: Any
+    """获取报表。"""
+    CompositeMode: Any
+    """获取或设置组合模式。"""
+    ShowPreparedReports: bool
+    """指定是否显示已准备报表。"""
+
+class RMDBDataSet(RMDataset):
+    """ReportMachine数据库数据集组件，把数据库数据集提供给报表使用。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Active(self) -> bool:
+        """活动，返回相应结果。"""
+    def Init(self) -> None:
+        """初始化。"""
+    def Exit(self) -> None:
+        """离开。"""
+    def First(self) -> None:
+        """第一个。"""
+    def Last(self) -> None:
+        """最后。"""
+    def Next(self) -> None:
+        """下一个。"""
+    def Prior(self) -> None:
+        """上一个。"""
+    def MoveBy(self, Distance: int) -> None:
+        """按移动。"""
+    def Open(self) -> None:
+        """打开。"""
+    def Close(self) -> None:
+        """关闭。"""
+    def Eof(self) -> bool:
+        """文件尾，返回相应结果。"""
+    def GetDataSet(self) -> DataSet:
+        """获取数据设置。"""
+    def FieldWidth(self, aFieldName: str) -> int:
+        """字段宽度，返回相应结果。"""
+    def FieldIsNull(self, aFieldName: str) -> bool:
+        """字段是否空，返回相应结果。"""
+    def GetFieldDisplayLabel(self, aFieldName: str) -> str:
+        """获取字段显示标签。"""
+    def GetFieldValue(self, aFieldName: str) -> Any:
+        """获取字段值。"""
+    def GetFieldDisplayText(self, aFieldName: str) -> str:
+        """获取字段显示文本。"""
+    def GetFieldsList(self, aFieldList: Any) -> None:
+        """获取字段列表。"""
+    def IsBlobField(self, aFieldName: str) -> bool:
+        """判断二进制大对象字段的状态，返回布尔值。"""
+    def AssignBlobFieldTo(self, aFieldName: str, aDest: Object) -> None:
+        """赋值二进制大对象字段到。"""
+    DataSet: DataSet
+    """获取或设置数据设置。"""
+    CloseDataSet: bool
+    """指定是否关闭数据设置。"""
+    OpenDataSet: bool
+    """指定是否打开数据设置。"""
+    ConvertNulls: bool
+    """指定是否转换空值。"""
+    OnCheckEOF: Any
+    """OnCheckEOF事件，在相关操作发生时触发。"""
+    OnClose: Callable[[Object],None]
+    """OnClose事件，在相关操作发生时触发。"""
+    OnFirst: Callable[[Object],None]
+    """OnFirst事件，在相关操作发生时触发。"""
+    OnNext: Callable[[Object],None]
+    """OnNext事件，在相关操作发生时触发。"""
+    OnPrior: Callable[[Object],None]
+    """OnPrior事件，在相关操作发生时触发。"""
+    OnInit: Callable[[Object],None]
+    """OnInit事件，在相关操作发生时触发。"""
+    OnOpen: Callable[[Object],None]
+    """OnOpen事件，在相关操作发生时触发。"""
+    OnGetFieldValue: Any
+    """OnGetFieldValue事件，在相关操作发生时触发。"""
+
+class RMUserDataset(RMDataset):
+    """ReportMachine自定义数据集组件，通过事件为报表提供自定义数据。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetFieldValue(self, aFieldName: str) -> Any:
+        """获取字段值。"""
+    def GetFieldDisplayText(self, aFieldName: str) -> str:
+        """获取字段显示文本。"""
+    def GetFieldsList(self, aFieldList: Any) -> None:
+        """获取字段列表。"""
+    def Active(self) -> bool:
+        """活动，返回相应结果。"""
+    def AssignBlobFieldTo(self, aFieldName: str, aDest: Object) -> None:
+        """赋值二进制大对象字段到。"""
+    def ClearFieldList(self) -> None:
+        """清除字段列表。"""
+    OnCheckEOF: Any
+    """OnCheckEOF事件，在相关操作发生时触发。"""
+    OnInit: Callable[[Object],None]
+    """OnInit事件，在相关操作发生时触发。"""
+    OnFirst: Callable[[Object],None]
+    """OnFirst事件，在相关操作发生时触发。"""
+    OnNext: Callable[[Object],None]
+    """OnNext事件，在相关操作发生时触发。"""
+    OnPrior: Callable[[Object],None]
+    """OnPrior事件，在相关操作发生时触发。"""
+    OnGetFieldDisplayText: Any
+    """OnGetFieldDisplayText事件，在相关操作发生时触发。"""
+    OnGetFieldValue: Any
+    """OnGetFieldValue事件，在相关操作发生时触发。"""
+    OnGetFieldsList: Any
+    """OnGetFieldsList事件，在相关操作发生时触发。"""
+
+class RMAngledLabelObject(Component):
+    """ReportMachine倾斜标签对象，用于在报表中显示带倾斜角度的文本。"""
+
+class RMRichObject(Component):
+    """ReportMachine富文本对象，用于在报表中显示富文本内容。"""
+
+class RMCheckBoxObject(Component):
+    """ReportMachine复选框对象，用于在报表中显示复选框。"""
+
+class RMOLEObject(Component):
+    """ReportMachine OLE对象，用于在报表中嵌入OLE内容。"""
+
+class RMChineseMoneyObject(Component):
+    """ReportMachine中文大写金额对象，用于把数字显示为中文大写金额。"""
+
+class RMDiagonalObject(Component):
+    """ReportMachine斜线对象，用于在报表中绘制斜线。"""
+
+class RMAsBarCodeObject(Component):
+    """ReportMachine条形码对象（AsBarcode），用于在报表中生成条形码。"""
+
+class RMBarCodeObject(Component):
+    """ReportMachine条形码对象，用于在报表中生成条形码。"""
+
+class RMBarCodeInfo(Persistent):
+    """ReportMachine条形码信息对象，保存条形码的类型、宽度、旋转等参数。"""
+    def Create(self, aBarCode: Any) -> None:
+        """创建并初始化对象的实例。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    BarTextFont: Any
+    """获取或设置栏文本字体。"""
+    RotationType: Any
+    """获取或设置旋转类型。"""
+    AddCheckChar: bool
+    """指定是否添加检查字符。"""
+    BarCodeType: Any
+    """获取或设置栏代码类型。"""
+    BarColor: int
+    """获取或设置栏颜色。"""
+    TallGuardBars: bool
+    """指定是否高防护栏。"""
+    SupplementalCode: str
+    """获取或设置补充代码。"""
+    ShowGuardChars: bool
+    """指定是否显示防护字符。"""
+    ShowCode: bool
+    """指定是否显示代码。"""
+    ExtendedSyntax: bool
+    """指定是否扩展语法。"""
+    BearerBars: bool
+    """指定是否承载令牌栏。"""
+    Code128Subset: Any
+    """获取或设置代码128子集。"""
+    BarToSpaceRatio: float
+    """获取或设置栏到空间比例。"""
+    BarNarrowToWideRatio: int
+    """获取或设置栏缩小到宽比例。"""
+    BarWidth: float
+    """获取或设置栏宽度。"""
+
+class RMDialogControls(Component):
+    """ReportMachine对话框控件集合组件，为报表对话框提供控件支持。"""
+
+class RMTextExport(RMExportFilter):
+    """ReportMachine文本导出组件，把报表导出为纯文本文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    def OnBeginPage(self) -> None:
+        """开始页。"""
+    ScaleX: float
+    """获取或设置缩放X。"""
+    ScaleY: float
+    """获取或设置缩放Y。"""
+    KillEmptyLines: bool
+    """指定是否终止空行。"""
+    ConvertToOEM: bool
+    """指定是否转换到OEM。"""
+    ExportFrames: bool
+    """指定是否导出边框。"""
+    UsePseudographic: bool
+    """指定是否使用伪图形。"""
+    PageBreaks: bool
+    """指定是否页分隔。"""
+
+class RMCSVExport(RMTextExport):
+    """ReportMachine CSV导出组件，把报表导出为CSV文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    Delimiter: str
+    """获取或设置分隔符。"""
+
+class RMCrossObject(Component):
+    """ReportMachine交叉表对象，用于在报表中生成交叉汇总表。"""
+
+class RMBMPExport(RMGraphicExport):
+    """ReportMachine BMP导出组件，把报表导出为BMP图片。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    Monochrome: bool
+    """指定是否单色。"""
+    PixelFormat: Any
+    """获取或设置像素格式。"""
+
+class RMEMFExport(RMGraphicExport):
+    """ReportMachine EMF导出组件，把报表导出为EMF图元文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+
+class RMWMFExport(RMGraphicExport):
+    """ReportMachine WMF导出组件，把报表导出为WMF图元文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+
+class RMTiffExport(RMGraphicExport):
+    """ReportMachine TIFF导出组件，把报表导出为TIFF图片。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    Monochrome: bool
+    """指定是否单色。"""
+    PixelFormat: Any
+    """获取或设置像素格式。"""
+
+class RMXLSExport(RMExportFilter):
+    """ReportMachine Excel导出组件，把报表导出为XLS表格文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    ShowAfterExport: bool
+    """指定是否显示之后导出。"""
+    ExportPrecision: int
+    """获取或设置导出精度。"""
+    PagesOfSheet: int
+    """获取或设置页的工作表。"""
+    ExportImages: bool
+    """指定是否导出图片。"""
+    ExportFrames: bool
+    """指定是否导出边框。"""
+    ExportImageFormat: Any
+    """获取或设置导出图像格式。"""
+    JPEGQuality: Any
+    """获取或设置JPEG质量。"""
+    PixelFormat: Any
+    """获取或设置像素格式。"""
+    ScaleX: float
+    """获取或设置缩放X。"""
+    ScaleY: float
+    """获取或设置缩放Y。"""
+    CompressFile: bool
+    """指定是否压缩文件。"""
+
+class RMHTMExport(RMMainExportFilter):
+    """ReportMachine HTML导出组件，把报表导出为HTML网页。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    ImgFileCount: int
+    """获取图像文件数量。"""
+    ImgFileNames: Any
+    """获取图像文件名称列表。"""
+    RepFileCount: int
+    """获取报表文件数量。"""
+    RepFileNames: Any
+    """获取报表文件名称列表。"""
+    PixelFormat: Any
+    """获取或设置像素格式。"""
+    ImageDir: str
+    """获取或设置图像目录。"""
+    LinkTextFirst: str
+    """获取或设置连线文本第一个。"""
+    LinkTextNext: str
+    """获取或设置连线文本下一个。"""
+    LinkTextPrev: str
+    """获取或设置连线文本上一个。"""
+    LinkTextLast: str
+    """获取或设置连线文本最后。"""
+    LinkBackColor: int
+    """获取或设置连线返回颜色。"""
+    LinkHoverForeColor: int
+    """获取或设置连线悬停前景颜色。"""
+    LinkHoverBackColor: int
+    """获取或设置连线悬停返回颜色。"""
+    LinkImgSRCFirst: str
+    """获取或设置连线图像源第一个。"""
+    LinkImgSRCNext: str
+    """获取或设置连线图像源下一个。"""
+    LinkImgSRCPrev: str
+    """获取或设置连线图像源上一个。"""
+    LinkImgSRCLast: str
+    """获取或设置连线图像源最后。"""
+    LinkFont: Any
+    """获取或设置连线字体。"""
+    SeparateFilePerPage: bool
+    """指定是否分隔文件每页。"""
+    ShowNavigator: bool
+    """指定是否显示导航器。"""
+    UseTextLinks: bool
+    """指定是否使用文本连线。"""
+    OptimizeForIE: bool
+    """指定是否优化用于IE。"""
+    SingleFile: bool
+    """指定是否单个文件。"""
+    CreateMHTFile: bool
+    """指定是否创建MHT文件。"""
+    BeforeSaveGraphic: Any
+    """获取或设置之前保存图形。"""
+    AfterSaveGraphic: Any
+    """获取或设置之后保存图形。"""
+
+class RMllPDFExport(RMExportFilter):
+    """ReportMachine PDF导出组件，把报表导出为PDF文件。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def OnBeginDoc(self) -> None:
+        """开始文档。"""
+    def OnEndDoc(self) -> None:
+        """结束文档。"""
+    ShowAfterExport: bool
+    """指定是否显示之后导出。"""
+    ShowBackPicture: bool
+    """指定是否显示返回图片。"""
+
+class RMJPEGExport(RMGraphicExport):
+    """ReportMachine JPEG导出组件，把报表导出为JPEG图片。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def ShowModal(self) -> int:
+        """显示模态。"""
+    Grayscale: bool
+    """指定是否灰度。"""
+    ProgressiveEncoding: bool
+    """指定是否渐进编码。"""
+    Quality: Any
+    """获取或设置质量。"""
+    PixelFormat: Any
+    """获取或设置像素格式。"""
+
+class RMPreview(RMVirtualPreview):
+    """ReportMachine预览组件，用于预览已生成的报表并提供缩放翻页等操作。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def DoKeyDownEvent(self, Sender: Object, var_Key: int, Shift: Any) -> None:
+        """执行键按下事件。"""
+    def LoadIni(self, aDefault: bool) -> None:
+        """加载INI。"""
+    def SaveIni(self, aDefault: bool) -> None:
+        """保存INI。"""
+    OnBtnExitClickEvent: Callable[[Object],None]
+    """OnBtnExitClickEvent事件，在相关操作发生时触发。"""
+    OnSaveReportEvent: Any
+    """OnSaveReportEvent事件，在相关操作发生时触发。"""
+    ShowToolbar: bool
+    """指定是否显示工具栏。"""
+
+class RMDesigner(RMCustomDesigner):
+    """ReportMachine报表设计器组件，用于可视化设计报表。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    DefaultDictionary: Any
+    """获取或设置默认字典。"""
+    OpenFileCount: int
+    """获取或设置打开文件数量。"""
+    OpenDir: str
+    """获取或设置打开目录。"""
+    SaveDir: str
+    """获取或设置保存目录。"""
+    TemplateDir: str
+    """获取或设置模板目录。"""
+    DesignerRestrictions: Any
+    """获取或设置设计器限制。"""
+    DefaultDictionaryFile: str
+    """获取或设置默认字典文件。"""
+    UseUndoRedo: bool
+    """指定是否使用撤销重做。"""
+    DefaultPageClassName: str
+    """获取或设置默认页类名称。"""
+    OnShowAboutForm: Any
+    """OnShowAboutForm事件，在相关操作发生时触发。"""
+    OnLoadReport: Any
+    """OnLoadReport事件，在相关操作发生时触发。"""
+    OnAfterLoadReport: Any
+    """OnAfterLoadReport事件，在相关操作发生时触发。"""
+    OnSaveReport: Any
+    """OnSaveReport事件，在相关操作发生时触发。"""
+    OnNewReport: Any
+    """OnNewReport事件，在相关操作发生时触发。"""
+    OnClose: Callable[[Object,CloseAction],None]
+    """OnClose事件，在相关操作发生时触发。"""
+    OnShow: Callable[[Object],None]
+    """OnShow事件，在相关操作发生时触发。"""
+
+class RMGridReportDesigner(RMCustomDesigner):
+    """ReportMachine表格报表设计器组件，用于可视化设计表格报表。"""
+
+class RMDataDictionary(Component):
+    """ReportMachine数据字典组件，用于管理报表中使用的数据定义。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def GetRealFieldName(self, const_aKey: str, const_aFieldName: str, var_RealName: str) -> bool:
+        """获取实际字段名称。"""
+    def GetVirtualFieldsName(self, const_aKey: str, aList: Strings) -> None:
+        """获取虚拟字段名称。"""
+    FieldFieldNames: Any
+    """获取或设置字段字段名称列表。"""
+
+class RMReportExplorer(Component):
+    """ReportMachine报表资源管理组件，用于管理数据库中保存的报表文件。"""
+    def Create(self, aOwner: Component) -> None:
+        """创建并初始化组件的实例，aOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Notification(self, aComponent: Component, Operation: Any) -> None:
+        """通知。"""
+    def Execute(self) -> None:
+        """执行。"""
+    def New(self, aFolderId: int) -> None:
+        """新建。"""
+    def Open(self, const_aItemId: int, const_aFolderId: int, const_aItemType: int, aReportName: str) -> None:
+        """打开。"""
+    def Print(self, const_aItemId: int, const_aFolderId: int, const_aItemType: int, const_aReportName: str) -> None:
+        """打印。"""
+    def PrintPreview(self, const_aItemId: int, const_aFolderId: int, const_aItemType: int, const_aReportName: str) -> None:
+        """打印预览。"""
+    def GetParentId(self, aFolderId: int) -> int:
+        """获取父ID。"""
+    def GetFolders(self, aList: Strings) -> None:
+        """获取文件夹。"""
+    def GetItems(self, aFolderId: int, aList: Strings) -> None:
+        """获取项目。"""
+    def GetNewFolderName(self, aParentId: int) -> str:
+        """获取新建文件夹名称。"""
+    def ChangeFolder(self, aItemId: int, aNewFolderId: int) -> bool:
+        """更改文件夹，返回相应结果。"""
+    def ChangeParentFolder(self, aFolderId: int, aNewParentId: int) -> bool:
+        """更改父文件夹，返回相应结果。"""
+    def AddFolder(self, aParentId: int, aFolderName: str, var_aFolderId: int) -> None:
+        """添加文件夹。"""
+    def RenameFolder(self, aFolderId: int, const_aNewName: str) -> None:
+        """重命名文件夹。"""
+    def Rename(self, aItemId: int, aNewName: str) -> None:
+        """重命名。"""
+    def Delete(self, aItemId: int) -> None:
+        """删除。"""
+    def DeleteFolder(self, aFolderId: int) -> bool:
+        """删除文件夹。"""
+    def GetChildFolders(self, aFolderId: int, aList: Strings) -> None:
+        """获取子级文件夹。"""
+    def GetFolderName(self, aFolderId: int) -> str:
+        """获取文件夹名称。"""
+    CurrentItemName: str
+    """获取或设置当前项目名称。"""
+    CurrentFolderId: int
+    """获取或设置当前文件夹ID。"""
+    FolderFieldNames: Any
+    """获取或设置文件夹字段名称列表。"""
+    FolderDataSet: DataSet
+    """获取或设置文件夹数据设置。"""
+    ItemFieldNames: Any
+    """获取或设置项目字段名称列表。"""
+    ItemDataSet: DataSet
+    """获取或设置项目数据设置。"""
+    RootKey: str
+    """获取或设置根键。"""
+    Reports: Any
+    """获取或设置报表。"""
+
+class RMDADOComponents(Component):
+    """ReportMachine ADO组件集合，为报表提供ADO数据访问支持。"""
+
+class RMDDBXComponents(Component):
+    """ReportMachine DBX组件集合，为报表提供DBX数据访问支持。"""
+
+class RMFormReport(RMCustomFormReport):
+    """ReportMachine窗体报表组件，用于基于窗体设计和输出报表。"""
+    def Create(self, AOwner: Component) -> None:
+        """创建并初始化组件的实例，AOwner参数指定组件的所有者。"""
+    def Destroy(self) -> None:
+        """销毁组件实例并释放其占用的所有资源。"""
+    def Notification(self, AComponent: Component, Operation: Any) -> None:
+        """通知。"""
+    ColumnHeaderViews: Any
+    """获取列页眉视图。"""
+    PageDetailViews: Any
+    """获取页详细视图。"""
+    PageFooterViews: Any
+    """获取页页脚视图。"""
+    ColumnFooterViews: Any
+    """获取列页脚视图。"""
+    GroupFooterViews: Any
+    """获取分组页脚视图。"""
+    GridTop: int
+    """获取或设置网格顶部。"""
+    GridHeight: int
+    """指定网格的高度（以像素为单位）。"""
+    DrawOnPageFooter: bool
+    """指定是否绘制页页脚。"""
+    DetailPrintControl: WinControl
+    """获取或设置详细打印控件。"""
+    DetailDataSet: Any
+    """获取或设置详细数据设置。"""
+    Groups: ListGroups
+    """获取或设置分组。"""
+    PrintControl: WinControl
+    """获取或设置打印控件。"""
+    GridFixedCols: int
+    """获取或设置网格固定列。"""
+    OnPrintObject: Any
+    """OnPrintObject事件，在相关操作发生时触发。"""
+    OnAfterCreateObject: Any
+    """OnAfterCreateObject事件，在相关操作发生时触发。"""
+    OnAfterCreateGridObjectEvent: Any
+    """OnAfterCreateGridObjectEvent事件，在相关操作发生时触发。"""
+
+class RMPrintDBGrid(RMCustomGridReport):
+    """ReportMachine数据网格打印组件，用于打印数据库网格中的数据。"""
+    DBGrid: CustomDBGrid
+    """获取或设置数据库网格。"""

@@ -2,8 +2,8 @@ object Form1: TForm
   Left = 0
   Top = 0
   Caption = 'TAiDeepSeekChatDemo'
-  ClientHeight = 418
-  ClientWidth = 481
+  ClientHeight = 421
+  ClientWidth = 484
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -43,34 +43,24 @@ object Form1: TForm
     Height = 25
     Caption = #31532#20108#31181#35843#29992#26041#24335
     TabOrder = 3
-    OnClick = Button2Click
   end
   object AiDeepSeekChat1: TAiDeepSeekChat
-    Model = 'deepseek-chat'
-    Logprobs = False
+    ApiKey = '@DEEPSEEK_API_KEY'
+    Model = 'deepseek-flash'
     Max_tokens = 3000
-    N = 1
     Response_format = tiaChatRfText
-    Seed = 0
-    Asynchronous = True
-    Temperature = 1.00000000000000000
-    Top_p = 1.00000000000000000
+    Asynchronous = False
+    K = 0
     Tool_choice = 'auto'
-    Tool_Active = False
     User = 'user'
-    InitialInstructions.Strings = (
-      'Eres un asistente muy '#40407'il y servicial')
-    Prompt_tokens = 0
+    SystemPrompt.Strings = (
+      'Eres un asistente muy ?til y servicial')
     Completion_tokens = 0
-    Total_tokens = 0
-    OnReceiveData = AiDeepSeekChat1ReceiveData
-    OnReceiveDataEnd = AiDeepSeekChat1ReceiveDataEnd
     Url = 'https://api.deepseek.com/v1/'
-    ResponseTimeOut = 60000
+    ResponseTimeOut = 120000
     Stream_Usage = False
-    NativeInputFiles = []
-    NativeOutputFiles = []
-    ChatMediaSupports = []
+    SanitizerActive = False
+    Temperature = 1.00000000000000000
     Left = 445
     Top = 8
   end

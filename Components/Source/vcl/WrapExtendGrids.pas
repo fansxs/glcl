@@ -21,7 +21,7 @@ interface
 uses
   Classes, SysUtils, PythonEngine, WrapDelphi, WrapDelphiClasses,
   WrapVclGrids, Edu_SGrid, Vcl.Grids, Ledger, WrapVclControls, NiceGrid,
-  WrapVclExtCtrls;
+  WrapVclExtCtrls, uSimpleBase, uSimpleGridP4D, uSimpleGrid;
 
 type
 
@@ -68,6 +68,44 @@ type
     class function DelphiObjectClass: TClass; override;
     // Properties
     property DelphiObject: TNiceGridSync read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiSimpleGrid = class (TPyDelphiStringGrid)
+  private
+    function  GetDelphiObject: TSimpleGrid;
+    procedure SetDelphiObject(const Value: TSimpleGrid);
+  protected
+    class function GetTypeName : string; override;
+  public
+    class function DelphiObjectClass : TClass; override;
+    // Properties
+    property DelphiObject: TSimpleGrid read GetDelphiObject write SetDelphiObject;
+  end;
+
+  TPyDelphiP4DParamGrid = class(TPyDelphiSimpleGrid)
+  private
+    function GetDelphiObject: TP4DParamGrid;
+    procedure SetDelphiObject(const Value: TP4DParamGrid);
+  protected
+    class function GetTypeName : string; override;
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TP4DParamGrid read GetDelphiObject
+      write SetDelphiObject;
+  end;
+
+  TPyDelphiP4DListGrid = class(TPyDelphiSimpleGrid)
+  private
+    function GetDelphiObject: TP4DListGrid;
+    procedure SetDelphiObject(const Value: TP4DListGrid);
+  protected
+    class function GetTypeName : string; override;
+  public
+    class function DelphiObjectClass: TClass; override;
+    // Properties
+    property DelphiObject: TP4DListGrid read GetDelphiObject
       write SetDelphiObject;
   end;
 
@@ -134,6 +172,17 @@ begin
   APyDelphiWrapper.DefineVar('gsCell', 'gsCell');
   APyDelphiWrapper.DefineVar('gsColSize', 'gsColSize');
   APyDelphiWrapper.DefineVar('gsBoxDrag', 'gsBoxDrag');
+
+  APyDelphiWrapper.DefineVar('ckNone', 'ckNone');
+  APyDelphiWrapper.DefineVar('ckCheckBox', 'ckCheckBox');
+  APyDelphiWrapper.DefineVar('ckCombobox', 'ckCombobox');
+  APyDelphiWrapper.DefineVar('ckOption', 'ckOption');
+  APyDelphiWrapper.DefineVar('pkString', 'pkString');
+  APyDelphiWrapper.DefineVar('pkInteger', 'pkInteger');
+  APyDelphiWrapper.DefineVar('pkBoolean', 'pkBoolean');
+  APyDelphiWrapper.DefineVar('pkDateTime', 'pkDateTime');
+  APyDelphiWrapper.DefineVar('pkDate', 'pkDate');
+  APyDelphiWrapper.DefineVar('pkTime', 'pkTime');
 end;
 
 function TExtendGridsRegistration.Name: string;
@@ -148,6 +197,9 @@ begin
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiEduStringGrid);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiNiceGrid);
   APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiNiceGridSync);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiP4DParamGrid);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiP4DListGrid);
+  APyDelphiWrapper.RegisterDelphiWrapper(TPyDelphiSimpleGrid);
 end;
 
 { TPyDelphiLedgerGrid }
@@ -226,6 +278,72 @@ end;
 procedure TPyDelphiNiceGridSync.SetDelphiObject(const Value: TNiceGridSync);
 begin
   inherited DelphiObject := Value;
+end;
+
+{ TPyDelphiP4DParamGrid }
+
+class function TPyDelphiP4DParamGrid.DelphiObjectClass: TClass;
+begin
+  Result := TP4DParamGrid;
+end;
+
+function TPyDelphiP4DParamGrid.GetDelphiObject: TP4DParamGrid;
+begin
+  Result := TP4DParamGrid(inherited DelphiObject);
+end;
+
+procedure TPyDelphiP4DParamGrid.SetDelphiObject(const Value: TP4DParamGrid);
+begin
+  inherited DelphiObject := Value;
+end;
+
+class function TPyDelphiP4DParamGrid.GetTypeName : string;
+begin
+  Result := 'P4DParamGrid';
+end;
+
+{ TPyDelphiP4DListGrid }
+
+class function TPyDelphiP4DListGrid.DelphiObjectClass: TClass;
+begin
+  Result := TP4DListGrid;
+end;
+
+function TPyDelphiP4DListGrid.GetDelphiObject: TP4DListGrid;
+begin
+  Result := TP4DListGrid(inherited DelphiObject);
+end;
+
+procedure TPyDelphiP4DListGrid.SetDelphiObject(const Value: TP4DListGrid);
+begin
+  inherited DelphiObject := Value;
+end;
+
+class function TPyDelphiP4DListGrid.GetTypeName : string;
+begin
+  Result := 'P4DListGrid';
+end;
+
+{ TPyDelphiSimpleGrid }
+
+class function TPyDelphiSimpleGrid.DelphiObjectClass: TClass;
+begin
+  Result := TSimpleGrid;
+end;
+
+function TPyDelphiSimpleGrid.GetDelphiObject: TSimpleGrid;
+begin
+  Result := TSimpleGrid(inherited DelphiObject);
+end;
+
+procedure TPyDelphiSimpleGrid.SetDelphiObject(const Value: TSimpleGrid);
+begin
+  inherited DelphiObject := Value;
+end;
+
+class function TPyDelphiSimpleGrid.GetTypeName : string;
+begin
+  Result := 'SimpleGrid';
 end;
 
 initialization

@@ -1,0 +1,38 @@
+object Form1: TForm
+  Left = 0
+  Top = 0
+  Caption = 'glcl Application Win32 API Test (264 functions)'
+  ClientHeight = 595
+  ClientWidth = 882
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 20
+  object Button1: TButton
+    Left = 0
+    Top = 0
+    Width = 882
+    Height = 25
+    Align = alTop
+    Caption = 'Run All 264 Tests'
+    TabOrder = 0
+    OnClick = Button1Click
+    ExplicitLeft = 88
+    ExplicitTop = 48
+    ExplicitWidth = 75
+  end
+  object Memo1: TMemo
+    Left = 0
+    Top = 25
+    Width = 882
+    Height = 570
+    Align = alClient
+    ScrollBars = ssVertical
+    TabOrder = 1
+    ExplicitWidth = 393
+    ExplicitHeight = 286
+  end
+end
